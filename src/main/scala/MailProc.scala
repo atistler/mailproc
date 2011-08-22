@@ -43,10 +43,11 @@ object MailProc {
 
     try {
       val node = Node.get(1)
-      val t1 = NodeType.getMem(1)
-      val t2 = NodeType.getMem(1)
-      val t3 = NodeType.getMem(1)
-      val t4 = NodeType.getMem(1)
+      println(node)
+      println(node.getAttr("Description"))
+      val template = Template.get(4)
+      println(template)
+      println(template.getAttr("Name"))
 
     } catch {
       case e : NoSuchElementException => println(e.getMessage)

@@ -44,14 +44,21 @@ package object db {
 
   trait Dao {
 
-    import java.lang.reflect._
-
-    /*
-    object State extends Enumeration {
-      type State = Value
-      val New, Modified = Value
+    sealed trait State {
+      def name : String
     }
-    */
+
+    case object NEW extends State {
+      val name = "NEW"
+    }
+
+    case object MODIFIED extends State {
+      val name = "MODIFIED"
+    }
+
+    case object FROMDB extends State {
+      val name = "FROMDB"
+    }
 
   }
 
@@ -123,6 +130,8 @@ package object db {
         case None => None
       }
     }
+
+
   }
 
   object Template extends DaoHelper[Template] {
@@ -216,11 +225,11 @@ package object db {
     }
   }
 
-  class Node(val id : Option[Int], val nodeType : NodeType, val templateId : Int) extends Dao {
+  class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int, private val join: Option[Join] = None) extends Dao {
     private[db] val attributes = new HashMap[String, NodeAttribute]()
 
     override def toString = "Node[%s] (nodeType: %s[%d], template: %s[%d])".format(
-      id, nodeType.name, nodeType.id.get, Template.getMem(templateId).name, templateId
+      id, nodeType.name, nodeTypeId, template.name, templateId
     )
 
     def connectees() = {
@@ -228,6 +237,9 @@ package object db {
         s => s.selectAll(Tokens.Connection.selectByConnectorNodeId, "connector_node_id" -> id)
       }
     }
+
+    lazy val nodeType = NodeType.getMem(nodeTypeId)
+    lazy val template = Template.getMem(templateId)
 
     def getAttr(s : String) = {
       attributes.get(s) match {
@@ -238,20 +250,47 @@ package object db {
   }
 
   object Node extends DaoHelper[Node] {
-    def apply(id : Int, nodeTypeId : Int, templateId : Int) = {
-      new Node(Some(id), NodeType.getMem(nodeTypeId), templateId)
+    private def withAttributes(node : Node, join : Option[Join]) = {
+      join match {
+        case Some(j) =>
+          for (na <- j.extractSeq(NodeAttributeExtractor)) {
+            node.attributes += na.attribute.name -> na
+          }
+          node
+        case None => node
+      }
     }
 
-    def apply(id : Int, nodeType : NodeType, templateId : Int) = {
-      new Node(Some(id), nodeType, templateId)
+    def apply(id : Int, nodeTypeId : Int, templateId : Int, join : Option[Join]) = {
+      new Node(Some(id), nodeTypeId, templateId, join)
+    }
+
+    def apply(id : Int, nodeType : NodeType, templateId : Int, join : Option[Join]) = {
+      apply(id, nodeType.id.get, templateId, join)
+    }
+
+    def apply(id : Int, nodeTypeId : Int, template : Template, join : Option[Join]) = {
+      apply(id, nodeTypeId, template.id.get, join)
+    }
+
+    def apply(id : Int, nodeType : NodeType, template : Template, join : Option[Join]) = {
+      apply(id, nodeType.id.get, template.id.get, join)
     }
 
     def apply(nodeTypeId : Int, templateId : Int) = {
-      new Node(None, NodeType.getMem(nodeTypeId), templateId)
+      new Node(None, nodeTypeId, templateId)
     }
 
     def apply(nodeType : NodeType, templateId : Int) = {
-      new Node(None, nodeType, templateId);
+      apply(nodeType.id.get, templateId);
+    }
+
+    def apply(nodeTypeId : Int, template : Template) = {
+      apply(nodeTypeId, template.id.get)
+    }
+
+    def apply(nodeType : NodeType, template : Template) = {
+      apply(nodeType.id.get, template.id.get)
     }
 
     def getOption(id : Int) = {
@@ -265,12 +304,10 @@ package object db {
     def extract(row : Row, join : Join) = {
       val node = Node(
         row.integer("node_id").get,
-        join.extractOne(NodeTypeExtractor, Map.empty).get,
+        row.integer("node_type_id").get,
         row.integer("template_id").get
       )
-      for (na <- join.extractSeq(NodeAttributeExtractor)) {
-        node.attributes += na.attribute.name -> na
-      }
+
       node
     }
   }
@@ -390,7 +427,8 @@ package object db {
       connectorNodeTypeId : Int
       ) = {
       new Connection(
-        Some(connectionId), ConnectionType.getMem(connectionTypeId), connecteeNodeId, NodeType.getMem(connecteeNodeTypeId),
+        Some(connectionId), ConnectionType.getMem(connectionTypeId), connecteeNodeId,
+        NodeType.getMem(connecteeNodeTypeId),
         connectorNodeId,
         NodeType.getMem(connectorNodeTypeId)
       )
@@ -413,7 +451,8 @@ package object db {
       connectorNodeTypeId : Int
       ) = {
       new Connection(
-        None, ConnectionType.getMem(connectionTypeId), connecteeNodeId, NodeType.getMem(connecteeNodeTypeId), connectorNodeId,
+        None, ConnectionType.getMem(connectionTypeId), connecteeNodeId, NodeType.getMem(connecteeNodeTypeId),
+        connectorNodeId,
         NodeType.getMem(connectorNodeTypeId)
       )
     }
