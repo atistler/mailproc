@@ -14,12 +14,39 @@ package object db {
     }
   }
 
+  class ConnectionSeq(iseq : IndexedSeq[Connection]) {
+    def nodes() {
+      iseq foreach {
+        c => println(c)
+      }
+    }
+  }
+
+  implicit def IndexedSeq2ConnectionSeq(i : IndexedSeq[Connection]) = {
+    new ConnectionSeq(i);
+  }
+
+  class NodeSeq(nseq : IndexedSeq[Node]) {
+    def nodes() {
+      nseq foreach {
+        n => println(n)
+      }
+    }
+  }
+
+  implicit def IndexedSeq2NodeSeq(n: IndexedSeq[Node]) = {
+    new NodeSeq(n)
+  }
+
   private val configFolder = new File("sql")
-  private val builder = new BrokerBuilder(ds)
+  private val builder = new BrokerBuilder(ds) with dynamic.FreeMarkerSupport
   FileSystemRegistrant(configFolder).register(builder)
   builder.verify(Tokens.idSet)
   val broker = builder.build()
 
+  def mapToIds(d : List[Dao]) = {
+    d.map(_.id.get)
+  }
 
   private[db] class Memoize1[-T, +R](f : T => R) extends (T => R) {
 
@@ -42,7 +69,20 @@ package object db {
     def apply[T, R](f : T => R) = new Memoize1(f)
   }
 
+  private[db] class Def[C](implicit desired : Manifest[C]) {
+    def unapply[X](c : X)(implicit m : Manifest[X]) : Option[C] = {
+      def sameArgs =
+        desired.typeArguments.zip(m.typeArguments).forall {
+          case (desired, actual) => desired >:> actual
+        }
+      if (desired >:> m && sameArgs) Some(c.asInstanceOf[C])
+      else None
+    }
+  }
+
   trait Dao {
+
+    val id : Option[Int]
 
     sealed trait State {
       def name : String
@@ -74,10 +114,11 @@ package object db {
     def getOption(id : Int) : Option[T]
 
     protected def selectOneOption(token : Token[T], params : (String, Any)*) = {
-      broker.readOnly() {
-        s =>
-          s.selectOne(token, params : _*)
-      }
+      broker.readOnly() { _.selectOne(token, params : _*) }
+    }
+
+    protected def selectAllOption(token: Token[T], params: (String, Any)*) = {
+      broker.readOnly() { _.selectAll(token, params: _*) }
     }
   }
 
@@ -86,11 +127,11 @@ package object db {
   }
 
   object NodeType extends DaoHelper[NodeType] {
-    def apply(id : Int, poolId : Int, name : String): NodeType = {
+    def apply(id : Int, poolId : Int, name : String) : NodeType = {
       new NodeType(Some(id), poolId, name)
     }
 
-    def apply(poolId : Int, name : String): NodeType = {
+    def apply(poolId : Int, name : String) : NodeType = {
       new NodeType(None, poolId, name)
     }
 
@@ -106,8 +147,14 @@ package object db {
       getOption(name).get
     }
 
-    /* TODO
-      def allByPoolId(poolId: Int): IndexedSeq[NodeType] {}
+    def allByPoolId(poolId : Int) = {
+      broker.readOnly() {
+        s => s.selectAll(Tokens.NodeType.selectByPoolId, "node_type_pool_id" -> poolId)
+      }
+    }
+
+    /*
+      TODO: def allByPoolId(poolId: Int): IndexedSeq[NodeType] {}
      */
   }
 
@@ -136,26 +183,29 @@ package object db {
         case None => None
       }
     }
-    /* TODO
-      def children(): IndexedSeq[Template] {}
-      def allAttrs(): IndexedSeq[TemplateAttribute] {}
-     */
+
+    def allAttrs = attributes
+
+    /*
+   TODO: def children(): IndexedSeq[Template] {}
+   TODO: def allAttrs(): IndexedSeq[TemplateAttribute] {}
+    */
   }
 
   object Template extends DaoHelper[Template] {
-    def apply(nodeTypeId : Int, name : String): Template = {
+    def apply(nodeTypeId : Int, name : String) : Template = {
       new Template(None, nodeTypeId, name)
     }
 
-    def apply(nodeType : NodeType, name : String): Template = {
+    def apply(nodeType : NodeType, name : String) : Template = {
       apply(nodeType.id.get, name)
     }
 
-    def apply(id : Int, nodeTypeId : Int, name : String): Template = {
+    def apply(id : Int, nodeTypeId : Int, name : String) : Template = {
       new Template(Some(id), nodeTypeId, name)
     }
 
-    def apply(id : Int, nodeType : NodeType, name : String): Template = {
+    def apply(id : Int, nodeType : NodeType, name : String) : Template = {
       apply(id, nodeType.id.get, name)
     }
 
@@ -170,17 +220,27 @@ package object db {
     def get(name : String) = {
       getOption(name).get
     }
-    /* TODO:
-      def all(nodeType: NodeType*)
-      def all()
-      def all(attribute: Attribute*)
-      def all(attribute_values: Map[Attribute, String])
 
-      def filter(nodeType: NodeType*)
-      def filter(attribute: Attribute*)
-      def filter(attribute_values: Map[Attribute, String])
-    */
+    def all(nodeTypes : List[NodeType] = Nil, attributes : List[Attribute] = Nil) : IndexedSeq[Template] = {
+      broker.readOnly() {
+        s => s.selectAll(
+          Tokens.Template.selectByQuery,
+          "nodeTypeIds" -> mapToIds(nodeTypes).toArray, "attributeIds" -> mapToIds(attributes).toArray
+        )
+      }
+    }
   }
+
+  /* TODO:
+    def all(nodeType: NodeType*)
+    def all()
+    def all(attribute: Attribute*)
+    def all(attribute_values: Map[Attribute, String])
+
+    def filter(nodeType: NodeType*)
+    def filter(attribute: Attribute*)
+    def filter(attribute_values: Map[Attribute, String])
+  */
 
   object TemplateExtractor extends JoinExtractor[Template] {
     val key = Set("template_id")
@@ -212,29 +272,34 @@ package object db {
 
   object TemplateAttribute extends DaoHelper[TemplateAttribute] {
 
-    def apply(id : Int, template_id : Int, attributeId : Int, optional : Boolean, value : String): TemplateAttribute = {
+    def apply(
+      id : Int, template_id : Int, attributeId : Int, optional : Boolean, value : String
+      ) : TemplateAttribute = {
       new TemplateAttribute(Some(id), template_id, attributeId, optional, value)
     }
 
-    def apply(id : Int, template_id : Int, attribute : Attribute, optional : Boolean, value : String): TemplateAttribute = {
+    def apply(
+      id : Int, template_id : Int, attribute : Attribute, optional : Boolean, value : String
+      ) : TemplateAttribute = {
       apply(id, template_id, attribute.id.get, optional, value)
     }
 
-    def apply(template_id : Int, attributeId : Int, optional : Boolean, value : String): TemplateAttribute = {
+    def apply(template_id : Int, attributeId : Int, optional : Boolean, value : String) : TemplateAttribute = {
       new TemplateAttribute(None, template_id, attributeId, optional, value)
     }
 
-    def apply(template_id : Int, attribute : Attribute, optional : Boolean, value : String): TemplateAttribute = {
+    def apply(template_id : Int, attribute : Attribute, optional : Boolean, value : String) : TemplateAttribute = {
       apply(template_id, attribute.id.get, optional, value)
     }
 
     def getOption(id : Int) = {
       selectOneOption(Tokens.TemplateAttribute.selectById, "template_attribute_map_id" -> id)
     }
+
     /* TODO:
-      def all(attribute: Attribute*): IndexedSeq[TemplateAttribute]
-      def all(template: Template*): IndexedSeq[TemplateAttribute]
-     */
+     def all(attribute: Attribute*): IndexedSeq[TemplateAttribute]
+     def all(template: Template*): IndexedSeq[TemplateAttribute]
+    */
   }
 
   object TemplateAttributeExtractor extends JoinExtractor[TemplateAttribute] {
@@ -251,12 +316,13 @@ package object db {
     }
   }
 
-  class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int, private val join: Option[Join] = None) extends Dao {
+  class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao {
     private[db] val attributes = new HashMap[String, NodeAttribute]()
 
     override def toString = "Node[%s] (nodeType: %s[%d], template: %s[%d])".format(
       id, nodeType.name, nodeTypeId, template.name, templateId
     )
+
 
     def connectees() = {
       broker.readOnly() {
@@ -265,8 +331,9 @@ package object db {
     }
 
     def connectors() = {
-      broker.readOnly() { s =>
-        s.selectAll(Tokens.Connection.selectByConnecteeNodeId, "connectee_node_id" -> id)
+      broker.readOnly() {
+        s =>
+          s.selectAll(Tokens.Connection.selectByConnecteeNodeId, "connectee_node_id" -> id)
       }
     }
 
@@ -281,73 +348,68 @@ package object db {
     }
 
     /* TODO:
-      def setAttr(attribute: Attribute, value: String): Node
-      def setAttr(attributeId: Int, value: String): Node
-      def setAttrs(Map[Attribute, value]): Node
-      def connectors(node_type: NodeType*) : IndexedSeq[Node]
-      def connectors(connection_type: ConnectionType*) : IndexedSeq[Node]
-      def connectors(attribute: Attribute*) : IndexedSeq[Node]
-      def connectors(attribute_values: Map[Attribute, String]) : IndexedSeq[Node]
+     def setAttr(attribute: Attribute, value: String): Node
+     def setAttr(attributeId: Int, value: String): Node
+     def setAttrs(Map[Attribute, value]): Node
+     def connectors(node_type: NodeType*) : IndexedSeq[Node]
+     def connectors(connection_type: ConnectionType*) : IndexedSeq[Node]
+     def connectors(attribute: Attribute*) : IndexedSeq[Node]
+     def connectors(attribute_values: Map[Attribute, String]) : IndexedSeq[Node]
 
-      def connectors(node_type: NodeType*, connection_type: ConnectionType*) : IndexedSeq[Node]
-      def connectors(node_type: NodeType*, attribute: Attribute*) : IndexedSeq[Node]
-      def connectors(connection: NodeType*, attribute: Attribute*) : IndexedSeq[Node]
+     def connectors(node_type: NodeType*, connection_type: ConnectionType*) : IndexedSeq[Node]
+     def connectors(node_type: NodeType*, attribute: Attribute*) : IndexedSeq[Node]
+     def connectors(connection: NodeType*, attribute: Attribute*) : IndexedSeq[Node]
 
-      def connectors(node_type: NodeType*, connection_type: ConnectionType*, attribute: Attribute*) : IndexedSeq[Node]
+     def connectors(node_type: NodeType*, connection_type: ConnectionType*, attribute: Attribute*) : IndexedSeq[Node]
 
-      def connectees(node_type: NodeType*) : IndexedSeq[Node]
-      def connectees(node_type: NodeType*, connection_type: ConnectionType*) : IndexedSeq[Node]
-      def connectors(connection_type: ConnectionType*) : IndexedSeq[Node]
-     */
+     def connectees(node_type: NodeType*) : IndexedSeq[Node]
+     def connectees(node_type: NodeType*, connection_type: ConnectionType*) : IndexedSeq[Node]
+     def connectors(connection_type: ConnectionType*) : IndexedSeq[Node]
+    */
   }
 
   object Node extends DaoHelper[Node] {
-    private def withAttributes(node : Node, join : Option[Join]) = {
-      join match {
-        case Some(j) =>
-          for (na <- j.extractSeq(NodeAttributeExtractor)) {
-            node.attributes += na.attribute.name -> na
-          }
-          node
-        case None => node
-      }
+
+    def apply(id : Int, nodeTypeId : Int, templateId : Int) : Node = {
+      new Node(Some(id), nodeTypeId, templateId)
     }
 
-    def apply(id : Int, nodeTypeId : Int, templateId : Int, join : Option[Join]): Node = {
-      new Node(Some(id), nodeTypeId, templateId, join)
+    def apply(id : Int, nodeType : NodeType, templateId : Int) : Node = {
+      apply(id, nodeType.id.get, templateId)
     }
 
-    def apply(id : Int, nodeType : NodeType, templateId : Int, join : Option[Join]): Node = {
-      apply(id, nodeType.id.get, templateId, join)
+    def apply(id : Int, nodeTypeId : Int, template : Template) : Node = {
+      apply(id, nodeTypeId, template.id.get)
     }
 
-    def apply(id : Int, nodeTypeId : Int, template : Template, join : Option[Join]): Node = {
-      apply(id, nodeTypeId, template.id.get, join)
+    def apply(id : Int, nodeType : NodeType, template : Template) : Node = {
+      apply(id, nodeType.id.get, template.id.get)
     }
 
-    def apply(id : Int, nodeType : NodeType, template : Template, join : Option[Join]): Node = {
-      apply(id, nodeType.id.get, template.id.get, join)
-    }
-
-    def apply(nodeTypeId : Int, templateId : Int): Node = {
+    def apply(nodeTypeId : Int, templateId : Int) : Node = {
       new Node(None, nodeTypeId, templateId)
     }
 
-    def apply(nodeType : NodeType, templateId : Int): Node = {
+    def apply(nodeType : NodeType, templateId : Int) : Node = {
       apply(nodeType.id.get, templateId);
     }
 
-    def apply(nodeTypeId : Int, template : Template): Node = {
+    def apply(nodeTypeId : Int, template : Template) : Node = {
       apply(nodeTypeId, template.id.get)
     }
 
-    def apply(nodeType : NodeType, template : Template): Node = {
+    def apply(nodeType : NodeType, template : Template) : Node = {
       apply(nodeType.id.get, template.id.get)
     }
 
     def getOption(id : Int) = {
       selectOneOption(Tokens.Node.selectById, "node_id" -> id)
     }
+
+    def get(ids: List[Int]) = {
+      selectAllOption(Tokens.Node.selectByIds, "nodeIds" -> ids)
+    }
+
   }
 
   object NodeExtractor extends JoinExtractor[Node] {
@@ -357,10 +419,11 @@ package object db {
       val node = Node(
         row.integer("node_id").get,
         row.integer("node_type_id").get,
-        row.integer("template_id").get,
-        Some(join)
+        row.integer("template_id").get
       )
-
+      for (na <- join.extractSeq(NodeAttributeExtractor, Map.empty)) {
+        node.attributes += na.attribute.name -> na
+      }
       node
     }
   }
@@ -376,19 +439,19 @@ package object db {
   }
 
   object NodeAttribute extends DaoHelper[NodeAttribute] {
-    def apply(id : Int, node_id : Int, attribute : Attribute, value : String): NodeAttribute = {
+    def apply(id : Int, node_id : Int, attribute : Attribute, value : String) : NodeAttribute = {
       new NodeAttribute(Some(id), node_id, attribute.id.get, value)
     }
 
-    def apply(id : Int, node_id : Int, attributeId : Int, value : String): NodeAttribute = {
+    def apply(id : Int, node_id : Int, attributeId : Int, value : String) : NodeAttribute = {
       new NodeAttribute(Some(id), node_id, attributeId, value)
     }
 
-    def apply(node_id : Int, attribute : Attribute, value : String): NodeAttribute = {
+    def apply(node_id : Int, attribute : Attribute, value : String) : NodeAttribute = {
       new NodeAttribute(None, node_id, attribute.id.get, value)
     }
 
-    def apply(node_id : Int, attributeId : Int, value : String): NodeAttribute = {
+    def apply(node_id : Int, attributeId : Int, value : String) : NodeAttribute = {
       new NodeAttribute(None, node_id, attributeId, value)
     }
 
@@ -416,7 +479,7 @@ package object db {
   }
 
   object Attribute extends DaoHelper[Attribute] {
-    def apply(id : Int, name : String, openended : Boolean): Attribute = {
+    def apply(id : Int, name : String, openended : Boolean) : Attribute = {
       new Attribute(Some(id), name, openended)
     }
 
@@ -441,14 +504,16 @@ package object db {
     val id : Option[Int], val name : String, val bidirectional : Boolean, val complimentTypeId : Int
     ) extends Dao {
     override def toString = "ConnectionType[%s] (name: %s)".format(id, name)
+
     lazy val complimentType = ConnectionType.getMem(complimentTypeId)
   }
 
   object ConnectionType extends DaoHelper[ConnectionType] {
-    def apply(id : Int, name : String, bidirectional : Boolean, complimentTypeId : Int): ConnectionType = {
+    def apply(id : Int, name : String, bidirectional : Boolean, complimentTypeId : Int) : ConnectionType = {
       new ConnectionType(Some(id), name, bidirectional, complimentTypeId)
     }
-    def apply(id : Int, name : String, bidirectional : Boolean, complimentType : ConnectionType): ConnectionType = {
+
+    def apply(id : Int, name : String, bidirectional : Boolean, complimentType : ConnectionType) : ConnectionType = {
       apply(id, name, bidirectional, complimentType.id.get)
     }
 
@@ -475,9 +540,11 @@ package object db {
     val connecteeId : Int, val connecteeTypeId : Int
     ) extends Dao {
     override def toString = "Connection[%s] (type: %s[%d], connector: %d (%s[%d]), connectee: %d (%s[%d])".format(
-      id, ConnectionType.getMem(connectionTypeId), connectionTypeId, connectorId, NodeType.getMem(connectorTypeId).name, connectorTypeId, connecteeId,
+      id, ConnectionType.getMem(connectionTypeId), connectionTypeId, connectorId, NodeType.getMem(connectorTypeId).name,
+      connectorTypeId, connecteeId,
       NodeType.getMem(connecteeTypeId), connecteeTypeId
     )
+
     lazy val connecteeType = NodeType.getMem(connecteeTypeId)
     lazy val connectorType = NodeType.getMem(connectorTypeId)
     lazy val connectionType = ConnectionType.getMem(connectionTypeId)
@@ -488,7 +555,7 @@ package object db {
       connectionId : Int, connectionTypeId : Int, connecteeId : Int, connecteeTypeId : Int,
       connectorId : Int,
       connectorTypeId : Int
-      ): Connection = {
+      ) : Connection = {
       new Connection(
         Some(connectionId), connectionTypeId, connecteeId,
         connecteeTypeId,
@@ -501,7 +568,7 @@ package object db {
       connectionId : Int, connectionType : ConnectionType, connecteeId : Int, connecteeType : NodeType,
       connectorId : Int,
       connectorType : NodeType
-      ): Connection = {
+      ) : Connection = {
       apply(
         connectionId, connectionType.id.get, connecteeId, connecteeType.id.get,
         connectorId,
@@ -512,7 +579,7 @@ package object db {
     def apply(
       connectionTypeId : Int, connecteeId : Int, connecteeTypeId : Int, connectorId : Int,
       connectorTypeId : Int
-      ): Connection = {
+      ) : Connection = {
       new Connection(
         None, connectionTypeId, connecteeId, connecteeTypeId,
         connectorId,
@@ -524,8 +591,9 @@ package object db {
       connectionType : ConnectionType, connecteeId : Int, connecteeType : NodeType,
       connectorId : Int,
       connectorType : NodeType
-      ): Connection = {
-      apply(connectionType.id.get, connecteeId, connecteeType.id.get,
+      ) : Connection = {
+      apply(
+        connectionType.id.get, connecteeId, connecteeType.id.get,
         connectorId,
         connectorType.id.get
       )
@@ -545,21 +613,11 @@ package object db {
     def extract(row : Row, join : Join) = {
       Connection(
         row.integer("connection_id").get,
-        join.extractOne(ConnectionTypeExtractor, Map("interface_name" -> "connection_type_name")).get,
+        row.integer("connection_type_id").get,
         row.integer("connector_node_id").get,
-        join.extractOne(
-          NodeTypeExtractor, Map(
-            "interface_name" -> "connector_node_type_name", "node_type_id" -> "connector_node_type_id",
-            "node_type_pool_id" -> "connector_node_type_pool_id"
-          )
-        ).get,
+        row.integer("connector_node_type_id").get,
         row.integer("connectee_node_id").get,
-        join.extractOne(
-          NodeTypeExtractor, Map(
-            "interface_name" -> "connectee_node_type_name", "node_type_id" -> "connectee_node_type_id",
-            "node_type_pool_id" -> "connectee_node_type_pool_id"
-          )
-        ).get
+        row.integer("connectee_node_type_id").get
       )
     }
   }
@@ -568,11 +626,13 @@ package object db {
 
     object Node {
       val selectById = Token('selectNodeById, NodeExtractor)
+      val selectByIds = Token('selectNodeByIds, NodeExtractor)
     }
 
     object NodeType {
       val selectById = Token('selectNodeTypeById, NodeTypeExtractor)
       val selectByName = Token('selectNodeTypeByName, NodeTypeExtractor)
+      val selectByPoolId = Token('selectNodeTypesByPoolId, NodeTypeExtractor)
     }
 
     object NodeAttribute {
@@ -593,6 +653,7 @@ package object db {
     object Template {
       val selectById = Token('selectTemplateById, TemplateExtractor)
       val selectByName = Token('selectTemplateByName, TemplateExtractor)
+      val selectByQuery = Token('selectTemplateByQuery, TemplateExtractor)
     }
 
     object TemplateAttribute {
