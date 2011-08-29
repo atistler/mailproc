@@ -34,7 +34,7 @@ package object db {
     }
   }
 
-  implicit def IndexedSeq2NodeSeq(n: IndexedSeq[Node]) = {
+  implicit def IndexedSeq2NodeSeq(n : IndexedSeq[Node]) = {
     new NodeSeq(n)
   }
 
@@ -80,6 +80,8 @@ package object db {
     }
   }
 
+  class DaoException(msg: String) extends Exception(msg)
+
   trait Dao {
 
     val id : Option[Int]
@@ -114,16 +116,35 @@ package object db {
     def getOption(id : Int) : Option[T]
 
     protected def selectOneOption(token : Token[T], params : (String, Any)*) = {
-      broker.readOnly() { _.selectOne(token, params : _*) }
+      broker.readOnly() {
+        _.selectOne(token, params : _*)
+      }
     }
 
-    protected def selectAllOption(token: Token[T], params: (String, Any)*) = {
-      broker.readOnly() { _.selectAll(token, params: _*) }
+    protected def selectAllOption(token : Token[T], params : (String, Any)*) = {
+      broker.readOnly() {
+        _.selectAll(token, params : _*)
+      }
     }
   }
 
-  class NodeType(val id : Option[Int], val poolId : Int, val name : String) extends Dao {
+  class NodeType(var id : Option[Int], var poolId : Int, var name : String) extends Dao {
     override def toString = "NodeType[%s] (name: %s, poolId: %d)".format(id, name, poolId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            /* TODO: NodeTypes should really never by updated ( maybe just interface_name ) */
+            case Some(_id) => t.callForUpdate(
+              Tokens.NodeType.update, "node_type_id" -> id, "node_type_pool_id" -> poolId, "interface_name" -> name
+            )
+            case None => t.callForKeys(Tokens.NodeType.insert, "node_type_pool_id" -> id, "interface_name" -> name) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object NodeType extends DaoHelper[NodeType] {
@@ -153,9 +174,7 @@ package object db {
       }
     }
 
-    /*
-      TODO: def allByPoolId(poolId: Int): IndexedSeq[NodeType] {}
-     */
+
   }
 
   object NodeTypeExtractor extends JoinExtractor[NodeType] {
@@ -170,7 +189,7 @@ package object db {
     }
   }
 
-  class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends Dao {
+  class Template(var id : Option[Int], var nodeTypeId : Int, var name : String) extends Dao {
     private[db] val attributes = new HashMap[String, TemplateAttribute]()
 
     override def toString = "Template[%s] (name: %s, nodeType: %s[%d])".format(id, name, nodeTypeId, nodeType.name)
@@ -186,9 +205,23 @@ package object db {
 
     def allAttrs = attributes
 
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            /* TODO: Templates should never really be updated ( maybe just interface_name ) */
+            case Some(_id) => t.callForUpdate(
+              Tokens.Template.update, "template_id" -> id, "node_type_id" -> nodeType.id.get, "interface_name" -> name
+            )
+            case None => t.callForKeys(Tokens.Template.insert, "node_type_id" -> id, "interface_name" -> name) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
+
     /*
    TODO: def children(): IndexedSeq[Template] {}
-   TODO: def allAttrs(): IndexedSeq[TemplateAttribute] {}
     */
   }
 
@@ -229,18 +262,27 @@ package object db {
         )
       }
     }
+
+    def all[T](t : T*)(implicit m : Manifest[T]) {
+      m.toString match {
+        case "Attribute" => println("class attribute found");
+        case "Connection" => println("class connection found");
+        case x => println("Unknown found " + x)
+      }
+    }
+
+    /* TODO:
+      def all(nodeType: NodeType*)
+      def all()
+      def all(attribute: Attribute*)
+      def all(attribute_values: Map[Attribute, String])
+
+      def filter(nodeType: NodeType*)
+      def filter(attribute: Attribute*)
+      def filter(attribute_values: Map[Attribute, String])
+    */
   }
 
-  /* TODO:
-    def all(nodeType: NodeType*)
-    def all()
-    def all(attribute: Attribute*)
-    def all(attribute_values: Map[Attribute, String])
-
-    def filter(nodeType: NodeType*)
-    def filter(attribute: Attribute*)
-    def filter(attribute_values: Map[Attribute, String])
-  */
 
   object TemplateExtractor extends JoinExtractor[Template] {
     val key = Set("template_id")
@@ -260,7 +302,7 @@ package object db {
   }
 
   class TemplateAttribute(
-    val id : Option[Int], val templateId : Int, val attributeId : Int, val optional : Boolean, val value : String
+    var id : Option[Int], var templateId : Int, var attributeId : Int, var optional : Boolean, var value : String
     ) extends Dao {
     override def toString = "TemplateAttribute[%s] (template: %s[%d], attribute: %s[%d], value: %s".format(
       id, template.name, templateId, attribute.name, attributeId, value
@@ -268,6 +310,24 @@ package object db {
 
     lazy val template = Template.getMem(templateId)
     lazy val attribute = Attribute.getMem(attributeId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => t.callForUpdate(
+              Tokens.TemplateAttribute.update, "template_attribute_map_id" -> id, "template_id" -> template.id.get,
+              "attribute_id" -> attribute.id.get, "optional" -> optional, "default_value" -> value
+            )
+            case None => t.callForKeys(
+              Tokens.TemplateAttribute.insert, "template_id" -> template.id.get, "attribute_id" -> attribute.id.get,
+              "optional" -> optional, "default_value" -> value
+            ) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object TemplateAttribute extends DaoHelper[TemplateAttribute] {
@@ -316,7 +376,7 @@ package object db {
     }
   }
 
-  class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao {
+  class Node(var id : Option[Int], var nodeTypeId : Int, var templateId : Int) extends Dao {
     private[db] val attributes = new HashMap[String, NodeAttribute]()
 
     override def toString = "Node[%s] (nodeType: %s[%d], template: %s[%d])".format(
@@ -344,6 +404,18 @@ package object db {
       attributes.get(s) match {
         case Some(na) => Some(na.value)
         case None => None
+      }
+    }
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => throw new DaoException("Nodes cannot be updated: " + this)
+            case None => t.callForKeys(Tokens.Node.insert, "node_type_id" -> nodeType.id.get, "template_id" -> template.id.get) {
+              k : Int => id = Some(k)
+            }
+          }
       }
     }
 
@@ -406,7 +478,7 @@ package object db {
       selectOneOption(Tokens.Node.selectById, "node_id" -> id)
     }
 
-    def get(ids: List[Int]) = {
+    def get(ids : List[Int]) = {
       selectAllOption(Tokens.Node.selectByIds, "nodeIds" -> ids)
     }
 

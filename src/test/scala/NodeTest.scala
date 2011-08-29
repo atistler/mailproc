@@ -10,9 +10,11 @@ import db._
  */
 
 class NodeTest extends Specification {
-  val node = Node.get(527321)
 
-  node.connectees().nodes
+  val t2 = Template.all(NodeType.get(1047), NodeType.get(1046))
+  println(t2)
+
+  val node = Node.get(527321)
 
   "The node with id 527321" should {
     "have node_id of 527321" in {
@@ -54,14 +56,14 @@ class NodeTest extends Specification {
       template_attribute.value must_== "Root Node"
     }
   }
-
+ /*
   val templates = Template.all(nodeTypes=List(NodeType.get(3), NodeType.get(1047)))
   "templates with node_type_id 3" should {
     "number of templates should be 10" in {
       templates.length must_== 10
     }
   }
-
+  */
   val attribute = Attribute.get(1)
   "attribute with attribute_id 1" should  {
     "have interface_name of Name" in {
