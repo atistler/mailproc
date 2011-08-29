@@ -1,3 +1,4 @@
+import _root_.db.DaoException
 import org.orbroker._
 import org.orbroker.config._
 import java.io.File
@@ -80,11 +81,11 @@ package object db {
     }
   }
 
-  class DaoException(msg: String) extends Exception(msg)
+  class DaoException(msg : String) extends Exception(msg)
 
   trait Dao {
 
-    val id : Option[Int]
+    var id : Option[Int]
 
     sealed trait State {
       def name : String
@@ -263,11 +264,24 @@ package object db {
       }
     }
 
-    def all[T](t : T*)(implicit m : Manifest[T]) {
-      m.toString match {
-        case "Attribute" => println("class attribute found");
-        case "Connection" => println("class connection found");
-        case x => println("Unknown found " + x)
+    def all[T](t : T*)(implicit m : Manifest[T]) : IndexedSeq[Template] = {
+      val clazz = Class.forName(m.toString)
+      if (clazz.isAssignableFrom(Attribute.getClass)) {
+        broker.readOnly() {
+          s => s.selectAll(
+            Tokens.Template.selectByQuery,
+            "attributeIds" -> t.toArray
+          )
+        }
+      } else if (clazz.isAssignableFrom(NodeType.getClass)) {
+        broker.readOnly() {
+          s => s.selectAll(
+            Tokens.Template.selectByQuery,
+            "nodeTypeIds" -> t.toArray
+          )
+        }
+      } else {
+        IndexedSeq.empty[Template]
       }
     }
 
@@ -412,7 +426,9 @@ package object db {
         t =>
           id match {
             case Some(_id) => throw new DaoException("Nodes cannot be updated: " + this)
-            case None => t.callForKeys(Tokens.Node.insert, "node_type_id" -> nodeType.id.get, "template_id" -> template.id.get) {
+            case None => t.callForKeys(
+              Tokens.Node.insert, "node_type_id" -> nodeType.id.get, "template_id" -> template.id.get
+            ) {
               k : Int => id = Some(k)
             }
           }
@@ -514,9 +530,12 @@ package object db {
         t =>
           id match {
             case Some(_id) => t.callForUpdate(
-              Tokens.NodeAttribute.update, "node_attribute_map_id" -> _id, "node_id" -> nodeId, "attribute_id" -> attributeId, "value" -> value
+              Tokens.NodeAttribute.update, "node_attribute_map_id" -> _id, "node_id" -> nodeId,
+              "attribute_id" -> attributeId, "value" -> value
             )
-            case None => t.callForKeys(Tokens.NodeAttribute.insert, "node_id" -> nodeId, "attribute_id" -> attributeId, "value" -> value) {
+            case None => t.callForKeys(
+              Tokens.NodeAttribute.insert, "node_id" -> nodeId, "attribute_id" -> attributeId, "value" -> value
+            ) {
               k : Int => id = Some(k)
             }
           }
@@ -560,8 +579,66 @@ package object db {
     }
   }
 
-  class Attribute(var id : Option[Int], var name : String, var openended : Boolean) extends Dao {
+  class AttributeOption(var id : Option[Int], var attributeId : Int, var value : String) extends Dao {
+    override def toString = "AttributeOption[%s] (attribute: %s[%d], value: %s".format(
+      id.get, attribute.name, attributeId, value
+    )
+
+    lazy val attribute = Attribute.getMem(attributeId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => t.callForUpdate(
+              Tokens.AttributeOption.update, "attribute_option_id" -> _id, "attribute_id" -> attributeId,
+              "value" -> value
+            )
+            case None => t.callForKeys(Tokens.AttributeOption.insert, "attribute_id" -> attributeId, "value" -> value) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
+  }
+
+  object AttributeOption extends DaoHelper[AttributeOption] {
+    def apply(id : Int, attributeId : Int, value : String) : AttributeOption = {
+      new AttributeOption(Some(id), attributeId, value)
+    }
+
+    def apply(id : Int, attribute : Attribute, value : String) : AttributeOption = {
+      apply(id, attribute.id.get, value)
+    }
+
+    def apply(attributeId : Int, value : String) : AttributeOption = {
+      new AttributeOption(None, attributeId, value)
+    }
+
+    def apply(attribute : Attribute, value : String) : AttributeOption = {
+      apply(attribute.id.get, value)
+    }
+
+    def getOption(id : Int) = {
+      selectOneOption(Tokens.AttributeOption.selectById, "attribute_option_id" -> id)
+    }
+  }
+
+  object AttributeOptionExtractor extends JoinExtractor[AttributeOption] {
+    val key = Set("attribute_option_id")
+
+    def extract(row : Row, join : Join) = {
+      AttributeOption(
+        row.integer("attribute_option_id").get,
+        row.integer("attribute_id").get,
+        row.string("value").get
+      )
+    }
+  }
+
+  class Attribute(var id : Option[Int], var name : String, var openended : Boolean = true) extends Dao {
     override def toString = "Attribute[%s] (name: %s)".format(id, name)
+
     def save() = {
       broker.transaction() {
         t =>
@@ -569,10 +646,17 @@ package object db {
             case Some(_id) => t.callForUpdate(
               Tokens.Attribute.update, "attribute_id" -> _id, "interface_name" -> name, "openended" -> openended
             )
-            case None => t.callForKeys(Tokens.NodeAttribute.insert, "interface_name" -> name, "openended" -> openended) {
+            case None => t.callForKeys(Tokens.NodeAttribute.insert, "interface_name" -> name, "openended" -> openended)
+            {
               k : Int => id = Some(k)
             }
           }
+      }
+    }
+
+    lazy val options = {
+      broker.readOnly() {
+        _.selectAll(Tokens.AttributeOption.selectOptionsByAttributeId, "attribute_id" -> id.get)
       }
     }
   }
@@ -600,11 +684,29 @@ package object db {
   }
 
   class ConnectionType(
-    val id : Option[Int], val name : String, val bidirectional : Boolean, val complimentTypeId : Int
+    var id : Option[Int], var name : String, var bidirectional : Boolean = false, var complimentTypeId : Int = 0
     ) extends Dao {
     override def toString = "ConnectionType[%s] (name: %s)".format(id, name)
 
     lazy val complimentType = ConnectionType.getMem(complimentTypeId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => t.callForUpdate(
+              Tokens.ConnectionType.update, "connection_type_id" -> _id, "interface_name" -> name,
+              "bidirectional" -> bidirectional, "compliment_connection_type_id" -> complimentType.id.get
+            )
+            case None => t.callForKeys(
+              Tokens.ConnectionType.insert, "interface_name" -> name, "bidirectional" -> bidirectional,
+              "compliment_connection_type_id" -> complimentType.id.get
+            ) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object ConnectionType extends DaoHelper[ConnectionType] {
@@ -635,8 +737,8 @@ package object db {
   }
 
   class Connection(
-    val id : Option[Int], val connectionTypeId : Int, val connectorId : Int, val connectorTypeId : Int,
-    val connecteeId : Int, val connecteeTypeId : Int
+    var id : Option[Int], var connectionTypeId : Int, var connectorId : Int, var connectorTypeId : Int,
+    var connecteeId : Int, var connecteeTypeId : Int
     ) extends Dao {
     override def toString = "Connection[%s] (type: %s[%d], connector: %d (%s[%d]), connectee: %d (%s[%d])".format(
       id, ConnectionType.getMem(connectionTypeId), connectionTypeId, connectorId, NodeType.getMem(connectorTypeId).name,
@@ -647,6 +749,26 @@ package object db {
     lazy val connecteeType = NodeType.getMem(connecteeTypeId)
     lazy val connectorType = NodeType.getMem(connectorTypeId)
     lazy val connectionType = ConnectionType.getMem(connectionTypeId)
+
+    val connectee = Node.get(connecteeId)
+    val connector = Node.get(connectorId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => throw new DaoException("Connections cannot be updated: " + this)
+            case None => t.callForKeys(
+              Tokens.Connection.insert, "connection_type_id" -> connectionType.id.get,
+              "connector_node_id" -> connectorId,
+              "connector_node_type_id" -> connectorType.id.get, "connectee_node_id" -> connecteeId,
+              "connectee_node_type_id" -> connecteeType.id.get
+            ) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object Connection extends DaoHelper[Connection] {
@@ -676,6 +798,31 @@ package object db {
     }
 
     def apply(
+      connectionId : Int, connectionTypeId : Int, connectee : Node, connecteeTypeId : Int,
+      connector : Node,
+      connectorTypeId : Int
+      ) : Connection = {
+      apply(
+        connectionId, connectionTypeId, connectee.id.get,
+        connecteeTypeId,
+        connector.id.get,
+        connectorTypeId
+      )
+    }
+
+    def apply(
+      connectionId : Int, connectionType : ConnectionType, connectee : Node, connecteeType : NodeType,
+      connector : Node,
+      connectorType : NodeType
+      ) : Connection = {
+      apply(
+        connectionId, connectionType.id.get, connectee.id.get, connecteeType.id.get,
+        connector.id.get,
+        connectorType.id.get
+      )
+    }
+
+    def apply(
       connectionTypeId : Int, connecteeId : Int, connecteeTypeId : Int, connectorId : Int,
       connectorTypeId : Int
       ) : Connection = {
@@ -694,6 +841,29 @@ package object db {
       apply(
         connectionType.id.get, connecteeId, connecteeType.id.get,
         connectorId,
+        connectorType.id.get
+      )
+    }
+
+    def apply(
+      connectionTypeId : Int, connectee : Node, connecteeTypeId : Int, connector : Node,
+      connectorTypeId : Int
+      ) : Connection = {
+      new Connection(
+        None, connectionTypeId, connectee.id.get, connecteeTypeId,
+        connector.id.get,
+        connectorTypeId
+      )
+    }
+
+    def apply(
+      connectionType : ConnectionType, connectee : Node, connecteeType : NodeType,
+      connector : Node,
+      connectorType : NodeType
+      ) : Connection = {
+      apply(
+        connectionType.id.get, connectee.id.get, connecteeType.id.get,
+        connector.id.get,
         connectorType.id.get
       )
     }
@@ -753,6 +923,8 @@ package object db {
     object ConnectionType {
       val selectById = Token('selectConnectionTypeById, ConnectionTypeExtractor)
       val selectByName = Token('selectConnectionTypeByName, ConnectionTypeExtractor)
+      val insert = Token('insertConnectionType)
+      val update = Token('updateConnectionType)
     }
 
     object Template {
@@ -775,6 +947,15 @@ package object db {
       val update = Token('updateAttribute)
       val insert = Token('insertAttribute)
     }
+
+    object AttributeOption {
+      val selectById = Token('selectAttributeOptionById, AttributeOptionExtractor)
+      val selectOptionsByAttributeId = Token('selectAttributeOptionsByAttributeId, AttributeOptionExtractor)
+      val update = Token('updateAttributeOption)
+      val insert = Token('insertAttributeOption)
+    }
+
   }
+
 }
 
