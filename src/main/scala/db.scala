@@ -137,7 +137,7 @@ package object db {
           id match {
             /* TODO: NodeTypes should really never by updated ( maybe just interface_name ) */
             case Some(_id) => t.callForUpdate(
-              Tokens.NodeType.update, "node_type_id" -> id, "node_type_pool_id" -> poolId, "interface_name" -> name
+              Tokens.NodeType.update, "node_type_id" -> _id, "node_type_pool_id" -> poolId, "interface_name" -> name
             )
             case None => t.callForKeys(Tokens.NodeType.insert, "node_type_pool_id" -> id, "interface_name" -> name) {
               k : Int => id = Some(k)
@@ -211,7 +211,7 @@ package object db {
           id match {
             /* TODO: Templates should never really be updated ( maybe just interface_name ) */
             case Some(_id) => t.callForUpdate(
-              Tokens.Template.update, "template_id" -> id, "node_type_id" -> nodeType.id.get, "interface_name" -> name
+              Tokens.Template.update, "template_id" -> _id, "node_type_id" -> nodeType.id.get, "interface_name" -> name
             )
             case None => t.callForKeys(Tokens.Template.insert, "node_type_id" -> id, "interface_name" -> name) {
               k : Int => id = Some(k)
@@ -316,7 +316,7 @@ package object db {
         t =>
           id match {
             case Some(_id) => t.callForUpdate(
-              Tokens.TemplateAttribute.update, "template_attribute_map_id" -> id, "template_id" -> template.id.get,
+              Tokens.TemplateAttribute.update, "template_attribute_map_id" -> _id, "template_id" -> template.id.get,
               "attribute_id" -> attribute.id.get, "optional" -> optional, "default_value" -> value
             )
             case None => t.callForKeys(
@@ -501,13 +501,27 @@ package object db {
   }
 
   class NodeAttribute(
-    val id : Option[Int], val nodeId : Int, val attributeId : Int, val value : String
+    var id : Option[Int], var nodeId : Int, var attributeId : Int, var value : String
     ) extends Dao {
     override def toString = "NodeAttribute[%s] (nodeId: %d, attribute: %s[%d], value: %s".format(
       id, nodeId, Attribute.get(attributeId).name, attributeId, value
     )
 
     lazy val attribute = Attribute.getMem(attributeId)
+
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => t.callForUpdate(
+              Tokens.NodeAttribute.update, "node_attribute_map_id" -> _id, "node_id" -> nodeId, "attribute_id" -> attributeId, "value" -> value
+            )
+            case None => t.callForKeys(Tokens.NodeAttribute.insert, "node_id" -> nodeId, "attribute_id" -> attributeId, "value" -> value) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object NodeAttribute extends DaoHelper[NodeAttribute] {
@@ -546,8 +560,21 @@ package object db {
     }
   }
 
-  class Attribute(val id : Option[Int], val name : String, val openended : Boolean) extends Dao {
+  class Attribute(var id : Option[Int], var name : String, var openended : Boolean) extends Dao {
     override def toString = "Attribute[%s] (name: %s)".format(id, name)
+    def save() = {
+      broker.transaction() {
+        t =>
+          id match {
+            case Some(_id) => t.callForUpdate(
+              Tokens.Attribute.update, "attribute_id" -> _id, "interface_name" -> name, "openended" -> openended
+            )
+            case None => t.callForKeys(Tokens.NodeAttribute.insert, "interface_name" -> name, "openended" -> openended) {
+              k : Int => id = Some(k)
+            }
+          }
+      }
+    }
   }
 
   object Attribute extends DaoHelper[Attribute] {
@@ -699,22 +726,28 @@ package object db {
     object Node {
       val selectById = Token('selectNodeById, NodeExtractor)
       val selectByIds = Token('selectNodeByIds, NodeExtractor)
+      val insert = Token('insertNode)
     }
 
     object NodeType {
       val selectById = Token('selectNodeTypeById, NodeTypeExtractor)
       val selectByName = Token('selectNodeTypeByName, NodeTypeExtractor)
       val selectByPoolId = Token('selectNodeTypesByPoolId, NodeTypeExtractor)
+      val update = Token('updateNodeType)
+      val insert = Token('insertNodeType)
     }
 
     object NodeAttribute {
       val selectById = Token('selectNodeAttributeById, NodeAttributeExtractor)
+      val insert = Token('insertNodeAttribute)
+      val update = Token('updateNodeAttribute)
     }
 
     object Connection {
       val selectById = Token('selectConnectionById, ConnectionExtractor)
       val selectByConnectorNodeId = Token('selectConnectionsByConnectorNodeId, ConnectionExtractor)
       val selectByConnecteeNodeId = Token('selectConnectionsByConnecteeNodeId, ConnectionExtractor)
+      val insert = Token('insertConnection)
     }
 
     object ConnectionType {
@@ -726,18 +759,22 @@ package object db {
       val selectById = Token('selectTemplateById, TemplateExtractor)
       val selectByName = Token('selectTemplateByName, TemplateExtractor)
       val selectByQuery = Token('selectTemplateByQuery, TemplateExtractor)
+      val update = Token('updateTemplate)
+      val insert = Token('insertTemplate)
     }
 
     object TemplateAttribute {
       val selectById = Token('selectTemplateAttributeById, TemplateAttributeExtractor)
+      val update = Token('updateTemplateAttribute)
+      val insert = Token('insertTemplateAttribute)
     }
 
     object Attribute {
       val selectById = Token('selectAttributeById, AttributeExtractor)
       val selectByName = Token('selectAttributeByName, AttributeExtractor)
+      val update = Token('updateAttribute)
+      val insert = Token('insertAttribute)
     }
-
   }
-
 }
 
