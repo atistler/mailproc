@@ -17,7 +17,7 @@ class NodeTypeTest extends Specification {
       node_types.length must_== 20
     }
   }
-  val node_type = NodeType.get(1057)
+  val node_type = NodeType.getMem(1057)
   "NodeType with node_type_id of 1057" should {
     "have name 'Service Request" in {
       node_type.name must_== "Service Request"

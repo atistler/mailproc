@@ -10,7 +10,7 @@ import db._
  */
 
 class ConnectionTest extends Specification {
-  val c = Connection.get(3684799)
+  val c = Connection.getMem(3684799)
   "connection with connection_id 3684799" should {
     "have connectionType of 'Created By'" in {
       c.connectionType.name must_== "Created By"
@@ -22,10 +22,10 @@ class ConnectionTest extends Specification {
       c.connecteeType.name must_== "Activity"
     }
     "have connector Name of 'Lin, Xiao Fen '" in {
-      c.connector.getAttr("Name").get must_== "Lin, Xiao Fen "
+      c.connector.attr("Name").get.value must_== "Lin, Xiao Fen "
     }
     "have connectee Name of 'Activity 2-721462'" in {
-      c.connectee.getAttr("Name").get must_== "Activity 2-721462"
+      c.connectee.attr("Name").get.value must_== "Activity 2-721462"
     }
   }
 

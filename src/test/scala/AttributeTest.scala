@@ -11,13 +11,20 @@ import db._
 
 class AttributeTest extends Specification {
 
-  val a1 = Attribute.get(1)
+  val a1 = Attribute.getMem(1)
+  val a3 = Attribute.getMem(1)
+  val a4 = Attribute.getMem(1)
+  val a5 = Attribute.getMem(1)
+  val a6 = Attribute.getMem(1)
+  val a7 = Attribute.getMem(1)
+  val a8 = Attribute.getMem(1)
+  val a9 = Attribute.getMem(1)
   "attribute with attribute_id 1" should  {
     "have interface_name of 'Name'" in {
       a1.name must_== "Name"
     }
   }
-  val a2 = Attribute.get(1072)
+  val a2 = Attribute.getMem(1072)
   "attribute with attribute_id 1072" should {
     "have interface_name of 'Service Request Sub-Status'" in {
       a2.name must_== "Service Request Sub-Status"

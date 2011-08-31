@@ -11,7 +11,8 @@ import db._
 
 class TemplateAttributeTest extends Specification {
 
-  val template_attribute = TemplateAttribute.get(1001)
+  val template_attribute = TemplateAttribute.getMem(1001)
+
   "The template_attribute with id 1001" should {
     "have template_id of 1" in {
       template_attribute.template.id.get must_== 1
