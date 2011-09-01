@@ -11,14 +11,23 @@ class ConnectionSeq(iseq : IndexedSeq[Connection]) {
 }
 
 class Connection(
-  var id : Option[Int], var connectionTypeId : Int, var connectorId : Int, var connectorTypeId : Int,
-  var connecteeId : Int, var connecteeTypeId : Int
+  val id : Option[Int], val connectionTypeId : Int, val connectorId : Int, val connectorTypeId : Int,
+  val connecteeId : Int, val connecteeTypeId : Int
   ) extends Dao {
   override def toString = "Connection[%s] (type: %s[%d], connector: %d (%s[%d]), connectee: %d (%s[%d])".format(
     id, ConnectionType.getMem(connectionTypeId), connectionTypeId, connectorId, NodeType.getMem(connectorTypeId).name,
     connectorTypeId, connecteeId,
     NodeType.getMem(connecteeTypeId), connecteeTypeId
   )
+
+  def copy(
+    id : Option[Int] = this.id, connectionTypeId : Int = this.connectionTypeId, connectorId : Int = this.connectorId,
+    connectorTypeId : Int = this.connectorTypeId, connecteeId : Int = this.connecteeId,
+    connecteeTypeId : Int = this.connecteeTypeId
+    ) = {
+    new Connection(id, connectionTypeId, connectorId, connectorTypeId, connecteeId, connecteeTypeId)
+  }
+
   lazy val connectionType = ConnectionType.getMem(connectionTypeId)
   lazy val connectee = Node.get(connecteeId)
   lazy val connecteeType = NodeType.getMem(connecteeTypeId)
@@ -26,17 +35,14 @@ class Connection(
   lazy val connectorType = NodeType.getMem(connectorTypeId)
 
   def save() = {
-    broker.transaction() {
+    broker.transactional(connection) {
       t =>
         id match {
           case Some(_id) => throw new DaoException("Connections cannot be updated: " + this)
-          case None => t.callForKeys(
-            Tokens.Connection.insert, "connection_type_id" -> connectionType.id.get,
-            "connector_node_id" -> connectorId,
-            "connector_node_type_id" -> connectorType.id.get, "connectee_node_id" -> connecteeId,
-            "connectee_node_type_id" -> connecteeType.id.get
+          case None => t.executeForKeys(
+            Tokens.Connection.insert, "connection" -> this
           ) {
-            k : Int => id = Some(k)
+            k : Int => copy(id = Some(k))
           }
         }
     }
@@ -63,34 +69,49 @@ object Connection extends DaoHelper[Connection] {
     connectorType : NodeType
     ) : Connection = {
     apply(
-      connectionId, connectionType.id.get, connecteeId, connecteeType.id.get,
-      connectorId,
+      connectionId, connectionType.id.get, connecteeId, connecteeType.id.get, connectorId,
       connectorType.id.get
     )
   }
 
   def apply(
-    connectionId : Int, connectionTypeId : Int, connectee : Node, connecteeTypeId : Int,
-    connector : Node,
-    connectorTypeId : Int
+    connectionId : Int, connectionType : String, connecteeId : Int, connecteeType : String,
+    connectorId : Int, connectorType : String
+    ) : Connection = {
+    apply(
+      connectionId, ConnectionType.get(connectionType), connecteeId, NodeType.get(connecteeType),
+      connectorId, NodeType.get(connectorType)
+    )
+  }
+
+  def apply(
+    connectionId : Int, connectionTypeId : Int, connectee : Node, connector : Node
     ) : Connection = {
     apply(
       connectionId, connectionTypeId, connectee.id.get,
-      connecteeTypeId,
+      connectee.nodeTypeId,
       connector.id.get,
-      connectorTypeId
+      connector.nodeTypeId
     )
   }
 
   def apply(
-    connectionId : Int, connectionType : ConnectionType, connectee : Node, connecteeType : NodeType,
-    connector : Node,
-    connectorType : NodeType
+    connectionId : Int, connectionType : ConnectionType, connectee : Node, connector : Node
     ) : Connection = {
     apply(
-      connectionId, connectionType.id.get, connectee.id.get, connecteeType.id.get,
+      connectionId, connectionType.id.get, connectee.id.get, connectee.nodeTypeId,
       connector.id.get,
-      connectorType.id.get
+      connector.nodeTypeId
+    )
+  }
+
+  def apply(
+    connectionId : Int, connectionType : String, connectee : Node, connector : Node
+    ) : Connection = {
+    apply(
+      connectionId, ConnectionType.get(connectionType), connectee.id.get, connectee.nodeTypeId,
+      connector.id.get,
+      connector.nodeTypeId
     )
   }
 
@@ -107,8 +128,7 @@ object Connection extends DaoHelper[Connection] {
 
   def apply(
     connectionType : ConnectionType, connecteeId : Int, connecteeType : NodeType,
-    connectorId : Int,
-    connectorType : NodeType
+    connectorId : Int, connectorType : NodeType
     ) : Connection = {
     apply(
       connectionType.id.get, connecteeId, connecteeType.id.get,
@@ -118,30 +138,38 @@ object Connection extends DaoHelper[Connection] {
   }
 
   def apply(
-    connectionTypeId : Int, connectee : Node, connecteeTypeId : Int, connector : Node,
-    connectorTypeId : Int
+    connectionType : String, connecteeId : Int, connecteeType : String,
+    connectorId : Int, connectorType : String
     ) : Connection = {
-    new Connection(
-      None, connectionTypeId, connectee.id.get, connecteeTypeId,
-      connector.id.get,
-      connectorTypeId
+    apply(
+      ConnectionType.get(connectionType), connecteeId, NodeType.get(connecteeType),
+      connectorId, NodeType.get(connectorType)
     )
   }
 
   def apply(
-    connectionType : ConnectionType, connectee : Node, connecteeType : NodeType,
-    connector : Node,
-    connectorType : NodeType
+    connectionTypeId : Int, connectee : Node, connector : Node
     ) : Connection = {
     apply(
-      connectionType.id.get, connectee.id.get, connecteeType.id.get,
-      connector.id.get,
-      connectorType.id.get
+      connectionTypeId, connectee.id.get, connectee.nodeTypeId,
+      connector.id.get, connector.nodeTypeId
+    )
+  }
+
+  def apply(connectionType : ConnectionType, connectee : Node, connector : Node) : Connection = {
+    apply(
+      connectionType.id.get, connectee, connector
+    )
+  }
+
+  def apply(connectionType : String, connectee : Node, connector : Node) : Connection = {
+    apply(
+      ConnectionType.get(connectionType), connectee, connector
     )
   }
 
   def getOption(id : Int) = {
-    broker.readOnly() {
+    broker.transactional(connection) {
       s =>
         s.selectOne(Tokens.Connection.selectById, "connection_id" -> id)
     }

@@ -1,3 +1,6 @@
 UPDATE  template_attributes_map
-SET     template_id = :template_id, attribute_id = :attribute_id, optional = :optional, default_value = :default_value
-WHERE   template_attribute_map_id = :template_attribute_map_id
+SET     template_id = :templateAttribute.templateId,
+        attribute_id = :templateAttribute.attributeId,
+        optional = :templateAttribute.optional,
+        default_value = :templateAttribute.value
+WHERE   template_attribute_map_id = :templateAttribute.id.get

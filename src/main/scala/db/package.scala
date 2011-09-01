@@ -8,11 +8,14 @@ package object db {
   private val URL = "jdbc:postgresql://lw-dev/logicops2"
   private val USERNAME = "logicops2"
 
-  private val ds : javax.sql.DataSource = new SimpleDataSource(URL, "org.postgresql.Driver") {
+  private[db] val ds : javax.sql.DataSource = new SimpleDataSource(URL, "org.postgresql.Driver") {
     override def getConnection() = {
       getConnection(USERNAME, "")
     }
   }
+
+  val connection = ds.getConnection
+  connection.setAutoCommit(false)
 
   implicit def IndexedSeq2ConnectionSeq(i : IndexedSeq[Connection]) = {
     new ConnectionSeq(i);
@@ -22,8 +25,8 @@ package object db {
     new NodeSeq(n)
   }
 
-  private val configFolder = new File("sql")
-  private val builder = new BrokerBuilder(ds) with dynamic.FreeMarkerSupport
+  private[db] val configFolder = new File("sql")
+  private[db] val builder = new BrokerBuilder(ds) with dynamic.FreeMarkerSupport
   FileSystemRegistrant(configFolder).register(builder)
   builder.verify(Tokens.idSet)
   val broker = builder.build()
@@ -68,7 +71,7 @@ package object db {
 
   trait Dao {
 
-    var id : Option[Int]
+    val id : Option[Int]
 
     sealed trait State {
       def name : String
@@ -100,13 +103,13 @@ package object db {
     def getOption(id : Int) : Option[T]
 
     protected def selectOneOption(token : Token[T], params : (String, Any)*) = {
-      broker.readOnly() {
+      broker.transactional(connection) {
         _.selectOne(token, params : _*)
       }
     }
 
     protected def selectAllOption(token : Token[T], params : (String, Any)*) = {
-      broker.readOnly() {
+      broker.transactional(connection) {
         _.selectAll(token, params : _*)
       }
     }
@@ -134,7 +137,7 @@ package object db {
     object NodeAttribute {
       val selectById = Token('selectNodeAttributeById, NodeAttributeExtractor)
       val insert = Token[Int]('insertNodeAttribute)
-      val update = Token('updateNodeAttribute)
+      val update = Token[Int]('updateNodeAttribute)
     }
 
     object Connection {

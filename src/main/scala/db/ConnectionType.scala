@@ -3,25 +3,30 @@ package db {
 import org.orbroker._
 
 class ConnectionType(
-  var id : Option[Int], var name : String, var bidirectional : Boolean = false, var complimentTypeId : Int = 0
+  val id : Option[Int], val name : String, var bidirectional : Boolean = false, val complimentTypeId : Int = 0
   ) extends Dao {
   override def toString = "ConnectionType[%s] (name: %s)".format(id, name)
+
+  def copy(
+    id : Option[Int] = this.id, name : String = this.name, bidirectional : Boolean = this.bidirectional,
+    complimentTypeId : Int = this.complimentTypeId
+    ) = {
+    new ConnectionType(id, name, bidirectional, complimentTypeId)
+  }
 
   lazy val complimentType = ConnectionType.getMem(complimentTypeId)
 
   def save() = {
-    broker.transaction() {
+    broker.transactional(connection) {
       t =>
         id match {
-          case Some(_id) => t.callForUpdate(
-            Tokens.ConnectionType.update, "connection_type_id" -> _id, "interface_name" -> name,
-            "bidirectional" -> bidirectional, "compliment_connection_type_id" -> complimentType.id.get
+          case Some(_id) => t.execute(
+            Tokens.ConnectionType.update, "connectionType" -> this
           )
-          case None => t.callForKeys(
-            Tokens.ConnectionType.insert, "interface_name" -> name, "bidirectional" -> bidirectional,
-            "compliment_connection_type_id" -> complimentType.id.get
+          case None => t.executeForKeys(
+            Tokens.ConnectionType.insert, "connectionType" -> this
           ) {
-            k : Int => id = Some(k)
+            k : Int => copy(id = Some(k))
           }
         }
     }
@@ -36,13 +41,22 @@ object ConnectionType extends DaoHelper[ConnectionType] {
   def apply(id : Int, name : String, bidirectional : Boolean, complimentType : ConnectionType) : ConnectionType = {
     apply(id, name, bidirectional, complimentType.id.get)
   }
+  def apply(name : String, bidirectional : Boolean, complimentTypeId : Int) : ConnectionType = {
+    new ConnectionType(None, name, bidirectional, complimentTypeId)
+  }
+
+  def apply(name : String, bidirectional : Boolean, complimentType : ConnectionType) : ConnectionType = {
+    apply(name, bidirectional, complimentType.id.get)
+  }
 
   def getOption(id : Int) = {
     selectOneOption(Tokens.ConnectionType.selectById, "connection_type_id" -> id)
   }
+
   def getOption(name : String) = {
     selectOneOption(Tokens.ConnectionType.selectByName, "interface_name" -> name)
   }
+
   def get(name : String) = {
     getOption(name).get
   }

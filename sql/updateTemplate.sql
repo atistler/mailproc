@@ -1,3 +1,4 @@
 UPDATE  templates
-SET     node_type_id = :node_type_id, interface_name = :interface_name
-WHERE   template_id = :template_id
+SET     node_type_id = :template.nodeTypeId,
+        interface_name = :template.name
+WHERE   template_id = :template.id.get

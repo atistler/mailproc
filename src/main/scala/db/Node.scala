@@ -1,7 +1,7 @@
 package db {
 
 import org.orbroker._
-import scala.collection.mutable.HashMap
+import scala.collection.mutable
 
 class NodeSeq(nseq : IndexedSeq[Node]) {
   def nodes() {
@@ -11,28 +11,45 @@ class NodeSeq(nseq : IndexedSeq[Node]) {
   }
 }
 
-class Node(var id : Option[Int], var nodeTypeId : Int, var templateId : Int) extends Dao {
-  private[db] val attributes = new HashMap[String, NodeAttribute]()
+class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao {
+  private[db] val attributes = mutable.Map.empty[String, NodeAttribute]
 
+  private val self = this
   override def toString = "Node[%s] (nodeType: %s[%d], template: %s[%d])".format(
-    id, nodeType.name, nodeTypeId, template, templateId
+    id, nodeType.name, nodeTypeId, template.name, templateId
   )
+
+  def copy(id : Option[Int] = this.id, nodeTypeId : Int = this.nodeTypeId, templateId : Int = this.templateId) = {
+    new Node(id, nodeTypeId, templateId).attributes ++= this.attributes
+  }
 
   object connectors {
     def apply() = {
-      val c = broker.readOnly() {
-        s => s.selectAll(Tokens.Node.selectByConnectee, "connecteeId" -> id)
+      broker.transactional(connection) {
+        println(self)
+        s => s.selectAll(Tokens.Node.selectByConnectee, "node" -> self)
       }
-      c
+    }
+    def having(
+      connectionTypes : List[ConnectionType] = Nil, connectorTypes : List[NodeType] = Nil,
+      connecteeTypes : List[NodeType] = Nil
+      ) = {
+      broker.transactional(connection) {
+        s => s.selectAll(
+          Tokens.Node.selectByConnectee, "node" -> self,
+          "connectionTypes" -> mapToIds(connectionTypes).toArray, "connectorTypes" -> mapToIds(connectorTypes).toArray,
+          "connecteeTypes" -> mapToIds(connecteeTypes).toArray
+        )
+      }
     }
   }
 
   object connectees {
     def apply() = {
-      val c = broker.readOnly() {
-        s => s.selectAll(Tokens.Node.selectByConnector, "connectorId" -> id)
+      broker.transactional(connection) {
+        println(self)
+        s => s.selectAll(Tokens.Node.selectByConnector, "node" -> self)
       }
-      c
     }
 
     /*
@@ -47,30 +64,15 @@ class Node(var id : Option[Int], var nodeTypeId : Int, var templateId : Int) ext
       connectionTypes : List[ConnectionType] = Nil, connectorTypes : List[NodeType] = Nil,
       connecteeTypes : List[NodeType] = Nil
       ) = {
-      broker.readOnly() {
+      broker.transactional(connection) {
         s => s.selectAll(
-          Tokens.Node.selectByConnector, "connectorId" -> id,
-          "connectionTypeIds" -> mapToIds(connectionTypes), "connectorTypeIds" -> mapToIds(connectorTypes),
-          "connecteeTypeIds" -> mapToIds(connecteeTypes)
+          Tokens.Node.selectByConnector, "node" -> self,
+          "connectionTypes" -> mapToIds(connectionTypes).toArray, "connectorTypes" -> mapToIds(connectorTypes).toArray,
+          "connecteeTypes" -> mapToIds(connecteeTypes).toArray
         )
       }
     }
   }
-
-  /*
-  def connectees() = {
-    broker.readOnly() {
-      s => s.selectAll(Tokens.Connection.selectByConnectorNodeId, "connector_node_id" -> id)
-    }
-  }
-  */
-  /*
-  def connectors() = {
-    broker.readOnly() {
-      s => s.selectAll(Tokens.Connection.selectByConnectee, "connectee_node_id" -> id)
-    }
-  }
-  */
 
   lazy val nodeType = NodeType.getMem(nodeTypeId)
   lazy val template = Template.getMem(templateId)
@@ -86,44 +88,50 @@ class Node(var id : Option[Int], var nodeTypeId : Int, var templateId : Int) ext
     }
   }
 
+  def addConnection(connectionType : ConnectionType, node: Node) = {
+    val c = Connection(connectionType, this, node)
+    c
+  }
+
+  def setAttr(attribute: Attribute, value : String) = {
+    setAttr(attribute.name, value)
+  }
+
   def setAttr(attributeName : String, value : String) = {
     attr(attributeName) match {
       case Some(na) => {
-        broker.transaction() {
-          _.callForUpdate(
-            Tokens.NodeAttribute.update, "node_attribute_map_id" -> na.id.get, "attribute_id" -> na.attributeId,
-            "value" -> value
+        val newNa = na.copy(value = value)
+        broker.transactional(connection) {
+          _.execute(
+            Tokens.NodeAttribute.update, "nodeAttribute" -> newNa
           )
         }
-        na.value = value
+        attributes += attributeName -> newNa
         this
       }
 
       case None => {
-        broker.transaction() {
-          _.callForKeys(
+        val na = NodeAttribute(this, Attribute.get(attributeName), value)
+        val key = broker.transactional(connection) {
+          _.executeForKey(
             Tokens.NodeAttribute.insert, "attribute_id" -> Attribute.get(attributeName).id.get, "value" -> value
-          ) {
-            k : Int => {
-              val na = NodeAttribute(k, this, Attribute.get(attributeName), value)
-              attributes += attributeName -> na
-            }
-          }
+          )
         }
+        attributes += attributeName -> na.copy(id = key)
         this
       }
     }
   }
 
   def save() = {
-    broker.transaction() {
+    broker.transactional(connection) {
       t =>
         id match {
           case Some(_id) => throw new DaoException("Nodes cannot be updated: " + this)
-          case None => t.callForKeys(
-            Tokens.Node.insert, "node_type_id" -> nodeType.id.get, "template_id" -> template.id.get
+          case None => t.executeForKeys(
+            Tokens.Node.insert, "node" -> this
           ) {
-            k : Int => id = Some(k)
+            k : Int => copy(id = Some(k))
           }
         }
     }
@@ -156,32 +164,24 @@ object Node extends DaoHelper[Node] {
     new Node(Some(id), nodeTypeId, templateId)
   }
 
-  def apply(id : Int, nodeType : NodeType, templateId : Int) : Node = {
-    apply(id, nodeType.id.get, templateId)
-  }
-
-  def apply(id : Int, nodeTypeId : Int, template : Template) : Node = {
-    apply(id, nodeTypeId, template.id.get)
-  }
-
   def apply(id : Int, nodeType : NodeType, template : Template) : Node = {
     apply(id, nodeType.id.get, template.id.get)
+  }
+
+  def apply(id : Int, nodeType : String, template : String) : Node = {
+    apply(id, NodeType.get(nodeType), Template.get(template))
   }
 
   def apply(nodeTypeId : Int, templateId : Int) : Node = {
     new Node(None, nodeTypeId, templateId)
   }
 
-  def apply(nodeType : NodeType, templateId : Int) : Node = {
-    apply(nodeType.id.get, templateId);
-  }
-
-  def apply(nodeTypeId : Int, template : Template) : Node = {
-    apply(nodeTypeId, template.id.get)
-  }
-
   def apply(nodeType : NodeType, template : Template) : Node = {
     apply(nodeType.id.get, template.id.get)
+  }
+
+  def apply(nodeType : String, template : String) : Node = {
+    apply(NodeType.get(nodeType), Template.get(template))
   }
 
   def getOption(id : Int) = {
@@ -189,7 +189,8 @@ object Node extends DaoHelper[Node] {
   }
 
   def getAll(ids : Int*) = {
-    selectAllOption(Tokens.Node.selectByIds, "nodeIds" -> ids.toArray)
+    val nodes = selectAllOption(Tokens.Node.selectByIds, "nodeIds" -> ids.toArray)
+    nodes.foldLeft(mutable.Map.empty[Int,Node]) { (m,n) => m(n.id.get) = n; m }
   }
 }
 

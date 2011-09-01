@@ -2,19 +2,24 @@ package db {
 
 import org.orbroker._
 
-class NodeType(var id : Option[Int], var poolId : Int, var name : String) extends Dao {
+class NodeType(val id : Option[Int], val poolId : Int, val name : String) extends Dao {
+
   override def toString = "NodeType[%s] (name: %s, poolId: %d)".format(id, name, poolId)
 
+  def copy(id : Option[Int] = this.id, poolId : Int = this.poolId, name : String = this.name) = {
+    new NodeType(id, poolId, name)
+  }
+
   def save() = {
-    broker.transaction() {
+    broker.transactional(connection) {
       t =>
         id match {
           /* TODO: NodeTypes should really never by updated ( maybe just interface_name ) */
-          case Some(_id) => t.callForUpdate(
-            Tokens.NodeType.update, "node_type_id" -> _id, "node_type_pool_id" -> poolId, "interface_name" -> name
+          case Some(_id) => t.execute(
+            Tokens.NodeType.update, "nodeType" -> this
           )
-          case None => t.callForKeys(Tokens.NodeType.insert, "node_type_pool_id" -> id, "interface_name" -> name) {
-            k : Int => id = Some(k)
+          case None => t.executeForKeys(Tokens.NodeType.insert, "nodeType" -> this) {
+            k : Int => copy(id = Some(k))
           }
         }
     }
@@ -43,7 +48,7 @@ object NodeType extends DaoHelper[NodeType] {
   }
 
   def allByPoolId(poolId : Int) = {
-    broker.readOnly() {
+    broker.transactional(connection) {
       s => s.selectAll(Tokens.NodeType.selectByPoolId, "node_type_pool_id" -> poolId)
     }
   }

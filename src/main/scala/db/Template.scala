@@ -3,10 +3,14 @@ package db {
 import org.orbroker._
 import scala.collection.mutable.HashMap
 
-class Template(var id : Option[Int], var nodeTypeId : Int, var name : String) extends Dao {
+class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends Dao {
   private[db] val attributes = new HashMap[String, TemplateAttribute]()
 
   override def toString = "Template[%s] (name: %s, nodeType: %s[%d])".format(id, name, nodeType.name, nodeTypeId)
+
+  def copy(id : Option[Int] = this.id, nodeTypeId : Int = this.nodeTypeId, name : String = this.name) = {
+    new Template(id, nodeTypeId, name)
+  }
 
   lazy val nodeType = NodeType.getMem(nodeTypeId)
 
@@ -22,15 +26,15 @@ class Template(var id : Option[Int], var nodeTypeId : Int, var name : String) ex
   }
 
   def save() = {
-    broker.transaction() {
+    broker.transactional(connection) {
       t =>
         id match {
           /* TODO: Templates should never really be updated ( maybe just interface_name ) */
-          case Some(_id) => t.callForUpdate(
-            Tokens.Template.update, "template_id" -> _id, "node_type_id" -> nodeType.id.get, "interface_name" -> name
+          case Some(_id) => t.execute(
+            Tokens.Template.update, "template" -> this
           )
-          case None => t.callForKeys(Tokens.Template.insert, "node_type_id" -> id, "interface_name" -> name) {
-            k : Int => id = Some(k)
+          case None => t.executeForKeys(Tokens.Template.insert, "template" -> this) {
+            k : Int => copy(id = Some(k))
           }
         }
     }
@@ -50,12 +54,20 @@ object Template extends DaoHelper[Template] {
     apply(nodeType.id.get, name)
   }
 
+  def apply(nodeType : String, name : String) : Template = {
+    apply(NodeType.get(nodeType), name)
+  }
+
   def apply(id : Int, nodeTypeId : Int, name : String) : Template = {
     new Template(Some(id), nodeTypeId, name)
   }
 
   def apply(id : Int, nodeType : NodeType, name : String) : Template = {
     apply(id, nodeType.id.get, name)
+  }
+
+  def apply(id : Int, nodeType : String, name : String) : Template = {
+    apply(id, NodeType.get(nodeType), name)
   }
 
   def getOption(id : Int) = {
@@ -71,25 +83,26 @@ object Template extends DaoHelper[Template] {
   }
 
   def all(nodeTypes : List[NodeType] = Nil, attributes : List[Attribute] = Nil) : IndexedSeq[Template] = {
-    broker.readOnly() {
+    broker.transactional(connection) {
       s => s.selectAll(
         Tokens.Template.selectByQuery,
         "nodeTypeIds" -> mapToIds(nodeTypes).toArray, "attributeIds" -> mapToIds(attributes).toArray
       )
     }
   }
- /*
+
+  /*
   def all[T](t : T*)(implicit m : Manifest[T]) : IndexedSeq[Template] = {
     val clazz = Class.forName(m.toString)
     if (clazz.isAssignableFrom(Attribute.getClass)) {
-      broker.readOnly() {
+      broker.transaction(connection) {
         s => s.selectAll(
           Tokens.Template.selectByQuery,
           "attributeIds" -> t.toArray
         )
       }
     } else if (clazz.isAssignableFrom(NodeType.getClass)) {
-      broker.readOnly() {
+      broker.transactional(connection) {
         s => s.selectAll(
           Tokens.Template.selectByQuery,
           "nodeTypeIds" -> t.toArray
