@@ -1,13 +1,5 @@
 import org.specs2.mutable._
-import db._
-
-/**
- * Created by IntelliJ IDEA.
- * User: atistler
- * Date: 8/22/11
- * Time: 1:53 PM
- * To change this template use File | Settings | File Templates.
- */
+import logicops.db._
 
 class ConnectionTest extends Specification {
   val c = Connection.getMem(3684799)
@@ -28,6 +20,8 @@ class ConnectionTest extends Specification {
       c.connectee.attr("Name").get.value must_== "Activity 2-721462"
     }
   }
-
-
+  c.find() match {
+    case Some(conn) => println(conn)
+    case None => println("not found")
+  }
 }

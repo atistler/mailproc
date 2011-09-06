@@ -15,16 +15,6 @@ AND     n.node_id = nam.node_id
     )
 </#if>
 
-<#if connectorTypes?? && (connectorTypes?size == 1)>
-    AND c.connector_node_type_id = :connectorTypes[0]
-<#elseif connectorTypes?? && (connectorTypes?size > 0)>
-    AND c.connector_node_type_id IN (
-    <#list connectorTypes as connectorType>
-        <#if (connecteeType_index > 0)> , </#if> :connectorType
-    </#list>
-    )
-</#if>
-
 <#if connecteeTypes?? && (connecteeTypes?size == 1)>
     AND c.connectee_node_type_id = :connecteeTypes[0]
 <#elseif connecteeTypes?? && (connecteeTypes?size > 0)>

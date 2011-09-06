@@ -1,15 +1,8 @@
+import logicops.util.RollbackSpec
 import org.specs2.mutable._
-import db._
+import logicops.db._
 
-/**
- * Created by IntelliJ IDEA.
- * User: atistler
- * Date: 8/22/11
- * Time: 1:53 PM
- * To change this template use File | Settings | File Templates.
- */
-
-class AttributeOptionTest extends Specification {
+class AttributeOptionTest extends Specification with RollbackSpec {
 
   val attribute_option = AttributeOption.getMem(1225)
   "attribute_option with attribute_option_id 1225" should {

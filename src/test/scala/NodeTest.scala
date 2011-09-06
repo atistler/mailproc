@@ -1,19 +1,8 @@
+import logicops.util.RollbackSpec
 import org.specs2.mutable._
-import org.specs2.specification._
-import db._
+import logicops.db._
 
-class NodeTest extends Specification {
-  var savepoint : java.sql.Savepoint = null
-
-  override def map(fs: => Fragments) = Step(startDb) ^ fs ^ Step(cleanDb)
-
-  def startDb() = {
-    savepoint = connection.setSavepoint()
-  }
-
-  def cleanDb() = {
-    connection.rollback(savepoint)
-  }
+class NodeTest extends Specification with RollbackSpec {
 
   val n1 = Node.getMem(527321)
   "The node with id 527321" should {
@@ -45,10 +34,10 @@ class NodeTest extends Specification {
       n1.connectors.having(connectionTypes=List(ConnectionType.get("Parent"))).length must_== 5
     }
     "have 10 children of node type Activity" in {
-      n1.connectors.having(connectionTypes=List(ConnectionType.get("Child")), connectorTypes=List(NodeType.get("Activity"))).length must_== 10
+      n1.connectors.having(connectionTypes=List(ConnectionType.get("Child")), nodeTypes=List(NodeType.get("Activity"))).length must_== 10
     }
     "have 0 children of node type Asset" in {
-      n1.connectors.having(connectionTypes=List(ConnectionType.get("Child")), connectorTypes=List(NodeType.get("Asset"))).length must_== 0
+      n1.connectors.having(connectionTypes=List(ConnectionType.get("Child")), nodeTypes=List(NodeType.get("Asset"))).length must_== 0
     }
   }
   val n2 = Node.getAll(119864,119866)
@@ -58,6 +47,13 @@ class NodeTest extends Specification {
     }
     "when updating Name to 2.0.0.0, name must equal 2.0.0.0" in {
       n2(119864).setAttr("Name", "2.0.0.0").attr("Name").get.value must_== "2.0.0.0"
+    }
+  }
+
+  "Creating new node" should {
+    "Have correct node_type" in {
+      val node = Node.createFrom("Generic Service Request")
+      node.nodeType.name must_== "Service Request"
     }
   }
 }

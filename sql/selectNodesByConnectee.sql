@@ -24,16 +24,6 @@ AND     n.node_id = nam.node_id
     )
 </#if>
 
-<#if connecteeTypes?? && (connecteeTypes?size == 1)>
-    AND c.connectee_node_type_id = :connecteeTypes[0]
-<#elseif connecteeTypes?? && (connecteeTypes?size > 0)>
-    AND c.connectee_node_type_id IN (
-    <#list connecteeTypes as connecteeType>
-        <#if (connecteeType_index > 0)> , </#if> :connecteeType
-    </#list>
-    )
-</#if>
-
 <#if node??>
     AND c.connectee_node_id = :node.id
 <#elseif nodes?? && (nodes?size == 1)>
