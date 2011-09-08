@@ -40,7 +40,9 @@ class AttributeTest extends Specification  {
   }
 
   trait a1 extends Scope with After {
-    def after = connection.rollback()
+    def after {
+      DatabaseContext.get().rollback()
+    }
 
     val a = Attribute("Test Attr2", false).save()
   }

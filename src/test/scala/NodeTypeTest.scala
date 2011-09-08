@@ -36,7 +36,9 @@ class NodeTypeTest extends Specification {
   }
 
   trait nt1 extends Scope with After {
-    def after = connection.rollback()
+    def after {
+      DatabaseContext.get().rollback()
+    }
     val nt = NodeType(1499, "Test Node Type").save()
   }
 

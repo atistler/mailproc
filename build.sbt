@@ -7,6 +7,8 @@ organization := "net.logicworks"
 
 scalaVersion := "2.9.0-1"
 
+mainClass := Some("mailproc.MailProc")
+
 resolvers += "Java.net Repo" at "http://download.java.net/maven/2/"
 
 resolvers ++= Seq(

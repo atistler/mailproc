@@ -16,8 +16,13 @@ class ConnectionTypeTest extends Specification {
       ConnectionType.getOption(ct.id.get) must_== None
     }
   }
+
   trait c1 extends Scope with After {
-    def after = connection.rollback()
+    def after {
+      DatabaseContext.get().rollback()
+    }
+
     val ct = ConnectionType("Test Conn Type", false, 0).save()
   }
+
 }
