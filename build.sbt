@@ -38,3 +38,5 @@ libraryDependencies += "postgresql" % "postgresql" % "8.4-701.jdbc4"
 
 retrieveManaged := true
 
+parallelExecution in Test := false
+

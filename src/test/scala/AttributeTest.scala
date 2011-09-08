@@ -1,11 +1,10 @@
-import logicops.util.RollbackSpec
 import org.specs2.mutable._
 import logicops.db._
+import org.specs2.specification.Scope
 
-class AttributeTest extends Specification with RollbackSpec {
+class AttributeTest extends Specification  {
 
-
-  "attribute with attribute_id 1" should  {
+  "attribute with attribute_id 1" should {
     "have interface_name of 'Name'" in {
       val a = Attribute.getMem(1)
       a.name must_== "Name"
@@ -31,14 +30,19 @@ class AttributeTest extends Specification with RollbackSpec {
   }
 
   "saved attribute's name" should {
-    "have interface_name of 'Test Attr2'" in {
-      val a = Attribute("Test Attr1", false).save().copy(name = "Test Attr2").save()
+    "have interface_name of 'Test Attr2'" in new a1 {
       a.name must_== "Test Attr2"
     }
-    "deleting 'Test Attr3" in {
-      val a = Attribute("Test Attr3", false).save()
+    "deleting 'Test Attr2" in new a1 {
       Attribute.get(a.name).delete()
       Attribute.getOption(a.name) must_== None
     }
   }
+
+  trait a1 extends Scope with After {
+    def after = connection.rollback()
+
+    val a = Attribute("Test Attr2", false).save()
+  }
+
 }

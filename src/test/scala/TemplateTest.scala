@@ -1,11 +1,11 @@
+import logicops.util.RollbackSpec
 import org.specs2.mutable._
 import logicops.db._
 
-class TemplateTest extends Specification {
-
-  val t1 = Template.getMem(1)
+class TemplateTest extends Specification with RollbackSpec {
 
   "The template with id 1" should {
+    val t1 = Template.getMem(1)
     "have template_id of 1" in {
       t1.id must_== Some(1)
     }
@@ -17,14 +17,17 @@ class TemplateTest extends Specification {
     }
   }
 
-  val t2 = Template.all(nodeTypes = List(NodeType.getMem(1005), NodeType.getMem(1009)))
   "Templates with node_type_ids of '1005, 1009'" should {
+    val t2 = Template.all(nodeTypes = List(NodeType.getMem(1005), NodeType.getMem(1009)))
     "number of templates should be 12" in {
       t2.length must_== 12
     }
   }
-  val t3 = Template.all(nodeTypes = List(NodeType.getMem(1005), NodeType.getMem(1009)), attributes = List(Attribute.getMem(1)))
+
   "Templates with node_type_ids of '1005, 1009' and attribute id of 1" should {
+    val t3 = Template.all(
+      nodeTypes = List(NodeType.getMem(1005), NodeType.getMem(1009)), attributes = List(Attribute.getMem(1))
+    )
     "number of templates should be 12" in {
       t3.length must_== 12
     }
