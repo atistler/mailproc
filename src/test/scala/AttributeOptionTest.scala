@@ -29,7 +29,7 @@ class AttributeOptionTest extends Specification {
   }
   trait ao1 extends Scope with After {
     def after {
-      DatabaseContext.get().rollback()
+      Database.getConnection.rollback()
     }
     val ao = AttributeOption(Attribute.get("Area"), "TestArea").save()
   }

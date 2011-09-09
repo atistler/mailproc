@@ -19,7 +19,7 @@ class Attribute1Test extends Specification {
 
   trait a1 extends Scope with After {
     def after {
-      DatabaseContext.get().rollback()
+      Database.getConnection.rollback()
     }
   }
 

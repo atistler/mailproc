@@ -29,7 +29,7 @@ class NodeAttributeTest extends Specification {
   }
   trait na1 extends Scope with After {
     def after {
-      DatabaseContext.get().rollback()
+      Database.getConnection.rollback()
     }
     val na = NodeAttribute(Node.get(119840), "Area", "Test Area").save()
   }

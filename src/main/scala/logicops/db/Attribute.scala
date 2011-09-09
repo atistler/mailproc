@@ -1,7 +1,6 @@
 package logicops.db {
 
 import org.orbroker._
-import org.junit.Test.None
 
 class Attribute(val id : Option[Int], val name : String, val openended : Boolean = true) extends Dao[Attribute] {
   override def toString = "Attribute[%s] (name: %s)".format(id, name)
@@ -13,7 +12,7 @@ class Attribute(val id : Option[Int], val name : String, val openended : Boolean
   }
 
   lazy val options = {
-    broker.transactional(Database.getConnection()) {
+    broker.transactional(Database.getConnection) {
       _.selectAll(AttributeOption.Tokens.selectOptionsByAttributeId, "attribute_id" -> id.get)
     }
   }
@@ -36,8 +35,6 @@ object Attribute extends NamedDaoHelper[Attribute] {
 
   object Tokens extends NamedBasicTokens {
   }
-
-
 }
 
 object AttributeExtractor extends RowExtractor[Attribute] {

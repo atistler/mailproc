@@ -64,7 +64,7 @@ object Template extends NamedDaoHelper[Template] {
   }
 
   def all(nodeTypes : List[NodeType] = Nil, attributes : List[Attribute] = Nil) : IndexedSeq[Template] = {
-    broker.transactional(Database.getConnection()) {
+    broker.transactional(Database.getConnection) {
       _.selectAll(
         Template.Tokens.selectByQuery,
         "nodeTypeIds" -> mapToIds(nodeTypes).toArray, "attributeIds" -> mapToIds(attributes).toArray

@@ -37,7 +37,7 @@ class Connection(
   lazy val connectorType = NodeType.getMem(connectorTypeId)
 
   def find() : Option[Connection] = {
-    broker.transactional(Database.getConnection()) {
+    broker.transactional(Database.getConnection) {
     _.selectOne(Connection.Tokens.selectByAll, "connection" -> this)
     }
   }

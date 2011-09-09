@@ -9,7 +9,7 @@ trait RollbackSpec {
   def init() {}
 
   def cleanup() {
-    DatabaseContext.get().rollback()
+    Database.getConnection.rollback()
   }
 
   override def map(fs : => Fragments) = Step(init) ^ fs ^ Step(cleanup)
