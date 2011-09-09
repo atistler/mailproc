@@ -1,0 +1,79 @@
+[0m[[0minfo[0m] [0mRunning "mailproc.MailProc" [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/target/scala-2.9.0.1/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/project/boot/scala-2.9.0-1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2_2.9.0-1/specs2_2.9.0-1-1.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/scalacheck_2.9.0-1/scalacheck_2.9.0-1-1.9.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/test-interface/test-interface-0.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2-scalaz-core_2.9.0-1/specs2-scalaz-core_2.9.0-1-6.0.RC2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.hamcrest/hamcrest-all/hamcrest-all-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.mockito/mockito-all/mockito-all-1.8.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/junit/junit/junit-4.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.pegdown/pegdown/pegdown-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-core/parboiled-core-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-java/parboiled-java-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/asm/asm-tree/asm-tree-3.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/asm/asm/asm-3.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/asm/asm-util/asm-util-3.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/asm/asm-analysis/asm-analysis-3.3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.freemarker/freemarker/freemarker-2.3.18.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/org.apache.velocity/velocity/velocity-1.6.2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/commons-collections/commons-collections/commons-collections-3.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/commons-lang/commons-lang/commons-lang-2.4.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/oro/oro/oro-2.0.8.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/bundles/org.orbroker/orbroker/orbroker-3.1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/javax.mail/mail/mail-1.4.2.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/javax.activation/activation/activation-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/atistler/mailproc/lib_managed/jars/postgresql/postgresql/postgresql-8.4-701.jdbc4.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+java.lang.ClassNotFoundException: "mailproc.MailProc"
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:247)
+	at sbt.Run.getMainMethod(Run.scala:65)
+	at sbt.Run.run0(Run.scala:52)
+	at sbt.Run.execute$1(Run.scala:42)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:46)
+	at sbt.TrapExit$.executeMain$1(TrapExit.scala:33)
+	at sbt.TrapExit$$anon$1.run(TrapExit.scala:42)
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+java.lang.RuntimeException: Nonzero exit code: 1
+	at scala.Predef$.error(Predef.scala:58)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1005)
+	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1005)
+	at scala.Option.foreach(Option.scala:185)
+	at sbt.BuildCommon$class.toError(Defaults.scala:1005)
+	at sbt.Defaults$.toError(Defaults.scala:30)
+	at sbt.Defaults$$anonfun$runMainTask$2$$anonfun$apply$18.apply(Defaults.scala:375)
+	at sbt.Defaults$$anonfun$runMainTask$2$$anonfun$apply$18.apply(Defaults.scala:374)
+	at sbt.Scoped$$anonfun$hf4$1.apply(Structure.scala:508)
+	at sbt.Scoped$$anonfun$hf4$1.apply(Structure.scala:508)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:44)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$9.apply(Structure.scala:304)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$9.apply(Structure.scala:304)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$5.work(System.scala:67)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:13)
+	at sbt.Execute.work(Execute.scala:227)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.CompletionService$$anon$1$$anon$2.call(CompletionService.scala:26)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[0m[[31merror[0m] [0m{file:/Users/atistler/mailproc/}default-6e45cf/[31mrun-main[0m: Nonzero exit code: 1[0m

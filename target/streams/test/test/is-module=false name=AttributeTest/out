@@ -1,0 +1,19 @@
+[info] attribute with attribute_id 1 should
+[info] + have interface_name of 'Name'
+[info]  
+[info] attribute with attribute_id 1072 should
+[info] + have interface_name of 'Service Request Sub-Status'
+[info] + have 9 attribute options
+[info]  
+[info] attribute with name 'Test Attribute' should
+[info] + have interface_name of 'Test Attribute
+[info]  
+[info] saved attribute's name should
+[info] + have interface_name of 'Test Attr2'
+[info] + deleting 'Test Attr2
+[info]  
+[info]  
+[info] Total for specification AttributeTest
+[info] Finished in 588 ms
+[info] 6 examples, 0 failure, 0 error
+[info]  

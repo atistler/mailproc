@@ -1,0 +1,32 @@
+[info] Running mailproc.MailProc 
+[debug] Starting sandboxed run...
+[debug] Waiting for threads to exit or System.exit to be called.
+[debug]   Classpath:
+[debug] 	/Users/atistler/mailproc/target/scala-2.9.0.1/classes
+[debug] 	/Users/atistler/mailproc/project/boot/scala-2.9.0-1/lib/scala-library.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2_2.9.0-1/specs2_2.9.0-1-1.5.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/scalacheck_2.9.0-1/scalacheck_2.9.0-1-1.9.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/test-interface/test-interface-0.5.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2-scalaz-core_2.9.0-1/specs2-scalaz-core_2.9.0-1-6.0.RC2.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.hamcrest/hamcrest-all/hamcrest-all-1.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.mockito/mockito-all/mockito-all-1.8.5.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/junit/junit/junit-4.7.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.pegdown/pegdown/pegdown-1.0.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-core/parboiled-core-1.0.0.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-java/parboiled-java-1.0.0.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/asm/asm-tree/asm-tree-3.3.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/asm/asm/asm-3.3.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/asm/asm-util/asm-util-3.3.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/asm/asm-analysis/asm-analysis-3.3.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.freemarker/freemarker/freemarker-2.3.18.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/org.apache.velocity/velocity/velocity-1.6.2.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/commons-collections/commons-collections/commons-collections-3.2.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/commons-lang/commons-lang/commons-lang-2.4.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/oro/oro/oro-2.0.8.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/bundles/org.orbroker/orbroker/orbroker-3.1.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/javax.mail/mail/mail-1.4.2.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/javax.activation/activation/activation-1.1.jar
+[debug] 	/Users/atistler/mailproc/lib_managed/jars/postgresql/postgresql/postgresql-8.4-701.jdbc4.jar
+[debug] Waiting for thread run-main to exit
+[debug] 	Thread run-main exited.
+[debug] Waiting for thread ForkJoinScheduler to exit

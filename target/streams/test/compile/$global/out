@@ -1,0 +1,27 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(/Users/atistler/mailproc/src/test/scala/NodeTest.scala)
+[debug] Removed products: Set()
+[debug] Modified external sources: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(/Users/atistler/mailproc/src/test/scala/NodeTest.scala)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] Initially invalidated: Set(/Users/atistler/mailproc/src/test/scala/NodeTest.scala)
+[info] Compiling 1 Scala source to /Users/atistler/mailproc/target/scala-2.9.0.1/test-classes...
+[debug] Interfacing (CompilerInterface) with Scala compiler version 2.9.0.1
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-d
+[debug] 	/Users/atistler/mailproc/target/scala-2.9.0.1/test-classes
+[debug] 	-bootclasspath
+[debug] 	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar:/Users/atistler/mailproc/project/boot/scala-2.9.0-1/lib/scala-library.jar
+[debug] 	-cp
+[debug] 	/Users/atistler/mailproc/target/scala-2.9.0.1/test-classes:/Users/atistler/mailproc/target/scala-2.9.0.1/classes:/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2_2.9.0-1/specs2_2.9.0-1-1.5.jar:/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/scalacheck_2.9.0-1/scalacheck_2.9.0-1-1.9.jar:/Users/atistler/mailproc/lib_managed/jars/org.scala-tools.testing/test-interface/test-interface-0.5.jar:/Users/atistler/mailproc/lib_managed/jars/org.specs2/specs2-scalaz-core_2.9.0-1/specs2-scalaz-core_2.9.0-1-6.0.RC2.jar:/Users/atistler/mailproc/lib_managed/jars/org.hamcrest/hamcrest-all/hamcrest-all-1.1.jar:/Users/atistler/mailproc/lib_managed/jars/org.mockito/mockito-all/mockito-all-1.8.5.jar:/Users/atistler/mailproc/lib_managed/jars/junit/junit/junit-4.7.jar:/Users/atistler/mailproc/lib_managed/jars/org.pegdown/pegdown/pegdown-1.0.1.jar:/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-core/parboiled-core-1.0.0.jar:/Users/atistler/mailproc/lib_managed/jars/org.parboiled/parboiled-java/parboiled-java-1.0.0.jar:/Users/atistler/mailproc/lib_managed/jars/asm/asm-tree/asm-tree-3.3.1.jar:/Users/atistler/mailproc/lib_managed/jars/asm/asm/asm-3.3.1.jar:/Users/atistler/mailproc/lib_managed/jars/asm/asm-util/asm-util-3.3.1.jar:/Users/atistler/mailproc/lib_managed/jars/asm/asm-analysis/asm-analysis-3.3.1.jar:/Users/atistler/mailproc/lib_managed/jars/org.freemarker/freemarker/freemarker-2.3.18.jar:/Users/atistler/mailproc/lib_managed/jars/org.apache.velocity/velocity/velocity-1.6.2.jar:/Users/atistler/mailproc/lib_managed/jars/commons-collections/commons-collections/commons-collections-3.2.1.jar:/Users/atistler/mailproc/lib_managed/jars/commons-lang/commons-lang/commons-lang-2.4.jar:/Users/atistler/mailproc/lib_managed/jars/oro/oro/oro-2.0.8.jar:/Users/atistler/mailproc/lib_managed/bundles/org.orbroker/orbroker/orbroker-3.1.1.jar:/Users/atistler/mailproc/lib_managed/jars/javax.mail/mail/mail-1.4.2.jar:/Users/atistler/mailproc/lib_managed/jars/javax.activation/activation/activation-1.1.jar:/Users/atistler/mailproc/lib_managed/jars/postgresql/postgresql/postgresql-8.4-701.jdbc4.jar
+[debug] 	/Users/atistler/mailproc/src/test/scala/NodeTest.scala
+[debug] 	Invalidated direct: Set()
+[debug] Incrementally invalidated: Set()

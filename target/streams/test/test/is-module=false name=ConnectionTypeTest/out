@@ -1,0 +1,10 @@
+[info] creating a new ConnectionType should
+[info] + succeed
+[info] + able to be updated
+[info] + able to be deleted
+[info]  
+[info]  
+[info] Total for specification ConnectionTypeTest
+[info] Finished in 420 ms
+[info] 3 examples, 0 failure, 0 error
+[info]  

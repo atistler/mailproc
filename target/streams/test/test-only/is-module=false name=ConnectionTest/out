@@ -1,0 +1,16 @@
+[info] connection with connection_id 3684799 should
+[info] + have connectionType of 'Created By'
+[info] + have connectorType of 'User'
+[info] + have connecteeType of 'Activity'
+[info] + have connector Name of 'Lin, Xiao Fen '
+[info] + have connectee Name of 'Activity 2-721462'
+[info]  
+[info] creating a new Connection should
+[info] + succeed
+[info] + able to be deleted
+[info]  
+[info]  
+[info] Total for specification ConnectionTest
+[info] Finished in 3 seconds, 353 ms
+[info] 7 examples, 0 failure, 0 error
+[info]  

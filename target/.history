@@ -1,0 +1,51 @@
+update
+quit
+quit()
+exit()
+exit
+update
+tasks
+update-sbt-classifiers
+tasks
+show project-id
+update
+show source-directories
+exit
+run
+exit
+gen-idea with-classifiers
+gen-idea
+update
+tasks
+exit
+help gen-idea 
+gen-idea with-classifiers
+tasks
+show name
+show gen-idea
+gen-idea
+ls
+gen-idea 
+run
+last
+tasks
+run-main
+run-main "mailproc.MailProc"
+exit
+help
+help run
+help tasks
+tasks
+show runner
+show classpath
+show full-classpath
+doc
+jar
+help target
+target
+tasks
+package
+exit
+package-options
+show package-options
+exit

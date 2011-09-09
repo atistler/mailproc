@@ -1,0 +1,51 @@
+[debug] Running Test NodeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test ConnectionTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test ConnectionTypeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test TemplateTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test AttributeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test AttributeOptionTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test TemplateAttributeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test NodeTypeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test Attribute1Test : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[debug] Running Test NodeAttributeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
+[error] Error: Total 56, Failed 0, Errors 1, Passed 55, Skipped 0
+[debug] Passed tests:
+[debug] 	AttributeTest
+[debug] 	ConnectionTest
+[debug] 	TemplateTest
+[debug] 	ConnectionTypeTest
+[debug] 	Attribute1Test
+[debug] 	NodeTypeTest
+[debug] 	AttributeOptionTest
+[debug] 	NodeAttributeTest
+[debug] 	TemplateAttributeTest
+[error] Error during tests:
+[error] 	NodeTest
+java.lang.RuntimeException: Tests unsuccessful
+	at scala.Predef$.error(Predef.scala:58)
+	at sbt.Tests$.showResults(Tests.scala:168)
+	at sbt.Defaults$$anonfun$testTasks$5.apply(Defaults.scala:246)
+	at sbt.Defaults$$anonfun$testTasks$5.apply(Defaults.scala:246)
+	at sbt.Scoped$$anonfun$hf2$1.apply(Structure.scala:506)
+	at sbt.Scoped$$anonfun$hf2$1.apply(Structure.scala:506)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:44)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$9.apply(Structure.scala:304)
+	at sbt.Scoped$Reduced$$anonfun$combine$1$$anonfun$apply$9.apply(Structure.scala:304)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$5.work(System.scala:67)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:221)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:13)
+	at sbt.Execute.work(Execute.scala:227)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:221)
+	at sbt.CompletionService$$anon$1$$anon$2.call(CompletionService.scala:26)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+[error] {file:/Users/atistler/mailproc/}default-6e45cf/test:test: Tests unsuccessful

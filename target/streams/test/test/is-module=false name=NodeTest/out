@@ -1,0 +1,54 @@
+[info] The node with id 527321 should
+[info] + have node_id of 527321
+[info] + have name = 'Root User'
+[info] + have Service Request Status = 'Closed'
+[info] + have 17 connectors
+[info] + have 15 connectees
+[info] + have 10 child connectees
+[info] + have 5 parent connectees
+[info] + have 10 child connectors
+[info] + have 5 parent connectors
+[info] + have 10 children of node type Activity
+[info] + have 0 children of node type Asset
+[info]  
+[info] The nodes with ids 119864,119866 should
+[info] + have length of 2
+[info] + when updating Name to 2.0.0.0, name must equal 2.0.0.0
+[info]  
+[info] Creating new node should
+[info] + Have correct node_type
+[info]  
+[info] Finding node 'Accounts' should
+[error] ! Have name 'Accounts'
+[error]     IllegalArgumentException: Cannot find value get on class java.lang.Integer (Mirror.scala:14)
+[error] org.orbroker.util.Mirror.makeLookup(Mirror.scala:62)
+[error] org.orbroker.util.Mirror.nodeValue(Mirror.scala:14)
+[error] org.orbroker.util.Mirror.leafValue(Mirror.scala:85)
+[error] org.orbroker.ValuesByName.apply(ValuesByName.scala:7)
+[error] org.orbroker.ValuesByName.apply(ValuesByName.scala:3)
+[error] org.orbroker.adapt.AbstractDefaultParameterAdapter$class.setParameters(ParameterAdapter.scala:42)
+[error] org.orbroker.adapt.DefaultAdapter.setParameters(BrokerAdapter.scala:24)
+[error] org.orbroker.SQLStatement.setParms(SQLStatement.scala:21)
+[error] org.orbroker.QueryStatement$class.preparedQuery(QueryStatement.scala:13)
+[error] org.orbroker.QueryStatement$class.query(QueryStatement.scala:43)
+[error] org.orbroker.config.BrokerBuilder$$anon$1.query(BrokerBuilder.scala:111)
+[error] org.orbroker.Queryable$class.queryFromSelect(Queryable.scala:13)
+[error] org.orbroker.Transaction.queryFromSelect(Transactional.scala:11)
+[error] org.orbroker.Queryable$class.select(Queryable.scala:31)
+[error] org.orbroker.Transaction.select(Transactional.scala:11)
+[error] org.orbroker.Queryable$class.selectAll(Queryable.scala:66)
+[error] org.orbroker.Transaction.selectAll(Transactional.scala:11)
+[error] logicops.db.Node$$anonfun$find$1.apply(Node.scala:223)
+[error] logicops.db.Node$$anonfun$find$1.apply(Node.scala:223)
+[error] org.orbroker.Broker.runSession(Broker.scala:160)
+[error] org.orbroker.Broker.transactional(Broker.scala:141)
+[error] logicops.db.Node$.find(Node.scala:222)
+[error] logicops.db.Node$.find(Node.scala:231)
+[error] NodeTest$$anonfun$4$$anonfun$apply$57.apply(NodeTest.scala:67)
+[error] NodeTest$$anonfun$4$$anonfun$apply$57.apply(NodeTest.scala:66)
+[info]  
+[info]  
+[info] Total for specification NodeTest
+[info] Finished in 1 second, 200 ms
+[info] 15 examples, 0 failure, 1 error
+[info]  

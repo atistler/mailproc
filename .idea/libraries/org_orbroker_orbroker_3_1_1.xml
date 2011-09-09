@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.orbroker_orbroker_3.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/bundles/org.orbroker/orbroker/orbroker-3.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/srcs/org.orbroker/orbroker/orbroker-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
