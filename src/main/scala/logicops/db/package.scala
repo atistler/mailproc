@@ -1,8 +1,5 @@
 package logicops {
 
-import java.awt.image.renderable.RenderContext
-import org.scalacheck.Prop.Exception
-
 package object db {
 
   import java.io.File
@@ -32,15 +29,18 @@ package object db {
   object Database {
     private object connection extends ThreadLocal[java.sql.Connection] {
       override def initialValue() = {
-        val connection = ds.getConnection
-        connection.setAutoCommit(false)
-        connection
+        val conn = ds.getConnection
+        conn.setAutoCommit(false)
+        conn
       }
     }
     def getConnection = {
-      if ( !connection.get() || connection.get().isClosed ) {
-
+      if ( connection.get == null || connection.get.isClosed ) {
+        val conn = ds.getConnection
+        conn.setAutoCommit(false)
+        connection.set(conn)
       }
+      connection.get
     }
   }
 
@@ -97,7 +97,7 @@ package object db {
     protected val companion : DaoHelper[T]
 
     def delete() {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection) {
         _.execute(companion.Tokens.deleteById, "id" -> id)
       }
     }
@@ -105,7 +105,7 @@ package object db {
     def save() : T = {
       id match {
         case Some(_id) => {
-          broker.transactional(DatabaseContext.get()) {
+          broker.transactional(Database.getConnection) {
             _.execute(
               companion.Tokens.update, "object" -> this
             )
@@ -114,7 +114,7 @@ package object db {
         }
         case None => {
           var newDao : Option[T] = None
-          broker.transactional(DatabaseContext.get()) {
+          broker.transactional(Database.getConnection) {
             _.executeForKeys[T](companion.Tokens.insert, "object" -> this) {
               dao : T => newDao = Some(dao)
             }
@@ -162,13 +162,13 @@ package object db {
     }
 
     protected def selectOneOption(token : Token[T], params : (String, Any)*) = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection) {
         _.selectOne(token, params : _*)
       }
     }
 
     protected def selectAllOption(token : Token[T], params : (String, Any)*) = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection) {
         _.selectAll(token, params : _*)
       }
     }

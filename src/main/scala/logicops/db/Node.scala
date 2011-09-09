@@ -29,7 +29,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   object connectors {
     def apply() = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection()) {
         _.selectAll(Node.Tokens.selectByConnectee, "node" -> self)
       }
     }
@@ -37,7 +37,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
       ) = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection()) {
         _.selectAll(
           Node.Tokens.selectByConnectee, "node" -> self,
           "connectionTypes" -> mapToIds(connectionTypes).toArray, "connectorTypes" -> mapToIds(nodeTypes).toArray
@@ -48,7 +48,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   object connectees {
     def apply() = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection()) {
         _.selectAll(Node.Tokens.selectByConnector, "node" -> self)
       }
     }
@@ -56,7 +56,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
       ) = {
-      broker.transactional(DatabaseContext.get()) {
+      broker.transactional(Database.getConnection()) {
         _.selectAll(
           Node.Tokens.selectByConnector, "node" -> self,
           "connectionTypes" -> mapToIds(connectionTypes).toArray, "connecteeTypes" -> mapToIds(nodeTypes).toArray
@@ -133,7 +133,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     id match {
       case Some(i) => throw new DaoException("Nodes cannot be updated: " + this)
       case None => {
-        broker.transactional(DatabaseContext.get()) {
+        broker.transactional(Database.getConnection()) {
           _.executeForKeys(
             Node.Tokens.insert, "node" -> this
           ) {
@@ -217,7 +217,7 @@ object Node extends DaoHelper[Node] {
   }
 
   def find(nodeType : NodeType, attribute : (String, String)) : Iterable[Node] = {
-    broker.transactional(DatabaseContext.get()) {
+    broker.transactional(Database.getConnection()) {
       _.selectAll(
         Node.Tokens.selectByNodeTypeAttribute, "nodeType" -> nodeType, "attribute" -> Attribute.get(attribute._1),
         "value" -> attribute._2

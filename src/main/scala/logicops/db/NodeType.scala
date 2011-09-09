@@ -30,7 +30,7 @@ object NodeType extends NamedDaoHelper[NodeType] {
   }
 
   def allByPoolId(poolId : Int) = {
-    broker.transactional(DatabaseContext.get()) {
+    broker.transactional(Database.getConnection()) {
       _.selectAll(Tokens.selectByPoolId, "node_type_pool_id" -> poolId)
     }
   }
