@@ -1,4 +1,0 @@
-[debug] Running Test NodeTest : subclass(false, org.specs2.specification.SpecificationStructure) with arguments 
-[info] Passed: : Total 15, Failed 0, Errors 0, Passed 15, Skipped 0
-[debug] Passed tests:
-[debug] 	NodeTest

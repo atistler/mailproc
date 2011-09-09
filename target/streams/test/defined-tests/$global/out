@@ -1,2 +1,0 @@
-[debug] Subclass fingerprints: List((org.scalacheck.Properties,true,PropsFingerprint), (org.scalacheck.Properties,true,PropsFingerprint), (org.specs2.specification.SpecificationStructure,false,org.specs2.runner.Fingerprints$$anon$2@45ffd03f), (org.specs2.specification.SpecificationStructure,true,org.specs2.runner.Fingerprints$$anon$3@1dc0fc00), (org.specs2.runner.FilesRunner,false,org.specs2.runner.Fingerprints$$anon$4@68e07342), (org.specs2.runner.FilesRunner,true,org.specs2.runner.Fingerprints$$anon$5@67af27d8))
-[debug] Annotation fingerprints: List()

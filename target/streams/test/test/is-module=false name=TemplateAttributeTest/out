@@ -1,9 +1,0 @@
-[info] The template_attribute with id 1001 should
-[info] + have template_id of 1
-[info] + have a value of 'Root Node'
-[info]  
-[info]  
-[info] Total for specification TemplateAttributeTest
-[info] Finished in 5 ms
-[info] 2 examples, 0 failure, 0 error
-[info]  
