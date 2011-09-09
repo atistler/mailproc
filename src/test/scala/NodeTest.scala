@@ -61,4 +61,11 @@ class NodeTest extends Specification with RollbackSpec {
       node.nodeType.name must_== "Service Request"
     }
   }
+
+  "Finding node 'Accounts'" should {
+    "Have name 'Accounts'" in {
+      val n = Node.find("Generic Container Node", "Name" -> "Accounts")
+      n.head.valueOf("Name").get must_== "Accounts"
+    }
+  }
 }

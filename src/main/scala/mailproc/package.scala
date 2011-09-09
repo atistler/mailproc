@@ -5,9 +5,23 @@ import io.Source
 import java.io.{File, ByteArrayInputStream}
 import javax.mail.internet.{MimeMessage, InternetAddress}
 import javax.mail.{Address, Message, Session => MailSession}
+import logicops.db
+import db._
 
 case class EmailFile(file : File)
+
 case class IsLWUser(address : Address)
+
+object LWUserCheck extends Actor {
+  def act() {
+    val users = Node.find("Generic Container Node", "Name" -> "Acccounts").head.connectees.having(
+      connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("User"))
+    )
+    loop {
+
+    }
+  }
+}
 
 object EmailParser extends Actor {
   val session = MailSession.getDefaultInstance(System.getProperties);
@@ -41,7 +55,7 @@ object EmailParser extends Actor {
                 subject match {
                   /* Has sr node_id in subject line */
                   case SrSubject(nodeId) => {
-                    UserService ! IsLWUser(from(0))
+                    LWUserCheck ! IsLWUser(from(0))
                   }
                   /* No sr node_id in subject line */
                   case _ => {
@@ -52,11 +66,6 @@ object EmailParser extends Actor {
               case None =>
             }
           }
-
-          /*
-          println("  Raw To: "  + to.mkString(" | "))
-          println("  To: " + to.map(e => new InternetAddress(e).getAddress).mkString(", "))
-          */
         }
       }
     }
@@ -79,23 +88,11 @@ object DirectoryWatcher {
   }
 }
 
-/*
-object MailProc {
-  def main(args : Array[String]) {
-    try {
-      DirectoryWatcher.watch()
-    } catch {
-      case e => println("Trace: " + e)
-    }
-  }
-}
-*/
-
 object MailProc extends App {
   try {
     DirectoryWatcher.watch()
   } catch {
-    case e => println("Trace: " + e)
+    case e => println("Trace: " + e.getStackTraceString)
   }
 }
 
