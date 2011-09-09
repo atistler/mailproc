@@ -13,13 +13,16 @@ resolvers += "Java.net Repo" at "http://download.java.net/maven/2/"
 
 resolvers ++= Seq(
   "snapshots" at "http://scala-tools.org/repo-snapshots",
-  "releases" at "http://scala-tools.org/repo-releases"
+  "releases" at "http://scala-tools.org/repo-releases",
+  // "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+  "Akka Repo" at "http://akka.io/repository"
 )
 
 libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
-  "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test"
+  "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test",
+  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6"
   // with Scala 2.9.0
   // "org.specs2" %% "specs2-scalaz-core" % "6.0.RC2" % "test"
 )

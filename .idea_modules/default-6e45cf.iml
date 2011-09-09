@@ -38,6 +38,8 @@
     <orderEntry type="library" name="asm_asm_3.3.1" level="project" />
     <orderEntry type="library" name="asm_asm-util_3.3.1" level="project" />
     <orderEntry type="library" name="asm_asm-analysis_3.3.1" level="project" />
+    <orderEntry type="library" name="se.scalablesolutions.akka_akka-actor_1.2-RC6" level="project" />
+    <orderEntry type="library" name="org.freemarker_freemarker_2.3.18" level="project" />
     <orderEntry type="library" name="org.apache.velocity_velocity_1.6.2" level="project" />
     <orderEntry type="library" name="commons-collections_commons-collections_3.2.1" level="project" />
     <orderEntry type="library" name="commons-lang_commons-lang_2.4" level="project" />

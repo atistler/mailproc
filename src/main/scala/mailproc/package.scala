@@ -1,94 +1,133 @@
 package mailproc {
 
-import actors.Actor
 import io.Source
 import java.io.{File, ByteArrayInputStream}
-import javax.mail.internet.{MimeMessage, InternetAddress}
 import javax.mail.{Address, Message, Session => MailSession}
-import logicops.db
-import db._
+import logicops.db._
+import akka.actor.Actor._
+import akka.event.EventHandler
+import akka.config.Supervision._
+import akka.actor.{Actor, Supervisor, MaximumNumberOfRestartsWithinTimeRangeReached, ActorRef}
+import collection.mutable
+import javax.mail.internet.{InternetAddress, MimeMessage}
 
-case class EmailFile(file : File)
+object MailProc extends App {
+  val supervisor = Supervisor(
+    SupervisorConfig(
+      OneForOneStrategy(List(classOf[Exception]), 3, 5000),
+      Supervise(
+        actorOf[UserCheck],
+        Permanent
+      ) ::
+        Supervise(
+          actorOf[EmailParser],
+          Permanent
+        ) ::
+        Nil
+    )
+  )
 
-case class IsLWUser(address : Address)
+  case class IsLWUser(address : Address)
 
-object LWUserCheck extends Actor {
-  def act() {
-    val users = Node.find("Generic Container Node", "Name" -> "Acccounts").head.connectees.having(
+  class UserCheck extends Actor {
+
+    val lw_account = Node.find("Account", "Name" -> "Logicworks").head
+    val users = lw_account.connectors.having(
       connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("User"))
     )
-    loop {
 
+    var email_users = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
+    for (user <- users) {
+      user.attr("Email Address") match {
+        case Some(na) => email_users(na.value.trim()) = user
+        case None => println("Unknown: ")
+      }
+      user.attr("Alternate Email Address") match {
+        case Some(na) => email_users(na.value.trim()) = user
+        case None => println("Unknown: ")
+      }
+    }
+    println(email_users)
+
+    def receive = {
+      case IsLWUser(addr) => {
+        if ( email_users.contains(new InternetAddress(addr.toString).getAddress) ) {
+          println("   !!! FROM: " + new InternetAddress(addr.toString).getAddress + " is LW User")
+        } else {
+          println("   !!! FROM: " + new InternetAddress(addr.toString).getAddress + " is not LW User")
+        }
+      }
+      case _ =>  println("Invalid request in UserCheck")
     }
   }
-}
 
-object EmailParser extends Actor {
-  val session = MailSession.getDefaultInstance(System.getProperties);
-  val LW_SUPPORT_ADDRESSES = Set(
-    "lw-support@logicworks.net", "support@logicworks.net"
-  )
-  val SrSubject = """.*SR \d-(\d{6,}).*""".r
+  case class EmailFile(file : File)
 
-  def act() {
-    loop {
-      react {
-        case EmailFile(file) => {
-          val lines = Source.fromFile(file).mkString
-          val message = new MimeMessage(session, new ByteArrayInputStream(lines.getBytes))
+  class EmailParser extends Actor {
+    private val session = MailSession.getDefaultInstance(System.getProperties);
+    private val LW_SUPPORT_ADDRESSES = Set(
+      "lw-support@logicworks.net", "support@logicworks.net"
+    )
+    private val SrSubject = """.*SR \d-(\d{6,}).*""".r
 
-          val from = message.getFrom
-          val to = message.getRecipients(Message.RecipientType.TO)
-          if (to != null) {
-            to.find(
-              a => {
-                LW_SUPPORT_ADDRESSES.contains(new InternetAddress(a.toString).getAddress)
-              }
-            ) match {
-              /* To: lw-support or support */
-              case Some(a) => {
-                val subject = message.getSubject
-                println("\nParsing message: ")
-                println("  Subject: " + subject)
-                println("  From: " + from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "))
-                println("  To: " + to.map(a => new InternetAddress(a.toString).getAddress).mkString(", "))
-                subject match {
-                  /* Has sr node_id in subject line */
-                  case SrSubject(nodeId) => {
-                    LWUserCheck ! IsLWUser(from(0))
-                  }
-                  /* No sr node_id in subject line */
-                  case _ => {
-                  }
+    def receive = {
+      case EmailFile(file) => {
+        val lines = Source.fromFile(file).mkString
+        val message = new MimeMessage(session, new ByteArrayInputStream(lines.getBytes))
+
+        val from = message.getFrom
+        val to = message.getRecipients(Message.RecipientType.TO)
+        if (to != null) {
+          to.find(
+            a => {
+              LW_SUPPORT_ADDRESSES.contains(new InternetAddress(a.toString).getAddress)
+            }
+          ) match {
+            /* To: lw-support or support */
+            case Some(a) => {
+              val subject = message.getSubject
+              println("\nParsing message: ")
+              println("  Subject: " + subject)
+              println("  From: " + from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "))
+              println("  To: " + to.map(a => new InternetAddress(a.toString).getAddress).mkString(", "))
+              subject match {
+                /* Has sr node_id in subject line */
+                case SrSubject(nodeId) => {
+                  userCheck ! IsLWUser(from(0))
+                }
+                /* No sr node_id in subject line */
+                case _ => {
                 }
               }
-              /* Not To: lw-support or support */
-              case None =>
             }
+            /* Not To: lw-support or support */
+            case None =>
           }
         }
       }
     }
   }
-}
 
-object DirectoryWatcher {
-  val MAX = 5
-  val LO_MAIL_DIR = "/Users/atistler/logicops-mail/Maildir/new/"
-  var continue = true
-  EmailParser.start()
 
-  def watch() {
-    while (continue) {
-      for (file <- new File(LO_MAIL_DIR).listFiles.take(1000)) {
-        EmailParser ! EmailFile(file)
+  val userCheck = actorOf(new UserCheck).start()
+
+  val emailParser = actorOf(new EmailParser).start()
+
+  object DirectoryWatcher {
+    val MAX = 5
+    private val LO_MAIL_DIR = "/Users/atistler/logicops-mail/Maildir/new/"
+    private var continue = true
+
+    def watch() {
+      while (continue) {
+        for (file <- new File(LO_MAIL_DIR).listFiles.take(1000)) {
+          emailParser ! EmailFile(file)
+        }
+        continue = false
       }
-      continue = false
     }
   }
-}
 
-object MailProc extends App {
   try {
     DirectoryWatcher.watch()
   } catch {
