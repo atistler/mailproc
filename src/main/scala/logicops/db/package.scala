@@ -8,7 +8,15 @@ package object db {
   import config.FileSystemRegistrant
   import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
 
-  private val DB_URL = "jdbc:postgresql://lw-dev/logicops2"
+
+  private val dbhost = sys.props.getOrElse(
+  "logicops.dbhost", {
+    sys.error("-Dlogicops.dbhost parameter must be set to the host/ip of the Logicops database")
+    sys.exit(1)
+  }
+  )
+
+  private val DB_URL = "jdbc:postgresql://" + dbhost + "/logicops2"
   private val DB_USERNAME = "logicops2"
   private val DB_DRIVER = "org.postgresql.Driver"
 
@@ -27,6 +35,7 @@ package object db {
   val broker = builder.build()
 
   object Database {
+
     private object connection extends ThreadLocal[java.sql.Connection] {
       override def initialValue() = {
         val conn = ds.getConnection
@@ -34,8 +43,9 @@ package object db {
         conn
       }
     }
+
     def getConnection = {
-      if ( connection.get == null || connection.get.isClosed ) {
+      if (connection.get == null || connection.get.isClosed) {
         val conn = ds.getConnection
         conn.setAutoCommit(false)
         connection.set(conn)
@@ -44,8 +54,8 @@ package object db {
     }
   }
 
-  private[db] def mapToIds(d : Iterable[Dao[_]]) = {
-    d.map(_.id.get)
+  private[db] def mapToIds(iter : Iterable[Dao]) : Array[Int] = {
+    iter.map(_.id.get).toArray
   }
 
   private[db] class Memoize1[-T, +R](f : T => R) extends (T => R) {
@@ -80,6 +90,10 @@ package object db {
     }
   }
 
+  implicit def NodeMap2Nodes(map : collection.mutable.Map[Int, Node]) = {
+    new Nodes(map)
+  }
+
   /*
   implicit def IndexedSeq2ConnectionSeq(i : IndexedSeq[Connection]) = {
     new ConnectionSeq(i);
@@ -89,12 +103,13 @@ package object db {
   }
   */
 
+
   class DaoException(msg : String) extends RuntimeException(msg)
 
-  private[db] trait Dao[T] {
+  private[db] trait Dao {
 
     val id : Option[Int]
-    protected val companion : DaoHelper[T]
+    protected val companion : DaoHelper[Dao]
 
     def delete() {
       broker.transactional(Database.getConnection) {
@@ -102,7 +117,7 @@ package object db {
       }
     }
 
-    def save() : T = {
+    def save() = {
       id match {
         case Some(_id) => {
           broker.transactional(Database.getConnection) {
@@ -110,16 +125,14 @@ package object db {
               companion.Tokens.update, "object" -> this
             )
           }
-          this.asInstanceOf[T]
+          this
         }
         case None => {
-          var newDao : Option[T] = None
           broker.transactional(Database.getConnection) {
-            _.executeForKeys[T](companion.Tokens.insert, "object" -> this) {
-              dao : T => newDao = Some(dao)
+            _.executeForKeys(companion.Tokens.insert, "object" -> this) {
+              dao => dao
             }
           }
-          newDao.get
         }
       }
     }
@@ -149,17 +162,15 @@ package object db {
     val Tokens : BasicTokens
     val columnMap : Map[String, String]
 
-    def get(id : Int) : T = {
-      getOption(id).get
-    }
+    def getDb(id : Int) : T = getOptionDb(id).get
+    def getOptionDb(id : Int) : Option[T] = selectOneOption(Tokens.selectById, "id" -> id)
 
-    val getMem = Memoize1(get)
 
-    val getOptionMem = Memoize1(getOption)
+    private val _getById = Memoize1(getDb)
+    private val _getByIdOption = Memoize1(getOptionDb)
 
-    def getOption(id : Int) : Option[T] = {
-      selectOneOption(Tokens.selectById, "id" -> id)
-    }
+    def get(id : Int) = _getById(id)
+    def getOption(id : Int) = _getByIdOption(id)
 
     protected def selectOneOption(token : Token[T], params : (String, Any)*) = {
       broker.transactional(Database.getConnection) {
@@ -200,16 +211,22 @@ package object db {
 
   }
 
+  implicit def string2Dao(s : String) : Dao = {
+    ConnectionType.getOption(s).getOrElse(NodeType.getOption(s).getOrElse(Attribute.getOption(s).getOrElse(Template.getOption(s).get)))
+  }
+
   private[db] trait NamedDaoHelper[T] extends DaoHelper[T] {
+
     override val Tokens : NamedBasicTokens
 
-    def get(name : String) : T = {
-      getOption(name).get
-    }
+    def getDb(name : String) : T = getOptionDb(name).get
+    def getOptionDb(name : String) : Option[T] = selectOneOption(Tokens.selectByName, "name" -> name)
 
-    def getOption(name : String) : Option[T] = {
-      selectOneOption(Tokens.selectByName, "name" -> name)
-    }
+    private val _getByName = Memoize1(getDb)
+    private val _getByNameOption = Memoize1(getOptionDb)
+
+    def get(name : String) = _getByName(name)
+    def getOption(name : String) = _getByNameOption(name)
 
     class NamedBasicTokens extends BasicTokens {
       val selectByName = Token("SELECT * FROM " + tableName + " WHERE interface_name = :name", 'name, extractor)

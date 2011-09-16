@@ -1,8 +1,7 @@
 SELECT  n.node_id, n.node_type_id, n.template_id,
         nam.node_attribute_map_id, nam.value, nam.attribute_id
 FROM    nodes as n, connections as c, node_attributes_map as nam
-WHERE   n.node_id = c.connector_node_id
-AND     n.node_id = nam.node_id
+WHERE   n.node_id = nam.node_id
 
 <#if connectionTypes?? && (connectionTypes?size == 1)>
     AND c.connection_type_id = :connectionTypes[0]
@@ -30,8 +29,8 @@ AND     n.node_id = nam.node_id
     AND c.connectee_node_id = :nodes[0]
 <#elseif nodes?? && (nodes?size > 0)>
     AND c.connectee_node_id IN (
-    <#list nodes as nodeid>
-        <#if (nodeid_index > 0)> , </#if> ${nodeid}
+    <#list nodes as node>
+        <#if (node_index > 0)> , </#if> :node
     </#list>
     )
 </#if>

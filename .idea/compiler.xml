@@ -17,5 +17,10 @@
     </wildcardResourcePatterns>
     <annotationProcessing enabled="false" useClasspath="true" />
   </component>
+  <component name="SbtSettings">
+    <option name="sbtLauncherJarPath" value="$USER_HOME$/bin/sbt-launch.jar" />
+    <option name="sbtLauncherVmParameters" value="-Dakka.config=/Users/atistler/mailproc/src/main/config/akka.conf -Dlogicops.dbhost=lw-dev -Xmx512M -XX:MaxPermSize=256M -XX:PermSize=128M -XX:+CMSClassUnloadingEnabled" />
+    <option name="useApplicationSettings" value="false" />
+  </component>
 </project>
 

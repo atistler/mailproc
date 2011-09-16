@@ -7,7 +7,7 @@ class NodeAttribute (
   ) extends Dao[NodeAttribute] {
 
   override def toString = "NodeAttribute[%s] (nodeId: %d, attribute: %s[%d], value: %s".format(
-    id, nodeId, Attribute.getMem(attributeId).name, attributeId, value
+    id, nodeId, Attribute.get(attributeId).name, attributeId, value
   )
 
   protected val companion = NodeAttribute
@@ -19,7 +19,7 @@ class NodeAttribute (
     new NodeAttribute(id, nodeId, attributeId, value)
   }
 
-  lazy val attribute = Attribute.getMem(attributeId)
+  lazy val attribute = Attribute.get(attributeId)
 }
 
 object NodeAttribute extends DaoHelper[NodeAttribute] {

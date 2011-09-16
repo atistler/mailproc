@@ -36,7 +36,7 @@ class ConnectionTest extends Specification {
     def after {
       Database.getConnection.rollback()
     }
-    val c = Connection.getMem(3684799)
+    val c = Connection.get(3684799)
   }
 
   trait c2 extends Scope with After {

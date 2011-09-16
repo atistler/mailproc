@@ -19,8 +19,8 @@ class TemplateAttribute(
     new TemplateAttribute(id, templateId, attributeId, optional, value)
   }
 
-  lazy val template = Template.getMem(templateId)
-  lazy val attribute = Attribute.getMem(attributeId)
+  lazy val template = Template.get(templateId)
+  lazy val attribute = Attribute.get(attributeId)
 
 }
 

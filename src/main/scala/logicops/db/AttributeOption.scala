@@ -13,7 +13,7 @@ class AttributeOption(val id : Option[Int], val attributeId : Int, val value : S
     new AttributeOption(id, attributeId, value)
   }
 
-  lazy val attribute = Attribute.getMem(attributeId)
+  lazy val attribute = Attribute.get(attributeId)
 }
 
 object AttributeOption extends DaoHelper[AttributeOption] {

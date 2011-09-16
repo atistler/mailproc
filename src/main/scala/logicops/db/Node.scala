@@ -3,13 +3,107 @@ package logicops.db {
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
 
-class NodeSeq(nseq : IndexedSeq[Node]) {
-  def nodes() {
-    nseq foreach {
-      n => println(n)
+class Nodes(nodeMap : MuMap[Int, Node]) {
+
+  object connectors {
+    def apply() = {
+      if (nodeMap.isEmpty) {
+        nodeMap
+      } else {
+        broker.transactional(Database.getConnection) {
+          _.selectAll(Node.Tokens.selectByConnectee, "nodes" -> nodeMap.keys.toArray)
+        }.foldLeft(MuMap.empty[Int, Node]) {
+          (m, n) => m(n.id.get) = n; m
+        }
+      }
+    }
+
+    def having(
+      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      ) = {
+      if (nodeMap.isEmpty) {
+        nodeMap
+      } else {
+        broker.transactional(Database.getConnection) {
+          _.selectAll(
+            Node.Tokens.selectByConnectee, "nodes" -> nodeMap.keys.toArray,
+            "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes)
+          )
+        }.foldLeft(MuMap.empty[Int, Node]) {
+          (m, n) => m(n.id.get) = n; m
+        }
+      }
+    }
+    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
+    }
+    def having(connectionType : String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), Nil)
+    }
+    def testhaving(connectionType : ConnectionType) : MuMap[Int, Node] = {
+      if (nodeMap.isEmpty) {
+        nodeMap
+      } else {
+        broker.transactional(Database.getConnection) {
+          _.selectAll(
+            Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray,
+            "connectionTypes" -> mapToIds(List(connectionType)), "connecteeTypes" -> mapToIds(Nil)
+          )
+        }.foldLeft(MuMap.empty[Int, Node]) {
+          (m, n) => m(n.id.get) = n; m
+        }
+      }
     }
   }
+
+  object connectees {
+    def apply() = {
+      if (nodeMap.isEmpty) {
+        nodeMap
+      } else {
+        broker.transactional(Database.getConnection) {
+          _.selectAll(Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray)
+        }.foldLeft(MuMap.empty[Int, Node]) {
+          (m, n) => m(n.id.get) = n; m
+        }
+      }
+    }
+
+    def having(
+      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      ) = {
+      if (nodeMap.isEmpty) {
+        nodeMap
+      } else {
+        broker.transactional(Database.getConnection) {
+          _.selectAll(
+            Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray,
+            "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes)
+          )
+        }.foldLeft(MuMap.empty[Int, Node]) {
+          (m, n) => m(n.id.get) = n; m
+        }
+      }
+    }
+    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
+    }
+    def having(connectionType : String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), Nil)
+    }
+
+  }
+
 }
+
+/*
+object Nodes {
+  object Tokens extends TokenSet(true) {
+    val selectByConnector = Token('selectNodesByConnector, NodeExtractor)
+    val selectByConnectee = Token('selectNodesByConnectee, NodeExtractor)
+  }
+}
+*/
 
 class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao[Node] {
   private[db] val attributes = MuMap.empty[String, NodeAttribute]
@@ -31,18 +125,34 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     def apply() = {
       broker.transactional(Database.getConnection) {
         _.selectAll(Node.Tokens.selectByConnectee, "node" -> self)
+      }.foldLeft(MuMap.empty[Int, Node]) {
+        (m, n) => m(n.id.get) = n; m
       }
     }
 
     def having(
-      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType] = Nil
       ) = {
       broker.transactional(Database.getConnection) {
         _.selectAll(
           Node.Tokens.selectByConnectee, "node" -> self,
-          "connectionTypes" -> mapToIds(connectionTypes).toArray, "connectorTypes" -> mapToIds(nodeTypes).toArray
+          "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes)
         )
+      }.foldLeft(MuMap.empty[Int, Node]) {
+        (m, n) => m(n.id.get) = n; m
       }
+    }
+    /*
+    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
+    }
+    */
+    def having(connectionType: ConnectionType, nodeType: NodeType) : MuMap[Int, Node] = {
+      having(List(connectionType), List(nodeType))
+    }
+
+    def having(connectionType: ConnectionType) : MuMap[Int, Node] = {
+      having(List(connectionType), Nil)
     }
   }
 
@@ -50,6 +160,8 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     def apply() = {
       broker.transactional(Database.getConnection) {
         _.selectAll(Node.Tokens.selectByConnector, "node" -> self)
+      }.foldLeft(MuMap.empty[Int, Node]) {
+        (m, n) => m(n.id.get) = n; m
       }
     }
 
@@ -59,14 +171,19 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
       broker.transactional(Database.getConnection) {
         _.selectAll(
           Node.Tokens.selectByConnector, "node" -> self,
-          "connectionTypes" -> mapToIds(connectionTypes).toArray, "connecteeTypes" -> mapToIds(nodeTypes).toArray
+          "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes)
         )
+      }.foldLeft(MuMap.empty[Int, Node]) {
+        (m, n) => m(n.id.get) = n; m
       }
+    }
+    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
+      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
     }
   }
 
-  lazy val nodeType = NodeType.getMem(nodeTypeId)
-  lazy val template = Template.getMem(templateId)
+  lazy val nodeType = NodeType.get(nodeTypeId)
+  lazy val template = Template.get(templateId)
 
   def attr(s : String) = {
     attributes.get(s)
@@ -107,6 +224,14 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   def break(connectionType : String, node : Node) : Node = {
     break(ConnectionType.get(connectionType), node)
+  }
+
+  def setAttr(attribute : String, value : Int) : Node = {
+    setAttr(attribute, value.toString)
+  }
+
+  def setAttr(attribute : Attribute, value : Int) : Node = {
+    setAttr(attribute, value.toString)
   }
 
   def setAttr(attribute : Attribute, value : String) : Node = {

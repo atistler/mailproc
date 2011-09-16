@@ -14,7 +14,7 @@ class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) ex
     new Template(id, nodeTypeId, name)
   }
 
-  lazy val nodeType = NodeType.getMem(nodeTypeId)
+  lazy val nodeType = NodeType.get(nodeTypeId)
 
   def attr(s : String) = {
     attributes.get(s)
@@ -67,7 +67,7 @@ object Template extends NamedDaoHelper[Template] {
     broker.transactional(Database.getConnection) {
       _.selectAll(
         Template.Tokens.selectByQuery,
-        "nodeTypeIds" -> mapToIds(nodeTypes).toArray, "attributeIds" -> mapToIds(attributes).toArray
+        "nodeTypeIds" -> mapToIds(nodeTypes), "attributeIds" -> mapToIds(attributes)
       )
     }
   }

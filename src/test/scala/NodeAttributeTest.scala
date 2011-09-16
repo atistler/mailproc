@@ -6,11 +6,11 @@ class NodeAttributeTest extends Specification {
 
   "The node_attribute with id 1006" should {
     "have node_id of 1001" in {
-      val node_attribute = NodeAttribute.getMem(1006)
+      val node_attribute = NodeAttribute.get(1006)
       node_attribute.nodeId must_== 1001
     }
     "have a value of 'Physical'" in {
-      val node_attribute = NodeAttribute.getMem(1006)
+      val node_attribute = NodeAttribute.get(1006)
       node_attribute.value must_== "Physical"
     }
   }

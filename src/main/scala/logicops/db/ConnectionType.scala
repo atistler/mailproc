@@ -20,7 +20,7 @@ class ConnectionType(
     new ConnectionType(id, name, bidirectional, complimentTypeId)
   }
 
-  lazy val complimentType = ConnectionType.getMem(complimentTypeId)
+  lazy val complimentType = ConnectionType.get(complimentTypeId)
 }
 
 

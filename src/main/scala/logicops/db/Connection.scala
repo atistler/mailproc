@@ -15,9 +15,9 @@ class Connection(
   val connecteeId : Int, val connecteeTypeId : Int
   ) extends Dao[Connection] {
   override def toString = "Connection[%s] (type: %s[%d], connector:%d %s[%d], connectee: %d %s[%d])".format(
-    id, ConnectionType.getMem(connectionTypeId).name, connectionTypeId, connectorId,
-    NodeType.getMem(connectorTypeId).name,
-    connectorTypeId, connecteeId, NodeType.getMem(connecteeTypeId).name, connecteeTypeId
+    id, ConnectionType.get(connectionTypeId).name, connectionTypeId, connectorId,
+    NodeType.get(connectorTypeId).name,
+    connectorTypeId, connecteeId, NodeType.get(connecteeTypeId).name, connecteeTypeId
   )
 
   protected val companion = Connection
@@ -30,11 +30,11 @@ class Connection(
     new Connection(id, connectionTypeId, connectorId, connectorTypeId, connecteeId, connecteeTypeId)
   }
 
-  lazy val connectionType = ConnectionType.getMem(connectionTypeId)
+  lazy val connectionType = ConnectionType.get(connectionTypeId)
   lazy val connectee = Node.get(connecteeId)
-  lazy val connecteeType = NodeType.getMem(connecteeTypeId)
+  lazy val connecteeType = NodeType.get(connecteeTypeId)
   lazy val connector = Node.get(connectorId)
-  lazy val connectorType = NodeType.getMem(connectorTypeId)
+  lazy val connectorType = NodeType.get(connectorTypeId)
 
   def find() : Option[Connection] = {
     broker.transactional(Database.getConnection) {

@@ -6,18 +6,18 @@ class AttributeTest extends Specification  {
 
   "attribute with attribute_id 1" should {
     "have interface_name of 'Name'" in {
-      val a = Attribute.getMem(1)
+      val a = Attribute.get(1)
       a.name must_== "Name"
     }
   }
 
   "attribute with attribute_id 1072" should {
     "have interface_name of 'Service Request Sub-Status'" in {
-      val a = Attribute.getMem(1072)
+      val a = Attribute.get(1072)
       a.name must_== "Service Request Sub-Status"
     }
     "have 9 attribute options" in {
-      val a = Attribute.getMem(1072)
+      val a = Attribute.get(1072)
       a.options.length must_== 9
     }
   }

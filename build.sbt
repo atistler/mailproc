@@ -9,6 +9,10 @@ scalaVersion := "2.9.0-1"
 
 mainClass := Some("mailproc.MailProc")
 
+seq(oneJarSettings: _*)
+
+libraryDependencies += "commons-lang" % "commons-lang" % "2.6"
+
 resolvers += "Java.net Repo" at "http://download.java.net/maven/2/"
 
 resolvers ++= Seq(
@@ -35,11 +39,9 @@ libraryDependencies += "org.orbroker" % "orbroker" % "3.1.1"
 
 libraryDependencies += "javax.mail" % "mail" % "1.4.2"
 
-// libraryDependencies += "org.squeryl" %% "squeryl" % "0.9.4"
-
 libraryDependencies += "postgresql" % "postgresql" % "8.4-701.jdbc4"
 
-// libraryDependencies += "postgresql" % "postgresql" % "8.4-701.jdbc4"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime"
 
 retrieveManaged := true
 

@@ -13,17 +13,17 @@ class NodeTypeTest extends Specification {
 
   "NodeType with node_type_id of 1057" should {
     "have name 'Service Request" in {
-      val node_type = NodeType.getMem(1057)
+      val node_type = NodeType.get(1057)
       node_type.name must_== "Service Request"
     }
   }
 
   "Creating a new NodeType" should {
     "have a interface_name of 'Test Node Type'" in new nt1 {
-      NodeType.getMem(nt.id.get).name must_== "Test Node Type"
+      NodeType.get(nt.id.get).name must_== "Test Node Type"
     }
     "have a poolid of 1499" in new nt1 {
-      NodeType.getMem(nt.id.get).poolId must_== 1499
+      NodeType.get(nt.id.get).poolId must_== 1499
     }
     "able to be updated" in new nt1 {
       nt.copy(name = "Test Node Type2").save()

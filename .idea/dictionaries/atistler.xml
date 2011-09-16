@@ -2,14 +2,24 @@
   <dictionary name="atistler">
     <words>
       <w>addr</w>
+      <w>addrs</w>
+      <w>akka</w>
+      <w>atistler</w>
       <w>attrs</w>
+      <w>conf</w>
       <w>connectee</w>
       <w>connectees</w>
       <w>ctype</w>
+      <w>dbhost</w>
       <w>fromdb</w>
       <w>iseq</w>
+      <w>iter</w>
+      <w>iterable</w>
+      <w>logicops</w>
+      <w>maildir</w>
       <w>mailproc</w>
       <w>memoize</w>
+      <w>nodeid</w>
       <w>ntype</w>
       <w>openended</w>
       <w>proc</w>
