@@ -4,7 +4,7 @@ import org.orbroker._
 
 class ConnectionType(
   val id : Option[Int], val name : String, var bidirectional : Boolean = false, val complimentTypeId : Int = 0
-  ) extends Dao[ConnectionType] {
+  ) extends Dao {
 
   if ( bidirectional ) {
     assert(complimentTypeId > 0)
@@ -47,8 +47,7 @@ object ConnectionType extends NamedDaoHelper[ConnectionType] {
     apply(name, bidirectional, complimentType.id.get)
   }
 
-  object Tokens extends NamedBasicTokens {
-  }
+  object Tokens extends NamedBasicTokens
 
 }
 

@@ -3,7 +3,7 @@ package logicops.db {
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
 
-class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends Dao[Template] {
+class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends Dao {
   private[db] val attributes = MuMap.empty[String, TemplateAttribute]
 
   override def toString = "Template[%s] (name: %s, nodeType: %s[%d])".format(id, name, nodeType.name, nodeTypeId)

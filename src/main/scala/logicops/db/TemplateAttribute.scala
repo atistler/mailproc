@@ -4,7 +4,7 @@ import org.orbroker._
 
 class TemplateAttribute(
   val id : Option[Int], val templateId : Int, val attributeId : Int, val optional : Boolean, val value : String
-  ) extends Dao[TemplateAttribute] {
+  ) extends Dao {
 
   override def toString = "TemplateAttribute[%s] (template: %s[%d], attribute: %s[%d], value: %s)".format(
     id, template.name, templateId, attribute.name, attributeId, value
@@ -69,13 +69,7 @@ object TemplateAttribute extends DaoHelper[TemplateAttribute] {
    def all(template: Template*): IndexedSeq[TemplateAttribute]
   */
 
-  object Tokens extends BasicTokens {
-    /*
-    val insert = Token[Int]('insertTemplateAttribute)
-    val update = Token('updateTemplateAttribute)
-    */
-  }
-
+  object Tokens extends BasicTokens
 }
 
 object TemplateAttributeExtractor extends JoinExtractor[TemplateAttribute] {

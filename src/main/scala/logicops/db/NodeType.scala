@@ -2,7 +2,7 @@ package logicops.db {
 
 import org.orbroker._
 
-class NodeType(val id : Option[Int], val poolId : Int, val name : String) extends Dao[NodeType] {
+class NodeType(val id : Option[Int], val poolId : Int, val name : String) extends Dao {
 
   override def toString = "NodeType[%s] (name: %s, poolId: %d)".format(id, name, poolId)
 

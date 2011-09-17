@@ -22,7 +22,7 @@ class ConnectionTypeTest extends Specification {
       Database.getConnection.rollback()
     }
 
-    val ct = ConnectionType("Test Conn Type", false, 0).save()
+    val ct = ConnectionType("Test Conn Type", false, 0).save().get
   }
 
 }

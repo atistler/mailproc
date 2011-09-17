@@ -13,7 +13,7 @@ class TicketHandler extends Actor {
   implicit def Node2HasSRQ(node : Node) = new HasSRQ(node)
 
   class HasSRQ(node : Node) {
-    def serviceRequestQueue = node.connectors.having("Child", "Service Request Queue").headOption
+    def serviceRequestQueue = node.connectors.having(ConnectionType.get("Child"), NodeType.get("Service Request Queue")).headOption
   }
 
   private lazy val unassignedSrq = Node.find("User", "Name" -> "Unassigned").headOption match {
@@ -74,7 +74,7 @@ class TicketHandler extends Actor {
     case AddOutgoingEmail(user, sr_node_id, subject, to, from, body, file) => {
       Node.getOption(sr_node_id) match {
         case Some(sr_node) => {
-          val email_node = buildEmail(Node.createFrom("Outgoing Email").save(), subject, to)
+          val email_node = buildEmail(Node.createFrom("Outgoing Email").save().get, subject, to)
             .connect("Created By", user)
             .connect("Child", sr_node)
           sr_node.valueOf("Service Request Status") match {
@@ -98,7 +98,7 @@ class TicketHandler extends Actor {
     case AddIncomingEmail(user, sr_node_id, subject, to, from, body, file) => {
       Node.getOption(sr_node_id) match {
         case Some(sr_node) => {
-          val email_node = buildEmail(Node.createFrom("Incoming Email").save(), subject, to)
+          val email_node = buildEmail(Node.createFrom("Incoming Email").save().get, subject, to)
             .connect("Created By", user)
             .connect("Child", sr_node)
           sr_node.valueOf("Service Request Status") match {
@@ -120,7 +120,7 @@ class TicketHandler extends Actor {
       }
     }
     case CreateNewSR(user, subject, to, from, body, file) => {
-      val sr_node = Node.createFrom("Client Email SR").save()
+      val sr_node = Node.createFrom("Client Email SR").save().get
       sr_node.setAttr("Abstract", subject)
         .setAttr("Name", "SR 3-%d".format(sr_node.id.get))
         .setAttr("Service Request Status", "Unconfirmed")
@@ -128,7 +128,7 @@ class TicketHandler extends Actor {
         .connect("Assigned To", unassignedSrq)
         .connect("Child", user)
 
-      val email_node = buildEmail(Node.createFrom("Incoming Email").save(), subject, to)
+      val email_node = buildEmail(Node.createFrom("Incoming Email").save().get, subject, to)
         .connect("Created By", user)
         .connect("Child", sr_node)
 

@@ -43,7 +43,7 @@ class ConnectionTest extends Specification {
     def after {
       Database.getConnection.rollback()
     }
-    val c = Connection(ConnectionType.get("Parent"), Node.get(119840), Node.get(119841)).save()
+    val c = Connection(ConnectionType.get("Parent"), Node.get(119840), Node.get(119841)).save().get
   }
 
 }

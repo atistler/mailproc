@@ -31,7 +31,7 @@ class NodeAttributeTest extends Specification {
     def after {
       Database.getConnection.rollback()
     }
-    val na = NodeAttribute(Node.get(119840), "Area", "Test Area").save()
+    val na = NodeAttribute(Node.get(119840), "Area", "Test Area").save().get
   }
 
 }

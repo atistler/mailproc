@@ -31,6 +31,6 @@ class AttributeOptionTest extends Specification {
     def after {
       Database.getConnection.rollback()
     }
-    val ao = AttributeOption(Attribute.get("Area"), "TestArea").save()
+    val ao = AttributeOption(Attribute.get("Area"), "TestArea").save().get
   }
 }

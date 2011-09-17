@@ -39,7 +39,7 @@ class NodeTypeTest extends Specification {
     def after {
       Database.getConnection.rollback()
     }
-    val nt = NodeType(1499, "Test Node Type").save()
+    val nt = NodeType(1499, "Test Node Type").save().get
   }
 
 

@@ -105,7 +105,7 @@ object Nodes {
 }
 */
 
-class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao[Node] {
+class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao {
   private[db] val attributes = MuMap.empty[String, NodeAttribute]
 
   private val self = this
@@ -241,33 +241,27 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
   def setAttr(attributeName : String, value : String) : Node = {
     attr(attributeName) match {
       case Some(na) => {
-        val newNa = na.copy(value = value).save()
+        val newNa = na.copy(value = value).save().get.asInstanceOf[NodeAttribute]
         attributes += newNa.attribute.name -> newNa
         this
       }
       case None => {
-        val na = NodeAttribute(this, Attribute.get(attributeName), value).save()
+        val na = NodeAttribute(this, Attribute.get(attributeName), value).save().get.asInstanceOf[NodeAttribute]
         attributes += na.attribute.name -> na
         this
       }
     }
   }
 
-  override def save() : Node = {
-    var newNode : Node = null
+  override def save() : Option[Node] = {
     id match {
       case Some(i) => throw new DaoException("Nodes cannot be updated: " + this)
       case None => {
         broker.transactional(Database.getConnection) {
-          _.executeForKeys(
-            Node.Tokens.insert, "node" -> this
-          ) {
-            n : Node => newNode = n
-          }
+          _.executeForKey[Node](Node.Tokens.insert, "node" -> this)
         }
       }
     }
-    newNode
   }
 
   /* TODO:
@@ -330,7 +324,7 @@ object Node extends DaoHelper[Node] {
   }
 
   def createFrom(template : Template) : Node = {
-    val node = Node(template.nodeTypeId, template.id.get).save()
+    val node = Node(template.nodeTypeId, template.id.get).save().get
     for (attr <- template.attributes) {
       node.setAttr(attr._1, attr._2.value)
     }
@@ -362,7 +356,6 @@ object Node extends DaoHelper[Node] {
     override val insert = Token('insertNode, NodeRowExtractor)
     val selectByNodeTypeAttribute = Token('selectNodeByNodeTypeAttribute, extractor)
   }
-
 }
 
 object NodeRowExtractor extends RowExtractor[Node] {

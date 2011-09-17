@@ -13,7 +13,7 @@ class ConnectionSeq(iseq : IndexedSeq[Connection]) {
 class Connection(
   val id : Option[Int], val connectionTypeId : Int, val connectorId : Int, val connectorTypeId : Int,
   val connecteeId : Int, val connecteeTypeId : Int
-  ) extends Dao[Connection] {
+  ) extends Dao {
   override def toString = "Connection[%s] (type: %s[%d], connector:%d %s[%d], connectee: %d %s[%d])".format(
     id, ConnectionType.get(connectionTypeId).name, connectionTypeId, connectorId,
     NodeType.get(connectorTypeId).name,

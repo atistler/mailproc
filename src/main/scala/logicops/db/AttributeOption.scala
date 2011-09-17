@@ -2,7 +2,7 @@ package logicops.db {
 
 import org.orbroker._
 
-class AttributeOption(val id : Option[Int], val attributeId : Int, val value : String) extends Dao[AttributeOption] {
+class AttributeOption(val id : Option[Int], val attributeId : Int, val value : String) extends Dao {
   override def toString = "AttributeOption[%s] (attribute: %s[%d], value: %s".format(
     id.get, attribute.name, attributeId, value
   )

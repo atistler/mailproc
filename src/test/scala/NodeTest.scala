@@ -59,10 +59,12 @@ class NodeTest extends Specification with RollbackSpec {
       )
       n3.size must_== 2
     }
+    /*
     "able to select children by name" in {
       val n3 = n2.connectors.testhaving("Parent")
       n3.size must_== 2
     }
+    */
   }
 
   "Creating new node" should {

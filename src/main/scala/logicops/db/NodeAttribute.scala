@@ -4,7 +4,7 @@ import org.orbroker._
 
 class NodeAttribute (
   val id : Option[Int], val nodeId : Int, val attributeId : Int, val value : String
-  ) extends Dao[NodeAttribute] {
+  ) extends Dao {
 
   override def toString = "NodeAttribute[%s] (nodeId: %d, attribute: %s[%d], value: %s".format(
     id, nodeId, Attribute.get(attributeId).name, attributeId, value
@@ -19,7 +19,7 @@ class NodeAttribute (
     new NodeAttribute(id, nodeId, attributeId, value)
   }
 
-  lazy val attribute = Attribute.get(attributeId)
+  lazy val attribute : Attribute = Attribute.get(attributeId)
 }
 
 object NodeAttribute extends DaoHelper[NodeAttribute] {
@@ -77,8 +77,7 @@ object NodeAttribute extends DaoHelper[NodeAttribute] {
     apply(node, Attribute.get(attribute), value)
   }
 
-  object Tokens extends BasicTokens {
-  }
+  object Tokens extends BasicTokens
 }
 
 object NodeAttributeExtractor extends RowExtractor[NodeAttribute] {

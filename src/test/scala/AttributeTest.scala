@@ -24,7 +24,7 @@ class AttributeTest extends Specification  {
 
   "attribute with name 'Test Attribute'" should {
     "have interface_name of 'Test Attribute" in {
-      val a = Attribute("Test Attribute", false).save()
+      val a = Attribute("Test Attribute", false).save().get
       Attribute.get(a.name).name must_== "Test Attribute"
     }
   }
@@ -44,7 +44,7 @@ class AttributeTest extends Specification  {
       Database.getConnection.rollback()
     }
 
-    val a = Attribute("Test Attr2", false).save()
+    val a = Attribute("Test Attr2", false).save().get
   }
 
 }
