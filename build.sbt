@@ -9,17 +9,10 @@ scalaVersion := "2.9.0-1"
 
 mainClass := Some("mailproc.MailProc")
 
-scalacOptions += "-deprecation"
-
-scalacOptions += "-unchecked"
-
-seq(oneJarSettings: _*)
-
-libraryDependencies += "commons-lang" % "commons-lang" % "2.6"
-
-resolvers += "Java.net Repo" at "http://download.java.net/maven/2/"
+scalacOptions ++= Seq("-deprecation","-unchecked")
 
 resolvers ++= Seq(
+  "Java.net Repo" at "http://download.java.net/maven/2/",
   "snapshots" at "http://scala-tools.org/repo-snapshots",
   "releases" at "http://scala-tools.org/repo-releases",
   // "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
@@ -27,28 +20,25 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
+  "commons-lang" % "commons-lang" % "2.6",
   "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
   "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test",
-  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6",
-  "org.jsoup" % "jsoup" % "1.6.1"
   // with Scala 2.9.0
   // "org.specs2" %% "specs2-scalaz-core" % "6.0.RC2" % "test"
+  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6",
+  "org.jsoup" % "jsoup" % "1.6.1",
+  "org.freemarker" % "freemarker" % "2.3.18",
+  "org.apache.velocity" % "velocity" % "1.6.2",
+  "org.orbroker" % "orbroker" % "3.1.1",
+  "javax.mail" % "mail" % "1.4.2",
+  "postgresql" % "postgresql" % "8.4-701.jdbc4",
+  "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime"
 )
 
-libraryDependencies += "org.freemarker" % "freemarker" % "2.3.18"
-
-libraryDependencies += "org.apache.velocity" % "velocity" % "1.6.2"
-
-libraryDependencies += "org.orbroker" % "orbroker" % "3.1.1"
-
-libraryDependencies += "javax.mail" % "mail" % "1.4.2"
-
-libraryDependencies += "postgresql" % "postgresql" % "8.4-701.jdbc4"
-
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime"
-
 retrieveManaged := true
+
+seq(oneJarSettings: _*)
 
 parallelExecution in Test := false
 
