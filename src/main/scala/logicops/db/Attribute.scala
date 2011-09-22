@@ -2,7 +2,7 @@ package logicops.db {
 
 import org.orbroker._
 
-class Attribute(val id : Option[Int], val name : String, val openended : Boolean = true) extends Dao {
+class Attribute(val id : Option[Int], val name : String, val openended : Boolean = true) extends NamedDao[Attribute] {
   override def toString = "Attribute[%s] (name: %s)".format(id, name)
 
   protected val companion = Attribute

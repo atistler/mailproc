@@ -20,7 +20,7 @@ class NodeAttributeTest extends Specification {
       na.value must_== "Test Area"
     }
     "able to be updated" in new na1 {
-      na.copy(value = "Test Area2").save().value must_== "Test Area2"
+      na.copy(value = "Test Area2").save().get.value must_== "Test Area2"
     }
     "able to be deleted" in new na1 {
       na.delete()

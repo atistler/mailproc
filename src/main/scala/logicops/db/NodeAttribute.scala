@@ -4,7 +4,7 @@ import org.orbroker._
 
 class NodeAttribute (
   val id : Option[Int], val nodeId : Int, val attributeId : Int, val value : String
-  ) extends Dao {
+  ) extends Dao[NodeAttribute] {
 
   override def toString = "NodeAttribute[%s] (nodeId: %d, attribute: %s[%d], value: %s".format(
     id, nodeId, Attribute.get(attributeId).name, attributeId, value
@@ -37,20 +37,12 @@ object NodeAttribute extends DaoHelper[NodeAttribute] {
     apply(id, nodeId, attribute.id.get, value)
   }
 
-  def apply(id : Int, nodeId : Int, attribute : String, value : String) : NodeAttribute = {
-    apply(id, nodeId, Attribute.get(attribute), value)
-  }
-
   def apply(id : Int, node : Node, attributeId : Int, value : String) : NodeAttribute = {
     apply(id, node.id.get, attributeId, value)
   }
 
   def apply(id : Int, node : Node, attribute : Attribute, value : String) : NodeAttribute = {
     apply(id, node.id.get, attribute.id.get, value)
-  }
-
-  def apply(id : Int, node : Node, attribute : String, value : String) : NodeAttribute = {
-    apply(id, node, Attribute.get(attribute), value)
   }
 
   def apply(nodeId : Int, attributeId : Int, value : String) : NodeAttribute = {
@@ -61,10 +53,6 @@ object NodeAttribute extends DaoHelper[NodeAttribute] {
     apply(nodeId, attribute.id.get, value)
   }
 
-  def apply(nodeId : Int, attribute : String, value : String) : NodeAttribute = {
-    apply(nodeId, Attribute.get(attribute), value)
-  }
-
   def apply(node : Node, attributeId : Int, value : String) : NodeAttribute = {
     apply(node.id.get, attributeId, value)
   }
@@ -73,9 +61,6 @@ object NodeAttribute extends DaoHelper[NodeAttribute] {
     apply(node.id.get, attribute.id.get, value)
   }
 
-  def apply(node : Node, attribute : String, value : String) : NodeAttribute = {
-    apply(node, Attribute.get(attribute), value)
-  }
 
   object Tokens extends BasicTokens
 }

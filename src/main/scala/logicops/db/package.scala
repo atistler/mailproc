@@ -49,7 +49,7 @@ package object db {
     }
   }
 
-  private[db] def mapToIds(iter : Iterable[Dao]) : Array[Int] = {
+  private[db] def mapToIds(iter : Iterable[Dao[_]]) : Array[Int] = {
     iter.map(_.id.get).toArray
   }
 
@@ -101,18 +101,31 @@ package object db {
 
   class DaoException(msg : String) extends RuntimeException(msg)
 
-  private[db] trait Dao {
+  private[db] trait Dao[T] {
 
     val id : Option[Int]
 
-    protected val companion : DaoHelper[_ <: Dao]
+    protected val companion : DaoHelper[T]
 
-    def save() = {
-      companion.doSave(this)
+    def save() : Option[T] = {
+      id match {
+        case Some(_id) => {
+          broker.transactional(Database.getConnection) {
+            _.executeForKey(companion.Tokens.update, "object" -> this)
+          }
+        }
+        case None => {
+          broker.transactional(Database.getConnection) {
+            _.executeForKey(companion.Tokens.insert, "object" -> this)
+          }
+        }
+      }
     }
 
     def delete() {
-      companion.doDelete(this)
+      broker.transactional(Database.getConnection) {
+        _.execute(companion.Tokens.deleteById, "id" -> this.id.get)
+      }
     }
 
     sealed trait State {
@@ -132,7 +145,18 @@ package object db {
     }
   }
 
-  private[db] trait DaoHelper[T <: Dao] {
+  private[db] trait NamedDao[T] extends Dao[T] {
+    override def hashCode = id.get
+    override def equals(that: Any) =
+      that match {
+        case nd : NamedDao[_] => {
+          nd.getClass == getClass && nd.id.get == id.get
+        }
+        case _ => false
+      }
+  }
+
+  private[db] trait DaoHelper[T] {
     val extractor : QueryExtractor[T]
     val pK : String
     val tableName : String
@@ -142,7 +166,6 @@ package object db {
     def getDb(id : Int) : T = getOptionDb(id).get
 
     def getOptionDb(id : Int) : Option[T] = selectOneOption(Tokens.selectById, "id" -> id)
-
 
     private val _getById = Memoize1(getDb)
     private val _getByIdOption = Memoize1(getOptionDb)
@@ -163,27 +186,7 @@ package object db {
       }
     }
 
-    def doSave(obj : T) : Option[T] = {
-      obj.id match {
-        case Some(_id) => {
-          broker.transactional(Database.getConnection) {
-            _.executeForKey(Tokens.update, "object" -> obj)
-          }
-        }
-        case None => {
-          broker.transactional(Database.getConnection) {
-            _.executeForKey(Tokens.insert, "object" -> obj)
-          }
 
-        }
-      }
-    }
-
-    def doDelete(obj : T) {
-      broker.transactional(Database.getConnection) {
-        _.execute(Tokens.deleteById, "id" -> obj.id.get)
-      }
-    }
 
     class BasicTokens extends TokenSet(true) {
 
@@ -210,16 +213,38 @@ package object db {
         )
       }
     }
-
   }
 
-  implicit def string2Dao(s : String) : Dao = {
-    ConnectionType.getOption(s).getOrElse(
-      NodeType.getOption(s).getOrElse(Attribute.getOption(s).getOrElse(Template.getOption(s).get))
-    )
+  implicit def tuple2Na(s: (String,String)) : ( Attribute, String ) = {
+     Attribute.get(s._1) -> s._2
   }
 
-  private[db] trait NamedDaoHelper[T <: Dao] extends DaoHelper[T] {
+  implicit def string2Ct(s : String) : ConnectionType = {
+    ConnectionType.getOption(s) match {
+      case Some(ct) => ct
+      case None => throw new DaoException("Invalid interface_name for ConnectionType: %s".format(s))
+    }
+  }
+  implicit def string2Nt(s : String) : NodeType = {
+    NodeType.getOption(s) match {
+      case Some(nt) => nt
+      case None => throw new DaoException("Invalid interface_name for NodeType: %s".format(s))
+    }
+  }
+  implicit def string2A(s : String) : Attribute = {
+    Attribute.getOption(s) match {
+      case Some(a) => a
+      case None => throw new DaoException("Invalid interface_name for Attribute: %s".format(s))
+    }
+  }
+  implicit def string2T(s : String) : Template = {
+    Template.getOption(s) match {
+      case Some(t) => t
+      case None => throw new DaoException("Invalid interface_name for Template: %s".format(s))
+    }
+  }
+
+  private[db] trait NamedDaoHelper[T <: Dao[_]] extends DaoHelper[T] {
 
     override val Tokens : NamedBasicTokens
 

@@ -20,7 +20,7 @@ class AttributeOptionTest extends Specification {
       AttributeOption.get(ao.id.get).value must_== "TestArea"
     }
     "able to be updated" in new ao1 {
-      ao.copy(value = "TestArea2").save().value must_== "TestArea2"
+      ao.copy(value = "TestArea2").save().get.value must_== "TestArea2"
     }
     "able to be deleted" in new ao1 {
       ao.delete()

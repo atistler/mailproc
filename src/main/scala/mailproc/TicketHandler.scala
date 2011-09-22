@@ -7,25 +7,43 @@ import javax.mail._
 import internet._
 import java.util.{UUID, Properties}
 
-
 class TicketHandler extends Actor {
 
   implicit def Node2HasSRQ(node : Node) = new HasSRQ(node)
 
   class HasSRQ(node : Node) {
-    def serviceRequestQueue = node.connectors.having(ConnectionType.get("Child"), NodeType.get("Service Request Queue")).headOption
+    def serviceRequestQueue = node.connectors.having("Child", "Service Request Queue").headOption match {
+      case Some((nodeid : Int, node : Node)) => Some(node)
+      case None => None
+    }
+  }
+
+  override def preStart() {
+    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "Unassigned SRQ: " + unassignedSrq)
+  }
+
+  override def preRestart(reason : Throwable) {
+    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+  }
+
+  override def postRestart(reason : Throwable) {
+    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   private lazy val unassignedSrq = Node.find("User", "Name" -> "Unassigned").headOption match {
-    case Some(node : Node) => node.serviceRequestQueue match {
-      case Some(srq: Node) => srq
-      case None => throw new TicketHandlerException("Could not find SRQ under user: %s".format(node.valueOf("Name").get))
+    case Some(node : Node) => {
+      node.serviceRequestQueue match {
+        case Some(srq : Node) => {
+          srq
+        }
+        case None => throw new NoSuchElementException(
+          "Could not find SRQ under user: %s".format(node.valueOf("Name").get)
+        )
+      }
     }
-    case None => throw new TicketHandlerException("Could not find 'Unassigned' user")
+    case None => throw new NoSuchElementException("Could not find 'Unassigned' user")
   }
-
-  class TicketHandlerException(msg : String) extends RuntimeException(msg)
-
 
 
   private def buildEmail(emailNode : Node, subject : String, to : String) : Node = {
@@ -37,7 +55,9 @@ class TicketHandler extends Actor {
 
   private def sendConfirmEmail(user : Node, serviceRequest : Node) {
     def getAddresses(addrs : Option[String]*) = {
-      addrs.foldLeft(List.empty[Address]) { (l,a) => InternetAddress.parse(a.getOrElse("")).toList ::: l}
+      addrs.foldLeft(List.empty[Address]) {
+        (l, a) => InternetAddress.parse(a.getOrElse("")).toList ::: l
+      }
     }
 
     def getConfirmLink(serviceRequest : Node) = {
@@ -52,8 +72,8 @@ class TicketHandler extends Actor {
       message.setReplyTo(InternetAddress.parse(PROPS.getProperty("confirm-email.replyto")).toArray)
       val to = getAddresses(user.valueOf("Email Address"), user.valueOf("Alternate Email Address"))
       val confirm_link = getConfirmLink(serviceRequest)
-      message.setRecipients(Message.RecipientType.TO, to.toArray);
-      message.setSubject("Confirmation Email");
+      message.setRecipients(Message.RecipientType.TO, to.toArray)
+      message.setSubject("Confirmation Email")
       message.setText("Link: %s".format(confirm_link))
       message
     }
@@ -70,47 +90,69 @@ class TicketHandler extends Actor {
     Transport.send(message);
   }
 
+  EventHandler.info(this, "TicketHandler constructor initialized")
+
   def receive = {
     case AddOutgoingEmail(user, sr_node_id, subject, to, from, body, file) => {
       Node.getOption(sr_node_id) match {
         case Some(sr_node) => {
-          val email_node = buildEmail(Node.createFrom("Outgoing Email").save().get, subject, to)
+          val email_node = buildEmail(Node.createFrom("Outgoing Email"), subject, to)
             .connect("Created By", user)
             .connect("Child", sr_node)
+          EventHandler.info(
+            this, "Creating new Outgoing Email under: %s, created by: %s".format(
+              sr_node.valueOf("Name").get, user.valueOf("Name").get
+            )
+          )
           sr_node.valueOf("Service Request Status") match {
             case Some(status) => {
               if (status == "Closed" || status == "Cancelled") {
+                EventHandler.info(
+                  this, "Reopening closed SR: %s, assigning to: %s".format(
+                    sr_node.valueOf("Name").get, user.valueOf("Name").get
+                  )
+                )
                 sr_node.setAttr("Service Request Status", "Open")
                   .connectors.having(List(ConnectionType.get("Assigned To")), List(NodeType.get("User")))
                   .foreach {
-                  case (nid : Int, n : Node) => sr_node.break("Assigned To", n)
+                  case (nid : Int, node : Node) => sr_node.break("Assigned To", node)
                 }
                 sr_node.connect("Assigned To", user)
-                  .connect("Child", user.serviceRequestQueue.head._2)
+                  .connect("Child", user.serviceRequestQueue.get)
               }
             }
-            case None => EventHandler.error(this, "Could not get sr status of sr node_id: %d".format(sr_node_id))
+            case None => EventHandler.error(this, "Could not get status for SR: %d".format(sr_node_id))
           }
         }
-        case None => EventHandler.error(this, "Could not get sr node_id in subject line: %d".format(sr_node_id))
+        case None => EventHandler.error(this, "Could not fetch SR denoted in subject line: %d".format(sr_node_id))
       }
     }
     case AddIncomingEmail(user, sr_node_id, subject, to, from, body, file) => {
       Node.getOption(sr_node_id) match {
         case Some(sr_node) => {
-          val email_node = buildEmail(Node.createFrom("Incoming Email").save().get, subject, to)
+          EventHandler.info(
+            this, "Creating new Outgoing Email under: %s, created by: %s".format(
+              sr_node.valueOf("Name").get, user.valueOf("Name").get
+            )
+          )
+          val email_node = buildEmail(Node.createFrom("Incoming Email"), subject, to)
             .connect("Created By", user)
             .connect("Child", sr_node)
           sr_node.valueOf("Service Request Status") match {
             case Some(status) => {
               if (status == "Closed" || status == "Cancelled") {
+                EventHandler.info(
+                  this, "Reopening closed SR: %s, assigning to: %s".format(
+                    sr_node.valueOf("Name").get, user.valueOf("Name").get
+                  )
+                )
                 sr_node.setAttr("Service Request Status", "Open")
                   .connectors.having(List(ConnectionType.get("Assigned To")), List(NodeType.get("User")))
                   .foreach {
                   case (nid : Int, n : Node) => sr_node.break("Assigned To", n)
                 }
                 sr_node.connect("Assigned To", user)
-                  .connect("Child", user.serviceRequestQueue.head._2)
+                  .connect("Child", user.serviceRequestQueue.get)
               }
             }
             case None => EventHandler.error(this, "Could not get sr status of sr node_id: %d".format(sr_node_id))
@@ -120,15 +162,22 @@ class TicketHandler extends Actor {
       }
     }
     case CreateNewSR(user, subject, to, from, body, file) => {
-      val sr_node = Node.createFrom("Client Email SR").save().get
+      val sr_node = Node.createFrom("Client Email SR")
       sr_node.setAttr("Abstract", subject)
         .setAttr("Name", "SR 3-%d".format(sr_node.id.get))
         .setAttr("Service Request Status", "Unconfirmed")
         .connect("Child", unassignedSrq)
         .connect("Assigned To", unassignedSrq)
         .connect("Child", user)
-
-      val email_node = buildEmail(Node.createFrom("Incoming Email").save().get, subject, to)
+      EventHandler.info(
+        this, "Creating new SR: %s, assigning to: %s".format(sr_node.valueOf("Name").get, user.valueOf("Name").get)
+      )
+      EventHandler.info(
+        this, "Creating new Incoming Email under: %s, created by: %s".format(
+          sr_node.valueOf("Name").get, user.valueOf("Name").get
+        )
+      )
+      val email_node = buildEmail(Node.createFrom("Incoming Email"), subject, to)
         .connect("Created By", user)
         .connect("Child", sr_node)
 

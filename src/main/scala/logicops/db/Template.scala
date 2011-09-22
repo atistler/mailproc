@@ -3,8 +3,8 @@ package logicops.db {
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
 
-class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends Dao {
-  private[db] val attributes = MuMap.empty[String, TemplateAttribute]
+class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) extends NamedDao[Template] {
+  private[db] val attributes = MuMap.empty[Attribute, TemplateAttribute]
 
   override def toString = "Template[%s] (name: %s, nodeType: %s[%d])".format(id, name, nodeType.name, nodeTypeId)
 
@@ -16,19 +16,19 @@ class Template(val id : Option[Int], val nodeTypeId : Int, val name : String) ex
 
   lazy val nodeType = NodeType.get(nodeTypeId)
 
-  def attr(s : String) = {
-    attributes.get(s)
+  def attr(a : Attribute) = {
+    attributes.get(a)
   }
 
-  def valueOf(s : String) = {
-    attr(s) match {
+  def valueOf(a : Attribute) = {
+    attr(a) match {
       case Some(na) => Some(na.value)
       case None => None
     }
   }
 
   /*
- TODO: def children(): IndexedSeq[Template] {}
+ TODO: def children(): Map[Int,Template] {}
   */
 }
 
@@ -47,20 +47,12 @@ object Template extends NamedDaoHelper[Template] {
     apply(nodeType.id.get, name)
   }
 
-  def apply(nodeType : String, name : String) : Template = {
-    apply(NodeType.get(nodeType), name)
-  }
-
   def apply(id : Int, nodeTypeId : Int, name : String) : Template = {
     new Template(Some(id), nodeTypeId, name)
   }
 
   def apply(id : Int, nodeType : NodeType, name : String) : Template = {
     apply(id, nodeType.id.get, name)
-  }
-
-  def apply(id : Int, nodeType : String, name : String) : Template = {
-    apply(id, NodeType.get(nodeType), name)
   }
 
   def all(nodeTypes : List[NodeType] = Nil, attributes : List[Attribute] = Nil) : IndexedSeq[Template] = {
@@ -137,7 +129,7 @@ object TemplateExtractor extends JoinExtractor[Template] {
     )
 
     for (ta <- join.extractSeq(TemplateAttributeExtractor)) {
-      template.attributes += ta.attribute.name -> ta
+      template.attributes += ta.attribute -> ta
     }
     template
   }

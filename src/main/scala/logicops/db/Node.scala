@@ -3,21 +3,22 @@ package logicops.db {
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
 
+private[db] trait LikeHaving {
+  def apply() = having()
+
+  def having(connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil) : MuMap[Int, Node]
+
+  def having(connectionType : ConnectionType, nodeType : NodeType) : MuMap[Int, Node] = {
+    having(List(connectionType), List(nodeType))
+  }
+
+  def having(connectionType : ConnectionType) : MuMap[Int, Node] = {
+    having(List(connectionType), Nil)
+  }
+}
+
 class Nodes(nodeMap : MuMap[Int, Node]) {
-
-  object connectors {
-    def apply() = {
-      if (nodeMap.isEmpty) {
-        nodeMap
-      } else {
-        broker.transactional(Database.getConnection) {
-          _.selectAll(Node.Tokens.selectByConnectee, "nodes" -> nodeMap.keys.toArray)
-        }.foldLeft(MuMap.empty[Int, Node]) {
-          (m, n) => m(n.id.get) = n; m
-        }
-      }
-    }
-
+  object connectors extends LikeHaving {
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
       ) = {
@@ -34,41 +35,10 @@ class Nodes(nodeMap : MuMap[Int, Node]) {
         }
       }
     }
-    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
-    }
-    def having(connectionType : String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), Nil)
-    }
-    def testhaving(connectionType : ConnectionType) : MuMap[Int, Node] = {
-      if (nodeMap.isEmpty) {
-        nodeMap
-      } else {
-        broker.transactional(Database.getConnection) {
-          _.selectAll(
-            Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray,
-            "connectionTypes" -> mapToIds(List(connectionType)), "connecteeTypes" -> mapToIds(Nil)
-          )
-        }.foldLeft(MuMap.empty[Int, Node]) {
-          (m, n) => m(n.id.get) = n; m
-        }
-      }
-    }
+
   }
 
-  object connectees {
-    def apply() = {
-      if (nodeMap.isEmpty) {
-        nodeMap
-      } else {
-        broker.transactional(Database.getConnection) {
-          _.selectAll(Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray)
-        }.foldLeft(MuMap.empty[Int, Node]) {
-          (m, n) => m(n.id.get) = n; m
-        }
-      }
-    }
-
+  object connectees extends LikeHaving {
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
       ) = {
@@ -85,28 +55,12 @@ class Nodes(nodeMap : MuMap[Int, Node]) {
         }
       }
     }
-    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
-    }
-    def having(connectionType : String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), Nil)
-    }
-
   }
 
 }
 
-/*
-object Nodes {
-  object Tokens extends TokenSet(true) {
-    val selectByConnector = Token('selectNodesByConnector, NodeExtractor)
-    val selectByConnectee = Token('selectNodesByConnectee, NodeExtractor)
-  }
-}
-*/
-
-class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao {
-  private[db] val attributes = MuMap.empty[String, NodeAttribute]
+class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao[Node] {
+  private[db] val attributes = MuMap.empty[Attribute, NodeAttribute]
 
   private val self = this
 
@@ -121,15 +75,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
   }
 
 
-  object connectors {
-    def apply() = {
-      broker.transactional(Database.getConnection) {
-        _.selectAll(Node.Tokens.selectByConnectee, "node" -> self)
-      }.foldLeft(MuMap.empty[Int, Node]) {
-        (m, n) => m(n.id.get) = n; m
-      }
-    }
-
+  object connectors extends LikeHaving {
     def having(
       connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType] = Nil
       ) = {
@@ -142,29 +88,9 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
         (m, n) => m(n.id.get) = n; m
       }
     }
-    /*
-    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
-    }
-    */
-    def having(connectionType: ConnectionType, nodeType: NodeType) : MuMap[Int, Node] = {
-      having(List(connectionType), List(nodeType))
-    }
-
-    def having(connectionType: ConnectionType) : MuMap[Int, Node] = {
-      having(List(connectionType), Nil)
-    }
   }
 
-  object connectees {
-    def apply() = {
-      broker.transactional(Database.getConnection) {
-        _.selectAll(Node.Tokens.selectByConnector, "node" -> self)
-      }.foldLeft(MuMap.empty[Int, Node]) {
-        (m, n) => m(n.id.get) = n; m
-      }
-    }
-
+  object connectees extends LikeHaving {
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
       ) = {
@@ -177,20 +103,19 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
         (m, n) => m(n.id.get) = n; m
       }
     }
-    def having(connectionType: String, nodeType: String) : MuMap[Int, Node] = {
-      having(List(ConnectionType.get(connectionType)), List(NodeType.get(nodeType)))
-    }
   }
 
   lazy val nodeType = NodeType.get(nodeTypeId)
   lazy val template = Template.get(templateId)
 
-  def attr(s : String) = {
-    attributes.get(s)
+  def attrs = attributes
+
+  def attr(a : Attribute) = {
+    attributes.get(a)
   }
 
-  def valueOf(s : String) = {
-    attr(s) match {
+  def valueOf(a : Attribute) = {
+    attr(a) match {
       case Some(na) => Some(na.value)
       case None => None
     }
@@ -226,34 +151,27 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     break(ConnectionType.get(connectionType), node)
   }
 
-  def setAttr(attribute : String, value : Int) : Node = {
-    setAttr(attribute, value.toString)
+  def setAttr(a : Attribute, value : Int) : Node = {
+    setAttr(a, value.toString)
   }
 
-  def setAttr(attribute : Attribute, value : Int) : Node = {
-    setAttr(attribute, value.toString)
-  }
 
-  def setAttr(attribute : Attribute, value : String) : Node = {
-    setAttr(attribute.name, value)
-  }
-
-  def setAttr(attributeName : String, value : String) : Node = {
-    attr(attributeName) match {
+  def setAttr(a : Attribute, value : String) : Node = {
+    attr(a) match {
       case Some(na) => {
-        val newNa = na.copy(value = value).save().get.asInstanceOf[NodeAttribute]
-        attributes += newNa.attribute.name -> newNa
+        val newNa = na.copy(value = value).save().get
+        attributes += newNa.attribute -> newNa
         this
       }
       case None => {
-        val na = NodeAttribute(this, Attribute.get(attributeName), value).save().get.asInstanceOf[NodeAttribute]
-        attributes += na.attribute.name -> na
+        val na = NodeAttribute(this, a, value).save().get
+        attributes += na.attribute -> na
         this
       }
     }
   }
 
-  override def save() : Option[Node] = {
+  override def save() = {
     id match {
       case Some(i) => throw new DaoException("Nodes cannot be updated: " + this)
       case None => {
@@ -300,20 +218,12 @@ object Node extends DaoHelper[Node] {
     apply(id, nodeType.id.get, template.id.get)
   }
 
-  def apply(id : Int, nodeType : String, template : String) : Node = {
-    apply(id, NodeType.get(nodeType), Template.get(template))
-  }
-
   def apply(nodeTypeId : Int, templateId : Int) : Node = {
     new Node(None, nodeTypeId, templateId)
   }
 
   def apply(nodeType : NodeType, template : Template) : Node = {
     apply(nodeType.id.get, template.id.get)
-  }
-
-  def apply(nodeType : String, template : String) : Node = {
-    apply(NodeType.get(nodeType), Template.get(template))
   }
 
   def getAll(ids : Int*) = {
@@ -331,21 +241,13 @@ object Node extends DaoHelper[Node] {
     node
   }
 
-  def createFrom(template : String) : Node = {
-    createFrom(Template.get(template))
-  }
-
-  def find(nodeType : NodeType, attribute : (String, String)) : Iterable[Node] = {
+  def find(nodeType : NodeType, attribute : (Attribute, String)) : Iterable[Node] = {
     broker.transactional(Database.getConnection) {
       _.selectAll(
-        Node.Tokens.selectByNodeTypeAttribute, "nodeType" -> nodeType, "attribute" -> Attribute.get(attribute._1),
+        Node.Tokens.selectByNodeTypeAttribute, "nodeType" -> nodeType, "attribute" -> attribute._1,
         "value" -> attribute._2
       )
     }
-  }
-
-  def find(nodeType : String, attribute : (String, String)) : Iterable[Node] = {
-    find(NodeType.get(nodeType), (attribute._1, attribute._2))
   }
 
   object Tokens extends BasicTokens {
@@ -356,6 +258,7 @@ object Node extends DaoHelper[Node] {
     override val insert = Token('insertNode, NodeRowExtractor)
     val selectByNodeTypeAttribute = Token('selectNodeByNodeTypeAttribute, extractor)
   }
+
 }
 
 object NodeRowExtractor extends RowExtractor[Node] {
@@ -380,7 +283,7 @@ object NodeExtractor extends JoinExtractor[Node] {
       row.integer("template_id").get
     )
     for (na <- join.extractSeq(NodeAttributeExtractor)) {
-      node.attributes += na.attribute.name -> na
+      node.attributes += na.attribute -> na
     }
     node
   }

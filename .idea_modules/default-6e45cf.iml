@@ -24,6 +24,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="org.scala-lang_scala-library_2.9.0-1" level="project" />
+    <orderEntry type="library" name="commons-lang_commons-lang_2.6" level="project" />
     <orderEntry type="library" name="org.specs2_specs2_2.9.0-1_1.5" level="project" />
     <orderEntry type="library" name="org.scala-tools.testing_scalacheck_2.9.0-1_1.9" level="project" />
     <orderEntry type="library" name="org.scala-tools.testing_test-interface_0.5" level="project" />
@@ -39,14 +40,17 @@
     <orderEntry type="library" name="asm_asm-util_3.3.1" level="project" />
     <orderEntry type="library" name="asm_asm-analysis_3.3.1" level="project" />
     <orderEntry type="library" name="se.scalablesolutions.akka_akka-actor_1.2-RC6" level="project" />
+    <orderEntry type="library" name="org.jsoup_jsoup_1.6.1" level="project" />
     <orderEntry type="library" name="org.freemarker_freemarker_2.3.18" level="project" />
     <orderEntry type="library" name="org.apache.velocity_velocity_1.6.2" level="project" />
     <orderEntry type="library" name="commons-collections_commons-collections_3.2.1" level="project" />
-    <orderEntry type="library" name="commons-lang_commons-lang_2.4" level="project" />
     <orderEntry type="library" name="oro_oro_2.0.8" level="project" />
     <orderEntry type="library" name="org.orbroker_orbroker_3.1.1" level="project" />
     <orderEntry type="library" name="javax.mail_mail_1.4.2" level="project" />
     <orderEntry type="library" name="javax.activation_activation_1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="ch.qos.logback_logback-classic_0.9.28" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="ch.qos.logback_logback-core_0.9.28" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="org.slf4j_slf4j-api_1.6.1" level="project" />
     <orderEntry type="library" name="postgresql_postgresql_8.4-701.jdbc4" level="project" />
   </component>
 </module>

@@ -4,14 +4,14 @@ import akka.actor.Actor
 import collection.mutable
 import akka.event.EventHandler
 import logicops.db._
-import javax.mail.internet.InternetAddress
+
 
 class UserCheck extends Actor {
 
   val privileged_user_emails = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
   val client_user_emails = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
 
-  doLoad()
+  EventHandler.info(this, "Usercheck constuctor initialized")
 
   private def doLoad() {
     EventHandler.info(this, "Reloading privileged user email cache")
@@ -19,25 +19,19 @@ class UserCheck extends Actor {
 
     val lw_account = Node.find("Account", "Name" -> "Logicworks").head
     EventHandler.debug(this, "Found Logicworks account: %s".format(lw_account))
-    val privileged_users = lw_account.connectors.having(
-      connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("User"))
-    )
+    val privileged_users = lw_account.connectors.having("Child", "User")
     val accounts_container = Node.find("Generic Container Node", "Name" -> "Accounts").head
-    val accounts = accounts_container.connectors.having(
-      connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("Account"))
-    )
-    val client_users = accounts.connectors.having(
-      connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("User"))
-    )
+    val accounts = accounts_container.connectors.having("Child", "Account")
+    val client_users = accounts.connectors.having("Child", "User")
 
     privileged_user_emails.empty
     for ((node_id : Int, user : Node) <- privileged_users) {
       user.attr("Email Address") match {
-        case Some(na) => privileged_user_emails(na.value.trim()) = user
+        case Some(na) => privileged_user_emails(na.value.trim.toLowerCase) = user
         case None =>
       }
       user.attr("Alternate Email Address") match {
-        case Some(na) => privileged_user_emails(na.value.trim()) = user
+        case Some(na) => privileged_user_emails(na.value.trim.toLowerCase) = user
         case None =>
       }
     }
@@ -45,11 +39,11 @@ class UserCheck extends Actor {
     client_user_emails.empty
     for ((node_id : Int, user : Node) <- client_users) {
       user.attr("Email Address") match {
-        case Some(na) => client_user_emails(na.value.trim()) = user
+        case Some(na) => client_user_emails(na.value.trim.toLowerCase) = user
         case None =>
       }
       user.attr("Alternate Email Address") match {
-        case Some(na) => client_user_emails(na.value.trim()) = user
+        case Some(na) => client_user_emails(na.value.trim.toLowerCase) = user
         case None =>
       }
     }
@@ -62,6 +56,11 @@ class UserCheck extends Actor {
     )
   }
 
+  override def preStart() {
+    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    doLoad()
+  }
+
   override def preRestart(reason : Throwable) {
     EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
@@ -72,7 +71,7 @@ class UserCheck extends Actor {
 
   def receive = {
     case GetUserType(addr) => {
-      val raw_address = new InternetAddress(addr.toString).getAddress.trim()
+      val raw_address = EmailParser.prettyAddress(addr)
       if (privileged_user_emails.contains(raw_address)) {
         self reply LwPrivilegedUser(raw_address, privileged_user_emails(raw_address))
       } else if (client_user_emails.contains(raw_address)) {

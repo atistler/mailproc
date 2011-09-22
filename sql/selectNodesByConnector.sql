@@ -1,4 +1,4 @@
-SELECT  n.node_id, n.node_type_id, n.template_id,
+SELECT  distinct(n.node_id), n.node_type_id, n.template_id,
         nam.node_attribute_map_id, nam.value, nam.attribute_id
 FROM    nodes as n, connections as c, node_attributes_map as nam
 WHERE   n.node_id = c.connectee_node_id
@@ -32,8 +32,9 @@ AND     n.node_id = nam.node_id
 <#elseif nodes?? && (nodes?size > 0)>
     AND c.connector_node_id IN (
     <#list nodes as nodeid>
-    ${nodeid}
         <#if (nodeid_index > 0)> , </#if> ${nodeid}
     </#list>
     )
 </#if>
+
+ORDER BY n.node_id, nam.attribute_id

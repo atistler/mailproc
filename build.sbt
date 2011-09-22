@@ -9,6 +9,10 @@ scalaVersion := "2.9.0-1"
 
 mainClass := Some("mailproc.MailProc")
 
+scalacOptions += "-deprecation"
+
+scalacOptions += "-unchecked"
+
 seq(oneJarSettings: _*)
 
 libraryDependencies += "commons-lang" % "commons-lang" % "2.6"
@@ -26,7 +30,8 @@ libraryDependencies ++= Seq(
   "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
   "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test",
-  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6"
+  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6",
+  "org.jsoup" % "jsoup" % "1.6.1"
   // with Scala 2.9.0
   // "org.specs2" %% "specs2-scalaz-core" % "6.0.RC2" % "test"
 )

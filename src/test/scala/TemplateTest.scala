@@ -1,8 +1,7 @@
-import logicops.util.RollbackSpec
 import org.specs2.mutable._
 import logicops.db._
 
-class TemplateTest extends Specification with RollbackSpec {
+class TemplateTest extends Specification {
 
   "The template with id 1" should {
     val t1 = Template.get(1)

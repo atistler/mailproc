@@ -13,7 +13,7 @@ class ConnectionSeq(iseq : IndexedSeq[Connection]) {
 class Connection(
   val id : Option[Int], val connectionTypeId : Int, val connectorId : Int, val connectorTypeId : Int,
   val connecteeId : Int, val connecteeTypeId : Int
-  ) extends Dao {
+  ) extends Dao[Connection] {
   override def toString = "Connection[%s] (type: %s[%d], connector:%d %s[%d], connectee: %d %s[%d])".format(
     id, ConnectionType.get(connectionTypeId).name, connectionTypeId, connectorId,
     NodeType.get(connectorTypeId).name,
@@ -79,16 +79,6 @@ object Connection extends DaoHelper[Connection] {
   }
 
   def apply(
-    connectionId : Int, connectionType : String, connecteeId : Int, connecteeType : String,
-    connectorId : Int, connectorType : String
-    ) : Connection = {
-    apply(
-      connectionId, ConnectionType.get(connectionType), connecteeId, NodeType.get(connecteeType),
-      connectorId, NodeType.get(connectorType)
-    )
-  }
-
-  def apply(
     connectionId : Int, connectionTypeId : Int, connectee : Node, connector : Node
     ) : Connection = {
     apply(
@@ -106,16 +96,6 @@ object Connection extends DaoHelper[Connection] {
       connectionId, connectionType.id.get, connectee.id.get, connectee.nodeTypeId,
       connector.id.get,
       connector.nodeTypeId
-    )
-  }
-
-  def apply(
-    connectionId : Int, connectionType : String, connectee : Node, connector : Node
-    ) : Connection = {
-    apply(
-      connectionId, ConnectionType.get(connectionType), connectee.id.get, connectee.nodeType,
-      connector.id.get,
-      connector.nodeType
     )
   }
 
@@ -142,16 +122,6 @@ object Connection extends DaoHelper[Connection] {
   }
 
   def apply(
-    connectionType : String, connecteeId : Int, connecteeType : String,
-    connectorId : Int, connectorType : String
-    ) : Connection = {
-    apply(
-      ConnectionType.get(connectionType), connecteeId, NodeType.get(connecteeType),
-      connectorId, NodeType.get(connectorType)
-    )
-  }
-
-  def apply(
     connectionTypeId : Int, connectee : Node, connector : Node
     ) : Connection = {
     apply(
@@ -163,12 +133,6 @@ object Connection extends DaoHelper[Connection] {
   def apply(connectionType : ConnectionType, connectee : Node, connector : Node) : Connection = {
     apply(
       connectionType.id.get, connectee, connector
-    )
-  }
-
-  def apply(connectionType : String, connectee : Node, connector : Node) : Connection = {
-    apply(
-      ConnectionType.get(connectionType), connectee, connector
     )
   }
 

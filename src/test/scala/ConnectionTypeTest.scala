@@ -9,7 +9,7 @@ class ConnectionTypeTest extends Specification {
       ct.name must_== ConnectionType.get(ct.id.get).name
     }
     "able to be updated" in new c1 {
-      ct.copy(name = "Test Conn Type2").save().name must_== "Test Conn Type2"
+      ct.copy(name = "Test Conn Type2").save().get.name must_== "Test Conn Type2"
     }
     "able to be deleted" in new c1 {
       ct.delete()

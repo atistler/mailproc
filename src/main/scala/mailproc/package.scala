@@ -1,3 +1,5 @@
+import java.util.Properties
+
 package object mailproc {
 
   import java.io.File
@@ -25,36 +27,46 @@ package object mailproc {
 
   case class EmailFile(file : File) extends MpMessage
 
-  case class AddOutgoingEmail(user: Node, srNodeId: Int, subject: String, to: String, from: String, body: String, file: File)
+  case class AddOutgoingEmail(user: Node, srNodeId: Int, subject: String, to: String, from: String, body: String, file: File) {
+    override def toString = "%s(\n\tUser: %s, SR: %d, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n\n)".format(
+      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.substring(0,30), file
+    )
+  }
 
-  case class AddIncomingEmail(user: Node, srNodeId: Int, subject: String, to: String, from: String, body: String, file: File)
+  case class AddIncomingEmail(user: Node, srNodeId: Int, subject: String, to: String, from: String, body: String, file: File) {
+    override def toString = "%s(\n\tUser: %s, SR: %d, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n)".format(
+      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.substring(0,30), file
+    )
+  }
 
-  case class CreateNewSR(user: Node, subject: String, to: String, from: String, body: String, file : File)
+  case class CreateNewSR(user: Node, subject: String, to: String, from: String, body: String, file : File) {
+    override def toString = "%s(\n\tUser: %s, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n)".format(
+      getClass.getName, user.valueOf("Name").get, to, from, subject, body.substring(0,30), file
+    )
+  }
 
-  private[mailproc] def timed(blockName : String)(f : => Any) = {
+
+  def timed(blockName : String)(f : => Any) = {
     val start = System.currentTimeMillis
     f
     () => blockName + " took " + (System.currentTimeMillis - start) + "ms."
   }
 
   private[mailproc] def findConfig() = {
-    val props_path = sys.props.get("mailproc.properties") getOrElse (sys.env.get(
-      "mailproc.properties"
-    ) getOrElse ("/mailproc.properties"))
-    val props = new java.util.Properties()
+    val props = new Properties()
     try {
-      props.load(getClass.getResourceAsStream(props_path))
+      props.load(getClass.getResourceAsStream("/mailproc.properties"))
     } catch {
       case e : Exception => {
-        sys.error("Could not load properties file: " + props_path)
+        sys.error("Could not load properties file: /mailproc.properties")
         sys.exit(1)
       }
     }
     props
   }
 
-  private[mailproc] val PROPS = findConfig()
-  private[mailproc] val maildir_directory = PROPS.getProperty("maildir.directory")
+  val PROPS = findConfig()
+  private[mailproc] val maildir_directory = PROPS.getProperty("maildir-directory")
   private[mailproc] val support_addresses = PROPS.getProperty("support-addresses").split(",").map(_.trim()).toSet
   private[mailproc] val userCheck = actorOf(new UserCheck)
   private[mailproc] val emailParser = actorOf(new EmailParser(support_addresses))

@@ -67,6 +67,7 @@
           <root url="jar://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1/logging_2.8.1-0.10.1.jar!/" />
           <root url="jar://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1/cache_2.8.1-0.10.1.jar!/" />
           <root url="jar://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1/testing_2.8.1-0.10.1.jar!/" />
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.github.retronym/sbt-onejar_2.8.1/jars/sbt-onejar_2.8.1-0.3-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>

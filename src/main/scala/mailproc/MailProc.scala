@@ -5,7 +5,6 @@ import akka.actor.Actor._
 import akka.actor._
 import akka.event.EventHandler
 import java.util.concurrent.TimeUnit
-import sun.misc.Signal
 
 
 object MailProc extends App {
@@ -16,6 +15,7 @@ object MailProc extends App {
       List(
         Supervise(userCheck, Permanent),
         Supervise(emailParser, Permanent),
+        Supervise(ticketHandler, Permanent),
         Supervise(directoryWatcher, Permanent)
       )
     )
@@ -25,6 +25,7 @@ object MailProc extends App {
   /* Reload user email cache every X minutes */
   Scheduler.schedule(userCheck, Reload(), 1, 1, TimeUnit.MINUTES)
 
+  EventHandler.info(this, "Sending StartWatch() message to directoryWatcher")
   directoryWatcher ! StartWatch()
 
   Thread.sleep(5000)

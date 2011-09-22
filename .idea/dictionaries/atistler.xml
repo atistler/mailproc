@@ -4,6 +4,7 @@
       <w>addr</w>
       <w>addrs</w>
       <w>akka</w>
+      <w>allmail</w>
       <w>atistler</w>
       <w>attrs</w>
       <w>conf</w>
@@ -11,6 +12,7 @@
       <w>connectees</w>
       <w>ctype</w>
       <w>dbhost</w>
+      <w>elems</w>
       <w>fromdb</w>
       <w>iseq</w>
       <w>iter</w>
@@ -23,6 +25,10 @@
       <w>ntype</w>
       <w>openended</w>
       <w>proc</w>
+      <w>srqs</w>
+      <w>testhaving</w>
+      <w>tocollect</w>
+      <w>tuple</w>
       <w>unapply</w>
       <w>vals</w>
     </words>

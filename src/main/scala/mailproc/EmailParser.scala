@@ -2,106 +2,178 @@ package mailproc {
 
 import akka.actor.Actor
 import io.Source
-import java.io.ByteArrayInputStream
-import javax.mail.{Message, Session => MailSession}
-import javax.mail.internet.{InternetAddress, MimeMessage}
 import akka.event.EventHandler
+import logicops.db._
+import collection.mutable
+import java.io.{IOException, UnsupportedEncodingException, ByteArrayInputStream}
+import org.jsoup._
+import safety.{Whitelist, Cleaner}
+import javax.mail.internet.{InternetAddress, MimeMessage}
+import javax.mail.{MessagingException, Address, Multipart, Part, Message, Session => MailSession}
 
-class EmailParser(val supportAddresses: Set[String]) extends Actor {
-    private val session = MailSession.getDefaultInstance(System.getProperties);
+object EmailParser {
 
-    private val SrSubject = """.*SR \d-(\d{6,}).*""".r
+  def getPlainTextContent(parts : mutable.Map[String, Part]) : String = {
+    parts.get("text/plain") match {
+      case Some(part) => part.getContent.toString
+      case None => parts.get("text/html") match {
+        case Some(part) => {
+          val doc = Jsoup.parse(part.getContent.toString)
+          val cleaner = new Cleaner(Whitelist.simpleText().addTags("br"))
+          val clean_doc = cleaner.clean(doc)
+          clean_doc.body().html()
+        }
+        case None => throw new MessagingException("Could not find 'text/plain' or 'text/html' email part")
+      }
+    }
+  }
 
-    private val emailFormat = "\tSubject:\t%s\n\tTo:\t\t%s\n\tFrom:\t\t%s"
-
-    def receive = {
-      case EmailFile(file) => {
-        val lines = Source.fromFile(file).mkString
-        val message = new MimeMessage(session, new ByteArrayInputStream(lines.getBytes))
-
-        val from = message.getFrom
-        val to = message.getRecipients(Message.RecipientType.TO)
-        if (to != null) {
-          to.find(
-            a => {
-              supportAddresses.contains(new InternetAddress(a.toString).getAddress)
-            }
-          ) match {
-            /* To: lw-support or support */
-            case Some(a) => {
-              val subject = message.getSubject
-              val user_type = userCheck ? GetUserType(from(0))
-              user_type.get match {
-                case LwPrivilegedUser(addr, user) => {
-                  subject match {
-                    /* Privileged User && Has SR node_id in subject line: add outgoing email node to SR and open SR if necessary */
-                    case SrSubject(nodeId) => {
-                      EventHandler.info(
-                        this, "Email from privileged user (existing SR)\n" + emailFormat.format(
-                          subject, from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "),
-                          to.map(a => new InternetAddress(a.toString).getAddress).mkString(", ")
-                        )
-                      )
-                      /*
-                      ticketHandler ! AddOutgoingEmail(
-                        user, nodeId.toInt, subject, to.mkString(","), from(0).toString, message.getContent.toString, file
-                      )
-                      */
-
-                    }
-                    /* PrivilegedUser && No SR node_id in subject line: ignore */
-                    case _ =>
-                  }
-                }
-                case LwClientUser(addr, user) => {
-                  subject match {
-                    /* Client User && Has SR node_id in subject line: add incoming email, open SR if closed */
-                    case SrSubject(nodeId) => {
-                      EventHandler.info(
-                        this, "Email from client user (existing SR : %d)\n" + emailFormat.format(
-                          nodeId, subject, from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "),
-                          to.map(a => new InternetAddress(a.toString).getAddress).mkString(", ")
-                        )
-                      )
-                      /*
-                      ticketHandler ! AddIncomingEmail(
-                        user, nodeId.toInt, subject, to.mkString(","), from(0).toString, message.getContent.toString, file
-                      )
-                      */
-
-                    }
-                    /* Client User && No SR node_id in subject line: create NEW SR */
-                    case _ => {
-                      EventHandler.info(
-                        this, "Email from client user (No existing SR)\n" + emailFormat.format(
-                          subject, from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "),
-                          to.map(a => new InternetAddress(a.toString).getAddress).mkString(", ")
-                        )
-                      )
-                      /*
-                      ticketHandler ! CreateNewSR(user, subject, to.mkString(","), from(0).toString, message.getContent.toString, file)
-                      */
-                    }
-                  }
-                }
-                /* Unknown user: ignore */
-                case LwUnknownUser(addr) => {
-                  EventHandler.debug(
-                    this, "Email from unknown user\n" + emailFormat.format(
-                      subject, from.map(a => new InternetAddress(a.toString).getAddress).mkString(", "),
-                      to.map(a => new InternetAddress(a.toString).getAddress).mkString(", ")
-                    )
-                  )
-                }
-                case _ => EventHandler.error(this, "Unknown message sent to EmailParser actor")
-              }
-
-            }
-            /* Not sent to lw-support or support: ignore */
-            case None =>
+  def findMimeTypes(part : Part, mimeTypes : String*) : mutable.Map[String, Part] = {
+    val contentTypes = mutable.Map.empty[String, Part]
+    def findMimeTypeHelper(part : Part, mimeTypes : String*) {
+      try {
+        if (part.isMimeType("multipart/*")) {
+          val mp = part.getContent.asInstanceOf[Multipart]
+          for (i <- 0 until mp.getCount) {
+            val p = mp.getBodyPart(i)
+            findMimeTypeHelper(p, mimeTypes : _*)
           }
+        } else {
+          for (mt <- mimeTypes) {
+            if (part.isMimeType(mt)) {
+              contentTypes += mt -> part
+            }
+          }
+        }
+      } catch {
+        case e : UnsupportedEncodingException => EventHandler.error(
+          this, "UnsupportedEncodingException: " + e.getStackTraceString
+        )
+        case e : MessagingException => EventHandler.error(this, "MessagingException: " + e.getStackTraceString)
+        case e : IOException => EventHandler.error(this, "IOException: " + e.getStackTraceString)
+      }
+    }
+    findMimeTypeHelper(part, mimeTypes : _*)
+    contentTypes
+  }
+
+  def prettyAddress(addresses : Array[Address]) : String = {
+    addresses.map(a => new InternetAddress(a.toString).getAddress.toLowerCase).mkString(", ")
+  }
+
+  def prettyAddress(address : Address) : String = {
+    new InternetAddress(address.toString).getAddress.toLowerCase
+  }
+
+  val session = MailSession.getDefaultInstance(System.getProperties);
+  private val SrSubject = """.*SR \d-(\d{6,}).*""".r
+  private val emailFormat = "\tSubject:\t%s\n\tFrom:\t\t%s\n\tTo:\t\t%s"
+}
+
+class EmailParser(val supportAddresses : Set[String]) extends Actor {
+
+  import EmailParser.prettyAddress
+
+  override def preStart() {
+    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+  }
+
+  override def preRestart(reason : Throwable) {
+    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+  }
+
+  override def postRestart(reason : Throwable) {
+    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+  }
+
+
+
+  def receive = {
+    case EmailFile(file) => {
+      val lines = Source.fromFile(file).mkString
+      val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
+
+      val from = message.getFrom
+      val to = message.getRecipients(Message.RecipientType.TO)
+
+      val content = EmailParser.getPlainTextContent(EmailParser.findMimeTypes(message, "text/plain", "text/html"))
+      if (to != null) {
+        to.find(
+          a => {
+            supportAddresses.contains(prettyAddress(a))
+          }
+        ) match {
+          /* To: lw-support or support */
+          case Some(a) => {
+            val subject = message.getSubject
+            val user_type = userCheck ? GetUserType(from(0))
+            user_type.get match {
+              case LwPrivilegedUser(addr, user) => {
+                subject match {
+                  /* Privileged User && Has SR node_id in subject line: add outgoing email node to SR and open SR if necessary */
+                  case EmailParser.SrSubject(nodeId) => {
+                    EventHandler.info(
+                      this,
+                      "Email from privileged user %s (existing SR : %s)\n".format(user.valueOf("Name").get, nodeId)
+                        + EmailParser.emailFormat.format(subject, prettyAddress(from), prettyAddress(to))
+                    )
+
+                    val msg = AddOutgoingEmail(
+                      user, nodeId.toInt, subject, prettyAddress(to), prettyAddress(from(0)), content, file
+                    )
+                    EventHandler.info(this, "Sending msg to TicketHandler: %s".format(msg))
+                    ticketHandler ! msg
+                  }
+                  /* PrivilegedUser && No SR node_id in subject line: ignore */
+                  case _ =>
+                }
+              }
+              case LwClientUser(addr, user) => {
+                subject match {
+                  /* Client User && Has SR node_id in subject line: add incoming email, open SR if closed */
+                  case EmailParser.SrSubject(nodeId) => {
+                    EventHandler.info(
+                      this, "Email from client user %s (existing SR : %s)\n".format(user.valueOf("Name").get, nodeId)
+                        + EmailParser.emailFormat.format(subject, prettyAddress(from), prettyAddress(to))
+                    )
+                    val msg = AddIncomingEmail(
+                      user, nodeId.toInt, subject, prettyAddress(to), prettyAddress(from(0)), content, file
+                    )
+                    EventHandler.info(this, "Sending msg to TicketHandler: %s".format(msg))
+                    ticketHandler ! msg
+                  }
+                  /* Client User && No SR node_id in subject line: create NEW SR */
+                  case _ => {
+                    EventHandler.info(
+                      this, "Email from client user %s (No existing SR)\n".format(user.valueOf("Name").get)
+                        + EmailParser.emailFormat.format(subject, prettyAddress(from), prettyAddress(to))
+                    )
+                    val msg = CreateNewSR(
+                      user, subject, prettyAddress(to), prettyAddress(from(0)), content, file
+                    )
+                    EventHandler.info(this, "Sending msg to TicketHandler: %s".format(msg))
+                    ticketHandler ! msg
+                  }
+                }
+              }
+              /* Unknown user: ignore */
+              case LwUnknownUser(addr) => {
+                EventHandler.debug(
+                  this, "Email from unknown user .. skipping\n" + EmailParser.emailFormat.format(
+                    subject, prettyAddress(from), prettyAddress(to)
+                  )
+                )
+              }
+              case _ => EventHandler.error(this, "Unknown message sent to EmailParser actor")
+            }
+
+          }
+          /* Not sent to lw-support or support: ignore */
+          case None =>
         }
       }
     }
   }
+}
+
 }

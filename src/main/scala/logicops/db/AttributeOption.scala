@@ -2,7 +2,7 @@ package logicops.db {
 
 import org.orbroker._
 
-class AttributeOption(val id : Option[Int], val attributeId : Int, val value : String) extends Dao {
+class AttributeOption(val id : Option[Int], val attributeId : Int, val value : String) extends Dao[AttributeOption] {
   override def toString = "AttributeOption[%s] (attribute: %s[%d], value: %s".format(
     id.get, attribute.name, attributeId, value
   )
@@ -31,20 +31,12 @@ object AttributeOption extends DaoHelper[AttributeOption] {
     apply(id, attribute.id.get, value)
   }
 
-  def apply(id : Int, attribute : String, value : String) : AttributeOption = {
-    apply(id, Attribute.get(attribute), value)
-  }
-
   def apply(attributeId : Int, value : String) : AttributeOption = {
     new AttributeOption(None, attributeId, value)
   }
 
   def apply(attribute : Attribute, value : String) : AttributeOption = {
     apply(attribute.id.get, value)
-  }
-
-  def apply(attribute : String, value : String) : AttributeOption = {
-    apply(Attribute.get(attribute), value)
   }
 
   object Tokens extends BasicTokens {
