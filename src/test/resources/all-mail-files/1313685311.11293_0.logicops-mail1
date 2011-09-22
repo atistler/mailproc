@@ -1,0 +1,162 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGZASO011291
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:35:10 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGZA1R011290
+	for logicops; Thu, 18 Aug 2011 12:35:10 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGZ9gu011286
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:35:09 -0400
+Resent-Date: Thu, 18 Aug 2011 12:35:09 -0400
+Resent-Message-Id: <201108181635.p7IGZ9gu011286@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.131) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 12:35:09 -0400
+Received: from samgdem01.advancemags.com ([208.92.44.79]) (using TLSv1) by
+ exprod8mx231.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 12:35:08
+ EDT
+Received: from ([10.207.80.169])	by samgdem01.advancemags.com with ESMTP  id
+ J041111095.15542863;	Thu, 18 Aug 2011 12:35:05 -0400
+Received: from SWNSSDE016.newspapersupport.com ([10.207.80.123]) by
+ samgdecb03.advancemags.com with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 12:35:04 -0400
+Received: from 10.213.46.53 ([10.213.46.53]) by
+ SWNSSDE016.newspapersupport.com ([10.207.80.123]) with Microsoft Exchange
+ Server HTTP-DAV ; Thu, 18 Aug 2011 16:35:04 +0000
+User-Agent: Microsoft-Entourage/12.30.0.110427
+Date: Thu, 18 Aug 2011 12:35:03 -0400
+Subject: Re: Add sitemaps to Zeus Cache (SR 3-966724)
+From: Hassan Hodges <hassanhodges@annarbor.com>
+To: Kyle Hultman <khultman@logicworks.net>,
+        lw-support
+	<lw-support@logicworks.net>
+Message-ID: <CA72B777.A934F%hassanhodges@annarbor.com>
+Thread-Topic: Add sitemaps to Zeus Cache (SR 3-966724)
+Thread-Index: AQHMXTcd3X6RdaMyf0mdKG1onGaYn5Uiz9iA///ji2SAABu9+A==
+In-Reply-To: <EEF142B93173B14A8AAFF03433C587733D171FD8@lw-mbx2.us.logicworks.net>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+X-OriginalArrivalTime: 18 Aug 2011 16:35:04.0828 (UTC) FILETIME=[C8A743C0:01CC5DC4]
+Content-Type: text/plain; charset="US-ASCII"
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+We have seen a corresponding drop in our slow queries for the queries
+attached to sitemap and news_sitemap, so that looks good.
+
+We have not seen the same drop from the other queries that hit from the cgi
+urls. It seems like the same type of situation, where the urls are getting
+polled.
+
+From the first note on the SR, this is what we're trying to do:
+
+'''
+We would also like to explore adding another group of URLS to a 5 minute
+cache:
+
+http://www.annarbor.com/cgi-bin/mt/mt-search.cgi?search=@[wildcard]&amp;Incl
+udeBlogs=1&amp;Template=rss
+
+The brackets are to mark the wildcard and are not part of the url, we've
+just need to match anything that hits with a text based "Tag" in there.
+
+Another example: 
+http://www.annarbor.com/cgi-bin/mt/mt-search.cgi?search=@mlive-a2&amp;Includ
+eBlogs=1&amp;Template=rss
+'''
+When we had previously set up the rule, I know that it was targeted at a
+different type of page that comes from the same mt-search.cgi.
+
+As far as the upgrade goes, the next two weeks are chock full of deploys, so
+we'd like to do that during the first full week of September. I have
+submitted a separate ticket for that.
+
+thanks
+-h
+
+
+On 8/18/11 11:02 AM, "Kyle Hultman" <khultman@logicworks.net> wrote:
+
+> Hey Hassan, I took a look into this and found the rule to be working. However,
+> I did note if the the requesting agent used the headers "Pragma: no-cache" and
+> "Cache-Control: none" that they could cause zeus to re-poll the backend for
+> the object. I have altered the rule to curb that behavior.
+> 
+> Also, as an unrelated note to this: I noticed the LB is running a a bit older
+> version of Zeus; the 6.0x series. I would to have a member of my NRT team
+> reach out to coordinate upgrading it to the latest version - 7.1r3. This is a
+> pretty standard upgrade, and has only a momentary impact on production
+> traffic, however we would still want to see this done in a maintenance window
+> outside of business hours. We do want to get this done sooner rather than
+> later, as there are many fixes and enhancements. Thanks.
+> 
+> --
+> Kyle Hultman
+> Sr. Engineer
+> Logicworks - http://www.logicworks.net
+> 
+> ________________________________________
+> From: Hassan Hodges [hassanhodges@annarbor.com]
+> Sent: Thursday, August 18, 2011 8:37 AM
+> To: lw-support
+> Cc: lw-support
+> Subject: Re: Add sitemaps to Zeus Cache (SR 3-966724)
+> 
+> Are you sure that these rules are in place correctly and active?
+> 
+> We're still seeing slow_query entries against the production database from
+> SQL that is only in the two files.
+> 
+> Perhaps it is a problem with a trailing slash in the rule, or that we're
+> only catching www.annarbor.com and not annarbor.com?
+> 
+> Thanks for checking
+> -h
+> 
+> 
+> On 8/17/11 7:40 PM, "Logicworks NOC" <logicops@logicworks.net> wrote:
+> 
+>> Hassan,
+>> 
+>> Your request to add /sitemap.xml and /news_sitemap.xml to caching on the load
+>> balancer is complete.  There is already a caching rule setup for
+>> mt-search.cgi.  Please let us know if you have any questions.
+>> 
+>> Regards,
+>> 
+>> Logicworks NOC
+>> 
+>> 
+----------------------------------------------------------------------------->>
+-
+>> -------------------------------
+>> 
+>> 
+>> 
+>> 
+>> 
+>> At Logicworks, our customers' feedback is important to us. We want to hear
+>> from you regarding your experiences with the services that we offer.
+>> To leave feedback regarding this Service Request please visit:
+>> https://logicops.logicworks.net/AddCustomerFeedback/966724/Page
+>> 
+>> 
+> 
+> ------------------------------------------------------------------------------
+> ------------------
+> This e-mail, including attachments, is intended for the person(s)
+> or company named and may contain confidential and/or legally
+> privileged information. Unauthorized disclosure, copying or use of
+> this information may be unlawful and is prohibited. If you are not
+> the intended recipient, please delete this message and notify the
+> sender.
+
+------------------------------------------------------------------------------------------------
+This e-mail, including attachments, is intended for the person(s)
+or company named and may contain confidential and/or legally
+privileged information. Unauthorized disclosure, copying or use of
+this information may be unlawful and is prohibited. If you are not
+the intended recipient, please delete this message and notify the
+sender.
+

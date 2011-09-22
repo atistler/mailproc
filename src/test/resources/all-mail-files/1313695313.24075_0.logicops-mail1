@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJLrr7024073
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:21:53 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJLrT7024072
+	for logicops; Thu, 18 Aug 2011 15:21:53 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJLqHK024056;
+	Thu, 18 Aug 2011 15:21:52 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:21:51 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:21:36 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:21:36 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: american-db3v RHEL 5 Virtual - Ping - Private,Ping - Public,Linux System Load - 5 minute average - 30+,SSH is DOWN at 03:19:18 PM.
+Message-ID: <LW-MON-EQYg6E64wzVG00007a10@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:21:36.0342 (UTC) FILETIME=[0C0F4F60:01CC5DDC]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+american-db3v (10.64.98.114) RHEL 5 Virtual: 
+
+Ping - Private,Ping - Public,Linux System Load - 5 minute average - 30+,SSH on 209.81.89.114 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/806774/Page/?sort=created_date&filter=closed&dir=desc
+
+Notes:
+Added from Discovery on Wed Mar 10 13:56:36 2010
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 03:19:18 PM by Whatsup Gold in Equinix
+

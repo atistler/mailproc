@@ -1,0 +1,58 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG5QmY009138
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:05:26 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IG5Qfu009137
+	for logicops; Thu, 18 Aug 2011 12:05:26 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG5Pk7009126
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:05:26 -0400
+Resent-Date: Thu, 18 Aug 2011 12:05:26 -0400
+Resent-Message-Id: <201108181605.p7IG5Pk7009126@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net (209.81.92.91)
+ by LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id
+ 14.1.270.1; Thu, 18 Aug 2011 12:05:25 -0400
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ globalgrind-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7IG5Px3010403	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 12:05:25
+ -0400
+Message-ID: <201108181605.p7IG5Px3010403@globalgrind-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@globalgrind-lb1v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 12:05:25 -0400
+Subject: Zeus: Node is working again, Node has failed
+X-ZXTM-Notify: globalgrind-lb1v.sccnj04.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from globalgrind-lb1v.sccnj04.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'vip1-http' = OK
+ + Node '10.64.115.85:80' = OK
+ + Node '10.64.115.86:80' = OK
+ + Node '10.64.115.87:80' = OK
+ + Node '10.64.115.88:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 12:01:40: SERIOUS  Node '10.64.115.86:80', Pool 'vip1-http'
+                    Node 10.64.115.86 has failed - Unable to connect:
+                    Connection refused (perhaps the service is not
+                    running?)
+
+#2 Aug 18 12:02:39: INFO  Node '10.64.115.86:80', Pool 'vip1-http'
+                    Node 10.64.115.86 is working again
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

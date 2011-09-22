@@ -1,0 +1,107 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INDG7r013023
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:13:16 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INDGqp013022
+	for logicops; Thu, 18 Aug 2011 19:13:16 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INDFtG013018
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:13:15 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 19:13:15 -0400
+From: Xiao Fen Lin <xlin@logicworks.net>
+To: Tawfik Daoud <tdaoud@afscme.org>, lw-support <lw-support@logicworks.net>
+CC: lw-support <lw-support@logicworks.net>
+Subject: RE: Disk space on smy7v (SR 3-967763)
+Thread-Topic: Disk space on smy7v (SR 3-967763)
+Thread-Index: AQHMXd3ilbI+f/55IEik0Hpal9LUP5UjRMOA///256A=
+Date: Thu, 18 Aug 2011 23:13:14 +0000
+Message-ID: <90945AF80A6C4E46B6E31B1CD5175BD43D1C36CD@lw-mbx2.us.logicworks.net>
+References: <51acf79219a247e402669bb2a1dd6c2b@logicops.logicworks.net>
+ <E79C531717F31749AC32CCF85AA733836FDAE93028@EMAIL7.AFSCME.com>
+In-Reply-To: <E79C531717F31749AC32CCF85AA733836FDAE93028@EMAIL7.AFSCME.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7INDFtG013018
+
+Tawfik,
+
+We will perform this task after 11PM tonight.   Downtime will be around 30 minutes.  The engineer will notify you before starting.   
+
+Regards,
+
+Xiao Fen Lin
+Logicworks | NRT Engineer
+phone: 212-625-5444 (option 1)
+support@logicworks.net
+
+
+
+-----Original Message-----
+From: Tawfik Daoud [mailto:tdaoud@afscme.org] 
+Sent: Thursday, August 18, 2011 3:41 PM
+To: lw-support
+Cc: lw-support
+Subject: RE: Disk space on smy7v (SR 3-967763)
+
+Yes please, we still need to add the 30GB and for the reboot, what about tonight after 9 PM?
+
+Best Regards, 
+
+_________________________
+
+Tawfik Daoud, Network Analyst III
+AFSCME AFL-CIO
+1625 L St. NW, Washington DC 20036
+
+office: 202.429.1089 | mobile: 571.426.2969  | fax: 202.429.1296
+
+
+
+Please consider your environmental responsibility before printing this e-mail This communication (including any attachments) may contain privileged or confidential information of AFSCME and is intended for a specific individual.  If you are not the intended recipient, you should delete this communication, including any attachments without reading or saving them in any manner and you are hereby notified that any disclosure, copying, or distribution of this communication, or the taking of any action based on it, is strictly prohibited.
+
+-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net]
+Sent: Thursday, August 18, 2011 3:35 PM
+To: Tawfik Daoud
+Cc: Logicworks Support
+Subject: Disk space on smy7v (SR 3-967763)
+
+Tawfik,
+
+The server, smy7v has 13GB of space available.   Do you still want to add 30GB?  Adding disk space to root requires server reboots since the file system needs to be resize.  Please let us know how you want to proceed. 
+
+[root@afscmeent-smy7v ~]# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              26G   12G   13G  47% /
+tmpfs                 942M     0  942M   0% /dev/shm
+
+Regards,
+
+Logicworks NOC
+
+-------------------------------------------------------------------------------------------------------------
+
+Modifications:
+-------------------------------------------------------------------------------------------------------------
+
+Changes made to: SR 3-967763
+    Updated due date: 2011-08-18 17:00 -> 2011-08-18 17:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/967763/Page
+
+
+

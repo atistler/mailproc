@@ -1,0 +1,58 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4MfV3002841
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:22:41 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4MfxN002838
+	for logicops; Fri, 19 Aug 2011 00:22:41 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4MeZ2002827
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:22:40 -0400
+Resent-Date: Fri, 19 Aug 2011 00:22:40 -0400
+Resent-Message-Id: <201108190422.p7J4MeZ2002827@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from velti-lb1v.sccnj04.client.logicworks.net (209.81.82.220) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Fri, 19 Aug 2011 00:22:40 -0400
+Received: from velti-lb1v.client.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by velti-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with
+ SMTP id p7J4MeJF022051	for <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011
+ 00:22:40 -0400
+Message-ID: <201108190422.p7J4MeJF022051@velti-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@velti-lb1v.client.logicworks.net>
+Date: Fri, 19 Aug 2011 00:22:40 -0400
+Subject: Zeus: Pool has no back-end nodes responding, Node has failed, Monitor has detected a failure
+X-ZXTM-Notify: velti-lb1v.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from velti-lb1v.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'velti-app5:81' = Failed: All nodes have failed
+ + Node '10.64.102.198:81' = Failed
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:22:23: WARN  Monitor 'Simple HTTP'
+                    Monitor has detected a failure in node
+                    '10.64.102.198:81': Timeout while waiting for valid
+                    server response
+
+#2 Aug 19 00:22:23: SERIOUS  Node '10.64.102.198:81', Pool 'velti-app5:81'
+                    Node 10.64.102.198 has failed - A monitor has detected
+                    a failure
+
+#3 Aug 19 00:22:23: SERIOUS  Pool 'velti-app5:81'
+                    Pool has no back-end nodes responding
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

@@ -1,0 +1,63 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKwu3X002451
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:58:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKwulX002450
+	for logicops; Thu, 18 Aug 2011 16:58:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKwsKK002435;
+	Thu, 18 Aug 2011 16:58:54 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 16:58:54 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 16:58:54 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 16:58:54 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: d3sm-web3 Windows 2003 Server is UP at 04:58:54 PM.
+Message-ID: <LW-MON-CRGxpItaguJ100003ceb@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 20:58:54.0756 (UTC) FILETIME=[A4069640:01CC5DE9]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+d3sm-web3 Windows 2003 Server on 209.73.54.122 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Health checks are looking for string "Login.aspx"
+
+http://209.73.54.122/VSOCAdmin.Union/Login.aspx
+http://209.73.54.122/VSOCAdmin.GMAC/Login.aspx
+http://209.73.54.122/VSOCAdmin.mck/Login.aspx
+http://209.73.54.122/VSOCAdmin.lyondell/Login.aspx
+http://209.73.54.122/VSOCAdmin.sca/Login.aspx
+http://209.73.54.122/VSOCAdmin.pf/Login.aspx
+http://209.73.54.122/VSOCAdmin.qwest/Login.aspx
+http://209.73.54.122/VSOCAdmin.exelon/Login.aspx
+http://209.73.54.122/VSOCAdmin.viacom/Login.aspx
+http://209.73.54.122/VSOCADMIN.monsanto/Login.aspx
+http://209.73.54.122/VSOCADMIN.kellerisd/Login.aspx
+
+Please Find the D3SM Response Procedures at:
+
+https://logicops.logicworks.net/805870/File
+
+Notify the following for disk space utilization alerts:
+
+gbenoit@d3security.com
+d3systemmaintenance@d3security.com
+mlu@d3security.com
+jyu@d3security.com
+jhou@d3security.com
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 04:58:54 PM by Whatsup Gold in CRG
+

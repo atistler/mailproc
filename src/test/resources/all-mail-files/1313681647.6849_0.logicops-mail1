@@ -1,0 +1,90 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFY7Iw006847
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:34:07 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFY7fn006846
+	for logicops; Thu, 18 Aug 2011 11:34:07 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFY6O9006832;
+	Thu, 18 Aug 2011 11:34:06 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 11:34:05 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 11:34:05 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 11:34:05 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: lana-db2m1a RHEL 5 - Linux System Load - 5 minute average - 9+ is DOWN at 11:34:05 AM.
+Message-ID: <LW-MON-CRGVSZ2wleBC00003cca@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 15:34:05.0788 (UTC) FILETIME=[43B211C0:01CC5DBC]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+lana-db2m1a (10.4.16.87) RHEL 5: 
+
+Linux System Load - 5 minute average - 9+ on 10.4.16.87 has been unresponsive for at least 6 minutes.
+
+Details:
+Linux System Load - 5 minute average - 9+=[9.70]
+
+
+Contact:
+https://logicops3.noc.logicworks.net/attachment.php?attachment_id=6121
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+Please follow the contact list in the link!!!Names should be first contacted from left to right until someone is reached
+
+#################################################
+
+Engineer on duty must respond to the client within 15 minutes of receiving the alert, regardless of whether he/she has been able to take any action. This is for ALL LANA alerts, most notably the ?ALL STATUS OK? one.
+
+#################################################
+
+>>>>>>######### LANA PROTOCOL #########>>>>>>>
+
+1. An "incident" is something that lasts longer than 5/10 minutes, eg. a content-scan failure goes off. If it
+doesn't come back within 5/10 minutes, we get called.
+
+2. We follow the list. Now, here is some more precision:
+
+Golden Rule:  Call as soon as an "incident" happens. We have our own internal protocol to follow which depends
+on this.
+
+**********************************************
+ Leave a message on ALL calls you make to Lagardere! 
+**********************************************
+
+a) Call the first person on the list. Addition: give them enough time to get to the phone and check their messages (eg.
+10 minutes or so).
+b) If they don't respond, call the second person on the list. Again, give enough time for them to get to the telephone.
+c) If they don't respond, and its been more than, say, 20 minutes, call next person after that. etc.
+d) Repeat until someone is on the phone.
+
+******* EOD must email Lana and create a ticket documenting who you spoke to, what they said, when, etc. This if for LW
+Documentation!!! ********
+
+>>>>>>################################>>>>>>
+-------------------------------note per SR2-547123----------------------------------------
+As per Kosta's request:
+From now on, instead of e-mailing jbickle and cgiatras, please send an email to sysadmin@cellfishmedia.ca please so all US admins get the alert.
+-------------------------------------------------------------------------------------------------
+
+
+-------------------------------note per SR2-494224---------------------------------------
+Client has MDS services. Please check health of database layer and if issues stem from the database layer and you are unable to fix them, please contact senior NOC.***Please check this document for database migration instructions:
+
+https://logicops3.noc.logicworks.net/attachment.php?attachment_id=5651
+
+New LANA call/contact list:
+https://logicops3.noc.logicworks.net/attachment.php?attachment_id=10321
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:34:05 AM by Whatsup Gold in CRG
+

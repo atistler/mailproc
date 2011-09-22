@@ -1,0 +1,89 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ1Vvv021838
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:01:31 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJ1Vcv021837
+	for logicops; Thu, 18 Aug 2011 15:01:31 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ1TQ7021822;
+	Thu, 18 Aug 2011 15:01:29 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:01:29 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:01:29 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:01:29 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: bravotv-web3 RHEL 5 - HTTP Content - bravotv - health-check/cache,HTTP Content - bravotv - health-check/no-cache is DOWN at 02:56:19 PM.
+Message-ID: <LW-MON-EQGKROptzzpY000079de@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:01:29.0468 (UTC) FILETIME=[3CB4F3C0:01CC5DD9]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+bravotv-web3 (10.64.74.6) RHEL 5: 
+
+HTTP Content - bravotv - health-check/cache,HTTP Content - bravotv - health-check/no-cache on 10.64.74.6 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/index.php?node_id=632272
+
+Notes:
+For any issues that need to be escalated to the client please contact:
+
+1) Digital Platform Support Team
+email: dpsi@nbcuni.com (this goes to Aris, Sam, Rahsaan & other members of their team; if you can't add this distro, just skip and start with Aris)
+phone: 201-735-3838
+
+2) Aris Cruz
+aris.cruz@nbcuni.com
+phone: 201-735-4636
+mobile: 201-213-4320
+
+3) Sam Magee
+samuel.magee@nbcuni.com
+phone: 201-735-3450
+mobile: 201-341-6909
+
+4) Rahsaan Page
+rahsaan.page@nbcuni.com
+phone: 201-735-3474
+mobile: 201-388-9452
+
+5) Matthew Witherow
+Matthew.Witherow@nbcuni.com
+Office: 212.664.2576
+Cell: 917.273.2974
+
+
+6) Nelson Tai
+Nelson.Tai@nbcuni.com
+Office: 212-413-5877
+Cell: 773-491-8889
+
+
+7)Stephen McMillen
+Stephen.McMillen@nbcuni.com
+
+8) Jonathan Keilson
+Jonathan.Keilson@nbcuni.com
+Office: 212-664-5269
+Cell: 646-460-0268
+
+
+9) Zeb Holt
+Email: zeb.holt@nbcuni.com
+phone: 347-573-1720
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:55:14 PM by Whatsup Gold in Equinix
+

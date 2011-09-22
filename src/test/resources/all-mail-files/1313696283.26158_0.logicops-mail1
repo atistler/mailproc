@@ -1,0 +1,42 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJc39h026155
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:38:03 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJc3k7026154
+	for logicops; Thu, 18 Aug 2011 15:38:03 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJc2lN026148
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:38:02 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:38:02 -0400
+Received: from wealth-db3 ([10.4.15.6]) by lw-mon-eq.ad.logicworks.net with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 15:38:02 -0400
+Sensitivity: Normal
+Reply-To: <wmsi-green@logicworks.net>
+Importance: Normal
+MIME-Version: 1.0
+From: <lw-windows@ext.logicworks.net>
+To: <lw-windows@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:38:02 -0400
+Subject: SQL Server Alert System: 'Log shipping Secondary Server Alert.' occurred on
+ \\WMSI-GREEN\GREEN
+Content-Type: text/plain; charset="utf-8"
+Message-ID: <LW-MON-EQIYs5CRTYBK00007a37@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:38:02.0586 (UTC) FILETIME=[57E833A0:01CC5DDE]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from base64 to 8bit by logicops-mail1.logicworks.net id p7IJc2lN026148
+
+DATE/TIME:	8/18/2011 3:38:00 PM
+
+DESCRIPTION:	The log shipping secondary database WEALTH-DBSEC\RED.JHCCA has restore threshold of 45 minutes and is out of sync. No restore was performed for 8 minutes. Restored latency is 50 minutes. Check agent log and logshipping monitor information.
+
+
+COMMENT:	Log shipping is out of synch on secondary server receiving logs from WMSI-GREEN
+
+Please notify Sr Windows Engineer to investigate.
+
+JOB RUN:	(None)
+

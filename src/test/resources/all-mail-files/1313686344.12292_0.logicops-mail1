@@ -1,0 +1,250 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGqOBh012290
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:52:24 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGqOae012289
+	for logicops; Thu, 18 Aug 2011 12:52:24 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGqNbq012285
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:52:23 -0400
+Resent-Date: Thu, 18 Aug 2011 12:52:23 -0400
+Resent-Message-Id: <201108181652.p7IGqNbq012285@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.115) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 12:52:22 -0400
+Received: from mail.velti.com ([195.200.193.32]) (using TLSv1) by
+ exprod8mx215.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 12:52:22
+ EDT
+Received: from CALISTO.velti.net ([10.1.1.137]) by exc-hc1.velti.net
+ ([10.1.1.52]) with mapi; Thu, 18 Aug 2011 19:52:18 +0300
+From: Marina Stavridi <mstavridi@velti.com>
+To: Alexander Ospina <aospina@logicworks.net>,
+        lw-support
+	<lw-support@logicworks.net>
+CC: Konstantinos Liakos <kliakos@velti.com>, Logicworks <Logicworks@velti.com>
+Date: Thu, 18 Aug 2011 19:52:18 +0300
+Subject: Healthcheck/Monitoring Configuration
+Thread-Topic: Healthcheck/Monitoring Configuration
+Thread-Index: AQHMXbNaUgObCtdVsEmRvYWECw7xJZUi/vYA///AxpCAAAZsQIAAA5bggAAI14A=
+Message-ID: <591BB4780F652E4DB14EF828E46E5FF4012CF16D6737@CALISTO.velti.net>
+References: <0c082e8d8c0579d4dec85d0ad8517f28@logicops.logicworks.net>
+ <BB6DFE0BB4D6B048B3560A2D1606359913733BA8EA@CALISTO.velti.net>
+ <8A6BD2659673894E93737B25DFA21A7B3D33F5CE@lw-mbx2.us.logicworks.net>
+ <BB6DFE0BB4D6B048B3560A2D1606359913733BA91D@CALISTO.velti.net>
+ <8A6BD2659673894E93737B25DFA21A7B3D33F893@lw-mbx2.us.logicworks.net>
+In-Reply-To: <8A6BD2659673894E93737B25DFA21A7B3D33F893@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/mixed;
+	boundary="_004_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_"
+MIME-Version: 1.0
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_
+Content-Type: multipart/alternative;
+	boundary="_000_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_"
+
+--_000_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+RGVhciBBbGV4YW5kZXIsDQoNClBsZWFzZSByZW1vdmUgdGhlIGF0dGFjaGVkIGhlYWx0aGNoZWNr
+LiBJdCBoYXMgYmVlbiB2ZXJpZmllZCB0aGF0IGl0IGlzIG5vdCBuZWVkZWQuDQoNClRoYW5rIHlv
+dSBpbiBhZHZhbmNlLA0KTWFyaW5hDQoNCg0KTWFyaW5hIFN0YXZyaWRpIHwgU3VwcG9ydCBNYW5h
+Z2VyDQoNClZlbHRpDQo0NCBLaWZpc2lhcyBBdmUuDQoxNTEyNSBNYXJvdXNpLCBBdGhlbnMsIEdy
+ZWVjZQ0KVCAgICszMC4yMTAuNjM3Ljg4MDANCk0gICszMC42OTcuNDg3LjAyMzINCkUgICBtc3Rh
+dnJpZGlAdmVsdGkuY29tDQp3d3cudmVsdGkuY29tPGh0dHA6Ly93d3cudmVsdGkuY29tPg0KDQpW
+ZWx0aSBpcyBhIGdsb2JhbCBsZWFkZXIgaW4gbW9iaWxlIG1hcmtldGluZyBhbmQgYWR2ZXJ0aXNp
+bmcgc29sdXRpb25zIGZvciBtb2JpbGUgb3BlcmF0b3JzLCBhZCBhZ2VuY2llcywgYnJhbmRzIGFu
+ZCBtZWRpYSBncm91cHMuDQpTYW4gRnJhbmNpc2NvIHwgTmV3IFlvcmsgfCBMb3MgQW5nZWxlcyB8
+IER1YmxpbiB8IExvbmRvbiB8IFBhcmlzIHwgTWFkcmlkIHwgRHVzc2VsZG9yZiB8IEF0aGVucyB8
+IFNvZmlhIHwgTW9zY293IHwgRHViYWkgfCBOZXcgRGVsaGkgfCBTaW5nYXBvcmUgfCBCZWlqaW5n
+IHwgU2hhbmdoYWkgfCBTeWRuZXkNCg0K
+
+--_000_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiIHhtbG5zOm89InVy
+bjpzY2hlbWFzLW1pY3Jvc29mdC1jb206b2ZmaWNlOm9mZmljZSIgeG1sbnM6dz0idXJuOnNjaGVt
+YXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6d29yZCIgeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMubWlj
+cm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+VFIvUkVDLWh0bWw0MCI+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj1Db250ZW50LVR5cGUg
+Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjxtZXRhIG5hbWU9R2VuZXJhdG9y
+IGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDEyIChmaWx0ZXJlZCBtZWRpdW0pIj4NCjxzdHlsZT4N
+CjwhLS0NCiAvKiBGb250IERlZmluaXRpb25zICovDQogQGZvbnQtZmFjZQ0KCXtmb250LWZhbWls
+eToiQ2FtYnJpYSBNYXRoIjsNCglwYW5vc2UtMToyIDQgNSAzIDUgNCA2IDMgMiA0O30NCkBmb250
+LWZhY2UNCgl7Zm9udC1mYW1pbHk6Q2FsaWJyaTsNCglwYW5vc2UtMToyIDE1IDUgMiAyIDIgNCAz
+IDIgNDt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OlRhaG9tYTsNCglwYW5vc2UtMToyIDEx
+IDYgNCAzIDUgNCA0IDIgNDt9DQpAZm9udC1mYWNlDQoJe2ZvbnQtZmFtaWx5OlZlcmRhbmE7DQoJ
+cGFub3NlLTE6MiAxMSA2IDQgMyA1IDQgNCAyIDQ7fQ0KIC8qIFN0eWxlIERlZmluaXRpb25zICov
+DQogcC5Nc29Ob3JtYWwsIGxpLk1zb05vcm1hbCwgZGl2Lk1zb05vcm1hbA0KCXttYXJnaW46MGlu
+Ow0KCW1hcmdpbi1ib3R0b206LjAwMDFwdDsNCglmb250LXNpemU6MTEuMHB0Ow0KCWZvbnQtZmFt
+aWx5OiJDYWxpYnJpIiwic2Fucy1zZXJpZiI7fQ0KYTpsaW5rLCBzcGFuLk1zb0h5cGVybGluaw0K
+CXttc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJY29sb3I6Ymx1ZTsNCgl0ZXh0LWRlY29yYXRpb246
+dW5kZXJsaW5lO30NCmE6dmlzaXRlZCwgc3Bhbi5Nc29IeXBlcmxpbmtGb2xsb3dlZA0KCXttc28t
+c3R5bGUtcHJpb3JpdHk6OTk7DQoJY29sb3I6cHVycGxlOw0KCXRleHQtZGVjb3JhdGlvbjp1bmRl
+cmxpbmU7fQ0KcC5Nc29QbGFpblRleHQsIGxpLk1zb1BsYWluVGV4dCwgZGl2Lk1zb1BsYWluVGV4
+dA0KCXttc28tc3R5bGUtcHJpb3JpdHk6OTk7DQoJbXNvLXN0eWxlLWxpbms6IlBsYWluIFRleHQg
+Q2hhciI7DQoJbWFyZ2luOjBpbjsNCgltYXJnaW4tYm90dG9tOi4wMDAxcHQ7DQoJZm9udC1zaXpl
+OjExLjBwdDsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsInNhbnMtc2VyaWYiO30NCnAuTXNvQWNl
+dGF0ZSwgbGkuTXNvQWNldGF0ZSwgZGl2Lk1zb0FjZXRhdGUNCgl7bXNvLXN0eWxlLXByaW9yaXR5
+Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJCYWxsb29uIFRleHQgQ2hhciI7DQoJbWFyZ2luOjBpbjsN
+CgltYXJnaW4tYm90dG9tOi4wMDAxcHQ7DQoJZm9udC1zaXplOjguMHB0Ow0KCWZvbnQtZmFtaWx5
+OiJUYWhvbWEiLCJzYW5zLXNlcmlmIjt9DQpzcGFuLlBsYWluVGV4dENoYXINCgl7bXNvLXN0eWxl
+LW5hbWU6IlBsYWluIFRleHQgQ2hhciI7DQoJbXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1z
+dHlsZS1saW5rOiJQbGFpbiBUZXh0IjsNCglmb250LWZhbWlseToiQ2FsaWJyaSIsInNhbnMtc2Vy
+aWYiO30NCnNwYW4uQmFsbG9vblRleHRDaGFyDQoJe21zby1zdHlsZS1uYW1lOiJCYWxsb29uIFRl
+eHQgQ2hhciI7DQoJbXNvLXN0eWxlLXByaW9yaXR5Ojk5Ow0KCW1zby1zdHlsZS1saW5rOiJCYWxs
+b29uIFRleHQiOw0KCWZvbnQtZmFtaWx5OiJUYWhvbWEiLCJzYW5zLXNlcmlmIjt9DQpzcGFuLkVt
+YWlsU3R5bGUyMQ0KCXttc28tc3R5bGUtdHlwZTpwZXJzb25hbDsNCglmb250LWZhbWlseToiVmVy
+ZGFuYSIsInNhbnMtc2VyaWYiOw0KCWNvbG9yOiMxRjQ5N0Q7fQ0Kc3Bhbi5FbWFpbFN0eWxlMjIN
+Cgl7bXNvLXN0eWxlLXR5cGU6cGVyc29uYWw7DQoJZm9udC1mYW1pbHk6IkNhbGlicmkiLCJzYW5z
+LXNlcmlmIjsNCgljb2xvcjojMUY0OTdEO30NCnNwYW4uRW1haWxTdHlsZTIzDQoJe21zby1zdHls
+ZS10eXBlOnBlcnNvbmFsLXJlcGx5Ow0KCWZvbnQtZmFtaWx5OiJDYWxpYnJpIiwic2Fucy1zZXJp
+ZiI7DQoJY29sb3I6IzAwNzBDMDsNCglmb250LXdlaWdodDpub3JtYWw7DQoJZm9udC1zdHlsZTpu
+b3JtYWw7fQ0KLk1zb0NocERlZmF1bHQNCgl7bXNvLXN0eWxlLXR5cGU6ZXhwb3J0LW9ubHk7DQoJ
+Zm9udC1zaXplOjEwLjBwdDt9DQpAcGFnZSBTZWN0aW9uMQ0KCXtzaXplOjguNWluIDExLjBpbjsN
+CgltYXJnaW46MS4waW4gMS4waW4gMS4waW4gMS4waW47fQ0KZGl2LlNlY3Rpb24xDQoJe3BhZ2U6
+U2VjdGlvbjE7fQ0KLS0+DQo8L3N0eWxlPg0KPCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQogPG86
+c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRpdCIgc3BpZG1heD0iMTAyNiIgLz4NCjwveG1sPjwhW2Vu
+ZGlmXS0tPjwhLS1baWYgZ3RlIG1zbyA5XT48eG1sPg0KIDxvOnNoYXBlbGF5b3V0IHY6ZXh0PSJl
+ZGl0Ij4NCiAgPG86aWRtYXAgdjpleHQ9ImVkaXQiIGRhdGE9IjEiIC8+DQogPC9vOnNoYXBlbGF5
+b3V0PjwveG1sPjwhW2VuZGlmXS0tPg0KPC9oZWFkPg0KDQo8Ym9keSBsYW5nPUVOLVVTIGxpbms9
+Ymx1ZSB2bGluaz1wdXJwbGU+DQoNCjxkaXYgY2xhc3M9U2VjdGlvbjE+DQoNCjxwIGNsYXNzPU1z
+b05vcm1hbD48c3BhbiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtjb2xvcjojMDA3MEMwJz5EZWFy
+IEFsZXhhbmRlciw8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPU1zb05vcm1hbD48
+c3BhbiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtjb2xvcjojMDA3MEMwJz48bzpwPiZuYnNwOzwv
+bzpwPjwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPU1zb05vcm1hbD48c3BhbiBzdHlsZT0nZm9udC1z
+aXplOjEwLjBwdDtjb2xvcjojMDA3MEMwJz5QbGVhc2UgcmVtb3ZlDQp0aGUgYXR0YWNoZWQgaGVh
+bHRoY2hlY2suIEl0IGhhcyBiZWVuIHZlcmlmaWVkIHRoYXQgaXQgaXMgbm90IG5lZWRlZC48bzpw
+PjwvbzpwPjwvc3Bhbj48L3A+DQoNCjxwIGNsYXNzPU1zb05vcm1hbD48c3BhbiBzdHlsZT0nZm9u
+dC1zaXplOjEwLjBwdDtjb2xvcjojMDA3MEMwJz48bzpwPiZuYnNwOzwvbzpwPjwvc3Bhbj48L3A+
+DQoNCjxwIGNsYXNzPU1zb05vcm1hbD48c3BhbiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtjb2xv
+cjojMDA3MEMwJz5UaGFuayB5b3UgaW4NCmFkdmFuY2UsPG86cD48L286cD48L3NwYW4+PC9wPg0K
+DQo8cCBjbGFzcz1Nc29Ob3JtYWw+PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7Y29sb3I6
+IzAwNzBDMCc+TWFyaW5hPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8cCBjbGFzcz1Nc29Ob3Jt
+YWw+PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7Y29sb3I6IzAwNzBDMCc+PG86cD4mbmJz
+cDs8L286cD48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KDQo8UD48U1BBTiANCnN0eWxlPSJGT05U
+LVNJWkU6IDlwdDsgQ09MT1I6ICMwMDAwZmY7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1z
+ZXJpZiciPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogOXB0OyBDT0xPUjogI2UzNmMwYTsgRk9O
+VC1GQU1JTFk6ICdUYWhvbWEnLCdzYW5zLXNlcmlmJyI+PFNUUk9ORz48Qj48U1BBTiANCnN0eWxl
+PSJGT05ULVNJWkU6IDlwdDsgQ09MT1I6ICNlMzZjMGE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywn
+c2Fucy1zZXJpZiciPjxCPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlw
+dDsgQ09MT1I6ICMzNjVmOTE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPk1h
+cmluYSBTdGF2cmlkaSB8IFN1cHBvcnQgTWFuYWdlcjxCUj48QlI+PC9TUEFOPjwvQj48L1NQQU4+
+PC9CPjwvU1RST05HPjwvU1BBTj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgQ09MT1I6
+ICNlMzZjMGE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPjxTVFJPTkc+PEI+
+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAjZTM2YzBhOyBGT05ULUZBTUlM
+WTogJ1RhaG9tYScsJ3NhbnMtc2VyaWYnIj48Qj48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0i
+Rk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAjMzY1ZjkxOyBGT05ULUZBTUlMWTogJ1RhaG9tYScsJ3Nh
+bnMtc2VyaWYnIj5WZWx0aTxCUj48L1NQQU4+PC9CPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTog
+OXB0Ij48bnMwOlN0cmVldD48bnMwOmFkZHJlc3M+PFNQQU4gbGFuZz1FTi1VUyANCnN0eWxlPSJG
+T05ULVNJWkU6IDlwdDsgQ09MT1I6ICM0YTQ0MmE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fu
+cy1zZXJpZiciPjQ0IA0KS2lmaXNpYXMgQXZlLjwvU1BBTj48L25zMDphZGRyZXNzPjwvbnMwOlN0
+cmVldD48L1NQQU4+PFNQQU4gbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgQ09M
+T1I6ICM0YTQ0MmE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPiZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyANCjxCUj48L1NQQU4+PFNQQU4gbGFuZz1FTi1V
+UyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgQ09MT1I6ICM0YTQ0MmE7IEZPTlQtRkFNSUxZOiAn
+VGFob21hJywnc2Fucy1zZXJpZiciPjE1MTI1IA0KTWFyb3VzaSwgPC9TUEFOPjxTUEFOIA0Kc3R5
+bGU9IkZPTlQtU0laRTogMHB0Ij48bnMwOnBsYWNlPjxuczA6Q2l0eT48bnMwOnBsYWNlPjxuczA6
+Q2l0eT48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAj
+NGE0NDJhOyBGT05ULUZBTUlMWTogJ1RhaG9tYScsJ3NhbnMtc2VyaWYnIj5BdGhlbnM8L1NQQU4+
+PC9uczA6Q2l0eT48L25zMDpwbGFjZT48L25zMDpDaXR5PjwvbnMwOnBsYWNlPjwvU1BBTj48U1BB
+TiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAjNGE0NDJhOyBG
+T05ULUZBTUlMWTogJ1RhaG9tYScsJ3NhbnMtc2VyaWYnIj4sIA0KPC9TUEFOPjxTUEFOIA0Kc3R5
+bGU9IkZPTlQtU0laRTogOXB0Ij48bnMwOmNvdW50cnktcmVnaW9uPjxuczA6Y291bnRyeS1yZWdp
+b24+PFNQQU4gbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgQ09MT1I6ICM0YTQ0
+MmE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPkdyZWVjZTxCUj48L1NQQU4+
+PC9uczA6Y291bnRyeS1yZWdpb24+PC9uczA6Y291bnRyeS1yZWdpb24+PC9TUEFOPjwvU1BBTj48
+L0I+VDwvU1RST05HPjwvU1BBTj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgQ09MT1I6
+ICM0YTQ0MmE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPiZuYnNwOyZuYnNw
+OyZuYnNwOyszMC4yMTAuNjM3Ljg4MDA8QlI+PC9TUEFOPjxCPjxTUEFOIA0Kc3R5bGU9IkZPTlQt
+U0laRTogOXB0OyBDT0xPUjogI2UzNmMwYTsgRk9OVC1GQU1JTFk6ICdUYWhvbWEnLCdzYW5zLXNl
+cmlmJyI+TTwvU1BBTj48L0I+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAj
+NGE0NDJhOyBGT05ULUZBTUlMWTogJ1RhaG9tYScsJ3NhbnMtc2VyaWYnIj4mbmJzcDsmbmJzcDsr
+MzAuNjk3LjQ4Ny4wMjMyPEJSPjwvU1BBTj48Qj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDlw
+dDsgQ09MT1I6ICNlMzZjMGE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPkU8
+L1NQQU4+PC9CPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogOXB0OyBDT0xPUjogIzRhNDQyYTsg
+Rk9OVC1GQU1JTFk6ICdUYWhvbWEnLCdzYW5zLXNlcmlmJyI+Jm5ic3A7Jm5ic3A7IA0KbXN0YXZy
+aWRpQHZlbHRpLmNvbTwvU1BBTj48Qj48VT48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsg
+Q09MT1I6ICMzNjVmOTE7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPjxCUj48
+QSANCnRpdGxlPWh0dHA6Ly93d3cudmVsdGkuY29tLyBocmVmPSJodHRwOi8vd3d3LnZlbHRpLmNv
+bSI+PFNQQU4gDQp0aXRsZT1odHRwOi8vd3d3LnZlbHRpLmNvbS8gDQpzdHlsZT0iQ09MT1I6ICMz
+NjVmOTEiPnd3dy52ZWx0aS5jb208L1NQQU4+PC9BPjxCUj48QlI+PC9TUEFOPjwvVT48L0I+PFNQ
+QU4gDQpzdHlsZT0iRk9OVC1TSVpFOiA5cHQ7IENPTE9SOiAjMDAwMGZmOyBGT05ULUZBTUlMWTog
+J1RhaG9tYScsJ3NhbnMtc2VyaWYnIj48Rk9OVCANCmNvbG9yPSMzNjVmOTE+VmVsdGkgaXMgYSBn
+bG9iYWwgbGVhZGVyIGluIG1vYmlsZSBtYXJrZXRpbmcgYW5kIGFkdmVydGlzaW5nIA0Kc29sdXRp
+b25zIGZvciBtb2JpbGUgb3BlcmF0b3JzLCBhZCBhZ2VuY2llcywgYnJhbmRzIGFuZCBtZWRpYSAN
+Cmdyb3Vwcy48L0ZPTlQ+PC9TUEFOPjxCUj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsg
+Q09MT1I6ICMwMDAwZmY7IEZPTlQtRkFNSUxZOiAnVGFob21hJywnc2Fucy1zZXJpZiciPjxGT05U
+IA0KY29sb3I9IzM2NWY5MT5TYW4gRnJhbmNpc2NvIHwgTmV3IFlvcmsgfCBMb3MgQW5nZWxlcyB8
+IER1YmxpbiB8IExvbmRvbiB8IFBhcmlzIHwgDQpNYWRyaWQgfCBEdXNzZWxkb3JmIHwgQXRoZW5z
+IHwgU29maWEgfCBNb3Njb3cgfCBEdWJhaSB8IE5ldyBEZWxoaSB8IFNpbmdhcG9yZSB8IA0KQmVp
+amluZyB8IFNoYW5naGFpIHwgU3lkbmV5PC9GT05UPjwvU1BBTj48L1NQQU4+PC9QPg0KPFA+PC9Q
+Pjxicj48L2JvZHk+DQoNCjwvaHRtbD4NCg==
+
+--_000_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_--
+
+--_004_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_
+Content-Type: message/rfc822
+
+Received: from barracuda.velti.com (10.1.1.74) by mail.velti.com (10.1.1.8)
+ with Microsoft SMTP Server (TLS) id 8.3.83.0; Thu, 18 Aug 2011 18:40:07 +0300
+Received: from lw-mon-db3.localdomain ([209.73.63.45]) by barracuda.velti.com
+ with ESMTP id WPkqBBFXHXnFuU5G for <Logicworks@velti.com>; Thu, 18 Aug 2011
+ 18:40:02 +0300 (EEST)
+Received: from localhost.localdomain (lw-mon-db3 [127.0.0.1])	by
+ lw-mon-db3.localdomain (Postfix) with ESMTP id ABFC5158049	for
+ <Logicworks@velti.com>; Thu, 18 Aug 2011 15:40:00 +0000 (UTC)
+From: EM7 Event Notifier <EM7@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 18:40:00 +0300
+Subject: MAJOR Event: Connection refused to port: Failed to connect to
+	http://10.64.93.212/cms/davinci/page/wap/monitoring
+Thread-Topic: MAJOR Event: Connection refused to port: Failed to connect to
+	http://10.64.93.212/cms/davinci/page/wap/monitoring
+Thread-Index: AcxdvR53flQCUr1hSvaJGps2KXYWsA==
+Message-ID: <20110818154000.ABFC5158049@lw-mon-db3.localdomain>
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AuthSource: Exc-hc2.velti.net
+X-MS-Has-Attach: 
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-MS-TNEF-Correlator: 
+x-virus-scanned: by bsmtpd at velti.com
+x-asg-debug-id: 1313682002-0382c437c81092dd0001-ArHqlc
+x-barracuda-url: http://barracuda.velti.com:8000/cgi-mod/mark.cgi
+x-asg-orig-subj: MAJOR Event: Connection refused to port: Failed to connect
+ to	http://10.64.93.212/cms/davinci/page/wap/monitoring
+x-barracuda-connect: UNKNOWN[209.73.63.45]
+x-barracuda-start-time: 1313682002
+x-asg-whitelist: Sender
+x-barracuda-envelope-from: EM7@ext.logicworks.net
+x-barracuda-apparent-source-ip: 209.73.63.45
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Severity: MAJOR
+First Occurred: 2011-08-08 19:06:07 None
+Last Occurred: 2011-08-18 15:36:04 None
+Occurrences: 2844
+Source: Internal
+Organization: Velti
+Device: veltiuae-cms1
+
+Message: Connection refused to port: Failed to connect to http://10.64.93.2=
+12/cms/davinci/page/wap/monitoring
+
+Sent by Automation Action: Velti - Threshold Limit Reached
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=3D=
+events&q_type=3Daid&q_arg=3D169244&q_sev=3D1&q_sort=3D0&q_oper=3D0
+
+--_004_591BB4780F652E4DB14EF828E46E5FF4012CF16D6737CALISTOvelt_--
+

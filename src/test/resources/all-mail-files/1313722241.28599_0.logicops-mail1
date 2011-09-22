@@ -1,0 +1,269 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2ofA5028597
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:50:41 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J2ofDx028596
+	for logicops; Thu, 18 Aug 2011 22:50:41 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2oei1028591
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:50:40 -0400
+Resent-Date: Thu, 18 Aug 2011 22:50:40 -0400
+Resent-Message-Id: <201108190250.p7J2oei1028591@logicops-mail1.logicworks.net>
+Resent-From: <lw-logistics@logicworks.net>
+Received: from psmtp.com (64.18.3.178) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 22:50:39 -0400
+Received: from smtpobhost.equinix.net ([207.20.85.100]) by
+ exprod8mx199.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 19:50:39
+ PDT
+Received: from remprodapp.sv2.corp.equinix.com
+ (remprodapp.sv2.corp.equinix.com [172.22.64.22])	by prod107.corp.equinix.com
+ (8.14.3/8.14.3) with ESMTP id p7J212Zm025034;	Thu, 18 Aug 2011 19:01:02 -0700
+ (PDT)
+Date: Thu, 18 Aug 2011 19:00:21 -0700
+From: EquinixNetworkMaintenance <EquinixNetworkMaintenance@equinix.com>
+Reply-To: EquinixNetworkMaintenance <EquinixNetworkMaintenance@equinix.com>
+To: Equinix US NOC <noc@equinix.com>
+Message-ID: <13756147.44421313719221374.JavaMail.root@remprodapp.sv2.corp.equinix.com>
+Subject: [EQ-20110805-96] REMINDER - Scheduled - NY Metro Area Switch
+ Maintenance - 19 AUG 2011
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_Part_4462_10394367.1313719221373"
+X-Priority: 1
+Organization: Equinix, Inc
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <EquinixNetworkMaintenance@equinix.com> [99/4] 
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+
+------=_Part_4462_10394367.1313719221373
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+***************************************************************************=
+***********Please do not respond to this email as this mailbox is not being=
+ monitored.All queries regarding this email can be sent to noc@equinix.com*=
+***************************************************************************=
+**********Dear Equinix Customer,SPAN:=09=0908/19/2011 - 08/20/2011LOCAL:=09=
+=0910:00:00 PM - 06:00:00 AMUTC:=09=0902:00:00 AM - 10:00:00 AMIBX(s):=09=
+=09NY1 NY2 NY4 NY7 NY8 NY9PRODUCTS:=09ALL SWITCH-BASED PRODUCTSIMPACT:=09=
+=09No impact to your serviceDESCRIPTION:  Night 1 of 2. Equinix Engineers w=
+ill be enabling MPLS in the NY Metro . This night will focus on the infrast=
+ructure that needs to be in place to support MPLS services. There will be n=
+o impact to your service.If you have any questions or concerns regarding th=
+is maintenance, please contact the Equinix US NOC at noc@equinix.com. If th=
+e matter is urgent, you may contact the Equinix Response Center by phone at=
+ 888-892-0607 or 408-451-5200 for an up-to-date status.Sincerely,Equinix US=
+ NOC Phone: 888-892-0607 or 408-451-5200noc@equinix.com
+Contacts:
+To place orders, schedule site access, report trouble or manage your user l=
+ist online, please visit: https://ecc.equinix.com
+If you have any questions or concerns regarding this maintenance, please co=
+ntact the Equinix US NOC at noc@equinix.com. If the matter is urgent, you m=
+ay contact the Equinix Response Center by phone at (888) 892-0607 or (408) =
+451-5200 for an up-to-date status.How are we doing? Tell Equinix =E2=80=93 =
+We're Listening.  E Q U I N I X   |   One Lagoon Drive, 4th Floor, Redwood =
+City, CA 94065   |   www.equinix.com=C2=A9 2011 Equinix, Inc. All rights re=
+served.| Legal | Privacy
+------=_Part_4462_10394367.1313719221373
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+
+<style type=3D"text/css">
+<!--
+
+a:link {
+        color: #215CA1;
+}
+a:visited {
+        color: #215CA1;
+}
+a:hover {
+        color: #215CA1;
+}
+a:active {
+        color: #215CA1;
+}
+ul
+{
+padding: 0px;
+margin: 20px;
+}
+body {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+}
+-->
+</style>
+<title></title>
+</head>
+<body ><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" ><tr ><td =
+><table width=3D"700" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" =
+bgcolor=3D"#FFFFFF" ><tr ><td ><table width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"0" ><tr ><td height=3D"111" ><img src=3D"http://info.equinix.com=
+/rs/equinixinc/images/banner-network-maintenance.gif" alt=3D"Meet Equinix" =
+width=3D"702" height=3D"115" border=3D"0" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr ><td style=3D"border-left:1px solid #cccccc; border-right:1px solid #cc=
+cccc; " ><table width=3D"700" cellspacing=3D"0" cellpadding=3D"0" ><tr>
+
+<td align=3D"center" height=3D"20" colspan=3D"3"></td>
+</tr>
+<tr ><td width=3D"30">&nbsp;</td>
+<td width=3D"642" valign=3D"top" style=3D"border-bottom:1px solid #cccccc; =
+" ><table width=3D"642" cellspacing=3D"0" cellpadding=3D"0" ><tr ><td valig=
+n=3D"top" style=3D"padding-bottom:20px; " ><table width=3D"640" cellspacing=
+=3D"0" cellpadding=3D"0" >
+<p><span style=3D"font-family:Arial, Helvetica, sans-serif; font-size:12px;=
+ color:#555555; " >
+***************************************************************************=
+***********<br />
+Please do not respond to this email as this mailbox is not being monitored.=
+<br />
+All queries regarding this email can be sent to noc@equinix.com<br />
+***************************************************************************=
+***********<br />
+Dear Equinix Customer,<br />
+<br />
+<b>SPAN:</b>=09=0908/19/2011 - 08/20/2011<br />
+<b>LOCAL:</b>=09=0910:00:00 PM - 06:00:00 AM<br />
+<b>UTC:</b>=09=0902:00:00 AM - 10:00:00 AM<br />
+<b>IBX(s):</b>=09=09NY1 NY2 NY4 NY7 NY8 NY9<br />
+<b>PRODUCTS:</b>=09ALL SWITCH-BASED PRODUCTS<br />
+<b>IMPACT</b>:=09=09No impact to your service<br />
+<br />
+<b>DESCRIPTION</b>:  Night 1 of 2. Equinix Engineers will be enabling MPLS =
+in the NY Metro . This night will focus on the infrastructure that needs to=
+ be in place to support MPLS services. There will be no impact to your serv=
+ice.<br />
+<br />
+If you have any questions or concerns regarding this maintenance, please co=
+ntact the Equinix US NOC at noc@equinix.com. If the matter is urgent, you m=
+ay contact the Equinix Response Center by phone at 888-892-0607 or 408-451-=
+5200 for an up-to-date status.<br />
+<br />
+<br />
+Sincerely,<br />
+Equinix US NOC <br />
+Phone: 888-892-0607 or 408-451-5200<br />
+<a href=3D"mailto:noc@equinix.com">noc@equinix.com</a><br /></span></p><tr =
+><td height=3D"20"></td>
+</tr>
+<tr ><td height=3D"35" valign=3D"top" ><div style=3D"font-family:Arial, Hel=
+vetica, sans-serif; font-size:12px; color:#555555; " ><p><span style=3D"fon=
+t-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000000; font-=
+weight:bold; ">Contacts:</span></p>
+  <p>  To place orders, schedule site access, report trouble or manage your=
+ user list online, please visit: <a href=3D"https://ecc.equinix.com">https:=
+//ecc.equinix.com</a></p>
+  <p>If you have any questions or concerns regarding this maintenance, plea=
+se contact the Equinix US NOC at <a href=3D"mailto:noc@equinix.com">noc@equ=
+inix.com</a>. If the matter is urgent, you may contact the Equinix Response=
+ Center by phone at (888) 892-0607 or (408) 451-5200 for an up-to-date stat=
+us.</p>
+  </div>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width=3D"30">
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr ><td style=3D"border-left:1px solid #cccccc; border-right:1px solid #cc=
+cccc; border-bottom:1px solid #cccccc; " ><table width=3D"700" cellpadding=
+=3D"0" cellspacing=3D"0" ><tr ><td width=3D"95" align=3D"center"><a href=3D=
+"http://www.equinix.com"><img src=3D"http://na-g.marketo.com/rs/equinixinc/=
+images/Equinix-Logo_icon-white.gif" alt=3D"Equinix" width=3D"35" height=3D"=
+23" border=3D"0" /></a></td>
+<td width=3D"597" align=3D"right" ><table border=3D"0" align=3D"right" cell=
+padding=3D"0" cellspacing=3D"0" ><tr ><td align=3D"right" valign=3D"middle"=
+ style=3D"font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#=
+aaaaaa; " ><span style=3D"font-family:Arial, Helvetica, sans-serif; font-si=
+ze:14px; font-weight:bold; color:#555555; font-weight:bold;">How are we doi=
+ng? Tell Equinix =E2=80=93 We're Listening.</span>
+
+</td>
+<td width=3D"10" height=3D"64" align=3D"center">&nbsp;</td>
+<td align=3D"left" valign=3D"middle" style=3D"font-family:Arial, Helvetica,=
+ sans-serif; font-size:11px; color:#aaaaaa; " ><a href=3D"#" target=3D"_bla=
+nk" style=3D"border:0;"></a><a href=3D"#" target=3D"_blank"></a><a href=3D"=
+http://www.customersat3.com/csc/equinix"><img src=3D"http://info.equinix.co=
+m/rs/equinixinc/images/FOOTERBUTTON-feedback-en.gif" width=3D"132" height=
+=3D"34" border=3D"0" /></a>
+</td>
+</tr>
+</table>
+</td>
+<td width=3D"30" align=3D"right">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table width=3D"704" align=3D"center" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td><img src=3D"http://na-g.marketo.com/rs/equinixinc/images/Event_Offering=
+-seperator.jpg" width=3D"704" height=3D"20" /></td>
+</tr>
+
+</table>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0" ><tr ><td align=3D"right" style=3D"font-family:Arial, Helvetica=
+, sans-serif; font-size:11px; color:#777; " ><table border=3D"0" align=3D"c=
+enter" cellpadding=3D"0" cellspacing=3D"0" ><tr ><td align=3D"right" style=
+=3D"font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#777;">=
+<span style=3D"font-weight:bold; color:#000;">E Q U I N I X</span>&nbsp;&nb=
+sp;&nbsp;|&nbsp;&nbsp;&nbsp;</td>
+<td ><span style=3D"font-family:Arial, Helvetica, sans-serif; font-size:12p=
+x; color:#777; " >One Lagoon Drive, 4th Floor, Redwood City, CA 94065</span=
+>
+</td>
+<td align=3D"left" style=3D"font-family:Arial, Helvetica, sans-serif; font-=
+size:12px; color:#777;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href=3D"htt=
+p://www.equinix.com" style=3D" color:#777;">www.equinix.com</a></td>
+</tr>
+<tr>
+<td align=3D"center" height=3D"30"></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr ><td height=3D"22" align=3D"center" style=3D"font-family:Arial, Helveti=
+ca, sans-serif; font-size:11px; color:#777; " ><span style=3D"font-family:A=
+rial, Helvetica, sans-serif; font-size:11px; color:#777777;">&copy; 2011 Eq=
+uinix, Inc. All rights reserved.| <a style=3D" color:#777777;" href=3D"http=
+://www.equinix.com/legal/" target=3D"_blank">Legal</a> | <a style=3D" color=
+:#777777;" href=3D"http://www.equinix.com/privacy/" target=3D"_blank">Priva=
+cy</a></span>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+------=_Part_4462_10394367.1313719221373--
+

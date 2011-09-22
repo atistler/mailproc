@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJL0Pa023497
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:21:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJL018023492
+	for logicops; Thu, 18 Aug 2011 15:21:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJL0Sk023482
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:21:00 -0400
+Received: from globaldt-db2.globaldt.local (209.81.87.168) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:21:00 -0400
+Received: from globaldt-db2 ([127.0.0.1]) by globaldt-db2.globaldt.local with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 15:20:49 -0400
+Sensitivity: Normal
+Reply-To: <lw-support@logicworks.net>
+Importance: Normal
+MIME-Version: 1.0
+From: <globaldt-db2@ext.logicworks.net>
+To: <lw-windows@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:20:49 -0400
+Subject: SQL Server Alert System: 'DBM State: Automatic Failover (SundaeV4_C2X)'
+ occurred on \\
+Content-Type: text/plain; charset="utf-8"
+Message-ID: <GLOBALDT-DB2lmRBaYF00000030@globaldt-db2.globaldt.local>
+X-OriginalArrivalTime: 18 Aug 2011 19:20:49.0562 (UTC) FILETIME=[F02D3FA0:01CC5DDB]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from base64 to 8bit by logicops-mail1.logicworks.net id p7IJL0Sk023482
+
+DATE/TIME:	8/18/2011 3:20:48 PM
+
+DESCRIPTION:	
+
+COMMENT:	(None)
+
+JOB RUN:	(None)
+

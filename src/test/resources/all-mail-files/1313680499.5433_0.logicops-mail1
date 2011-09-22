@@ -1,0 +1,265 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFExOl005430
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:14:59 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFExvE005428
+	for logicops; Thu, 18 Aug 2011 11:14:59 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFEw7s005412
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:14:58 -0400
+Resent-Date: Thu, 18 Aug 2011 11:14:58 -0400
+Resent-Message-Id: <201108181514.p7IFEw7s005412@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 11:14:57 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFEwoj020515	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 11:14:58 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IFEwsv020513;	Thu, 18 Aug 2011 11:14:58 -0400
+Date: Thu, 18 Aug 2011 11:14:58 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108181514.p7IFEwsv020513@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: routers router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/fmc-fw-pri.sccnj04.complex.logicworks.net
+===================================================================
+retrieving revision 1.2272
+diff -U4 -r1.2272 fmc-fw-pri.sccnj04.complex.logicworks.net
+@@ -3,9 +3,9 @@
+  !Chassis type: ASA5510 - a PIX
+  !CPU: Pentium 4 Celeron 1600 MHz
+  !
+  !Memory: 256 MB RAM
+- !Serial Number: JMX1304L11S
++ !Serial Number: JMX1304L11Y
+  !
+  !
+  !
+  !Image: Compiled: on Thu 07-Aug-08 20:53 by builders
+@@ -24,26 +24,24 @@
+  !BootFlash: CONFIG_FILE variable = 
+  !BootFlash: Current CONFIG_FILE variable = 
+  !
+  !Flash: --#--  --length--  -----date/time------  path
+- !Flash:   146  5548032     Jan 01 2003 00:06:22  asa708-k8.bin
+- !Flash:    79  8192        Jun 25 2009 08:41:26  crypto_archive
+- !Flash:   147  6163744     Jun 25 2009 08:44:12  asdm-508.bin
+- !Flash:   149  14137344    Nov 25 2009 14:57:28  asa804-k8.bin
+- !Flash:   150  11491880    Nov 25 2009 15:00:40  asdm-623.bin
+- !Flash:    75  8192        Nov 25 2009 14:59:52  log
+- !Flash:   151  8192        Nov 25 2009 16:56:42  tmp
+- !Flash: 255426560 bytes total (217604096 bytes free)
++ !Flash:   145  5548032     Jan 01 2003 00:06:18  asa708-k8.bin
++ !Flash:    79  8192        Jun 25 2009 07:31:00  crypto_archive
++ !Flash:   146  6163744     Jun 25 2009 07:33:34  asdm-508.bin
++ !Flash:   148  14137344    Nov 25 2009 13:13:06  asa804-k8.bin
++ !Flash:   149  11491880    Nov 25 2009 13:16:48  asdm-623.bin
++ !Flash:    75  8192        Nov 25 2009 13:16:22  log
++ !Flash: 255426560 bytes total (217612288 bytes free)
+  !
+  !Flash: disk0: Directory of disk0:/
+- !Flash: disk0: 146    -rwx  5548032     00:06:22 Jan 01 2003  asa708-k8.bin
+- !Flash: disk0: 79     drwx  8192        08:41:26 Jun 25 2009  crypto_archive
+- !Flash: disk0: 147    -rwx  6163744     08:44:12 Jun 25 2009  asdm-508.bin
+- !Flash: disk0: 149    -rwx  14137344    14:57:28 Nov 25 2009  asa804-k8.bin
+- !Flash: disk0: 150    -rwx  11491880    15:00:40 Nov 25 2009  asdm-623.bin
+- !Flash: disk0: 75     drwx  8192        14:59:52 Nov 25 2009  log
+- !Flash: disk0: 151    drwx  8192        16:56:42 Nov 25 2009  tmp
+- !Flash: disk0: 255426560 bytes total (217604096 bytes free)
++ !Flash: disk0: 145    -rwx  5548032     00:06:18 Jan 01 2003  asa708-k8.bin
++ !Flash: disk0: 79     drwx  8192        07:31:00 Jun 25 2009  crypto_archive
++ !Flash: disk0: 146    -rwx  6163744     07:33:34 Jun 25 2009  asdm-508.bin
++ !Flash: disk0: 148    -rwx  14137344    13:13:06 Nov 25 2009  asa804-k8.bin
++ !Flash: disk0: 149    -rwx  11491880    13:16:48 Nov 25 2009  asdm-623.bin
++ !Flash: disk0: 75     drwx  8192        13:16:22 Nov 25 2009  log
++ !Flash: disk0: 255426560 bytes total (217612288 bytes free)
+  !
+  !
+  !Slot 0: hvers 2.0, firmware 1.0(11)5, sw 8.0(4)
+  !
+@@ -214,9 +212,9 @@
+  mtu inside 1500
+  mtu dmz 1500
+  mtu management 1500
+  failover
+- failover lan unit secondary
++ failover lan unit primary
+  failover lan interface failover-stateful Ethernet0/3
+  failover key *****
+  failover mac address Ethernet0/0 0000.1111.6219 0000.1111.6520
+  failover mac address Ethernet0/1 0000.1111.6224 0000.1111.6524
+@@ -247,11 +245,11 @@
+  timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+  dynamic-access-policy-record DfltAccessPolicy
+  aaa authentication ssh console LOCAL 
+  http server enable
+- http 192.168.1.0 255.255.255.0 management
+- http 206.252.134.18 255.255.255.255 outside
+  http 172.16.135.0 255.255.255.0 outside
++ http 206.252.134.18 255.255.255.255 outside
++ http 192.168.1.0 255.255.255.0 management
+  snmp-server host outside 10.64.4.5 community b3rz3rk
+  snmp-server host outside 172.16.2.51 community b3rz3rk
+  snmp-server host outside 172.16.2.52 community b3rz3rk
+  snmp-server host outside 172.16.2.53 community b3rz3rk
+@@ -313,6 +311,6 @@
+    inspect tftp 
+  !
+  service-policy global_policy global
+  prompt hostname context 
+- Cryptochecksum:1f3c6b694a9cf4906028e67b84a956af
++ Cryptochecksum:3d0cea58760037959d0a0ff5003f73b4
+  : end
+Index: configs/s03.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.778
+diff -U4 -r1.778 s03.sccnj04.core.logicworks.net
+@@ -36,15 +36,15 @@
+  !Flash: Open device slot0 failed (No such device)
+  !Flash: (Try device DISK: for ATA media.)
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:   382  -rw-      274948                    <no date>  startup-config
++ !Flash: nvram:   382  -rw-      276455                    <no date>  startup-config
+  !Flash: nvram:   383  ----          24                    <no date>  private-config
+- !Flash: nvram:   384  -rw-      274948                    <no date>  underlying-config
++ !Flash: nvram:   384  -rw-      276455                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          47                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 391160 bytes total (113064 bytes free)
++ !Flash: nvram: 391160 bytes total (111557 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rw-     1784984  Jan 16 2003 09:36:30 -07:00  c6msfc2-boot-mz.121-13.E3.bin
+  !Flash: bootflash:     2  -rw-      649603   Jan 6 2006 14:55:37 -07:00  c6msfc2-rm2.srec.122-17r.S5
+@@ -1842,9 +1842,9 @@
+  interface GigabitEthernet4/4
+   description innolyst
+   switchport
+   switchport trunk native vlan 99
+-  switchport trunk allowed vlan 310
++  switchport trunk allowed vlan 310,311
+   switchport mode trunk
+   no ip address
+   speed 1000
+   duplex full
+@@ -6053,8 +6053,37 @@
+   permit ip any 172.16.70.0 0.0.0.255
+   permit ip any 172.17.0.0 0.0.255.255
+   permit ip any 172.18.0.0 0.0.255.255
+   permit ip any 172.19.0.0 0.0.255.255
++ ip access-list extended innolyst
++  permit ip 10.64.140.0 0.0.0.255 host 224.0.0.2
++  permit ip 10.64.140.0 0.0.0.255 172.16.2.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 host 206.252.135.254
++  permit ip 10.64.140.0 0.0.0.255 10.16.10.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 host 206.252.134.15
++  permit udp 10.64.140.0 0.0.0.255 host 206.252.135.106 eq ntp
++  permit ip 10.64.140.0 0.0.0.255 172.16.3.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 172.16.134.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 10.251.30.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 172.16.135.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 10.4.29.0 0.0.0.255
++  permit ip 10.251.0.0 0.0.0.255 any
++  permit ip any host 10.251.27.250
++  permit ip 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255
++  permit icmp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq www
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 443
++  permit udp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 902
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 27000
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 27010
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 range 9000 9100
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 established
++  permit icmp 10.64.140.0 0.0.0.255 host 10.17.13.1
++  permit ip any 172.16.69.0 0.0.0.255
++  permit ip any 172.16.70.0 0.0.0.255
++  permit ip any 172.17.0.0 0.0.255.255
++  permit ip any 172.18.0.0 0.0.255.255
++  permit ip any 172.19.0.0 0.0.255.255
+  ip access-list extended insure
+   permit ip 10.17.16.0 0.0.0.255 host 224.0.0.2
+   permit ip 10.17.16.0 0.0.0.255 172.16.2.0 0.0.0.255
+   permit ip 10.17.16.0 0.0.0.255 host 206.252.135.254
+Index: configs/s04.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.619
+diff -U4 -r1.619 s04.sccnj04.core.logicworks.net
+@@ -36,15 +36,15 @@
+  !Flash: Open device slot0 failed (No such device)
+  !Flash: (Try device DISK: for ATA media.)
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:   382  -rw-      264764                    <no date>  startup-config
++ !Flash: nvram:   382  -rw-      266267                    <no date>  startup-config
+  !Flash: nvram:   383  ----          24                    <no date>  private-config
+- !Flash: nvram:   384  -rw-      264764                    <no date>  underlying-config
++ !Flash: nvram:   384  -rw-      266267                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          49                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 391160 bytes total (123248 bytes free)
++ !Flash: nvram: 391160 bytes total (121745 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rw-     1693300  Oct 20 2004 14:45:12 -07:00  c6msfc2-boot-mz.121-8b.EX3
+  !Flash: bootflash: 15204352 bytes total (13510924 bytes free)
+@@ -1756,9 +1756,9 @@
+  interface GigabitEthernet4/4
+   description innolyst
+   switchport
+   switchport trunk native vlan 99
+-  switchport trunk allowed vlan 310,900
++  switchport trunk allowed vlan 310,311
+   switchport mode trunk
+   no ip address
+   speed 1000
+   duplex full
+@@ -5864,8 +5864,37 @@
+   permit ip any 172.16.70.0 0.0.0.255
+   permit ip any 172.17.0.0 0.0.255.255
+   permit ip any 172.18.0.0 0.0.255.255
+   permit ip any 172.19.0.0 0.0.255.255
++ ip access-list extended innolyst
++  permit ip 10.64.140.0 0.0.0.255 host 224.0.0.2
++  permit ip 10.64.140.0 0.0.0.255 172.16.2.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 host 206.252.135.254
++  permit ip 10.64.140.0 0.0.0.255 10.16.10.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 host 206.252.134.15
++  permit udp 10.64.140.0 0.0.0.255 host 206.252.135.106 eq ntp
++  permit ip 10.64.140.0 0.0.0.255 172.16.3.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 172.16.134.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 10.251.30.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 172.16.135.0 0.0.0.255
++  permit ip 10.64.140.0 0.0.0.255 10.4.29.0 0.0.0.255
++  permit ip 10.251.0.0 0.0.0.255 any
++  permit ip any host 10.251.27.250
++  permit ip 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255
++  permit icmp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq www
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 443
++  permit udp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 902
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 27000
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 eq 27010
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 range 9000 9100
++  permit tcp 10.64.140.0 0.0.0.255 10.64.78.0 0.0.0.255 established
++  permit icmp 10.64.140.0 0.0.0.255 host 10.17.13.1
++  permit ip any 172.16.69.0 0.0.0.255
++  permit ip any 172.16.70.0 0.0.0.255
++  permit ip any 172.17.0.0 0.0.255.255
++  permit ip any 172.18.0.0 0.0.255.255
++  permit ip any 172.19.0.0 0.0.255.255
+  ip access-list extended insure
+   permit ip 10.17.16.0 0.0.0.255 host 224.0.0.2
+   permit ip 10.17.16.0 0.0.0.255 172.16.2.0 0.0.0.255
+   permit ip 10.17.16.0 0.0.0.255 host 206.252.135.254
+

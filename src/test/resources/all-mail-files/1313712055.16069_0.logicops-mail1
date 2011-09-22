@@ -1,0 +1,41 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J00tPF016067
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:00:55 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J00sTd016062
+	for logicops; Thu, 18 Aug 2011 20:00:54 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J00sef016055
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 20:00:54 -0400
+Resent-Date: Thu, 18 Aug 2011 20:00:54 -0400
+Resent-Message-Id: <201108190000.p7J00sef016055@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.104) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 20:00:53 -0400
+Received: from bravotv-web4.sccnj04.client.logicworks.net ([209.81.89.7])
+ (using TLSv1) by exprod8mx204.postini.com ([64.18.7.10]) with SMTP;	Fri, 19
+ Aug 2011 00:00:53 GMT
+Received: from bravotv-web4.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ bravotv-web4.sccnj04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J012OC007961	for <lw-alert-disk@logicworks.net>; Thu, 18 Aug 2011 20:01:02
+ -0400
+Received: (from root@localhost)	by bravotv-web4.sccnj04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7J0124U007937	for lw-alert-disk@logicworks.net;
+ Thu, 18 Aug 2011 20:01:02 -0400
+Date: Thu, 18 Aug 2011 20:01:02 -0400
+From: root <root@bravotv-web4.sccnj04.client.logicworks.net>
+Message-ID: <201108190001.p7J0124U007937@bravotv-web4.sccnj04.client.logicworks.net>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on bravotv-web4 is at 94%!!!
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S: 2.15642/99.86572 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@bravotv-web4.sccnj04.client.logicworks.net> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /data - 94% on server bravotv-web4, Thu Aug 18 20:01:02 EDT 2011
+

@@ -1,0 +1,48 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J47MhD001747
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:07:22 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J47MFo001742
+	for logicops; Fri, 19 Aug 2011 00:07:22 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J47Lbp001735
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:07:21 -0400
+Resent-Date: Fri, 19 Aug 2011 00:07:21 -0400
+Resent-Message-Id: <201108190407.p7J47Lbp001735@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from elser-lb1 (209.81.91.75) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:07:21 -0400
+Received: from elser-lb1v (centos5-64 [127.0.0.1])	by elser-lb1
+ (8.13.8/8.13.8) with SMTP id p7J47LLg012696	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:07:21 -0400
+Message-ID: <201108190407.p7J47LLg012696@elser-lb1>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@elser-lb1v>
+Date: Fri, 19 Aug 2011 00:07:21 -0400
+Subject: Zeus: Summary of recent service protection events, Summary of recent service protection events
+X-ZXTM-Notify: elser-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from elser-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:04:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 75.138.12.121,
+                    dropped  - 13 time(s)
+
+#2 Aug 19 00:05:51: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 71.11.223.123,
+                    dropped  - 1 time(s)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

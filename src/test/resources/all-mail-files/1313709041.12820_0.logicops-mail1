@@ -1,0 +1,820 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INAemQ012818
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:10:40 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INAeio012817
+	for logicops; Thu, 18 Aug 2011 19:10:40 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INAd4Q012813
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:10:39 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 19:10:39 -0400
+From: Anthony Williams <awilliams@logicworks.net>
+To: Joshua Dickerson <jdickerson@noveda.com>, Joe Jacob <jjacob@noveda.com>,
+        "David L. Russell" <drussell@noveda.com>
+CC: lw-support <lw-support@logicworks.net>, Andy Ehrich <aehrich@noveda.com>,
+        Joseph Yanchis <jyanchis@noveda.com>,
+        Richard Matthey <rmatthey@noveda.com>
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+Thread-Topic: SR 3-966284 NTPFEED_HTTP failing and extending logging
+Thread-Index: Acxc0kcOUc7A3Q6PSquqZiIiefTSDgA0xMCAAAtN/hAAAxEu4AAGznbw
+Date: Thu, 18 Aug 2011 23:10:38 +0000
+Message-ID: <C9953D031E2BD4499720BB227E69187A3D292CB2@lw-mbx2.us.logicworks.net>
+References: <C9953D031E2BD4499720BB227E69187A3D2827D4@lw-mbx2.us.logicworks.net>
+ <0D25915CF2187740AE6E6A56C2B697B738F94031@ex01.noveda.com>
+ <0D25915CF2187740AE6E6A56C2B697B738F940F9@ex01.noveda.com>
+ <0D25915CF2187740AE6E6A56C2B697B738F941FB@ex01.noveda.com>
+In-Reply-To: <0D25915CF2187740AE6E6A56C2B697B738F941FB@ex01.noveda.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/mixed;
+	boundary="_007_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_007_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: multipart/related;
+	boundary="_006_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_";
+	type="multipart/alternative"
+
+--_006_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_"
+
+--_000_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Josh,
+
+  Ok so if I understand correctly since the emails is an exchange issue at =
+the moment all you need right now is the logs.  I have attached two text fi=
+les, one that contains all the error log info and other all the audit log i=
+nfo.  Both contain data from all the relevant logs in chronological order.
+
+Regards,
+
+Anthony Williams
+LogicWorks | NRT Engineer
+Phone: 212-625-5444 option 1
+support@logicworks.net<mailto:support@logicworks.net>
+[Description: LW Print Logo 1 inch]
+
+From: Joshua Dickerson [mailto:jdickerson@noveda.com]
+Sent: Thursday, August 18, 2011 3:47 PM
+To: Anthony Williams; Joe Jacob; David L. Russell
+Cc: lw-support; Andy Ehrich; Joseph Yanchis; Richard Matthey
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+All,
+
+The email was received by Microsoft Exchange this morning at 4:03 AM. Richa=
+rd Matthey is investigating what happened past that point. So, the load bal=
+ancer is sending the emails but it isn't getting to the intended mailboxes.=
+ We hope to have this figured out shortly.
+
+
+Thank You,
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Joshua Dickerson
+Sent: Thursday, August 18, 2011 2:18 PM
+To: 'Anthony Williams'
+Cc: 'lw-support'; Andy Ehrich; David L. Russell; Joe Jacob
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Anthony,
+
+On a similar note, regarding SR 3-967654, I never received any notification=
+s of this. I thought Andy asked to have an alert setup which would email lw=
+alerts@noveda.com<mailto:lwalerts@noveda.com> when any alerts happened. Now=
+ there is nothing contained in the logs at all. It says that I may have era=
+sed them (but I know that isn't the case, logrotate must have just run or s=
+omething). This is making it very difficult to track down anything regardin=
+g what happened this morning. Can I get access to or a copy of all of the l=
+ogs that are present on the load balancer?
+
+Please respond as soon as possible as this is urgent.
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Joshua Dickerson
+Sent: Thursday, August 18, 2011 8:52 AM
+To: 'Anthony Williams'
+Cc: lw-support
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Anthony,
+
+How can I access those logs?
+
+I agree that we should upgrade Zeus at some point. When that is, I am not e=
+ntirely sure. Is there a way that we can upgrade on-the-fly without downtim=
+e? Perhaps by adding another traffic manager and taking this one down?
+
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Anthony Williams [mailto:awilliams@logicworks.net]<mailto:[mailto:awi=
+lliams@logicworks.net]>
+Sent: Wednesday, August 17, 2011 7:49 AM
+To: Joshua Dickerson
+Cc: lw-support
+Subject: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Dear Joshua,
+
+  I took a look and see what you mean it doesn't display event logs before =
+today or any audit logs.  I checked the physical host and I did see logs pr=
+esent for past 7 days for both events and audits.  Not sure why it's not be=
+ing displayed on the webgui.  One thing I noticed is you are running an old=
+er version of the zeus software so while it may not be responsible for this=
+ issue we should look to upgrade that regardless.  We'll need to put togeth=
+er a maintenance plan for that.
+
+Regards,
+
+Anthony Williams
+LogicWorks | NRT Engineer
+Phone: 212-625-5444 option 1
+support@logicworks.net<mailto:support@logicworks.net>
+[Description: LW Print Logo 1 inch]
+
+Subject: NTPFEED_HTTP failing and extending logging
+Recipients: lw-support , Andy Ehrich , Joseph Yanchis
+
+Hello,
+
+I just returned from being away for 3 weeks but I checked the load balancer=
+ for the past couple of days. Every day I have seen that NTPFEED_HTTP has b=
+een failing twice. I know at 4 AM it does a log rotation which causes it to=
+ go down. I have also seen that it goes down just before 1 AM.
+[cid:image001.png@01CC5C0B.E0B55E80]<mailto:[cid:image001.png@01CC5C0B.E0B5=
+5E80]>
+
+I would like to gather more information, but the alert log is only showing =
+for less than the past day. I would like that to be extended to 8 days befo=
+re that log rotates or purges.
+
+
+Thank You,
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+
+--_000_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.untruncated
+	{mso-style-name:untruncated;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle24
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Dear Josh,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp; Ok so if I unde=
+rstand correctly since the emails is an exchange issue at the moment all yo=
+u need right now is the logs.&nbsp; I have attached two text files, one tha=
+t contains all the error log info and other all
+ the audit log info.&nbsp; Both contain data from all the relevant logs in =
+chronological order.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Regards,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Anthony Williams<o:p><=
+/o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">LogicWorks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Phone: 212-625-5444 op=
+tion 1<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net">support@logicworks.net</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><img border=3D"0" widt=
+h=3D"96" height=3D"31" id=3D"_x0000_i1026" src=3D"cid:image001.jpg@01CC5DD8=
+.F7222170" alt=3D"Description: LW Print Logo 1 inch"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Joshua D=
+ickerson [mailto:jdickerson@noveda.com]
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 3:47 PM<br>
+<b>To:</b> Anthony Williams; Joe Jacob; David L. Russell<br>
+<b>Cc:</b> lw-support; Andy Ehrich; Joseph Yanchis; Richard Matthey<br>
+<b>Subject:</b> RE: SR 3-966284 NTPFEED_HTTP failing and extending logging<=
+o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">All,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">The email was received by Microsoft Exchange this mo=
+rning at 4:03 AM. Richard Matthey is investigating what happened past that =
+point. So, the load balancer is sending the emails but it isn&#8217;t getti=
+ng to the intended mailboxes. We hope to
+ have this figured out shortly.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thank You,<o:p></o:p></p>
+<p class=3D"MsoNormal">Joshua Dickerson<o:p></o:p></p>
+<p class=3D"MsoNormal">Real-Time Web Application Architect<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.noveda.com/">Noveda Technologi=
+es</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:jdickerson@noveda.com">jdickerson@=
+noveda.com</a><o:p></o:p></p>
+<p class=3D"MsoNormal">908.268.6111<o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Joshua D=
+ickerson
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 2:18 PM<br>
+<b>To:</b> 'Anthony Williams'<br>
+<b>Cc:</b> 'lw-support'; Andy Ehrich; David L. Russell; Joe Jacob<br>
+<b>Subject:</b> RE: SR 3-966284 NTPFEED_HTTP failing and extending logging<=
+o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Anthony,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">On a similar note, regarding SR 3-967654, I never re=
+ceived any notifications of this. I thought Andy asked to have an alert set=
+up which would email
+<a href=3D"mailto:lwalerts@noveda.com">lwalerts@noveda.com</a> when any ale=
+rts happened. Now there is nothing contained in the logs at all. It says th=
+at I may have erased them (but I know that isn&#8217;t the case, logrotate =
+must have just run or something). This is
+ making it very difficult to track down anything regarding what happened th=
+is morning. Can I get access to or a copy of all of the logs that are prese=
+nt on the load balancer?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please respond as soon as possible as this is urgent=
+.<o:p></o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Joshua Dickerson<o:p></o:p></p>
+<p class=3D"MsoNormal">Real-Time Web Application Architect<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.noveda.com/">Noveda Technologi=
+es</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:jdickerson@noveda.com">jdickerson@=
+noveda.com</a><o:p></o:p></p>
+<p class=3D"MsoNormal">908.268.6111<o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Joshua D=
+ickerson
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 8:52 AM<br>
+<b>To:</b> 'Anthony Williams'<br>
+<b>Cc:</b> lw-support<br>
+<b>Subject:</b> RE: SR 3-966284 NTPFEED_HTTP failing and extending logging<=
+o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Anthony,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">How can I access those logs?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I agree that we should upgrade Zeus at some point. W=
+hen that is, I am not entirely sure. Is there a way that we can upgrade on-=
+the-fly without downtime? Perhaps by adding another traffic manager and tak=
+ing this one down?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Joshua Dickerson<o:p></o:p></p>
+<p class=3D"MsoNormal">Real-Time Web Application Architect<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.noveda.com/">Noveda Technologi=
+es</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:jdickerson@noveda.com">jdickerson@=
+noveda.com</a><o:p></o:p></p>
+<p class=3D"MsoNormal">908.268.6111<o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Anthony =
+Williams
+<a href=3D"mailto:[mailto:awilliams@logicworks.net]">[mailto:awilliams@logi=
+cworks.net]</a>
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 7:49 AM<br>
+<b>To:</b> Joshua Dickerson<br>
+<b>Cc:</b> lw-support<br>
+<b>Subject:</b> SR 3-966284 NTPFEED_HTTP failing and extending logging<o:p>=
+</o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear Joshua,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp; I took a look and see what you mean it doesn&=
+#8217;t display event logs before today or any audit logs.&nbsp; I checked =
+the physical host and I did see logs present for past 7 days for both event=
+s and audits.&nbsp; Not sure why it&#8217;s not being displayed
+ on the webgui.&nbsp; One thing I noticed is you are running an older versi=
+on of the zeus software so while it may not be responsible for this issue w=
+e should look to upgrade that regardless.&nbsp; We&#8217;ll need to put tog=
+ether a maintenance plan for that.&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Anthony Williams<o:p></o:p></p>
+<p class=3D"MsoNormal">LogicWorks | NRT Engineer<o:p></o:p></p>
+<p class=3D"MsoNormal">Phone: 212-625-5444 option 1<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:support@logicworks.net">support@lo=
+gicworks.net</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><img border=3D"0" width=3D"96" height=3D"31" id=3D"P=
+icture_x0020_1" src=3D"cid:image001.jpg@01CC5DD8.F7222170" alt=3D"Descripti=
+on: LW Print Logo 1 inch"><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt;line-height:13.2pt"><s=
+pan style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot=
+;serif&quot;">Subject:
+<b>NTPFEED_HTTP failing and extending logging</b><br>
+Recipients: lw-support , Andy Ehrich , Joseph Yanchis <br>
+<br>
+Hello,<br>
+<br>
+I just returned from being away for 3 weeks but I checked the load balancer=
+ for the past couple of days. Every day I have seen that NTPFEED_HTTP has b=
+een failing twice. I know at 4 AM it does a log rotation which causes it to=
+ go down. I have also seen that
+ it goes down just before 1 AM.<br>
+<a href=3D"mailto:[cid:image001.png@01CC5C0B.E0B55E80]">[cid:image001.png@0=
+1CC5C0B.E0B55E80]</a><br>
+<br>
+I would like to gather more information, but the alert log is only showing =
+for less than the past day. I would like that to be extended to 8 days befo=
+re that log rotates or purges.<br>
+<br>
+<br>
+Thank You,<br>
+Joshua Dickerson<br>
+Real-Time Web Application Architect<br>
+Noveda Technologies<br>
+<a href=3D"mailto:jdickerson@noveda.com">jdickerson@noveda.com</a><br>
+908.268.6111<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_--
+
+--_006_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 23:10:38 GMT";
+	modification-date="Thu, 18 Aug 2011 23:10:38 GMT"
+Content-ID: <image001.jpg@01CC5DD8.F7222170>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_006_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_--
+
+--_007_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: text/plain; name="noveda-error-logs-8-18-2011.txt"
+Content-Description: noveda-error-logs-8-18-2011.txt
+Content-Disposition: attachment; filename="noveda-error-logs-8-18-2011.txt";
+	size=7442; creation-date="Thu, 18 Aug 2011 23:03:07 GMT";
+	modification-date="Thu, 18 Aug 2011 23:02:41 GMT"
+Content-Transfer-Encoding: base64
+
+WzExL0F1Zy8yMDExOjIwOjAxOjMxIC0wNDAwXSAgICBJTkZPICAgIHN0YXRkbG9nZGVsICAgICBE
+ZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxNC5sb2cNClsxMi9BdWcvMjAxMTowNDowMToy
+MyAtMDQwMF0gICAgU0VSSU9VUyBwb29scy9OVFBGRUVEX0hUVFAgICAgICBub2Rlcy8yMDkuODEu
+OTIuMTY1OjgwICBub2RlZmFpbCAgICAgICAgTm9kZSAyMDkuODEuOTIuMTY1IGhhcyBmYWlsZWQg
+LSBSZWFkIGVycm9yOiBDb25uZWN0aW9uIHJlc2V0IGINCnkgcGVlcg0KWzEyL0F1Zy8yMDExOjA0
+OjAxOjIzIC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAgICAgIHBvb2xkaWVk
+ICAgICAgICBQb29sIGhhcyBubyBiYWNrLWVuZCBub2RlcyByZXNwb25kaW5nDQpbMTIvQXVnLzIw
+MTE6MDQ6MDE6MjQgLTA0MDBdICAgIElORk8gICAgcG9vbHMvTlRQRkVFRF9IVFRQICAgICAgbm9k
+ZXMvMjA5LjgxLjkyLjE2NTo4MCAgbm9kZXdvcmtpbmcgICAgIE5vZGUgMjA5LjgxLjkyLjE2NSBp
+cyB3b3JraW5nIGFnYWluDQpbMTIvQXVnLzIwMTE6MDQ6MDE6MjQgLTA0MDBdICAgIElORk8gICAg
+cG9vbHMvTlRQRkVFRF9IVFRQICAgICAgcG9vbG9rICBQb29sIG5vdyBoYXMgd29ya2luZyBub2Rl
+cw0KZXJyb3JzLjcuZ3ogKEVORCkNCg0KDQpbMTIvQXVnLzIwMTE6MjA6MDE6MzEgLTA0MDBdICAg
+IElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE1
+LmxvZw0KZXJyb3JzLjYuZ3ogKEVORCkNCg0KDQpbMTMvQXVnLzIwMTE6MjA6MDE6MzEgLTA0MDBd
+ICAgIElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEw
+NTE2LmxvZw0KWzE0L0F1Zy8yMDExOjA0OjAxOjIzIC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05U
+UEZFRURfSFRUUCAgICAgIG5vZGVzLzIwOS44MS45Mi4xNjU6ODAgIG5vZGVmYWlsICAgICAgICBO
+b2RlIDIwOS44MS45Mi4xNjUgaGFzIGZhaWxlZCAtIFJlYWQgZXJyb3I6IENvbm5lY3Rpb24gcmVz
+ZXQgYg0KeSBwZWVyDQpbMTQvQXVnLzIwMTE6MDQ6MDE6MjMgLTA0MDBdICAgIFNFUklPVVMgcG9v
+bHMvTlRQRkVFRF9IVFRQICAgICAgcG9vbGRpZWQgICAgICAgIFBvb2wgaGFzIG5vIGJhY2stZW5k
+IG5vZGVzIHJlc3BvbmRpbmcNClsxNC9BdWcvMjAxMTowNDowMToyMyAtMDQwMF0gICAgSU5GTyAg
+ICBwb29scy9OVFBGRUVEX0hUVFAgICAgICBub2Rlcy8yMDkuODEuOTIuMTY1OjgwICBub2Rld29y
+a2luZyAgICAgTm9kZSAyMDkuODEuOTIuMTY1IGlzIHdvcmtpbmcgYWdhaW4NClsxNC9BdWcvMjAx
+MTowNDowMToyMyAtMDQwMF0gICAgSU5GTyAgICBwb29scy9OVFBGRUVEX0hUVFAgICAgICBwb29s
+b2sgIFBvb2wgbm93IGhhcyB3b3JraW5nIG5vZGVzDQplcnJvcnMuNS5neiAoRU5EKQ0KDQpxDQpb
+MTQvQXVnLzIwMTE6MjA6MDE6MzEgLTA0MDBdICAgIElORk8gICAgc3RhdGRsb2dkZWwgICAgIERl
+bGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE3LmxvZw0KWzE1L0F1Zy8yMDExOjAwOjUyOjM2
+IC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAgICAgIG5vZGVzLzIwOS44MS45
+Mi4xNjU6ODAgIG5vZGVmYWlsICAgICAgICBOb2RlIDIwOS44MS45Mi4xNjUgaGFzIGZhaWxlZCAt
+IFRpbWVvdXQgd2hpbGUgZXN0YWJsaXNoaW5nIGNvbg0KbmVjdGlvbiAodGhlIG1hY2hpbmUgbWF5
+IGJlIGRvd24sIG9yIHRoZSBuZXR3b3JrIGNvbmdlc3RlZDsgaW5jcmVhc2luZyB0aGUgJ21heF9j
+b25uZWN0X3RpbWUnIG9uIHRoZSBwb29sJ3MgJ0Nvbm5lY3Rpb24gTWFuYWdlbWVudCcgcGFnZSBt
+YXkgaGVscCkNClsxNS9BdWcvMjAxMTowMDo1MjozNiAtMDQwMF0gICAgU0VSSU9VUyBwb29scy9O
+VFBGRUVEX0hUVFAgICAgICBwb29sZGllZCAgICAgICAgUG9vbCBoYXMgbm8gYmFjay1lbmQgbm9k
+ZXMgcmVzcG9uZGluZw0KWzE1L0F1Zy8yMDExOjAwOjUyOjM3IC0wNDAwXSAgICBJTkZPICAgIHBv
+b2xzL05UUEZFRURfSFRUUCAgICAgIG5vZGVzLzIwOS44MS45Mi4xNjU6ODAgIG5vZGV3b3JraW5n
+ICAgICBOb2RlIDIwOS44MS45Mi4xNjUgaXMgd29ya2luZyBhZ2Fpbg0KWzE1L0F1Zy8yMDExOjAw
+OjUyOjM3IC0wNDAwXSAgICBJTkZPICAgIHBvb2xzL05UUEZFRURfSFRUUCAgICAgIHBvb2xvayAg
+UG9vbCBub3cgaGFzIHdvcmtpbmcgbm9kZXMNClsxNS9BdWcvMjAxMTowNDowMToyNCAtMDQwMF0g
+ICAgU0VSSU9VUyBwb29scy9OVFBGRUVEX0hUVFAgICAgICBub2Rlcy8yMDkuODEuOTIuMTY1Ojgw
+ICBub2RlZmFpbCAgICAgICAgTm9kZSAyMDkuODEuOTIuMTY1IGhhcyBmYWlsZWQgLSBSZWFkIGVy
+cm9yOiBDb25uZWN0aW9uIHJlc2V0IGINCnkgcGVlcg0KWzE1L0F1Zy8yMDExOjA0OjAxOjI0IC0w
+NDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAgICAgIHBvb2xkaWVkICAgICAgICBQ
+b29sIGhhcyBubyBiYWNrLWVuZCBub2RlcyByZXNwb25kaW5nDQpbMTUvQXVnLzIwMTE6MDQ6MDE6
+MjQgLTA0MDBdICAgIElORk8gICAgcG9vbHMvTlRQRkVFRF9IVFRQICAgICAgbm9kZXMvMjA5Ljgx
+LjkyLjE2NTo4MCAgbm9kZXdvcmtpbmcgICAgIE5vZGUgMjA5LjgxLjkyLjE2NSBpcyB3b3JraW5n
+IGFnYWluDQpbMTUvQXVnLzIwMTE6MDQ6MDE6MjQgLTA0MDBdICAgIElORk8gICAgcG9vbHMvTlRQ
+RkVFRF9IVFRQICAgICAgcG9vbG9rICBQb29sIG5vdyBoYXMgd29ya2luZyBub2Rlcw0KZXJyb3Jz
+LjQuZ3ogKEVORCkNCg0KDQpbMTUvQXVnLzIwMTE6MjA6MDE6MzEgLTA0MDBdICAgIElORk8gICAg
+c3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE4LmxvZw0KWzE2
+L0F1Zy8yMDExOjAwOjU3OjUzIC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAg
+ICAgIG5vZGVzLzIwOS44MS45Mi4xNjU6ODAgIG5vZGVmYWlsICAgICAgICBOb2RlIDIwOS44MS45
+Mi4xNjUgaGFzIGZhaWxlZCAtIFRpbWVvdXQgd2hpbGUgZXN0YWJsaXNoaW5nIGNvbg0KbmVjdGlv
+biAodGhlIG1hY2hpbmUgbWF5IGJlIGRvd24sIG9yIHRoZSBuZXR3b3JrIGNvbmdlc3RlZDsgaW5j
+cmVhc2luZyB0aGUgJ21heF9jb25uZWN0X3RpbWUnIG9uIHRoZSBwb29sJ3MgJ0Nvbm5lY3Rpb24g
+TWFuYWdlbWVudCcgcGFnZSBtYXkgaGVscCkNClsxNi9BdWcvMjAxMTowMDo1Nzo1MyAtMDQwMF0g
+ICAgU0VSSU9VUyBwb29scy9OVFBGRUVEX0hUVFAgICAgICBwb29sZGllZCAgICAgICAgUG9vbCBo
+YXMgbm8gYmFjay1lbmQgbm9kZXMgcmVzcG9uZGluZw0KWzE2L0F1Zy8yMDExOjAwOjU3OjUzIC0w
+NDAwXSAgICBJTkZPICAgIHBvb2xzL05UUEZFRURfSFRUUCAgICAgIG5vZGVzLzIwOS44MS45Mi4x
+NjU6ODAgIG5vZGV3b3JraW5nICAgICBOb2RlIDIwOS44MS45Mi4xNjUgaXMgd29ya2luZyBhZ2Fp
+bg0KWzE2L0F1Zy8yMDExOjAwOjU3OjUzIC0wNDAwXSAgICBJTkZPICAgIHBvb2xzL05UUEZFRURf
+SFRUUCAgICAgIHBvb2xvayAgUG9vbCBub3cgaGFzIHdvcmtpbmcgbm9kZXMNClsxNi9BdWcvMjAx
+MTowNDowMToyNCAtMDQwMF0gICAgU0VSSU9VUyBwb29scy9OVFBGRUVEX0hUVFAgICAgICBub2Rl
+cy8yMDkuODEuOTIuMTY1OjgwICBub2RlZmFpbCAgICAgICAgTm9kZSAyMDkuODEuOTIuMTY1IGhh
+cyBmYWlsZWQgLSBSZWFkIGVycm9yOiBDb25uZWN0aW9uIHJlc2V0IGINCnkgcGVlcg0KWzE2L0F1
+Zy8yMDExOjA0OjAxOjI0IC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAgICAg
+IHBvb2xkaWVkICAgICAgICBQb29sIGhhcyBubyBiYWNrLWVuZCBub2RlcyByZXNwb25kaW5nDQpb
+MTYvQXVnLzIwMTE6MDQ6MDE6MjUgLTA0MDBdICAgIElORk8gICAgcG9vbHMvTlRQRkVFRF9IVFRQ
+ICAgICAgbm9kZXMvMjA5LjgxLjkyLjE2NTo4MCAgbm9kZXdvcmtpbmcgICAgIE5vZGUgMjA5Ljgx
+LjkyLjE2NSBpcyB3b3JraW5nIGFnYWluDQpbMTYvQXVnLzIwMTE6MDQ6MDE6MjUgLTA0MDBdICAg
+IElORk8gICAgcG9vbHMvTlRQRkVFRF9IVFRQICAgICAgcG9vbG9rICBQb29sIG5vdyBoYXMgd29y
+a2luZyBub2Rlcw0KWzE2L0F1Zy8yMDExOjA3OjA2OjM2IC0wNDAwXSAgICBJTkZPICAgIGFjdGlv
+bnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KZXJyb3JzLjMu
+Z3ogKEVORCkNCg0KDQpbMTYvQXVnLzIwMTE6MjA6MDE6MzIgLTA0MDBdICAgIElORk8gICAgc3Rh
+dGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE5LmxvZw0KWzE3L0F1
+Zy8yMDExOjA0OjAxOjI1IC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZFRURfSFRUUCAgICAg
+IG5vZGVzLzIwOS44MS45Mi4xNjU6ODAgIG5vZGVmYWlsICAgICAgICBOb2RlIDIwOS44MS45Mi4x
+NjUgaGFzIGZhaWxlZCAtIFJlYWQgZXJyb3I6IENvbm5lY3Rpb24gcmVzZXQgYg0KeSBwZWVyDQpb
+MTcvQXVnLzIwMTE6MDQ6MDE6MjUgLTA0MDBdICAgIFNFUklPVVMgcG9vbHMvTlRQRkVFRF9IVFRQ
+ICAgICAgcG9vbGRpZWQgICAgICAgIFBvb2wgaGFzIG5vIGJhY2stZW5kIG5vZGVzIHJlc3BvbmRp
+bmcNClsxNy9BdWcvMjAxMTowNDowMToyNiAtMDQwMF0gICAgSU5GTyAgICBwb29scy9OVFBGRUVE
+X0hUVFAgICAgICBub2Rlcy8yMDkuODEuOTIuMTY1OjgwICBub2Rld29ya2luZyAgICAgTm9kZSAy
+MDkuODEuOTIuMTY1IGlzIHdvcmtpbmcgYWdhaW4NClsxNy9BdWcvMjAxMTowNDowMToyNiAtMDQw
+MF0gICAgSU5GTyAgICBwb29scy9OVFBGRUVEX0hUVFAgICAgICBwb29sb2sgIFBvb2wgbm93IGhh
+cyB3b3JraW5nIG5vZGVzDQooRU5EKQ0KDQpbMTcvQXVnLzIwMTE6MjA6MDE6MzIgLTA0MDBdICAg
+IElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTIw
+LmxvZw0KWzE4L0F1Zy8yMDExOjA0OjAxOjE4IC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL05UUEZF
+RURfSFRUUCAgICAgIG5vZGVzLzIwOS44MS45Mi4xNjU6ODAgIG5vZGVmYWlsICAgICAgICBOb2Rl
+IDIwOS44MS45Mi4xNjUgaGFzIGZhaWxlZCAtIFJlYWQgZXJyb3I6IENvbm5lY3Rpb24gcmVzZXQg
+Yg0KeSBwZWVyDQpbMTgvQXVnLzIwMTE6MDQ6MDE6MTggLTA0MDBdICAgIFNFUklPVVMgcG9vbHMv
+TlRQRkVFRF9IVFRQICAgICAgcG9vbGRpZWQgICAgICAgIFBvb2wgaGFzIG5vIGJhY2stZW5kIG5v
+ZGVzIHJlc3BvbmRpbmcNClsxOC9BdWcvMjAxMTowNDowMToxOCAtMDQwMF0gICAgSU5GTyAgICBw
+b29scy9OVFBGRUVEX0hUVFAgICAgICBub2Rlcy8yMDkuODEuOTIuMTY1OjgwICBub2Rld29ya2lu
+ZyAgICAgTm9kZSAyMDkuODEuOTIuMTY1IGlzIHdvcmtpbmcgYWdhaW4NClsxOC9BdWcvMjAxMTow
+NDowMToxOCAtMDQwMF0gICAgSU5GTyAgICBwb29scy9OVFBGRUVEX0hUVFAgICAgICBwb29sb2sg
+IFBvb2wgbm93IGhhcyB3b3JraW5nIG5vZGVzDQoNCg0KWzE4L0F1Zy8yMDExOjE2OjIzOjI3IC0w
+NDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmls
+ZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjIzOjI4IC0wNDAwXSAgICBJTkZPICAgIGFjdGlv
+bnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50
+Lg0KWzE4L0F1Zy8yMDExOjE2OjI1OjI3IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWls
+ICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjI1
+OjI3IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0
+aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8yMDExOjE2OjI2OjI4IC0wNDAw
+XSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBt
+b2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjI2OjI4IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMv
+RS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0K
+WzE4L0F1Zy8yMDExOjE2OjMxOjM0IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBj
+b25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjMxOjM0
+IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9u
+IHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8yMDExOjE2OjMyOjI5IC0wNDAwXSAg
+ICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2Rp
+ZmllZA0KWzE4L0F1Zy8yMDExOjE2OjMyOjI5IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1N
+YWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4
+L0F1Zy8yMDExOjE2OjMzOjE2IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25m
+bW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjMzOjE2IC0w
+NDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRy
+aWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8yMDExOjE2OjM0OjE4IC0wNDAwXSAgICBJ
+TkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmll
+ZA0KWzE4L0F1Zy8yMDExOjE2OjM0OjE4IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWls
+ICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1
+Zy8yMDExOjE2OjM1OjQ4IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9k
+IENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDExOjE2OjM1OjQ4IC0wNDAw
+XSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdn
+ZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8yMDExOjE2OjM3OjMyIC0wNDAwXSAgICBJTkZP
+ICAgIGFjdGlvbnMvRS1NYWlsICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0K
+WzE4L0F1Zy8yMDExOjE2OjM3OjMyIC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0
+ZXN0YWN0aW9uICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8y
+MDExOjE2OjQ5OjE1IC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9u
+ICAgICAgQWN0aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KWzE4L0F1Zy8yMDExOjE3OjAz
+OjEwIC0wNDAwXSAgICBJTkZPICAgIGFjdGlvbnMvRS1NYWlsICB0ZXN0YWN0aW9uICAgICAgQWN0
+aW9uIHRyaWdnZXJlZCBieSB0ZXN0IGV2ZW50Lg0KDQo=
+
+--_007_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_
+Content-Type: text/plain; name="noveda-audit-logs-8-18-2011.txt"
+Content-Description: noveda-audit-logs-8-18-2011.txt
+Content-Disposition: attachment; filename="noveda-audit-logs-8-18-2011.txt";
+	size=7451; creation-date="Thu, 18 Aug 2011 23:09:19 GMT";
+	modification-date="Thu, 18 Aug 2011 23:09:09 GMT"
+Content-Transfer-Encoding: base64
+
+DQpbMTEvQXVnLzIwMTE6MTY6NDI6MTIgLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1O
+b3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjEwNiBPUEVSQVRJT049bG9naW4g
+TE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANClsxMS9BdWcvMjAxMToxNzozMjo1MiAtMDQwMF0g
+ICAgVVNFUj1ub3ZlZGEgICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9MTAu
+Mi4xNDcuMTA2IE9QRVJBVElPTj1sb2dvdXQNCmF1ZGl0LjcuZ3ogKEVORCkNCg0KDQpbMTIvQXVn
+LzIwMTE6MjA6MTg6MTEgLTA0MDBdICAgIFVTRVI9YWRtaW4gICAgICBHUk9VUD1hZG1pbiAgICAg
+QVVUSD1sb2NhbCAgICAgIElQPTIwNi4yNTIuMTM0LjE4ICAgICAgIE9QRVJBVElPTj1sb2dpbiBM
+T0dJTlRZUEU9VUkgICAgVElNRU9VVD0zMA0KWzEyL0F1Zy8yMDExOjIwOjUwOjM2IC0wNDAwXSAg
+ICBVU0VSPWFkbWluICAgICAgR1JPVVA9YWRtaW4gICAgIEFVVEg9bG9jYWwgICAgICBJUD0yMDYu
+MjUyLjEzNC4xOCAgICAgICBPUEVSQVRJT049dGltZW91dA0KYXVkaXQuNi5neiAoRU5EKQ0KDQoN
+Cg0KWzEzL0F1Zy8yMDExOjE3OjQ2OjEyIC0wNDAwXSAgICBVU0VSPWFkbWluICAgICAgR1JPVVA9
+YWRtaW4gICAgIEFVVEg9bG9jYWwgICAgICBJUD0yMDYuMjUyLjEzNC4xOCAgICAgICBPUEVSQVRJ
+T049bG9naW4gTE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANClsxMy9BdWcvMjAxMToxODoxNjoy
+MSAtMDQwMF0gICAgVVNFUj1hZG1pbiAgICAgIEdST1VQPWFkbWluICAgICBBVVRIPWxvY2FsICAg
+ICAgSVA9MjA2LjI1Mi4xMzQuMTggICAgICAgT1BFUkFUSU9OPXRpbWVvdXQNCmF1ZGl0LjUuZ3og
+KEVORCkNCg0KDQoNClsxNS9BdWcvMjAxMTowMTowMTo0MyAtMDQwMF0gICAgVVNFUj1hZG1pbiAg
+ICAgIEdST1VQPWFkbWluICAgICBBVVRIPWxvY2FsICAgICAgSVA9MjA2LjI1Mi4xMzQuMTggICAg
+ICAgT1BFUkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQpbMTUvQXVnLzIw
+MTE6MDg6MTQ6MjggLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVU
+SD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjExMiBPUEVSQVRJT049bG9naW4gTE9HSU5UWVBFPVVJ
+ICAgIFRJTUVPVVQ9MzANClsxNS9BdWcvMjAxMToxMDoyNjoyOCAtMDQwMF0gICAgVVNFUj1ub3Zl
+ZGEgICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9MTAuMi4xNDcuMTE1IE9Q
+RVJBVElPTj1sb2dpbiBMT0dJTlRZUEU9VUkgICAgVElNRU9VVD0zMA0KWzE1L0F1Zy8yMDExOjEw
+OjI4OjQ4IC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9j
+YWwgICAgICBJUD0xMC4yLjE0Ny4xMTUgT1BFUkFUSU9OPWxvZ291dA0KWzE1L0F1Zy8yMDExOjEy
+OjIwOjAzIC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9j
+YWwgICAgICBJUD0xMC4yLjE0Ny4xMTIgT1BFUkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBU
+SU1FT1VUPTMwDQphdWRpdC40Lmd6IChFTkQpDQoNCg0KDQpbMTYvQXVnLzIwMTE6MDM6MDU6Mjcg
+LTA0MDBdICAgIFVTRVI9YWRtaW4gICAgICBHUk9VUD1hZG1pbiAgICAgQVVUSD1sb2NhbCAgICAg
+IElQPTIwNi4yNTIuMTM0LjE4ICAgICAgIE9QRVJBVElPTj1sb2dpbiBMT0dJTlRZUEU9VUkgICAg
+VElNRU9VVD0zMA0KWzE2L0F1Zy8yMDExOjA3OjA0OjM4IC0wNDAwXSAgICBVU0VSPWFkbWluICAg
+ICAgR1JPVVA9YWRtaW4gICAgIEFVVEg9bG9jYWwgICAgICBJUD0yMDYuMjUyLjEzNC4xOCAgICAg
+ICBPUEVSQVRJT049bG9naW4gTE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANClsxNi9BdWcvMjAx
+MTowNzowNjozNiAtMDQwMF0gICAgVVNFUj1hZG1pbiAgICAgIEdST1VQPWFkbWluICAgICBBVVRI
+PWxvY2FsICAgICAgSVA9MjA2LjI1Mi4xMzQuMTggICAgICAgT1BFUkFUSU9OPWtleW1vZCAgICAg
+ICAgS0VZPXRvICBWQUxVRT1sdy1saW51eEBleHQubG9naWN3b3Jrcy4NCm5ldCwgbHdhbGVydHNA
+bm92ZWRhLmNvbSAgT0xEVkFMPWx3LWxpbnV4QGV4dC5sb2dpY3dvcmtzLm5ldCAgICAgIEZJTEU9
+YWN0aW9ucyA+IEUtTWFpbA0KWzE2L0F1Zy8yMDExOjEwOjM5OjE3IC0wNDAwXSAgICBVU0VSPW5v
+dmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMTUg
+T1BFUkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQpbMTYvQXVnLzIwMTE6
+MTA6Mzk6NDUgLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1s
+b2NhbCAgICAgIElQPTEwLjIuMTQ3LjExNSBPUEVSQVRJT049bG9nb3V0DQpbMTYvQXVnLzIwMTE6
+MTE6NDc6MDUgLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1s
+b2NhbCAgICAgIElQPTEwLjIuMTQ3LjExOSBPUEVSQVRJT049bG9naW4gTE9HSU5UWVBFPVVJICAg
+IFRJTUVPVVQ9MzANClsxNi9BdWcvMjAxMToxMjoyMzozNSAtMDQwMF0gICAgVVNFUj1ub3ZlZGEg
+ICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9MTAuMi4xNDcuMTE5IE9QRVJB
+VElPTj10aW1lb3V0DQpbMTYvQXVnLzIwMTE6MTI6NDE6MTcgLTA0MDBdICAgIFVTRVI9bm92ZWRh
+ICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjExOSBPUEVS
+QVRJT049bG9naW4gTE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANCmF1ZGl0LjMuZ3ogKEVORCkN
+Cg0KDQoNClsxNy9BdWcvMjAxMTowNzoyMDoxMCAtMDQwMF0gICAgVVNFUj1hZG1pbiAgICAgIEdS
+T1VQPWFkbWluICAgICBBVVRIPWxvY2FsICAgICAgSVA9MjA2LjI1Mi4xMzQuMTggICAgICAgT1BF
+UkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQphdWRpdC4yLmd6IChFTkQp
+DQoNCg0KWzE3L0F1Zy8yMDExOjE0OjIyOjE3IC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JP
+VVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMTkgT1BFUkFUSU9OPWxv
+Z2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQpbMTcvQXVnLzIwMTE6MTQ6MjI6MjkgLTA0
+MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQ
+PTEwLjIuMTQ3LjExOSBPUEVSQVRJT049bG9nb3V0DQpbMTgvQXVnLzIwMTE6MDc6MjI6NDggLTA0
+MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQ
+PTEwLjIuMTQ3Ljk1ICBPUEVSQVRJT049dGltZW91dA0KWzE4L0F1Zy8yMDExOjA3OjIyOjUxIC0w
+NDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJ
+UD0xMC4yLjE0Ny4xMTkgT1BFUkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMw
+DQpbMTgvQXVnLzIwMTE6MDg6MTk6MzggLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1O
+b3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjExOSBPUEVSQVRJT049dGltZW91
+dA0KWzE4L0F1Zy8yMDExOjA4OjE5OjQxIC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9
+Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMTkgT1BFUkFUSU9OPWxvZ2lu
+IExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQpbMTgvQXVnLzIwMTE6MDg6NDk6MTcgLTA0MDBd
+ICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEw
+LjIuMTQ3LjEyNCBPUEVSQVRJT049bG9naW4gTE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANClsx
+OC9BdWcvMjAxMTowOTozMjoyNCAtMDQwMF0gICAgVVNFUj1hZG1pbiAgICAgIEdST1VQPWFkbWlu
+ICAgICBBVVRIPWxvY2FsICAgICAgSVA9MjA2LjI1Mi4xMzQuMTggICAgICAgT1BFUkFUSU9OPWxv
+Z2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQpbMTgvQXVnLzIwMTE6MTA6NTk6NTUgLTA0
+MDBdICAgIFVTRVI9YWRtaW4gICAgICBHUk9VUD1hZG1pbiAgICAgQVVUSD1sb2NhbCAgICAgIElQ
+PTIwNi4yNTIuMTM0LjE4ICAgICAgIE9QRVJBVElPTj10aW1lb3V0DQpbMTgvQXVnLzIwMTE6MTE6
+MDA6MDIgLTA0MDBdICAgIFVTRVI9YWRtaW4gICAgICBHUk9VUD1hZG1pbiAgICAgQVVUSD1sb2Nh
+bCAgICAgIElQPTIwNi4yNTIuMTM0LjE4ICAgICAgIE9QRVJBVElPTj1sb2dpbiBMT0dJTlRZUEU9
+VUkgICAgVElNRU9VVD0zMA0KWzE4L0F1Zy8yMDExOjExOjM0OjE3IC0wNDAwXSAgICBVU0VSPWFk
+bWluICAgICAgR1JPVVA9YWRtaW4gICAgIEFVVEg9bG9jYWwgICAgICBJUD0yMDYuMjUyLjEzNC4x
+OCAgICAgICBPUEVSQVRJT049dGltZW91dA0KYXVkaXQuMSAoRU5EKQ0KDQoNCg0KWzE4L0F1Zy8y
+MDExOjEzOjUyOjI3IC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFV
+VEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMjQgT1BFUkFUSU9OPWxvZ2luIExPR0lOVFlQRT1V
+SSAgICBUSU1FT1VUPTMwDQpbMTgvQXVnLzIwMTE6MTQ6MzU6MzUgLTA0MDBdICAgIFVTRVI9bm92
+ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjEyNCBP
+UEVSQVRJT049dGltZW91dA0KWzE4L0F1Zy8yMDExOjE0OjM4OjMxIC0wNDAwXSAgICBVU0VSPWFk
+bWluICAgICAgR1JPVVA9YWRtaW4gICAgIEFVVEg9bG9jYWwgICAgICBJUD0yMDYuMjUyLjEzNC4x
+OCAgICAgICBPUEVSQVRJT049bG9naW4gTE9HSU5UWVBFPVVJICAgIFRJTUVPVVQ9MzANClsxOC9B
+dWcvMjAxMToxNToxNDo1NyAtMDQwMF0gICAgVVNFUj1ub3ZlZGEgICAgIEdST1VQPU5vdmVkYSAg
+ICBBVVRIPWxvY2FsICAgICAgSVA9MTAuMi4xNDcuMTI0IE9QRVJBVElPTj1sb2dpbiBMT0dJTlRZ
+UEU9VUkgICAgVElNRU9VVD0zMA0KWzE4L0F1Zy8yMDExOjE1OjQ4OjQ1IC0wNDAwXSAgICBVU0VS
+PW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4x
+MjQgT1BFUkFUSU9OPXRpbWVvdXQNClsxOC9BdWcvMjAxMToxNTo0OTo1OCAtMDQwMF0gICAgVVNF
+Uj1ub3ZlZGEgICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9MTAuMi4xNDcu
+MTI0IE9QRVJBVElPTj1sb2dpbiBMT0dJTlRZUEU9VUkgICAgVElNRU9VVD0zMA0KWzE4L0F1Zy8y
+MDExOjE2OjIzOjI3IC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFV
+VEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMjQgT1BFUkFUSU9OPWtleW1vZCAgICAgICAgS0VZ
+PWZyb20gICAgICAgIFZBTFVFPXp4dG1AJWhvc3RuYW1lJS5jb20NCiAgICAgICBPTERWQUw9IEZJ
+TEU9YWN0aW9ucyA+IEUtTWFpbA0KWzE4L0F1Zy8yMDExOjE2OjI1OjI3IC0wNDAwXSAgICBVU0VS
+PW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4x
+MjQgT1BFUkFUSU9OPWtleW1vZCAgICAgICAgS0VZPWZyb20gICAgICAgIFZBTFVFPXp4dG1Abm92
+ZWRhLmNvbSAgIE9MRFZBTA0KPXp4dG1AJWhvc3RuYW1lJS5jb20gICAgICBGSUxFPWFjdGlvbnMg
+PiBFLU1haWwNClsxOC9BdWcvMjAxMToxNjoyNjoyOCAtMDQwMF0gICAgVVNFUj1ub3ZlZGEgICAg
+IEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9MTAuMi4xNDcuMTI0IE9QRVJBVElP
+Tj1rZXltb2QgICAgICAgIEtFWT1mcm9tICAgICAgICBWQUxVRT1qZGlja2Vyc29uQG5vdmVkYS5j
+b20NCiAgICAgT0xEVkFMPXp4dG1Abm92ZWRhLmNvbSAgRklMRT1hY3Rpb25zID4gRS1NYWlsDQpb
+MTgvQXVnLzIwMTE6MTY6MzE6MzQgLTA0MDBdICAgIFVTRVI9bm92ZWRhICAgICBHUk9VUD1Ob3Zl
+ZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjEyNCBPUEVSQVRJT049a2V5bW9kICAg
+ICAgICBLRVk9ZnJvbSAgICAgICAgVkFMVUU9enh0bUAlaG9zdG5hbWUlICAgT0xEVkFMDQo9amRp
+Y2tlcnNvbkBub3ZlZGEuY29tICAgIEZJTEU9YWN0aW9ucyA+IEUtTWFpbA0KWzE4L0F1Zy8yMDEx
+OjE2OjMyOjI5IC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JPVVA9Tm92ZWRhICAgIEFVVEg9
+bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMjQgT1BFUkFUSU9OPWtleW1vZCAgICAgICAgS0VZPWZy
+b20gICAgICAgIFZBTFVFPXp4dG1AJWhvc3RuYW1lJS5jb20NCiAgICAgICBPTERWQUw9enh0bUAl
+aG9zdG5hbWUlICBGSUxFPWFjdGlvbnMgPiBFLU1haWwNClsxOC9BdWcvMjAxMToxNjozMzoxNiAt
+MDQwMF0gICAgVVNFUj1ub3ZlZGEgICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAg
+SVA9MTAuMi4xNDcuMTI0IE9QRVJBVElPTj1rZXltb2QgICAgICAgIEtFWT1mcm9tICAgICAgICBW
+QUxVRT1qeWFuY2hpc0Bub3ZlZGEuY29tDQogICAgICAgT0xEVkFMPXp4dG1AJWhvc3RuYW1lJS5j
+b20gICAgICBGSUxFPWFjdGlvbnMgPiBFLU1haWwNClsxOC9BdWcvMjAxMToxNjozNDoxOCAtMDQw
+MF0gICAgVVNFUj1ub3ZlZGEgICAgIEdST1VQPU5vdmVkYSAgICBBVVRIPWxvY2FsICAgICAgSVA9
+MTAuMi4xNDcuMTI0IE9QRVJBVElPTj1rZXltb2QgICAgICAgIEtFWT1mcm9tICAgICAgICBWQUxV
+RT1hbGVydHNAbm92ZWRhLmNvbSBPTERWQUwNCj1qeWFuY2hpc0Bub3ZlZGEuY29tICAgICAgRklM
+RT1hY3Rpb25zID4gRS1NYWlsDQpbMTgvQXVnLzIwMTE6MTY6MzU6NDggLTA0MDBdICAgIFVTRVI9
+bm92ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjEy
+NCBPUEVSQVRJT049a2V5bW9kICAgICAgICBLRVk9ZnJvbSAgICAgICAgVkFMVUU9bHdhbGVydHNA
+bm92ZWRhLmNvbQ0KICAgICAgIE9MRFZBTD1hbGVydHNAbm92ZWRhLmNvbSAgICAgICAgRklMRT1h
+Y3Rpb25zID4gRS1NYWlsDQpbMTgvQXVnLzIwMTE6MTY6Mzc6MzIgLTA0MDBdICAgIFVTRVI9bm92
+ZWRhICAgICBHUk9VUD1Ob3ZlZGEgICAgQVVUSD1sb2NhbCAgICAgIElQPTEwLjIuMTQ3LjEyNCBP
+UEVSQVRJT049a2V5bW9kICAgICAgICBLRVk9ZnJvbSAgICAgICAgVkFMVUU9YWxlcnRzQG5vdmVk
+YS5jb20gT0xEVkFMDQo9bHdhbGVydHNAbm92ZWRhLmNvbSAgICAgIEZJTEU9YWN0aW9ucyA+IEUt
+TWFpbA0KWzE4L0F1Zy8yMDExOjE3OjMzOjIxIC0wNDAwXSAgICBVU0VSPW5vdmVkYSAgICAgR1JP
+VVA9Tm92ZWRhICAgIEFVVEg9bG9jYWwgICAgICBJUD0xMC4yLjE0Ny4xMjQgT1BFUkFUSU9OPXRp
+bWVvdXQNClsxOC9BdWcvMjAxMToxODo0NToyMyAtMDQwMF0gICAgVVNFUj1hZG1pbiAgICAgIEdS
+T1VQPWFkbWluICAgICBBVVRIPWxvY2FsICAgICAgSVA9MjA2LjI1Mi4xMzQuMTggICAgICAgT1BF
+UkFUSU9OPWxvZ2luIExPR0lOVFlQRT1VSSAgICBUSU1FT1VUPTMwDQo=
+
+--_007_C9953D031E2BD4499720BB227E69187A3D292CB2lwmbx2uslogicwo_--
+

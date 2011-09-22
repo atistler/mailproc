@@ -1,0 +1,94 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1OMeu022645
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:24:22 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1OMTb022644
+	for logicops; Thu, 18 Aug 2011 21:24:22 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1OMSr022633
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 21:24:22 -0400
+Resent-Date: Thu, 18 Aug 2011 21:24:22 -0400
+Resent-Message-Id: <201108190124.p7J1OMSr022633@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from iml-lb2v.client.logicworks.net (209.81.90.190) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 21:24:21 -0400
+Received: from iml-lb2v.client.logicworks.net
+ (iml-lb2v.sccnj04.client.logicworks.net [127.0.0.1])	by
+ iml-lb2v.client.logicworks.net (8.13.8/8.13.8) with SMTP id p7J1OM6k007175
+	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 21:24:22 -0400
+Message-ID: <201108190124.p7J1OM6k007175@iml-lb2v.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@iml-lb2v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 21:24:21 -0400
+Subject: Zeus: 12 events: Pool now has working nodes, Node is working again, Node has failed, Node is working again...
+X-ZXTM-Notify: iml-lb2v.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from iml-lb2v.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'media1-2' = OK
+ + Node '209.73.17.6:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 21:23:55: INFO  Node '209.73.17.6:80', Pool 'media1-2'
+                    Node 209.73.17.6 is working again
+
+#2 Aug 18 21:23:55: INFO  Pool 'media1-2'
+                    Pool now has working nodes
+
+#3 Aug 18 21:24:05: SERIOUS  Node '209.73.17.6:80', Pool 'media1-2'
+                    Node 209.73.17.6 has failed - Timeout while
+                    establishing connection (the machine may be down, or
+                    the network congested; increasing the
+                    'max_connect_time' on the pool's 'Connection
+                    Management' page may help)
+
+#4 Aug 18 21:24:05: SERIOUS  Pool 'media1-2'
+                    Pool has no back-end nodes responding
+
+#5 Aug 18 21:24:06: INFO  Node '209.73.17.6:80', Pool 'media1-2'
+                    Node 209.73.17.6 is working again
+
+#6 Aug 18 21:24:06: INFO  Pool 'media1-2'
+                    Pool now has working nodes
+
+#7 Aug 18 21:24:17: SERIOUS  Node '209.73.17.6:80', Pool 'media1-2'
+                    Node 209.73.17.6 has failed - Timeout while
+                    establishing connection (the machine may be down, or
+                    the network congested; increasing the
+                    'max_connect_time' on the pool's 'Connection
+                    Management' page may help)
+
+#8 Aug 18 21:24:17: SERIOUS  Pool 'media1-2'
+                    Pool has no back-end nodes responding
+
+#9 Aug 18 21:24:17: INFO  Node '209.73.17.6:80', Pool 'media1-2'
+                    Node 209.73.17.6 is working again
+
+#10 Aug 18 21:24:18: SERIOUS  Node '209.73.17.6:80', Pool 'media1-2'
+                     Node 209.73.17.6 has failed - Timeout while
+                     establishing connection (the machine may be down, or
+                     the network congested; increasing the
+                     'max_connect_time' on the pool's 'Connection
+                     Management' page may help)
+
+#11 Aug 18 21:24:18: INFO  Node '209.73.17.6:80', Pool 'media1-2'
+                     Node 209.73.17.6 is working again
+
+#12 Aug 18 21:24:19: INFO  Pool 'media1-2'
+                     Pool now has working nodes
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

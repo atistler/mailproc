@@ -1,0 +1,41 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J46S8e001619
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:06:28 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J46S9f001618
+	for logicops; Fri, 19 Aug 2011 00:06:28 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J46R9q001607
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:06:27 -0400
+Resent-Date: Fri, 19 Aug 2011 00:06:27 -0400
+Resent-Message-Id: <201108190406.p7J46R9q001607@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.105) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:06:27 -0400
+Received: from lw-nfsdb2v.nycmny04.client.logicworks.net ([206.252.153.184])
+ (using TLSv1) by exprod8mx205.postini.com ([64.18.7.10]) with SMTP;	Fri, 19
+ Aug 2011 04:06:27 GMT
+Received: from lw-nfsdb2v.nycmny04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ lw-nfsdb2v.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J417IU020376	for <lw-alert-disk@logicworks.net>; Fri, 19 Aug 2011 00:01:08
+ -0400
+Received: (from root@localhost)	by lw-nfsdb2v.nycmny04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7J412Mj020373	for lw-alert-disk@logicworks.net;
+ Fri, 19 Aug 2011 00:01:04 -0400
+Date: Fri, 19 Aug 2011 00:01:04 -0400
+From: root <root@lw-nfsdb2v.nycmny04.client.logicworks.net>
+Message-ID: <201108190401.p7J412Mj020373@lw-nfsdb2v.nycmny04.client.logicworks.net>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on lw-nfsdb2v is at 98%!!!
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S: 2.01977/99.85873 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@lw-nfsdb2v.nycmny04.client.logicworks.net> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /nfs4mount/nfslvm - 98% on server lw-nfsdb2v, Fri Aug 19 00:01:02 EDT 2011
+

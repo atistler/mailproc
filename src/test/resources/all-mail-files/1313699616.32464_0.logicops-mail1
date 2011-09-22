@@ -1,0 +1,60 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKXaST032461
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:33:36 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKXaZO032459
+	for logicops; Thu, 18 Aug 2011 16:33:36 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKXaIr032448
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:33:36 -0400
+Resent-Date: Thu, 18 Aug 2011 16:33:36 -0400
+Resent-Message-Id: <201108182033.p7IKXaIr032448@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from noveda-lb1v (209.81.92.188) by LW-HUBCAS1V (206.252.153.175)
+ with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 16:33:35
+ -0400
+Received: from noveda-lb1v (localhost.localdomain [127.0.0.1])	by noveda-lb1v
+ (8.13.8/8.13.8) with SMTP id p7IKXZkU019571	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 16:33:35 -0400
+Message-ID: <201108182033.p7IKXZkU019571@noveda-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <jyanchis@noveda.com>
+Date: Thu, 18 Aug 2011 16:33:35 -0400
+Subject: Zeus: 6 events: Test settings for action 'E-Mail' (requested by user noveda), Configuration file modified...
+X-ZXTM-Notify: noveda-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from noveda-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 16:31:34: INFO  Action 'E-Mail'
+                    Configuration file modified
+
+#2 Aug 18 16:31:34: INFO  Action 'E-Mail'
+                    Test settings for action 'E-Mail' (requested by user
+                    noveda)
+
+#3 Aug 18 16:32:29: INFO  Action 'E-Mail'
+                    Configuration file modified
+
+#4 Aug 18 16:32:29: INFO  Action 'E-Mail'
+                    Test settings for action 'E-Mail' (requested by user
+                    noveda)
+
+#5 Aug 18 16:33:16: INFO  Action 'E-Mail'
+                    Configuration file modified
+
+#6 Aug 18 16:33:16: INFO  Action 'E-Mail'
+                    Test settings for action 'E-Mail' (requested by user
+                    noveda)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

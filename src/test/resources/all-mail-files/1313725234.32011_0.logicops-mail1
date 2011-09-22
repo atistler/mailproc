@@ -1,0 +1,74 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3eYjb032009
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:40:34 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J3eY5o032004
+	for logicops; Thu, 18 Aug 2011 23:40:34 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3eXc6031997
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 23:40:33 -0400
+Resent-Date: Thu, 18 Aug 2011 23:40:33 -0400
+Resent-Message-Id: <201108190340.p7J3eXc6031997@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from afscme-lb1v (209.81.86.252) by LW-HUBCAS1V (206.252.153.175)
+ with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 23:40:33 -0400
+Received: from afscme-lb1v (localhost.localdomain [127.0.0.1])	by afscme-lb1v
+ (8.13.8/8.13.8) with SMTP id p7J3eX8c011731	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 23:40:33 -0400
+Message-ID: <201108190340.p7J3eX8c011731@afscme-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@afscme-lb1v>
+Date: Thu, 18 Aug 2011 23:40:33 -0400
+Subject: Zeus: 6 events: Node has failed, Pool has no back-end nodes responding, Node has failed, Pool has no back-end nodes responding...
+X-ZXTM-Notify: afscme-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from afscme-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'LMS STAGING POOL HTTP' = Failed: All nodes have failed
+ + Node '209.81.86.221:80' = Failed
+Pool 'LMS STAGING POOL smy7v only' = Failed: All nodes have failed
+ + Node '209.81.86.221:80' = Failed
+Pool 'LMS STAGING  - 8180' = Partial Fail: Some nodes have failed
+ + Node '209.81.86.221:8180' = Failed
+ + Node '209.81.86.222:8180' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 23:38:56: WARN  Monitor 'Ping'
+                    Monitor has detected a failure in node '209.81.86.221':
+                    Timeout
+
+#2 Aug 18 23:38:56: SERIOUS  Node '209.81.86.221:80', Pool 'LMS STAGING
+                    POOL smy7v only'
+                    Node 209.81.86.221 has failed - A monitor has detected
+                    a failure
+
+#3 Aug 18 23:38:56: SERIOUS  Pool 'LMS STAGING POOL smy7v only'
+                    Pool has no back-end nodes responding
+
+#4 Aug 18 23:38:56: SERIOUS  Node '209.81.86.221:80', Pool 'LMS STAGING
+                    POOL HTTP'
+                    Node 209.81.86.221 has failed - A monitor has detected
+                    a failure
+
+#5 Aug 18 23:38:56: SERIOUS  Pool 'LMS STAGING POOL HTTP'
+                    Pool has no back-end nodes responding
+
+#6 Aug 18 23:38:56: SERIOUS  Node '209.81.86.221:8180', Pool 'LMS STAGING 
+                    - 8180'
+                    Node 209.81.86.221 has failed - A monitor has detected
+                    a failure
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

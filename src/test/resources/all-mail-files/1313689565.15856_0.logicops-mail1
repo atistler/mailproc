@@ -1,0 +1,47 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHk57m015852
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 13:46:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IHk51K015849
+	for logicops; Thu, 18 Aug 2011 13:46:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHk3bU015825;
+	Thu, 18 Aug 2011 13:46:03 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 13:46:02 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 13:46:03 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 13:46:03 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: VIP1 Virtual IP - HTTP Content - bravotv - health-check/no-cache is DOWN at 01:44:23 PM.
+Message-ID: <LW-MON-EQ2r8gPAAIwp0000799b@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 17:46:03.0071 (UTC) FILETIME=[B2C394F0:01CC5DCE]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+VIP1 (209.81.89.10) Virtual IP: 
+
+HTTP Content - bravotv - health-check/no-cache on 209.81.89.10 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+Added from Discovery on Fri Apr 02 23:57:20 2010
+
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 01:44:23 PM by Whatsup Gold in Equinix
+

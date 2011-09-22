@@ -1,0 +1,340 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2Zwt0027741
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:35:58 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J2ZwSG027740
+	for logicops; Thu, 18 Aug 2011 22:35:58 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2ZwAf027736
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:35:58 -0400
+Resent-Date: Thu, 18 Aug 2011 22:35:58 -0400
+Resent-Message-Id: <201108190235.p7J2ZwAf027736@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.138) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 22:35:57 -0400
+Received: from mail.velti.com ([195.200.193.32]) (using TLSv1) by
+ exprod8mx238.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 22:35:56
+ EDT
+Received: from CALISTO.velti.net ([10.1.1.137]) by Exc-hc2.velti.net
+ ([10.1.1.53]) with mapi; Fri, 19 Aug 2011 05:35:52 +0300
+From: Tasos Andreadis <tandreadis@velti.com>
+To: aebu-Systems <aebu-Systems@velti.com>
+CC: lw-support <lw-support@logicworks.net>,
+        Nicholas Ennis
+	<nennis@logicworks.net>,
+        Logicworks <Logicworks2@velti.com>, Logicworks
+	<Logicworks@velti.com>
+Date: Fri, 19 Aug 2011 05:35:49 +0300
+Subject: RE: SR 3-967922 velti-lb1v - nodes failing out of LB -
+ 'velti-app5:81'
+Thread-Topic: SR 3-967922 velti-lb1v - nodes failing out of LB -
+ 'velti-app5:81'
+Thread-Index: AcxeF9wMks3NxKH9RSabtCImEZix7AAAKTEA
+Message-ID: <BB6DFE0BB4D6B048B3560A2D1606359913733BA99D@CALISTO.velti.net>
+References: <B3959E42181EA149A27EB12CF6D8A8E73D1F187F@lw-mbx2.us.logicworks.net>
+In-Reply-To: <B3959E42181EA149A27EB12CF6D8A8E73D1F187F@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA99DCALISTOveltin_"
+MIME-Version: 1.0
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA99DCALISTOveltin_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Team,
+
+Can you please check the bellow.
+
+BR
+
+
+Anastasios Andreadis | Technical Support Specialist
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.211.101.2530
+M  +30.695.100.5218
+E   tandreadis@velti.com
+www.velti.com<http://www.velti.com>
+
+Velti is a global leader in mobile marketing and advertising solutions for =
+mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid |=
+ Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Bei=
+jing | Shanghai | Sydney
+
+From: Nicholas Ennis [mailto:nennis@logicworks.net]
+Sent: Friday, August 19, 2011 5:30 AM
+To: Logicworks; Service_Desk; O&M_Application_Support
+Cc: lw-support
+Subject: SR 3-967922 velti-lb1v - nodes failing out of LB - 'velti-app5:81'
+
+We received alerts that nodes are failing out of velti-lb1v.  The pools tha=
+t were created this morning are failing.
+
+
+#1 Aug 18 22:26:24: WARN  Monitor 'Simple HTTP'
+
+                    Monitor has detected a failure in node
+
+                    '10.64.102.198:81': Timeout while waiting for valid
+
+                    server response
+
+
+
+#2 Aug 18 22:26:24: SERIOUS  Node '10.64.102.198:81', Pool 'velti-app5:81'
+
+                    Node 10.64.102.198 has failed - A monitor has detected
+
+                    a failure
+
+
+
+#3 Aug 18 22:26:24: SERIOUS  Pool 'velti-app5:81'
+
+                    Pool has no back-end nodes responding
+
+
+Nicholas Ennis
+Logicworks | NRT Engineer
+Phone: 212-625-5444
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA99DCALISTOveltin_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:p=3D"urn:schemas-m=
+icrosoft-com:office:powerpoint" xmlns:a=3D"urn:schemas-microsoft-com:office=
+:access" xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:s=3D"=
+uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:rs=3D"urn:schemas-microsof=
+t-com:rowset" xmlns:z=3D"#RowsetSchema" xmlns:b=3D"urn:schemas-microsoft-co=
+m:office:publisher" xmlns:ss=3D"urn:schemas-microsoft-com:office:spreadshee=
+t" xmlns:c=3D"urn:schemas-microsoft-com:office:component:spreadsheet" xmlns=
+:odc=3D"urn:schemas-microsoft-com:office:odc" xmlns:oa=3D"urn:schemas-micro=
+soft-com:office:activation" xmlns:html=3D"http://www.w3.org/TR/REC-html40" =
+xmlns:q=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:rtc=3D"http://m=
+icrosoft.com/officenet/conferencing" xmlns:D=3D"DAV:" xmlns:Repl=3D"http://=
+schemas.microsoft.com/repl/" xmlns:mt=3D"http://schemas.microsoft.com/share=
+point/soap/meetings/" xmlns:x2=3D"http://schemas.microsoft.com/office/excel=
+/2003/xml" xmlns:ppda=3D"http://www.passport.com/NameSpace.xsd" xmlns:ois=
+=3D"http://schemas.microsoft.com/sharepoint/soap/ois/" xmlns:dir=3D"http://=
+schemas.microsoft.com/sharepoint/soap/directory/" xmlns:ds=3D"http://www.w3=
+.org/2000/09/xmldsig#" xmlns:dsp=3D"http://schemas.microsoft.com/sharepoint=
+/dsp" xmlns:udc=3D"http://schemas.microsoft.com/data/udc" xmlns:xsd=3D"http=
+://www.w3.org/2001/XMLSchema" xmlns:sub=3D"http://schemas.microsoft.com/sha=
+repoint/soap/2002/1/alerts/" xmlns:ec=3D"http://www.w3.org/2001/04/xmlenc#"=
+ xmlns:sp=3D"http://schemas.microsoft.com/sharepoint/" xmlns:sps=3D"http://=
+schemas.microsoft.com/sharepoint/soap/" xmlns:xsi=3D"http://www.w3.org/2001=
+/XMLSchema-instance" xmlns:udcs=3D"http://schemas.microsoft.com/data/udc/so=
+ap" xmlns:udcxf=3D"http://schemas.microsoft.com/data/udc/xmlfile" xmlns:udc=
+p2p=3D"http://schemas.microsoft.com/data/udc/parttopart" xmlns:wf=3D"http:/=
+/schemas.microsoft.com/sharepoint/soap/workflow/" xmlns:dsss=3D"http://sche=
+mas.microsoft.com/office/2006/digsig-setup" xmlns:dssi=3D"http://schemas.mi=
+crosoft.com/office/2006/digsig" xmlns:mdssi=3D"http://schemas.openxmlformat=
+s.org/package/2006/digital-signature" xmlns:mver=3D"http://schemas.openxmlf=
+ormats.org/markup-compatibility/2006" xmlns:m=3D"http://schemas.microsoft.c=
+om/office/2004/12/omml" xmlns:mrels=3D"http://schemas.openxmlformats.org/pa=
+ckage/2006/relationships" xmlns:spwp=3D"http://microsoft.com/sharepoint/web=
+partpages" xmlns:ex12t=3D"http://schemas.microsoft.com/exchange/services/20=
+06/types" xmlns:ex12m=3D"http://schemas.microsoft.com/exchange/services/200=
+6/messages" xmlns:pptsl=3D"http://schemas.microsoft.com/sharepoint/soap/Sli=
+deLibrary/" xmlns:spsl=3D"http://microsoft.com/webservices/SharePointPortal=
+Server/PublishedLinksService" xmlns:Z=3D"urn:schemas-microsoft-com:" xmlns:=
+st=3D"&#1;" xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META HTTP-EQUI=
+V=3D"Content-Type" CONTENT=3D"text/html; charset=3Dus-ascii"><meta name=3DG=
+enerator content=3D"Microsoft Word 12 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vli=
+nk=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span style=3D'c=
+olor:#1F497D'>Dear Team,<o:p></o:p></span></p><p class=3DMsoNormal><span st=
+yle=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'color:#1F497D'>Can you please check the bellow.<o:p></o:p></span=
+></p><p class=3DMsoNormal><span style=3D'color:#1F497D'><o:p>&nbsp;</o:p></=
+span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>BR<o:p></o:p></=
+span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'><o:p>&nbsp;</o:=
+p></span></p><div>
+<P><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><STRONG><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><B><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Anastasios Andreadis | Technical Support Specialist<BR><BR></SPAN></B></S=
+PAN></B></STRONG></SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><STRONG><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><B><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Velti<BR></SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt"><ns0:Street><ns0:address><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">44=20
+Kifisias Ave.</SPAN></ns0:address></ns0:Street></SPAN><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+<BR></SPAN><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">15125=20
+Marousi, </SPAN><SPAN=20
+style=3D"FONT-SIZE: 0pt"><ns0:place><ns0:City><ns0:place><ns0:City><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Athens</SPAN></ns0:City></ns0:place></ns0:City></ns0:place></SPAN><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">,=20
+</SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt"><ns0:country-region><ns0:country-region><SPAN lang=
+=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Greece<BR></SPAN></ns0:country-region></ns0:country-region></SPAN></SPAN>=
+</B>T</STRONG></SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;&nbsp;+30.211.101.2530<BR></SPAN><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">M</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;+30.695.100.5218<BR></SPAN><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">E</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;=20
+tandreadis@velti.com</SPAN><B><U><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><BR><A=20
+title=3Dhttp://www.velti.com/ href=3D"http://www.velti.com"><SPAN=20
+title=3Dhttp://www.velti.com/=20
+style=3D"COLOR: #365f91">www.velti.com</SPAN></A><BR><BR></SPAN></U></B><SP=
+AN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><FONT=20
+color=3D#365f91>Velti is a global leader in mobile marketing and advertisin=
+g=20
+solutions for mobile operators, ad agencies, brands and media=20
+groups.</FONT></SPAN><BR><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><FONT=20
+color=3D#365f91>San Francisco | New York | Los Angeles | Dublin | London | =
+Paris |=20
+Madrid | Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapo=
+re |=20
+Beijing | Shanghai | Sydney</FONT></SPAN></SPAN></P>
+<P></P><br><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding=
+:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt=
+;font-family:"Tahoma","sans-serif"'>From:</span></b><span style=3D'font-siz=
+e:10.0pt;font-family:"Tahoma","sans-serif"'> Nicholas Ennis [mailto:nennis@=
+logicworks.net] <br><b>Sent:</b> Friday, August 19, 2011 5:30 AM<br><b>To:<=
+/b> Logicworks; Service_Desk; O&amp;M_Application_Support<br><b>Cc:</b> lw-=
+support<br><b>Subject:</b> SR 3-967922 velti-lb1v - nodes failing out of LB=
+ - 'velti-app5:81'<o:p></o:p></span></p></div></div><p class=3DMsoNormal><o=
+:p>&nbsp;</o:p></p><p class=3DMsoNormal>We received alerts that nodes are f=
+ailing out of velti-lb1v.&nbsp; The pools that were created this morning ar=
+e failing.<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=
+=3DMsoPlainText>#1 Aug 18 22:26:24: WARN&nbsp; Monitor 'Simple HTTP'<o:p></=
+o:p></p><p class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mon=
+itor has detected a failure in node<o:p></o:p></p><p class=3DMsoPlainText>&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '10.64.102.198:81': Timeout while wa=
+iting for valid<o:p></o:p></p><p class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; server response<o:p></o:p></p><p class=3DMsoPlainText><o=
+:p>&nbsp;</o:p></p><p class=3DMsoPlainText>#2 Aug 18 22:26:24: SERIOUS&nbsp=
+; Node '10.64.102.198:81', Pool 'velti-app5:81'<o:p></o:p></p><p class=3DMs=
+oPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node 10.64.102.198 has f=
+ailed - A monitor has detected<o:p></o:p></p><p class=3DMsoPlainText>&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a failure<o:p></o:p></p><p class=3DMsoPla=
+inText><o:p>&nbsp;</o:p></p><p class=3DMsoPlainText>#3 Aug 18 22:26:24: SER=
+IOUS&nbsp; Pool 'velti-app5:81'<o:p></o:p></p><p class=3DMsoPlainText>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pool has no back-end nodes responding<o:=
+p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>=
+<o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>Nic=
+holas Ennis<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:=
+#1F497D'>Logicworks | NRT Engineer<o:p></o:p></span></p><p class=3DMsoNorma=
+l><span style=3D'color:#1F497D'>Phone: 212-625-5444<o:p></o:p></span></p><p=
+ class=3DMsoNormal><span style=3D'color:#1F497D'><a href=3D"mailto:support@=
+logicworks.net"><span style=3D'color:#1F497D'>support@logicworks.net</span>=
+</a><o:p></o:p></span></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p></div><=
+/body></html>=
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA99DCALISTOveltin_--
+

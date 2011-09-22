@@ -1,0 +1,30 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IL8Zmf003551
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:08:35 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IL8Z0u003550
+	for logicops; Thu, 18 Aug 2011 17:08:35 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IL8QgU003500;
+	Thu, 18 Aug 2011 17:08:26 -0400
+Received: from lw-augur1.nycmny04.client.logicworks.net (206.252.128.42) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 17:08:25 -0400
+Received: from lw-augur1 (localhost.localdomain [127.0.0.1])	by
+ lw-augur1.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7IL8PLN031281	for <lw-alert-server@ext.logicworks.net>; Thu, 18 Aug 2011
+ 17:08:25 -0400
+Message-ID: <1533315373.237491313701705760.JavaMail.root@lw-augur1>
+Date: Thu, 18 Aug 2011 17:08:25 -0400
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Subject: syslog: 10.17.20.103: MRMON268 PD Reset: PD = Port 0 - 3:1:23,
+ Error = 3, Path = 50:00:00:e1:16:d8:c4:02 @ 5:08:15 PM EDT
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+syslog: 10.17.20.103: MRMON268 PD Reset: PD = Port 0 - 3:1:23, Error = 3, Path = 50:00:00:e1:16:d8:c4:02 @ 5:08:15 PM EDT
+

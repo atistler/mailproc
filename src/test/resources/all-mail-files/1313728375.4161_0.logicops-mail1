@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4WtOA004157
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:32:55 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4WtSK004156
+	for logicops; Fri, 19 Aug 2011 00:32:55 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4WjqA003964;
+	Fri, 19 Aug 2011 00:32:46 -0400
+Received: from lw-mon-db3.localdomain (209.73.63.45) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:32:40 -0400
+Received: from localhost.localdomain (lw-mon-db3 [127.0.0.1])	by
+ lw-mon-db3.localdomain (Postfix) with ESMTP id A9E44158059	for
+ <lw-monitoring@ext.logicworks.net>; Fri, 19 Aug 2011 04:32:03 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: Escalated NOTICE Event on au-storage1: Dynamic app. object collection
+	disabled: LSI: Raid Config - Disk Serial Number (id: 2210)
+From: EM7 Event Notifier <EM7@ext.logicworks.net>
+To: "lw-monitoring@ext.logicworks.net" <lw-monitoring@ext.logicworks.net>
+CC: 
+X-Priority: 3
+Date: Fri, 19 Aug 2011 04:32:03 +0000
+Message-ID: <20110819043203.A9E44158059@lw-mon-db3.localdomain>
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Severity: NOTICE
+First Occurred: 2011-08-19 04:01:03 None
+Last Occurred: 2011-08-19 04:01:03 None
+Occurrences: 4
+Source: Internal
+Organization: Auxia Partners
+Device: au-storage1
+
+Message: Dynamic app. object collection disabled: LSI: Raid Config - Disk Serial Number (id: 2210)
+
+Sent by Automation Action: Logicworks Escalation Email *DONT DELETE*
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=events&q_type=aid&q_arg=224278&q_sev=1&q_sort=0&q_oper=0
+

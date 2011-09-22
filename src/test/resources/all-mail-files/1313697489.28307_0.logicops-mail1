@@ -1,0 +1,189 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJw9MB028305
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:58:09 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJw9dh028304
+	for logicops; Thu, 18 Aug 2011 15:58:09 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJw8gN028300
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:58:08 -0400
+Resent-Date: Thu, 18 Aug 2011 15:58:08 -0400
+Resent-Message-Id: <201108181958.p7IJw8gN028300@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.117) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 15:58:07 -0400
+Received: from smtp01.auxiapartners.com ([209.73.34.43]) (using TLSv1) by
+ exprod8mx217.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 17:58:07
+ EDT
+Received: from AU-AUNJEX01V.auxia.corp (10.64.112.13) by
+ au-aucaex01v.auxia.corp (10.96.26.43) with Microsoft SMTP Server (TLS) id
+ 14.1.270.1; Thu, 18 Aug 2011 15:58:04 -0400
+Received: from AU-AUNJEX03V.auxia.corp ([fe80::19aa:1a6:837b:9d9c]) by
+ au-aunjex01v.auxia.corp ([2002:d151:540d::d151:540d]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 15:58:03 -0400
+From: Elmer Krauland <elmer@auxiapartners.com>
+To: Alexander Ospina <aospina@logicworks.net>
+CC: Lenny Goldstein <lenny@auxiapartners.com>,
+        lw-support
+	<lw-support@logicworks.net>
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+Thread-Topic: au-aunjex04v Health Check Failure (SR 3-966640)
+Thread-Index: AQHMXQecULWMDjLv+US7XGcXJ52XJZUhpiOA///aKrCAAVsVgP//vX0ZgABE3wCAACiboA==
+Date: Thu, 18 Aug 2011 19:58:03 +0000
+Message-ID: <895E8CE091D0944EA78DF7D8D2926BFC390EC55B@au-aunjex03v.auxia.corp>
+References: <60cec05d95c35a28d8dcf7d904b34ede@logicops.logicworks.net>
+ <8A6BD2659673894E93737B25DFA21A7B3D332751@lw-mbx2.us.logicworks.net>
+ <895E8CE091D0944EA78DF7D8D2926BFC390EC052@au-aunjex03v.auxia.corp>,<8A6BD2659673894E93737B25DFA21A7B3D33AB72@lw-mbx2.us.logicworks.net>
+ <6B2088B7-53B0-4860-8C67-1E146A7B1486@auxiapartners.com>
+ <8A6BD2659673894E93737B25DFA21A7B3D33C2AA@lw-mbx2.us.logicworks.net>
+In-Reply-To: <8A6BD2659673894E93737B25DFA21A7B3D33C2AA@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.64.112.19]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IJw8gN028300
+
+Hello Alex,
+
+Everything looks good on this server now.  I am able to access it via RDP and ping.
+
+You had indicated that "during failovers, corruption in the routing table may occur".  I would like to understand the cause of this issue.  We received the first alert yesterday at 12:32 pm.  I was not aware of any failovers taking place at that time.
+
+Thanks,
+Elmer Krauland
+Auxia Partners LP
+767 Fifth Avenue, 12th Floor
+New York, NY 10153
+(718) 938-0851
+
+
+-----Original Message-----
+From: Alexander Ospina [mailto:aospina@logicworks.net] 
+Sent: Thursday, August 18, 2011 9:26 AM
+To: Elmer Krauland
+Cc: Lenny Goldstein; lw-support
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+
+Sounds good.
+
+Safe travels.
+
+
+Regards,
+Logicworks NRT
+
+-----Original Message-----
+From: Elmer Krauland [mailto:elmer@auxiapartners.com] 
+Sent: Thursday, August 18, 2011 9:20 AM
+To: Alexander Ospina
+Cc: Lenny Goldstein; lw-support
+Subject: Re: au-aunjex04v Health Check Failure (SR 3-966640)
+
+Thanks Alex.  I am on the road today, but will check it this afternoon.   Elmer
+
+
+
+-- Sent from my iPhone --
+
+On Aug 18, 2011, at 9:17, "Alexander Ospina" <aospina@logicworks.net> wrote:
+
+> Hello Elmer.
+> 
+> Please excuse my delay in responding to this matter.  I've re-added the IP's within the route table using the netsh command.  Could you give the VPN connection another try?
+> 
+> Please let me know how it goes.
+> 
+> Regards,
+> Logicworks NRT
+> 
+> -----Original Message-----
+> From: Elmer Krauland [mailto:elmer@auxiapartners.com] 
+> Sent: Wednesday, August 17, 2011 4:41 PM
+> To: Alexander Ospina; Lenny Goldstein
+> Cc: lw-support
+> Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+> 
+> Hello Alex,
+> 
+> I typically connect to the servers from the VPN, but am no longer able to do so.  I am not able to ping or RDP to 10.64.112.23 / au-aunjex04v from my VPN connection.
+> I disconnected my VPN and reconnected, but it did not resolve the issue.
+> 
+> I can see the server is running because I can get to it from any other server.
+> Please investigate why it is no longer responsive from across a VPN connection.
+> 
+> Thanks, Elmer
+> 
+> 
+> 
+> -----Original Message-----
+> From: Alexander Ospina [mailto:aospina@logicworks.net] 
+> Sent: Wednesday, August 17, 2011 2:51 PM
+> To: Lenny Goldstein; Elmer Krauland
+> Cc: lw-support
+> Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+> 
+> Elmer -
+> 
+> We seem to have discovered the cause and fixed the issue.
+> 
+> Here's what happened:  Occasionally during failovers, corruption in the routing table may occur.  It seems this was the cause of the issue.  
+> 
+> What we've done is the following: We've deleted and re-added the routes using netsh which pins the route to a specific NIC, which should guarantee the integrity of the routing table through any failover that may be performed.
+> 
+> Please feel free to test this at your convenience and let us know if there's anything else we can help you with.
+> 
+> Regards,
+> Logicworks NRT  
+> 
+> -----Original Message-----
+> From: Logicops 
+> Sent: Wednesday, August 17, 2011 2:01 PM
+> To: Goldstein, Leonard; Krauland, Elmer
+> Cc: lw-support
+> Subject: au-aunjex04v Health Check Failure (SR 3-966640)
+> 
+> Greetings.
+> 
+> I've created this ticket in reference to our conversation regarding the failed health check for au-aunjex04v.
+> 
+> Please grant us some time to investigate the matter.  We will reach back out to you as soon as we're able to determine the cause of the issue.
+> 
+> Regards,
+> Logicworks NRT
+> 
+> -------------------------------------------------------------------------------------------------------------
+> 
+> Modifications:
+> -------------------------------------------------------------------------------------------------------------
+> 
+> Created new ServiceRequest: 
+>    SR 3-966641
+> 
+> + Basic Info:     SR 3-966641
+> -------------------------------------------------------------------------------------------------------------
+> 
+> Abstract: au-aunjex04v Health Check Failure
+> Status: Open
+> Date Due: 2011-08-17 20:00
+> Assigned To: Ospina, Alexander (2011-08-17 14:00:52) Created By: Ospina, Alexander (2011-08-17 14:00:52)
+> Area: Account Administration
+> Accounts: Auxia Partners
+> Contacts: Krauland, Elmer
+> Services: au-aunjex04v (inactive)
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+

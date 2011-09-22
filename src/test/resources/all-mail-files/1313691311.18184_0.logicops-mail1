@@ -1,0 +1,163 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIFB9k018182
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:15:11 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIFBjw018181
+	for logicops; Thu, 18 Aug 2011 14:15:11 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIF3UE018118
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:15:03 -0400
+Resent-Date: Thu, 18 Aug 2011 14:15:03 -0400
+Resent-Message-Id: <201108181815.p7IIF3UE018118@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 14:15:02 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIF39I028046	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 14:15:03 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IIF3pv028044;	Thu, 18 Aug 2011 14:15:03 -0400
+Date: Thu, 18 Aug 2011 14:15:03 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108181815.p7IIF3pv028044@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: routers router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/r03.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.14
+diff -U4 -r1.14 r03.sccnj04.core.logicworks.net
+@@ -33,15 +33,15 @@
+  !BootFlash: Configuration register is 0x2102
+  !BootFlash: Standby is not present.
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:  1916  -rw-       18898                    <no date>  startup-config
++ !Flash: nvram:  1916  -rw-       19080                    <no date>  startup-config
+  !Flash: nvram:  1917  ----          24                    <no date>  private-config
+- !Flash: nvram:  1918  -rw-       18898                    <no date>  underlying-config
++ !Flash: nvram:  1918  -rw-       19080                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          48                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 1961976 bytes total (1939930 bytes free)
++ !Flash: nvram: 1961976 bytes total (1939748 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rwx    18534840   Jan 1 2000 19:42:36 +00:00  c6msfc2a-ipbasek9_wan-mz.122-18.SXF14.bin
+  !Flash: bootflash:     2  -rw-      314843   Jan 1 2000 00:00:57 +00:00  [crashinfo_20000101-000057]
+@@ -536,15 +536,19 @@
+   speed 1000
+   duplex full
+  !
+  interface GigabitEthernet4/37
+-  description Client Switch Name Allocation-X
+-  no ip address
++  description innolyst-sw1
++  ip address 209.81.95.202 255.255.255.248
+   ip route-cache flow
+  ! ip ospf message-digest-key 100 md5 <removed>
+   ip ospf database-filter all out
+   speed 1000
+   duplex full
++  standby 1 ip 209.81.95.201
++  standby 1 timers 5 15
++  standby 1 priority 120
++  standby 1 preempt
+  !
+  interface GigabitEthernet4/38
+   description trackabout-sw1
+   ip address 209.81.95.194 255.255.255.248
+@@ -691,8 +695,9 @@
+   no passive-interface GigabitEthernet4/20
+   no passive-interface GigabitEthernet4/21
+   no passive-interface GigabitEthernet4/22
+   no passive-interface GigabitEthernet4/23
++  no passive-interface GigabitEthernet4/37
+   no passive-interface GigabitEthernet4/38
+   no passive-interface GigabitEthernet4/39
+   no passive-interface GigabitEthernet4/40
+   no passive-interface GigabitEthernet4/41
+@@ -717,8 +722,9 @@
+   network 209.81.95.104 0.0.0.7 area 0
+   network 209.81.95.112 0.0.0.7 area 0
+   network 209.81.95.120 0.0.0.7 area 0
+   network 209.81.95.192 0.0.0.7 area 0
++  network 209.81.95.200 0.0.0.7 area 0
+  !
+  ip classless
+  !
+  ip flow-export source Loopback0
+Index: configs/r04.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.15
+diff -U4 -r1.15 r04.sccnj04.core.logicworks.net
+@@ -33,15 +33,15 @@
+  !BootFlash: Configuration register is 0x2102
+  !BootFlash: Standby is not present.
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:  1916  -rw-       19950                    <no date>  startup-config
++ !Flash: nvram:  1916  -rw-       20132                    <no date>  startup-config
+  !Flash: nvram:  1917  ----          24                    <no date>  private-config
+- !Flash: nvram:  1918  -rw-       19950                    <no date>  underlying-config
++ !Flash: nvram:  1918  -rw-       20132                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          48                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 1961976 bytes total (1938878 bytes free)
++ !Flash: nvram: 1961976 bytes total (1938696 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rwx    18534840   Jan 1 2000 00:16:32 +00:00  c6msfc2a-ipbasek9_wan-mz.122-18.SXF14.bin
+  !Flash: bootflash: 65536000 bytes total (47001032 bytes free)
+@@ -612,16 +612,20 @@
+   speed 1000
+   duplex full
+  !
+  interface GigabitEthernet4/37
+-  description Client Switch Name Allocation-X
+-  no ip address
++  description innolyst-sw1
++  ip address 209.81.95.203 255.255.255.248
+   ip route-cache flow
+  ! ip ospf message-digest-key 100 md5 <removed>
+   ip ospf cost 2000
+   ip ospf database-filter all out
+   speed 1000
+   duplex full
++  standby 1 ip 209.81.95.201
++  standby 1 timers 5 15
++  standby 1 priority 115
++  standby 1 preempt
+  !
+  interface GigabitEthernet4/38
+   description trackabout-fw-sec
+   ip address 209.81.95.195 255.255.255.248
+@@ -774,8 +778,9 @@
+   no passive-interface GigabitEthernet4/20
+   no passive-interface GigabitEthernet4/21
+   no passive-interface GigabitEthernet4/22
+   no passive-interface GigabitEthernet4/23
++  no passive-interface GigabitEthernet4/37
+   no passive-interface GigabitEthernet4/38
+   no passive-interface GigabitEthernet4/39
+   no passive-interface GigabitEthernet4/40
+   no passive-interface GigabitEthernet4/42
+@@ -799,8 +804,9 @@
+   network 209.81.95.96 0.0.0.3 area 0
+   network 209.81.95.112 0.0.0.7 area 0
+   network 209.81.95.120 0.0.0.7 area 0
+   network 209.81.95.192 0.0.0.7 area 0
++  network 209.81.95.200 0.0.0.7 area 0
+  !
+  ip classless
+  !
+  ip flow-export source Loopback0
+

@@ -1,0 +1,1193 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILRPFP004909
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:27:25 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILRP4s004908
+	for logicops; Thu, 18 Aug 2011 17:27:25 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILRNFn004904
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 17:27:23 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 17:27:23 -0400
+From: Alexander Ospina <aospina@logicworks.net>
+To: Elmer Krauland <elmer@auxiapartners.com>
+CC: Lenny Goldstein <lenny@auxiapartners.com>,
+        lw-support
+	<lw-support@logicworks.net>
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+Thread-Topic: au-aunjex04v Health Check Failure (SR 3-966640)
+Thread-Index: AQHMXQebtZ2jydDUpEag6Prm4UcthJUhYukQgABiAYCAANL+gIAARASA//++m3CAALC+gP//1Cvw
+Date: Thu, 18 Aug 2011 21:27:23 +0000
+Message-ID: <8A6BD2659673894E93737B25DFA21A7B3D344DEB@lw-mbx2.us.logicworks.net>
+References: <60cec05d95c35a28d8dcf7d904b34ede@logicops.logicworks.net>
+ <8A6BD2659673894E93737B25DFA21A7B3D332751@lw-mbx2.us.logicworks.net>
+ <895E8CE091D0944EA78DF7D8D2926BFC390EC052@au-aunjex03v.auxia.corp>,<8A6BD2659673894E93737B25DFA21A7B3D33AB72@lw-mbx2.us.logicworks.net>
+ <6B2088B7-53B0-4860-8C67-1E146A7B1486@auxiapartners.com>
+ <8A6BD2659673894E93737B25DFA21A7B3D33C2AA@lw-mbx2.us.logicworks.net>
+ <895E8CE091D0944EA78DF7D8D2926BFC390EC55B@au-aunjex03v.auxia.corp>
+In-Reply-To: <895E8CE091D0944EA78DF7D8D2926BFC390EC55B@au-aunjex03v.auxia.corp>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_"
+
+--_000_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hey Elmer.
+
+
+
+I'm glad to hear everything is working properly once again.
+
+
+
+When I mentioned the cluster failover possibility, I was basing that statem=
+ent on an error I had noticed when looking through the event logs:
+
+
+
+[cid:image001.png@01CC5DCB.E1C17CC0]
+
+
+
+Perhaps I was quick to assume failover testing on your end.  However, if no=
+ failover test was occurring at this time, then perhaps more investigation =
+will need to take place in order to verify why this occurred.  I will bring=
+ this up with one of our senior engineers and see what they suggest.
+
+
+
+Regardless, the use of netsh will now pin all manually added routes to a pa=
+rticular NIC in order to maintain the integrity of the routing table.  I wi=
+ll get back to you as soon as our senior engineers get a chance to look int=
+o this.
+
+
+
+Regards,
+
+Logicworks NRT
+
+
+
+
+
+-----Original Message-----
+From: Elmer Krauland [mailto:elmer@auxiapartners.com]
+Sent: Thursday, August 18, 2011 3:58 PM
+To: Alexander Ospina
+Cc: Lenny Goldstein; lw-support
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+
+
+
+Hello Alex,
+
+
+
+Everything looks good on this server now.  I am able to access it via RDP a=
+nd ping.
+
+
+
+You had indicated that "during failovers, corruption in the routing table m=
+ay occur".  I would like to understand the cause of this issue.  We receive=
+d the first alert yesterday at 12:32 pm.  I was not aware of any failovers =
+taking place at that time.
+
+
+
+Thanks,
+
+Elmer Krauland
+
+Auxia Partners LP
+
+767 Fifth Avenue, 12th Floor
+
+New York, NY 10153
+
+(718) 938-0851
+
+
+
+
+
+-----Original Message-----
+
+From: Alexander Ospina [mailto:aospina@logicworks.net]<mailto:[mailto:aospi=
+na@logicworks.net]>
+
+Sent: Thursday, August 18, 2011 9:26 AM
+
+To: Elmer Krauland
+
+Cc: Lenny Goldstein; lw-support
+
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+
+
+
+Sounds good.
+
+
+
+Safe travels.
+
+
+
+
+
+Regards,
+
+Logicworks NRT
+
+
+
+-----Original Message-----
+
+From: Elmer Krauland [mailto:elmer@auxiapartners.com]<mailto:[mailto:elmer@=
+auxiapartners.com]>
+
+Sent: Thursday, August 18, 2011 9:20 AM
+
+To: Alexander Ospina
+
+Cc: Lenny Goldstein; lw-support
+
+Subject: Re: au-aunjex04v Health Check Failure (SR 3-966640)
+
+
+
+Thanks Alex.  I am on the road today, but will check it this afternoon.   E=
+lmer
+
+
+
+
+
+
+
+-- Sent from my iPhone --
+
+
+
+On Aug 18, 2011, at 9:17, "Alexander Ospina" <aospina@logicworks.net<mailto=
+:aospina@logicworks.net>> wrote:
+
+
+
+> Hello Elmer.
+
+>
+
+> Please excuse my delay in responding to this matter.  I've re-added the I=
+P's within the route table using the netsh command.  Could you give the VPN=
+ connection another try?
+
+>
+
+> Please let me know how it goes.
+
+>
+
+> Regards,
+
+> Logicworks NRT
+
+>
+
+> -----Original Message-----
+
+> From: Elmer Krauland [mailto:elmer@auxiapartners.com]<mailto:[mailto:elme=
+r@auxiapartners.com]>
+
+> Sent: Wednesday, August 17, 2011 4:41 PM
+
+> To: Alexander Ospina; Lenny Goldstein
+
+> Cc: lw-support
+
+> Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+
+>
+
+> Hello Alex,
+
+>
+
+> I typically connect to the servers from the VPN, but am no longer able to=
+ do so.  I am not able to ping or RDP to 10.64.112.23 / au-aunjex04v from m=
+y VPN connection.
+
+> I disconnected my VPN and reconnected, but it did not resolve the issue.
+
+>
+
+> I can see the server is running because I can get to it from any other se=
+rver.
+
+> Please investigate why it is no longer responsive from across a VPN conne=
+ction.
+
+>
+
+> Thanks, Elmer
+
+>
+
+>
+
+>
+
+> -----Original Message-----
+
+> From: Alexander Ospina [mailto:aospina@logicworks.net]<mailto:[mailto:aos=
+pina@logicworks.net]>
+
+> Sent: Wednesday, August 17, 2011 2:51 PM
+
+> To: Lenny Goldstein; Elmer Krauland
+
+> Cc: lw-support
+
+> Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)
+
+>
+
+> Elmer -
+
+>
+
+> We seem to have discovered the cause and fixed the issue.
+
+>
+
+> Here's what happened:  Occasionally during failovers, corruption in the r=
+outing table may occur.  It seems this was the cause of the issue.
+
+>
+
+> What we've done is the following: We've deleted and re-added the routes u=
+sing netsh which pins the route to a specific NIC, which should guarantee t=
+he integrity of the routing table through any failover that may be performe=
+d.
+
+>
+
+> Please feel free to test this at your convenience and let us know if ther=
+e's anything else we can help you with.
+
+>
+
+> Regards,
+
+> Logicworks NRT
+
+>
+
+> -----Original Message-----
+
+> From: Logicops
+
+> Sent: Wednesday, August 17, 2011 2:01 PM
+
+> To: Goldstein, Leonard; Krauland, Elmer
+
+> Cc: lw-support
+
+> Subject: au-aunjex04v Health Check Failure (SR 3-966640)
+
+>
+
+> Greetings.
+
+>
+
+> I've created this ticket in reference to our conversation regarding the f=
+ailed health check for au-aunjex04v.
+
+>
+
+> Please grant us some time to investigate the matter.  We will reach back =
+out to you as soon as we're able to determine the cause of the issue.
+
+>
+
+> Regards,
+
+> Logicworks NRT
+
+>
+
+> -------------------------------------------------------------------------=
+------------------------------------
+
+>
+
+> Modifications:
+
+> -------------------------------------------------------------------------=
+------------------------------------
+
+>
+
+> Created new ServiceRequest:
+
+>    SR 3-966641
+
+>
+
+> + Basic Info:     SR 3-966641
+
+> -------------------------------------------------------------------------=
+------------------------------------
+
+>
+
+> Abstract: au-aunjex04v Health Check Failure
+
+> Status: Open
+
+> Date Due: 2011-08-17 20:00
+
+> Assigned To: Ospina, Alexander (2011-08-17 14:00:52) Created By: Ospina, =
+Alexander (2011-08-17 14:00:52)
+
+> Area: Account Administration
+
+> Accounts: Auxia Partners
+
+> Contacts: Krauland, Elmer
+
+> Services: au-aunjex04v (inactive)
+
+>
+
+>
+
+>
+
+>
+
+>
+
+>
+
+>
+
+>
+
+--_000_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoPlainText">Hey Elmer.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I'm glad to hear everything is working properly o=
+nce again.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">When I mentioned the cluster failover possibility=
+, I was basing that statement on an error I had noticed when looking throug=
+h the event logs:<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><img width=3D"1359" height=3D"553" id=3D"Picture_=
+x0020_1" src=3D"cid:image001.png@01CC5DCB.E1C17CC0"><o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Perhaps I was quick to assume failover testing on=
+ your end.&nbsp; However, if no failover test was occurring at this time, t=
+hen perhaps more investigation will need to take place in order to verify w=
+hy this occurred.&nbsp; I will bring this up
+ with one of our senior engineers and see what they suggest.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regardless, the use of netsh will now pin all man=
+ually added routes to a particular NIC in order to maintain the integrity o=
+f the routing table.&nbsp; I will get back to you as soon as our senior eng=
+ineers get a chance to look into this.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks NRT<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<br>
+From: Elmer Krauland [mailto:elmer@auxiapartners.com] <br>
+Sent: Thursday, August 18, 2011 3:58 PM<br>
+To: Alexander Ospina<br>
+Cc: Lenny Goldstein; lw-support<br>
+Subject: RE: au-aunjex04v Health Check Failure (SR 3-966640)</p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Hello Alex,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Everything looks good on this server now.&nbsp; I=
+ am able to access it via RDP and ping.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">You had indicated that &quot;during failovers, co=
+rruption in the routing table may occur&quot;.&nbsp; I would like to unders=
+tand the cause of this issue.&nbsp; We received the first alert yesterday a=
+t 12:32 pm.&nbsp; I was not aware of any failovers taking place
+ at that time.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Thanks,<o:p></o:p></p>
+<p class=3D"MsoPlainText">Elmer Krauland<o:p></o:p></p>
+<p class=3D"MsoPlainText">Auxia Partners LP<o:p></o:p></p>
+<p class=3D"MsoPlainText">767 Fifth Avenue, 12th Floor<o:p></o:p></p>
+<p class=3D"MsoPlainText">New York, NY 10153<o:p></o:p></p>
+<p class=3D"MsoPlainText">(718) 938-0851<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Alexander Ospina <a href=3D"mailto:[mailto:=
+aospina@logicworks.net]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:aospina@logic=
+works.net]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Thursday, August 18, 2011 9:26 AM<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">To: Elmer Krauland<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Lenny Goldstein; lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: RE: au-aunjex04v Health Check Failure (S=
+R 3-966640)<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Sounds good.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Safe travels.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks NRT<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Elmer Krauland <a href=3D"mailto:[mailto:el=
+mer@auxiapartners.com]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:elmer@auxiapa=
+rtners.com]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Thursday, August 18, 2011 9:20 AM<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">To: Alexander Ospina<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Lenny Goldstein; lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: Re: au-aunjex04v Health Check Failure (S=
+R 3-966640)<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Thanks Alex.&nbsp; I am on the road today, but wi=
+ll check it this afternoon.&nbsp;&nbsp; Elmer<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-- Sent from my iPhone --<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">On Aug 18, 2011, at 9:17, &quot;Alexander Ospina&=
+quot; &lt;<a href=3D"mailto:aospina@logicworks.net"><span style=3D"color:wi=
+ndowtext;text-decoration:none">aospina@logicworks.net</span></a>&gt; wrote:=
+<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">&gt; Hello Elmer.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Please excuse my delay in responding to this=
+ matter.&nbsp; I've re-added the IP's within the route table using the nets=
+h command.&nbsp; Could you give the VPN connection another try?<o:p></o:p><=
+/p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Please let me know how it goes.<o:p></o:p></=
+p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Logicworks NRT<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; -----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; From: Elmer Krauland <a href=3D"mailto:[mail=
+to:elmer@auxiapartners.com]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:elmer@auxiapa=
+rtners.com]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Sent: Wednesday, August 17, 2011 4:41 PM<o:p=
+></o:p></p>
+<p class=3D"MsoPlainText">&gt; To: Alexander Ospina; Lenny Goldstein<o:p></=
+o:p></p>
+<p class=3D"MsoPlainText">&gt; Cc: lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Subject: RE: au-aunjex04v Health Check Failu=
+re (SR 3-966640)<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Hello Alex,<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; I typically connect to the servers from the =
+VPN, but am no longer able to do so.&nbsp; I am not able to ping or RDP to =
+10.64.112.23 / au-aunjex04v from my VPN connection.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; I disconnected my VPN and reconnected, but i=
+t did not resolve the issue.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; I can see the server is running because I ca=
+n get to it from any other server.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Please investigate why it is no longer respo=
+nsive from across a VPN connection.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Thanks, Elmer<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; -----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; From: Alexander Ospina <a href=3D"mailto:[ma=
+ilto:aospina@logicworks.net]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:aospina@logic=
+works.net]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Sent: Wednesday, August 17, 2011 2:51 PM<o:p=
+></o:p></p>
+<p class=3D"MsoPlainText">&gt; To: Lenny Goldstein; Elmer Krauland<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">&gt; Cc: lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Subject: RE: au-aunjex04v Health Check Failu=
+re (SR 3-966640)<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Elmer -<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; We seem to have discovered the cause and fix=
+ed the issue.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Here's what happened:&nbsp; Occasionally dur=
+ing failovers, corruption in the routing table may occur.&nbsp; It seems th=
+is was the cause of the issue.&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; What we've done is the following: We've dele=
+ted and re-added the routes using netsh which pins the route to a specific =
+NIC, which should guarantee the integrity of the routing table through any =
+failover that may be performed.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Please feel free to test this at your conven=
+ience and let us know if there's anything else we can help you with.<o:p></=
+o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Logicworks NRT&nbsp; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; -----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; From: Logicops <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Sent: Wednesday, August 17, 2011 2:01 PM<o:p=
+></o:p></p>
+<p class=3D"MsoPlainText">&gt; To: Goldstein, Leonard; Krauland, Elmer<o:p>=
+</o:p></p>
+<p class=3D"MsoPlainText">&gt; Cc: lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Subject: au-aunjex04v Health Check Failure (=
+SR 3-966640)<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Greetings.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; I've created this ticket in reference to our=
+ conversation regarding the failed health check for au-aunjex04v.<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Please grant us some time to investigate the=
+ matter.&nbsp; We will reach back out to you as soon as we're able to deter=
+mine the cause of the issue.<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Logicworks NRT<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; --------------------------------------------=
+-----------------------------------------------------------------<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Modifications:<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; --------------------------------------------=
+-----------------------------------------------------------------<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Created new ServiceRequest: <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt;&nbsp;&nbsp;&nbsp; SR 3-966641<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; &#43; Basic Info:&nbsp;&nbsp;&nbsp;&nbsp; SR=
+ 3-966641<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; --------------------------------------------=
+-----------------------------------------------------------------<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Abstract: au-aunjex04v Health Check Failure<=
+o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Status: Open<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Date Due: 2011-08-17 20:00<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Assigned To: Ospina, Alexander (2011-08-17 1=
+4:00:52) Created By: Ospina, Alexander (2011-08-17 14:00:52)<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Area: Account Administration<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Accounts: Auxia Partners<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Contacts: Krauland, Elmer<o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; Services: au-aunjex04v (inactive)<o:p></o:p>=
+</p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+<p class=3D"MsoPlainText">&gt; <o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_--
+
+--_004_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=26189;
+	creation-date="Thu, 18 Aug 2011 21:27:23 GMT";
+	modification-date="Thu, 18 Aug 2011 21:27:23 GMT"
+Content-ID: <image001.png@01CC5DCB.E1C17CC0>
+Content-Transfer-Encoding: base64
+
+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
+QGDbBf4rvm2+Tsgp35EAAAAASUVORK5CYII=
+
+--_004_8A6BD2659673894E93737B25DFA21A7B3D344DEBlwmbx2uslogicwo_--
+

@@ -1,0 +1,153 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILVuex005231
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:31:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILVuie005230
+	for logicops; Thu, 18 Aug 2011 17:31:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILVt1f005219
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 17:31:55 -0400
+Resent-Date: Thu, 18 Aug 2011 17:31:55 -0400
+Resent-Message-Id: <201108182131.p7ILVt1f005219@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from elser-lb1 (209.81.91.75) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 17:31:55 -0400
+Received: from elser-lb1v (centos5-64 [127.0.0.1])	by elser-lb1
+ (8.13.8/8.13.8) with SMTP id p7ILVt4p008331	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 17:31:55 -0400
+Message-ID: <201108182131.p7ILVt4p008331@elser-lb1>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@elser-lb1v>
+Date: Thu, 18 Aug 2011 17:31:55 -0400
+Subject: Zeus: 23 events: Summary of recent service protection events, Summary of recent service protection events...
+X-ZXTM-Notify: elser-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from elser-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 17:27:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 72.193.248.125,
+                    dropped  - 15 time(s)
+
+#2 Aug 18 17:27:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 71.146.142.246,
+                    dropped  - 9 time(s)
+
+#3 Aug 18 17:27:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 75.75.37.159,
+                    dropped  - 8 time(s)
+
+#4 Aug 18 17:27:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 24.113.142.183,
+                    dropped  - 8 time(s)
+
+#5 Aug 18 17:27:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 12.198.139.2,
+                    dropped  - 2 time(s)
+
+#6 Aug 18 17:27:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too high a rate of connections from 72.193.248.125,
+                    dropped  - 10 time(s)
+
+#7 Aug 18 17:27:51: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too high a rate of connections from 72.193.248.125,
+                    dropped  - 2 time(s)
+
+#8 Aug 18 17:28:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 71.131.4.243,
+                    dropped  - 2 time(s)
+
+#9 Aug 18 17:28:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 24.159.100.138,
+                    dropped  - 3 time(s)
+
+#10 Aug 18 17:28:51: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 76.6.28.172,
+                     dropped  - 4 time(s)
+
+#11 Aug 18 17:28:51: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 98.215.178.233,
+                     dropped  - 11 time(s)
+
+#12 Aug 18 17:28:51: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 174.130.243.12,
+                     dropped  - 2 time(s)
+
+#13 Aug 18 17:28:51: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 71.82.163.33,
+                     dropped  - 14 time(s)
+
+#14 Aug 18 17:29:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 67.142.168.23,
+                     dropped  - 1 time(s)
+
+#15 Aug 18 17:29:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 71.82.163.33,
+                     dropped  - 10 time(s)
+
+#16 Aug 18 17:29:32: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 67.186.131.206,
+                     dropped  - 1 time(s)
+
+#17 Aug 18 17:29:32: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 71.82.163.33,
+                     dropped  - 3 time(s)
+
+#18 Aug 18 17:29:32: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 75.142.49.30,
+                     dropped  - 2 time(s)
+
+#19 Aug 18 17:30:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 64.203.17.131,
+                     dropped  - 7 time(s)
+
+#20 Aug 18 17:30:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 65.28.104.96,
+                     dropped  - 3 time(s)
+
+#21 Aug 18 17:30:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 69.115.134.253,
+                     dropped  - 3 time(s)
+
+#22 Aug 18 17:30:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 12.198.139.2,
+                     dropped  - 2 time(s)
+
+#23 Aug 18 17:30:11: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 151.151.109.21,
+                     dropped  - 18 time(s)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

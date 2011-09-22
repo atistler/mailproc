@@ -1,0 +1,62 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1RpNR022875
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:27:51 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1Rp9k022870
+	for logicops; Thu, 18 Aug 2011 21:27:51 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1RojS022847;
+	Thu, 18 Aug 2011 21:27:50 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:27:49 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 21:27:48 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 21:27:48 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: hypernst-web2v Windows 2008 Server - HTTP Content - Hyperfactory - http://us.thehyperfactory.com/nesquik/ftp/servicemonitor.aspx is DOWN at 09:27:48 PM.
+Message-ID: <LW-MON-CRGEnSxHnYHr00003d23@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 01:27:48.0991 (UTC) FILETIME=[34C778F0:01CC5E0F]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+hypernst-web2v (10.48.14.127) Windows 2008 Server: 
+
+HTTP Content - Hyperfactory - http://us.thehyperfactory.com/nesquik/ftp/servicemonitor.aspx on 209.81.75.227 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+http://us.thehyperfactory.com/nesquik/ftp/lbcheck.aspx
+
+"ALLOK"
+
+
+
+Escalation procedure:
+1.	Send mail to lw-support@thehyperfacotry.com and call Pardha
+2.	If Pardha not answered give call to Phani
+3.	If Phani not  answered give call to Jagan.
+
+
+
+http://us.thehyperfactory.com/nesquik/ftp/servicemonitor.aspx
+"ALLOK"
+
+Status code 200. For any other status code pls send alert to 
+support.nesquick@thehyperfactory.com
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 09:27:48 PM by Whatsup Gold in CRG
+

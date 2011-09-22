@@ -1,0 +1,41 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4ACV9001932
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:10:12 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4ACPX001931
+	for logicops; Fri, 19 Aug 2011 00:10:12 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4ABPg001916;
+	Fri, 19 Aug 2011 00:10:11 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:10:10 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Fri, 19
+ Aug 2011 00:10:11 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Fri, 19 Aug 2011 00:10:11 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: 10.64.82.221 Unknown is UP at 12:10:11 AM.
+Message-ID: <LW-MON-CRGMgYGS4BPX00003d3a@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 04:10:11.0303 (UTC) FILETIME=[E3A64F70:01CC5E25]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+10.64.82.221 Unknown on  is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Added from Discovery on Wed Jul 14 16:49:01 2010
+
+
+
+----------------------------------------
+This mail was sent on August 19, 2011 at 12:10:11 AM by Whatsup Gold in CRG
+

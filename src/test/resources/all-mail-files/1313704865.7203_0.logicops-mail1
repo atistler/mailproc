@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IM15rX007201
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 18:01:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IM15nG007199
+	for logicops; Thu, 18 Aug 2011 18:01:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IM14Z3007162
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 18:01:04 -0400
+Resent-Date: Thu, 18 Aug 2011 18:01:04 -0400
+Resent-Message-Id: <201108182201.p7IM14Z3007162@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.129) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 18:01:03 -0400
+Received: from lw-cdp6.nycmny04.noc.logicworks.net ([209.81.70.25]) (using
+ TLSv1) by exprod8mx229.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011
+ 18:01:02 EDT
+Received: from lw-cdp6.nycmny04.noc.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by lw-cdp6.nycmny04.noc.logicworks.net (8.13.8/8.13.8) with
+ ESMTP id p7IM11jb013564	for <lw-alert-disk@logicworks.net>; Thu, 18 Aug 2011
+ 18:01:01 -0400
+Received: (from root@localhost)	by lw-cdp6.nycmny04.noc.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7IM11KC013563	for lw-alert-disk@logicworks.net;
+ Thu, 18 Aug 2011 18:01:01 -0400
+Date: Thu, 18 Aug 2011 18:01:01 -0400
+From: root <root@lw-cdp6.nycmny04.client.logicworks.net>
+Message-ID: <201108182201.p7IM11KC013563@lw-cdp6.nycmny04.noc.logicworks.net>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on lw-cdp6 is at 95%!!!
+X-pstn-levels: (S:10.25581/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@lw-cdp6.nycmny04.client.logicworks.net> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /mnt/raid1 - 95% on server lw-cdp6, Thu Aug 18 18:01:01 EDT 2011
+

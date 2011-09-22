@@ -1,0 +1,52 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2I2pC026572
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:18:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J2I2sJ026571
+	for logicops; Thu, 18 Aug 2011 22:18:02 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2I10m026556;
+	Thu, 18 Aug 2011 22:18:01 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 22:18:00 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 22:18:00 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 22:18:00 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: psytech-app05.ad.logicworks.net Windows 2003 Server is UP at 10:18:00 PM.
+Message-ID: <LW-MON-CRGJDTLyOriZ00003d2e@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 02:18:00.0990 (UTC) FILETIME=[38120BE0:01CC5E16]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+psytech-app05.ad.logicworks.net Windows 2003 Server on 10.252.132.65 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Custom Content scans is looking for strings:
+
+"LogicworksDBUP"  in page http://10.252.132.65/epitomax/DBCheck.jsp
+
+"LogicworksWebUp"  in page http://10.252.132.65/epitomax/WebCheck.html
+
+1. Email Mike (mkreamer@psytechsolutions.net), Jennifer Putman (jputman@psytechsolutions.net), and Tony Kline (akline@psytechsolutions.ent)
+
+2. IF you don't hear from Anyone within 30 minutes and you continue to receive failures. Then restart Jaguar.*
+
+3. IF health check is still failing after step 2, restart apache as well.
+
+----------------------------------------------------------
+* There is a service on each server called Jaguar. That is our application server and web server too. If we can't be reached, the next thing would be to restart the Jaguar service. After the restart, it will take about 15 seconds before you'll get a response. If that doesn't work, the next thing would be to restart the server.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 10:18:00 PM by Whatsup Gold in CRG
+

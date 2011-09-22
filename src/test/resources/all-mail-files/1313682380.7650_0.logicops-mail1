@@ -1,0 +1,104 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFkKMO007648
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:46:20 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFkKh6007647
+	for logicops; Thu, 18 Aug 2011 11:46:20 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFkK17007643
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:46:20 -0400
+Resent-Date: Thu, 18 Aug 2011 11:46:20 -0400
+Resent-Message-Id: <201108181546.p7IFkK17007643@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.142) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 11:46:19 -0400
+Received: from samgdem01.advancemags.com ([208.92.44.79]) (using TLSv1) by
+ exprod8mx242.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 11:46:18
+ EDT
+Received: from ([10.207.80.169])	by samgdem01.advancemags.com with ESMTP  id
+ J041111095.15528157;	Thu, 18 Aug 2011 11:46:13 -0400
+Received: from SWNSSDE016.newspapersupport.com ([10.207.80.123]) by
+ samgdecb03.advancemags.com with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 11:46:12 -0400
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Subject: RE: SR 3-967562 annarbor-db2 - mysql errors
+Date: Thu, 18 Aug 2011 11:46:04 -0400
+Message-ID: <813D52DDBB66614CA1599150DE8123390949EA6F@SWNSSDE016.newspapersupport.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: SR 3-967562 annarbor-db2 - mysql errors
+Thread-Index: AcxdS2/M010KOOTmR72Egx30N+fypwAcoB7K
+References: <B3959E42181EA149A27EB12CF6D8A8E73D1E76C5@lw-mbx2.us.logicworks.net>
+From: "Deakins, Jim" <JimDeakins@annarbor.com>
+To: Nicholas Ennis <nennis@logicworks.net>,
+        "Polikowski, J"
+	<jpolikowski@hugeinc.com>, <jonpolikowski@gmail.com>,
+        "Hodges, Hassan"
+	<HassanHodges@annarbor.com>,
+        "Hodges(gmail), Hassan" <hassanhodges@gmail.com>
+CC: lw-support <lw-support@logicworks.net>,
+        Rolando Edwards
+	<redwards@logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 15:46:12.0856 (UTC) FILETIME=[F50FD780:01CC5DBD]
+Content-Type: text/plain; charset="iso-8859-1"
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IFkK17007643
+
+this can happen if there is a bad innodb var in my.cnf
+
+-Jim Deakins
+AnnArbor.com Project Manager & Lead Web Developer
+
+
+
+-----Original Message-----
+From: Nicholas Ennis [mailto:nennis@logicworks.net]
+Sent: Wed 8/17/2011 10:10 PM
+To: Polikowski, J; jonpolikowski@gmail.com; Hodges, Hassan; Hodges(gmail), Hassan; Deakins, Jim
+Cc: lw-support; Rolando Edwards
+Subject: SR 3-967562 annarbor-db2 - mysql errors
+ 
+Greetings,
+
+ 
+
+We receiving alerts every hour saying mysql service was shut down. We checked and mysql has been up for 15 days. I had Rolando look into it and we found nothing. Can you confirm you aren't running puppetd  outside of the DB's, that may be causing this issue. Please see the error below:
+
+ 
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' init function returned error.
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+
+110817 21:45:53 [ERROR] Unknown/unsupported table type: innodb
+
+110817 21:45:53 [ERROR] Aborting
+
+110817 21:45:53 [Note] /usr/sbin/mysqld: Shutdown complete
+
+ 
+
+Nicholas Ennis
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444
+
+support@logicworks.net <mailto:support@logicworks.net> 
+
+ 
+
+
+------------------------------------------------------------------------------------------------
+This e-mail, including attachments, is intended for the person(s)
+or company named and may contain confidential and/or legally
+privileged information. Unauthorized disclosure, copying or use of
+this information may be unlawful and is prohibited. If you are not
+the intended recipient, please delete this message and notify the
+sender.
+

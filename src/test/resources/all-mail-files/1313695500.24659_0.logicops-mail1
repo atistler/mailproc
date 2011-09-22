@@ -1,0 +1,898 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJP0Pg024657
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:25:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJP0SE024656
+	for logicops; Thu, 18 Aug 2011 15:25:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJOw8a024651
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:24:58 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 15:24:58 -0400
+From: Luis Mercado <lmercado@logicworks.net>
+To: Kyle Hultman <khultman@logicworks.net>,
+        Joanna Rios
+	<jrios@logicworks.net>,
+        Jason Laschewer <jl@logicworks.net>,
+        Zachary Muren
+	<zmuren@logicworks.net>,
+        Tony Moger <tmoger@logicworks.net>,
+        Ya Fei Huang
+	<yhuang@logicworks.net>, John Jun <jjun@logicworks.net>,
+        lw-logistics
+	<lw-logistics@logicworks.net>,
+        Charles Adams <Cadams@logicworks.net>, lw-noc
+	<lw-noc@logicworks.net>
+CC: Yan Liao <yliao@logicworks.net>
+Subject: RE: Innolyst
+Thread-Topic: Innolyst
+Thread-Index: AcxcUvDurPKi/TQZSJCj3GFDPRXLfAAup8HQAAlG1IAACDhwcAAPZ11gAB7BZNAAPXWrQAB6q6Jg//ikBwD//sawMP/9jSYA
+Date: Thu, 18 Aug 2011 19:24:58 +0000
+Message-ID: <1031AC24FC551545BACD3343A93D49D23D5A8BE4@lw-mbx2.us.logicworks.net>
+References: <2B955FC78157904D81BA36231D687EC03CEC1BAC@lw-mbx2.us.logicworks.net>,<DD2E7B2501687E4E8A877DCC94F70F3B3CEBF3A4@lw-mbx2.us.logicworks.net>
+ <EEF142B93173B14A8AAFF03433C587733D16A498@lw-mbx2.us.logicworks.net>
+ <DD2E7B2501687E4E8A877DCC94F70F3B3CEBF3C4@lw-mbx2.us.logicworks.net>
+ <D2F33EF0B55B8449865E6A18D1A6EA0C3D10C32D@lw-mbx2.us.logicworks.net>
+ <2B955FC78157904D81BA36231D687EC03CEC2B1F@lw-mbx2.us.logicworks.net>
+ <592A586816D6B744B2822B9EBA5871873CF9999B@lw-mbx2.us.logicworks.net>,<9510A7897882FC458EB408837CC4FDD73D32A986@lw-mbx2.us.logicworks.net>
+ <EEF142B93173B14A8AAFF03433C587733D16AD68@lw-mbx2.us.logicworks.net> 
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_"
+
+--_000_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+One more thing, the firewall came with only 256mg of mem, they need to be u=
+pgraded to 1g mem and the image needs to be upgraded to 8.4 code and asdm f=
+or 8.4. I put a config on them for now.
+Once we get the mem the images reside on lw-drb1 they need to be uploaded t=
+o the asa and the boot parameters need to be changed to the new image. The =
+same goes for asdm, the asdm paramaters
+Need to be changed as such:
+
+asdm image disk0:/asdm-641.bin
+boot system disk0:/ asa841-k8.bin
+
+
+From: Luis Mercado
+Sent: Thursday, August 18, 2011 3:17 PM
+To: Kyle Hultman; Joanna Rios; Jason Laschewer; Zachary Muren; Tony Moger; =
+Ya Fei Huang; John Jun; lw-logistics; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+These vlans have changed. Adam can you modify in LO?
+
+
+
+VLAN 308      Innolyst PUB         209.81.85.128/28
+VLAN 310      innolyst priv        10.64.140.0/25
+VLAN 311      Innolyst DMZ         10.64.140.128/25
+
+
+
+
+From: Kyle Hultman
+Sent: Wednesday, August 17, 2011 4:35 PM
+To: Joanna Rios; Jason Laschewer; Zachary Muren; Tony Moger; Ya Fei Huang; =
+John Jun; lw-logistics; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+network blocks in the ticket; I'll be adding the vlans to LO shortly.
+
+https://logicops.logicworks.net/966720/Page/
+
+
+--
+Kyle Hultman
+Sr. Engineer
+Logicworks - http://www.logicworks.net
+________________________________
+From: Joanna Rios
+Sent: Wednesday, August 17, 2011 3:54 PM
+To: Jason Laschewer; Zachary Muren; Tony Moger; Ya Fei Huang; Kyle Hultman;=
+ John Jun; lw-logistics; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+Well I asked because its 100g triple tier vs 225 for regular.... Sooo, I'm =
+not sure why the numbers are different.
+
+From: Jason Laschewer
+Sent: Wednesday, August 17, 2011 3:47 PM
+To: Zachary Muren; Tony Moger; Ya Fei Huang; Kyle Hultman; John Jun; lw-log=
+istics; Joanna Rios; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+Tier 1 =3D on site backups in NY4 or Coresite
+Tier 2 =3D synced to Coresite or NY4
+Tier 3 =3D Off-site rotation/iron mountain.
+
+Are we not dumping arrays to iron mountain anymore?
+
+From: Zachary Muren
+Sent: Wednesday, August 17, 2011 3:46 PM
+To: Tony Moger; Ya Fei Huang; Kyle Hultman; John Jun; lw-logistics; Joanna =
+Rios; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+Guys,
+
+The SOW will be in as soon as the client is done with it. We are waiting on=
+ them.
+
+Jo, its regular backups. I don't know why the paperwork says triple tier.
+
+Thanks
+-Zach
+
+From: Tony Moger
+Sent: Wednesday, August 17, 2011 3:45 PM
+To: Ya Fei Huang; Kyle Hultman; Zachary Muren; John Jun; lw-logistics; Joan=
+na Rios; Charles Adams; lw-noc
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+Hello,
+
+   We need the SOW asap in order to start the servers. Also, the network in=
+fo will be needed asap so we can start a config on the switch. I am putting=
+ an asa on console now. The SR's only list "See BO"
+
+
+Hope all is well,
+
+
+Tony Moger
+Logistics Provisioning Manager
+
+From: Ya Fei Huang
+Sent: Wednesday, August 17, 2011 3:14 PM
+To: Kyle Hultman; Zachary Muren; John Jun; lw-logistics; Joanna Rios; Charl=
+es Adams
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+Here's the network SR:
+
+https://logicops.logicworks.net/966720
+
+
+From: Kyle Hultman
+Sent: Wednesday, August 17, 2011 3:09 PM
+To: Ya Fei Huang; Zachary Muren; John Jun; lw-logistics; Joanna Rios; Charl=
+es Adams
+Cc: Yan Liao
+Subject: RE: Innolyst
+
+Yes, from our POV this is setting up an entirely new customer.
+
+
+--
+Kyle Hultman
+Sr. Engineer
+Logicworks - http://www.logicworks.net
+________________________________
+From: Ya Fei Huang
+Sent: Wednesday, August 17, 2011 3:07 PM
+To: Zachary Muren; John Jun; lw-logistics; Joanna Rios; Charles Adams; Kyle=
+ Hultman
+Cc: Yan Liao
+Subject: RE: Innolyst
+Hi Jason,
+These SRs are in your queue. Zach will attach the SOW when its available. T=
+he actual server SRs aren't attached to assets yet cause they are not poppi=
+ng in LO.
+
+https://logicops.logicworks.net/966704
+https://logicops.logicworks.net/966705
+https://logicops.logicworks.net/966708
+https://logicops.logicworks.net/966713 (not attach to asset, emailed Adam a=
+bout this issue)
+https://logicops.logicworks.net/966718 (not attach to asset, emailed Adam a=
+bout this issue)
+
+Kyle,
+Do I need to create a Network SR for Innolyst for their new stuff since Zac=
+h mention that its separate from their other stuff.
+
+TY!
+
+
+From: Zachary Muren
+Sent: Tuesday, August 16, 2011 4:29 PM
+To: Ya Fei Huang; John Jun
+Subject: Innolyst
+
+Hi all,
+
+Attached are Innolyst's new quotes. As you can see the bottom items on the =
+signed monthly quote include their current services. All of the ones above =
+it are new. We have a build call tomorrow so I don't have to SOW ready yet =
+but I will send that over when its ready. Just wanted to get the quotes in.
+
+Thanks
+-Zach
+
+Zachary Muren
+Account Manager | Logicworks | Dir: (212) 625-5390 | Fax: (646) 349-1962
+[Description: Description: LW Print Logo 1 inch]
+
+
+--_000_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:p=3D"urn:schemas-m=
+icrosoft-com:office:powerpoint" xmlns:a=3D"urn:schemas-microsoft-com:office=
+:access" xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:s=3D"=
+uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:rs=3D"urn:schemas-microsof=
+t-com:rowset" xmlns:z=3D"#RowsetSchema" xmlns:b=3D"urn:schemas-microsoft-co=
+m:office:publisher" xmlns:ss=3D"urn:schemas-microsoft-com:office:spreadshee=
+t" xmlns:c=3D"urn:schemas-microsoft-com:office:component:spreadsheet" xmlns=
+:odc=3D"urn:schemas-microsoft-com:office:odc" xmlns:oa=3D"urn:schemas-micro=
+soft-com:office:activation" xmlns:html=3D"http://www.w3.org/TR/REC-html40" =
+xmlns:q=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:rtc=3D"http://m=
+icrosoft.com/officenet/conferencing" xmlns:D=3D"DAV:" xmlns:Repl=3D"http://=
+schemas.microsoft.com/repl/" xmlns:mt=3D"http://schemas.microsoft.com/share=
+point/soap/meetings/" xmlns:x2=3D"http://schemas.microsoft.com/office/excel=
+/2003/xml" xmlns:ppda=3D"http://www.passport.com/NameSpace.xsd" xmlns:ois=
+=3D"http://schemas.microsoft.com/sharepoint/soap/ois/" xmlns:dir=3D"http://=
+schemas.microsoft.com/sharepoint/soap/directory/" xmlns:ds=3D"http://www.w3=
+.org/2000/09/xmldsig#" xmlns:dsp=3D"http://schemas.microsoft.com/sharepoint=
+/dsp" xmlns:udc=3D"http://schemas.microsoft.com/data/udc" xmlns:xsd=3D"http=
+://www.w3.org/2001/XMLSchema" xmlns:sub=3D"http://schemas.microsoft.com/sha=
+repoint/soap/2002/1/alerts/" xmlns:ec=3D"http://www.w3.org/2001/04/xmlenc#"=
+ xmlns:sp=3D"http://schemas.microsoft.com/sharepoint/" xmlns:sps=3D"http://=
+schemas.microsoft.com/sharepoint/soap/" xmlns:xsi=3D"http://www.w3.org/2001=
+/XMLSchema-instance" xmlns:udcs=3D"http://schemas.microsoft.com/data/udc/so=
+ap" xmlns:udcxf=3D"http://schemas.microsoft.com/data/udc/xmlfile" xmlns:udc=
+p2p=3D"http://schemas.microsoft.com/data/udc/parttopart" xmlns:wf=3D"http:/=
+/schemas.microsoft.com/sharepoint/soap/workflow/" xmlns:dsss=3D"http://sche=
+mas.microsoft.com/office/2006/digsig-setup" xmlns:dssi=3D"http://schemas.mi=
+crosoft.com/office/2006/digsig" xmlns:mdssi=3D"http://schemas.openxmlformat=
+s.org/package/2006/digital-signature" xmlns:mver=3D"http://schemas.openxmlf=
+ormats.org/markup-compatibility/2006" xmlns:m=3D"http://schemas.microsoft.c=
+om/office/2004/12/omml" xmlns:mrels=3D"http://schemas.openxmlformats.org/pa=
+ckage/2006/relationships" xmlns:spwp=3D"http://microsoft.com/sharepoint/web=
+partpages" xmlns:ex12t=3D"http://schemas.microsoft.com/exchange/services/20=
+06/types" xmlns:ex12m=3D"http://schemas.microsoft.com/exchange/services/200=
+6/messages" xmlns:pptsl=3D"http://schemas.microsoft.com/sharepoint/soap/Sli=
+deLibrary/" xmlns:spsl=3D"http://microsoft.com/webservices/SharePointPortal=
+Server/PublishedLinksService" xmlns:Z=3D"urn:schemas-microsoft-com:" xmlns:=
+st=3D"&#1;" xmlns=3D"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Trajan Pro";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	mso-style-priority:99;
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+span.balloontextchar0
+	{mso-style-name:balloontextchar;
+	font-family:"Tahoma","sans-serif";}
+span.balloontextchar00
+	{mso-style-name:balloontextchar0;
+	font-family:"Tahoma","sans-serif";}
+span.emailstyle19
+	{mso-style-name:emailstyle19;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.emailstyle20
+	{mso-style-name:emailstyle20;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.emailstyle24
+	{mso-style-name:emailstyle24;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.emailstyle25
+	{mso-style-name:emailstyle25;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.emailstyle26
+	{mso-style-name:emailstyle26;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.emailstyle27
+	{mso-style-name:emailstyle27;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.emailstyle28
+	{mso-style-name:emailstyle28;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle30
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle31
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">One more thing, the fi=
+rewall came with only 256mg of mem, they need to be upgraded to 1g mem and =
+the image needs to be upgraded to 8.4 code and asdm for 8.4. I put a config=
+ on them for now.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Once we get the mem th=
+e images reside on lw-drb1 they need to be uploaded to the asa and the boot=
+ parameters need to be changed to the new image. The same goes for asdm, th=
+e asdm paramaters<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Need to be changed as =
+such:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">asdm image disk0:/asdm=
+-641.bin<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">boot system disk0:/</s=
+pan> <span style=3D"color:#1F497D">
+asa841-k8.bin<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Luis Mer=
+cado
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 3:17 PM<br>
+<b>To:</b> Kyle Hultman; Joanna Rios; Jason Laschewer; Zachary Muren; Tony =
+Moger; Ya Fei Huang; John Jun; lw-logistics; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">These vlans have chang=
+ed. Adam can you modify in LO?<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;"><o:p>&n=
+bsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:Courier">VLAN 308&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Innol=
+yst PUB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 209.81.85.128/28<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:Courier">VLAN 310&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; innol=
+yst priv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.64.140.0/25<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:Courier">VLAN 311&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Innol=
+yst DMZ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10.64.140.128/25<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"text-autospace:none"><span style=3D"font-si=
+ze:12.0pt;font-family:Courier"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Kyle Hul=
+tman
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 4:35 PM<br>
+<b>To:</b> Joanna Rios; Jason Laschewer; Zachary Muren; Tony Moger; Ya Fei =
+Huang; John Jun; lw-logistics; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:blac=
+k">network blocks in the ticket; I'll be adding the vlans to LO shortly.<br=
+>
+<br>
+<a href=3D"https://logicops.logicworks.net/966720/Page/" target=3D"_blank">=
+https://logicops.logicworks.net/966720/Page/</a><o:p></o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:black"><o:p>&nbsp;</o:p></span></p>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:black"><br>
+--<br>
+Kyle Hultman<br>
+Sr. Engineer<br>
+Logicworks - <a href=3D"http://www.logicworks.net">http://www.logicworks.ne=
+t</a><o:p></o:p></span></p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;se=
+rif&quot;;color:black">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></div>
+<div id=3D"divRpF642042">
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"fon=
+t-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:b=
+lack">From:</span></b><span style=3D"font-size:10.0pt;font-family:&quot;Tah=
+oma&quot;,&quot;sans-serif&quot;;color:black"> Joanna Rios<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:54 PM<br>
+<b>To:</b> Jason Laschewer; Zachary Muren; Tony Moger; Ya Fei Huang; Kyle H=
+ultman; John Jun; lw-logistics; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"font-size:12.0pt;font-fam=
+ily:&quot;Times New Roman&quot;,&quot;serif&quot;;color:black"><o:p></o:p><=
+/span></p>
+</div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Well I asked because i=
+ts 100g triple tier vs 225 for regular&#8230;. Sooo, I&#8217;m not sure why=
+ the numbers are different.
+</span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Jason Laschewer
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:47 PM<br>
+<b>To:</b> Zachary Muren; Tony Moger; Ya Fei Huang; Kyle Hultman; John Jun;=
+ lw-logistics; Joanna Rios; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tier 1 =3D on site bac=
+kups in NY4 or Coresite</span><span style=3D"color:black"><o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tier 2 =3D synced to C=
+oresite or NY4</span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tier 3 =3D Off-site ro=
+tation/iron mountain.</span><span style=3D"color:black"><o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Are we not dumping arr=
+ays to iron mountain anymore?</span><span style=3D"color:black"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Zachary Muren
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:46 PM<br>
+<b>To:</b> Tony Moger; Ya Fei Huang; Kyle Hultman; John Jun; lw-logistics; =
+Joanna Rios; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Guys,</span><span styl=
+e=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The SOW will be in as =
+soon as the client is done with it. We are waiting on them.</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Jo, its regular backup=
+s. I don&#8217;t know why the paperwork says triple tier.</span><span style=
+=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">-Zach</span><span styl=
+e=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Tony Moger
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:45 PM<br>
+<b>To:</b> Ya Fei Huang; Kyle Hultman; Zachary Muren; John Jun; lw-logistic=
+s; Joanna Rios; Charles Adams; lw-noc<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hello,</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;&nbsp; We need t=
+he SOW asap in order to start the servers. Also, the network info will be n=
+eeded asap so we can start a config on the switch. I am putting an asa on c=
+onsole now. The SR&#8217;s only list &#8220;See BO&#8221;</span><span style=
+=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hope all is well,</spa=
+n><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tony Moger</span><span=
+ style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logistics Provisioning=
+ Manager</span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Ya Fei Huang
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:14 PM<br>
+<b>To:</b> Kyle Hultman; Zachary Muren; John Jun; lw-logistics; Joanna Rios=
+; Charles Adams<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Here&#8217;s the netwo=
+rk SR:</span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966720" target=3D"_blank">https://logicops.logicworks.=
+net/966720</a></span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Kyle Hultman
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:09 PM<br>
+<b>To:</b> Ya Fei Huang; Zachary Muren; John Jun; lw-logistics; Joanna Rios=
+; Charles Adams<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:black">Yes, from our POV this is se=
+tting up an entirely new customer.</span><span style=3D"color:black"><o:p><=
+/o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:black">&nbsp;</span><span style=3D"=
+color:black"><o:p></o:p></span></p>
+<div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:black"><br>
+--<br>
+Kyle Hultman<br>
+Sr. Engineer<br>
+Logicworks - <a href=3D"http://www.logicworks.net" target=3D"_blank">http:/=
+/www.logicworks.net</a></span><span style=3D"color:black"><o:p></o:p></span=
+></p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;se=
+rif&quot;;color:black">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></div>
+<div id=3D"divRpF542156">
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"fon=
+t-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:b=
+lack">From:</span></b><span style=3D"font-size:10.0pt;font-family:&quot;Tah=
+oma&quot;,&quot;sans-serif&quot;;color:black"> Ya Fei Huang<br>
+<b>Sent:</b> Wednesday, August 17, 2011 3:07 PM<br>
+<b>To:</b> Zachary Muren; John Jun; lw-logistics; Joanna Rios; Charles Adam=
+s; Kyle Hultman<br>
+<b>Cc:</b> Yan Liao<br>
+<b>Subject:</b> RE: Innolyst</span><span style=3D"color:black"><o:p></o:p><=
+/span></p>
+</div>
+<div>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hi Jason,</span><span =
+style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">These SRs are in your =
+queue. Zach will attach the SOW when its available. The actual server SRs a=
+ren&#8217;t attached to assets yet cause they are not popping in LO.
+</span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966704" target=3D"_blank">https://logicops.logicworks.=
+net/966704</a></span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966705" target=3D"_blank">https://logicops.logicworks.=
+net/966705</a></span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966708" target=3D"_blank">https://logicops.logicworks.=
+net/966708</a></span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966713" target=3D"_blank">https://logicops.logicworks.=
+net/966713</a> (not attach to asset, emailed Adam about this issue)</span><=
+span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/966718" target=3D"_blank">https://logicops.logicworks.=
+net/966718</a> (not attach to asset, emailed Adam about this issue)</span><=
+span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Kyle,</span><span styl=
+e=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Do I need to create a =
+Network SR for Innolyst for their new stuff since Zach mention that its sep=
+arate from their other stuff.</span><span style=3D"color:black"><o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">TY!</span><span style=
+=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp;</span><span sty=
+le=3D"color:black"><o:p></o:p></span></p>
+<div>
+<div style=3D"border:none;border-top:solid windowtext 1.0pt;padding:3.0pt 0=
+in 0in 0in;border-color:-moz-use-text-color -moz-use-text-color;-moz-border=
+-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors:=
+ none;-moz-border-left-colors: none;-moz-border-image: none">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:black">From:</span></b><span sty=
+le=3D"font-size:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;;color:black"> Zachary Muren
+<br>
+<b>Sent:</b> Tuesday, August 16, 2011 4:29 PM<br>
+<b>To:</b> Ya Fei Huang; John Jun<br>
+<b>Subject:</b> Innolyst</span><span style=3D"color:black"><o:p></o:p></spa=
+n></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Hi all,<o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Attached are Innolyst&#8=
+217;s new quotes. As you can see the bottom items on the signed monthly quo=
+te include their current services. All of the ones above it are new. We hav=
+e a build call tomorrow so I don&#8217;t have to
+ SOW ready yet but I will send that over when its ready. Just wanted to get=
+ the quotes in.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">Thanks<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:black">-Zach<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Tra=
+jan Pro&quot;;color:gray">Zachary Muren</span><span style=3D"color:black"><=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Tra=
+jan Pro&quot;;color:gray">Account Manager | Logicworks | Dir: (212) 625-539=
+0 | Fax: (646) 349-1962</span><span style=3D"color:black"><o:p></o:p></span=
+></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:#1F497D"><img b=
+order=3D"0" width=3D"96" height=3D"31" id=3D"Picture_x005f_x0020_1" src=3D"=
+cid:image001.jpg@01CC5DBA.6C08AD70" alt=3D"Description: Description: LW Pri=
+nt Logo 1 inch"></span><span style=3D"color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:black">&nbsp;<o:p></o:p></span>=
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_--
+
+--_004_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 19:24:58 GMT";
+	modification-date="Thu, 18 Aug 2011 19:24:58 GMT"
+Content-ID: <image001.jpg@01CC5DBA.6C08AD70>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_004_1031AC24FC551545BACD3343A93D49D23D5A8BE4lwmbx2uslogicwo_--
+

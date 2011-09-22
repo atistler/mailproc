@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4YVft005519
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:34:31 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4YVTv005517
+	for logicops; Fri, 19 Aug 2011 00:34:31 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4YDHA005244;
+	Fri, 19 Aug 2011 00:34:13 -0400
+Received: from lw-mon-db3.localdomain (209.73.63.45) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:34:11 -0400
+Received: from localhost.localdomain (lw-mon-db3 [127.0.0.1])	by
+ lw-mon-db3.localdomain (Postfix) with ESMTP id EA9251580A0	for
+ <lw-monitoring@ext.logicworks.net>; Fri, 19 Aug 2011 04:32:03 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: Escalated NOTICE Event on converseon-lb2: Dynamic app. object
+	collection disabled: UCD: SNMP Disk IO - 5 Minute Load (id: 783)
+From: EM7 Event Notifier <EM7@ext.logicworks.net>
+To: "lw-monitoring@ext.logicworks.net" <lw-monitoring@ext.logicworks.net>
+CC: 
+X-Priority: 3
+Date: Fri, 19 Aug 2011 04:32:03 +0000
+Message-ID: <20110819043203.EA9251580A0@lw-mon-db3.localdomain>
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Severity: NOTICE
+First Occurred: 2011-08-19 04:01:04 None
+Last Occurred: 2011-08-19 04:01:04 None
+Occurrences: 3
+Source: Internal
+Organization: Converseon
+Device: converseon-lb2
+
+Message: Dynamic app. object collection disabled: UCD: SNMP Disk IO - 5 Minute Load (id: 783)
+
+Sent by Automation Action: Logicworks Escalation Email *DONT DELETE*
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=events&q_type=aid&q_arg=224349&q_sev=1&q_sort=0&q_oper=0
+

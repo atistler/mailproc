@@ -1,0 +1,63 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGGKSg010035
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:16:20 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGGKgC010034
+	for logicops; Thu, 18 Aug 2011 12:16:20 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGGJxq010019;
+	Thu, 18 Aug 2011 12:16:19 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 12:16:18 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 12:16:18 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 12:16:18 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: veltiuae-db1 RHEL 5  -  is OK at 12:08:59 PM
+Message-ID: <LW-MON-EQgYVvZ7w0eB00007984@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 16:16:18.0933 (UTC) FILETIME=[29915250:01CC5DC2]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+veltiuae-db1 (10.64.94.140) RHEL 5:
+
+SSH,Ping - Private,Linux System Load - 5 minute average - 30+ - OK again
+
+Details:
+
+Monitors that are still NOT OK:
+
+
+Monitors that are OK include:
+SSH,Ping - Private,Linux System Load - 5 minute average - 30+
+
+Notes:
+Escalation Procedure
+
+All checks shall be performed on a 24x7 basic following the below procedures depending on the type of the alerts.
+
+
+I. Alert Types and Procedures:
+
+A. Critical Alerts
+
+1. Send Email to customer-support@velti.com and off-business-support@velti.com
+
+2. If no response or action is received after 10 minutes and the problem persists call the primary Velti contact number below: +14153153478
+
+
+B. Warning Alerts
+
+1. Send Email to customer-support@velti.com and off-business-support@velti.com
+
+2. If no response or action is received after 20 minutes and the problem persists call the primary Velti contact number below: +14153153478
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 12:08:59 PM by Whatsup Gold in Equinix
+

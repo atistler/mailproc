@@ -1,0 +1,30 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4070x001013
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:00:07 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4074L001011
+	for logicops; Fri, 19 Aug 2011 00:00:07 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J406Wx001000
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:00:06 -0400
+Resent-Date: Fri, 19 Aug 2011 00:00:06 -0400
+Resent-Message-Id: <201108190400.p7J406Wx001000@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from db1.annarbor.com (209.81.87.70) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:00:06 -0400
+Received: by db1.annarbor.com (Postfix, from userid 0)	id 6AD6A10781EB; Fri,
+ 19 Aug 2011 00:00:06 -0400 (EDT)
+To: <lw-linux@ext.logicworks.net>
+Subject: REPLICATION  SQL slave not Running
+Message-ID: <20110819040006.6AD6A10781EB@db1.annarbor.com>
+Date: Fri, 19 Aug 2011 00:00:06 -0400
+From: root <root@annarbor.com>
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+
+This Means that an error is encountered while applying sql's to secondary
+

@@ -1,0 +1,52 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJYi4q025865
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:34:44 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJYi93025863
+	for logicops; Thu, 18 Aug 2011 15:34:44 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJYhkV025848;
+	Thu, 18 Aug 2011 15:34:43 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:34:43 -0400
+Received: from lw-tempmon1 ([172.16.2.49]) by lw-mon-eq.ad.logicworks.net with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 15:34:43 -0400
+MIME-Version: 1.0
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:34:43 -0400
+Subject: Performance Ping Availability Falls Below 95% (1 out of threshold / 8
+ total) -  Repeat Step 3
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <LW-MON-EQwhDCvY3PUK00007a36@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:34:43.0488 (UTC) FILETIME=[E13C4200:01CC5DDD]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+<style>body.Email {font-family: Verdana, Arial, Helvetica, sans-s=
+erif; font-size: 12px; width: 800px;}table.Email {border: 1px sol=
+id #BABBBC;padding: 0; margin:0; border-collapse:collapse; width:=
+ 800px;}td.Email {border:1px 0 1px 0 solid #BABBBC;padding: 3px; =
+font-size: 12px;}td.Email2 {width: 400px; border:1px 0 1px 0 soli=
+d #BABBBC;padding: 3px; font-size: 12px;}th.Email {width: 225px;b=
+order-bottom:1px solid #BABBBC;padding: 4px;background-color:#F1F=
+1F1;text-align: left;}th.Email2 {width: 575px;border-bottom:1px s=
+olid #BABBBC;padding: 4px;background-color:#F1F1F1;text-align: le=
+ft;}</style><body class=3D"Email"><h3 class=3D"body.Email">'Perfo=
+rmance Ping Availability Falls Below 95%' threshold</h3><p style=3D=
+"width: 800px;border:1px solid #BABBBC;clear: both;background-col=
+or:#F1F1F1;padding:3px;vertical-align: middle;"><b>Description: <=
+/b>Average Ping Availability during the past 30 minutes falls bel=
+ow 95%</p><b>New Items (1)</b><br /><br />Occurred at 8/17/2011 9=
+:34:29 PM<br /><br /><table class=3D"Email"><tr><th class=3D"Emai=
+l"><b>Display Name</b></th><th class=3D"Email"><b>Aspect Name</b>=
+</th><th class=3D"Email2"><b>Aspect Value</b></th></tr><tr><td cl=
+ass=3D"Email">oxygen-db5v</td><td class=3D"Email">10.64.80.143</t=
+d><td class=3D"Email2">0.0 %</td></tr></table><br /><br /><a href=
+=3D"http://169.254.133.182:443/NmConsole/AlertCenter/AlertCenter.=
+asp?bLoadPageFromEmail=3D1" style=3D"font-size: 16px; color: blue=
+; text-decoration: underline">Open Alert Center &gt;</a></br></bo=
+dy>
+

@@ -1,0 +1,121 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INErcL013167
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:14:53 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INErwG013165
+	for logicops; Thu, 18 Aug 2011 19:14:53 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INErFn013153
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:14:53 -0400
+Resent-Date: Thu, 18 Aug 2011 19:14:53 -0400
+Resent-Message-Id: <201108182314.p7INErFn013153@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 19:14:52 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INErg3006225	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 19:14:53 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7INErVI006223;	Thu, 18 Aug 2011 19:14:53 -0400
+Date: Thu, 18 Aug 2011 19:14:53 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108182314.p7INErVI006223@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: routers router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/fmc-fw-pri.sccnj04.complex.logicworks.net
+===================================================================
+retrieving revision 1.2276
+diff -U4 -r1.2276 fmc-fw-pri.sccnj04.complex.logicworks.net
+@@ -3,9 +3,9 @@
+  !Chassis type: ASA5510 - a PIX
+  !CPU: Pentium 4 Celeron 1600 MHz
+  !
+  !Memory: 256 MB RAM
+- !Serial Number: JMX1304L11S
++ !Serial Number: JMX1304L11Y
+  !
+  !
+  !
+  !Image: Compiled: on Thu 07-Aug-08 20:53 by builders
+@@ -24,26 +24,24 @@
+  !BootFlash: CONFIG_FILE variable = 
+  !BootFlash: Current CONFIG_FILE variable = 
+  !
+  !Flash: --#--  --length--  -----date/time------  path
+- !Flash:   146  5548032     Jan 01 2003 00:06:22  asa708-k8.bin
+- !Flash:    79  8192        Jun 25 2009 08:41:26  crypto_archive
+- !Flash:   147  6163744     Jun 25 2009 08:44:12  asdm-508.bin
+- !Flash:   149  14137344    Nov 25 2009 14:57:28  asa804-k8.bin
+- !Flash:   150  11491880    Nov 25 2009 15:00:40  asdm-623.bin
+- !Flash:    75  8192        Nov 25 2009 14:59:52  log
+- !Flash:   151  8192        Nov 25 2009 16:56:42  tmp
+- !Flash: 255426560 bytes total (217604096 bytes free)
++ !Flash:   145  5548032     Jan 01 2003 00:06:18  asa708-k8.bin
++ !Flash:    79  8192        Jun 25 2009 07:31:00  crypto_archive
++ !Flash:   146  6163744     Jun 25 2009 07:33:34  asdm-508.bin
++ !Flash:   148  14137344    Nov 25 2009 13:13:06  asa804-k8.bin
++ !Flash:   149  11491880    Nov 25 2009 13:16:48  asdm-623.bin
++ !Flash:    75  8192        Nov 25 2009 13:16:22  log
++ !Flash: 255426560 bytes total (217612288 bytes free)
+  !
+  !Flash: disk0: Directory of disk0:/
+- !Flash: disk0: 146    -rwx  5548032     00:06:22 Jan 01 2003  asa708-k8.bin
+- !Flash: disk0: 79     drwx  8192        08:41:26 Jun 25 2009  crypto_archive
+- !Flash: disk0: 147    -rwx  6163744     08:44:12 Jun 25 2009  asdm-508.bin
+- !Flash: disk0: 149    -rwx  14137344    14:57:28 Nov 25 2009  asa804-k8.bin
+- !Flash: disk0: 150    -rwx  11491880    15:00:40 Nov 25 2009  asdm-623.bin
+- !Flash: disk0: 75     drwx  8192        14:59:52 Nov 25 2009  log
+- !Flash: disk0: 151    drwx  8192        16:56:42 Nov 25 2009  tmp
+- !Flash: disk0: 255426560 bytes total (217604096 bytes free)
++ !Flash: disk0: 145    -rwx  5548032     00:06:18 Jan 01 2003  asa708-k8.bin
++ !Flash: disk0: 79     drwx  8192        07:31:00 Jun 25 2009  crypto_archive
++ !Flash: disk0: 146    -rwx  6163744     07:33:34 Jun 25 2009  asdm-508.bin
++ !Flash: disk0: 148    -rwx  14137344    13:13:06 Nov 25 2009  asa804-k8.bin
++ !Flash: disk0: 149    -rwx  11491880    13:16:48 Nov 25 2009  asdm-623.bin
++ !Flash: disk0: 75     drwx  8192        13:16:22 Nov 25 2009  log
++ !Flash: disk0: 255426560 bytes total (217612288 bytes free)
+  !
+  !
+  !Slot 0: hvers 2.0, firmware 1.0(11)5, sw 8.0(4)
+  !
+@@ -214,9 +212,9 @@
+  mtu inside 1500
+  mtu dmz 1500
+  mtu management 1500
+  failover
+- failover lan unit secondary
++ failover lan unit primary
+  failover lan interface failover-stateful Ethernet0/3
+  failover key *****
+  failover mac address Ethernet0/0 0000.1111.6219 0000.1111.6520
+  failover mac address Ethernet0/1 0000.1111.6224 0000.1111.6524
+@@ -247,11 +245,11 @@
+  timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+  dynamic-access-policy-record DfltAccessPolicy
+  aaa authentication ssh console LOCAL 
+  http server enable
+- http 192.168.1.0 255.255.255.0 management
+- http 206.252.134.18 255.255.255.255 outside
+  http 172.16.135.0 255.255.255.0 outside
++ http 206.252.134.18 255.255.255.255 outside
++ http 192.168.1.0 255.255.255.0 management
+  snmp-server host outside 10.64.4.5 community b3rz3rk
+  snmp-server host outside 172.16.2.51 community b3rz3rk
+  snmp-server host outside 172.16.2.52 community b3rz3rk
+  snmp-server host outside 172.16.2.53 community b3rz3rk
+@@ -313,6 +311,6 @@
+    inspect tftp 
+  !
+  service-policy global_policy global
+  prompt hostname context 
+- Cryptochecksum:1f3c6b694a9cf4906028e67b84a956af
++ Cryptochecksum:3d0cea58760037959d0a0ff5003f73b4
+  : end
+

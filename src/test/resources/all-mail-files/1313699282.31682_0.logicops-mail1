@@ -1,0 +1,267 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKS29C031680
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:28:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKS2r8031679
+	for logicops; Thu, 18 Aug 2011 16:28:02 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKS1IK031675
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:28:01 -0400
+Resent-Date: Thu, 18 Aug 2011 16:28:01 -0400
+Resent-Message-Id: <201108182028.p7IKS1IK031675@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.101) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 16:28:01 -0400
+Received: from dotto.harmonixmusic.com ([207.190.252.222]) (using TLSv1) by
+ exprod8mx201.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 20:28:00
+ GMT
+Received: from otto.harmonixmusic.com (172.18.96.17) by
+ EMAIL-EXCH-01.harmonixmusic.com (172.18.96.5) with Microsoft SMTP Server id
+ 14.1.218.12; Thu, 18 Aug 2011 16:27:58 -0400
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: multipart/related; type="multipart/alternative";
+	boundary="----_=_NextPart_001_01CC5DE5.5172DA28"
+Subject: RE: SR 3-964643 *NEW UNMANAGED VIRTUAL* - hmx-herb1v
+Date: Thu, 18 Aug 2011 16:27:58 -0400
+Message-ID: <99D6C8DC52B0004BAD445D1324984BD1028E1833@otto.harmonixmusic.com>
+In-Reply-To: <429012483EB4554C95041C34FEF6A86D3D422DBD@lw-mbx2.us.logicworks.net>
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+Thread-Topic: SR 3-964643 *NEW UNMANAGED VIRTUAL* - hmx-herb1v
+Thread-Index: Acxd5Nu5RnV1QMYuS3eQBFJO6fKMRwAAAgNg
+References: <429012483EB4554C95041C34FEF6A86D3D422DBD@lw-mbx2.us.logicworks.net>
+From: Arnaldo Hernandez <arnaldo.hernandez@harmonixmusic.com>
+To: Buckie Fairweather <bfairweather@logicworks.net>
+CC: lw-support <lw-support@logicworks.net>
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+------_=_NextPart_001_01CC5DE5.5172DA28
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_002_01CC5DE5.5172DA28"
+
+------_=_NextPart_002_01CC5DE5.5172DA28
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Buckie,
+
+=20
+
+Herb is a BDC for us. There is no longer a local administrator for it.
+
+=20
+
+Try using the following account.
+
+=20
+
+Harmonix\lwadmins with the standard administrator password.
+
+=20
+
+-arnie
+
+=20
+
+From: Buckie Fairweather [mailto:bfairweather@logicworks.net]=20
+Sent: Thursday, August 18, 2011 4:25 PM
+To: Arnaldo Hernandez
+Cc: lw-support
+Subject: SR 3-964643 *NEW UNMANAGED VIRTUAL* - hmx-herb1v
+
+=20
+
+Hi Arnaldo,
+
+=20
+
+It looks like someone added hmx-herb1v to your domain without going
+through our quality control checks first; we need access to the local
+administrator to complete our checks/test before we officially turn this
+server over even though it's unmanaged. Thank you.=20
+
+=20
+
+Best Regards,
+
+=20
+
+Buckie Fairweather
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444 Option 1 (24x7)
+
+lw-support@logicworks.net <mailto:support@logicworks.net>=20
+
+=20
+
+=20
+
+
+------_=_NextPart_002_01CC5DE5.5172DA28
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dus-ascii"><meta name=3DGenerator content=3D"Microsoft Word 14 =
+(filtered medium)"><!--[if !mso]><style>v\:* =
+{behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue =
+vlink=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span =
+style=3D'color:#1F497D'>Buckie,<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span style=3D'color:#1F497D'>Herb is a BDC for us. =
+There is no longer a local administrator for it.<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span style=3D'color:#1F497D'>Try using the following =
+account.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span style=3D'color:#1F497D'>Harmonix\lwadmins with =
+the standard administrator password.<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'color:#1F497D'>-arnie<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><div><div =
+style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal style=3D'margin-left:.5in'><b><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span>=
+</b><span style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'> =
+Buckie Fairweather [mailto:bfairweather@logicworks.net] <br><b>Sent:</b> =
+Thursday, August 18, 2011 4:25 PM<br><b>To:</b> Arnaldo =
+Hernandez<br><b>Cc:</b> lw-support<br><b>Subject:</b> SR 3-964643 *NEW =
+UNMANAGED VIRTUAL* - hmx-herb1v<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal style=3D'margin-left:.5in'><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal style=3D'margin-left:.5in'>Hi =
+Arnaldo,<o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'><o:p>&nbsp;</o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'>It looks like someone added hmx-herb1v to =
+your domain without going through our quality control checks first; we =
+need access to the local administrator to complete our checks/test =
+before we officially turn this server over even though it&#8217;s =
+unmanaged. Thank you. <o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'><o:p>&nbsp;</o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'>Best Regards,<o:p></o:p></p><p =
+class=3DMsoNormal style=3D'margin-left:.5in'><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal style=3D'margin-left:.5in'>Buckie =
+Fairweather<o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'>Logicworks | NRT Engineer<o:p></o:p></p><p =
+class=3DMsoNormal style=3D'margin-left:.5in'>Phone: 212-625-5444 Option =
+1 (24x7)<o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'><a =
+href=3D"mailto:support@logicworks.net">lw-support@logicworks.net</a><o:p>=
+</o:p></p><p class=3DMsoNormal style=3D'margin-left:.5in'><img =
+border=3D0 width=3D96 height=3D31 id=3D"Picture_x0020_1" =
+src=3D"cid:image001.jpg@01CC5DC3.C849D6F0" alt=3D"Description: LW Print =
+Logo 1 inch"><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-left:.5in'><o:p>&nbsp;</o:p></p></div></body></html>
+------_=_NextPart_002_01CC5DE5.5172DA28--
+
+------_=_NextPart_001_01CC5DE5.5172DA28
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.jpg@01CC5DC3.C849D6F0>
+Content-Description: image001.jpg
+Content-Location: image001.jpg
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+------_=_NextPart_001_01CC5DE5.5172DA28--
+

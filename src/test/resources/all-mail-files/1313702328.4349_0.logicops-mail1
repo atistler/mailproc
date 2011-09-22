@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILImK2004347
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:18:48 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILImxP004346
+	for logicops; Thu, 18 Aug 2011 17:18:48 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILIlsm004331;
+	Thu, 18 Aug 2011 17:18:47 -0400
+Received: from afscmeent-stor3.sccnj04.client.logicworks.net (209.81.86.247)
+ by LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1;
+ Thu, 18 Aug 2011 17:18:46 -0400
+Received: from you (localhost.localdomain [127.0.0.1])	by
+ afscmeent-stor3.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7ILIk38029814	for lw-monitoring@ext.logicworks.net; Thu, 18 Aug 2011
+ 17:18:46 -0400
+Message-ID: <201108182118.p7ILIk38029814@afscmeent-stor3.sccnj04.client.logicworks.net>
+To: <lw-monitoring@ext.logicworks.net>
+From: <lw-monitoring@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 17:18:46 -0400
+Subject: WARNING  Event occurred on: afscmeent-stor3
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Controller ID: 0  BBU disabled; changing WB logical drives to WT
+Generated on:Thu Aug 18 18:18:46 2011
+
+
+SYSTEM DETAILS---
+IP Address: 209.81.86.247
+OS Name: Linux
+OS Version: 2.6
+Driver Name: megaraid_sas
+Driver Version: 00.00.05.30
+
+
+IMAGE DETAILS---
+BIOS Version: 2.120.63-1242
+Firmware Package Version: 12.12.0-0048
+Firmware Version: 3.22.00_4.11.05.00_0x05020000
+

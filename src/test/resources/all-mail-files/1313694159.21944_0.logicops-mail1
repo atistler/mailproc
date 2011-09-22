@@ -1,0 +1,57 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ2dHB021942
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:02:39 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJ2dha021941
+	for logicops; Thu, 18 Aug 2011 15:02:39 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ2b3p021926;
+	Thu, 18 Aug 2011 15:02:37 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:02:37 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:02:37 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:02:37 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: ami-sharept1v Windows 2008 Server  -  is OK at 02:57:08 PM
+Message-ID: <LW-MON-EQ4Vhm9Km8EB000079df@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:02:37.0579 (UTC) FILETIME=[654DDDB0:01CC5DD9]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+ami-sharept1v (10.4.92.188) Windows 2008 Server:
+
+Ping - Private,Ping - Public,CPU Utilization - 90%,Disk Utilization 2008 - C: 85%,Disk Utilization 2008 - C: 95%,Disk Utilization 2008 - C: 99%,RDP 3389 - OK again
+
+Details:
+
+Monitors that are still NOT OK:
+
+
+Monitors that are OK include:
+Ping - Private,Ping - Public,CPU Utilization - 90%,Disk Utilization 2008 - C: 85%,Disk Utilization 2008 - C: 95%,Disk Utilization 2008 - C: 99%,RDP 3389
+
+Notes:
+If health check fails, Please follow the procedures below:
+
+Email and Call:
+Philip Barber - proxyphil@gmail.com cell: 910-665-0007
+Robin Keller-rkeller@amilink.com
+
+
+Provide the following information:
+
+1. Date/Time of occurrence
+2. Specific error - be as detailed as possible. (Errors to be reported here would be ERROR 404 - Page cannot be found)
+
+If you contact anyone beyond the first contact, please inform the other contacts so they can make sure double work isn't occurring.
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:57:08 PM by Whatsup Gold in Equinix
+

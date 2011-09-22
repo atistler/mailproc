@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J39uEm029931
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:09:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J39uc1029930
+	for logicops; Thu, 18 Aug 2011 23:09:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J39tga029915;
+	Thu, 18 Aug 2011 23:09:55 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 23:09:55 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 23:09:55 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 23:09:55 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: GroupDCA-fw2-pri CentOS 5 Routed Firewall - Ping - Public is DOWN at 11:07:54 PM.
+Message-ID: <LW-MON-EQjXHzfAbPM100007b26@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 03:09:55.0242 (UTC) FILETIME=[784F30A0:01CC5E1D]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+GroupDCA-fw2-pri (209.73.43.250) CentOS 5 Routed Firewall: 
+
+Ping - Public on 209.73.43.250 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/810066/Page
+
+Notes:
+Added from Discovery on Mon Feb 22 19:26:11 2010
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:07:54 PM by Whatsup Gold in Equinix
+

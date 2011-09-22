@@ -1,0 +1,54 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4OfDZ002995
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:24:41 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4OfP5002994
+	for logicops; Fri, 19 Aug 2011 00:24:41 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4Of1b002983
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:24:41 -0400
+Resent-Date: Fri, 19 Aug 2011 00:24:41 -0400
+Resent-Message-Id: <201108190424.p7J4Of1b002983@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from radar-lb1v (209.81.88.94) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:24:40 -0400
+Received: from radar-lb1v (localhost.localdomain [127.0.0.1])	by radar-lb1v
+ (8.13.8/8.13.8) with SMTP id p7J4Oerd000639	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:24:40 -0400
+Message-ID: <201108190424.p7J4Oerd000639@radar-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@radar-lb1v>
+Date: Fri, 19 Aug 2011 00:24:40 -0400
+Subject: Zeus: Node has failed
+X-ZXTM-Notify: radar-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from radar-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'web.mensfitness.com' = Partial Fail: Some nodes have failed
+ + Node '209.81.88.72:80' = Failed
+ + Node '209.81.88.73:80' = OK
+ + Node '209.81.88.74:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:24:20: SERIOUS  Node '209.81.88.72:80', Pool
+                    'web.mensfitness.com'
+                    Node 209.81.88.72 has failed - Timeout while waiting
+                    for response for
+                    http://web.mensfitness.com/fitness/workout-routines/the-buddy-workout-routine?page=4
+                    (increasing the 'max_reply_time' on the pool's
+                    'Connection Management' page may help)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

@@ -1,0 +1,359 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILEFxl004028
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:14:15 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILEFE5004027
+	for logicops; Thu, 18 Aug 2011 17:14:15 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILE6wX004008
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 17:14:06 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 17:14:06 -0400
+From: Buckie Fairweather <bfairweather@logicworks.net>
+To: Dimitrios Kontos <dkontos@velti.com>, lw-noc <lw-noc@logicworks.net>,
+        lw-support <lw-support@logicworks.net>
+CC: Logicworks <Logicworks@velti.com>, Konstantinos Liakos <kliakos@velti.com>
+Subject: RE: Public IPs on veltimob-app49/50
+Thread-Topic: Public IPs on veltimob-app49/50
+Thread-Index: Acxd4RJehMCV08BhTVKLPEUCg33UYAACijuw
+Date: Thu, 18 Aug 2011 21:14:05 +0000
+Message-ID: <429012483EB4554C95041C34FEF6A86D3D4233CF@lw-mbx2.us.logicworks.net>
+References: <BB6DFE0BB4D6B048B3560A2D1606359913733BA966@CALISTO.velti.net>
+In-Reply-To: <BB6DFE0BB4D6B048B3560A2D1606359913733BA966@CALISTO.velti.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_"
+
+--_000_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Dimitrios,
+
+Your request is complete; listed below are the IPs that was added. Should y=
+ou have any further questions please let us know. Thank you.
+
+veltimob-app49
+bond0:0 - 209.73.35.182
+
+veltimob-app50
+bond0:0 - 209.73.35.183
+
+Best Regards,
+
+Buckie Fairweather
+Logicworks | NRT Engineer
+Phone: 212-625-5444 Option 1 (24x7)
+lw-support@logicworks.net<mailto:support@logicworks.net>
+[Description: LW Print Logo 1 inch]
+
+
+
+
+
+From: Dimitrios Kontos [mailto:dkontos@velti.com]
+Sent: Thursday, August 18, 2011 3:58 PM
+To: lw-noc; lw-support
+Cc: Logicworks; Konstantinos Liakos
+Subject: Public IPs on veltimob-app49/50
+
+Dear Logicworks Support,
+
+Please provide as soon as possible two public IPs, one on veltimob-app49 an=
+d one on veltimob-app50.
+
+None of these should be accommodated on the LB.
+
+Regards,
+
+Dimitrios Kontos | Technical Support Specialist
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.210.637.8800
+M  +30.695.195.5520
+E   dkontos@velti.com<mailto:dkontos@velti.com>
+www.velti.com<http://www.velti.com>
+
+Velti is a global leader in mobile marketing and advertising solutions for =
+mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid |=
+ Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Bei=
+jing | Shanghai | Sydney
+
+
+--_000_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:#1F497D;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hi Dimitrios,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Your request is comple=
+te; listed below are the IPs that was added. Should you have any further qu=
+estions please let us know. Thank you.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">veltimob-app49<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">bond0:0 - 209.73.35.18=
+2<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">veltimob-app50<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">bond0:0 - 209.73.35.18=
+3<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Best Regards,<o:p></o:=
+p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Buckie Fairweather<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Phone: 212-625-5444 Op=
+tion 1 (24x7)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net">lw-support@logicworks.net</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><img border=3D"0" widt=
+h=3D"96" height=3D"31" id=3D"Picture_x0020_1" src=3D"cid:image001.jpg@01CC5=
+DCA.3A76C160" alt=3D"Description: LW Print Logo 1 inch"><o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Dimitrio=
+s Kontos [mailto:dkontos@velti.com]
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 3:58 PM<br>
+<b>To:</b> lw-noc; lw-support<br>
+<b>Cc:</b> Logicworks; Konstantinos Liakos<br>
+<b>Subject:</b> Public IPs on veltimob-app49/50<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D">Dear Logicworks Support,<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D">Please provide as soon as=
+ possible two public IPs, one on veltimob-app49 and one on veltimob-app50.<=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D">None of these should be a=
+ccommodated on the LB.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ve=
+rdana&quot;,&quot;sans-serif&quot;;color:#1F497D">Regards,<o:p></o:p></span=
+></p>
+<p><strong><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&q=
+uot;sans-serif&quot;;color:#365F91">Dimitrios Kontos | Technical Support Sp=
+ecialist</span></strong><b><span style=3D"font-size:9.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:#365F91"><br>
+<br>
+<strong><span style=3D"font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;">Velti</span></strong><br>
+</span></b><strong><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#4A442A">44 Kifisias Ave.&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;
+</span></strong><b><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#4A442A"><br>
+<strong><span style=3D"font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;">15125 Marousi, Athens, Greece</span></strong><br>
+</span></b><strong><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#E36C0A">T</span></strong><span style=3D=
+"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;colo=
+r:#4A442A">&nbsp;&nbsp;&nbsp;&#43;30.210.637.8800<br>
+</span><b><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&qu=
+ot;sans-serif&quot;;color:#E36C0A">M</span></b><span style=3D"font-size:9.0=
+pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:#4A442A">&nb=
+sp;&nbsp;&#43;30.695.195.5520<br>
+</span><b><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&qu=
+ot;sans-serif&quot;;color:#E36C0A">E</span></b><span style=3D"font-size:9.0=
+pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:#4A442A">&nb=
+sp;&nbsp;
+<a href=3D"mailto:dkontos@velti.com">dkontos@velti.com</a></span><b><u><spa=
+n style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&=
+quot;;color:#365F91"><br>
+<a href=3D"http://www.velti.com" title=3D"http://www.velti.com/"><span styl=
+e=3D"color:#365F91">www.velti.com</span></a><br>
+<br>
+</span></u></b><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot=
+;,&quot;sans-serif&quot;;color:#365F91">Velti is a global leader in mobile =
+marketing and advertising solutions for mobile operators, ad agencies, bran=
+ds and media groups.</span><span style=3D"font-size:9.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:blue"><br>
+</span><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot;=
+sans-serif&quot;;color:#365F91">San Francisco | New York | Los Angeles | Du=
+blin | London | Paris | Madrid | Dusseldorf | Athens | Sofia | Moscow | Dub=
+ai | New Delhi | Singapore | Beijing | Shanghai | Sydney</span><o:p></o:p><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_--
+
+--_004_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 21:14:05 GMT";
+	modification-date="Thu, 18 Aug 2011 21:14:05 GMT"
+Content-ID: <image001.jpg@01CC5DCA.3A76C160>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_004_429012483EB4554C95041C34FEF6A86D3D4233CFlwmbx2uslogicwo_--
+

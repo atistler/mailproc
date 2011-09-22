@@ -1,0 +1,96 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IK52I5029208
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:05:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IK52Jr029207
+	for logicops; Thu, 18 Aug 2011 16:05:02 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IK51TL029203;
+	Thu, 18 Aug 2011 16:05:01 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 16:05:01 -0400
+From: Xiao Fen Lin <xlin@logicworks.net>
+To: lw-monitoring <lw-monitoring@ext.logicworks.net>,
+        lw-monitoring
+	<lw-monitoring@ext.logicworks.net>
+Subject: RE: annarbor-stgadmin1v RHEL 5 Virtual - HTTP Content - annarbor -
+ HTTP response check,HTTP Content - annarbor - database connectivity check is
+ DOWN at 04:00:04 PM.
+Thread-Topic: annarbor-stgadmin1v RHEL 5 Virtual - HTTP Content - annarbor -
+ HTTP response check,HTTP Content - annarbor - database connectivity check is
+ DOWN at 04:00:04 PM.
+Thread-Index: AQHMXeHbPPK7e6sGnEa0qnJPzH1tP5UjCFag
+Date: Thu, 18 Aug 2011 20:05:00 +0000
+Message-ID: <90945AF80A6C4E46B6E31B1CD5175BD43D1C20E3@lw-mbx2.us.logicworks.net>
+References: <LW-MON-EQH313KATwja00007a5d@lw-mon-eq.ad.logicworks.net>
+In-Reply-To: <LW-MON-EQH313KATwja00007a5d@lw-mon-eq.ad.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IK51TL029203
+
+They're doing work on staging 
+
+
+-----Original Message-----
+From: lw-alert-server@ext.logicworks.net [mailto:lw-alert-server@ext.logicworks.net] 
+Sent: Thursday, August 18, 2011 4:03 PM
+To: lw-monitoring
+Subject: annarbor-stgadmin1v RHEL 5 Virtual - HTTP Content - annarbor - HTTP response check,HTTP Content - annarbor - database connectivity check is DOWN at 04:00:04 PM.
+
+annarbor-stgadmin1v (10.64.95.85) RHEL 5 Virtual: 
+
+HTTP Content - annarbor - HTTP response check,HTTP Content - annarbor - database connectivity check on 10.64.95.85 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+Annarbor's alert instructions for CPU/DISK/RAM/APACHE are outlined on the RunBook  
+
+https://logicops.logicworks.net/882350/File
+
+
+The RunBook is also posted on Annarbor's account page --- SR3-862206
+
+
+Database connectivity check:
+/server_health/db-check.php
+
+HTTP response check:
+/server_health/
+
+
+***Important***
+
+Client needs to be notified when disk utilization reaches 90%.  SR3-882323
+
+https://logicops.logicworks.net/882323/PagePlease add Hassan to all email alerts:
+
+hassanhodges@gmail.comIf problem results from high load on database please do the following:
+
+log into the mysql server that has a vip connect to db as lwdba and run:
+
+FLUSH HOSTS;
+FLUSH TABLES;
+
+Load should go down after that. If it doesn't restart mysql service.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 04:00:04 PM by Whatsup Gold in Equinix
+
+

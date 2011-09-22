@@ -1,0 +1,37 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J408E2001034
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:00:08 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J408F7001031
+	for logicops; Fri, 19 Aug 2011 00:00:08 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4080Q001020
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:00:08 -0400
+Resent-Date: Fri, 19 Aug 2011 00:00:08 -0400
+Resent-Message-Id: <201108190400.p7J4080Q001020@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from globalgrind-db2.sccnj04.client.logicworks.net (209.81.92.74) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Fri, 19 Aug 2011 00:00:07 -0400
+Received: from globalgrind-db2.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ globalgrind-db2.sccnj04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J407QR019302	for <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:00:07
+ -0400
+Received: (from root@localhost)	by
+ globalgrind-db2.sccnj04.client.logicworks.net (8.13.8/8.13.8/Submit) id
+ p7J406AT019190	for lw-linux@ext.logicworks.net; Fri, 19 Aug 2011 00:00:06
+ -0400
+Date: Fri, 19 Aug 2011 00:00:06 -0400
+From: root <root@globalgrind-db2.sccnj04.client.logicworks.net>
+Message-ID: <201108190400.p7J406AT019190@globalgrind-db2.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+Subject: REPLICATION  SQL slave not Running
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+
+This Means that an error is encountered while applying sql's to secondary
+

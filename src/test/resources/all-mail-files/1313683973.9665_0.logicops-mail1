@@ -1,0 +1,382 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGCrvT009663
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:12:53 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGCrhL009662
+	for logicops; Thu, 18 Aug 2011 12:12:53 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGCq3r009658
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:12:52 -0400
+Resent-Date: Thu, 18 Aug 2011 12:12:52 -0400
+Resent-Message-Id: <201108181612.p7IGCq3r009658@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.176) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 12:12:51 -0400
+Received: from mail-vx0-f169.google.com ([209.85.220.169]) (using TLSv1) by
+ exprod8mx197.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 09:12:51
+ PDT
+Received: by vxj3 with SMTP id 3so2207105vxj.0        for <multiple
+ recipients>; Thu, 18 Aug 2011 09:12:49 -0700 (PDT)
+Received: by 10.52.19.198 with SMTP id h6mr895541vde.292.1313683969354;
+        Thu, 18 Aug 2011 09:12:49 -0700 (PDT)
+Received: from [192.168.1.101] ([184.152.77.167])        by mx.google.com with
+ ESMTPS id gw3sm1893601vdb.20.2011.08.18.09.12.47        (version=TLSv1/SSLv3
+ cipher=OTHER);        Thu, 18 Aug 2011 09:12:48 -0700 (PDT)
+Subject: Re: VPN Connection Port Forwarding (SR 3-967691)
+MIME-Version: 1.0 (Apple Message framework v1084)
+Content-Type: multipart/alternative; boundary="Apple-Mail-48-369316384"
+From: Nick Scholl <nick@breakingmedia.com>
+In-Reply-To: <8A6BD2659673894E93737B25DFA21A7B3D33F17F@lw-mbx2.us.logicworks.net>
+Date: Thu, 18 Aug 2011 12:12:45 -0400
+CC: lw-support <lw-support@logicworks.net>
+Message-ID: <B33AC16A-7AE0-4E1A-8172-F70D5C3F71EE@breakingmedia.com>
+References: <f0e4770f2692be686406f45766ca99d9@logicops.logicworks.net> <6956B3F0-142B-4DA2-9EB3-FD1603363D94@breakingmedia.com> <8A6BD2659673894E93737B25DFA21A7B3D33F17F@lw-mbx2.us.logicworks.net>
+To: Alexander Ospina <aospina@logicworks.net>
+X-Mailer: Apple Mail (2.1084)
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--Apple-Mail-48-369316384
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="windows-1252"
+
+I don't think I understand how I'd go about SSHing or SFTPing to the =
+webservers now. Could you provide a simple instruction on connecting?
+
+Also is there an ETA on when the VPN will be functional again?
+
+
+Thanks,
+Nick Scholl
+Breaking Media
+
+On Aug 18, 2011, at 11:10 AM, Alexander Ospina wrote:
+
+> Hey Nick.
+> =20
+> The rules have been established.  Feel free to test them out at your =
+convenience.  Let me know if there=92s anything else I can help you =
+with.
+> =20
+> Regards,
+> Logicworks NRT
+> =20
+> From: Nick Scholl [mailto:nick@breakingmedia.com]=20
+> Sent: Thursday, August 18, 2011 10:23 AM
+> To: lw-support
+> Cc: Lerner, John; Minkin, David; Minkin, David; Scholl, Nick; =
+lw-support
+> Subject: Re: VPN Connection Port Forwarding (SR 3-967691)
+> =20
+> I don't know how it's done on your end, but I would simply like SSH =
+access to:
+> =20
+> brkmedia-db1m-01
+> brkmedia-db1m-02
+> brkmedia-web-01
+> brkmedia-web-02
+> brkmedia-web-03
+> brkmedia-web-04
+> brkmedia-web-05
+> brkmedia-web-06
+> =20
+> =20
+> My current source IP is:
+> 184.152.77.167
+>=20
+> =20
+> Nick Scholl
+> Breaking Media
+> =20
+> On Aug 18, 2011, at 10:19 AM, Logicworks NOC wrote:
+>=20
+>=20
+> Greetings.
+>=20
+> I've created this ticket in order to re-enable Breaking Media's VPN =
+connection via port forwarding.
+>=20
+> Feel free to reply to this email with the port forwarding setup you'd =
+like to implement.
+>=20
+> Regards,
+> Logicworks NRT
+>=20
+> =
+--------------------------------------------------------------------------=
+-----------------------------------
+>=20
+> Modifications:
+> =
+--------------------------------------------------------------------------=
+-----------------------------------
+>=20
+> Created new ServiceRequest:=20
+>    SR 3-967692
+>=20
+> + Basic Info:     SR 3-967692
+> =
+--------------------------------------------------------------------------=
+-----------------------------------
+>=20
+> Abstract: VPN Connection Port Forwarding
+> Status: Open
+> Date Due: 2011-08-18 17:00
+> Assigned To: Ospina, Alexander (2011-08-18 10:19:44)
+> Created By: Ospina, Alexander (2011-08-18 10:19:44)
+> Area: Account Administration
+> Accounts: Breaking Media, LLC
+> Contacts:=20
+> Services:=20
+>=20
+>=20
+>=20
+>=20
+>=20
+>=20
+>=20
+>=20
+> =20
+
+
+--Apple-Mail-48-369316384
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="windows-1252"
+
+<html><head><base href=3D"x-msg://565/"></head><body style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; -webkit-line-break: =
+after-white-space; ">I don't think I understand how I'd go about SSHing =
+or SFTPing to the webservers now. Could you provide a simple instruction =
+on connecting?<br><div><br =
+class=3D"webkit-block-placeholder"></div><div>Also is there an ETA on =
+when the VPN will be functional again?</div><div><br></div><div>
+<span class=3D"Apple-style-span" style=3D"border-collapse: separate; =
+color: rgb(0, 0, 0); font-family: Georgia; font-size: medium; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+letter-spacing: normal; line-height: normal; orphans: 2; text-align: =
+auto; text-indent: 0px; text-transform: none; white-space: normal; =
+widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; =
+-webkit-border-vertical-spacing: 0px; =
+-webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: =
+auto; -webkit-text-stroke-width: 0px; "><span class=3D"Apple-style-span" =
+style=3D"border-collapse: separate; color: rgb(0, 0, 0); font-family: =
+Georgia; font-size: 12px; font-style: normal; font-variant: normal; =
+font-weight: normal; letter-spacing: normal; line-height: normal; =
+orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; =
+widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; =
+-webkit-border-vertical-spacing: 0px; =
+-webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: =
+auto; -webkit-text-stroke-width: 0px; "><div><br =
+class=3D"Apple-interchange-newline">Thanks,</div><div>Nick =
+Scholl</div><div><font class=3D"Apple-style-span" =
+color=3D"#818181">Breaking Media</font></div></span></span>
+</div>
+<br><div><div>On Aug 18, 2011, at 11:10 AM, Alexander Ospina =
+wrote:</div><br class=3D"Apple-interchange-newline"><blockquote =
+type=3D"cite"><span class=3D"Apple-style-span" style=3D"border-collapse: =
+separate; font-family: Georgia; font-style: normal; font-variant: =
+normal; font-weight: normal; letter-spacing: normal; line-height: =
+normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; =
+text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; =
+-webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: =
+0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: =
+auto; -webkit-text-stroke-width: 0px; font-size: medium; "><div =
+lang=3D"EN-US" link=3D"blue" vlink=3D"purple"><div class=3D"WordSection1" =
+style=3D"page: WordSection1; "><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); ">Hey =
+Nick.<o:p></o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); =
+"><o:p>&nbsp;</o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); ">The =
+rules have been established.&nbsp; Feel free to test them out at your =
+convenience.&nbsp; Let me know if there=92s anything else I can help you =
+with.<o:p></o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); =
+"><o:p>&nbsp;</o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); =
+">Regards,<o:p></o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); =
+">Logicworks NRT<o:p></o:p></span></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+11pt; font-family: Calibri, sans-serif; color: rgb(31, 73, 125); =
+"><o:p>&nbsp;</o:p></span></div><div><div style=3D"border-right-style: =
+none; border-bottom-style: none; border-left-style: none; border-width: =
+initial; border-color: initial; border-top-style: solid; =
+border-top-color: rgb(181, 196, 223); border-top-width: 1pt; =
+padding-top: 3pt; padding-right: 0in; padding-bottom: 0in; padding-left: =
+0in; "><div style=3D"margin-top: 0in; margin-right: 0in; margin-left: =
+0in; margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><b><span style=3D"font-size: 10pt; font-family: Tahoma, =
+sans-serif; ">From:</span></b><span style=3D"font-size: 10pt; =
+font-family: Tahoma, sans-serif; "><span =
+class=3D"Apple-converted-space">&nbsp;</span>Nick Scholl =
+[mailto:nick@breakingmedia.com]<span =
+class=3D"Apple-converted-space">&nbsp;</span><br><b>Sent:</b><span =
+class=3D"Apple-converted-space">&nbsp;</span>Thursday, August 18, 2011 =
+10:23 AM<br><b>To:</b><span =
+class=3D"Apple-converted-space">&nbsp;</span>lw-support<br><b>Cc:</b><span=
+ class=3D"Apple-converted-space">&nbsp;</span>Lerner, John; Minkin, =
+David; Minkin, David; Scholl, Nick; lw-support<br><b>Subject:</b><span =
+class=3D"Apple-converted-space">&nbsp;</span>Re: VPN Connection Port =
+Forwarding (SR 3-967691)<o:p></o:p></span></div></div></div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><o:p>&nbsp;</o:p></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; ">I don't know how it's =
+done on your end, but I would simply like SSH access =
+to:<o:p></o:p></div><div><div style=3D"margin-top: 0in; margin-right: =
+0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: 12pt; =
+font-family: 'Times New Roman', serif; =
+"><o:p>&nbsp;</o:p></div></div><blockquote style=3D"margin-left: 30pt; =
+margin-right: 0in; "><div><div style=3D"margin-top: 0in; margin-right: =
+0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: 12pt; =
+font-family: 'Times New Roman', serif; "><span =
+class=3D"apple-style-span"><span style=3D"font-size: 8.5pt; font-family: =
+Arial, sans-serif; color: rgb(51, 51, 51); background-image: initial; =
+background-attachment: initial; background-origin: initial; =
+background-clip: initial; background-color: white; background-position: =
+initial initial; background-repeat: initial initial; =
+">brkmedia-db1m-01</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-db1m-02</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-01</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-02</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-03</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-04</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-05</span></span><o:p></o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span class=3D"apple-style-span"><span =
+style=3D"font-size: 8.5pt; font-family: Arial, sans-serif; color: =
+rgb(51, 51, 51); background-image: initial; background-attachment: =
+initial; background-origin: initial; background-clip: initial; =
+background-color: white; background-position: initial initial; =
+background-repeat: initial initial; =
+">brkmedia-web-06</span></span><o:p></o:p></div></div></blockquote><div><d=
+iv style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><o:p>&nbsp;</o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><o:p>&nbsp;</o:p></div></div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><span style=3D"color: rgb(51, 51, 51); ">My current =
+source IP is:</span><o:p></o:p></div></div><div><div><div><p =
+class=3D"MsoNormal" style=3D"margin-top: 0in; margin-right: 0in; =
+margin-left: 0in; margin-bottom: 12pt; font-size: 12pt; font-family: =
+'Times New Roman', serif; "><span style=3D"color: rgb(51, 51, 51); =
+">184.152.77.167</span><o:p></o:p></p></div><div><div style=3D"margin-top:=
+ 0in; margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; =
+font-size: 12pt; font-family: 'Times New Roman', serif; =
+"><o:p>&nbsp;</o:p></div></div><div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+9pt; font-family: Georgia, serif; color: black; ">Nick =
+Scholl<o:p></o:p></span></div></div><div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; "><span style=3D"font-size: =
+9pt; font-family: Georgia, serif; color: rgb(129, 129, 129); ">Breaking =
+Media</span><span style=3D"font-size: 9pt; font-family: Georgia, serif; =
+color: black; "><o:p></o:p></span></div></div></div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; "><o:p>&nbsp;</o:p></div><div><div><div =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 0.0001pt; font-size: 12pt; font-family: 'Times New =
+Roman', serif; ">On Aug 18, 2011, at 10:19 AM, Logicworks NOC =
+wrote:<o:p></o:p></div></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; =
+"><br><br><o:p></o:p></div><div><p class=3D"MsoNormal" =
+style=3D"margin-top: 0in; margin-right: 0in; margin-left: 0in; =
+margin-bottom: 12pt; font-size: 12pt; font-family: 'Times New Roman', =
+serif; ">Greetings.<br><br>I've created this ticket in order to =
+re-enable Breaking Media's VPN connection via port =
+forwarding.<br><br>Feel free to reply to this email with the port =
+forwarding setup you'd like to implement.<br><br>Regards,<br>Logicworks =
+NRT<br><br>---------------------------------------------------------------=
+----------------------------------------------<br><br>Modifications:<br>--=
+--------------------------------------------------------------------------=
+---------------------------------<br><br>Created new =
+ServiceRequest:<span =
+class=3D"Apple-converted-space">&nbsp;</span><br>&nbsp;&nbsp;&nbsp;SR =
+3-967692<br><br>+ Basic Info: &nbsp;&nbsp;&nbsp;&nbsp;SR =
+3-967692<br>--------------------------------------------------------------=
+-----------------------------------------------<br><br>Abstract: VPN =
+Connection Port Forwarding<br>Status: Open<br>Date Due: 2011-08-18 =
+17:00<br>Assigned To: Ospina, Alexander (2011-08-18 10:19:44)<br>Created =
+By: Ospina, Alexander (2011-08-18 10:19:44)<br>Area: Account =
+Administration<br>Accounts: Breaking Media, LLC<br>Contacts:<span =
+class=3D"Apple-converted-space">&nbsp;</span><br>Services:<span =
+class=3D"Apple-converted-space">&nbsp;</span><br><br><br><br><br><br><br><=
+br><o:p></o:p></p></div></div><div style=3D"margin-top: 0in; =
+margin-right: 0in; margin-left: 0in; margin-bottom: 0.0001pt; font-size: =
+12pt; font-family: 'Times New Roman', serif; =
+"><o:p>&nbsp;</o:p></div></div></div></div></span></blockquote></div><br><=
+/body></html>=
+
+--Apple-Mail-48-369316384--
+

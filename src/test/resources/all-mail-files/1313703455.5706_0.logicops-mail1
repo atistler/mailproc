@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILbY0v005704
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:37:35 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILbYB2005703
+	for logicops; Thu, 18 Aug 2011 17:37:34 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILbXxN005688;
+	Thu, 18 Aug 2011 17:37:33 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 17:37:33 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 17:37:32 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 17:37:32 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: bsa-web6 Windows 2008 Server is UP at 05:31:37 PM.
+Message-ID: <LW-MON-EQnlhRyZx4L200007ab0@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 21:37:32.0854 (UTC) FILETIME=[09B84560:01CC5DEF]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+bsa-web6 Windows 2008 Server on 10.252.132.44 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Added from Discovery on Thu Jun 03 07:39:24 2010
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 05:31:37 PM by Whatsup Gold in Equinix
+

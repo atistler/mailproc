@@ -1,0 +1,50 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIH0IW018296
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:17:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIH0wn018295
+	for logicops; Thu, 18 Aug 2011 14:17:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIH0x3018284
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:17:00 -0400
+Resent-Date: Thu, 18 Aug 2011 14:17:00 -0400
+Resent-Message-Id: <201108181817.p7IIH0x3018284@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lw-bartleby.mail.logicworks.net (206.252.128.20) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 14:16:59 -0400
+Received: from au-aunjlb1v (au-aunjlb1v.sccnj04.client.logicworks.net
+ [209.81.84.19])	by lw-bartleby.mail.logicworks.net (8.13.8/8.13.8) with SMTP
+ id p7IIGxkn025164	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 14:16:59 -0400
+Message-ID: <201108181816.p7IIGxkn025164@lw-bartleby.mail.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@au-aunjlb1v>
+Date: Thu, 18 Aug 2011 14:16:59 -0400
+Subject: Zeus: Node is working again
+X-ZXTM-Notify: au-aunjlb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from au-aunjlb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'hub-smtp' = OK
+ + Node '209.81.84.13:25' = OK
+ + Node '209.81.84.17:25' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 14:16:59: INFO  Node '209.81.84.13:25', Pool 'hub-smtp'
+                    Node 209.81.84.13 is working again
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

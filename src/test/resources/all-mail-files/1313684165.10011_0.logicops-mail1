@@ -1,0 +1,152 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGG5IR010009
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:16:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGG5iO010008
+	for logicops; Thu, 18 Aug 2011 12:16:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGG41D010003
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:16:04 -0400
+Resent-Date: Thu, 18 Aug 2011 12:16:04 -0400
+Resent-Message-Id: <201108181616.p7IGG41D010003@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.174) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 12:16:03 -0400
+Received: from exchange.americansolutions.com ([66.92.171.189]) by
+ exprod8mx195.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 16:16:03
+ GMT
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01CC5DC2.13B5C07E"
+Subject: RE: Open Access to 
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Date: Thu, 18 Aug 2011 12:14:31 -0400
+Message-ID: <11E682C17118C64A946E1EA9DE2C4FF401D5F7CA@fs.AmericanSolutions.local>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: Open Access to 
+Thread-Index: AcxdwBX1qMGzxIVhTYOfhlE5JV0rtAAASSvAAAArxBw=
+References: <11E682C17118C64A946E1EA9DE2C4FF401D5F7C9@fs.AmericanSolutions.local> <8A6BD2659673894E93737B25DFA21A7B3D33F6E5@lw-mbx2.us.logicworks.net>
+From: Tim Cameron <tcameron@americansolutions.com>
+To: Alexander Ospina <aospina@logicworks.net>
+CC: lw-support <lw-support@logicworks.net>
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+------_=_NextPart_001_01CC5DC2.13B5C07E
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+SSH should be fine. I'll let you know if we need access to anything else =
+from that location.=20
+
+Thanks,
+
+Tim
+
+
+-----Original Message-----
+From: Alexander Ospina [mailto:aospina@logicworks.net]
+Sent: Thu 8/18/2011 12:13 PM
+To: Tim Cameron
+Cc: lw-support
+Subject: RE: Open Access to=20
+=20
+Hey Tim,
+
+Can you please specify what servers 71.45.153.99 needs access to?  Also, =
+we'll need to know what services that IP needs access to (SSH, FTP, =
+ect...)
+
+Thank you.
+
+Logicworks NRT
+
+From: Tim Cameron [mailto:tcameron@americansolutions.com]
+Sent: Thursday, August 18, 2011 12:01 PM
+To: lw-support
+Subject: Open Access to
+
+
+Can you please open access to the following IP address
+
+71.45.153.99
+
+Please let me know if you have any questions.
+
+Thanks,
+
+Tim
+
+
+------_=_NextPart_001_01CC5DC2.13B5C07E
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Diso-8859-1">
+<META NAME=3D"Generator" CONTENT=3D"MS Exchange Server version =
+6.5.7654.12">
+<TITLE>RE: Open Access to </TITLE>
+</HEAD>
+<BODY>
+<!-- Converted from text/plain format -->
+
+<P><FONT SIZE=3D2>SSH should be fine. I'll let you know if we need =
+access to anything else from that location.<BR>
+<BR>
+Thanks,<BR>
+<BR>
+Tim<BR>
+<BR>
+<BR>
+-----Original Message-----<BR>
+From: Alexander Ospina [<A =
+HREF=3D"mailto:aospina@logicworks.net">mailto:aospina@logicworks.net</A>]=
+<BR>
+Sent: Thu 8/18/2011 12:13 PM<BR>
+To: Tim Cameron<BR>
+Cc: lw-support<BR>
+Subject: RE: Open Access to<BR>
+<BR>
+Hey Tim,<BR>
+<BR>
+Can you please specify what servers 71.45.153.99 needs access to?&nbsp; =
+Also, we'll need to know what services that IP needs access to (SSH, =
+FTP, ect...)<BR>
+<BR>
+Thank you.<BR>
+<BR>
+Logicworks NRT<BR>
+<BR>
+From: Tim Cameron [<A =
+HREF=3D"mailto:tcameron@americansolutions.com">mailto:tcameron@americanso=
+lutions.com</A>]<BR>
+Sent: Thursday, August 18, 2011 12:01 PM<BR>
+To: lw-support<BR>
+Subject: Open Access to<BR>
+<BR>
+<BR>
+Can you please open access to the following IP address<BR>
+<BR>
+71.45.153.99<BR>
+<BR>
+Please let me know if you have any questions.<BR>
+<BR>
+Thanks,<BR>
+<BR>
+Tim<BR>
+<BR>
+</FONT>
+</P>
+
+</BODY>
+</HTML>
+------_=_NextPart_001_01CC5DC2.13B5C07E--
+

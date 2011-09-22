@@ -1,0 +1,178 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFGNWi005549
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:16:23 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFGNLj005548
+	for logicops; Thu, 18 Aug 2011 11:16:23 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFGNnl005544
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:16:23 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 11:16:23 -0400
+From: Dalton Stickney <dstickney@logicworks.net>
+To: "John D. Bickle" <jbickle@cellfishmedia.ca>
+CC: Chris Case <ccase@4rnd.com>, lw-support <lw-support@logicworks.net>
+Subject: RE: Contact Daulton - SR 3-958444
+Thread-Topic: Contact Daulton - SR 3-958444
+Thread-Index: AQHMXa9t0RT2olGAyEyxaZSjX2dsyZUit+l4
+Date: Thu, 18 Aug 2011 15:16:22 +0000
+Message-ID: <01694838EF060F4998445AB0DF8564DD3D1C569C@lw-mbx2.us.logicworks.net>
+References: <01694838EF060F4998445AB0DF8564DD3D1BEDE2@lw-mbx2.us.logicworks.net>,<CACwRyiM=mUm7svWeSLDX_r7jUDdzxX-KKG2V4JGiEMZFxL2Rpg@mail.gmail.com>
+In-Reply-To: <CACwRyiM=mUm7svWeSLDX_r7jUDdzxX-KKG2V4JGiEMZFxL2Rpg@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IFGNnl005544
+
+
+Hi John, 
+
+Sure, I'm available this afternoon. How's 2:30 EST?
+
+Regards.
+Dalton
+Senior Engineer
+Logicworks
+________________________________________
+From: John D. Bickle [jbickle@cellfishmedia.ca]
+Sent: Thursday, August 18, 2011 10:02 AM
+To: Dalton Stickney
+Cc: Chris Case; lw-support
+Subject: Re: Contact Daulton - SR 3-958444
+
+hi Dalton.
+
+can we chat over the phone?
+
+i don't think this is the problem.
+
+cheers,
+john.
+
+On Wed, Aug 17, 2011 at 4:32 PM, Dalton Stickney <dstickney@logicworks.net<mailto:dstickney@logicworks.net>> wrote:
+
+Hi John,
+
+The issue appears to be some missing config on your ASA.
+
+By default, the ASA will nat the outbound traffic on an inside interface. I believe you need a deny-nat access-list applied to the dmz interface (nat 0), in order
+to allow the traffic to pass through.
+
+Regards,
+Dalton
+Senior Engineer
+Logicworks
+________________________________________
+From: John D. Bickle [jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca>]
+Sent: Monday, August 15, 2011 2:51 PM
+To: Dalton Stickney
+Cc: Chris Case
+Subject: Re: Contact Daulton about Peer1 VPN
+
+Hi Dalton.
+
+I was away on vacation for a while, and lost track of where we were with this project.
+
+Is it working?
+
+cheers,
+john.
+
+On Mon, Jul 25, 2011 at 3:10 PM, Dalton Stickney <dstickney@logicworks.net<mailto:dstickney@logicworks.net><mailto:dstickney@logicworks.net<mailto:dstickney@logicworks.net>>> wrote:
+
+Hi Chris and John,
+
+I looked over the config on the ASA and it looks like this is the issue. By default, the ASA will nat the outbound traffic on an inside interface. I believe you need a deny-nat access-list applied to the dmz interface (nat 0), in order
+to allow the traffic to pass through.
+
+Regards
+Dalton
+Senior Engineer
+Logicworks
+________________________________________
+From: Chris Case [ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>]
+Sent: Monday, July 25, 2011 12:08 PM
+To: Dalton Stickney
+Subject: Re: Contact Daulton about Peer1 VPN
+
+OK thanks Dalton, I appreciate it.
+
+On Mon, Jul 25, 2011 at 12:04 PM, Dalton Stickney <dstickney@logicworks.net<mailto:dstickney@logicworks.net><mailto:dstickney@logicworks.net<mailto:dstickney@logicworks.net>><mailto:dstickney@logicworks.net<mailto:dstickney@logicworks.net><mailto:dstickney@logicworks.net<mailto:dstickney@logicworks.net>>>> wrote:
+
+Hi Chris,
+ I have access to the remote device and will be sorting through this today. I'll update you end of day.
+
+Regards,
+Dalton
+Senior Engineer
+Logicworks
+________________________________________
+From: Chris Case [ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>>]
+Sent: Monday, July 25, 2011 12:01 PM
+To: Dalton Stickney
+Subject: Re: Contact Daulton about Peer1 VPN
+
+Dalton,
+
+Hi, can you give me a status update on this?  Ideally we'd like to have this done by Wednesday afternoon if possible.  Can you give me a rough ETA as to when you expect the setup to be completed?
+
+Thanks,
+Chris
+
+On Thu, Jul 21, 2011 at 5:49 PM, John D. Bickle <jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca>><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca>>><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca>><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:jbickle@cellfishmedia.ca>>>>> wrote:
+done.
+
+cheers,
+john.
+
+On Thu, Jul 21, 2011 at 5:48 PM, Chris Case <ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>>>> wrote:
+John,
+
+Before you leave today could you contact Daulton at LogicWorks?
+
+Thanks,
+Chris
+
+
+
+--
+John Bickle
+CELLFISH
+468, rue Saint-Jean
+Bureau 200
+Montréal, Québec, H2Y 2S1
+Tél. : +1.514.288.5858<tel:%2B1.514.288.5858><tel:%2B1.514.288.5858><tel:%2B1.514.288.5858><tel:%2B1.514.288.5858> poste 203
+Fax : +1.514.288.4224<tel:%2B1.514.288.4224><tel:%2B1.514.288.4224><tel:%2B1.514.288.4224><tel:%2B1.514.288.4224>
+
+
+
+
+
+--
+John Bickle
+CELLFISH
+468, rue Saint-Jean
+Bureau 200
+Montréal, Québec, H2Y 2S1
+Tél. : +1.514.288.5858<tel:%2B1.514.288.5858> poste 203
+Fax : +1.514.288.4224<tel:%2B1.514.288.4224>
+
+
+
+--
+John Bickle
+CELLFISH
+468, rue Saint-Jean
+Bureau 200
+Montréal, Québec, H2Y 2S1
+Tél. : +1.514.288.5858 poste 203
+Fax : +1.514.288.4224
+

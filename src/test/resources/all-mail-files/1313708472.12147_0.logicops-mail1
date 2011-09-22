@@ -1,0 +1,38 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IN1C0s012145
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:01:12 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IN1Ch0012140
+	for logicops; Thu, 18 Aug 2011 19:01:12 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IN13qO012021
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:01:03 -0400
+Resent-Date: Thu, 18 Aug 2011 19:01:03 -0400
+Resent-Message-Id: <201108182301.p7IN13qO012021@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.118) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 19:01:02 -0400
+Received: from ami-vm4.localdomain ([209.81.89.171]) by
+ exprod8mx218.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 23:01:02
+ GMT
+Received: from ami-vm5.localdomain (unknown [10.4.92.172])	by
+ ami-vm4.localdomain (Postfix) with ESMTP id 9BFEE35039C	for
+ <lw-alert-disk@logicworks.net>; Thu, 18 Aug 2011 19:01:01 -0400 (EDT)
+Received: by ami-vm5.localdomain (Postfix, from userid 0)	id 81E1C57007A; Thu,
+ 18 Aug 2011 19:01:01 -0400 (EDT)
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on ami-vm5 is at 97%!!!
+Message-ID: <20110818230101.81E1C57007A@ami-vm5.localdomain>
+Date: Thu, 18 Aug 2011 19:01:01 -0400
+From: root <root@ami-admin.com>
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S: 6.75792/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@ami-admin.com> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on / - 97% on server ami-vm5, Thu Aug 18 19:01:01 EDT 2011
+

@@ -1,0 +1,80 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIZQJS019790
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:35:26 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIZQ1M019789
+	for logicops; Thu, 18 Aug 2011 14:35:26 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIZPK6019774;
+	Thu, 18 Aug 2011 14:35:25 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:35:24 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 14:35:24 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:35:24 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: sl-prod-web1 RHEL ES 4 - HTTP Content - SelectLeaders - Register,HTTP,HTTP - 200,HTTPS is DOWN at 02:35:24 PM.
+Message-ID: <LW-MON-EQP53W10h8Vu000079cc@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 18:35:24.0693 (UTC) FILETIME=[98073C50:01CC5DD5]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+sl-prod-web1 (10.17.9.83) RHEL ES 4: 
+
+HTTP Content - SelectLeaders - Register,HTTP,HTTP - 200,HTTPS on 209.81.72.83 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+
+
+Logicops:
+
+
+Notes:
+Health Checks are looking for string "Start of Footer" in page:
+http://209.81.72.83
+
+and "United States" in page
+http://209.81.72.83/employer/register
+
+
+Here are the steps to take if scans fail:
+
+Business Hours
+Contact:
+Kossoy, Steven
+skossoy@selectleaders.com
+646.495.3161
+
+If you don't reach Pete via phone, please begin service restart process (below)
+
+Off-hours
+On failure: 
+Contact: 
+Kossoy, Steven
+skossoy@selectleaders.com
+646.495.3161 w/ notification 
+
+Restart services as follows:
+1.) Login as root
+2.) service httpd stop
+3.) service tomcat stop
+4.) service tomcat start
+5.) service httpd start
+ 
+
+ 
+NOTE: the start and stop commands for tomcat do not always work quickly.
+If the scan fails, we need the operator to try to stop tomcat and check if the process is still running with the command: ps aux|grep java.
+The operator may have to forcibly kill the java process (kill -9) and then restart.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:35:24 PM by Whatsup Gold in Equinix
+

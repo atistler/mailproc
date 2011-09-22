@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1bEq7023588
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:37:14 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1bENt023582
+	for logicops; Thu, 18 Aug 2011 21:37:14 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1bETL023569
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 21:37:14 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:37:13 -0400
+Received: from lw-dpm2 ([10.48.15.151]) by lw-mon-eq.ad.logicworks.net with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 21:37:13 -0400
+MIME-Version: 1.0
+From: <lw-dpm2@us.logicworks.net>
+To: <lw-windows@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 21:37:13 -0400
+Subject: DPM: Resolved critical alert: LW-DPM2.
+Content-Type: text/plain; charset="us-ascii"
+Message-ID: <LW-MON-EQdIBirXXeQM00007b06@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 01:37:13.0741 (UTC) FILETIME=[85657BD0:01CC5E10]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7J1bETL023569
+
+The following alert became inactive at 8/18/2011 9:37:13 PM.
+
+Status: Inactive
+Data source type: 
+Data source: System Protection 
+Computer: ir-dc1v.ir.local
+Description: Last 1 recovery points not created. 
+DPM failed to communicate with ir-dc1v.ir.local because of a communication error with the protection agent. 
+
+For more information, open DPM Administrator Console and review the alert details in the Monitoring task area.
+
+

@@ -1,0 +1,71 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J422rG001353
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:02:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J422BT001347
+	for logicops; Fri, 19 Aug 2011 00:02:02 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J422Oo001337
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:02:02 -0400
+Resent-Date: Fri, 19 Aug 2011 00:02:02 -0400
+Resent-Message-Id: <201108190402.p7J422Oo001337@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from db1.annarbor.com (209.81.87.70) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:02:01 -0400
+Received: by db1.annarbor.com (Postfix, from userid 0)	id 9BE9F10781EB; Fri,
+ 19 Aug 2011 00:02:01 -0400 (EDT)
+To: <lw-linux@ext.logicworks.net>
+Subject: New MySQL errors on db1 
+Message-ID: <20110819040201.9BE9F10781EB@db1.annarbor.com>
+Date: Fri, 19 Aug 2011 00:02:01 -0400
+From: root <root@annarbor.com>
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+New log error messages:
+
+110819  0:00:01 [Note] Slave I/O thread killed while reading event
+110819  0:00:01 [Note] Slave I/O thread exiting, read up to log 'mysql-bin.000745', position 290393116
+110819  0:00:01 [Note] Error reading relay log event: slave SQL thread was killed
+
+ Full process list: 
+*************************** 1. row ***************************
+     Id: 7
+   User: lwdbamonyog
+   Host: 10.240.130.31:57738
+     db: NULL
+Command: Sleep
+   Time: 11
+  State: 
+   Info: NULL
+*************************** 2. row ***************************
+     Id: 8221
+   User: replicant
+   Host: 10.64.95.71:54075
+     db: NULL
+Command: Binlog Dump
+   Time: 112258
+  State: Has sent all binlog to slave; waiting for binlog to be updated
+   Info: NULL
+*************************** 3. row ***************************
+     Id: 11626
+   User: lwdba
+   Host: 127.0.0.1:38153
+     db: stgmt1
+Command: Query
+   Time: 0
+  State: Sending data
+   Info: SELECT /*!40001 SQL_NO_CACHE */ * FROM `mt_asset`
+*************************** 4. row ***************************
+     Id: 11628
+   User: lwdba
+   Host: 127.0.0.1:38155
+     db: NULL
+Command: Query
+   Time: 0
+  State: NULL
+   Info: show processlist
+

@@ -1,0 +1,49 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIVxfN019538
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:31:59 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIVxYo019537
+	for logicops; Thu, 18 Aug 2011 14:31:59 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIVwf9019507;
+	Thu, 18 Aug 2011 14:31:58 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:31:57 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 14:31:57 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:31:57 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: WEALTH-DBSTANDBY Windows 2003 Server - Disk Queue Length - 3+ NOT OK at 02:31:55 PM
+Message-ID: <LW-MON-EQ4jGiTAu77Z000079c6@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 18:31:57.0657 (UTC) FILETIME=[1CA00C90:01CC5DD5]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+WEALTH-DBSTANDBY (10.4.15.24) Windows 2003 Server:
+
+Disk Queue Length - 3+ NOT OK for at least 20 minutes.
+
+Details:
+
+Monitors that are NOT OK include:
+Disk Queue Length - 3+
+
+Monitors that are OK include:
+CPU Utilization - 95%,Ping - Private,Ping - Public,Disk Utilization - 95%,Disk Utilization - 99%,Disk Utilization - 90%
+
+Notes:
+Email/call Tom Galdos for any issues
+
+Details:
+Disk Queue Length - 3+=[6]
+
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:31:55 PM by Whatsup Gold in Equinix
+

@@ -1,0 +1,47 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTxZ2025418
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:29:59 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJTxXs025417
+	for logicops; Thu, 18 Aug 2011 15:29:59 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTxNC025401
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:29:59 -0400
+Resent-Date: Thu, 18 Aug 2011 15:29:59 -0400
+Resent-Message-Id: <201108181929.p7IJTxNC025401@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 15:29:58 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTxpU030014	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 15:29:59 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IJTxUZ030012;	Thu, 18 Aug 2011 15:29:59 -0400
+Date: Thu, 18 Aug 2011 15:29:59 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108181929.p7IJTxUZ030012@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: serverirons router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/lana-si1.client.logicworks.net
+===================================================================
+retrieving revision 1.73
+diff -U4 -r1.73 lana-si1.client.logicworks.net
+@@ -18,9 +18,9 @@
+  !
+  ! power supply 1 failed
+  ! power supply 2 ok
+  ! fan 1 ok
+- ! fan 2 ok
++ ! fan 2 bad
+  !
+  !Module: Invalid input -> module
+  !Module: Type ? for a list
+  !
+

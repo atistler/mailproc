@@ -1,0 +1,83 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKXNrG032349
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:33:23 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKXN92032348
+	for logicops; Thu, 18 Aug 2011 16:33:23 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKWr81032232;
+	Thu, 18 Aug 2011 16:32:56 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 16:32:53 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 16:32:53 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 16:32:53 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: bravotv-web5 RHEL 5 is UP at 04:27:38 PM.
+Message-ID: <LW-MON-EQxQFM83UV8w00007a77@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 20:32:53.0639 (UTC) FILETIME=[01870970:01CC5DE6]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+bravotv-web5 RHEL 5 on 10.64.74.15 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+For any issues that need to be escalated to the client please contact:
+
+1) Digital Platform Support Team
+email: dpsi@nbcuni.com (this goes to Aris, Sam, Rahsaan & other members of their team; if you can't add this distro, just skip and start with Aris)
+phone: 201-735-3838
+
+2) Aris Cruz
+aris.cruz@nbcuni.com
+phone: 201-735-4636
+mobile: 201-213-4320
+
+3) Sam Magee
+samuel.magee@nbcuni.com
+phone: 201-735-3450
+mobile: 201-341-6909
+
+4) Rahsaan Page
+rahsaan.page@nbcuni.com
+phone: 201-735-3474
+mobile: 201-388-9452
+
+5) Matthew Witherow
+Matthew.Witherow@nbcuni.com
+Office: 212.664.2576
+Cell: 917.273.2974
+
+
+6) Nelson Tai
+Nelson.Tai@nbcuni.com
+Office: 212-413-5877
+Cell: 773-491-8889
+
+
+7)Stephen McMillen
+Stephen.McMillen@nbcuni.com
+
+8) Jonathan Keilson
+Jonathan.Keilson@nbcuni.com
+Office: 212-664-5269
+Cell: 646-460-0268
+
+
+9) Zeb Holt
+Email: zeb.holt@nbcuni.com
+phone: 347-573-1720
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 04:27:38 PM by Whatsup Gold in Equinix
+

@@ -1,0 +1,40 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKrcgu002072
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:53:38 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKrcl5002070
+	for logicops; Thu, 18 Aug 2011 16:53:38 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKrcL2002059
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:53:38 -0400
+Resent-Date: Thu, 18 Aug 2011 16:53:38 -0400
+Resent-Message-Id: <201108182053.p7IKrcL2002059@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from noveda-lb1v (209.81.92.188) by LW-HUBCAS1V (206.252.153.175)
+ with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 16:53:37
+ -0400
+Received: from noveda-lb1v (localhost.localdomain [127.0.0.1])	by noveda-lb1v
+ (8.13.8/8.13.8) with SMTP id p7IKrbtv019868	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 16:53:37 -0400
+Message-ID: <201108182053.p7IKrbtv019868@noveda-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <alerts@noveda.com>
+Date: Thu, 18 Aug 2011 16:53:37 -0400
+Subject: Zeus: Test settings for action 'E-Mail' (requested by user noveda)
+X-ZXTM-Notify: noveda-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from noveda-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 16:49:15: INFO  Action 'E-Mail'
+                    Test settings for action 'E-Mail' (requested by user
+                    noveda)
+----------------------------------------------------------------------------
+
+
+

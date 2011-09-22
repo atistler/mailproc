@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1p77S024566
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:51:07 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1p7vK024565
+	for logicops; Thu, 18 Aug 2011 21:51:07 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1p6Hs024550;
+	Thu, 18 Aug 2011 21:51:06 -0400
+Received: from lw-mon-db3.localdomain (209.73.63.45) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:51:03 -0400
+Received: from localhost.localdomain (lw-mon-db3 [127.0.0.1])	by
+ lw-mon-db3.localdomain (Postfix) with ESMTP id AB62415803C	for
+ <lw-monitoring@ext.logicworks.net>; Fri, 19 Aug 2011 01:51:03 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: Escalated NOTICE Event on converseon-db2: /backups: File system usage
+	exceeded major threshold: Limit: 85%, Actual: 85.17%
+From: EM7 Event Notifier <EM7@ext.logicworks.net>
+To: "lw-monitoring@ext.logicworks.net" <lw-monitoring@ext.logicworks.net>
+CC: 
+X-Priority: 3
+Date: Fri, 19 Aug 2011 01:51:03 +0000
+Message-ID: <20110819015103.AB62415803C@lw-mon-db3.localdomain>
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Severity: NOTICE
+First Occurred: 2011-08-19 01:20:07 None
+Last Occurred: 2011-08-19 01:45:10 None
+Occurrences: 6
+Source: Internal
+Organization: Converseon
+Device: converseon-db2
+
+Message: /backups: File system usage exceeded major threshold: Limit: 85%, Actual: 85.17%
+
+Sent by Automation Action: Logicworks Escalation Email *DONT DELETE*
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=events&q_type=aid&q_arg=223290&q_sev=1&q_sort=0&q_oper=0
+

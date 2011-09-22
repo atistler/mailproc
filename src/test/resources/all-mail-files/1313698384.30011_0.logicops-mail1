@@ -1,0 +1,93 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKD4Su030009
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:13:04 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKD4ph030008
+	for logicops; Thu, 18 Aug 2011 16:13:04 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKD3WV030001
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:13:03 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 16:13:03 -0400
+From: Alexander Ospina <aospina@logicworks.net>
+To: Arnaldo Hernandez <arnaldo.hernandez@harmonixmusic.com>
+CC: lw-support <lw-support@logicworks.net>
+Subject: RE: zuess settings (SR 3-967761)
+Thread-Topic: zuess settings (SR 3-967761)
+Thread-Index: AQHMXcmFVIlFHwk460iR/Qc5UcZmC5UjKVuA///fS5A=
+Date: Thu, 18 Aug 2011 20:13:02 +0000
+Message-ID: <8A6BD2659673894E93737B25DFA21A7B3D34352D@lw-mbx2.us.logicworks.net>
+References: <20d1511d1945b714596fa42ceeef0d5f@logicops.logicworks.net>
+ <99D6C8DC52B0004BAD445D1324984BD1028E17F3@otto.harmonixmusic.com>
+In-Reply-To: <99D6C8DC52B0004BAD445D1324984BD1028E17F3@otto.harmonixmusic.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IKD3WV030001
+
+Arnaldo -
+
+Here's where we stand with the performance issue for vip02.
+
+We took a look at the loadbalancer specs and don't believe the issue stems from that area.  The LB has about 4GB of memory and no resource constraints affecting performance.  Also, the amount of traffic being pushed out seems normal.
+
+What's been done is the following:  We've moved vip2 to the secondary load balancer in order to split and segregate the traffic a little bit.  We will be keeping a close eye on this but we'd also like you to let us know of any performance issues that any of the visitors to your site experience.
+
+We will let you know of any issues we discover, please do the same.
+
+Regards,
+Logicworks NRT
+
+-----Original Message-----
+From: Arnaldo Hernandez [mailto:arnaldo.hernandez@harmonixmusic.com] 
+Sent: Thursday, August 18, 2011 2:02 PM
+To: lw-support
+Subject: RE: zuess settings (SR 3-967761)
+
+The attachment is missing. ;)
+
+-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net]
+Sent: Thursday, August 18, 2011 1:09 PM
+To: Tim Currie; Arnaldo Hernandez
+Cc: Logicworks Support
+Subject: zuess settings (SR 3-967761)
+
+Hey Arnie.
+
+I've attached the error log containing the most recent errors to this ticket.  Feel free to take a look at your convenience.  As stated in our phone conversation, the last error that I see on the load balancer occurred around 9:20 PM on August 16th.  vip02 suffered a 4 second failure and came back up promptly and has since been error-free.
+
+I will bring this up with a senior engineer and determine if there's anything we can do to tweak the settings of the load balancer in order to provide a better environment.
+
+I will get back to you as soon as we determine what can be done.
+
+Regards,
+Logicworks NRT
+
+------------------------------------------------------------------------
+-------------------------------------
+
+Modifications:
+------------------------------------------------------------------------
+-------------------------------------
+
+Changes made to: SR 3-967761
+    Updated due date: 2011-08-18 17:00 -> 2011-08-18 17:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit:
+https://logicops.logicworks.net/AddCustomerFeedback/967761/Page
+
+
+

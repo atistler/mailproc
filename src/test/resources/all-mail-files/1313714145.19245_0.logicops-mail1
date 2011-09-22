@@ -1,0 +1,62 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0ZjCW019243
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:35:45 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J0Zj6f019242
+	for logicops; Thu, 18 Aug 2011 20:35:45 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0Zi5W019237
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 20:35:44 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 20:35:43 -0400
+From: Nicholas Ennis <nennis@logicworks.net>
+To: lw-noc <lw-noc@logicworks.net>
+Subject: RE: velti-app15 RHEL 5 - SSH is DOWN at 08:28:11 PM.
+Thread-Topic: velti-app15 RHEL 5 - SSH is DOWN at 08:28:11 PM.
+Thread-Index: AQHMXgeUERZC9cV6aE6wq95nw8GlrJUjU8Ag
+Date: Fri, 19 Aug 2011 00:35:42 +0000
+Message-ID: <B3959E42181EA149A27EB12CF6D8A8E73D1F0E8C@lw-mbx2.us.logicworks.net>
+References: <LW-MON-EQMiOpQljyYP00007aee@lw-mon-eq.ad.logicworks.net>
+In-Reply-To: <LW-MON-EQMiOpQljyYP00007aee@lw-mon-eq.ad.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7J0Zi5W019237
+
+I can SSH 
+
+
+-----Original Message-----
+From: lw-alert-server@ext.logicworks.net [mailto:lw-alert-server@ext.logicworks.net] 
+Sent: Thursday, August 18, 2011 8:33 PM
+To: lw-monitoring
+Subject: velti-app15 RHEL 5 - SSH is DOWN at 08:28:11 PM.
+
+velti-app15 (10.64.102.215) RHEL 5: 
+
+SSH on 10.64.102.215 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+Root  (configure /etc/snmp/snmp.local.conf)
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 08:28:10 PM by Whatsup Gold in Equinix
+
+

@@ -1,0 +1,94 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ3hsS022008
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:03:43 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJ3haQ022007
+	for logicops; Thu, 18 Aug 2011 15:03:43 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ3gLv022003
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:03:42 -0400
+Received: from logicops.logicworks.net (206.252.153.173) by
+ relay.ext.logicworks.net (206.252.153.186) with Microsoft SMTP Server id
+ 14.1.270.1; Thu, 18 Aug 2011 15:03:42 -0400
+Date: Thu, 18 Aug 2011 15:03:41 -0400
+To: "Hamdy, Kareem" <khamdy@amilink.com>
+From: Logicworks NOC <logicops@logicworks.net>
+CC: Logicworks Support <lw-support@logicworks.net>
+Reply-To: Logicworks NOC <support@logicworks.net>
+Subject: Error when adding a VIP in Zeus (SR 3-967778)
+Message-ID: <b15f3f1958fcb04fb5c7a3a21ad46a7e@logicops.logicworks.net>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.2 (phpmailer.codeworxtech.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Kareem,
+
+The user, radar does not have permission to add a new traffic ip group on the load balancer.  This has to be done by us.  If you need a new vip, please let us know, we will allocate this for you. 
+
+Regards,
+
+Logicworks NOC
+
+-------------------------------------------------------------------------------------------------------------
+
+Modifications:
+-------------------------------------------------------------------------------------------------------------
+
+Changes made to: SR 3-967778
+    Updated area: Dedicated Server -> Account Administration
+
+Basic Info:     SR 3-967778
+-------------------------------------------------------------------------------------------------------------
+
+Abstract: Error when adding a VIP in Zeus
+Status: Open
+Date Due: 2011-08-18 17:00
+Assigned To: Unassigned SRs ()
+Created By: Hamdy, Kareem (2011-08-18 13:45:37)
+- Area: Dedicated Server
++ Area: Account Administration
+Accounts: American Media Inc
+Contacts: Hamdy, Kareem
+Services: 
+
+Notes
+-------------------------------------------------------------------------------------------------------------
+Note added by Hamdy, Kareem on 2011-08-18 13:45:37
+
+    
+    
+    Hello:
+    
+    	I'm trying to get a VIP up and running, and I keep receiving 500 errors.
+    
+    Is this something that you have seen before?
+    
+    Thanks,
+    Kareem Hamdy
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/967778/Page
+
+

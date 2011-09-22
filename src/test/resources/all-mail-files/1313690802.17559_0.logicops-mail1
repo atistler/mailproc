@@ -1,0 +1,181 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II6f1J017552
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:06:41 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7II6fd7017551
+	for logicops; Thu, 18 Aug 2011 14:06:41 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II6fsO017545
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:06:41 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 14:06:40 -0400
+From: Alexander Ospina <aospina@logicworks.net>
+To: Arnaldo Hernandez <arnaldo.hernandez@harmonixmusic.com>
+CC: lw-support <lw-support@logicworks.net>
+Subject: RE: zuess settings (SR 3-967761)
+Thread-Topic: zuess settings (SR 3-967761)
+Thread-Index: AQHMXcmFVIlFHwk460iR/Qc5UcZmC5UjKVuA//+9wEA=
+Date: Thu, 18 Aug 2011 18:06:39 +0000
+Message-ID: <8A6BD2659673894E93737B25DFA21A7B3D34104B@lw-mbx2.us.logicworks.net>
+References: <20d1511d1945b714596fa42ceeef0d5f@logicops.logicworks.net>
+ <99D6C8DC52B0004BAD445D1324984BD1028E17F3@otto.harmonixmusic.com>
+In-Reply-To: <99D6C8DC52B0004BAD445D1324984BD1028E17F3@otto.harmonixmusic.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/mixed;
+	boundary="_002_8A6BD2659673894E93737B25DFA21A7B3D34104Blwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_002_8A6BD2659673894E93737B25DFA21A7B3D34104Blwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Weird.  I see it on my end.  May be something with our ticket interface.
+
+Anyway, I've attached it to this email. =20
+
+Regards,
+Logicworks NRT
+
+-----Original Message-----
+From: Arnaldo Hernandez [mailto:arnaldo.hernandez@harmonixmusic.com]=20
+Sent: Thursday, August 18, 2011 2:02 PM
+To: lw-support
+Subject: RE: zuess settings (SR 3-967761)
+
+The attachment is missing. ;)
+
+-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net]
+Sent: Thursday, August 18, 2011 1:09 PM
+To: Tim Currie; Arnaldo Hernandez
+Cc: Logicworks Support
+Subject: zuess settings (SR 3-967761)
+
+Hey Arnie.
+
+I've attached the error log containing the most recent errors to this ticke=
+t.  Feel free to take a look at your convenience.  As stated in our phone c=
+onversation, the last error that I see on the load balancer occurred around=
+ 9:20 PM on August 16th.  vip02 suffered a 4 second failure and came back u=
+p promptly and has since been error-free.
+
+I will bring this up with a senior engineer and determine if there's anythi=
+ng we can do to tweak the settings of the load balancer in order to provide=
+ a better environment.
+
+I will get back to you as soon as we determine what can be done.
+
+Regards,
+Logicworks NRT
+
+------------------------------------------------------------------------
+-------------------------------------
+
+Modifications:
+------------------------------------------------------------------------
+-------------------------------------
+
+Changes made to: SR 3-967761
+    Updated due date: 2011-08-18 17:00 -> 2011-08-18 17:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear =
+from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit:
+https://logicops.logicworks.net/AddCustomerFeedback/967761/Page
+
+
+
+--_002_8A6BD2659673894E93737B25DFA21A7B3D34104Blwmbx2uslogicwo_
+Content-Type: text/plain; name="Harmonix LoadBalancer Error log.txt"
+Content-Description: Harmonix LoadBalancer Error log.txt
+Content-Disposition: attachment;
+	filename="Harmonix LoadBalancer Error log.txt"; size=4077;
+	creation-date="Thu, 18 Aug 2011 18:05:48 GMT";
+	modification-date="Thu, 18 Aug 2011 17:09:12 GMT"
+Content-Transfer-Encoding: base64
+
+WzExL0F1Zy8yMDExOjExOjE3OjEwIC0wNDAwXSAgICBJTkZPICAgIGZhdWx0dG9sZXJhbmNlLzIw
+OS44MS44OS4yNDUgICAgZmxpcHBlcnJhaXNlbG9jYWx3b3JraW5nICAgICAgICBSYWlzaW5nIFRy
+YWZmaWMgSVAgQWRkcmVzczsgbG9jYWwgbWFjaGluZSBpcyB3b3JraW5nOyB0aGlzIG1hY2hpbmUg
+aGFzIHN0YXJ0ZWQgcmVzcG9uZGluZy4NClsxMS9BdWcvMjAxMToxMToxNzoxMCAtMDQwMF0gICAg
+SU5GTyAgICBmYXVsdHRvbGVyYW5jZS8yMDkuODEuODkuMjQ0ICAgIGZsaXBwZXJyYWlzZWxvY2Fs
+d29ya2luZyAgICAgICAgUmFpc2luZyBUcmFmZmljIElQIEFkZHJlc3M7IGxvY2FsIG1hY2hpbmUg
+aXMgd29ya2luZzsgdGhpcyBtYWNoaW5lIGhhcyBzdGFydGVkIHJlc3BvbmRpbmcuDQpbMTEvQXVn
+LzIwMTE6MTE6MTc6MTAgLTA0MDBdICAgIElORk8gICAgZmF1bHR0b2xlcmFuY2UvMTAuNjQuMTIw
+LjI0NiAgICBmbGlwcGVycmFpc2Vsb2NhbHdvcmtpbmcgICAgICAgIFJhaXNpbmcgVHJhZmZpYyBJ
+UCBBZGRyZXNzOyBsb2NhbCBtYWNoaW5lIGlzIHdvcmtpbmc7IHRoaXMgbWFjaGluZSBoYXMgc3Rh
+cnRlZCByZXNwb25kaW5nLg0KWzExL0F1Zy8yMDExOjIwOjA0OjM4IC0wNDAwXSAgICBJTkZPICAg
+IHN0YXRkbG9nZGVsICAgICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxMy5sb2cNClsx
+MS9BdWcvMjAxMToyMDowNDozOCAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVs
+ZXRpbmcgc3RhdGQgbG9nIGZpbGUgMjAxMTA1MTQubG9nDQpbMTEvQXVnLzIwMTE6MjA6MDQ6Mzgg
+LTA0MDBdICAgIElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxl
+IDIwMTEwNTE0LmxvZw0KWzEyL0F1Zy8yMDExOjIwOjA0OjM4IC0wNDAwXSAgICBJTkZPICAgIHN0
+YXRkbG9nZGVsICAgICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxNS5sb2cNClsxMi9B
+dWcvMjAxMToyMDowNDozOCAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRp
+bmcgc3RhdGQgbG9nIGZpbGUgMjAxMTA1MTQubG9nDQpbMTIvQXVnLzIwMTE6MjA6MDQ6MzggLTA0
+MDBdICAgIElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIw
+MTEwNTE1LmxvZw0KWzEzL0F1Zy8yMDExOjIwOjA0OjM5IC0wNDAwXSAgICBJTkZPICAgIHN0YXRk
+bG9nZGVsICAgICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxNi5sb2cNClsxMy9BdWcv
+MjAxMToyMDowNDozOSAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRpbmcg
+c3RhdGQgbG9nIGZpbGUgMjAxMTA1MTUubG9nDQpbMTMvQXVnLzIwMTE6MjA6MDQ6MzkgLTA0MDBd
+ICAgIElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEw
+NTE2LmxvZw0KWzE0L0F1Zy8yMDExOjIwOjA0OjM5IC0wNDAwXSAgICBJTkZPICAgIHN0YXRkbG9n
+ZGVsICAgICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxNy5sb2cNClsxNC9BdWcvMjAx
+MToyMDowNDozOSAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRpbmcgc3Rh
+dGQgbG9nIGZpbGUgMjAxMTA1MTYubG9nDQpbMTQvQXVnLzIwMTE6MjA6MDQ6MzkgLTA0MDBdICAg
+IElORk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE3
+LmxvZw0KWzE1L0F1Zy8yMDExOjIwOjA0OjQyIC0wNDAwXSAgICBJTkZPICAgIHN0YXRkbG9nZGVs
+ICAgICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxOC5sb2cNClsxNS9BdWcvMjAxMToy
+MDowNDo0MiAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRpbmcgc3RhdGQg
+bG9nIGZpbGUgMjAxMTA1MTcubG9nDQpbMTUvQXVnLzIwMTE6MjA6MDQ6NDIgLTA0MDBdICAgIElO
+Rk8gICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE4Lmxv
+Zw0KWzE2L0F1Zy8yMDExOjIwOjA0OjQzIC0wNDAwXSAgICBJTkZPICAgIHN0YXRkbG9nZGVsICAg
+ICBEZWxldGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUxOC5sb2cNClsxNi9BdWcvMjAxMToyMDow
+NDo0MyAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRpbmcgc3RhdGQgbG9n
+IGZpbGUgMjAxMTA1MTkubG9nDQpbMTYvQXVnLzIwMTE6MjA6MDQ6NDMgLTA0MDBdICAgIElORk8g
+ICAgc3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTE5LmxvZw0K
+WzE2L0F1Zy8yMDExOjIxOjE5OjQ1IC0wNDAwXSAgICBTRVJJT1VTIHBvb2xzL3ZpcDAxIHBvcnQg
+OTAwMyBQcml2IERleHRlciAgICAgICBub2Rlcy8xMC42NC4xMjAuMTk5OjkwMDMgICAgICAgIG5v
+ZGVmYWlsICAgICAgICBOb2RlIDEwLjY0LjEyMC4xOTkgaGFzIGZhaWxlZCAtIFRpbWVvdXQgd2hp
+bGUgZXN0YWJsaXNoaW5nIGNvbm5lY3Rpb24gKHRoZSBtYWNoaW5lIG1heSBiZSBkb3duLCBvciB0
+aGUgbmV0d29yayBjb25nZXN0ZWQ7IGluY3JlYXNpbmcgdGhlICdtYXhfY29ubmVjdF90aW1lJyBv
+biB0aGUgcG9vbCdzICdDb25uZWN0aW9uIE1hbmFnZW1lbnQnIHBhZ2UgbWF5IGhlbHApDQpbMTYv
+QXVnLzIwMTE6MjE6MTk6NTIgLTA0MDBdICAgIFNFUklPVVMgcG9vbHMvdmlwMDIgcG9ydCA4ODg4
+IFByaXYgTWV0YVN0b3JlICAgIG5vZGVzLzEwLjY0LjEyMC4yMzQ6ODg4OCAgICAgICAgbm9kZWZh
+aWwgICAgICAgIE5vZGUgMTAuNjQuMTIwLjIzNCBoYXMgZmFpbGVkIC0gVGltZW91dCB3aGlsZSBl
+c3RhYmxpc2hpbmcgY29ubmVjdGlvbiAodGhlIG1hY2hpbmUgbWF5IGJlIGRvd24sIG9yIHRoZSBu
+ZXR3b3JrIGNvbmdlc3RlZDsgaW5jcmVhc2luZyB0aGUgJ21heF9jb25uZWN0X3RpbWUnIG9uIHRo
+ZSBwb29sJ3MgJ0Nvbm5lY3Rpb24gTWFuYWdlbWVudCcgcGFnZSBtYXkgaGVscCkNClsxNi9BdWcv
+MjAxMToyMToxOTo1NiAtMDQwMF0gICAgSU5GTyAgICBwb29scy92aXAwMSBwb3J0IDkwMDMgUHJp
+diBEZXh0ZXIgICAgICAgbm9kZXMvMTAuNjQuMTIwLjE5OTo5MDAzICAgICAgICBub2Rld29ya2lu
+ZyAgICAgTm9kZSAxMC42NC4xMjAuMTk5IGlzIHdvcmtpbmcgYWdhaW4NClsxNi9BdWcvMjAxMToy
+MToxOTo1NiAtMDQwMF0gICAgSU5GTyAgICBwb29scy92aXAwMiBwb3J0IDg4ODggUHJpdiBNZXRh
+U3RvcmUgICAgbm9kZXMvMTAuNjQuMTIwLjIzNDo4ODg4ICAgICAgICBub2Rld29ya2luZyAgICAg
+Tm9kZSAxMC42NC4xMjAuMjM0IGlzIHdvcmtpbmcgYWdhaW4NClsxNy9BdWcvMjAxMToyMDowNDo0
+NCAtMDQwMF0gICAgSU5GTyAgICBzdGF0ZGxvZ2RlbCAgICAgRGVsZXRpbmcgc3RhdGQgbG9nIGZp
+bGUgMjAxMTA1MTkubG9nDQpbMTcvQXVnLzIwMTE6MjA6MDQ6NDQgLTA0MDBdICAgIElORk8gICAg
+c3RhdGRsb2dkZWwgICAgIERlbGV0aW5nIHN0YXRkIGxvZyBmaWxlIDIwMTEwNTIwLmxvZw0KWzE3
+L0F1Zy8yMDExOjIwOjA0OjQ0IC0wNDAwXSAgICBJTkZPICAgIHN0YXRkbG9nZGVsICAgICBEZWxl
+dGluZyBzdGF0ZCBsb2cgZmlsZSAyMDExMDUyMC5sb2cNClsxOC9BdWcvMjAxMToxMzoxNjo0NSAt
+MDQwMF0gICAgSU5GTyAgICB2c2VydmVycy92aXAwMyBwb3J0IDQ0MyBQdWJsaWMgTWV0YVN0b3Jl
+ICAgICAgICBjb25mbW9kIENvbmZpZ3VyYXRpb24gZmlsZSBtb2RpZmllZA0KWzE4L0F1Zy8yMDEx
+OjEzOjE2OjQ1IC0wNDAwXSAgICBJTkZPICAgIHZzZXJ2ZXJzL3ZpcDAzIHBvcnQgNDQzIFB1Ymxp
+YyBNZXRhU3RvcmUgICAgICAgIHZzcmVjb25mICAgICAgICBWaXJ0dWFsIHNlcnZlciByZWNvbmZp
+Z3VyZWQgb24gcG9ydCA0NDMNClsxOC9BdWcvMjAxMToxMzoxNzowOSAtMDQwMF0gICAgSU5GTyAg
+ICB2c2VydmVycy92aXAwMSBJbnNpZGUgRGV4dGVyICAgIGNvbmZtb2QgQ29uZmlndXJhdGlvbiBm
+aWxlIG1vZGlmaWVkDQpbMTgvQXVnLzIwMTE6MTM6MTc6MDkgLTA0MDBdICAgIElORk8gICAgdnNl
+cnZlcnMvdmlwMDEgSW5zaWRlIERleHRlciAgICB2c3JlY29uZiAgICAgICAgVmlydHVhbCBzZXJ2
+ZXIgcmVjb25maWd1cmVkIG9uIHBvcnQgOTAwMw0K
+
+--_002_8A6BD2659673894E93737B25DFA21A7B3D34104Blwmbx2uslogicwo_--
+

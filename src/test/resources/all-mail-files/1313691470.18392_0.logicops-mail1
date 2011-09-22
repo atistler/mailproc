@@ -1,0 +1,46 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIHoqx018390
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:17:50 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIHoQQ018389
+	for logicops; Thu, 18 Aug 2011 14:17:50 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIHn3J018374;
+	Thu, 18 Aug 2011 14:17:49 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:17:48 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 14:17:47 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:17:47 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: dbranding-mail1 RHEL 5 - Linux System Load - 5 minute average - 30+ is DOWN at 02:14:22 PM.
+Message-ID: <LW-MON-EQiC06IxnqkV000079b3@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 18:17:47.0401 (UTC) FILETIME=[21D54790:01CC5DD3]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+dbranding-mail1 (10.4.6.7) RHEL 5: 
+
+Linux System Load - 5 minute average - 30+ on 10.4.6.7 has been unresponsive for at least 6 minutes.
+
+Details:
+Linux System Load - 5 minute average - 30+=[4.68]
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/index.php?node_id=649527
+
+Notes:
+Added from Discovery on Fri Feb 13 15:51:06 2009
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:14:22 PM by Whatsup Gold in Equinix
+

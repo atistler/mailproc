@@ -1,0 +1,936 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J217oH025425
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:01:07 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J217wl025424
+	for logicops; Thu, 18 Aug 2011 22:01:07 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J216SF025409
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:01:06 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 22:01:05 -0400
+From: Joshua Puusep <jpuusep@logicworks.net>
+To: "'Rob Buck'" <rbuck@wealthmsi.com>, lw-support <lw-support@logicworks.net>
+CC: Alberto Amoros <aamoros@wealthmsi.com>
+Subject: RE: SR 3-967531 DNS through VPN
+Thread-Topic: SR 3-967531 DNS through VPN
+Thread-Index: AcxdRkkEIybifudXT+6AI5LO7lgfbQAX0daQABjJE1AAAlYtIAAAX0Pw
+Date: Fri, 19 Aug 2011 02:01:05 +0000
+Message-ID: <627D2124F47E0947B08DDE82644CDC123D174703@lw-mbx2.us.logicworks.net>
+References: <627D2124F47E0947B08DDE82644CDC123D16BB10@lw-mbx2.us.logicworks.net>
+ <0D6555D03713954CA67E03150778DCBE2B4E578C@MBX17.exg5.exghost.com>
+ <627D2124F47E0947B08DDE82644CDC123D174279@lw-mbx2.us.logicworks.net>
+ <0D6555D03713954CA67E03150778DCBE2B4E5B1E@MBX17.exg5.exghost.com>
+In-Reply-To: <0D6555D03713954CA67E03150778DCBE2B4E5B1E@MBX17.exg5.exghost.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_"
+
+--_000_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Rob,
+
+
+
+I just verified that wealth-ad1 lives in the wealthmsi domain.  At the logi=
+n screen, the domain defaulted to AD, but that is most likely just because =
+the last person who logged in used AD credentials.
+
+
+
+[cid:image001.png@01CC5DF2.5394EF00]
+
+
+
+Regards,
+
+
+
+Joshua Puusep
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444 Option 1
+
+support@logicworks.net
+
+
+
+
+
+-----Original Message-----
+From: Rob Buck [mailto:rbuck@wealthmsi.com]
+Sent: Thursday, August 18, 2011 9:52 PM
+To: Joshua Puusep; lw-support
+Cc: Alberto Amoros
+Subject: RE: SR 3-967531 DNS through VPN
+
+
+
+The specific server I was referring to was wealth-ad1.  2008 servers don't =
+display the domain so difficult to see.
+
+
+
+
+
+Rob Buck
+
+Wealth Management Systems Inc.
+
+Chief Information Officer
+
+Office: 973.241.5884 ext 306
+
+Mobile: 561.801.5481
+
+rbuck@wealthmsi.com<mailto:rbuck@wealthmsi.com>
+
+
+
+Important - Confidential Information & Disclaimer. All email sent to or fro=
+m this address will be retained by the email archiving system of Wealth Man=
+agement Systems Inc. This message is intended only for the use of the indiv=
+idual or entity to which it is addressed, and may contain information that =
+is privileged, confidential, and exempt from disclosure under applicable la=
+w. Any other distribution, copying, or disclosure is strictly prohibited. I=
+f you have received this message in error, please notify us immediately and=
+ delete the message without copying or forwarding it to anyone.
+
+
+
+
+
+-----Original Message-----
+
+From: Joshua Puusep [mailto:jpuusep@logicworks.net]<mailto:[mailto:jpuusep@=
+logicworks.net]>
+
+Sent: Thursday, August 18, 2011 8:45 PM
+
+To: Rob Buck; lw-support
+
+Cc: Alberto Amoros
+
+Subject: RE: SR 3-967531 DNS through VPN
+
+
+
+Hi Rob,
+
+
+
+I think there was a slight misunderstanding.  When I referenced AD I was re=
+ferring to your active directory domain WEALTHMSI.  Please let me know whic=
+h servers you are referring to that are not part of the WEALTHMSI domain an=
+d I will investigate.   Thank you much.
+
+
+
+Regards,
+
+
+
+Joshua Puusep
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444 Option 1
+
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+
+-----Original Message-----
+
+From: Rob Buck [mailto:rbuck@wealthmsi.com]<mailto:[mailto:rbuck@wealthmsi.=
+com]>
+
+Sent: Thursday, August 18, 2011 8:53 AM
+
+To: Joshua Puusep; Dalton Stickney; lw-support
+
+Cc: Alberto Amoros
+
+Subject: RE: SR 3-967531 DNS through VPN
+
+
+
+I was actually going to ask you about the AD.  Why are these servers differ=
+ent than our other servers?  Perhaps this is why we struggle with the new s=
+ervers.  When we log in using RDP the domain appears as AD instead of WEALT=
+HMSI.
+
+
+
+Can you let me know the purpose of this change?  And why we wouldn't keep i=
+t the same as our current setup?
+
+
+
+
+
+-----Original Message-----
+
+From: Joshua Puusep [mailto:jpuusep@logicworks.net]<mailto:[mailto:jpuusep@=
+logicworks.net]>
+
+Sent: Wednesday, August 17, 2011 9:53 PM
+
+To: Rob Buck; Dalton Stickney; lw-support
+
+Cc: Alberto Amoros
+
+Subject: SR 3-967531 DNS through VPN
+
+
+
+Hi Rob,
+
+
+
+When you access the site from your servers, you are using the AD dns since =
+the servers belong to the domain.  In order to make this work over vpn, I b=
+elieve we need add your AD name servers as dns servers for the vpn connecti=
+on.  I'll will look into which settings need to be modified and let you kno=
+w once the changes have been made.
+
+
+
+Regards,
+
+
+
+Joshua Puusep
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444 Option 1
+
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+
+
+
+-----Original Message-----
+
+From: Rob Buck [mailto:rbuck@wealthmsi.com]<mailto:[mailto:rbuck@wealthmsi.=
+com]>
+
+Sent: Wednesday, August 17, 2011 9:23 PM
+
+To: Dalton Stickney; lw-support
+
+Cc: Alberto Amoros
+
+Subject: RE: DNS through VPN
+
+
+
+I cant answer this question.  I just know I try to go to sharepoint.wealthm=
+si.com and cannot get there.  "There" is 10.4.15.59.
+
+
+
+
+
+Rob Buck
+
+Wealth Management Systems Inc.
+
+Chief Information Officer
+
+Office: 973.241.5884 ext 306
+
+Mobile: 561.801.5481
+
+rbuck@wealthmsi.com<mailto:rbuck@wealthmsi.com>
+
+
+
+Important - Confidential Information & Disclaimer. All email sent to or fro=
+m this address will be retained by the email archiving system of Wealth Man=
+agement Systems Inc. This message is intended only for the use of the indiv=
+idual or entity to which it is addressed, and may contain information that =
+is privileged, confidential, and exempt from disclosure under applicable la=
+w. Any other distribution, copying, or disclosure is strictly prohibited. I=
+f you have received this message in error, please notify us immediately and=
+ delete the message without copying or forwarding it to anyone.
+
+
+
+
+
+-----Original Message-----
+
+From: Dalton Stickney [mailto:dstickney@logicworks.net]<mailto:[mailto:dsti=
+ckney@logicworks.net]>
+
+Sent: Wednesday, August 17, 2011 7:25 PM
+
+To: Rob Buck; lw-support
+
+Cc: Alberto Amoros
+
+Subject: RE: DNS through VPN
+
+
+
+
+
+Rob,
+
+
+
+Are you using a local nameserver to resolve that domain in house? I don't s=
+ee it setup in the wealthmsi.com zone we have here.
+
+
+
+Regards,
+
+Dalton
+
+Senior Engineer
+
+Logicworks
+
+________________________________________
+
+From: Rob Buck [rbuck@wealthmsi.com]
+
+Sent: Wednesday, August 17, 2011 6:02 PM
+
+To: lw-support
+
+Cc: Alberto Amoros
+
+Subject: DNS through VPN
+
+
+
+Support,
+
+
+
+We have a site, sharepoint.wealthmsi.com that resolves to 10.4.15.59.  This=
+ works from within the network but does not resolve through VPN.  How does =
+this get fixed?  Please explain solution because we are beginning to use VP=
+N more and more and the need to map drives and perform other functions will=
+ become necessary in the very near future.
+
+
+
+Thanks,
+
+
+
+Rob
+
+
+
+[Description: cid:image001.gif@01CBC220.89696980]
+
+
+
+Rob Buck
+
+Wealth Management Systems Inc.
+
+Chief Information Officer
+
+Office: 973.241.5884 ext 306
+
+Mobile: 561.801.5481
+
+rbuck@wealthmsi.com<mailto:rbuck@wealthmsi.com<mailto:rbuck@wealthmsi.com%3=
+cmailto:rbuck@wealthmsi.com>>
+
+
+
+
+
+Important - Confidential Information & Disclaimer. All email sent to or fro=
+m this address will be retained by the email archiving system of Wealth Man=
+agement Systems Inc. This message is intended only for the use of the indiv=
+idual or entity to which it is addressed, and may contain information that =
+is privileged, confidential, and exempt from disclosure under applicable la=
+w. Any other distribution, copying, or disclosure is strictly prohibited. I=
+f you have received this message in error, please notify us immediately and=
+ delete the message without copying or forwarding it to anyone.
+
+
+
+--_000_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoPlainText">Hi Rob,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I just verified that wealth-ad1 lives in the weal=
+thmsi domain.&nbsp; At the login screen, the domain defaulted to AD, but th=
+at is most likely just because the last person who logged in used AD creden=
+tials.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><img width=3D"418" height=3D"480" id=3D"Picture_x=
+0020_1" src=3D"cid:image001.png@01CC5DF2.5394EF00"><o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Joshua Puusep<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks | NRT Engineer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Phone: 212-625-5444 Option 1<o:p></o:p></p>
+<p class=3D"MsoPlainText">support@logicworks.net<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<br>
+From: Rob Buck [mailto:rbuck@wealthmsi.com] <br>
+Sent: Thursday, August 18, 2011 9:52 PM<br>
+To: Joshua Puusep; lw-support<br>
+Cc: Alberto Amoros<br>
+Subject: RE: SR 3-967531 DNS through VPN</p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">The specific server I was referring to was wealth=
+-ad1.&nbsp; 2008 servers don't display the domain so difficult to see.<o:p>=
+</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Rob Buck<o:p></o:p></p>
+<p class=3D"MsoPlainText">Wealth Management Systems Inc.<o:p></o:p></p>
+<p class=3D"MsoPlainText">Chief Information Officer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Office: 973.241.5884 ext 306<o:p></o:p></p>
+<p class=3D"MsoPlainText">Mobile: 561.801.5481<o:p></o:p></p>
+<p class=3D"MsoPlainText"><a href=3D"mailto:rbuck@wealthmsi.com"><span styl=
+e=3D"color:windowtext;text-decoration:none">rbuck@wealthmsi.com</span></a><=
+o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Important - Confidential Information &amp; Discla=
+imer. All email sent to or from this address will be retained by the email =
+archiving system of Wealth Management Systems Inc. This message is intended=
+ only for the use of the individual or
+ entity to which it is addressed, and may contain information that is privi=
+leged, confidential, and exempt from disclosure under applicable law. Any o=
+ther distribution, copying, or disclosure is strictly prohibited. If you ha=
+ve received this message in error,
+ please notify us immediately and delete the message without copying or for=
+warding it to anyone.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Joshua Puusep <a href=3D"mailto:[mailto:jpu=
+usep@logicworks.net]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:jpuusep@logic=
+works.net]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Thursday, August 18, 2011 8:45 PM<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">To: Rob Buck; lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: RE: SR 3-967531 DNS through VPN<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Hi Rob,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I think there was a slight misunderstanding.&nbsp=
+; When I referenced AD I was referring to your active directory domain WEAL=
+THMSI.&nbsp; Please let me know which servers you are referring to that are=
+ not part of the WEALTHMSI domain and I will
+ investigate.&nbsp;&nbsp; Thank you much.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Joshua Puusep<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks | NRT Engineer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Phone: 212-625-5444 Option 1<o:p></o:p></p>
+<p class=3D"MsoPlainText"><a href=3D"mailto:support@logicworks.net"><span s=
+tyle=3D"color:windowtext;text-decoration:none">support@logicworks.net</span=
+></a><o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Rob Buck <a href=3D"mailto:[mailto:rbuck@we=
+althmsi.com]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:rbuck@wealthm=
+si.com]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Thursday, August 18, 2011 8:53 AM<o:p></o:p=
+></p>
+<p class=3D"MsoPlainText">To: Joshua Puusep; Dalton Stickney; lw-support<o:=
+p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: RE: SR 3-967531 DNS through VPN<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I was actually going to ask you about the AD.&nbs=
+p; Why are these servers different than our other servers?&nbsp; Perhaps th=
+is is why we struggle with the new servers.&nbsp; When we log in using RDP =
+the domain appears as AD instead of WEALTHMSI.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Can you let me know the purpose of this change?&n=
+bsp; And why we wouldn't keep it the same as our current setup?<o:p></o:p><=
+/p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Joshua Puusep <a href=3D"mailto:[mailto:jpu=
+usep@logicworks.net]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:jpuusep@logic=
+works.net]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Wednesday, August 17, 2011 9:53 PM<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">To: Rob Buck; Dalton Stickney; lw-support<o:p></o=
+:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: SR 3-967531 DNS through VPN<o:p></o:p></=
+p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Hi Rob,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">When you access the site from your servers, you a=
+re using the AD dns since the servers belong to the domain.&nbsp; In order =
+to make this work over vpn, I believe we need add your AD name servers as d=
+ns servers for the vpn connection.&nbsp; I'll
+ will look into which settings need to be modified and let you know once th=
+e changes have been made.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Joshua Puusep<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks | NRT Engineer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Phone: 212-625-5444 Option 1<o:p></o:p></p>
+<p class=3D"MsoPlainText"><a href=3D"mailto:support@logicworks.net"><span s=
+tyle=3D"color:windowtext;text-decoration:none">support@logicworks.net</span=
+></a><o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Rob Buck <a href=3D"mailto:[mailto:rbuck@we=
+althmsi.com]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:rbuck@wealthm=
+si.com]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Wednesday, August 17, 2011 9:23 PM<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">To: Dalton Stickney; lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: RE: DNS through VPN<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">I cant answer this question.&nbsp; I just know I =
+try to go to sharepoint.wealthmsi.com and cannot get there.&nbsp; &quot;The=
+re&quot; is 10.4.15.59.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Rob Buck<o:p></o:p></p>
+<p class=3D"MsoPlainText">Wealth Management Systems Inc.<o:p></o:p></p>
+<p class=3D"MsoPlainText">Chief Information Officer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Office: 973.241.5884 ext 306<o:p></o:p></p>
+<p class=3D"MsoPlainText">Mobile: 561.801.5481<o:p></o:p></p>
+<p class=3D"MsoPlainText"><a href=3D"mailto:rbuck@wealthmsi.com"><span styl=
+e=3D"color:windowtext;text-decoration:none">rbuck@wealthmsi.com</span></a><=
+o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Important - Confidential Information &amp; Discla=
+imer. All email sent to or from this address will be retained by the email =
+archiving system of Wealth Management Systems Inc. This message is intended=
+ only for the use of the individual or
+ entity to which it is addressed, and may contain information that is privi=
+leged, confidential, and exempt from disclosure under applicable law. Any o=
+ther distribution, copying, or disclosure is strictly prohibited. If you ha=
+ve received this message in error,
+ please notify us immediately and delete the message without copying or for=
+warding it to anyone.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">-----Original Message-----<o:p></o:p></p>
+<p class=3D"MsoPlainText">From: Dalton Stickney <a href=3D"mailto:[mailto:d=
+stickney@logicworks.net]">
+<span style=3D"color:windowtext;text-decoration:none">[mailto:dstickney@log=
+icworks.net]</span></a>
+<o:p></o:p></p>
+<p class=3D"MsoPlainText">Sent: Wednesday, August 17, 2011 7:25 PM<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">To: Rob Buck; lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: RE: DNS through VPN<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Rob, <o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Are you using a local nameserver to resolve that =
+domain in house? I don't see it setup in the wealthmsi.com zone we have her=
+e.
+<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Regards,<o:p></o:p></p>
+<p class=3D"MsoPlainText">Dalton<o:p></o:p></p>
+<p class=3D"MsoPlainText">Senior Engineer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Logicworks<o:p></o:p></p>
+<p class=3D"MsoPlainText">________________________________________<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">From: Rob Buck [rbuck@wealthmsi.com]<o:p></o:p></=
+p>
+<p class=3D"MsoPlainText">Sent: Wednesday, August 17, 2011 6:02 PM<o:p></o:=
+p></p>
+<p class=3D"MsoPlainText">To: lw-support<o:p></o:p></p>
+<p class=3D"MsoPlainText">Cc: Alberto Amoros<o:p></o:p></p>
+<p class=3D"MsoPlainText">Subject: DNS through VPN<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Support,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">We have a site, sharepoint.wealthmsi.com that res=
+olves to 10.4.15.59.&nbsp; This works from within the network but does not =
+resolve through VPN.&nbsp; How does this get fixed?&nbsp; Please explain so=
+lution because we are beginning to use VPN more and
+ more and the need to map drives and perform other functions will become ne=
+cessary in the very near future.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Thanks,<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Rob<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">[Description: <a href=3D"cid:image001.gif@01CBC22=
+0.89696980">
+<span style=3D"color:windowtext;text-decoration:none">cid:image001.gif@01CB=
+C220.89696980</span></a>]<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Rob Buck<o:p></o:p></p>
+<p class=3D"MsoPlainText">Wealth Management Systems Inc.<o:p></o:p></p>
+<p class=3D"MsoPlainText">Chief Information Officer<o:p></o:p></p>
+<p class=3D"MsoPlainText">Office: 973.241.5884 ext 306<o:p></o:p></p>
+<p class=3D"MsoPlainText">Mobile: 561.801.5481<o:p></o:p></p>
+<p class=3D"MsoPlainText"><a href=3D"mailto:rbuck@wealthmsi.com%3cmailto:rb=
+uck@wealthmsi.com"><span style=3D"color:windowtext;text-decoration:none">rb=
+uck@wealthmsi.com&lt;mailto:rbuck@wealthmsi.com</span></a>&gt;<o:p></o:p></=
+p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">Important - Confidential Information &amp; Discla=
+imer. All email sent to or from this address will be retained by the email =
+archiving system of Wealth Management Systems Inc. This message is intended=
+ only for the use of the individual or
+ entity to which it is addressed, and may contain information that is privi=
+leged, confidential, and exempt from disclosure under applicable law. Any o=
+ther distribution, copying, or disclosure is strictly prohibited. If you ha=
+ve received this message in error,
+ please notify us immediately and delete the message without copying or for=
+warding it to anyone.<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_--
+
+--_004_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_
+Content-Type: image/png; name="image001.png"
+Content-Description: image001.png
+Content-Disposition: inline; filename="image001.png"; size=11746;
+	creation-date="Fri, 19 Aug 2011 02:01:05 GMT";
+	modification-date="Fri, 19 Aug 2011 02:01:05 GMT"
+Content-ID: <image001.png@01CC5DF2.5394EF00>
+Content-Transfer-Encoding: base64
+
+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
+rkJggg==
+
+--_004_627D2124F47E0947B08DDE82644CDC123D174703lwmbx2uslogicwo_--
+

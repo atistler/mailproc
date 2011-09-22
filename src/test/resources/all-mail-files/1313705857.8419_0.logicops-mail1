@@ -1,0 +1,2505 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IMHb10008417
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 18:17:37 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IMHbhW008416
+	for logicops; Thu, 18 Aug 2011 18:17:37 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IMHYvA008412
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 18:17:34 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 18:17:34 -0400
+From: Joanna Rios <jrios@logicworks.net>
+To: lw-nrt <lw-nrt@logicworks.net>, lw-sales <lw-sales@logicworks.net>
+CC: lw-noc <lw-noc@logicworks.net>, lw-logistics <lw-logistics@logicworks.net>
+Subject: BATON NOTES
+Thread-Topic: BATON NOTES
+Thread-Index: Acxd8os2CY9sR7dxQLubApD/nSjaYw==
+Date: Thu, 18 Aug 2011 22:17:33 +0000
+Message-ID: <9510A7897882FC458EB408837CC4FDD73D341781@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/alternative;
+	boundary="_000_9510A7897882FC458EB408837CC4FDD73D341781lwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+
+--_000_9510A7897882FC458EB408837CC4FDD73D341781lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+NOTES
+
+
+
+
+
+
+
+
+
+Client
+
+SR
+
+NOTES
+
+Internal
+
+N/A
+
+Going forward clients must be notified prior to moving them to EM7 starting=
+ tonight; notification template is listed at the bottom of this baton along=
+ with a list of clients for tomorrow (email needs to be sent out tonight fo=
+r tomorrow)
+
+Bravo
+
+N/A
+
+Talkbubble event on Sunday for Real Housewives of New Jersey.
+
+Oxygen
+
+SR 3-967800
+
+Oxygen is expecting traffic peaks @ 8/21/11 for Glee Project finally
+
+Velti
+
+NOTE
+
+Please keep an eye on the new alerts being sent to EM7 to determine if the =
+fw is reaching the conntrack limits. This is super Red flag OMG contact SNO=
+C type issue. We are currently working on getting beefier hardware to suppo=
+rt Velti in Santa Clara.
+
+VELTI
+
+NOTE
+
+Please note the NEWEST Distro list for Velti: Logicworks@velti.com<mailto:L=
+ogicworks@velti.com>
+
+Internal
+
+All Clients
+
+All clients with DR sites now have a radioactive circle near the account na=
+me in LO. This means we should be asking the client if we are to duplicate =
+any and all FW rules they request, on their DR site. We will require additi=
+onal information from the client if so.
+
+Internal
+
+SR 3-963787
+
+Our phone connections keep bouncing. Please call TW for an update tonight. =
+Make sure we call into the queue to make sure it is still up.
+
+NRT
+
+N/A
+
+Please make sure you check POSTINI/Windows Managed Folders regularly...
+
+Internal
+
+
+
+EM7 spreadsheet is now living in sharepoint. Please email me your updates!
+
+ORION
+
+N/A
+
+ORION IS NOW SOLELY LIVE IN EM7. Please make sure all alerts are recognized=
+ as REAL and dangerous.
+
+All Clients
+
+N/A
+
+Watch for critical alerts in EM7 - there are several clients that are live.=
+ Critical alerts are especially important.
+
+Troubleshooting tickets
+
+
+
+
+
+
+
+
+
+Client
+
+SR
+
+Abstract
+
+Assigned to EOD
+
+Last Activity
+
+Status
+
+Escalation
+
+Velti
+
+SR 3-942021
+
+Healthcheck/Monitoring Configuration for MobClix
+
+Buckie
+
+Emailed client
+
+WOC
+
+
+
+Nodal
+
+SR 3-964749
+
+nodalDR-mos02-vm7v: packet loss
+
+Rich
+
+Worked on it and packet loss disappeared vmotioning to esx6.
+
+SNOC
+
+Baska
+
+iVillage
+
+SR 3-966123
+
+Mps.ivillage.com service unavailable
+
+Buckie
+
+Changing session persistence to IP based seems to have helped but the page =
+only loads after a refresh. Before that it displays service unavailable.
+
+Pending
+
+
+
+Velti
+
+SR 3-964002
+
+Create recurring FW report for Velti
+
+Ed
+
+Still pending...
+
+WOL
+
+
+
+Velti
+
+SR 3-965174
+
+problems on LBs on Mobclix
+
+Rich
+
+Ticket opened with zeus
+
+Iamplify
+
+SR 3-964428
+
+Iamplify-app2v: Failing in load balancer
+
+Anthony
+
+Still pending access to servers.
+
+WOC
+
+Velti
+
+SR 3-957694
+
+Velti-dbarray1 firmware update
+
+Alex O
+
+Emailed client
+
+WOC
+
+
+
+ Here Media
+
+SR 3-963383
+
+Bandwidth Stats
+
+Unassigned
+
+--Complete fail in regards to interface data for this client.
+
+WOL
+
+
+
+Auxia
+
+SR 3-963818
+
+Resolve "warning and alerts" for datastores
+
+Kyle
+
+SR created
+
+SNOC
+
+
+
+Auxia
+
+SR 3-964537
+
+Backup of 4 servers
+
+Anthony
+
+Passed to Alex
+
+
+
+
+
+BSDI
+
+SR 3-965691
+
+Temp Open Firewall
+
+RIch
+
+Still Pending client
+
+WOC
+
+
+
+VELTI
+
+SR 3-965661
+
+Questions on lb behaviour prior implementing active active config
+
+Buckie
+
+Dalton provided answers, please reply to client.
+
+WOL
+
+BUILDS
+
+
+
+
+
+
+
+
+
+Client
+
+SR
+
+Abstract
+
+Assigned to EOD
+
+Last Activity
+
+Status
+
+Escalation
+
+4mm
+
+SR 3-959113
+
+*NEW SERVER*  4mm-db1v /lb1v
+
+Buckie
+
+Asked Rolando to provide estimated data size (per drive) so we can know wha=
+t size drive to add
+
+NRT
+
+
+
+CSO
+
+SR 3-963343
+
+*NEW SERVER* CSO-esx3
+
+NOC
+
+In Xiao's queue
+
+WOL
+
+
+
+Nodal
+
+SR 3-964621<https://logicops.logicworks.net/964621/Page>
+
+*NEW VMS*3 new  RTO VMs
+
+John
+
+Needs QC and 1 pub ip
+
+NRT
+
+
+
+HMX VM
+
+SR 3-964643
+
+*NEW UNMANAGED VM* hmx-herb1v
+
+Buckie
+
+Needs QC /domain
+
+NRT
+
+
+
+Annarbor
+
+SR 3-966097
+
+*NEW VIRTUAL* - annarbor-stgdb1v
+
+Anthony
+
+TO'd
+
+NRT
+
+
+
+MAINTENANCES
+
+
+
+
+
+
+
+
+
+Client
+
+SR
+
+Abstract
+
+Assigned to EOD
+
+Last Activity
+
+Status
+
+Escalation
+
+Auxia DR
+
+SR 3-961006
+
+Battery needs replacement.
+
+Dalton
+
+Pending client ok
+
+WOC
+
+
+
+Velti
+
+
+
+*NEW* Upgrades and new array
+
+Ed
+
+Sun 3am
+
+ WOL
+
+
+
+Velti
+
+
+
+*Upgrade* additional RAM on FWs
+
+Ed
+
+Sun 3am
+
+WOL
+
+
+
+Velti
+
+
+
+*Upgrades* New LBs
+
+Dalton/Ed
+
+Sun 3am
+
+WOL
+
+
+
+Hyper
+
+SR 3-962935
+
+Hyper-storage1: Failed Disk
+
+Reschedule for Sat 2am
+
+WOC
+
+AUXIA
+
+Sr 3-961121
+
+*PS* Migrate unmanaged host to managed cluster  --Esx1 moved to cluster and=
+ VMS moved to iscsi volume
+
+Peter
+
+--Mostly completed tonight by peter, will reschedule rest at a later date
+
+WOC
+
+
+
+Auxia DR
+
+ SR 3 - 963818
+
+Storage for CA cluster
+
+Kyle
+
+Tomorrow at 2:30pm
+
+WOL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Infinicloud Maintenance 12:01AM 8/17/11
+
+To our clients:
+
+On August 17, 2011 (Tuesday night into Wednesday morning), Logicworks will =
+be performing maintenance on the public cloud web portal. This maintenance =
+will begin at 12:01 AM on Wednesday and conclude at 2:00 AM. During the win=
+dow we expect the web portal will be unavailable for about 10 minutes in to=
+tal. Virtual machines will be unaffected by this maintenance.
+
+Sincerely,
+
+Logicworks NOC
+
+
+
+
+
+
+All,
+
+Now that we have moved towards a project plan for EM7 with a daily list of =
+clients we're adding, we need to begin notifying these clients that we will=
+ be adding them.
+
+Tonight, the EODs must notify the following clients:
+
+*         Nodal
+
+*         Converseon
+
+*         AMI
+
+*         Wealth
+
+Use the template below.
+
+
+
+Dear [primary contact],
+
+As we've previously notified you, Logicworks is currently preparing a new m=
+onitoring system called EM7 for deployment. Tomorrow (Wednesday, August 17,=
+ 2011) we will be adding your environment to the system. This process is no=
+t service-impacting. While adding your environment to EM7 a discovery scrip=
+t will be scanning your network to attain IP and system information which w=
+e will use to monitor each client.
+
+We will contact you tomorrow once the discovery process is complete your en=
+vironment has been added. If you are running syslog or any third party moni=
+toring tools, you should confirm that those services are up and running onc=
+e the EM7 discovery process is complete.  Please note that until the transi=
+tion is complete Logicworks will continue to utilize our current monitoring=
+ tools. If you have any questions about our new monitoring system EM7 pleas=
+e contact your Account Manager.
+
+We look forward to the completed transition to the EM7 monitoring system. U=
+ntil then, we appreciate your cooperation as we prepare our new monitoring =
+system for launch.
+
+
+Sincerely,
+
+Logicworks NOC
+
+
+
+
+
+--_000_9510A7897882FC458EB408837CC4FDD73D341781lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle27
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle28
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:977689378;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-824270514 67698689 67698691 67698693 67698689 67698=
+691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1137993616;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2107010618 -1215106980 67698691 67698693 67698689 67=
+698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"966" style=3D"width:724.5pt;margin-left:-.4pt;border-collap=
+se:collapse">
+<tbody>
+<tr style=3D"height:21.75pt">
+<td width=3D"470" colspan=3D"4" style=3D"width:352.5pt;border:solid #494529=
+ 1.0pt;border-right:none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+16.0pt;line-height:115%">NOTES<o:p></o:p></span></p>
+</td>
+<td width=3D"90" colspan=3D"2" style=3D"width:67.75pt;border:none;border-to=
+p:solid #494529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height=
+:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"137" style=3D"width:102.8pt;border:none;border-top:solid #4945=
+29 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:none;border-top:solid #49452=
+9 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:solid #494529 1.0pt;bor=
+der-left:none;border-bottom:none;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:solid windowtex=
+t 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Client<o:p></o:p></b></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #494529 1.0pt;border-right:solid windowtext 1.0pt;backgro=
+und:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>SR<o:p></o:p></b></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #494529 1.0pt;border-right:solid #494529 1=
+.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><b>NOTES<o:p></o:p></b></=
+p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Internal<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">N/A<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Going forward clients mus=
+t be notified prior to moving them to EM7 starting tonight; notification te=
+mplate is listed at the bottom of this baton along with a list of clients f=
+or tomorrow (email needs to be sent
+ out tonight for tomorrow)<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Bravo<o:p></o:p></span></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>N/A<o:p></o:p></span></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Talkbubble event on Sunday for Real Housewives of New Jersey.
+<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Oxygen<o:p></o:p></span></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>SR 3-967800<o:p></o:p></span></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Oxygen is expecting traffic peaks @ 8/21/11 for Glee Project finally<o:p><=
+/o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NOTE<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Please keep an eye on the new alerts being sent to EM7 to determine if the=
+ fw is reaching the conntrack limits. This is super Red flag OMG contact SN=
+OC type issue. We are currently working
+ on getting beefier hardware to support Velti in Santa Clara.<o:p></o:p></s=
+pan></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">VELTI<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NOTE<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Please note the NEWEST Distro list for Velti:
+</span><i><span lang=3D"EN-GB" style=3D"font-size:10.0pt;line-height:115%;f=
+ont-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:red"><a href=3D=
+"mailto:Logicworks@velti.com"><span style=3D"color:red;text-decoration:none=
+">Logicworks@velti.com</span></a></span></i><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Internal<o:p></o:p></span></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>All Clients<o:p></o:p></span></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>All clients with DR sites now have a radioactive circle near the account n=
+ame in LO. This means we should be asking the client if we are to duplicate=
+ any and all FW rules they request, on
+ their DR site. We will require additional information from the client if s=
+o.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:31.85pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Internal<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-963787<o:p></o:p></p=
+>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:31.85pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Our phone connections kee=
+p bouncing. Please call TW for an update tonight. Make sure we call into th=
+e queue to make sure it is still up.
+<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NRT<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">N/A<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Please make sure you chec=
+k <span style=3D"color:red">
+POSTINI/Windows Managed Folders </span><span style=3D"color:#1F497D">regula=
+rly&#8230;</span><o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Internal<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">EM7 spreadsheet is now li=
+ving in sharepoint. Please email me your updates!<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">ORION<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">N/A<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">ORION IS NOW SOLELY LIVE =
+IN EM7. Please make sure all alerts are recognized as REAL and dangerous.<o=
+:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">All Clients<o:p></o:p></p=
+>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">N/A<o:p></o:p></p>
+</td>
+<td width=3D"778" colspan=3D"7" style=3D"width:583.5pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Watch for critical alerts=
+ in EM7 - there are several clients that are live. Critical alerts are espe=
+cially important.<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:42.0pt">
+<td width=3D"446" colspan=3D"3" style=3D"width:334.5pt;border-top:none;bord=
+er-left:solid #494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:=
+none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:42.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+16.0pt;line-height:115%">Troubleshooting tickets<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:none;border-bo=
+ttom:solid #494529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:42.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border:none;border-b=
+ottom:solid #494529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;he=
+ight:42.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:none;border-bottom:solid #49=
+4529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:42.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:42.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:solid black 1.0=
+pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Client<o:p></o:p></b></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border:none;border-bottom:solid bla=
+ck 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>SR<o:p></o:p></b></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#D=
+DD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Abstract<o:p></o:p></b></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #494529 1.0pt;border-right:solid windowtext=
+ 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Assigned to EOD<o:p></o:p></b></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #494529 1.0pt;border-right:solid windowtex=
+t 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Last Activity<o:p></o:p></b></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #494529 1.0pt;border-right:solid windowtext 1.0pt;backgro=
+und:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Status<o:p></o:p></b></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Escalation<o:p></o:p></b></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-942021<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Healthcheck/Monitoring Co=
+nfiguration for MobClix<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Buckie<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Emailed client<o:p></o:p>=
+</p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOC<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Nodal<o:p></o:p></span></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">SR 3-964749<o:p></o:p></span></p>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">nodalDR-mos02-vm7v: packet loss<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Rich<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Worked on it and packet loss disappeared vmotioning to esx6.&nbsp;
+<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">SNOC<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Baska<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">iVillage<o:p></o:p></span></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">SR 3-966123<o:p></o:p></span></p>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Mps.ivillage.com service unavailable<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Buckie<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Changing session persistence to IP based seems to have helped but the pa=
+ge only loads after a refresh. Before that it displays service unavailable.
+<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Pending<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-964002<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Create recurring FW repor=
+t for Velti<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Ed<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Still pending&#8230;<o:p>=
+</o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOL<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:16.5pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">Velti<o:p></o:p></s=
+pan></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">SR 3-965174<o:p></o=
+:p></span></p>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:16.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">problems on LBs on =
+Mobclix<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:16.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt">Rich<o:p></o:p></sp=
+an></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:#1F497D">Ticke=
+t opened with zeus</span><span style=3D"font-size:12.0pt">
+<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+</td>
+</tr>
+<tr style=3D"height:16.5pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Iamplify<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-964428<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;border:none;border-bot=
+tom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:16.5pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Iamplify-app2v: Failing i=
+n load balancer<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:16.5pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Anthony<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Still pending access to s=
+ervers. <o:p>
+</o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+<p class=3D"MsoNormal">WOC<span style=3D"font-size:12.0pt"><o:p></o:p></spa=
+n></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:16.5pt">
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti<o:p></o:p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;background:#EEECE1;padd=
+ing:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-957694<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" nowrap=3D"" style=3D"width:193.5pt;background:#EEECE1;pad=
+ding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti-dbarray1 firmware u=
+pdate<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:solid #DDD9C4 =
+1.0pt;border-top:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height=
+:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Alex O <o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Emailed client <o:p></o:p=
+></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOC<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;Here Media<o:p></o:=
+p></p>
+</td>
+<td width=3D"99" nowrap=3D"" style=3D"width:74.25pt;border-top:none;border-=
+left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0p=
+t;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-963383<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border:none;border-bottom:solid #D=
+DD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Bandwidth Stats&nbsp; <o:=
+p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:none;border-bo=
+ttom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Unassigned<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border:none;border-b=
+ottom:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;he=
+ight:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">--Complete fail in regard=
+s to interface data for this client.&nbsp;
+<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:none;border-bottom:solid #DD=
+D9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOL<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Auxia <o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-963818<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Resolve &#8220;warning an=
+d alerts&#8221; for datastores<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Kyle<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR created<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SNOC<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:4.0pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Auxia<o:p></o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>SR 3-964537<o:p></o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Backup of 4 servers<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Anthony<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">Passed to Alex</span><span style=3D"color:red"><o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+><o:p>&nbsp;</o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:4.0pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">BSDI<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-965691<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Temp Open Firewall<o:p></=
+o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">RIch<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Still Pending client</span><o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOC<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">VELTI<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-965661<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Questions on lb behaviour=
+ prior implementing active active config<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">Buckie</span><o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:red"=
+>Dalton provided answers, please reply to client.
+</span><o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">WOL</span><o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+</td>
+</tr>
+<tr style=3D"height:21.75pt">
+<td width=3D"446" colspan=3D"3" style=3D"width:334.5pt;border-top:none;bord=
+er-left:solid #494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:=
+none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+16.0pt;line-height:115%">BUILDS<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;background:#DDD9C4;pa=
+dding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;background:#DDD9C4;p=
+adding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;background:#DDD9C4;padding:0in 5.4p=
+t 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border:none;border-right:solid #49=
+4529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:none;background=
+:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Client<o:p></o:p></b></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border:solid #494529 1.0pt;border-t=
+op:none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>SR<o:p></o:p></b></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Abstract<o:p></o:p></b></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:solid #494=
+529 1.0pt;border-left:none;border-bottom:solid #494529 1.0pt;border-right:s=
+olid windowtext 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height=
+:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Assigned to EOD<o:p></o:p></b></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:solid #49=
+4529 1.0pt;border-left:none;border-bottom:solid #494529 1.0pt;border-right:=
+solid windowtext 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;heigh=
+t:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Last Activity<o:p></o:p></b></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:solid #494529 1.0pt;border-l=
+eft:none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Status<o:p></o:p></b></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border:solid #494529 1.0pt;border-=
+left:none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Escalation<o:p></o:p></b></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">4mm<o:p></o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">SR 3-959113<o:p></o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">*NEW SERVER*&nbsp; 4mm-db1v /lb1v<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Buckie<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:blac=
+k">Asked Rolando to provide estimated data size (per drive) so we can know =
+what size drive to add
+<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NRT<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">CSO <o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-963343<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*<b>NEW SERVER</b>* CSO-e=
+sx3<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NOC<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">In Xiao&#8217;s queue<o:p=
+></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOL<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Nodal<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><a href=3D"https://logico=
+ps.logicworks.net/964621/Page"><span style=3D"color:windowtext">SR 3-964621=
+</span></a><o:p></o:p></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*<b>NEW VMS</b>*3 new &nb=
+sp;RTO VMs<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">John</span><o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+12.0pt;line-height:115%">Needs QC<span style=3D"color:#1F497D"> and 1 pub i=
+p</span><o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NRT<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">HMX VM<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-964643<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*NEW UNMANAGED VM* hmx-he=
+rb1v<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">Buckie</span><o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Needs QC <span style=3D"c=
+olor:#1F497D">
+/domain</span><o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NRT<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Annarbor<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-966097<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*NEW VIRTUAL* - annarbor-=
+stgdb1v<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Anthony<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">TO&#8217;d</span><o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">NRT<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+</tr>
+<tr style=3D"height:21.75pt">
+<td width=3D"446" colspan=3D"3" style=3D"width:334.5pt;border-top:none;bord=
+er-left:solid #494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:=
+none;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+16.0pt;line-height:115%">MAINTENANCES<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:none;border-bo=
+ttom:solid #494529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border:none;border-b=
+ottom:solid #494529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;he=
+ight:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:none;border-bottom:solid #49=
+4529 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:21.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+494529 1.0pt;border-bottom:solid #494529 1.0pt;border-right:solid windowtex=
+t 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Client<o:p></o:p></b></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #494529 1.0pt;border-right:solid windowtext 1.0pt;backgro=
+und:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>SR<o:p></o:p></b></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid windowtext 1.0pt;backgr=
+ound:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Abstract<o:p></o:p></b></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #494529 1.0pt;border-right:solid windowtext=
+ 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Assigned to EOD<o:p></o:p></b></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #494529 1.0pt;border-right:solid windowtex=
+t 1.0pt;background:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Last Activity<o:p></o:p></b></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;background=
+:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Status<o:p></o:p></b></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #494529 1.0pt;border-right:solid #494529 1.0pt;backgroun=
+d:#DDD9C4;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;line-hei=
+ght:115%"><b>Escalation<o:p></o:p></b></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Auxia DR<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">SR 3-961006<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Battery needs replacement=
+. <o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Dalton<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#1F4=
+97D">Pending client ok</span><o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">WOC<o:p></o:p></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+</tr>
+<tr style=3D"height:15.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Velti<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">&nbsp;<o:p></o:p></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*NEW* Upgrades and new ar=
+ray<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Ed<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Sun 3am<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">&nbsp;</span><span style=3D"color:#1F497D">WOL</span><span style=3D"co=
+lor:#C00000"><o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:15.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Velti <o:p>
+</o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000"><o:p>&nbsp;</o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">*<b>Upgrade</b>* additional RAM on FWs<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:#C00000">Ed<o:=
+p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Sun 3am</span><span style=3D"color:#C00000"><o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;color:#C00000">WOL<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;color:#C00000"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Velti <o:p>
+</o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000"><o:p>&nbsp;</o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">*<b>Upgrades</b>* New LBs<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;color:#C00000">Dalto=
+n/Ed<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Sun 3am</span><span style=3D"color:#C00000"><o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;color:#C00000">WOL<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;color:#C00000"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Hyper<o:p></o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">SR 3-962935<o:p></o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Hyper-storage1: Failed Disk<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Reschedule for Sat 2am
+<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;;color:#C00000">WOC<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border:solid #DDD9C4 1.0pt;border-t=
+op:none;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">AUXIA<o:p></o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Sr 3-961121<o:p></o:p></p=
+>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">*PS* Migrate unmanaged ho=
+st to managed cluster&nbsp; --Esx1 moved to cluster and VMS moved to iscsi =
+volume<o:p></o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border-top:none;borde=
+r-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.=
+0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">Peter<o:p></o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border-top:none;bord=
+er-left:none;border-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1=
+.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%">--Mostly completed tonigh=
+t by peter, will reschedule rest at a later date<o:p></o:p></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border-top:none;border-left:none;bo=
+rder-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;">WOC<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border-top:none;border-left:none;b=
+order-bottom:solid #DDD9C4 1.0pt;border-right:solid #DDD9C4 1.0pt;backgroun=
+d:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+DDD9C4 1.0pt;border-bottom:none;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Auxia DR<o:p></o:p></span></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border:none;border-right:solid #DDD=
+9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">&nbsp;SR 3 - 963818<o:p></o:p></span></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border:none;border-right:solid #DD=
+D9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Storage for CA cluster<o:p></o:p></span></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:none;border-ri=
+ght:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Kyle<o:p></o:p></span></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border:none;border-r=
+ight:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"color:#C00=
+000">Tomorrow at 2:30pm<o:p></o:p></span></p>
+</td>
+<td width=3D"83" style=3D"width:62.55pt;border:none;border-right:solid #DDD=
+9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;;color:#C00000">WOL<o:p></o:p></span></p>
+</td>
+<td width=3D"185" style=3D"width:138.9pt;border:none;border-right:solid #DD=
+D9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;;color:#C00000">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:30.75pt">
+<td width=3D"89" style=3D"width:66.75pt;border-top:none;border-left:solid #=
+DDD9C4 1.0pt;border-bottom:none;border-right:solid #DDD9C4 1.0pt;background=
+:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"99" style=3D"width:74.25pt;border:none;border-right:solid #DDD=
+9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"258" style=3D"width:193.5pt;border:none;border-right:solid #DD=
+D9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"87" colspan=3D"2" style=3D"width:65.25pt;border:none;border-ri=
+ght:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;heig=
+ht:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"164" colspan=3D"2" style=3D"width:123.3pt;border:none;border-r=
+ight:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><o:p>&nbsp;</o:p></p>
+</td>
+<td width=3D"83" valign=3D"bottom" style=3D"width:62.55pt;border:none;borde=
+r-right:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt;=
+height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;"><o:p>&nbsp;</o:p></span></p>
+</td>
+<td width=3D"185" valign=3D"bottom" style=3D"width:138.9pt;border:none;bord=
+er-right:solid #DDD9C4 1.0pt;background:#EEECE1;padding:0in 5.4pt 0in 5.4pt=
+;height:30.75pt">
+<p class=3D"MsoNormal" style=3D"line-height:115%"><span style=3D"font-size:=
+10.0pt;line-height:115%;font-family:&quot;Times New Roman&quot;,&quot;serif=
+&quot;"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+<tr>
+<td width=3D"89" style=3D"width:66.75pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"99" style=3D"width:74.25pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"258" style=3D"width:193.5pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"24" style=3D"width:.25in;padding:0in 0in 0in 0in"></td>
+<td width=3D"63" style=3D"width:47.25pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"27" style=3D"width:20.5pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"137" style=3D"width:102.8pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"83" style=3D"width:62.55pt;padding:0in 0in 0in 0in"></td>
+<td width=3D"185" style=3D"width:138.9pt;padding:0in 0in 0in 0in"></td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal">Infinicloud Maintenance 12:01AM 8/17/11<o:p></o:p></=
+p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;
+<o:p></o:p></p>
+<p class=3D"MsoNormal">To our clients:<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">On August 17, 2011 (Tuesday night into Wednesday mor=
+ning), Logicworks will be performing maintenance on the public cloud web po=
+rtal. This maintenance will begin at 12:01 AM on Wednesday and conclude at =
+2:00 AM. During the window we expect
+ the web portal will be unavailable for about 10 minutes in total. Virtual =
+machines will be unaffected by this maintenance.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Logicworks NOC<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div style=3D"border:none;border-bottom:dotted windowtext 3.0pt;padding:0in=
+ 0in 1.0pt 0in">
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">All,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Now that we have moved towards a project plan for EM=
+7 with a daily list of clients we&#8217;re adding, we need to begin notifyi=
+ng these clients that we will be adding them.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Tonight, the EODs must notify the following clients:=
+<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Nodal<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Converseon<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>AMI <o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"font-family:Symbol"><span style=
+=3D"mso-list:Ignore">&middot;<span style=3D"font:7.0pt &quot;Times New Roma=
+n&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Wealth<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Use the template below.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear [primary contact],<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">As we&#8217;ve previously notified you, Logicworks i=
+s currently preparing a new monitoring system called EM7 for deployment. To=
+morrow (Wednesday, August 17, 2011) we will be adding your environment to t=
+he system. This process is not service-impacting.
+ While adding your environment to EM7 a discovery script will be scanning y=
+our network to attain IP and system information which we will use to monito=
+r each client.
+<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We will contact you tomorrow once the discovery proc=
+ess is complete your environment has been added. If you are running syslog =
+or any third party monitoring tools, you should confirm that those services=
+ are up and running once the EM7 discovery
+ process is complete. &nbsp;Please note that until the transition is comple=
+te Logicworks will continue to utilize our current monitoring tools. If you=
+ have any questions about our new monitoring system EM7 please contact your=
+ Account Manager.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">We look forward to the completed transition to the E=
+M7 monitoring system. Until then, we appreciate your cooperation as we prep=
+are our new monitoring system for launch.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Sincerely,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Logicworks NOC<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+</div>
+</body>
+</html>
+
+--_000_9510A7897882FC458EB408837CC4FDD73D341781lwmbx2uslogicwo_--
+

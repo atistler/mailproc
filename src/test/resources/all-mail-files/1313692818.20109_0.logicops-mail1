@@ -1,0 +1,59 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIeIpV020107
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:40:18 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIeIni020106
+	for logicops; Thu, 18 Aug 2011 14:40:18 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIeHmk020091;
+	Thu, 18 Aug 2011 14:40:17 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:40:16 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 14:40:16 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:40:16 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: d3sm-staging1 Windows 2003 Server - Disk Utilization - 85%=[13.888492]|| Disk Utilization DOWN for 1 HOUR - 02:40:16 PM
+Message-ID: <LW-MON-CRGiRykIl92e00003ce1@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 18:40:16.0918 (UTC) FILETIME=[46353B60:01CC5DD6]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+d3sm-staging1 (10.48.18.124) Windows 2003 Server:
+
+DISK UTILIZATON IS  NOT OK for at least 24 HOURS and has to be addressed IMMEDIATELY
+
+Details:
+
+Monitors that are NOT OK include:
+Disk Utilization - 85%
+
+Monitors that are OK include:
+Ping - Private,Ping - Public,3389 - RDP,CPU Utilization - 95%,Disk Queue Length - 9+,Disk Utilization - 90%,Disk Utilization - 95%,Disk Utilization - 99%,Disk Utilization - D - 95%,Disk Utilization - D - 99%
+
+Notes:
+Please Find the D3SM Response Procedures at:
+
+https://logicops.logicworks.net/805870/File
+
+Notify the following for disk space utilization alerts:
+
+gbenoit@d3security.com
+d3systemmaintenance@d3security.com
+mlu@d3security.com
+jyu@d3security.com
+jhou@d3security.com
+
+Details:
+Disk Utilization - 85%=[13.888492]
+
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:40:16 PM by Whatsup Gold in CRG
+

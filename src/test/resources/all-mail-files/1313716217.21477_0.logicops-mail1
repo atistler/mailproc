@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1AHIZ021475
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:10:17 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1AHN0021474
+	for logicops; Thu, 18 Aug 2011 21:10:17 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1AFqt021457;
+	Thu, 18 Aug 2011 21:10:15 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:10:15 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 21:10:15 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 21:10:15 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: lw-splunk3 CentOS 5  - Ping - Private is OK at 09:10:15 PM
+Message-ID: <LW-MON-CRGOCT2yOjQ000003d21@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 01:10:15.0464 (UTC) FILETIME=[C0D40280:01CC5E0C]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+lw-splunk3 (172.16.2.15) CentOS 5:
+
+SSH,Ping - Private,Ping - Public,Linux System Load - 5 minute average - 9+ - OK again
+
+Details:
+
+Monitors that are still NOT OK:
+Ping - Private
+
+Monitors that are OK include:
+SSH,Ping - Private,Ping - Public,Linux System Load - 5 minute average - 9+
+
+Notes:
+Added from Discovery on Wed Sep 29 11:59:43 2010
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 09:10:15 PM by Whatsup Gold in CRG
+

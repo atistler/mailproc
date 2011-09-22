@@ -1,0 +1,141 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0j5AE019810
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:45:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J0j5ia019809
+	for logicops; Thu, 18 Aug 2011 20:45:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0j59L019805
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 20:45:05 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 20:45:04 -0400
+From: Joshua Puusep <jpuusep@logicworks.net>
+To: "'Rob Buck'" <rbuck@wealthmsi.com>, lw-support <lw-support@logicworks.net>
+CC: Alberto Amoros <aamoros@wealthmsi.com>
+Subject: RE: SR 3-967531 DNS through VPN
+Thread-Topic: SR 3-967531 DNS through VPN
+Thread-Index: AcxdRkkEIybifudXT+6AI5LO7lgfbQAX0daQABjJE1A=
+Date: Fri, 19 Aug 2011 00:45:04 +0000
+Message-ID: <627D2124F47E0947B08DDE82644CDC123D174279@lw-mbx2.us.logicworks.net>
+References: <627D2124F47E0947B08DDE82644CDC123D16BB10@lw-mbx2.us.logicworks.net>
+ <0D6555D03713954CA67E03150778DCBE2B4E578C@MBX17.exg5.exghost.com>
+In-Reply-To: <0D6555D03713954CA67E03150778DCBE2B4E578C@MBX17.exg5.exghost.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7J0j59L019805
+
+Hi Rob,
+
+I think there was a slight misunderstanding.  When I referenced AD I was referring to your active directory domain WEALTHMSI.  Please let me know which servers you are referring to that are not part of the WEALTHMSI domain and I will investigate.   Thank you much.
+
+Regards,
+
+Joshua Puusep
+Logicworks | NRT Engineer
+Phone: 212-625-5444 Option 1
+support@logicworks.net
+
+-----Original Message-----
+From: Rob Buck [mailto:rbuck@wealthmsi.com] 
+Sent: Thursday, August 18, 2011 8:53 AM
+To: Joshua Puusep; Dalton Stickney; lw-support
+Cc: Alberto Amoros
+Subject: RE: SR 3-967531 DNS through VPN
+
+I was actually going to ask you about the AD.  Why are these servers different than our other servers?  Perhaps this is why we struggle with the new servers.  When we log in using RDP the domain appears as AD instead of WEALTHMSI.
+
+Can you let me know the purpose of this change?  And why we wouldn't keep it the same as our current setup?
+
+
+-----Original Message-----
+From: Joshua Puusep [mailto:jpuusep@logicworks.net] 
+Sent: Wednesday, August 17, 2011 9:53 PM
+To: Rob Buck; Dalton Stickney; lw-support
+Cc: Alberto Amoros
+Subject: SR 3-967531 DNS through VPN
+
+Hi Rob,
+
+When you access the site from your servers, you are using the AD dns since the servers belong to the domain.  In order to make this work over vpn, I believe we need add your AD name servers as dns servers for the vpn connection.  I'll will look into which settings need to be modified and let you know once the changes have been made.
+
+Regards,
+
+Joshua Puusep
+Logicworks | NRT Engineer
+Phone: 212-625-5444 Option 1
+support@logicworks.net
+
+
+-----Original Message-----
+From: Rob Buck [mailto:rbuck@wealthmsi.com] 
+Sent: Wednesday, August 17, 2011 9:23 PM
+To: Dalton Stickney; lw-support
+Cc: Alberto Amoros
+Subject: RE: DNS through VPN
+
+I cant answer this question.  I just know I try to go to sharepoint.wealthmsi.com and cannot get there.  "There" is 10.4.15.59.
+
+
+Rob Buck
+Wealth Management Systems Inc.
+Chief Information Officer
+Office: 973.241.5884 ext 306
+Mobile: 561.801.5481
+rbuck@wealthmsi.com
+
+Important - Confidential Information & Disclaimer. All email sent to or from this address will be retained by the email archiving system of Wealth Management Systems Inc. This message is intended only for the use of the individual or entity to which it is addressed, and may contain information that is privileged, confidential, and exempt from disclosure under applicable law. Any other distribution, copying, or disclosure is strictly prohibited. If you have received this message in error, please notify us immediately and delete the message without copying or forwarding it to anyone.
+
+
+-----Original Message-----
+From: Dalton Stickney [mailto:dstickney@logicworks.net] 
+Sent: Wednesday, August 17, 2011 7:25 PM
+To: Rob Buck; lw-support
+Cc: Alberto Amoros
+Subject: RE: DNS through VPN
+
+
+Rob, 
+
+Are you using a local nameserver to resolve that domain in house? I don't see it setup in the wealthmsi.com zone we have here. 
+
+Regards,
+Dalton
+Senior Engineer
+Logicworks
+________________________________________
+From: Rob Buck [rbuck@wealthmsi.com]
+Sent: Wednesday, August 17, 2011 6:02 PM
+To: lw-support
+Cc: Alberto Amoros
+Subject: DNS through VPN
+
+Support,
+
+We have a site, sharepoint.wealthmsi.com that resolves to 10.4.15.59.  This works from within the network but does not resolve through VPN.  How does this get fixed?  Please explain solution because we are beginning to use VPN more and more and the need to map drives and perform other functions will become necessary in the very near future.
+
+Thanks,
+
+Rob
+
+[Description: cid:image001.gif@01CBC220.89696980]
+
+Rob Buck
+Wealth Management Systems Inc.
+Chief Information Officer
+Office: 973.241.5884 ext 306
+Mobile: 561.801.5481
+rbuck@wealthmsi.com<mailto:rbuck@wealthmsi.com>
+
+
+Important - Confidential Information & Disclaimer. All email sent to or from this address will be retained by the email archiving system of Wealth Management Systems Inc. This message is intended only for the use of the individual or entity to which it is addressed, and may contain information that is privileged, confidential, and exempt from disclosure under applicable law. Any other distribution, copying, or disclosure is strictly prohibited. If you have received this message in error, please notify us immediately and delete the message without copying or forwarding it to anyone.
+
+

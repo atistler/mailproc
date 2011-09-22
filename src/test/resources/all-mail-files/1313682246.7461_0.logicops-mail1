@@ -1,0 +1,84 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFi69E007459
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:44:06 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFi6ga007458
+	for logicops; Thu, 18 Aug 2011 11:44:06 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFi58e007444;
+	Thu, 18 Aug 2011 11:44:05 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 11:44:04 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 11:44:04 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 11:44:04 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: lana-db2m1a RHEL 5 is UP at 11:44:04 AM.
+Message-ID: <LW-MON-CRGBv1WnBTNT00003ccc@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 15:44:04.0835 (UTC) FILETIME=[A8C16330:01CC5DBD]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+lana-db2m1a RHEL 5 on 10.4.16.87 is responsive again.
+
+Details:
+
+Linux System Load - 5 minute average - 9+=[8.07]
+
+
+Notes:
+
+Please follow the contact list in the link!!!Names should be first contacted from left to right until someone is reached
+
+#################################################
+
+Engineer on duty must respond to the client within 15 minutes of receiving the alert, regardless of whether he/she has been able to take any action. This is for ALL LANA alerts, most notably the ?ALL STATUS OK? one.
+
+#################################################
+
+>>>>>>######### LANA PROTOCOL #########>>>>>>>
+
+1. An "incident" is something that lasts longer than 5/10 minutes, eg. a content-scan failure goes off. If it
+doesn't come back within 5/10 minutes, we get called.
+
+2. We follow the list. Now, here is some more precision:
+
+Golden Rule:  Call as soon as an "incident" happens. We have our own internal protocol to follow which depends
+on this.
+
+**********************************************
+ Leave a message on ALL calls you make to Lagardere! 
+**********************************************
+
+a) Call the first person on the list. Addition: give them enough time to get to the phone and check their messages (eg.
+10 minutes or so).
+b) If they don't respond, call the second person on the list. Again, give enough time for them to get to the telephone.
+c) If they don't respond, and its been more than, say, 20 minutes, call next person after that. etc.
+d) Repeat until someone is on the phone.
+
+******* EOD must email Lana and create a ticket documenting who you spoke to, what they said, when, etc. This if for LW
+Documentation!!! ********
+
+>>>>>>################################>>>>>>
+-------------------------------note per SR2-547123----------------------------------------
+As per Kosta's request:
+From now on, instead of e-mailing jbickle and cgiatras, please send an email to sysadmin@cellfishmedia.ca please so all US admins get the alert.
+-------------------------------------------------------------------------------------------------
+
+
+-------------------------------note per SR2-494224---------------------------------------
+Client has MDS services. Please check health of database layer and if issues stem from the database layer and you are unable to fix them, please contact senior NOC.***Please check this document for database migration instructions:
+
+https://logicops3.noc.logicworks.net/attachment.php?attachment_id=5651
+
+New LANA call/contact list:
+https://logicops3.noc.logicworks.net/attachment.php?attachment_id=10321
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:44:04 AM by Whatsup Gold in CRG
+

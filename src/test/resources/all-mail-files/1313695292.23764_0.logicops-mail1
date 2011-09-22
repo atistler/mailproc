@@ -1,0 +1,47 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJLWE9023762
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:21:32 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJLWP4023757
+	for logicops; Thu, 18 Aug 2011 15:21:32 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJLU8c023731;
+	Thu, 18 Aug 2011 15:21:30 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:21:30 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:21:19 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:21:19 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: american-esx3 VMWare ESX - Ping - Private,Ping - Public,Linux System Load - 5 minute average - 9+ is DOWN at 03:18:50 PM.
+Message-ID: <LW-MON-EQtuUCyjvshK000079ff@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:21:19.0936 (UTC) FILETIME=[0247F400:01CC5DDC]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+american-esx3 (10.64.98.102) VMWare ESX: 
+
+Ping - Private,Ping - Public,Linux System Load - 5 minute average - 9+ on 209.81.89.102 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+Added from Discovery on Thu Feb 04 10:16:23 2010
+
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 03:18:50 PM by Whatsup Gold in Equinix
+

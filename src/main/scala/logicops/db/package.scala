@@ -9,7 +9,7 @@ package object db {
   import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
 
 
-  private val dbhost = sys.props.getOrElse("logicops.dbhost", "lw-dev")
+  private val dbhost = sys.props.getOrElse("logicops.dbhost", "lw-logicops-dev1")
 
   private val DB_URL = "jdbc:postgresql://" + dbhost + "/logicops2"
   private val DB_USERNAME = "logicops2"

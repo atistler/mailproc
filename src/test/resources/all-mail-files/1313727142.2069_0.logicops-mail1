@@ -1,0 +1,73 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4CMdq002065
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:12:22 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4CM61002064
+	for logicops; Fri, 19 Aug 2011 00:12:22 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4CMSH002053
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:12:22 -0400
+Resent-Date: Fri, 19 Aug 2011 00:12:22 -0400
+Resent-Message-Id: <201108190412.p7J4CMSH002053@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from elser-lb1 (209.81.91.75) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:12:21 -0400
+Received: from elser-lb1v (centos5-64 [127.0.0.1])	by elser-lb1
+ (8.13.8/8.13.8) with SMTP id p7J4CLJG012720	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:12:21 -0400
+Message-ID: <201108190412.p7J4CLJG012720@elser-lb1>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@elser-lb1v>
+Date: Fri, 19 Aug 2011 00:12:21 -0400
+Subject: Zeus: 7 events: Summary of recent service protection events, Summary of recent service protection events...
+X-ZXTM-Notify: elser-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from elser-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:09:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 50.46.155.183,
+                    dropped  - 2 time(s)
+
+#2 Aug 19 00:09:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 173.20.80.180,
+                    dropped  - 4 time(s)
+
+#3 Aug 19 00:09:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 38.104.204.46,
+                    dropped  - 1 time(s)
+
+#4 Aug 19 00:09:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 70.189.213.86,
+                    dropped  - 1 time(s)
+
+#5 Aug 19 00:09:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 98.251.90.13,
+                    dropped  - 11 time(s)
+
+#6 Aug 19 00:09:31: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 38.104.204.46,
+                    dropped  - 1 time(s)
+
+#7 Aug 19 00:12:11: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 68.40.71.91,
+                    dropped  - 1 time(s)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

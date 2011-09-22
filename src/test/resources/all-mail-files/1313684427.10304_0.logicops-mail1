@@ -1,0 +1,84 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGKRJN010302
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:20:27 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGKR4Z010298
+	for logicops; Thu, 18 Aug 2011 12:20:27 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGKQmD010290
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:20:26 -0400
+Resent-Date: Thu, 18 Aug 2011 12:20:26 -0400
+Resent-Message-Id: <201108181620.p7IGKQmD010290@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net (209.81.92.91)
+ by LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id
+ 14.1.270.1; Thu, 18 Aug 2011 12:20:26 -0400
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ globalgrind-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7IGKQ6T020301	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 12:20:26
+ -0400
+Message-ID: <201108181620.p7IGKQ6T020301@globalgrind-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@globalgrind-lb1v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 12:20:26 -0400
+Subject: Zeus: 9 events: Node is working again, Node is working again, Pool now has working nodes, Node is working again...
+X-ZXTM-Notify: globalgrind-lb1v.sccnj04.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from globalgrind-lb1v.sccnj04.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'vip1-http' = Partial Fail: Some nodes have failed
+ + Node '10.64.115.85:80' = OK
+ + Node '10.64.115.86:80' = OK
+ + Node '10.64.115.87:80' = OK
+ + Node '10.64.115.88:80' = Failed
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 12:18:43: SERIOUS  Node '10.64.115.86:80', Pool 'vip1-http'
+                    Node 10.64.115.86 has failed - Read error: Connection
+                    reset by peer
+
+#2 Aug 18 12:18:45: SERIOUS  Node '10.64.115.87:80', Pool 'vip1-http'
+                    Node 10.64.115.87 has failed - Read error: Connection
+                    reset by peer
+
+#3 Aug 18 12:19:12: SERIOUS  Node '10.64.115.85:80', Pool 'vip1-http'
+                    Node 10.64.115.85 has failed - Read error: Connection
+                    reset by peer
+
+#4 Aug 18 12:19:36: SERIOUS  Node '10.64.115.88:80', Pool 'vip1-http'
+                    Node 10.64.115.88 has failed - Timeout while
+                    establishing connection (the machine may be down, or
+                    the network congested; increasing the
+                    'max_connect_time' on the pool's 'Connection
+                    Management' page may help)
+
+#5 Aug 18 12:19:36: SERIOUS  Pool 'vip1-http'
+                    Pool has no back-end nodes responding
+
+#6 Aug 18 12:19:36: INFO  Node '10.64.115.85:80', Pool 'vip1-http'
+                    Node 10.64.115.85 is working again
+
+#7 Aug 18 12:19:36: INFO  Pool 'vip1-http'
+                    Pool now has working nodes
+
+#8 Aug 18 12:19:40: INFO  Node '10.64.115.87:80', Pool 'vip1-http'
+                    Node 10.64.115.87 is working again
+
+#9 Aug 18 12:20:20: INFO  Node '10.64.115.86:80', Pool 'vip1-http'
+                    Node 10.64.115.86 is working again
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

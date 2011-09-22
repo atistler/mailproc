@@ -1,0 +1,33 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J21Cjv025439
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:01:12 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J21Ckj025438
+	for logicops; Thu, 18 Aug 2011 22:01:12 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J213ng025326
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:01:03 -0400
+Resent-Date: Thu, 18 Aug 2011 22:01:03 -0400
+Resent-Message-Id: <201108190201.p7J213ng025326@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.78) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 22:01:02 -0400
+Received: from autismspeaks.org ([206.252.155.57]) by exprod8mx280.postini.com
+ ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 22:01:02 EDT
+Received: (qmail 18621 invoked by uid 0); 19 Aug 2011 02:01:02 -0000
+Date: Fri, 19 Aug 2011 02:01:02 +0000
+Message-ID: <20110819020102.18620.qmail@autismspeaks.org>
+From: <root@autismspeaks.org>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on autismspeaks-web3 is at 98%!!!
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:10.58751/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@autismspeaks.org> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /usr/local - 98% on server autismspeaks-web3, Thu Aug 18 22:01:02 EDT 2011
+

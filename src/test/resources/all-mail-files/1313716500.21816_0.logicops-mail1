@@ -1,0 +1,202 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1F0wX021814
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:15:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1F0o4021807
+	for logicops; Thu, 18 Aug 2011 21:15:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1ExLf021791
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 21:14:59 -0400
+Resent-Date: Thu, 18 Aug 2011 21:14:59 -0400
+Resent-Message-Id: <201108190114.p7J1ExLf021791@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 21:14:58 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1Ex3C010762	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 21:14:59 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7J1Ex0I010760;	Thu, 18 Aug 2011 21:14:59 -0400
+Date: Thu, 18 Aug 2011 21:14:59 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108190114.p7J1Ex0I010760@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: routers router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/fmc-fw-pri.sccnj04.complex.logicworks.net
+===================================================================
+retrieving revision 1.2277
+diff -U4 -r1.2277 fmc-fw-pri.sccnj04.complex.logicworks.net
+@@ -3,9 +3,9 @@
+  !Chassis type: ASA5510 - a PIX
+  !CPU: Pentium 4 Celeron 1600 MHz
+  !
+  !Memory: 256 MB RAM
+- !Serial Number: JMX1304L11Y
++ !Serial Number: JMX1304L11S
+  !
+  !
+  !
+  !Image: Compiled: on Thu 07-Aug-08 20:53 by builders
+@@ -24,24 +24,26 @@
+  !BootFlash: CONFIG_FILE variable = 
+  !BootFlash: Current CONFIG_FILE variable = 
+  !
+  !Flash: --#--  --length--  -----date/time------  path
+- !Flash:   145  5548032     Jan 01 2003 00:06:18  asa708-k8.bin
+- !Flash:    79  8192        Jun 25 2009 07:31:00  crypto_archive
+- !Flash:   146  6163744     Jun 25 2009 07:33:34  asdm-508.bin
+- !Flash:   148  14137344    Nov 25 2009 13:13:06  asa804-k8.bin
+- !Flash:   149  11491880    Nov 25 2009 13:16:48  asdm-623.bin
+- !Flash:    75  8192        Nov 25 2009 13:16:22  log
+- !Flash: 255426560 bytes total (217612288 bytes free)
++ !Flash:   146  5548032     Jan 01 2003 00:06:22  asa708-k8.bin
++ !Flash:    79  8192        Jun 25 2009 08:41:26  crypto_archive
++ !Flash:   147  6163744     Jun 25 2009 08:44:12  asdm-508.bin
++ !Flash:   149  14137344    Nov 25 2009 14:57:28  asa804-k8.bin
++ !Flash:   150  11491880    Nov 25 2009 15:00:40  asdm-623.bin
++ !Flash:    75  8192        Nov 25 2009 14:59:52  log
++ !Flash:   151  8192        Nov 25 2009 16:56:42  tmp
++ !Flash: 255426560 bytes total (217604096 bytes free)
+  !
+  !Flash: disk0: Directory of disk0:/
+- !Flash: disk0: 145    -rwx  5548032     00:06:18 Jan 01 2003  asa708-k8.bin
+- !Flash: disk0: 79     drwx  8192        07:31:00 Jun 25 2009  crypto_archive
+- !Flash: disk0: 146    -rwx  6163744     07:33:34 Jun 25 2009  asdm-508.bin
+- !Flash: disk0: 148    -rwx  14137344    13:13:06 Nov 25 2009  asa804-k8.bin
+- !Flash: disk0: 149    -rwx  11491880    13:16:48 Nov 25 2009  asdm-623.bin
+- !Flash: disk0: 75     drwx  8192        13:16:22 Nov 25 2009  log
+- !Flash: disk0: 255426560 bytes total (217612288 bytes free)
++ !Flash: disk0: 146    -rwx  5548032     00:06:22 Jan 01 2003  asa708-k8.bin
++ !Flash: disk0: 79     drwx  8192        08:41:26 Jun 25 2009  crypto_archive
++ !Flash: disk0: 147    -rwx  6163744     08:44:12 Jun 25 2009  asdm-508.bin
++ !Flash: disk0: 149    -rwx  14137344    14:57:28 Nov 25 2009  asa804-k8.bin
++ !Flash: disk0: 150    -rwx  11491880    15:00:40 Nov 25 2009  asdm-623.bin
++ !Flash: disk0: 75     drwx  8192        14:59:52 Nov 25 2009  log
++ !Flash: disk0: 151    drwx  8192        16:56:42 Nov 25 2009  tmp
++ !Flash: disk0: 255426560 bytes total (217604096 bytes free)
+  !
+  !
+  !Slot 0: hvers 2.0, firmware 1.0(11)5, sw 8.0(4)
+  !
+@@ -212,9 +214,9 @@
+  mtu inside 1500
+  mtu dmz 1500
+  mtu management 1500
+  failover
+- failover lan unit primary
++ failover lan unit secondary
+  failover lan interface failover-stateful Ethernet0/3
+  failover key *****
+  failover mac address Ethernet0/0 0000.1111.6219 0000.1111.6520
+  failover mac address Ethernet0/1 0000.1111.6224 0000.1111.6524
+@@ -245,11 +247,11 @@
+  timeout sip-provisional-media 0:02:00 uauth 0:05:00 absolute
+  dynamic-access-policy-record DfltAccessPolicy
+  aaa authentication ssh console LOCAL 
+  http server enable
+- http 172.16.135.0 255.255.255.0 outside
+- http 206.252.134.18 255.255.255.255 outside
+  http 192.168.1.0 255.255.255.0 management
++ http 206.252.134.18 255.255.255.255 outside
++ http 172.16.135.0 255.255.255.0 outside
+  snmp-server host outside 10.64.4.5 community b3rz3rk
+  snmp-server host outside 172.16.2.51 community b3rz3rk
+  snmp-server host outside 172.16.2.52 community b3rz3rk
+  snmp-server host outside 172.16.2.53 community b3rz3rk
+@@ -311,6 +313,6 @@
+    inspect tftp 
+  !
+  service-policy global_policy global
+  prompt hostname context 
+- Cryptochecksum:3d0cea58760037959d0a0ff5003f73b4
++ Cryptochecksum:1f3c6b694a9cf4906028e67b84a956af
+  : end
+Index: configs/globaldt-fw-pri.sccnj04.complex.logicworks.net
+===================================================================
+retrieving revision 1.27
+diff -U4 -r1.27 globaldt-fw-pri.sccnj04.complex.logicworks.net
+@@ -136,9 +136,8 @@
+   network-object host 209.81.87.164
+   network-object host 209.81.87.177
+  object-group network BLACKLIST
+   network-object host 119.154.21.97
+-  network-object host 203.121.90.178
+   network-object host 203.121.90.179
+   network-object host 203.121.90.180
+   network-object host 203.121.90.181
+   network-object host 203.121.90.182
+@@ -148,10 +147,10 @@
+   network-object 10.255.0.0 255.255.255.0
+  object-group network GLOBALDT-SNVACA01
+   network-object 10.96.7.0 255.255.255.0
+  object-group network GLOBAL-SOURCE
+- network-object host 221.219.64.175
+-  network-object host 24.34.210.139
++  network-object host 221.219.64.175
++ network-object host 24.34.210.139
+  object-group network BLOCK
+   network-object 74.202.0.0 255.255.0.0
+   network-object 74.203.0.0 255.255.0.0
+   network-object 72.9.96.0 255.255.255.0
+@@ -220,10 +219,10 @@
+  nat (management) 0 access-list NO_NAT_MGMT
+  access-group FROM-OUTSIDE in interface outside
+  !
+  router ospf 6650
+- network 209.81.87.160 255.255.255.224 area 51
+-  network 209.81.95.0 255.255.255.248 area 51
++  network 209.81.87.160 255.255.255.224 area 51
++ network 209.81.95.0 255.255.255.248 area 51
+   area 51 authentication message-digest
+   area 51 stub
+   log-adj-changes
+  !
+@@ -268,10 +267,10 @@
+  crypto isakmp enable outside
+  crypto isakmp policy 10
+   authentication pre-share
+   encryption 3des
+- hash md5
+-  group 2
++  hash md5
++ group 2
+   lifetime 86400
+  crypto isakmp policy 20
+   authentication pre-share
+   encryption 3des
+@@ -316,9 +315,9 @@
+  tunnel-group cra-group general-attributes
+   address-pool cra-pool
+   default-group-policy cra-policy
+  tunnel-group cra-group ipsec-attributes
+- pre-shared-key *****
++  pre-shared-key *****
+  tunnel-group 209.73.33.172 type ipsec-l2l
+  tunnel-group 209.73.33.172 ipsec-attributes
+   pre-shared-key *****
+  !
+@@ -339,13 +338,13 @@
+    inspect esmtp 
+    inspect sqlnet 
+    inspect skinny  
+    inspect sunrpc 
+- inspect xdmcp 
+-   inspect sip  
++   inspect xdmcp 
++ inspect sip  
+    inspect netbios 
+    inspect tftp 
+  !
+  service-policy global_policy global
+  prompt hostname context 
+- Cryptochecksum:95f409857bf8fe0518206fa7ecfa730c
++ Cryptochecksum:fb65ab920a876c12f46bf4f985c5a59e
+  : end
+

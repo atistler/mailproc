@@ -1,0 +1,388 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG0LIV008674
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:00:21 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IG0L4T008673
+	for logicops; Thu, 18 Aug 2011 12:00:21 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG0K3p008668
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:00:20 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 12:00:20 -0400
+From: Tony Moger <tmoger@logicworks.net>
+To: John Jun <jjun@logicworks.net>, Zachary Muren <zmuren@logicworks.net>,
+        lw-logistics <lw-logistics@logicworks.net>
+CC: Charles Adams <Cadams@logicworks.net>, Xiao Fen Lin <xlin@logicworks.net>
+Subject: RE: Update AMI info
+Thread-Topic: Update AMI info
+Thread-Index: AcxdtCGGD/jFn9rnR/SGSHkk4RueHQABYq2wAABmI2AAAQsNkA==
+Date: Thu, 18 Aug 2011 16:00:19 +0000
+Message-ID: <D2F33EF0B55B8449865E6A18D1A6EA0C3D11436A@lw-mbx2.us.logicworks.net>
+References: <2B955FC78157904D81BA36231D687EC03CEC34A7@lw-mbx2.us.logicworks.net>
+ <D2F33EF0B55B8449865E6A18D1A6EA0C3D1140D3@lw-mbx2.us.logicworks.net>
+ <EB8866C2F0059040BAC13F426E6FBBB03CF3F7F8@lw-mbx2.us.logicworks.net>
+In-Reply-To: <EB8866C2F0059040BAC13F426E6FBBB03CF3F7F8@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+
+--_004_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_"
+
+--_000_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Ok, these are all fixed. Adding Xiao because she was asking about these ear=
+ilier.
+
+
+Db1:https://logicops.logicworks.net/708312
+Db2:https://logicops.logicworks.net/680912
+Db3:https://logicops.logicworks.net/678505
+
+
+Hope all is well,
+
+
+Tony Moger
+Logistics Provisioning Manager
+
+
+From: John Jun
+Sent: Thursday, August 18, 2011 11:29 AM
+To: Tony Moger; Zachary Muren; lw-logistics
+Cc: Charles Adams
+Subject: RE: Update AMI info
+
+Hmm was there some recent name change or chassis swap?
+
+Here is the current AMI-db1 LO service/asset:   https://logicops.logicworks=
+.net/933596
+This is the old one:                                                       =
+   https://logicops.logicworks.net/680315/Page
+
+We need to get the chassis, ip, etc moved over to the active service.
+
+I'm assuming the same goes for db2 and db3.
+
+From: Tony Moger
+Sent: Thursday, August 18, 2011 11:25 AM
+To: Zachary Muren; lw-logistics
+Cc: John Jun; Charles Adams
+Subject: RE: Update AMI info
+
+
+Hi Zachary,
+
+   I just went over these, they look good to go. The problem is they show a=
+s inactive. I can't fix that service. Adding John and Charles to this, mayb=
+e they can shed more light. Only db2 was missing some hardware.
+
+Ami-db1: https://logicops.logicworks.net/680315/Page
+Ami-db2: https://logicops.logicworks.net/680333/Page
+Ami-db3: https://logicops.logicworks.net/680346/Page
+
+
+Hope all is well,
+
+
+Tony Moger
+Logistics Provisioning Manager
+
+From: Zachary Muren
+Sent: Thursday, August 18, 2011 10:37 AM
+To: lw-logistics
+Subject: Update AMI info
+
+Hey guys,
+
+Can you please fill in server specs for ami-db1 / ami-db2 /ami-db3 in Logic=
+Ops?
+
+Thanks!
+-Zach
+
+Zachary Muren
+Account Manager | Logicworks | Dir: (212) 625-5390 | Fax: (646) 349-1962
+[Description: Description: LW Print Logo 1 inch]
+
+
+--_000_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Trajan Pro";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Ok, these are all fixed. Adding Xiao because she was=
+ asking about these earilier.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Db1:<a href=3D"https://logicops.logicworks.net/70831=
+2">https://logicops.logicworks.net/708312</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Db2:<a href=3D"https://logicops.logicworks.net/68091=
+2">https://logicops.logicworks.net/680912</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Db3:<a href=3D"https://logicops.logicworks.net/67850=
+5">https://logicops.logicworks.net/678505</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hope all is well,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Tony Moger<o:p></o:p></p>
+<p class=3D"MsoNormal">Logistics Provisioning Manager<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> John Jun
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 11:29 AM<br>
+<b>To:</b> Tony Moger; Zachary Muren; lw-logistics<br>
+<b>Cc:</b> Charles Adams<br>
+<b>Subject:</b> RE: Update AMI info<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hmm was there some rec=
+ent name change or chassis swap?<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Here is the current AM=
+I-db1 LO service/asset:&nbsp;&nbsp;
+<a href=3D"https://logicops.logicworks.net/933596">https://logicops.logicwo=
+rks.net/933596</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">This is the old one:&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=3D"https://logicops.logicworks.net/680315/Page">https://logicops.lo=
+gicworks.net/680315/Page</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">We need to get the cha=
+ssis, ip, etc moved over to the active service.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I&#8217;m assuming the=
+ same goes for db2 and db3.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Tony Mog=
+er
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 11:25 AM<br>
+<b>To:</b> Zachary Muren; lw-logistics<br>
+<b>Cc:</b> John Jun; Charles Adams<br>
+<b>Subject:</b> RE: Update AMI info<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hi Zachary,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;&nbsp;&nbsp;I just went over these, they look =
+good to go. The problem is they show as inactive. I can&#8217;t fix that se=
+rvice. Adding John and Charles to this, maybe they can shed more light. Onl=
+y db2 was missing some hardware.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Ami-db1: <a href=3D"https://logicops.logicworks.net/=
+680315/Page">
+https://logicops.logicworks.net/680315/Page</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Ami-db2: <a href=3D"https://logicops.logicworks.net/=
+680333/Page">
+https://logicops.logicworks.net/680333/Page</a><o:p></o:p></p>
+<p class=3D"MsoNormal">Ami-db3: <a href=3D"https://logicops.logicworks.net/=
+680346/Page">
+https://logicops.logicworks.net/680346/Page</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hope all is well,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Tony Moger<o:p></o:p></p>
+<p class=3D"MsoNormal">Logistics Provisioning Manager<span style=3D"color:#=
+1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Zachary =
+Muren
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 10:37 AM<br>
+<b>To:</b> lw-logistics<br>
+<b>Subject:</b> Update AMI info<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hey guys,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Can you please fill in server specs for ami-db1 / am=
+i-db2 /ami-db3 in LogicOps?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks!<o:p></o:p></p>
+<p class=3D"MsoNormal">-Zach<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Tra=
+jan Pro&quot;;color:gray">Zachary Muren<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;font-family:&quot;Tra=
+jan Pro&quot;;color:gray">Account Manager | Logicworks | Dir: (212) 625-539=
+0 | Fax: (646) 349-1962</span><span style=3D"font-size:9.0pt;font-family:&q=
+uot;Trajan Pro&quot;;color:black"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:9.0pt;color:#1F497D"><img b=
+order=3D"0" width=3D"96" height=3D"31" id=3D"Picture_x005f_x0020_1" src=3D"=
+cid:image001.jpg@01CC5D9E.6533EEE0" alt=3D"Description: Description: LW Pri=
+nt Logo 1 inch"></span><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_--
+
+--_004_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 16:00:19 GMT";
+	modification-date="Thu, 18 Aug 2011 16:00:19 GMT"
+Content-ID: <image001.jpg@01CC5D9E.6533EEE0>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_004_D2F33EF0B55B8449865E6A18D1A6EA0C3D11436Alwmbx2uslogicwo_--
+

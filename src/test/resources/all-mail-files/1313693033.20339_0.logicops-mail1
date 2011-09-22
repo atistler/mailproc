@@ -1,0 +1,74 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIhr6Q020337
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:43:53 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIhrWl020336
+	for logicops; Thu, 18 Aug 2011 14:43:53 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIhqD0020321;
+	Thu, 18 Aug 2011 14:43:52 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:43:51 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 14:43:51 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:43:51 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: sl-prod-web1 RHEL ES 4 is UP at 02:40:48 PM.
+Message-ID: <LW-MON-EQqpEq8hZYNX000079d0@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 18:43:51.0800 (UTC) FILETIME=[C6499F80:01CC5DD6]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+sl-prod-web1 RHEL ES 4 on 209.81.72.83 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Health Checks are looking for string "Start of Footer" in page:
+http://209.81.72.83
+
+and "United States" in page
+http://209.81.72.83/employer/register
+
+
+Here are the steps to take if scans fail:
+
+Business Hours
+Contact:
+Kossoy, Steven
+skossoy@selectleaders.com
+646.495.3161
+
+If you don't reach Pete via phone, please begin service restart process (below)
+
+Off-hours
+On failure: 
+Contact: 
+Kossoy, Steven
+skossoy@selectleaders.com
+646.495.3161 w/ notification 
+
+Restart services as follows:
+1.) Login as root
+2.) service httpd stop
+3.) service tomcat stop
+4.) service tomcat start
+5.) service httpd start
+ 
+
+ 
+NOTE: the start and stop commands for tomcat do not always work quickly.
+If the scan fails, we need the operator to try to stop tomcat and check if the process is still running with the command: ps aux|grep java.
+The operator may have to forcibly kill the java process (kill -9) and then restart.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 02:40:48 PM by Whatsup Gold in Equinix
+

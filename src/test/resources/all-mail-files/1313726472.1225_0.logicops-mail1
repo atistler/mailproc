@@ -1,0 +1,41 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J41C0K001223
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:01:12 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J41CIp001222
+	for logicops; Fri, 19 Aug 2011 00:01:12 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J414Bo001112
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:01:04 -0400
+Resent-Date: Fri, 19 Aug 2011 00:01:04 -0400
+Resent-Message-Id: <201108190401.p7J414Bo001112@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.162) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:01:03 -0400
+Received: from velti-app21.sccnj04.client.logicworks.net ([209.81.83.164])
+ (using TLSv1) by exprod8mx295.postini.com ([64.18.7.10]) with SMTP;	Thu, 18
+ Aug 2011 23:01:02 CDT
+Received: from velti-app21.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ velti-app21.sccnj04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J411Kw000868	for <lw-alert-disk@logicworks.net>; Fri, 19 Aug 2011 04:01:01
+ GMT
+Received: (from root@localhost)	by velti-app21.sccnj04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7J411Gg000839	for lw-alert-disk@logicworks.net;
+ Fri, 19 Aug 2011 04:01:01 GMT
+Date: Fri, 19 Aug 2011 04:01:01 +0000
+From: root <root@velti-app21.sccnj04.client.logicworks.net>
+Message-ID: <201108190401.p7J411Gg000839@velti-app21.sccnj04.client.logicworks.net>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on velti-app21 is at 100%!!!
+X-pstn-neptune: 1/1/1.00/92
+X-pstn-levels: (S: 0.33257/99.51814 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@velti-app21.sccnj04.client.logicworks.net> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on / - 100% on server velti-app21, Fri Aug 19 04:01:01 UTC 2011
+

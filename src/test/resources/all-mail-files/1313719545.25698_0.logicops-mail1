@@ -1,0 +1,85 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J25i7q025696
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:05:44 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J25iwN025695
+	for logicops; Thu, 18 Aug 2011 22:05:44 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J25ikS025691
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:05:44 -0400
+Resent-Date: Thu, 18 Aug 2011 22:05:44 -0400
+Resent-Message-Id: <201108190205.p7J25ikS025691@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.102) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 22:05:43 -0400
+Received: from whale2.dnsracks.com ([67.228.115.156]) by
+ exprod8mx202.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 21:05:43
+ CDT
+Received: from pool-98-117-16-186.hrbgpa.fios.verizon.net [98.117.16.186] by
+ whale2.dnsracks.com with SMTP;   Thu, 18 Aug 2011 19:05:11 -0700
+From: Michael Kreamer <mkreamer@psytechsolutions.net>
+To: "'Logicworks NOC'" <support@logicworks.net>,
+        "'Kline, Anthony'"
+	<akline@psytechsolutions.net>,
+        "'Putman, Jennifer'"
+	<jputman@psytechsolutions.net>
+CC: "'Logicworks Support'" <lw-support@logicworks.net>
+References: <744b61e095d30e5193293442d5875f71@logicops.logicworks.net>
+In-Reply-To: <744b61e095d30e5193293442d5875f71@logicops.logicworks.net>
+Subject: RE: psytech-app05 - failed health check (SR 3-967917)
+Date: Thu, 18 Aug 2011 22:05:12 -0400
+Message-ID: <008b01cc5e14$6e7fae00$4b7f0a00$@net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AcxeE6TZBWAkHLQ9SK6kQaaxLkihQgAALONw
+Content-Language: en-us
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:93.6803 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+I did change database parameters so the database is probably restarting.
+Give it 10 minutes and it should be back up.
+
+Mike Kreamer
+
+
+-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net] 
+Sent: Thursday, August 18, 2011 9:59 PM
+To: Kline, Anthony; Kreamer, Mike; Putman, Jennifer
+Cc: Logicworks Support
+Subject: psytech-app05 - failed health check (SR 3-967917)
+
+Greetings,
+
+We received a failed health check for psytech-app05. Can you confirm your
+aren't doing any work on this. Please see the failed alert below:
+
+500 Servlet jspservlet: unable to service request: ORA-01090: shutdown in
+progress - connection is not permitted 
+
+Logicworks NOC
+
+----------------------------------------------------------------------------
+---------------------------------
+
+Modifications:
+----------------------------------------------------------------------------
+---------------------------------
+
+Changes made to: SR 3-967917
+    Updated due date: 2011-08-19 04:00 -> 2011-08-19 04:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear
+from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit:
+https://logicops.logicworks.net/AddCustomerFeedback/967917/Page
+
+
+
+

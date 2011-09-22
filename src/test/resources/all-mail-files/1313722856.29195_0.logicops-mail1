@@ -1,0 +1,48 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J30u1c029193
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:00:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J30uVI029192
+	for logicops; Thu, 18 Aug 2011 23:00:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J30sL8029175;
+	Thu, 18 Aug 2011 23:00:54 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 23:00:54 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 23:00:54 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 23:00:54 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: fmc-db3 Windows 2003 Server - FMC - BlackBerry Service Agent Check is DOWN at 10:59:48 PM.
+Message-ID: <LW-MON-EQ2knFMjLQZw00007b24@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 03:00:54.0604 (UTC) FILETIME=[361060C0:01CC5E1C]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+fmc-db3 (10.64.73.72) Windows 2003 Server: 
+
+FMC - BlackBerry Service Agent Check on 10.64.73.72 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-support
+
+Logicops:
+https://logicops.logicworks.net/index.php?node_id=620503
+
+Notes:
+Please update alerts to reflect this procedure for DB failovers:
+
+1. FMC will need to be informed as soon as possible as to the issue. There is no need to call if a simple failover to the clustered server is required.
+2. If failover to the replication server is required, FMC needs to be informed as to the last snapshot of the database and when the outage occurred. Failover to the replication server can only take place if approved by Wayne Barron
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 10:59:48 PM by Whatsup Gold in Equinix
+

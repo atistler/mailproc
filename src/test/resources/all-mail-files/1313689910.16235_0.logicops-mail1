@@ -1,0 +1,300 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHpodn016233
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 13:51:50 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IHpo2C016232
+	for logicops; Thu, 18 Aug 2011 13:51:50 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHpoWM016228
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 13:51:50 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 13:51:49 -0400
+From: Xiao Fen Lin <xlin@logicworks.net>
+To: Nikos Lionas <nlionas@velti.com>, lw-support <lw-support@logicworks.net>,
+        Logicops-admin <Logicops-admin@logicworks.net>
+CC: IT_Systems <IT_Systems@velti.com>, IT_Networks <IT_Networks@velti.com>
+Subject: SR 3-967751 Firewall rule request
+Thread-Topic: SR 3-967751 Firewall rule request
+Thread-Index: Acxdz3uWi5z6E2AlQT6vna1sJcCcVg==
+Date: Thu, 18 Aug 2011 17:51:48 +0000
+Message-ID: <90945AF80A6C4E46B6E31B1CD5175BD43D1C10C3@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/alternative;
+	boundary="_000_90945AF80A6C4E46B6E31B1CD5175BD43D1C10C3lwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_90945AF80A6C4E46B6E31B1CD5175BD43D1C10C3lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Nikos,
+
+Your firewall request has been completed.  Please test at your convenience.
+
+ACCEPT     tcp  --  184.73.172.183       209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  184.72.248.181       209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  174.129.215.253      209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  174.129.12.58        209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  184.73.194.211       209.73.35.146       multiport dpor=
+ts 22
+
+
+Regards,
+
+Xiao Fen Lin
+Logicworks | NRT Engineer
+phone: 212-625-5444 (option 1)
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+From: Nikos Lionas [mailto:nlionas@velti.com]
+Sent: Thursday, August 18, 2011 12:32 PM
+To: lw-support; Logicops-admin
+Cc: IT_Systems; IT_Networks
+Subject: Firewall rule request
+
+Dear LogicWorks support,
+
+
+Please allow port 22 at 209.73.35.146 to be accessibly from 184.73.172.183 =
+, 184.72.248.181 , 174.129.215.253 , 174.129.12.58 , 184.73.194.211
+
+
+Thanks
+
+Nikos Lionas | Senior System Administrator
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.210.637.8912
+M  +30.694.432.0977
+E   nlionas@velti.com<mailto:nlionas@velti.com>
+www.velti.com<http://www.velti.com>
+
+Velti is a global leader in mobile marketing and advertising solutions for =
+mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid |=
+ Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Bei=
+jing | Shanghai | Sydney
+
+
+--_000_90945AF80A6C4E46B6E31B1CD5175BD43D1C10C3lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.EmailStyle17
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Nikos,<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Your firewall request =
+has been completed.&nbsp; Please test at your convenience.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">ACCEPT&nbsp;&nbsp;&nbs=
+p;&nbsp; tcp&nbsp; --&nbsp; 184.73.172.183&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">ACCEPT&nbsp;&nbsp;&nbs=
+p;&nbsp; tcp&nbsp; --&nbsp; 184.72.248.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">ACCEPT&nbsp;&nbsp;&nbs=
+p;&nbsp; tcp&nbsp; --&nbsp; 174.129.215.253&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2=
+09.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">ACCEPT&nbsp;&nbsp;&nbs=
+p;&nbsp; tcp&nbsp; --&nbsp; 174.129.12.58&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports=
+ 22<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">ACCEPT&nbsp;&nbsp;&nbs=
+p;&nbsp; tcp&nbsp; --&nbsp; 184.73.194.211&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Regards,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Xiao Fen Lin<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">phone: 212-625-5444 (o=
+ption 1)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net"><span style=3D"color:blue">support@logicworks.net</span=
+></a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;font-family:Consolas=
+;color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Nikos Li=
+onas [mailto:nlionas@velti.com]
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 12:32 PM<br>
+<b>To:</b> lw-support; Logicops-admin<br>
+<b>Cc:</b> IT_Systems; IT_Networks<br>
+<b>Subject:</b> Firewall rule request<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Dear LogicWorks support,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please allow port 22 at 209.73.35.146 to be accessib=
+ly from 184.73.172.183 , 184.72.248.181 , 174.129.215.253 , 174.129.12.58 ,=
+ 184.73.194.211<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks<o:p></o:p></p>
+<p><strong><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&q=
+uot;sans-serif&quot;;color:#365F91">Nikos Lionas | Senior System Administra=
+tor</span></strong><b><span style=3D"font-size:9.0pt;font-family:&quot;Taho=
+ma&quot;,&quot;sans-serif&quot;;color:#365F91"><br>
+<br>
+<strong><span style=3D"font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;">Velti</span></strong><br>
+</span></b><strong><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#4A442A">44 Kifisias Ave.&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;
+</span></strong><b><span style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#4A442A"><br>
+<strong><span style=3D"font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot=
+;">15125 Marousi, Athens, Greece</span></strong><br>
+</span></b><strong><span lang=3D"EL" style=3D"font-size:9.0pt;font-family:&=
+quot;Tahoma&quot;,&quot;sans-serif&quot;;color:#E36C0A">T</span></strong><s=
+pan lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&qu=
+ot;sans-serif&quot;;color:#4A442A">&nbsp;&nbsp;&nbsp;&#43;30.210.637.8912<b=
+r>
+</span><b><span lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot;Taho=
+ma&quot;,&quot;sans-serif&quot;;color:#E36C0A">M</span></b><span lang=3D"EL=
+" style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&=
+quot;;color:#4A442A">&nbsp;&nbsp;&#43;30.694.432.0977<br>
+</span><b><span lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot;Taho=
+ma&quot;,&quot;sans-serif&quot;;color:#E36C0A">E</span></b><span lang=3D"EL=
+" style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&=
+quot;;color:#4A442A">&nbsp;&nbsp;
+<a href=3D"mailto:nlionas@velti.com">nlionas@velti.com</a></span><b><u><spa=
+n lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot;Tahoma&quot;,&quot=
+;sans-serif&quot;;color:#365F91"><br>
+<a href=3D"http://www.velti.com" title=3D"http://www.velti.com/"><span styl=
+e=3D"color:#365F91">www.velti.com</span></a><br>
+<br>
+</span></u></b><span lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;;color:#365F91">Velti is a global leade=
+r in mobile marketing and advertising solutions for mobile operators, ad ag=
+encies, brands and media groups.</span><span lang=3D"EL" style=3D"font-size=
+:9.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;;color:blue"><b=
+r>
+</span><span lang=3D"EL" style=3D"font-size:9.0pt;font-family:&quot;Tahoma&=
+quot;,&quot;sans-serif&quot;;color:#365F91">San Francisco | New York | Los =
+Angeles | Dublin | London | Paris | Madrid | Dusseldorf | Athens | Sofia | =
+Moscow | Dubai | New Delhi | Singapore | Beijing | Shanghai
+ | Sydney</span><span lang=3D"EL"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EL" style=3D"font-size:12.0pt;font-fam=
+ily:&quot;Times New Roman&quot;,&quot;serif&quot;"><o:p>&nbsp;</o:p></span>=
+</p>
+</div>
+</body>
+</html>
+
+--_000_90945AF80A6C4E46B6E31B1CD5175BD43D1C10C3lwmbx2uslogicwo_--
+

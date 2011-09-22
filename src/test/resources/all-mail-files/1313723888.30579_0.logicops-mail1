@@ -1,0 +1,59 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3I80q030575
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:18:08 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J3I8qe030572
+	for logicops; Thu, 18 Aug 2011 23:18:08 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3I7bO030565
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 23:18:07 -0400
+Resent-Date: Thu, 18 Aug 2011 23:18:07 -0400
+Resent-Message-Id: <201108190318.p7J3I7bO030565@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lana-db2r1a.nycmny04.client.logicworks.net (206.252.152.89) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 23:18:07 -0400
+Received: from lana-db2r1a.nycmny04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ lana-db2r1a.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J3I6nb009798	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 23:18:06
+ -0400
+Received: (from root@localhost)	by lana-db2r1a.nycmny04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7J3I6iV009794	for lw-linux@ext.logicworks.net;
+ Thu, 18 Aug 2011 23:18:06 -0400
+Date: Thu, 18 Aug 2011 23:18:06 -0400
+From: root <root@lana-db2r1a.nycmny04.client.logicworks.net>
+Message-ID: <201108190318.p7J3I6iV009794@lana-db2r1a.nycmny04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+Subject: New MySQL errors on lana-db2r1a 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+New log error messages:
+
+110818 23:17:01 [ERROR] Slave SQL: Error 'Table 'SMS_log.mt_queue' doesn't exist' on query. Default database: 'SMS_log'. Query: 'UPDATE `mt_queue` SET `status`=1,`front`='lana-sms3-cursa',`comp_time`=NOW(), `error`='None' WHERE `id`=1175620419 AND `status`=0', Error_code: 1146
+110818 23:17:01 [Warning] Slave: Table 'SMS_log.mt_queue' doesn't exist Error_code: 1146
+110818 23:17:01 [ERROR] Error running query, slave SQL thread aborted. Fix the problem, and restart the slave SQL thread with "SLAVE START". We stopped at log 'mysql-bin.001328' position 921723659
+
+ Full process list: 
+*************************** 1. row ***************************
+     Id: 2
+   User: system user
+   Host: 
+     db: NULL
+Command: Connect
+   Time: 20173318
+  State: Waiting for master to send event
+   Info: NULL
+*************************** 2. row ***************************
+     Id: 4227472
+   User: lwalerts
+   Host: localhost
+     db: NULL
+Command: Query
+   Time: 0
+  State: NULL
+   Info: show processlist
+

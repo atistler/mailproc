@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J03EPG016506
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:03:14 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J03Ee8016504
+	for logicops; Thu, 18 Aug 2011 20:03:14 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J03DBT016493
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 20:03:13 -0400
+Resent-Date: Thu, 18 Aug 2011 20:03:13 -0400
+Resent-Message-Id: <201108190003.p7J03DBT016493@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lw-bartleby.mail.logicworks.net (206.252.128.20) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 20:03:12 -0400
+Received: from imarda-lb1v (imarda-lb1v.sccnj04.client.logicworks.net
+ [209.81.83.158])	by lw-bartleby.mail.logicworks.net (8.13.8/8.13.8) with SMTP
+ id p7J03Cti021142	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 20:03:12 -0400
+Message-ID: <201108190003.p7J03Cti021142@lw-bartleby.mail.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@imarda-lb1v>
+Date: Thu, 18 Aug 2011 20:03:12 -0400
+Subject: Zeus: Deleting statd log file 20110521.log
+X-ZXTM-Notify: imarda-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from imarda-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 20:03:09: INFO
+                    Deleting statd log file 20110521.log
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

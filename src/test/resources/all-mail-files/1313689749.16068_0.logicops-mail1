@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHn9ow016066
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 13:49:09 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IHn9J6016065
+	for logicops; Thu, 18 Aug 2011 13:49:09 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHn8ZY016050;
+	Thu, 18 Aug 2011 13:49:08 -0400
+Received: from iml-db11.sccnj04.client.logicworks.net (209.81.90.148) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 13:49:07 -0400
+Received: from you (localhost.localdomain [127.0.0.1])	by
+ iml-db11.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7IHn7WU016983	for lw-monitoring@ext.logicworks.net; Thu, 18 Aug 2011
+ 13:49:07 -0400
+Message-ID: <201108181749.p7IHn7WU016983@iml-db11.sccnj04.client.logicworks.net>
+To: <lw-monitoring@ext.logicworks.net>
+From: <lw-monitoring@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 13:49:07 -0400
+Subject: WARNING  Event occurred on: iml-db11
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Controller ID: 0 PD Reset: PD = :25, Error = 3, Path = 50:03:04:80:00:56:ee:fd
+Generated on:Thu Aug 18 14:49:07 2011
+
+
+SYSTEM DETAILS---
+IP Address: 209.81.90.148
+OS Name: Linux
+OS Version: 2.6
+Driver Name: megaraid_sas
+Driver Version: 00.00.04.31-RH1
+
+
+IMAGE DETAILS---
+BIOS Version: 2.120.33-1197
+Firmware Package Version: 12.12.0-0045
+Firmware Version: 3.21.00_4.11.05.00_0x05000000
+

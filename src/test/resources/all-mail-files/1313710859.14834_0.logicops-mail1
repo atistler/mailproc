@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INewrX014832
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:40:58 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INewci014831
+	for logicops; Thu, 18 Aug 2011 19:40:58 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INev3J014816;
+	Thu, 18 Aug 2011 19:40:57 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 19:40:56 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 19:40:57 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 19:40:57 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: nodal-prdweb01-vm1v RHEL ES 4 is UP at 07:39:13 PM.
+Message-ID: <LW-MON-EQvmmKtrM0mk00007ad9@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 23:40:57.0046 (UTC) FILETIME=[46F64F60:01CC5E00]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+nodal-prdweb01-vm1v RHEL ES 4 on 10.64.10.169 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Added from Discovery on Fri May 16 16:39:04 2008
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 07:39:13 PM by Whatsup Gold in Equinix
+

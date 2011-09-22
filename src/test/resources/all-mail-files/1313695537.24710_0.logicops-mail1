@@ -1,0 +1,49 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJPbpl024708
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:25:37 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJPaJn024707
+	for logicops; Thu, 18 Aug 2011 15:25:36 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJPaf5024703
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:25:36 -0400
+Received: from logicops.logicworks.net (206.252.153.173) by
+ relay.ext.logicworks.net (206.252.153.186) with Microsoft SMTP Server id
+ 14.1.270.1; Thu, 18 Aug 2011 15:25:36 -0400
+Date: Thu, 18 Aug 2011 15:25:36 -0400
+To: "Cruz, Aris" <aris.cruz@nbcuni.com>,
+        "Keilson, Jonathan"
+	<jonathan.keilson@nbcuni.com>,
+        "Magee, Mr Samuel" <samuel.magee@nbcuni.com>,
+        "Page, Mr Rahsaan Dushan" <rahsaan.page@nbcuni.com>, <dpsi@nbcuni.com>
+From: Logicworks NOC <logicops@logicworks.net>
+CC: Logicworks Support <lw-support@logicworks.net>
+Reply-To: Logicworks NOC <support@logicworks.net>
+Subject: high load on bravotv-web servers (SR 3-967819)
+Message-ID: <994f53a49cb1684f824a3470eaac9047@logicops.logicworks.net>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.2 (phpmailer.codeworxtech.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Greetings,
+
+We have detected that your web servers (web1/web2/web3/web5) are experiencing high load at the moment.  We spoke with Aris, who informed us that your team has been looking into this.  If you need our assistance, please feel free to let us know. Thank you.
+
+Regards,
+
+Logicworks NOC
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/967819/Page
+
+

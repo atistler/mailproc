@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II14iQ016941
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:01:04 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7II14Zh016938
+	for logicops; Thu, 18 Aug 2011 14:01:04 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II13Z0016902
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:01:04 -0400
+Resent-Date: Thu, 18 Aug 2011 14:01:04 -0400
+Resent-Message-Id: <201108181801.p7II13Z0016902@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.142) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 14:01:02 -0400
+Received: from velti-final.velti.com ([209.81.90.200]) (using TLSv1) by
+ exprod8mx242.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 11:01:02
+ PDT
+Received: from velti-final.velti.com (localhost.localdomain [127.0.0.1])	by
+ velti-final.velti.com (8.13.8/8.13.8) with ESMTP id p7II11Rb010329	for
+ <lw-alert-disk@logicworks.net>; Thu, 18 Aug 2011 14:01:01 -0400
+Received: (from root@localhost)	by velti-final.velti.com
+ (8.13.8/8.13.8/Submit) id p7II11A0010328	for lw-alert-disk@logicworks.net;
+ Thu, 18 Aug 2011 14:01:01 -0400
+Date: Thu, 18 Aug 2011 14:01:01 -0400
+From: root <root@velti-final.velti.com>
+Message-ID: <201108181801.p7II11A0010328@velti-final.velti.com>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on veltiuae-monitoring1 is at 97%!!!
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S: 3.96880/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@velti-final.velti.com> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /home - 97% on server veltiuae-monitoring1, Thu Aug 18 14:01:01 EDT 2011
+

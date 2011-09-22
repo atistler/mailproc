@@ -1,0 +1,59 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J42A7I001393
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:02:10 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J42APJ001392
+	for logicops; Fri, 19 Aug 2011 00:02:10 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J422R3001343
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:02:02 -0400
+Resent-Date: Fri, 19 Aug 2011 00:02:02 -0400
+Resent-Message-Id: <201108190402.p7J422R3001343@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from srseats-db3.sccnj04.client.logicworks.net (209.81.91.104) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Fri, 19 Aug 2011 00:02:01 -0400
+Received: from srseats-db3.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ srseats-db3.sccnj04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J421f4016109	for <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:02:01
+ -0400
+Received: (from root@localhost)	by srseats-db3.sccnj04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7J421FC016108	for lw-linux@ext.logicworks.net;
+ Fri, 19 Aug 2011 00:02:01 -0400
+Date: Fri, 19 Aug 2011 00:02:01 -0400
+From: root <root@srseats-db3.sccnj04.client.logicworks.net>
+Message-ID: <201108190402.p7J421FC016108@srseats-db3.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+Subject: New MySQL errors on srseats-db3 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+New log error messages:
+
+110819  0:00:03 [Note] Slave I/O thread killed while reading event
+110819  0:00:03 [Note] Slave I/O thread exiting, read up to log 'mysql-bin.001349', position 457269205
+110819  0:00:03 [Note] Error reading relay log event: slave SQL thread was killed
+
+ Full process list: 
+*************************** 1. row ***************************
+     Id: 1913313
+   User: lwdba
+   Host: localhost
+     db: mte
+Command: Query
+   Time: 29
+  State: Sending data
+   Info: SELECT /*!40001 SQL_NO_CACHE */ * FROM `mt_log`
+*************************** 2. row ***************************
+     Id: 1913320
+   User: root
+   Host: localhost
+     db: NULL
+Command: Query
+   Time: 0
+  State: NULL
+   Info: show processlist
+

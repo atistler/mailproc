@@ -1,0 +1,70 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKoAUe001829
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:50:10 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKoAGP001828
+	for logicops; Thu, 18 Aug 2011 16:50:10 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKo9ZI001812;
+	Thu, 18 Aug 2011 16:50:09 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 16:50:08 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 16:50:08 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 16:50:08 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: annarbor-stgweb2v RHEL 5 Virtual is UP at 04:48:10 PM.
+Message-ID: <LW-MON-EQ3OUXEEKZGU00007a96@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 20:50:08.0807 (UTC) FILETIME=[6A892370:01CC5DE8]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+annarbor-stgweb2v RHEL 5 Virtual on 10.64.95.83 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Annarbor's alert instructions for CPU/DISK/RAM/APACHE are outlined on the RunBook  
+
+https://logicops.logicworks.net/882350/File
+
+
+The RunBook is also posted on Annarbor's account page --- SR3-862206
+
+
+Database connectivity check:
+/server_health/db-check.php
+
+HTTP response check:
+/server_health/
+
+
+***Important***
+
+Client needs to be notified when disk utilization reaches 90%.  SR3-882323
+
+https://logicops.logicworks.net/882323/Page
+
+Please add Hassan to all email alerts:
+
+hassanhodges@gmail.comIf problem results from high load on database please do the following:
+
+log into the mysql server that has a vip
+connect to db as lwdba and run:
+
+FLUSH HOSTS;
+FLUSH TABLES;
+
+Load should go down after that. If it doesn't restart mysql service.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 04:48:10 PM by Whatsup Gold in Equinix
+

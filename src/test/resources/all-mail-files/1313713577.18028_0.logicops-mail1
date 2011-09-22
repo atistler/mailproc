@@ -1,0 +1,46 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0QHUo018025
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:26:17 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J0QHtm018024
+	for logicops; Thu, 18 Aug 2011 20:26:17 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0QGrd017990;
+	Thu, 18 Aug 2011 20:26:16 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 20:26:14 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 20:26:14 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 20:26:14 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: velti-db3 RHEL 5 - Linux System Load - 5 minute average - 9+ is DOWN at 08:22:32 PM.
+Message-ID: <LW-MON-EQaMD4yvj9yH00007aeb@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 00:26:14.0913 (UTC) FILETIME=[9AEFE710:01CC5E06]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+velti-db3 (10.64.102.196) RHEL 5: 
+
+Linux System Load - 5 minute average - 9+ on 10.64.102.196 has been unresponsive for at least 6 minutes.
+
+Details:
+Linux System Load - 5 minute average - 9+=[9.34]
+
+
+Contact:
+Root  (configure /etc/snmp/snmp.local.conf)
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 08:22:32 PM by Whatsup Gold in Equinix
+

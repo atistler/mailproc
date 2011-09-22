@@ -1,0 +1,57 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4SFQa003446
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:28:15 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4SFcG003440
+	for logicops; Fri, 19 Aug 2011 00:28:15 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4SEsc003431
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:28:14 -0400
+Resent-Date: Fri, 19 Aug 2011 00:28:14 -0400
+Resent-Message-Id: <201108190428.p7J4SEsc003431@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from radar-lb1v (209.81.88.94) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:28:14 -0400
+Received: from radar-lb1v (localhost.localdomain [127.0.0.1])	by radar-lb1v
+ (8.13.8/8.13.8) with SMTP id p7J4SElW000837	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:28:14 -0400
+Message-ID: <201108190428.p7J4SElW000837@radar-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@radar-lb1v>
+Date: Fri, 19 Aug 2011 00:28:14 -0400
+Subject: Zeus: Node is working again, Node is working again
+X-ZXTM-Notify: radar-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from radar-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'shape' = OK
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = OK
+ + Node '209.81.88.74:80' = OK
+Pool 'web.fitpregnancy.com' = OK
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = OK
+ + Node '209.81.88.74:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:27:53: INFO  Node '209.81.88.74:80', Pool 'shape'
+                    Node 209.81.88.74 is working again
+
+#2 Aug 19 00:28:00: INFO  Node '209.81.88.74:80', Pool
+                    'web.fitpregnancy.com'
+                    Node 209.81.88.74 is working again
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

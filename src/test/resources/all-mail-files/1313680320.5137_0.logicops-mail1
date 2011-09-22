@@ -1,0 +1,1785 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFC0Mu005135
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:12:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFBxF7005134
+	for logicops; Thu, 18 Aug 2011 11:11:59 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFBvwA005118
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:11:57 -0400
+Resent-Date: Thu, 18 Aug 2011 11:11:57 -0400
+Resent-Message-Id: <201108181511.p7IFBvwA005118@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lw-bartleby.mail.logicworks.net (206.252.128.20) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 11:11:56 -0400
+Received: from lincolncenter-lb1v
+ (lincolncenter-lb1v.sccnj04.client.logicworks.net [209.81.82.253])	by
+ lw-bartleby.mail.logicworks.net (8.13.8/8.13.8) with SMTP id p7IFBuEs007865
+	for <lw-linux@ext.logicworks.net;>; Thu, 18 Aug 2011 11:11:56 -0400
+Message-ID: <201108181511.p7IFBuEs007865@lw-bartleby.mail.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@lincolncenter-lb1v>
+Date: Thu, 18 Aug 2011 11:11:56 -0400
+Subject: Zeus: 95 events: [Monitor: Simple HTTP] [Machine: 10.64.113.239:80] Connecting, [Monitor: Simple HTTP] [Machine: 10.64.113.238:80] Succeeded...
+X-ZXTM-Notify: lincolncenter-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from lincolncenter-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 11:10:54: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                    Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                    15:10:54 GMT
+                    Server: Apache/2.2.3 (Red Hat)
+                    X-Powered-By: PHP/5.2.14
+                    Set-Cookie:
+                    69413e8b2b7652ffd23b2c9ec705e001=hiltcaho59t22nv07lafgrok27;
+                    path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                    IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                    Last-Modified: Thu, 18 Aug 2011 15:10:54 GMT
+                    Cache-Control: post-check=0, pre-check=0 Pragma:
+                    no-cache
+                    Content-Length: 3913
+                    Connection: close
+                    Content-Type: text/html; charset=utf-8
+                    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                    Transitional//EN"
+                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="http://www.w3.org/1999/xhtml"
+                    xml:lang="en-gb" lang="en-gb" > <head>
+                      <meta http-equiv="content-type" content="text/html;
+                    charset=utf-8" />   <meta name="robots" content="index,
+                    follow" />   <meta name="keywords" content="" />
+                      <meta name="description" content="" />   <meta
+                    name="generator" content="Joomla! 1.5 - Open Source
+                    Content Management" />   <title>American
+                    Songbook</title>
+                      <link href="/index.php?format=feed&amp;type=rss"
+                    rel="alternate" type="application/rss+xml" title="RSS
+                    2.0" />   <link
+                    href="/index.php?format=feed&amp;type=atom"
+                    rel="alternate" type="application/atom+xml" title="Atom
+                    1.0" />   <link
+                    href="/templates/rhuk_milkyway/favicon.ico"
+                    rel="shortcut icon" type="image/x-icon" />   <script
+                    type="text/javascript"
+                    src="/media/system/js/mootools.js"></script>   <script
+                    type="text/javascript"
+                    src="/media/system/js/caption.js"></script>
+                    
+
+                    <link rel="stylesheet"
+                    href="/templates/system/css/system.css" type="text/css"
+                    /> <link rel="stylesheet"
+                    href="/templates/system/css/general.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/template.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue_bg.css"
+                    type="text/css" /> <!--[if lte IE 6]>
+                    <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                    rel="stylesheet" type="text/css" /> <![endif]-->
+                    
+</head>
+                    <bod
+
+#2 Aug 18 11:10:54: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                    Succeeded
+
+#3 Aug 18 11:10:56: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                    Connecting
+
+#4 Aug 18 11:10:56: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                    Writing request
+
+#5 Aug 18 11:10:57: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                    Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                    15:10:56 GMT
+                    Server: Apache
+                    X-Powered-By: PHP/5.2.14
+                    Set-Cookie:
+                    69413e8b2b7652ffd23b2c9ec705e001=91bdkg80vcivate9jmangsqlm1;
+                    path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                    IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                    Last-Modified: Thu, 18 Aug 2011 15:10:57 GMT
+                    Cache-Control: post-check=0, pre-check=0 Pragma:
+                    no-cache
+                    Content-Length: 3913
+                    Connection: close
+                    Content-Type: text/html; charset=utf-8
+                    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                    Transitional//EN"
+                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="http://www.w3.org/1999/xhtml"
+                    xml:lang="en-gb" lang="en-gb" > <head>
+                      <meta http-equiv="content-type" content="text/html;
+                    charset=utf-8" />   <meta name="robots" content="index,
+                    follow" />   <meta name="keywords" content="" />
+                      <meta name="description" content="" />   <meta
+                    name="generator" content="Joomla! 1.5 - Open Source
+                    Content Management" />   <title>American
+                    Songbook</title>
+                      <link href="/index.php?format=feed&amp;type=rss"
+                    rel="alternate" type="application/rss+xml" title="RSS
+                    2.0" />   <link
+                    href="/index.php?format=feed&amp;type=atom"
+                    rel="alternate" type="application/atom+xml" title="Atom
+                    1.0" />   <link
+                    href="/templates/rhuk_milkyway/favicon.ico"
+                    rel="shortcut icon" type="image/x-icon" />   <script
+                    type="text/javascript"
+                    src="/media/system/js/mootools.js"></script>   <script
+                    type="text/javascript"
+                    src="/media/system/js/caption.js"></script>
+                    
+
+                    <link rel="stylesheet"
+                    href="/templates/system/css/system.css" type="text/css"
+                    /> <link rel="stylesheet"
+                    href="/templates/system/css/general.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/template.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue_bg.css"
+                    type="text/css" /> <!--[if lte IE 6]>
+                    <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                    rel="stylesheet" type="text/css" /> <![endif]-->
+                    
+</head>
+                    <body id="page_bg" c
+
+#6 Aug 18 11:10:57: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                    Succeeded
+
+#7 Aug 18 11:10:59: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                    Connecting
+
+#8 Aug 18 11:10:59: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                    Writing request
+
+#9 Aug 18 11:10:59: INFO
+                    [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                    Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                    15:10:59 GMT
+                    Server: Apache/2.2.3 (Red Hat)
+                    X-Powered-By: PHP/5.2.14
+                    Set-Cookie:
+                    69413e8b2b7652ffd23b2c9ec705e001=4op8jpd4c6o0d3n5os1op3ptb3;
+                    path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                    IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                    Last-Modified: Thu, 18 Aug 2011 15:10:59 GMT
+                    Cache-Control: post-check=0, pre-check=0 Pragma:
+                    no-cache
+                    Content-Length: 3913
+                    Connection: close
+                    Content-Type: text/html; charset=utf-8
+                    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                    Transitional//EN"
+                    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="http://www.w3.org/1999/xhtml"
+                    xml:lang="en-gb" lang="en-gb" > <head>
+                      <meta http-equiv="content-type" content="text/html;
+                    charset=utf-8" />   <meta name="robots" content="index,
+                    follow" />   <meta name="keywords" content="" />
+                      <meta name="description" content="" />   <meta
+                    name="generator" content="Joomla! 1.5 - Open Source
+                    Content Management" />   <title>American
+                    Songbook</title>
+                      <link href="/index.php?format=feed&amp;type=rss"
+                    rel="alternate" type="application/rss+xml" title="RSS
+                    2.0" />   <link
+                    href="/index.php?format=feed&amp;type=atom"
+                    rel="alternate" type="application/atom+xml" title="Atom
+                    1.0" />   <link
+                    href="/templates/rhuk_milkyway/favicon.ico"
+                    rel="shortcut icon" type="image/x-icon" />   <script
+                    type="text/javascript"
+                    src="/media/system/js/mootools.js"></script>   <script
+                    type="text/javascript"
+                    src="/media/system/js/caption.js"></script>
+                    
+
+                    <link rel="stylesheet"
+                    href="/templates/system/css/system.css" type="text/css"
+                    /> <link rel="stylesheet"
+                    href="/templates/system/css/general.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/template.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue.css"
+                    type="text/css" /> <link rel="stylesheet"
+                    href="/templates/rhuk_milkyway/css/blue_bg.css"
+                    type="text/css" /> <!--[if lte IE 6]>
+                    <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                    rel="stylesheet" type="text/css" /> <![endif]-->
+                    
+</head>
+                    <bod
+
+#10 Aug 18 11:10:59: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#11 Aug 18 11:11:02: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#12 Aug 18 11:11:02: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#13 Aug 18 11:11:02: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:02 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=tfbvum0fp1iu73brrstkeresu2;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:02 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#14 Aug 18 11:11:02: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#15 Aug 18 11:11:04: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#16 Aug 18 11:11:05: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#17 Aug 18 11:11:05: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:04 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=im0ure7sf19iei099gjlqr0fc2;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:05 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#18 Aug 18 11:11:05: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#19 Aug 18 11:11:07: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#20 Aug 18 11:11:07: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#21 Aug 18 11:11:07: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:07 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=7h6fs5fbbsdvvmo20vb7bicl06;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:07 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#22 Aug 18 11:11:07: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#23 Aug 18 11:11:10: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#24 Aug 18 11:11:10: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#25 Aug 18 11:11:10: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:10 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=65alc55arrsaip74qcnmjss275;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:10 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#26 Aug 18 11:11:10: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#27 Aug 18 11:11:12: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#28 Aug 18 11:11:12: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#29 Aug 18 11:11:12: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:12 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=a5jvtu8upo6r8j5knpqvpv0e63;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:12 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#30 Aug 18 11:11:12: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#31 Aug 18 11:11:15: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#32 Aug 18 11:11:15: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#33 Aug 18 11:11:15: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:15 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=689vae5d8eb8mpkd91l96dtdd0;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:15 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#34 Aug 18 11:11:15: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#35 Aug 18 11:11:17: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#36 Aug 18 11:11:17: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#37 Aug 18 11:11:17: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:17 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=qf761efk0efhsve20tu5avh2o5;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:17 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#38 Aug 18 11:11:17: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#39 Aug 18 11:11:20: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#40 Aug 18 11:11:20: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#41 Aug 18 11:11:20: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:20 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=s4bbqd91d4r6j3v6og1ivlif44;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:20 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#42 Aug 18 11:11:20: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#43 Aug 18 11:11:22: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#44 Aug 18 11:11:22: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#45 Aug 18 11:11:22: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:22 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=n0inhf2j9j3bi9sts16g0ok0t6;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:22 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#46 Aug 18 11:11:22: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#47 Aug 18 11:11:25: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#48 Aug 18 11:11:25: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#49 Aug 18 11:11:25: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:25 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=kfvph4tf4kqa6qrblba04u2e07;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:25 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#50 Aug 18 11:11:25: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#51 Aug 18 11:11:27: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#52 Aug 18 11:11:27: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#53 Aug 18 11:11:27: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:27 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=d84q5drl1e4qk8pghkita44qo4;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:27 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#54 Aug 18 11:11:27: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#55 Aug 18 11:11:30: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#56 Aug 18 11:11:30: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#57 Aug 18 11:11:30: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:30 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=sa0e9q85tf8s43o2mk57ttdin3;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:30 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#58 Aug 18 11:11:30: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#59 Aug 18 11:11:32: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#60 Aug 18 11:11:32: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#61 Aug 18 11:11:32: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:32 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=t5jt3cpipkv1r33hvl8drjqgt6;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:32 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#62 Aug 18 11:11:32: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#63 Aug 18 11:11:35: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#64 Aug 18 11:11:35: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#65 Aug 18 11:11:36: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:35 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=j9l3eoc784mih7h2klhgkcmm85;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:36 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#66 Aug 18 11:11:36: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#67 Aug 18 11:11:37: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#68 Aug 18 11:11:37: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#69 Aug 18 11:11:38: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:37 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=en6kaouhjqdk96n6h4tmbvrsh0;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:38 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#70 Aug 18 11:11:38: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#71 Aug 18 11:11:41: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#72 Aug 18 11:11:41: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#73 Aug 18 11:11:41: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:41 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=1dk55jksmlq9cun7v8e6oirlv6;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:41 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#74 Aug 18 11:11:41: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#75 Aug 18 11:11:43: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#76 Aug 18 11:11:43: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#77 Aug 18 11:11:43: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:43 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=kcij1cp73aa2itjb31uh3fis34;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:43 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#78 Aug 18 11:11:43: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#79 Aug 18 11:11:46: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#80 Aug 18 11:11:46: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#81 Aug 18 11:11:46: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:46 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=09ne6r4n0fau54e60g9r5jmmr2;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:46 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#82 Aug 18 11:11:46: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#83 Aug 18 11:11:48: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#84 Aug 18 11:11:48: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#85 Aug 18 11:11:48: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:48 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=ue9fit0dao6ttb6t0h94nm3bu1;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:48 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#86 Aug 18 11:11:48: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#87 Aug 18 11:11:51: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+
+#88 Aug 18 11:11:51: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Writing request
+
+#89 Aug 18 11:11:51: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:51 GMT
+                     Server: Apache/2.2.3 (Red Hat)
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=hqtko354bgu8gb6e562v83a7o2;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:51 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <bod
+
+#90 Aug 18 11:11:51: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Succeeded
+
+#91 Aug 18 11:11:53: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Connecting
+
+#92 Aug 18 11:11:53: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Writing request
+
+#93 Aug 18 11:11:53: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Response data: HTTP/1.1 200 OK Date: Thu, 18 Aug 2011
+                     15:11:53 GMT
+                     Server: Apache
+                     X-Powered-By: PHP/5.2.14
+                     Set-Cookie:
+                     69413e8b2b7652ffd23b2c9ec705e001=ogpl5iiegsehmpq7j2i9vnqvn3;
+                     path=/ P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP
+                     IND DEM" Expires: Mon, 1 Jan 2001 00:00:00 GMT
+                     Last-Modified: Thu, 18 Aug 2011 15:11:53 GMT
+                     Cache-Control: post-check=0, pre-check=0 Pragma:
+                     no-cache
+                     Content-Length: 3913
+                     Connection: close
+                     Content-Type: text/html; charset=utf-8
+                     
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+                     Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                     <html xmlns="http://www.w3.org/1999/xhtml"
+                     xml:lang="en-gb" lang="en-gb" > <head>
+                       <meta http-equiv="content-type" content="text/html;
+                     charset=utf-8" />   <meta name="robots"
+                     content="index, follow" />   <meta name="keywords"
+                     content="" />
+                       <meta name="description" content="" />   <meta
+                     name="generator" content="Joomla! 1.5 - Open Source
+                     Content Management" />   <title>American
+                     Songbook</title>
+                       <link href="/index.php?format=feed&amp;type=rss"
+                     rel="alternate" type="application/rss+xml" title="RSS
+                     2.0" />   <link
+                     href="/index.php?format=feed&amp;type=atom"
+                     rel="alternate" type="application/atom+xml"
+                     title="Atom 1.0" />   <link
+                     href="/templates/rhuk_milkyway/favicon.ico"
+                     rel="shortcut icon" type="image/x-icon" />   <script
+                     type="text/javascript"
+                     src="/media/system/js/mootools.js"></script>   <script
+                     type="text/javascript"
+                     src="/media/system/js/caption.js"></script>
+                     
+
+                     <link rel="stylesheet"
+                     href="/templates/system/css/system.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/system/css/general.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/template.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue.css"
+                     type="text/css" /> <link rel="stylesheet"
+                     href="/templates/rhuk_milkyway/css/blue_bg.css"
+                     type="text/css" /> <!--[if lte IE 6]>
+                     <link href="/templates/rhuk_milkyway/css/ieonly.css"
+                     rel="stylesheet" type="text/css" /> <![endif]-->
+                     
+</head>
+                     <body id="page_bg" c
+
+#94 Aug 18 11:11:53: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.238:80]
+                     Succeeded
+
+#95 Aug 18 11:11:56: INFO
+                     [Monitor: Simple HTTP] [Machine: 10.64.113.239:80]
+                     Connecting
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

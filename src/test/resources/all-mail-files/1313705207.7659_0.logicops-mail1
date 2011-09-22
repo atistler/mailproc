@@ -1,0 +1,40 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IM6lnX007657
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 18:06:47 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IM6lnM007656
+	for logicops; Thu, 18 Aug 2011 18:06:47 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IM6l0t007649
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 18:06:47 -0400
+Resent-Date: Thu, 18 Aug 2011 18:06:47 -0400
+Resent-Message-Id: <201108182206.p7IM6l0t007649@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from psmtp.com (64.18.3.118) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 18:06:46 -0400
+Received: from lw-web-dev1v.nycmny04.client.logicworks.net ([206.252.153.188])
+ (using TLSv1) by exprod8mx218.postini.com ([64.18.7.10]) with SMTP;	Thu, 18
+ Aug 2011 18:06:46 EDT
+Received: from lw-web-dev1v.nycmny04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ lw-web-dev1v.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7IM128M024746	for <lw-alert-disk@logicworks.net>; Thu, 18 Aug 2011 18:01:02
+ -0400
+Received: (from root@localhost)	by lw-web-dev1v.nycmny04.client.logicworks.net
+ (8.13.8/8.13.8/Submit) id p7IM1205024745	for lw-alert-disk@logicworks.net;
+ Thu, 18 Aug 2011 18:01:02 -0400
+Date: Thu, 18 Aug 2011 18:01:02 -0400
+From: root <root@lw-web-dev1v.nycmny04.client.logicworks.net>
+Message-ID: <201108182201.p7IM1205024745@lw-web-dev1v.nycmny04.client.logicworks.net>
+To: <lw-alert-disk@logicworks.net>
+Subject: Disk Usage Alert: Disk space on lw-web-dev1v is at 96%!!!
+X-pstn-levels: (S: 1.94884/99.85394 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <root@lw-web-dev1v.nycmny04.client.logicworks.net> forward (user good) [1309/39] 
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Running out of space on /var/www - 96% on server lw-web-dev1v, Thu Aug 18 18:01:01 EDT 2011
+

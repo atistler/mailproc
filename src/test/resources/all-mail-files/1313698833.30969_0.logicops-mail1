@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKKXUv030967
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:20:33 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKKXf1030966
+	for logicops; Thu, 18 Aug 2011 16:20:33 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKKW2D030951;
+	Thu, 18 Aug 2011 16:20:32 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 16:20:31 -0400
+Received: from lw-tempmon1.ad.logicworks.net ([172.16.2.49]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 16:20:32 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 16:20:31 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: veltimob-db2 Unix Device - Ping - Private,Ping - Private,SSH Down at least 5 min at 16:20:31
+Message-ID: <LW-MON-EQvoFOAmEaJs00007a72@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 20:20:32.0058 (UTC) FILETIME=[4782C1A0:01CC5DE4]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Ping - Private,Ping - Private,SSH is Down at least 5 min on Unix Device: 10.96.60.153 (10.96.60.153).
+
+Details:
+Monitors that are down include: Ping - Private,Ping - Private,SSH
+Monitors that are up include: Linux System Load - 5 minute average -9+
+
+Notes on this device:
+This device was scanned by discovery on 6/6/2011 2:52:22 PM.
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 16:20:31
+Ipswitch WhatsUp Gold
+

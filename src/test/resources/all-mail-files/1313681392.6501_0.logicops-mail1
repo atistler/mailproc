@@ -1,0 +1,139 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFTp6K006499
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:29:51 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFTpOr006498
+	for logicops; Thu, 18 Aug 2011 11:29:51 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFTpIO006493
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:29:51 -0400
+Resent-Date: Thu, 18 Aug 2011 11:29:51 -0400
+Resent-Message-Id: <201108181529.p7IFTpIO006493@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.170) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 11:29:50 -0400
+Received: from mail.velti.com ([195.200.193.32]) (using TLSv1) by
+ exprod8mx191.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 11:29:49
+ EDT
+Received: from CALISTO.velti.net ([10.1.1.137]) by Exc-hc2.velti.net
+ ([10.1.1.53]) with mapi; Thu, 18 Aug 2011 18:29:45 +0300
+From: Dimitrios Kontos <dkontos@velti.com>
+To: Logicworks NOC <support@logicworks.net>,
+        Logicworks Support
+	<lw-support@logicworks.net>
+CC: Konstantinos Liakos <kliakos@velti.com>, Logicworks <Logicworks@velti.com>
+Date: Thu, 18 Aug 2011 18:29:44 +0300
+Subject: RE: Healthcheck/Monitoring Configuration for MobClix (SR 3-942021)
+Thread-Topic: Healthcheck/Monitoring Configuration for MobClix (SR 3-942021)
+Thread-Index: Acxds1v9zk7Fn0bfQ/OCxERfrwV2GAABsjMA
+Message-ID: <BB6DFE0BB4D6B048B3560A2D1606359913733BA8EA@CALISTO.velti.net>
+References: <0c082e8d8c0579d4dec85d0ad8517f28@logicops.logicworks.net>
+In-Reply-To: <0c082e8d8c0579d4dec85d0ad8517f28@logicops.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from base64 to 8bit by logicops-mail1.logicworks.net id p7IFTpIO006493
+
+Dear Support,
+
+A) We are receiving multiple emails from your automated system.
+
+The check refers to the below url:
+http://10.96.6.219/wbrs/inject2?cid=trt&pid=tcp&fid=small
+Please note that the correct url is:
+http://10.96.6.219:8280/wbrs/inject2?cid=trt&pid=tcp&fid=small
+
+As already communicated for 10.96.6.201-234 the url checks should follow the below pattern:
+a.      http://SERVER_IP_ADDRESS:8280/wbrs/inject?cid=trt&pid=tcp&fid=small
+b.      http://SERVER_IP_ADDRESS:8280/wbrs/inject2?cid=trt&pid=tcp&fid=small
+c.      http://SERVER_IP_ADDRESS:8280/mir/getMatch?cid=trt&pid=tcp&fid=small&md=xml&retas=id&rec=true
+d.      http://SERVER_IP_ADDRESS:8280/wbrs/sdk?cid=trt&pid=tcp&fid=small
+
+B) Also kindly inform us on severity Levels of these alerts. There is only MINOR, MAJOR? And are the escalation levels?
+
+C) Concerning the below urls:
+
+â€¢     http://go.adinfuse.com/wbrs/inject?cid=trt&pid=tcp&fid=small
+â€¢     http://go.adinfuse.com/wbrs/inject2?cid=trt&pid=tcp&fid=small
+â€¢     http://go.adinfuse.com/mir/getMatch?cid=trt&pid=tcp&fid=small&md=xml&retas=id&rec=true
+â€¢     http://go.adinfuse.com/wbrs/sdk?cid=trt&pid=tcp&fid=small
+
+They should be checked externally of any timeouts or delays (130ms latency).
+
+Contacts us if any other clarification is needed.
+
+Regards,
+
+Dimitrios Kontos | Technical Support Specialist
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.210.637.8800
+M  +30.695.195.5520
+E   dkontos@velti.com
+www.velti.com
+
+Velti is a global leader in mobile marketing and advertising solutions for mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid | Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Beijing | Shanghai | Sydney-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net]
+Sent: Thursday, August 18, 2011 5:30 PM
+To: Konstantinos Liakos; Logicworks
+Cc: Logicworks Support
+Subject: Healthcheck/Monitoring Configuration for MobClix (SR 3-942021)
+
+Greetings.
+
+In order to make sure that web content errors are received in a timely fashion by Velti, we've implemented a system that will automatically create and send emails to Logicworks@velti.com
+
+The notifications will look something like the following:
+
+Severity: MINOR
+First Occurred: 2011-08-18 10:16:23 EDT
+Last Occurred: 2011-08-18 10:16:23 EDT
+Occurrences: 1
+Source: Internal
+Organization: Velti
+Device: *NameofDevice*
+
+Message: Web Content Monitoring: Total Transaction Time above threshold: elapsed: 370.776 ms, Threshold 130 ms for url http://10.96.6.231/wbrs/sdk?cid=trt&pid=tcp&fid=small
+
+Sent by Automation Action: Velti - Threshold Limit Reached
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=events&q_type=aid&q_arg=219860&q_sev=1&q_sort=0&q_oper=0
+
+Currently, you will be receiving these notifications for any threshold breach above 130 ms and any connection refused errors that lasts for more than 30 seconds.  These emails are set to go out every 20 minutes until the problem is acknowledged or resolved and are linked to all the devices specified in your earlier emails.
+
+Also, we've been having some trouble establishing the web content error checks for the adinfuse URL's specified in an email by Mr. Liakos:
+
+â€¢     http://go.adinfuse.com/wbrs/inject?cid=trt&pid=tcp&fid=small
+â€¢     http://go.adinfuse.com/wbrs/inject2?cid=trt&pid=tcp&fid=small
+â€¢     http://go.adinfuse.com/mir/getMatch?cid=trt&pid=tcp&fid=small&md=xml&retas=id&rec=true
+â€¢     http://go.adinfuse.com/wbrs/sdk?cid=trt&pid=tcp&fid=small
+
+Could you please clarify the port's that need to be used, the servers to which these checks should be placed on, and the health checks we should be looking for?
+
+Thank you
+
+Regards,
+Logicworks NRT
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/942021/Page
+
+
+

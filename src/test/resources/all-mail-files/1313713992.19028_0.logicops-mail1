@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0XCmr019026
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:33:12 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J0XCOr019025
+	for logicops; Thu, 18 Aug 2011 20:33:12 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0XB11019010;
+	Thu, 18 Aug 2011 20:33:11 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 20:33:09 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 20:33:09 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 20:33:09 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: velti-app15 RHEL 5 - SSH is DOWN at 08:28:11 PM.
+Message-ID: <LW-MON-EQMiOpQljyYP00007aee@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 00:33:09.0955 (UTC) FILETIME=[92524930:01CC5E07]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+velti-app15 (10.64.102.215) RHEL 5: 
+
+SSH on 10.64.102.215 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+Root  (configure /etc/snmp/snmp.local.conf)
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 08:28:10 PM by Whatsup Gold in Equinix
+

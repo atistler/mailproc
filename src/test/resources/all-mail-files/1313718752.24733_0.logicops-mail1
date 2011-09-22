@@ -1,0 +1,30 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1qWTf024731
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:52:32 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1qWSl024730
+	for logicops; Thu, 18 Aug 2011 21:52:32 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1qV9L024715;
+	Thu, 18 Aug 2011 21:52:31 -0400
+Received: from lw-augur1.nycmny04.client.logicworks.net (206.252.128.42) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 21:52:30 -0400
+Received: from lw-augur1 (localhost.localdomain [127.0.0.1])	by
+ lw-augur1.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J1qU4P032054	for <lw-alert-server@ext.logicworks.net>; Thu, 18 Aug 2011
+ 21:52:30 -0400
+Message-ID: <1374119532.237501313718750596.JavaMail.root@lw-augur1>
+Date: Thu, 18 Aug 2011 21:52:30 -0400
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Subject: 18x syslog: 10.252.132.8: sshdbrute Failed password for invalid
+ user root from ::ffff:202.53.13.150 port 38769 ssh2 @ 9:51:52 PM EDT
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+18x syslog: 10.252.132.8: sshdbrute Failed password for invalid user root from ::ffff:202.53.13.150 port 38769 ssh2 @ 9:51:52 PM EDT
+

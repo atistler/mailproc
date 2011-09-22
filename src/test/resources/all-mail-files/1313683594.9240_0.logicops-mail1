@@ -1,0 +1,93 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG6Ypx009238
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:06:34 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IG6Ybb009235
+	for logicops; Thu, 18 Aug 2011 12:06:34 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IG6Xvr009224
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:06:33 -0400
+Resent-Date: Thu, 18 Aug 2011 12:06:33 -0400
+Resent-Message-Id: <201108181606.p7IG6Xvr009224@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from elser-lb1 (209.81.91.75) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 12:06:33 -0400
+Received: from elser-lb1v (centos5-64 [127.0.0.1])	by elser-lb1
+ (8.13.8/8.13.8) with SMTP id p7IG6X4M004875	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 12:06:33 -0400
+Message-ID: <201108181606.p7IG6X4M004875@elser-lb1>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@elser-lb1v>
+Date: Thu, 18 Aug 2011 12:06:33 -0400
+Subject: Zeus: 11 events: Summary of recent service protection events, Summary of recent service protection events...
+X-ZXTM-Notify: elser-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from elser-lb1v.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 12:02:09: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 71.52.96.192,
+                    dropped  - 1 time(s)
+
+#2 Aug 18 12:03:49: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 64.126.84.10,
+                    dropped  - 1 time(s)
+
+#3 Aug 18 12:03:49: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 208.70.26.125,
+                    dropped  - 2 time(s)
+
+#4 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 24.228.206.27,
+                    dropped  - 5 time(s)
+
+#5 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 128.200.25.31,
+                    dropped  - 7 time(s)
+
+#6 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 173.61.100.127,
+                    dropped  - 7 time(s)
+
+#7 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 71.125.133.132,
+                    dropped  - 1 time(s)
+
+#8 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 98.77.185.254,
+                    dropped  - 4 time(s)
+
+#9 Aug 18 12:03:50: DOS  Service Protection Class 'Default Protection
+                    Class'
+                    Too many concurrent connections from 75.118.199.214,
+                    dropped  - 1 time(s)
+
+#10 Aug 18 12:06:29: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 75.23.35.13,
+                     dropped  - 3 time(s)
+
+#11 Aug 18 12:06:30: DOS  Service Protection Class 'Default Protection
+                     Class'
+                     Too many concurrent connections from 173.23.127.123,
+                     dropped  - 2 time(s)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

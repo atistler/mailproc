@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II7VLE017676
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:07:31 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7II7VAr017675
+	for logicops; Thu, 18 Aug 2011 14:07:31 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II7UeE017660;
+	Thu, 18 Aug 2011 14:07:30 -0400
+Received: from afscmeent-stor4.sccnj04.client.logicworks.net (209.81.86.248)
+ by LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1;
+ Thu, 18 Aug 2011 14:07:29 -0400
+Received: from you (localhost.localdomain [127.0.0.1])	by
+ afscmeent-stor4.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7II7TKR011141	for lw-monitoring@ext.logicworks.net; Thu, 18 Aug 2011
+ 14:07:29 -0400
+Message-ID: <201108181807.p7II7TKR011141@afscmeent-stor4.sccnj04.client.logicworks.net>
+To: <lw-monitoring@ext.logicworks.net>
+From: <lw-monitoring@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 14:07:29 -0400
+Subject: FATAL  Event occurred on: afscmeent-stor4
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Controller ID: 0  Battery has failed and cannot support data retention. Please replace the battery
+Generated on:Thu Aug 18 15:07:29 2011
+
+
+SYSTEM DETAILS---
+IP Address: 209.81.86.248
+OS Name: Linux
+OS Version: 2.6
+Driver Name: megaraid_sas
+Driver Version: 00.00.05.30
+
+
+IMAGE DETAILS---
+BIOS Version: 2.120.63-1242
+Firmware Package Version: 12.12.0-0048
+Firmware Version: 3.22.00_4.11.05.00_0x05020000
+

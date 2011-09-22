@@ -1,0 +1,54 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1xDiL025199
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:59:13 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1xDZw025198
+	for logicops; Thu, 18 Aug 2011 21:59:13 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1xDU0025194
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 21:59:13 -0400
+Received: from logicops.logicworks.net (206.252.153.173) by
+ relay.ext.logicworks.net (209.81.86.16) with Microsoft SMTP Server id
+ 14.1.270.1; Thu, 18 Aug 2011 21:59:12 -0400
+Date: Thu, 18 Aug 2011 21:59:12 -0400
+To: "Kline, Anthony" <akline@psytechsolutions.net>,
+        "Kreamer, Mike"
+	<mkreamer@psytechsolutions.net>,
+        "Putman, Jennifer"
+	<jputman@psytechsolutions.net>
+From: Logicworks NOC <logicops@logicworks.net>
+CC: Logicworks Support <lw-support@logicworks.net>
+Reply-To: Logicworks NOC <support@logicworks.net>
+Subject: psytech-app05 - failed health check (SR 3-967917)
+Message-ID: <744b61e095d30e5193293442d5875f71@logicops.logicworks.net>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.2 (phpmailer.codeworxtech.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Greetings,
+
+We received a failed health check for psytech-app05. Can you confirm your aren't doing any work on this. Please see the failed alert below:
+
+500 Servlet jspservlet: unable to service request: ORA-01090: shutdown in progress - connection is not permitted 
+
+Logicworks NOC
+
+-------------------------------------------------------------------------------------------------------------
+
+Modifications:
+-------------------------------------------------------------------------------------------------------------
+
+Changes made to: SR 3-967917
+    Updated due date: 2011-08-19 04:00 -> 2011-08-19 04:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/967917/Page
+
+

@@ -1,0 +1,210 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IN5mOI012418
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:05:48 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IN5mQ8012417
+	for logicops; Thu, 18 Aug 2011 19:05:48 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IN5lXN012413
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:05:47 -0400
+Resent-Date: Thu, 18 Aug 2011 19:05:47 -0400
+Resent-Message-Id: <201108182305.p7IN5lXN012413@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.131) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 19:05:47 -0400
+Received: from mail-gy0-f169.google.com ([209.85.160.169]) (using TLSv1) by
+ exprod8mx231.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 19:05:46
+ EDT
+Received: by gyg10 with SMTP id 10so2020864gyg.0        for <multiple
+ recipients>; Thu, 18 Aug 2011 16:05:45 -0700 (PDT)
+Received: by 10.236.78.2 with SMTP id f2mr2027975yhe.46.1313708745075; Thu, 18
+ Aug 2011 16:05:45 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.236.153.66 with HTTP; Thu, 18 Aug 2011 16:05:25 -0700 (PDT)
+In-Reply-To: <E1381E5B6FE9294EAA74BB159E6C04353D3195C7@lw-mbx2.us.logicworks.net>
+References: <E1381E5B6FE9294EAA74BB159E6C04353D3195C7@lw-mbx2.us.logicworks.net>
+From: Jason Jernigan <jernigan@nodalexchange.com>
+Date: Thu, 18 Aug 2011 23:05:25 +0000
+Message-ID: <CAK2FOOyAeJmeB_oB6cayPKLjwmdoxbJSnD2rshp=BU62nTCi2w@mail.gmail.com>
+Subject: Re: Your New Logicworks Servers
+To: John Mailolli <jmailolli@logicworks.net>
+CC: lw-support <lw-support@logicworks.net>,
+        Freada Zysberg Sylvester
+	<fzysberg@logicworks.net>
+Content-Type: multipart/alternative; boundary="20cf300514f416ae2804aacfa7d0"
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:94.9308 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--20cf300514f416ae2804aacfa7d0
+Content-Type: text/plain; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+John,
+For these servers we don't really need a public IP. They need to be able to
+get out to the internet but they will never need direct inbound traffic. Le=
+t
+me know if we can arrange that. We should probably look at what our options
+are for DR either way, do you have sequential IP's available to expand the
+netblock? If not we can add another subnet.
+Thanks,
+Jason
+
+On Thu, Aug 18, 2011 at 10:15 PM, John Mailolli <jmailolli@logicworks.net>w=
+rote:
+
+>  Hello Jason,****
+>
+> ** **
+>
+> Thank you for continuing your partnership with Logicworks! We are turning
+> the following servers over to you:****
+>
+> ** **
+>
+> nodal-rto01v****
+>
+> nodaluat-rto01v****
+>
+> ** **
+>
+> Please find attached a PDF with important information you will need to kn=
+ow
+> in order to access your servers.  Please note there  are currently no Pub=
+lic
+> IP=92s left in your nodaldr netblock to allocate for the 3rd virtual,
+> nodaldr-rto01v and we are unable to complete the build configuration for
+> this server due to public connectivity. If you require additional IP=92s =
+or
+> servers in this netblock, we would suggest expanding or adding an additio=
+nal
+> net block on the firewall for this. Please inform us how you like us to
+> proceed with the 3rd virtual. ****
+>
+> ** **
+>
+> You may call into our NOC at 1-212-625-5444 at any time to obtain the
+> password for these servers. If you have any questions about your new
+> services, simply E-mail or call us and we=92ll be happy to help any way t=
+hat
+> we can.****
+>
+> ** **
+>
+> ** **
+>
+> Regards,****
+>
+> ** **
+>
+> John Mailolli****
+>
+> Logicworks | NRT Engineer****
+>
+> phone: 212-625-5444 (option 1)****
+>
+> support@logicworks.net****
+>
+> ** **
+>
+> ** **
+>
+
+
+
+--=20
+Jason W. Jernigan
+Manager Systems Operations
+Nodal Exchange LLC
+http://www.nodalexchange.com
+w: (703) 962-9818
+c: (703) 989-2911
+
+Confidentiality Notice: This communication may
+contain confidential information. If you are
+not the intended recipient, please return this
+message to the sender and delete all copies
+hereof without disclosing or using the
+information in this e-mail.
+
+--20cf300514f416ae2804aacfa7d0
+Content-Type: text/html; charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+John,<div>For these servers we don&#39;t really need a public IP. They need=
+ to be able to get out to the internet but they will never need direct inbo=
+und traffic. Let me know if we can arrange that. We should probably look at=
+ what our options are for DR either way, do you have sequential IP&#39;s av=
+ailable to expand the netblock? If not we can add another subnet.=A0</div>
+
+<div>Thanks,</div><div>Jason<br><br><div class=3D"gmail_quote">On Thu, Aug =
+18, 2011 at 10:15 PM, John Mailolli <span dir=3D"ltr">&lt;<a href=3D"mailto=
+:jmailolli@logicworks.net">jmailolli@logicworks.net</a>&gt;</span> wrote:<b=
+r>
+
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex;">
+
+
+
+
+
+<div lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div>
+<p class=3D"MsoNormal">Hello Jason,<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">Thank you for continuing your partnership with Logic=
+works! We are turning the following servers over to you:<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">nodal-rto01v<u></u><u></u></p>
+<p class=3D"MsoNormal">nodaluat-rto01v<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">Please find attached a PDF with important informatio=
+n you will need to know in order to access your servers.=A0 Please note the=
+re =A0are currently no Public IP=92s left in your nodaldr netblock to alloc=
+ate for the 3<sup>rd</sup> virtual, nodaldr-rto01v
+ and we are unable to complete the build configuration for this server due =
+to public connectivity. If you require additional IP=92s or servers in this=
+ netblock, we would suggest expanding or adding an additional net block on =
+the firewall for this. Please inform
+ us how you like us to proceed with the 3<sup>rd</sup> virtual. <u></u><u><=
+/u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">You may call into our NOC at <a href=3D"tel:1-212-62=
+5-5444" value=3D"+12126255444" target=3D"_blank">1-212-625-5444</a> at any =
+time to obtain the password for these servers. If you have any questions ab=
+out your new services, simply E-mail or call us and we=92ll be happy to hel=
+p any way that we can.<u></u><u></u></p>
+
+
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">Regards,<u></u><u></u></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+<p class=3D"MsoNormal">John Mailolli<u></u><u></u></p>
+<p class=3D"MsoNormal">Logicworks | NRT Engineer<u></u><u></u></p>
+<p class=3D"MsoNormal">phone: <a href=3D"tel:212-625-5444" value=3D"+121262=
+55444" target=3D"_blank">212-625-5444</a> (option 1)<u></u><u></u></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:support@logicworks.net" target=3D"=
+_blank">support@logicworks.net</a><u></u><u></u></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;font-family:Consolas=
+"><u></u>=A0<u></u></span></p>
+<p class=3D"MsoNormal"><u></u>=A0<u></u></p>
+</div>
+</div>
+
+</blockquote></div><br><br clear=3D"all"><div><br></div>-- <br>Jason W. Jer=
+nigan<br>Manager Systems Operations<br>Nodal Exchange LLC<br><a href=3D"htt=
+p://www.nodalexchange.com">http://www.nodalexchange.com</a><br>w: (703) 962=
+-9818<br>
+
+c: (703) 989-2911<br><br>Confidentiality Notice: This communication may<br>=
+contain confidential information. If you are<br>not the intended recipient,=
+ please return this<br>message to the sender and delete all copies<br>
+hereof without disclosing or using the<br>
+information in this e-mail.<br>
+</div>
+
+--20cf300514f416ae2804aacfa7d0--
+

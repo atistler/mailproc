@@ -1,0 +1,52 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4RwFc003415
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:27:58 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4Rwrv003414
+	for logicops; Fri, 19 Aug 2011 00:27:58 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4Rvm1003399;
+	Fri, 19 Aug 2011 00:27:57 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:27:56 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Fri, 19
+ Aug 2011 00:27:57 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Fri, 19 Aug 2011 00:27:57 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: noveda-db3 RHEL 5 - Linux System Load - 5 minute average - 30+ is DOWN at 12:23:49 AM.
+Message-ID: <LW-MON-EQjdSkleUBUh00007b55@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 04:27:57.0190 (UTC) FILETIME=[5EF7C260:01CC5E28]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+noveda-db3 (10.64.76.142) RHEL 5: 
+
+Linux System Load - 5 minute average - 30+ on 10.64.76.142 has been unresponsive for at least 6 minutes.
+
+Details:
+Linux System Load - 5 minute average - 30+=[6.21]
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/index.php?node_id=661313
+
+Notes:
+---------------------------------------------------------------
+Response Procedure
+
+1. Email monitoring@noveda.com.
+2.  Attempt to restart failing services on the machine.
+3. If site still does not come back up, reboot server.
+-----------------------------------------------------------------
+
+----------------------------------------
+This mail was sent on August 19, 2011 at 12:23:49 AM by Whatsup Gold in Equinix
+

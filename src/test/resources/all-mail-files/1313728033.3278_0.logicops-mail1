@@ -1,0 +1,94 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4RD1r003274
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:27:13 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4RDEY003270
+	for logicops; Fri, 19 Aug 2011 00:27:13 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4RCoU003262
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:27:12 -0400
+Resent-Date: Fri, 19 Aug 2011 00:27:12 -0400
+Resent-Message-Id: <201108190427.p7J4RCoU003262@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from radar-lb1v (209.81.88.94) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:27:12 -0400
+Received: from radar-lb1v (localhost.localdomain [127.0.0.1])	by radar-lb1v
+ (8.13.8/8.13.8) with SMTP id p7J4RCvK000746	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:27:12 -0400
+Message-ID: <201108190427.p7J4RCvK000746@radar-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@radar-lb1v>
+Date: Fri, 19 Aug 2011 00:27:12 -0400
+Subject: Zeus: 8 events: Pool now has working nodes, Node is working again, Node is working again, Node has failed...
+X-ZXTM-Notify: radar-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from radar-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'shape' = Partial Fail: Some nodes have failed
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = Failed
+ + Node '209.81.88.74:80' = Failed
+Pool 'web.nationalenquirer.com' = Partial Fail: Some nodes have failed
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = Failed
+ + Node '209.81.88.74:80' = Failed
+Pool 'web.mensfitness.com' = Partial Fail: Some nodes have failed
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = Failed
+ + Node '209.81.88.74:80' = Failed
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:26:56: SERIOUS  Node '209.81.88.73:80', Pool 'shape'
+                    Node 209.81.88.73 has failed - Timeout while waiting
+                    for response for
+                    http://www.origin.shape.com/sites/www.shape.com/files/imagecache/slide-image/Cottage-Cheese-400x400.jpg
+                    (increasing the 'max_reply_time' on the pool's
+                    'Connection Management' page may help)
+
+#2 Aug 19 00:26:56: INFO  Node '209.81.88.73:80', Pool 'shape'
+                    Node 209.81.88.73 is working again
+
+#3 Aug 19 00:26:59: SERIOUS  Node '209.81.88.73:80', Pool
+                    'web.mensfitness.com'
+                    Node 209.81.88.73 has failed - Timeout while waiting
+                    for response for
+                    http://web.mensfitness.com/sites/mensfitness.com/files/imagecache/node_large_thumbnail/article_teaser_images/watchthumb.jpg
+                    (increasing the 'max_reply_time' on the pool's
+                    'Connection Management' page may help)
+
+#4 Aug 19 00:26:59: SERIOUS  Pool 'web.mensfitness.com'
+                    Pool has no back-end nodes responding
+
+#5 Aug 19 00:26:59: SERIOUS  Node '209.81.88.73:80', Pool
+                    'web.nationalenquirer.com'
+                    Node 209.81.88.73 has failed - Timeout while waiting
+                    for response for
+                    http://web.nationalenquirer.com/sites/nationalenquirer.com/files/imagecache/node_page_image/article_images/56729.jpg
+                    (increasing the 'max_reply_time' on the pool's
+                    'Connection Management' page may help)
+
+#6 Aug 19 00:26:59: INFO  Node '209.81.88.73:80', Pool
+                    'web.nationalenquirer.com'
+                    Node 209.81.88.73 is working again
+
+#7 Aug 19 00:26:59: INFO  Node '209.81.88.72:80', Pool
+                    'web.mensfitness.com'
+                    Node 209.81.88.72 is working again
+
+#8 Aug 19 00:27:00: INFO  Pool 'web.mensfitness.com'
+                    Pool now has working nodes
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

@@ -1,0 +1,41 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILZuQJ005577
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:35:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILZuO7005576
+	for logicops; Thu, 18 Aug 2011 17:35:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILZseT005561;
+	Thu, 18 Aug 2011 17:35:54 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 17:35:54 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 17:35:54 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 17:35:54 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: vm-sharepoint1 Windows Server - Disk FULL!!!
+Message-ID: <LW-MON-EQMtjQ4S8Uq500007aae@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 21:35:54.0231 (UTC) FILETIME=[CEEF9870:01CC5DEE]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+One of the disks on vm-sharepoint1 (10.64.15.23) Windows Server is 99% FULL or access to monitor it is not configured properly.
+
+Whichever the case please investigate and address the issue IMMEDIATELY!
+
+Notes:
+*** NRT: Please contact a member of Sr Windows to investigate issue... ***
+
+Refer to: http://sharepoint.logicworks.net/contentscan.aspx
+
+Details:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 05:30:14 PM by Whatsup Gold in Equinix
+

@@ -1,0 +1,120 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKAw3g029762
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:10:58 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKAw1I029761
+	for logicops; Thu, 18 Aug 2011 16:10:58 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKAwkg029757
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:10:58 -0400
+Resent-Date: Thu, 18 Aug 2011 16:10:58 -0400
+Resent-Message-Id: <201108182010.p7IKAwkg029757@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.65) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 16:10:58 -0400
+Received: from exprod5og117.obsmtp.com ([64.18.0.149]) (using TLSv1) by
+ exprod8mx267.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 13:10:58
+ PDT
+Received: from Alpmlip07.e2k.ad.ge.com ([12.43.191.1]) (using TLSv1) by
+ exprod5ob117.postini.com ([64.18.4.12]) with SMTP	ID
+ DSNKTk1x0CNxmQ3Syyc10UgdTizHIf2f8Kl3@postini.com; Thu, 18 Aug 2011 13:10:57
+ PDT
+Received: from unknown (HELO useclpexw214.nbcuni.ge.com) ([3.44.150.25])  by
+ Alpmlip07.e2k.ad.ge.com with ESMTP; 18 Aug 2011 16:10:54 -0400
+Received: from rkfmlef01.e2k.ad.ge.com ([3.159.183.51])	by
+ useclpexw214.nbcuni.ge.com (SonicWALL 7.1.1.1995)	with ESMTP; Thu, 18 Aug
+ 2011 16:10:55 -0400
+Received: from RKFMLVEM01.e2k.ad.ge.com ([3.159.183.31]) by
+ rkfmlef01.e2k.ad.ge.com with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug
+ 2011 16:07:21 -0400
+Received: from 3.23.26.58 ([3.23.26.58]) by RKFMLVEM01.e2k.ad.ge.com
+ ([3.159.183.33]) with Microsoft Exchange Server HTTP-DAV ; Thu, 18 Aug 2011
+ 20:07:20 +0000
+User-Agent: Microsoft-Entourage/12.30.0.110427
+Date: Thu, 18 Aug 2011 16:10:50 -0400
+Subject: Re: high load on bravotv-web servers (SR 3-967819)
+From: "Witherow, Matthew (NBC Universal)" <matthew.witherow@nbcuni.com>
+To: Samuel Magee <Samuel.Magee@nbcuni.com>,
+        "support@logicworks.net"
+	<support@logicworks.net>,
+        Aris Cruz <Aris.Cruz@nbcuni.com>,
+        "Keilson,
+ Jonathan" <jonathan.keilson@nbcuni.com>,
+        Rahsaan Page
+	<Rahsaan.Page@nbcuni.com>,
+        "dpsi@nbcuni.com" <dpsi@nbcuni.com>
+CC: lw-support <lw-support@logicworks.net>,
+        "Tai, Nelson (NBCUniversal)"
+	<Nelson.Tai@nbcuni.com>,
+        "McMillen, Stephen (NBC Universal)"
+	<Stephen.McMillen@nbcuni.com>,
+        "Small, Michael (NBCUniversal)"
+	<Michael.Small@nbcuni.com>
+Message-ID: <CA72EA0A.135B0%matthew.witherow@nbcuni.com>
+Thread-Topic: high load on bravotv-web servers (SR 3-967819)
+Thread-Index: Acxd37Q+vWFDh40pS0W1ogG4OtyU9wAAzhV5
+In-Reply-To: <CA72E4A3.A6BE%Samuel.Magee@nbcuni.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-OriginalArrivalTime: 18 Aug 2011 20:07:21.0386 (UTC) FILETIME=[703BC8A0:01CC5DE2]
+X-Mlf-Version: 7.1.1.1995
+X-Mlf-UniqueId: o201108182010550129418
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Sam,
+
+You pointed out some 404s in the logs and Nelson also saw what looks to be a
+lot of bad calls by ad servers (FlashTalking, Pictela, etc) looking for
+"gating" files on our side.
+
+There was an outstanding ticket for us to add some of these files from the
+Ad team but we were waiting on hearing some more information back from them.
+In the meantime I went ahead and pushed these files
+(http://www.bravotv.com/flashtalking/flashtalking_i_frame.html being one of
+them), hopefully we'll now see the 404s subside along with our server load.
+
+Matt
+
+
+On 8/18/11 3:47 PM, "Samuel Magee" <Samuel.Magee@nbcuni.com> wrote:
+
+> Since the MySQL database service checks look ok and the Hosting team has
+> tried restarting Apache a few times with no change in status, I'm copying in
+> the Bravotv developers to look into why there are so many requests taking 30
+> to 90 seconds to complete.
+> 
+> 
+> On 8/18/11 3:25 PM, "Logicworks NOC" <logicops@logicworks.net> wrote:
+> 
+>> Greetings,
+>> 
+>> We have detected that your web servers (web1/web2/web3/web5) are experiencing
+>> high load at the moment.  We spoke with Aris, who informed us that your team
+>> has been looking into this.  If you need our assistance, please feel free to
+>> let us know. Thank you.
+>> 
+>> Regards,
+>> 
+>> Logicworks NOC
+>> 
+>> 
+----------------------------------------------------------------------------->>
+-
+>> -------------------------------
+>> 
+>> 
+>> 
+>> 
+>> 
+>> At Logicworks, our customers' feedback is important to us. We want to hear
+>> from you regarding your experiences with the services that we offer.
+>> To leave feedback regarding this Service Request please visit:
+>> https://logicops.logicworks.net/AddCustomerFeedback/967819/Page
+>> 
+>> 
+> 
+

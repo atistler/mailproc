@@ -1,0 +1,398 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIgkBN020258
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:42:46 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIgkZh020257
+	for logicops; Thu, 18 Aug 2011 14:42:46 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIgjs2020253
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:42:45 -0400
+Resent-Date: Thu, 18 Aug 2011 14:42:45 -0400
+Resent-Message-Id: <201108181842.p7IIgjs2020253@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.156) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 14:42:44 -0400
+Received: from mail.velti.com ([195.200.193.32]) (using TLSv1) by
+ exprod8mx289.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 14:42:43
+ EDT
+Received: from CALISTO.velti.net ([10.1.1.137]) by Exc-hc2.velti.net
+ ([10.1.1.53]) with mapi; Thu, 18 Aug 2011 21:42:40 +0300
+From: Dimitrios Kontos <dkontos@velti.com>
+To: Alexander Ospina <aospina@logicworks.net>
+CC: Logicworks <Logicworks@velti.com>, lw-support <lw-support@logicworks.net>
+Date: Thu, 18 Aug 2011 21:42:39 +0300
+Subject: RE: [veltimob-app46] Port 22 accessible from certain IPs
+Thread-Topic: [veltimob-app46] Port 22 accessible from certain IPs
+Thread-Index: AcxdxplGFiE1BkoETaaXotrkTMTRAQADVLAAAAASlCAAAJNrsA==
+Message-ID: <BB6DFE0BB4D6B048B3560A2D1606359913733BA957@CALISTO.velti.net>
+References: <BB6DFE0BB4D6B048B3560A2D1606359913733BA936@CALISTO.velti.net>
+ <BB6DFE0BB4D6B048B3560A2D1606359913733BA954@CALISTO.velti.net>
+ <8A6BD2659673894E93737B25DFA21A7B3D3416AB@lw-mbx2.us.logicworks.net>
+In-Reply-To: <8A6BD2659673894E93737B25DFA21A7B3D3416AB@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/alternative;
+	boundary="_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA957CALISTOveltin_"
+MIME-Version: 1.0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA957CALISTOveltin_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Thank you for the update Alexander.
+
+From: Alexander Ospina [mailto:aospina@logicworks.net]
+Sent: Thursday, August 18, 2011 9:26 PM
+To: Dimitrios Kontos; lw-support
+Cc: Logicworks
+Subject: RE: [veltimob-app46] Port 22 accessible from certain IPs
+
+Dimitrios -
+
+I believe my colleague, Xiao, took care of this earlier today:
+
+Nikos,
+
+Your firewall request has been completed.  Please test at your convenience.
+
+ACCEPT     tcp  --  184.73.172.183       209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  184.72.248.181       209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  174.129.215.253      209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  174.129.12.58        209.73.35.146       multiport dpor=
+ts 22
+ACCEPT     tcp  --  184.73.194.211       209.73.35.146       multiport dpor=
+ts 22
+
+
+Regards,
+
+Xiao Fen Lin
+Logicworks | NRT Engineer
+phone: 212-625-5444 (option 1)
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+
+From: Dimitrios Kontos [mailto:dkontos@velti.com]
+Sent: Thursday, August 18, 2011 2:24 PM
+To: lw-support; lw-support
+Cc: Logicworks
+Subject: RE: [veltimob-app46] Port 22 accessible from certain IPs
+
+Dear Logicworks Support,
+
+This is a kind reminder. Any update on this?
+
+Regards,
+
+From: Dimitrios Kontos
+Sent: Thursday, August 18, 2011 7:48 PM
+To: Logicworks NOC; lw-support
+Cc: Logicworks
+Subject: [veltimob-app46] Port 22 accessible from certain IPs
+
+Dear Support,
+
+Please open port 22 on server 209.73.35.146 (10.96.6.146, veltimob-app46), =
+to be accessible from the following IPs:
+
+184.73.172.183
+184.72.248.181
+174.129.215.253
+174.129.12.58
+184.73.194.211
+
+Thank you in advance.
+
+Regards,
+
+Dimitrios Kontos | Technical Support Specialist
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.210.637.8800
+M  +30.695.195.5520
+E   dkontos@velti.com<mailto:dkontos@velti.com>
+www.velti.com<http://www.velti.com>
+
+Velti is a global leader in mobile marketing and advertising solutions for =
+mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid |=
+ Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Bei=
+jing | Shanghai | Sydney
+
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA957CALISTOveltin_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:p=3D"urn:schemas-m=
+icrosoft-com:office:powerpoint" xmlns:a=3D"urn:schemas-microsoft-com:office=
+:access" xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:s=3D"=
+uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:rs=3D"urn:schemas-microsof=
+t-com:rowset" xmlns:z=3D"#RowsetSchema" xmlns:b=3D"urn:schemas-microsoft-co=
+m:office:publisher" xmlns:ss=3D"urn:schemas-microsoft-com:office:spreadshee=
+t" xmlns:c=3D"urn:schemas-microsoft-com:office:component:spreadsheet" xmlns=
+:odc=3D"urn:schemas-microsoft-com:office:odc" xmlns:oa=3D"urn:schemas-micro=
+soft-com:office:activation" xmlns:html=3D"http://www.w3.org/TR/REC-html40" =
+xmlns:q=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:rtc=3D"http://m=
+icrosoft.com/officenet/conferencing" xmlns:D=3D"DAV:" xmlns:Repl=3D"http://=
+schemas.microsoft.com/repl/" xmlns:mt=3D"http://schemas.microsoft.com/share=
+point/soap/meetings/" xmlns:x2=3D"http://schemas.microsoft.com/office/excel=
+/2003/xml" xmlns:ppda=3D"http://www.passport.com/NameSpace.xsd" xmlns:ois=
+=3D"http://schemas.microsoft.com/sharepoint/soap/ois/" xmlns:dir=3D"http://=
+schemas.microsoft.com/sharepoint/soap/directory/" xmlns:ds=3D"http://www.w3=
+.org/2000/09/xmldsig#" xmlns:dsp=3D"http://schemas.microsoft.com/sharepoint=
+/dsp" xmlns:udc=3D"http://schemas.microsoft.com/data/udc" xmlns:xsd=3D"http=
+://www.w3.org/2001/XMLSchema" xmlns:sub=3D"http://schemas.microsoft.com/sha=
+repoint/soap/2002/1/alerts/" xmlns:ec=3D"http://www.w3.org/2001/04/xmlenc#"=
+ xmlns:sp=3D"http://schemas.microsoft.com/sharepoint/" xmlns:sps=3D"http://=
+schemas.microsoft.com/sharepoint/soap/" xmlns:xsi=3D"http://www.w3.org/2001=
+/XMLSchema-instance" xmlns:udcs=3D"http://schemas.microsoft.com/data/udc/so=
+ap" xmlns:udcxf=3D"http://schemas.microsoft.com/data/udc/xmlfile" xmlns:udc=
+p2p=3D"http://schemas.microsoft.com/data/udc/parttopart" xmlns:wf=3D"http:/=
+/schemas.microsoft.com/sharepoint/soap/workflow/" xmlns:dsss=3D"http://sche=
+mas.microsoft.com/office/2006/digsig-setup" xmlns:dssi=3D"http://schemas.mi=
+crosoft.com/office/2006/digsig" xmlns:mdssi=3D"http://schemas.openxmlformat=
+s.org/package/2006/digital-signature" xmlns:mver=3D"http://schemas.openxmlf=
+ormats.org/markup-compatibility/2006" xmlns:m=3D"http://schemas.microsoft.c=
+om/office/2004/12/omml" xmlns:mrels=3D"http://schemas.openxmlformats.org/pa=
+ckage/2006/relationships" xmlns:spwp=3D"http://microsoft.com/sharepoint/web=
+partpages" xmlns:ex12t=3D"http://schemas.microsoft.com/exchange/services/20=
+06/types" xmlns:ex12m=3D"http://schemas.microsoft.com/exchange/services/200=
+6/messages" xmlns:pptsl=3D"http://schemas.microsoft.com/sharepoint/soap/Sli=
+deLibrary/" xmlns:spsl=3D"http://microsoft.com/webservices/SharePointPortal=
+Server/PublishedLinksService" xmlns:Z=3D"urn:schemas-microsoft-com:" xmlns:=
+st=3D"&#1;" xmlns=3D"http://www.w3.org/TR/REC-html40"><head><META HTTP-EQUI=
+V=3D"Content-Type" CONTENT=3D"text/html; charset=3Dus-ascii"><meta name=3DG=
+enerator content=3D"Microsoft Word 12 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:#1F497D;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Verdana","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal-reply;
+	font-family:"Verdana","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vli=
+nk=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span style=3D'f=
+ont-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'>Thank you=
+ for the update Alexander.<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'=
+><o:p>&nbsp;</o:p></span></p><div><div style=3D'border:none;border-top:soli=
+d #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span st=
+yle=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span></b>=
+<span style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Alexand=
+er Ospina [mailto:aospina@logicworks.net] <br><b>Sent:</b> Thursday, August=
+ 18, 2011 9:26 PM<br><b>To:</b> Dimitrios Kontos; lw-support<br><b>Cc:</b> =
+Logicworks<br><b>Subject:</b> RE: [veltimob-app46] Port 22 accessible from =
+certain IPs<o:p></o:p></span></p></div></div><p class=3DMsoNormal><o:p>&nbs=
+p;</o:p></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>Dimitrios &#=
+8211;<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497=
+D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1=
+F497D'>I believe my colleague, Xiao, took care of this earlier today:<o:p><=
+/o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'><o:p>&nb=
+sp;</o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>Niko=
+s,<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>=
+<o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F49=
+7D'>Your firewall request has been completed.&nbsp; Please test at your con=
+venience. <o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:#=
+1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'col=
+or:#1F497D'>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp; --&nbsp; 184.73.172.18=
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp; multiport dports 22<o:p></o:p></span></p><p class=3DMsoNormal>=
+<span style=3D'color:#1F497D'>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp; --&n=
+bsp; 184.72.248.181&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 209.73.35.146&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o:p></o:p></span></p><p =
+class=3DMsoNormal><span style=3D'color:#1F497D'>ACCEPT&nbsp;&nbsp;&nbsp;&nb=
+sp; tcp&nbsp; --&nbsp; 174.129.215.253&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 209.73=
+.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multiport dports 22<o:p></o:p><=
+/span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>ACCEPT&nbsp;&n=
+bsp;&nbsp;&nbsp; tcp&nbsp; --&nbsp; 174.129.12.58&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; multipor=
+t dports 22<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:=
+#1F497D'>ACCEPT&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp; --&nbsp; 184.73.194.211&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 209.73.35.146&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; multiport dports 22<o:p></o:p></span></p><p class=3DMsoNormal><sp=
+an style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal=
+><span style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNo=
+rmal><span style=3D'color:#1F497D'>Regards,<o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'color:#1F497D'><o:p>&nbsp;</o:p></span></p><p c=
+lass=3DMsoNormal><span style=3D'color:#1F497D'>Xiao Fen Lin<o:p></o:p></spa=
+n></p><p class=3DMsoNormal><span style=3D'color:#1F497D'>Logicworks | NRT E=
+ngineer<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F4=
+97D'>phone: 212-625-5444 (option 1)<o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'color:#1F497D'><a href=3D"mailto:support@logicworks.net">=
+support@logicworks.net</a><o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:10.5pt;font-family:Consolas;color:#1F497D'><o:p>&nbsp;</=
+o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'><o:p>&nbs=
+p;</o:p></span></p><p class=3DMsoNormal><span style=3D'color:#1F497D'><o:p>=
+&nbsp;</o:p></span></p><div><div style=3D'border:none;border-top:solid #B5C=
+4DF 1.0pt;padding:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span style=3D=
+'font-size:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span></b><span =
+style=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Dimitrios Kon=
+tos [mailto:dkontos@velti.com] <br><b>Sent:</b> Thursday, August 18, 2011 2=
+:24 PM<br><b>To:</b> lw-support; lw-support<br><b>Cc:</b> Logicworks<br><b>=
+Subject:</b> RE: [veltimob-app46] Port 22 accessible from certain IPs<o:p><=
+/o:p></span></p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p cl=
+ass=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","sans=
+-serif";color:#1F497D'>Dear Logicworks Support,<o:p></o:p></span></p><p cla=
+ss=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-=
+serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497=
+D'>This is a kind reminder. Any update on this?<o:p></o:p></span></p><p cla=
+ss=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-=
+serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497=
+D'>Regards,<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-s=
+ize:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'><o:p>&nbsp;</o=
+:p></span></p><div><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt=
+;padding:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'font-siz=
+e:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span></b><span style=3D'=
+font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Dimitrios Kontos <br><=
+b>Sent:</b> Thursday, August 18, 2011 7:48 PM<br><b>To:</b> Logicworks NOC;=
+ lw-support<br><b>Cc:</b> Logicworks<br><b>Subject:</b> [veltimob-app46] Po=
+rt 22 accessible from certain IPs<o:p></o:p></span></p></div></div><p class=
+=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span style=3D'font-=
+size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'>Dear Support,=
+<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;=
+font-family:"Verdana","sans-serif";color:#1F497D'><o:p>&nbsp;</o:p></span><=
+/p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdan=
+a","sans-serif";color:#1F497D'>Please open port 22 on server 209.73.35.146 =
+(10.96.6.146, veltimob-app46), to be accessible from the following IPs:<o:p=
+></o:p></span></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font=
+-family:"Verdana","sans-serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><=
+p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","=
+sans-serif";color:#1F497D'>184.73.172.183<o:p></o:p></span></p><p class=3DM=
+soNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif"=
+;color:#1F497D'>184.72.248.181<o:p></o:p></span></p><p class=3DMsoNormal><s=
+pan style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F4=
+97D'>174.129.215.253<o:p></o:p></span></p><p class=3DMsoNormal><span style=
+=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'>174.=
+129.12.58<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-siz=
+e:10.0pt;font-family:"Verdana","sans-serif";color:#1F497D'>184.73.194.211<o=
+:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;fo=
+nt-family:"Verdana","sans-serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p=
+><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana"=
+,"sans-serif";color:#1F497D'>Thank you in advance.<o:p></o:p></span></p><p =
+class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Verdana","sa=
+ns-serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><=
+span style=3D'font-size:10.0pt;font-family:"Verdana","sans-serif";color:#1F=
+497D'>Regards,<o:p></o:p></span></p><p><strong><span style=3D'font-size:9.0=
+pt;font-family:"Tahoma","sans-serif";color:#365F91'>Dimitrios Kontos | Tech=
+nical Support Specialist</span></strong><b><span style=3D'font-size:9.0pt;f=
+ont-family:"Tahoma","sans-serif";color:#365F91'><br><br><strong><span style=
+=3D'font-family:"Tahoma","sans-serif"'>Velti</span></strong><br></span></b>=
+<strong><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";co=
+lor:#4A442A'>44 Kifisias Ave.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></=
+strong><b><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";=
+color:#4A442A'><br><strong><span style=3D'font-family:"Tahoma","sans-serif"=
+'>15125 Marousi, Athens, Greece</span></strong><br></span></b><strong><span=
+ style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";color:#E36C0A'>=
+T</span></strong><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-=
+serif";color:#4A442A'>&nbsp;&nbsp;&nbsp;+30.210.637.8800<br></span><b><span=
+ style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";color:#E36C0A'>=
+M</span></b><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif=
+";color:#4A442A'>&nbsp;&nbsp;+30.695.195.5520<br></span><b><span style=3D'f=
+ont-size:9.0pt;font-family:"Tahoma","sans-serif";color:#E36C0A'>E</span></b=
+><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";color:#4A=
+442A'>&nbsp;&nbsp; <a href=3D"mailto:dkontos@velti.com">dkontos@velti.com</=
+a></span><b><u><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-se=
+rif";color:#365F91'><br><a href=3D"http://www.velti.com" title=3D"http://ww=
+w.velti.com/"><span style=3D'color:#365F91'>www.velti.com</span></a><br><br=
+></span></u></b><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-s=
+erif";color:#365F91'>Velti is a global leader in mobile marketing and adver=
+tising solutions for mobile operators, ad agencies, brands and media groups=
+.</span><span style=3D'font-size:9.0pt;font-family:"Tahoma","sans-serif";co=
+lor:blue'><br></span><span style=3D'font-size:9.0pt;font-family:"Tahoma","s=
+ans-serif";color:#365F91'>San Francisco | New York | Los Angeles | Dublin |=
+ London | Paris | Madrid | Dusseldorf | Athens | Sofia | Moscow | Dubai | N=
+ew Delhi | Singapore | Beijing | Shanghai | Sydney</span><o:p></o:p></p><p =
+class=3DMsoNormal><span style=3D'font-size:12.0pt;font-family:"Times New Ro=
+man","serif"'><o:p>&nbsp;</o:p></span></p></div></body></html>=
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA957CALISTOveltin_--
+

@@ -1,0 +1,57 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFFOXr005507
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:15:24 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFFOS3005506
+	for logicops; Thu, 18 Aug 2011 11:15:24 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFFN8H005495
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:15:23 -0400
+Resent-Date: Thu, 18 Aug 2011 11:15:23 -0400
+Resent-Message-Id: <201108181515.p7IFFN8H005495@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net (209.81.92.91)
+ by LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id
+ 14.1.270.1; Thu, 18 Aug 2011 11:15:23 -0400
+Received: from globalgrind-lb1v.sccnj04.client.logicworks.net
+ (localhost.localdomain [127.0.0.1])	by
+ globalgrind-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7IFFNpL010267	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 11:15:23
+ -0400
+Message-ID: <201108181515.p7IFFNpL010267@globalgrind-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@globalgrind-lb1v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 11:15:23 -0400
+Subject: Zeus: Node has failed
+X-ZXTM-Notify: globalgrind-lb1v.sccnj04.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from globalgrind-lb1v.sccnj04.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'vip1-http' = Partial Fail: Some nodes have failed
+ + Node '10.64.115.85:80' = OK
+ + Node '10.64.115.86:80' = OK
+ + Node '10.64.115.87:80' = Failed
+ + Node '10.64.115.88:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 11:12:24: SERIOUS  Node '10.64.115.87:80', Pool 'vip1-http'
+                    Node 10.64.115.87 has failed - Timeout while
+                    establishing connection (the machine may be down, or
+                    the network congested; increasing the
+                    'max_connect_time' on the pool's 'Connection
+                    Management' page may help)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

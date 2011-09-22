@@ -1,0 +1,189 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2Tmsm027335
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:29:48 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J2Tmpw027334
+	for logicops; Thu, 18 Aug 2011 22:29:48 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2Tl67027330
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 22:29:47 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 22:29:47 -0400
+From: Nicholas Ennis <nennis@logicworks.net>
+To: "Logicworks@velti.com" <Logicworks@velti.com>,
+        "Service_Desk
+ (Service_Desk@velti.com)" <Service_Desk@velti.com>,
+        "technical-support,
+ technical-support (technical-support@velti.com)"
+	<technical-support@velti.com>
+CC: lw-support <lw-support@logicworks.net>
+Subject: SR 3-967922 velti-lb1v - nodes failing out of LB - 'velti-app5:81'
+Thread-Topic: SR 3-967922 velti-lb1v - nodes failing out of LB -
+ 'velti-app5:81'
+Thread-Index: AcxeF9wMks3NxKH9RSabtCImEZix7A==
+Date: Fri, 19 Aug 2011 02:29:46 +0000
+Message-ID: <B3959E42181EA149A27EB12CF6D8A8E73D1F187F@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/alternative;
+	boundary="_000_B3959E42181EA149A27EB12CF6D8A8E73D1F187Flwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_B3959E42181EA149A27EB12CF6D8A8E73D1F187Flwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+We received alerts that nodes are failing out of velti-lb1v.  The pools tha=
+t were created this morning are failing.
+
+
+#1 Aug 18 22:26:24: WARN  Monitor 'Simple HTTP'
+
+                    Monitor has detected a failure in node
+
+                    '10.64.102.198:81': Timeout while waiting for valid
+
+                    server response
+
+
+
+#2 Aug 18 22:26:24: SERIOUS  Node '10.64.102.198:81', Pool 'velti-app5:81'
+
+                    Node 10.64.102.198 has failed - A monitor has detected
+
+                    a failure
+
+
+
+#3 Aug 18 22:26:24: SERIOUS  Pool 'velti-app5:81'
+
+                    Pool has no back-end nodes responding
+
+
+Nicholas Ennis
+Logicworks | NRT Engineer
+Phone: 212-625-5444
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+--_000_B3959E42181EA149A27EB12CF6D8A8E73D1F187Flwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">We received alerts that nodes are failing out of vel=
+ti-lb1v.&nbsp; The pools that were created this morning are failing.<o:p></=
+o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">#1 Aug 18 22:26:24: WARN&nbsp; Monitor 'Simple HT=
+TP'<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitor h=
+as detected a failure in node<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; '10.64.10=
+2.198:81': Timeout while waiting for valid<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; server re=
+sponse<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">#2 Aug 18 22:26:24: SERIOUS&nbsp; Node '10.64.102=
+.198:81', Pool 'velti-app5:81'<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Node 10.6=
+4.102.198 has failed - A monitor has detected<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a failure=
+<o:p></o:p></p>
+<p class=3D"MsoPlainText"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoPlainText">#3 Aug 18 22:26:24: SERIOUS&nbsp; Pool 'velti-app=
+5:81'<o:p></o:p></p>
+<p class=3D"MsoPlainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pool has =
+no back-end nodes responding<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Nicholas Ennis<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Phone: 212-625-5444<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net"><span style=3D"color:#1F497D">support@logicworks.net</s=
+pan></a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_B3959E42181EA149A27EB12CF6D8A8E73D1F187Flwmbx2uslogicwo_--
+

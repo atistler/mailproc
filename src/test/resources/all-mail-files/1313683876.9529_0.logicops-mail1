@@ -1,0 +1,78 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGBGU3009527
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:11:16 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGBGWt009526
+	for logicops; Thu, 18 Aug 2011 12:11:16 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGBFkO009522
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:11:15 -0400
+Received: from logicops.logicworks.net (206.252.153.173) by
+ relay.ext.logicworks.net (206.252.153.186) with Microsoft SMTP Server id
+ 14.1.270.1; Thu, 18 Aug 2011 12:11:15 -0400
+Date: Thu, 18 Aug 2011 12:11:15 -0400
+From: Logicworks NOC <logicops@logicworks.net>
+CC: Logicworks Support <lw-support@logicworks.net>
+Reply-To: Logicworks NOC <support@logicworks.net>
+Subject: Push Wedu change from dev to prod (SR 3-966623)
+Message-ID: <c93774721c786433f657d0b75a7f0474@logicops.logicworks.net>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.2 (phpmailer.codeworxtech.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Everything looks good, we can close this ticket.  Thx. 
+
+-------------------------------------------------------------------------------------------------------------
+
+Modifications:
+-------------------------------------------------------------------------------------------------------------
+
+Changes made to: SR 3-966623
+    Updated status: Open -> Closed
+
+Basic Info:     SR 3-966623
+-------------------------------------------------------------------------------------------------------------
+
+Abstract: Push Wedu change from dev to prod
+- Status: Open
++ Status: Closed
+Date Due: 2011-08-17 20:00
+Assigned To: Levy, Daniel (2011-08-17 13:23:11)
+Created By: Hultman, Kyle (2011-08-17 13:02:12)
+Area: Internal - Support
+Accounts: 
+Contacts: 
+Services: 
+
+Notes
+-------------------------------------------------------------------------------------------------------------
+Note added by Hultman, Kyle on 2011-08-17 13:02:12
+
+    Move changes made by Wedu on lw-web-dev4v to logicworks production web cluster.
+
+Activities
+-------------------------------------------------------------------------------------------------------------
+Activity 3-966632
+
+    Abstract: Changes Made
+    Date Due: 2011-08-17 20:00:00
+    Status: Done
+    Assigned To: Hultman, Kyle (2011-08-17 13:22:29)
+    Created By: Hultman, Kyle (2011-08-17 13:22:29)
+    Area: Account Administration
+
+    
+
+    
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/966623/Page
+
+

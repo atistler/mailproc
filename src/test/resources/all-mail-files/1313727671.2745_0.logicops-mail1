@@ -1,0 +1,72 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4LBuj002743
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:21:11 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4LBrN002740
+	for logicops; Fri, 19 Aug 2011 00:21:11 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4LApa002729
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:21:10 -0400
+Resent-Date: Fri, 19 Aug 2011 00:21:10 -0400
+Resent-Message-Id: <201108190421.p7J4LApa002729@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from radar-lb1v (209.81.88.94) by LW-HUBCAS1V (206.252.153.175) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug 2011 00:21:10 -0400
+Received: from radar-lb1v (localhost.localdomain [127.0.0.1])	by radar-lb1v
+ (8.13.8/8.13.8) with SMTP id p7J4LAfj000631	for
+ <lw-linux@ext.logicworks.net>; Fri, 19 Aug 2011 00:21:10 -0400
+Message-ID: <201108190421.p7J4LAfj000631@radar-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@radar-lb1v>
+Date: Fri, 19 Aug 2011 00:21:10 -0400
+Subject: Zeus: 6 events: Node is working again, Node is working again, Pool now has working nodes, Node is working again...
+X-ZXTM-Notify: radar-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Traffic Manager Alert messages from radar-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'web.fitpregnancy.com' = OK
+ + Node '209.81.88.72:80' = OK
+ + Node '209.81.88.73:80' = OK
+ + Node '209.81.88.74:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 19 00:20:44: SERIOUS  Node '209.81.88.74:80', Pool
+                    'web.fitpregnancy.com'
+                    Node 209.81.88.74 has failed - Timeout while waiting
+                    for response for
+                    http://web.fitpregnancy.com/nutrition-recipes/prenatal-nutrition/detox-diet-5-day-meal-plan
+                    (increasing the 'max_reply_time' on the pool's
+                    'Connection Management' page may help)
+
+#2 Aug 19 00:20:44: SERIOUS  Pool 'web.fitpregnancy.com'
+                    Pool has no back-end nodes responding
+
+#3 Aug 19 00:20:45: INFO  Node '209.81.88.73:80', Pool
+                    'web.fitpregnancy.com'
+                    Node 209.81.88.73 is working again
+
+#4 Aug 19 00:20:45: INFO  Pool 'web.fitpregnancy.com'
+                    Pool now has working nodes
+
+#5 Aug 19 00:20:54: INFO  Node '209.81.88.74:80', Pool
+                    'web.fitpregnancy.com'
+                    Node 209.81.88.74 is working again
+
+#6 Aug 19 00:21:07: INFO  Node '209.81.88.72:80', Pool
+                    'web.fitpregnancy.com'
+                    Node 209.81.88.72 is working again
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

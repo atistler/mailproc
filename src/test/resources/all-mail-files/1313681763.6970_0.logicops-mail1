@@ -1,0 +1,419 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFa2bW006968
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:36:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFa2IU006967
+	for logicops; Thu, 18 Aug 2011 11:36:02 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFa13Z006963
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:36:01 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS2V.us.logicworks.net ([10.64.23.13]) with mapi id 14.01.0270.001;
+ Thu, 18 Aug 2011 11:36:01 -0400
+From: Alex Pinsker <apinsker@logicworks.net>
+To: Xiao Fen Lin <xlin@logicworks.net>, Tom Galdos <tgaldos@wealthmsi.com>,
+        lw-support <lw-support@logicworks.net>
+CC: Rob Buck <rbuck@wealthmsi.com>,
+        Freada Zysberg Sylvester
+	<fzysberg@logicworks.net>
+Subject: RE: SR 3-967669 WMSI SQL Backups
+Thread-Topic: SR 3-967669 WMSI SQL Backups
+Thread-Index: AcxdrU3Ir0YGdGorRLKe8MWMxdjSAgADqSEw
+Date: Thu, 18 Aug 2011 15:36:01 +0000
+Message-ID: <05785D2C25DDF441925ED93D91C10E193D3777C2@lw-mbx2.us.logicworks.net>
+References: <90945AF80A6C4E46B6E31B1CD5175BD43D1BFA95@lw-mbx2.us.logicworks.net>
+In-Reply-To: <90945AF80A6C4E46B6E31B1CD5175BD43D1BFA95@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_"
+
+--_000_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Tom,
+
+The task responsible for restoring MLIRA db to reporting1 failed with the f=
+ollowing error:
+
+"Exclusive access could not be obtained because the database is in use."
+
+It seemed that there was some stale connection to it preventing me from doi=
+ng much with the db.
+I have gone ahead and killed all open connections to that db on reporting1 =
+and ran T-SQL manually.
+
+The database should now be up to date. Please test to confirm.
+
+I will keep this ticket opened and monitor it closely to make sure the job =
+succeeds tomorrow.
+
+Feel free to contact us with any other questions.
+
+Regards,
+
+Alex Pinsker
+LogicWorks | Sr. Windows Engineer
+Phone: 212-625-5444 (Option 1)
+Email: support@logicworks.net<mailto:support@logicworks.net>
+
+From: Xiao Fen Lin
+Sent: Thursday, August 18, 2011 9:48 AM
+To: Tom Galdos; lw-support
+Cc: Rob Buck; Freada Zysberg Sylvester
+Subject: SR 3-967669 WMSI SQL Backups
+
+Tom,
+
+We have received your request and are looking into it.  We will report back=
+ with the status shortly.
+
+Regards,
+
+Xiao Fen Lin
+Logicworks | NRT Engineer
+phone: 212-625-5444 (option 1)
+support@logicworks.net<mailto:support@logicworks.net>
+
+
+From: Tom Galdos [mailto:tgaldos@wealthmsi.com]<mailto:[mailto:tgaldos@weal=
+thmsi.com]>
+Sent: Thursday, August 18, 2011 9:42 AM
+To: lw-support
+Cc: Rob Buck; Freada Zysberg Sylvester
+Subject: WMSI SQL Backups
+Importance: High
+
+Support,
+
+Please verify if our SQL server backups completed normally last night. Our =
+backup database is not up to date.
+
+Thanks,
+[cid:image001.gif@01CC5D9B.01118060]
+
+Tom Galdos
+Wealth Management Systems Inc.
+Assistant Vice President
+Manager of Technology Operations
+Office: 561.204.3140
+Mobile: 561.346.5727
+tgaldos@wealthmsi.com<mailto:tgaldos@wealthmsi.com>
+
+
+
+This electronic message contains information that may be confidential. The =
+information is intended for the use of the addressee(s) only. If you are no=
+t an addressee, note that any disclosure, copying, distribution, or use of =
+the contents of this message is prohibited. If you have received this e-mai=
+l in error, please contact the sender.
+
+
+
+
+--_000_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tom,<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The task responsible f=
+or restoring MLIRA db to reporting1 failed with the following error:<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:#1F497D">&quot;Exclusive acc=
+ess could not be obtained because the database is in use.&#8221;<o:p></o:p>=
+</span></i></p>
+<p class=3D"MsoNormal"><i><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></=
+span></i></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">It seemed that there w=
+as some stale connection to it preventing me from doing much with the db.<o=
+:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I have gone ahead and =
+killed all open connections to that db on reporting1 and ran T-SQL manually=
+.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The database should no=
+w be up to date. Please test to confirm.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I will keep this ticke=
+t opened and monitor it closely to make sure the job succeeds tomorrow.<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Feel free to contact u=
+s with any other questions.<o:p></o:p></span></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span></=
+p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Regards,</span><span style=
+=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&qu=
+ot;;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,&quot;serif&quot;;color:#1F497D">&nbsp;<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Alex Pinsker<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">LogicWorks&nbsp;| Sr. Wind=
+ows Engineer</span><span style=3D"font-size:12.0pt;font-family:&quot;Times =
+New Roman&quot;,&quot;serif&quot;;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Phone:&nbsp;212-625-5444 (=
+Option 1)<br>
+Email:&nbsp;<a href=3D"mailto:support@logicworks.net"><span style=3D"color:=
+#1F497D">support@logicworks.net</span></a></span><span style=3D"font-size:1=
+2.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#1F49=
+7D"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Xiao Fen=
+ Lin
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 9:48 AM<br>
+<b>To:</b> Tom Galdos; lw-support<br>
+<b>Cc:</b> Rob Buck; Freada Zysberg Sylvester<br>
+<b>Subject:</b> SR 3-967669 WMSI SQL Backups<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tom,<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">We have received your =
+request and are looking into it.&nbsp; We will report back with the status =
+shortly.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Regards,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Xiao Fen Lin<o:p></o:p=
+></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">phone: 212-625-5444 (o=
+ption 1)<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net">support@logicworks.net</a><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;font-family:Consolas=
+;color:#1F497D"><o:p>&nbsp;</o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Tom Gald=
+os
+<a href=3D"mailto:[mailto:tgaldos@wealthmsi.com]">[mailto:tgaldos@wealthmsi=
+.com]</a>
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 9:42 AM<br>
+<b>To:</b> lw-support<br>
+<b>Cc:</b> Rob Buck; Freada Zysberg Sylvester<br>
+<b>Subject:</b> WMSI SQL Backups<br>
+<b>Importance:</b> High<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Support,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please verify if our SQL server backups completed no=
+rmally last night. Our backup database is not up to date.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks,<o:p></o:p></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"padding:1.5pt 1.5pt 1.5pt 1.5pt">
+<p class=3D"MsoNormal"><img border=3D"0" width=3D"30" height=3D"30" id=3D"_=
+x0000_i1025" src=3D"cid:image001.gif@01CC5D9B.01118060"><span style=3D"font=
+-size:12.0pt"><o:p></o:p></span></p>
+</td>
+<td style=3D"padding:4.5pt 1.5pt 1.5pt 1.5pt">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:7.5pt;font-family:&quot;=
+Verdana&quot;,&quot;sans-serif&quot;;color:#003366">Tom Galdos<br>
+Wealth Management Systems Inc.</span></b><span style=3D"font-size:7.5pt;fon=
+t-family:&quot;Verdana&quot;,&quot;sans-serif&quot;;color:#003366"><br>
+Assistant Vice President<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:7.5pt;font-family:&quot;Ver=
+dana&quot;,&quot;sans-serif&quot;;color:#003366">Manager of Technology Oper=
+ations<br>
+Office: 561.204.3140<br>
+Mobile: 561.346.5727<br>
+<a href=3D"mailto:tgaldos@wealthmsi.com">tgaldos@wealthmsi.com</a></span><s=
+pan style=3D"font-size:12.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"display:none"><o:p>&nbsp;</o:p></span=
+></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding:0in 0in 0in 0in">
+<p class=3D"MsoNormal"><br>
+<i><span style=3D"font-size:7.5pt;font-family:&quot;Verdana&quot;,&quot;san=
+s-serif&quot;;color:#003366">This electronic message contains information t=
+hat may be confidential. The information is intended for the use of the add=
+ressee(s) only. If you are not an addressee, note that
+ any disclosure, copying, distribution, or use of the contents of this mess=
+age is prohibited. If you have received this e-mail in error, please contac=
+t the sender.</span></i><span style=3D"font-size:12.0pt"><o:p></o:p></span>=
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_--
+
+--_004_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_
+Content-Type: image/gif; name="image001.gif"
+Content-Description: image001.gif
+Content-Disposition: inline; filename="image001.gif"; size=630;
+	creation-date="Thu, 18 Aug 2011 15:36:01 GMT";
+	modification-date="Thu, 18 Aug 2011 15:36:01 GMT"
+Content-ID: <image001.gif@01CC5D9B.01118060>
+Content-Transfer-Encoding: base64
+
+R0lGODlhHgAeANUAAKW1xZWmueTo7eTs84iQl2aKq3WbvN7j6Xejy4SXrIix1f39/lp5lnSInsTP
+2vX4+73T52d8lEdlhvHz9WyTtlJnfHun0ISu1HiNotrn8S1La83d7Gh4h97o8tLh701phx8xRXyR
+p/T2+FVwi8TU49LY4K+7x8DW6Y2htEVUY5a52ZC22Jy93Pn6++3v8jJSdX2Fjm6Blj5df0FggS9O
+bzBPcNfk8D9egDdWeChCXp+uvqHB3sXY6trf5afF4P///yH5BAAAAAAALAAAAAAeAB4AAAb/wJ9w
+SCwaj8ikcslsJkUb4QMSdR4fpx3k52OtBtbilHW5bHgUiwoc/mFVjALiYiOlV53w2II5pOl2FnhO
+UyoICBYZA2kKHRB3bEqFIzEFFhcdixaNgYNJkxUiB5aNGaQZnR5ILScqIxUtQh1yCgMZjBkbjDZG
+byMcC0QCfwMdux4Gl6pEECsMHCJGHcmYNpZmJJYIPEQrvxNIBwYUDAM9BQUSPw4MIwBEBigCsT8T
+DuALJSYCIzCxJClMCAEA4MA+KQ5ioFiwQEeDAD8EhIig44cLIQseCMPQAMeQBh9mJPjR4IWMACIY
+vJihI5gRASg+gEgxREAMGjdCtIhAQ4aOkwkVXkgI4HKIiwASQBA4QGQCTxkhHjzV8UACjRlEhwxA
+kZTAEREcNMgY+fRdBZxZD3BVmsTFzbE/bt54N6LG3B4oZigtemRBAw05F8SowXLCB6ERZICAwRfJ
+AgxiQ4h4C0DECBwa9lr5C1UwYQAJMjNuAxnqD54zcLBtIyQ0DWgjcmhm/WMBgcU/eqQYTbu37yRB
+AAA7
+
+--_004_05785D2C25DDF441925ED93D91C10E193D3777C2lwmbx2uslogicwo_--
+

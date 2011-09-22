@@ -1,0 +1,39 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJe13Y026415
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:40:01 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJe12G026406
+	for logicops; Thu, 18 Aug 2011 15:40:01 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJe0K2026399
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:40:00 -0400
+Received: from globaldt-db1.globaldt.local (209.81.87.167) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:40:00 -0400
+Received: from globaldt-db1 ([127.0.0.1]) by globaldt-db1.globaldt.local with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 15:39:48 -0400
+Sensitivity: Normal
+Reply-To: <lw-support@logicworks.net>
+Importance: Normal
+MIME-Version: 1.0
+From: <globaldt-db1@ext.logicworks.net>
+To: <lw-windows@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:39:48 -0400
+Subject: SQL Server Alert System: 'DBM State: Principal Connection Lost
+ (SundaeV4_C2X)' occurred on \\
+Content-Type: text/plain; charset="utf-8"
+Message-ID: <GLOBALDT-DB1FRaqbC800000002@globaldt-db1.globaldt.local>
+X-OriginalArrivalTime: 18 Aug 2011 19:39:48.0291 (UTC) FILETIME=[96E98130:01CC5DDE]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from base64 to 8bit by logicops-mail1.logicworks.net id p7IJe0K2026399
+
+DATE/TIME:	8/18/2011 3:39:46 PM
+
+DESCRIPTION:	
+
+COMMENT:	(None)
+
+JOB RUN:	(None)
+

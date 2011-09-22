@@ -1,0 +1,35 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3FBOb030352
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:15:11 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J3FBPR030351
+	for logicops; Thu, 18 Aug 2011 23:15:11 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3F2he030298
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 23:15:02 -0400
+Resent-Date: Thu, 18 Aug 2011 23:15:02 -0400
+Resent-Message-Id: <201108190315.p7J3F2he030298@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lw-hogger.noc.logicworks.net (206.252.134.140) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 23:15:01 -0400
+Received: from lw-hogger.noc.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by lw-hogger.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id
+ p7J3F1t3002473	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 23:15:01
+ -0400
+Received: (from root@localhost)	by lw-hogger.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7J3F1QR002467	for lw-linux@ext.logicworks.net;
+ Thu, 18 Aug 2011 23:15:01 -0400
+Date: Thu, 18 Aug 2011 23:15:01 -0400
+From: root <root@lw-hogger.noc.logicworks.net>
+Message-ID: <201108190315.p7J3F1QR002467@lw-hogger.noc.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+Subject: lexent-ex1.client.logicworks.net does not have a backup from today on lw-hogger
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+
+This client does not have a backup from within the last 24 hours.  Please investigate.
+

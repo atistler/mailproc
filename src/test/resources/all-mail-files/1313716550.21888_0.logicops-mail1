@@ -1,0 +1,35 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1Foxo021886
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:15:50 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1Fo3F021881
+	for logicops; Thu, 18 Aug 2011 21:15:50 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1Fng5021874
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 21:15:49 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:15:49 -0400
+Received: from lw-dpm2 ([10.48.15.151]) by lw-mon-eq.ad.logicworks.net with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug 2011 21:15:49 -0400
+MIME-Version: 1.0
+From: <lw-dpm2@us.logicworks.net>
+To: <lw-windows@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 21:15:49 -0400
+Subject: DPM: Critical alert: LW-DPM2
+Content-Type: text/plain; charset="us-ascii"
+Message-ID: <LW-MON-EQhsgVy134Ip00007b00@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 01:15:49.0458 (UTC) FILETIME=[87E77320:01CC5E0D]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7J1Fng5021874
+
+The following alert occurred at 8/18/2011 9:15:48 PM.
+
+The replica of System Protection on ir-sp1v.ir.local is inconsistent with the protected data source. All protection activities for this data source will fail until the replica is synchronized with consistency check. 
+DPM cannot create a backup because Windows Server Backup (WSB) on the protected computer encountered an error (WSB Event ID: 517, WSB Error Code:  0x8078001D). 
+
+For more information, open DPM Administrator Console and review the alert details in the Monitoring task area.
+
+

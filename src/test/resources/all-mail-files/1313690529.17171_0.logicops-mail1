@@ -1,0 +1,91 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II29iO017169
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:02:09 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7II2971017168
+	for logicops; Thu, 18 Aug 2011 14:02:09 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7II28Ah017164
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:02:08 -0400
+Resent-Date: Thu, 18 Aug 2011 14:02:08 -0400
+Resent-Message-Id: <201108181802.p7II28Ah017164@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.129) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 14:02:08 -0400
+Received: from dotto.harmonixmusic.com ([207.190.252.222]) (using TLSv1) by
+ exprod8mx229.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 13:02:08
+ CDT
+Received: from otto.harmonixmusic.com (172.18.96.17) by
+ EMAIL-EXCH-01.harmonixmusic.com (172.18.96.5) with Microsoft SMTP Server id
+ 14.1.218.12; Thu, 18 Aug 2011 14:02:04 -0400
+X-MimeOLE: Produced By Microsoft Exchange V6.5
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: RE: zuess settings (SR 3-967761)
+Date: Thu, 18 Aug 2011 14:02:05 -0400
+Message-ID: <99D6C8DC52B0004BAD445D1324984BD1028E17F3@otto.harmonixmusic.com>
+In-Reply-To: <20d1511d1945b714596fa42ceeef0d5f@logicops.logicworks.net>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: zuess settings (SR 3-967761)
+Thread-Index: AcxdyYVYih2GhmguSGqH+I30cSDXugAB2OPA
+References: <20d1511d1945b714596fa42ceeef0d5f@logicops.logicworks.net>
+From: Arnaldo Hernandez <arnaldo.hernandez@harmonixmusic.com>
+To: Logicworks NOC <support@logicworks.net>
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:93.6803 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <arnaldo.hernandez@harmonixmusic.com> [317/14] 
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7II28Ah017164
+
+The attachment is missing. ;)
+
+-----Original Message-----
+From: Logicworks NOC [mailto:logicops@logicworks.net] 
+Sent: Thursday, August 18, 2011 1:09 PM
+To: Tim Currie; Arnaldo Hernandez
+Cc: Logicworks Support
+Subject: zuess settings (SR 3-967761)
+
+Hey Arnie.
+
+I've attached the error log containing the most recent errors to this
+ticket.  Feel free to take a look at your convenience.  As stated in our
+phone conversation, the last error that I see on the load balancer
+occurred around 9:20 PM on August 16th.  vip02 suffered a 4 second
+failure and came back up promptly and has since been error-free.
+
+I will bring this up with a senior engineer and determine if there's
+anything we can do to tweak the settings of the load balancer in order
+to provide a better environment.
+
+I will get back to you as soon as we determine what can be done.
+
+Regards,
+Logicworks NRT
+
+------------------------------------------------------------------------
+-------------------------------------
+
+Modifications:
+------------------------------------------------------------------------
+-------------------------------------
+
+Changes made to: SR 3-967761
+    Updated due date: 2011-08-18 17:00 -> 2011-08-18 17:00
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to
+hear from you regarding your experiences with the services that we
+offer.
+To leave feedback regarding this Service Request please visit:
+https://logicops.logicworks.net/AddCustomerFeedback/967761/Page
+
+
+

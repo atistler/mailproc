@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTmRU025274
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:29:48 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJTmGa025273
+	for logicops; Thu, 18 Aug 2011 15:29:48 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTlou025255;
+	Thu, 18 Aug 2011 15:29:47 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:29:46 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:29:44 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:29:44 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: american-storage2 CentOS 5 -  is DOWN at 03:28:39 PM.
+Message-ID: <LW-MON-EQD9DQVXwR1I00007a2e@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:29:44.0933 (UTC) FILETIME=[2F486150:01CC5DDD]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+american-storage2 (10.64.98.94) CentOS 5: 
+
+ on 10.64.98.94 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 03:28:23 PM by Whatsup Gold in Equinix
+

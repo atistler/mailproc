@@ -1,0 +1,254 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGWKfK011093
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:32:20 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGWKV8011092
+	for logicops; Thu, 18 Aug 2011 12:32:20 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGWJW5011088
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:32:19 -0400
+Received: from logicops3.noc.logicworks.net (206.252.128.189) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 12:32:19 -0400
+Received: from logicops3.noc.logicworks.net (logicops3.noc.logicworks.net
+ [127.0.0.1])	by logicops3.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id
+ p7IGWJsr023702;	Thu, 18 Aug 2011 12:32:19 -0400
+Received: (from apache@localhost)	by logicops3.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IGWJ2X023701;	Thu, 18 Aug 2011 12:32:19 -0400
+Date: Thu, 18 Aug 2011 12:32:19 -0400
+To: <nlionas@velti.com>
+From: LogicOps <logicops@logicworks.net>
+Reply-To: Logicworks Support <support@logicworks.net>
+Subject: RE: Firewall rule request (SR 3-967751) [New SR]
+Message-ID: <9903bd19c6590be4fe12bbe5cb6fe37b@172.16.3.190>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.72]
+X-Logicworks-AE: Zysberg, Freada Lynn,Laschewer, Jason
+X-Logicworks-Account: Velti
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Dear Nikos Lionas,
+
+Your email to support@logicworks.net has generated a new Service Request. In order for us to process your request it must first be confirmed. Please use this URL to confirm: 
+
+https://logicops.logicworks.net/Confirm/?a=bbb77f8d332a355e7805ae413300b557_b_1057
+
+NOTE: This Service Request must be confirmed by 2011-08-19 at 12:32 EDT. If you do not confirm the Service Request in the next 24 hours, it will be *DELETED*. 
+
+If you would prefer to add an activity to an existing Service Request, please send an email to support@logicworks.net with the Service Request number in the subject and/or body of the email. 
+
+For reference, the headers and body of the email that triggered the creation of this Service Request can be found below.
+
+Sincerely, 
+Logicworks
+
+----------------------------------------
+Return-Path: <MAILER-DAEMON@logicops-mail1.logicworks.net>
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net
+ [206.252.153.174]) by logicops-mail1.logicworks.net (8.13.1/8.13.1) with
+ ESMTP id p7IGWHAH011078 for <support@logicops-mail.logicworks.net>; Thu, 18
+ Aug 2011 12:32:17 -0400
+Resent-Date: Thu, 18 Aug 2011 12:32:17 -0400
+Resent-Message-Id: <201108181632.p7IGWHAH011078@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.67) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 12:32:17 -0400
+Received: from mail.velti.com ([195.200.193.32]) (using TLSv1) by
+ exprod8mx269.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 09:32:16
+ PDT
+Received: from CALISTO.velti.net ([10.1.1.137]) by Exc-hc2.velti.net
+ ([10.1.1.53]) with mapi; Thu, 18 Aug 2011 19:32:12 +0300
+From: Nikos Lionas <nlionas@velti.com>
+To: Logicworks NOC <support@logicworks.net>, "logicops-admin@logicworks.net"
+ <logicops-admin@logicworks.net>
+CC: IT_Systems <IT_Systems@velti.com>, IT_Networks <IT_Networks@velti.com>
+Date: Thu, 18 Aug 2011 19:31:36 +0300
+Subject: Firewall rule request
+Thread-Topic: Firewall rule request
+Thread-Index: AcxdxCF2Uh/Q6okmS4mN42VlvkTRAQ==
+Message-ID: <BB6DFE0BB4D6B048B3560A2D1606359913733BA92B@CALISTO.velti.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/alternative;
+ boundary="_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA92BCALISTOveltin_"
+MIME-Version: 1.0
+X-pstn-levels: (S:31.49159/99.90000 CV:99.9000 FC:95.5390 LC:95.5390
+ R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA92BCALISTOveltin_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear LogicWorks support,
+
+
+Please allow port 22 at 209.73.35.146 to be accessibly from 184.73.172.183 =
+, 184.72.248.181 , 174.129.215.253 , 174.129.12.58 , 184.73.194.211
+
+
+Thanks
+
+Nikos Lionas | Senior System Administrator
+
+Velti
+44 Kifisias Ave.
+15125 Marousi, Athens, Greece
+T   +30.210.637.8912
+M  +30.694.432.0977
+E   nlionas@velti.com
+www.velti.com<http://www.velti.com>
+
+Velti is a global leader in mobile marketing and advertising solutions for =
+mobile operators, ad agencies, brands and media groups.
+San Francisco | New York | Los Angeles | Dublin | London | Paris | Madrid |=
+ Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapore | Bei=
+jing | Shanghai | Sydney
+
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA92BCALISTOveltin_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 14 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 2 5 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri","sans-serif";}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEL link=3Dblue vlink=
+=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span lang=3DEN-US=
+>Dear LogicWorks support,<o:p></o:p></span></p><p class=3DMsoNormal><span l=
+ang=3DEN-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span lang=3DE=
+N-US><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span lang=3DEN-US>Pl=
+ease allow port 22 at 209.73.35.146 to be accessibly from 184.73.172.183 , =
+184.72.248.181 , 174.129.215.253 , 174.129.12.58 , 184.73.194.211<o:p></o:p=
+></span></p><p class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span=
+></p><p class=3DMsoNormal><span lang=3DEN-US><o:p>&nbsp;</o:p></span></p><p=
+ class=3DMsoNormal><span lang=3DEN-US>Thanks<o:p></o:p></span></p></div>
+<P><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><STRONG><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><B><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Nikos Lionas | Senior System Administrator<BR><BR></SPAN></B></SPAN></B><=
+/STRONG></SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><STRONG><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><B><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Velti<BR></SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt"><ns0:Street><ns0:address><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">44=20
+Kifisias Ave.</SPAN></ns0:address></ns0:Street></SPAN><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+<BR></SPAN><SPAN lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">15125=20
+Marousi, </SPAN><SPAN=20
+style=3D"FONT-SIZE: 0pt"><ns0:place><ns0:City><ns0:place><ns0:City><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Athens</SPAN></ns0:City></ns0:place></ns0:City></ns0:place></SPAN><SPAN=20
+lang=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">,=20
+</SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt"><ns0:country-region><ns0:country-region><SPAN lang=
+=3DEN-US=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">Greece<BR></SPAN></ns0:country-region></ns0:country-region></SPAN></SPAN>=
+</B>T</STRONG></SPAN><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;&nbsp;+30.210.637.8912<BR></SPAN><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">M</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;+30.694.432.0977<BR></SPAN><B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #e36c0a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">E</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #4a442a; FONT-FAMILY: 'Tahoma','sans-serif'=
+">&nbsp;&nbsp;=20
+nlionas@velti.com</SPAN><B><U><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #365f91; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><BR><A=20
+title=3Dhttp://www.velti.com/ href=3D"http://www.velti.com"><SPAN=20
+title=3Dhttp://www.velti.com/=20
+style=3D"COLOR: #365f91">www.velti.com</SPAN></A><BR><BR></SPAN></U></B><SP=
+AN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><FONT=20
+color=3D#365f91>Velti is a global leader in mobile marketing and advertisin=
+g=20
+solutions for mobile operators, ad agencies, brands and media=20
+groups.</FONT></SPAN><BR><SPAN=20
+style=3D"FONT-SIZE: 9pt; COLOR: #0000ff; FONT-FAMILY: 'Tahoma','sans-serif'=
+"><FONT=20
+color=3D#365f91>San Francisco | New York | Los Angeles | Dublin | London | =
+Paris |=20
+Madrid | Dusseldorf | Athens | Sofia | Moscow | Dubai | New Delhi | Singapo=
+re |=20
+Beijing | Shanghai | Sydney</FONT></SPAN></SPAN></P>
+<P></P><br></body></html>=
+
+--_000_BB6DFE0BB4D6B048B3560A2D1606359913733BA92BCALISTOveltin_--
+

@@ -1,0 +1,747 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFNI1O005994
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:23:18 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFNITK005993
+	for logicops; Thu, 18 Aug 2011 11:23:18 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFNHtb005988
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:23:17 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 11:23:17 -0400
+From: Ya Fei Huang <yhuang@logicworks.net>
+To: Freada Zysberg Sylvester <fzysberg@logicworks.net>,
+        John Jun
+	<jjun@logicworks.net>, Thea Domber <tdomber@logicworks.net>,
+        Joanna Rios
+	<jrios@logicworks.net>,
+        Stephanie Tayengco <stayengco@logicworks.net>
+CC: lw-logistics <lw-logistics@logicworks.net>
+Subject: RE: Velti needs LOG help!
+Thread-Topic: Velti needs LOG help!
+Thread-Index: Acxc9PZU+FFYvfZzR+yjUxViJWJ+SQAFke1wACoiUpAAAFzg4AAACH/gAABRRZAAADnYYAAAA/AAAADEREA=
+Date: Thu, 18 Aug 2011 15:23:16 +0000
+Message-ID: <DD2E7B2501687E4E8A877DCC94F70F3B3CEBF700@lw-mbx2.us.logicworks.net>
+References: <9510A7897882FC458EB408837CC4FDD73D3287E8@lw-mbx2.us.logicworks.net>
+ <D2F33EF0B55B8449865E6A18D1A6EA0C3D10BCDD@lw-mbx2.us.logicworks.net>
+ <50A67A094F6B34488A33C079843624813D07DD3F@lw-mbx2.us.logicworks.net>
+ <EB8866C2F0059040BAC13F426E6FBBB03CF3F747@lw-mbx2.us.logicworks.net>
+ <50A67A094F6B34488A33C079843624813D07DDC9@lw-mbx2.us.logicworks.net>
+ <3A1A5D929E3EFE4AA9A809012D8D8F8F3D2006B6@lw-mbx2.us.logicworks.net>
+ <EB8866C2F0059040BAC13F426E6FBBB03CF3F78B@lw-mbx2.us.logicworks.net>
+ <50A67A094F6B34488A33C079843624813D07DED9@lw-mbx2.us.logicworks.net>
+In-Reply-To: <50A67A094F6B34488A33C079843624813D07DED9@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/alternative;
+	boundary="_000_DD2E7B2501687E4E8A877DCC94F70F3B3CEBF700lwmbx2uslogicwo_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+
+--_000_DD2E7B2501687E4E8A877DCC94F70F3B3CEBF700lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+https://logicops.logicworks.net/967711
+
+Here's the SR for tracking purposes.
+
+JasonC,
+This is in your queue. Can you make sure one of the guys adds notes to the =
+ticket.
+TY.
+
+From: Freada Zysberg Sylvester
+Sent: Thursday, August 18, 2011 11:01 AM
+To: John Jun; Thea Domber; Joanna Rios; Ya Fei Huang; Stephanie Tayengco
+Subject: RE: Velti needs LOG help!
+
+I <3 process :)
+
+Thanks again everyone!!!
+
+From: John Jun
+Sent: Thursday, August 18, 2011 11:00 AM
+To: Thea Domber; Freada Zysberg Sylvester; Joanna Rios; Ya Fei Huang; Steph=
+anie Tayengco
+Subject: RE: Velti needs LOG help!
+
+Thank you.  Sorry, but just wanted to follow protocol.
+
+~jj
+
+From: Thea Domber
+Sent: Thursday, August 18, 2011 10:54 AM
+To: Freada Zysberg Sylvester; John Jun; Joanna Rios; Ya Fei Huang; Stephani=
+e Tayengco
+Subject: RE: Velti needs LOG help!
+
+Yes, this is approved.
+
+From: Freada Zysberg Sylvester
+Sent: Thursday, August 18, 2011 10:53 AM
+To: John Jun; Joanna Rios; Ya Fei Huang; Thea Domber; Stephanie Tayengco
+Subject: RE: Velti needs LOG help!
+
+Sure, looping in Steph and Thea here.  Folks can you give the OK for the RA=
+M upgrade on the Velti SV2 fws?  This is the interim upgrade we were making=
+ to the FW's while we worked on spec'ing out/getting approval to rebuild th=
+e FW's on much beefier boxes.
+
+
+Thanks
+
+From: John Jun
+Sent: Thursday, August 18, 2011 10:45 AM
+To: Freada Zysberg Sylvester; Joanna Rios; Ya Fei Huang
+Subject: RE: Velti needs LOG help!
+
+Freada,
+
+Can we get the authorization from which ever manager approved first.
+
+~jj
+
+From: Freada Zysberg Sylvester
+Sent: Thursday, August 18, 2011 10:41 AM
+To: Joanna Rios; John Jun; Ya Fei Huang
+Subject: RE: Velti needs LOG help!
+
+Looping in JJ and Ya Fei so we can get tickets open.
+
+We're going to be bee adding 3GB RAM each to Velti's SV2 fw's bringing them=
+ to a total of 4GB RAM per box.
+
+This is an emergency upgrade that we are doing at no charge.  let me know i=
+f you have any questions.
+
+From: Tony Moger
+Sent: Wednesday, August 17, 2011 2:29 PM
+To: Joanna Rios; Jason Corkum
+Cc: Freada Zysberg Sylvester; Edward Semler
+Subject: RE: Velti needs LOG help!
+
+Hello,
+
+  We are sending the memory for the firewall upgrades out. Its tested and m=
+atched. Sal, These are labeled for each server:
+
+Veltimob-fw-pri
+Veltimob-fw-sec
+
+Tracking Number: Fed Ex 790590137280
+
+
+
+
+
+Hope all is well,
+
+
+Tony Moger
+Logistics Provisioning Manager
+
+From: Joanna Rios
+Sent: Wednesday, August 17, 2011 12:01 PM
+To: Jason Corkum
+Cc: Tony Moger; Freada Zysberg Sylvester; Edward Semler
+Subject: Velti needs LOG help!
+
+Hey guys,
+
+I just want to outline some issues/solutions that Velti is having and how w=
+e are going to proceed.
+
+
+1)      Velti LB (bigger, beefier boxes) -these will eventually be swapped =
+out with assistance from Ed and astreya.
+
+a.       Astreya may rack these at any time (asap - when they arrive is def=
+initely preferred)
+
+b.      Ed is going to write the maintenance plan for this and SNOC only ne=
+eds to know when the LBs are accessible. They should not need assistance fr=
+om Astreya to proceed with the swap.
+
+c.       Ed may or may not perform the actual maintenance. Either this or t=
+he FW maintenance will be scheduled with another snoc.
+
+2)      Velti firewalls - To mitigate the issue right now :
+
+a.       We will increase their CURRENT set of firewalls to 4g of ram.
+
+                                                               i.      Jaso=
+n, can you let us know if we have enough ram out there to do this per FW?
+
+                                                             ii.      If no=
+t, can you check with Astreya to see if they have?
+
+                                                            iii.      If As=
+treya does not, can we get Charles/JJ to check with supermicro to see if th=
+ey can get some for us in a rush.
+
+b.      Ed is going to be writing a maintenance plan. He may or may not do =
+the actual maintenance, but any questions can be directed to him.
+
+3)      Velti Firewalls - Part TWO: BUILD /SHIP new beefier FWs
+
+a.       These firewalls will need 2 dual port nics
+
+b.      4g ram as per upgrade to old ones.
+
+c.       They will need to be configured first with Luis double-checking th=
+em.
+
+4)      Velti Arrays and disk addition in Santa Clara
+
+a.       Still Waiting on Client Time. Freada will follow up.
+
+Ed/Freada, please let me know if I missed anything that LOG needs to be inv=
+olved with!
+
+Thanks all!
+
+joanna
+
+--_000_DD2E7B2501687E4E8A877DCC94F70F3B3CEBF700lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle27
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle28
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:2102949100;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1578871856 67698705 67698713 67698715 67698703 6769=
+8713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"https://log=
+icops.logicworks.net/967711">https://logicops.logicworks.net/967711</a><o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Here&#8217;s the SR fo=
+r tracking purposes.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">JasonC,<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">This is in your queue.=
+ Can you make sure one of the guys adds notes to the ticket.<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">TY.<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Freada Z=
+ysberg Sylvester
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 11:01 AM<br>
+<b>To:</b> John Jun; Thea Domber; Joanna Rios; Ya Fei Huang; Stephanie Taye=
+ngco<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I &lt;3 process </span=
+><span style=3D"font-family:Wingdings;color:#1F497D">J</span><span style=3D=
+"color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks again everyone!=
+!!<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> John Jun
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 11:00 AM<br>
+<b>To:</b> Thea Domber; Freada Zysberg Sylvester; Joanna Rios; Ya Fei Huang=
+; Stephanie Tayengco<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thank you.&nbsp; Sorry=
+, but just wanted to follow protocol.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">~jj<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Thea Dom=
+ber
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 10:54 AM<br>
+<b>To:</b> Freada Zysberg Sylvester; John Jun; Joanna Rios; Ya Fei Huang; S=
+tephanie Tayengco<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Yes, this is approved.=
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Freada Z=
+ysberg Sylvester
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 10:53 AM<br>
+<b>To:</b> John Jun; Joanna Rios; Ya Fei Huang; Thea Domber; Stephanie Taye=
+ngco<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Sure, looping in Steph=
+ and Thea here.&nbsp; Folks can you give the OK for the RAM upgrade on the =
+Velti SV2 fws?&nbsp; This is the interim upgrade we were making to the FW&#=
+8217;s while we worked on spec&#8217;ing out/getting approval
+ to rebuild the FW&#8217;s on much beefier boxes.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks <o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> John Jun
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 10:45 AM<br>
+<b>To:</b> Freada Zysberg Sylvester; Joanna Rios; Ya Fei Huang<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Freada,<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Can we get the authori=
+zation from which ever manager approved first.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">~jj<o:p></o:p></span><=
+/p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Freada Z=
+ysberg Sylvester
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 10:41 AM<br>
+<b>To:</b> Joanna Rios; John Jun; Ya Fei Huang<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Looping in JJ and Ya F=
+ei so we can get tickets open.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">We&#8217;re going to b=
+e bee adding 3GB RAM each to Velti&#8217;s SV2 fw&#8217;s bringing them to =
+a total of 4GB RAM per box.&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">This is an emergency u=
+pgrade that we are doing at no charge.&nbsp; let me know if you have any qu=
+estions.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Tony Mog=
+er
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 2:29 PM<br>
+<b>To:</b> Joanna Rios; Jason Corkum<br>
+<b>Cc:</b> Freada Zysberg Sylvester; Edward Semler<br>
+<b>Subject:</b> RE: Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hello,<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">&nbsp; We are sending =
+the memory for the firewall upgrades out. Its tested and matched. Sal, Thes=
+e are labeled for each server:<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Veltimob-fw-pri<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Veltimob-fw-sec<o:p></=
+o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tracking Number: Fed E=
+x 790590137280<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hope all is well,<o:p>=
+</o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Tony Moger<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logistics Provisioning=
+ Manager<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Joanna R=
+ios
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 12:01 PM<br>
+<b>To:</b> Jason Corkum<br>
+<b>Cc:</b> Tony Moger; Freada Zysberg Sylvester; Edward Semler<br>
+<b>Subject:</b> Velti needs LOG help!<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hey guys,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I just want to outline some issues/solutions that Ve=
+lti is having and how we are going to proceed.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"mso-list:Ignore">1)<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Velti LB (bigger, beefier boxes) &#8211;these will =
+eventually be swapped out with assistance from Ed and astreya.
+<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">a.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Astreya may rack these at any time (asap &#8211; wh=
+en they arrive is definitely preferred)<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">b.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Ed is going to write the maintenance plan for this =
+and SNOC only needs to know when the LBs are accessible. They should not ne=
+ed assistance from Astreya to proceed with the swap.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">c.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Ed may or may not perform the actual maintenance. E=
+ither this or the FW maintenance will be scheduled with another snoc.<o:p><=
+/o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"mso-list:Ignore">2)<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Velti firewalls &#8211; To mitigate the issue right=
+ now :<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">a.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>We will increase their CURRENT set of firewalls to =
+4g of ram.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.5in;text-indent:-1.5in=
+;mso-text-indent-alt:-9.0pt;mso-list:l0 level3 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore"><span style=3D"font:7.=
+0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; </span></span><![endif]>Jason, can you let us know if w=
+e have enough ram out there to do this per FW?<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.5in;text-indent:-1.5in=
+;mso-text-indent-alt:-9.0pt;mso-list:l0 level3 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore"><span style=3D"font:7.=
+0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;
+</span>ii.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; </span></span><![endif]>If not, can you check with Ast=
+reya to see if they have?<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.5in;text-indent:-1.5in=
+;mso-text-indent-alt:-9.0pt;mso-list:l0 level3 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore"><span style=3D"font:7.=
+0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;
+</span>iii.<span style=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; </span></span><![endif]>If Astreya does not, can we g=
+et Charles/JJ to check with supermicro to see if they can get some for us i=
+n a rush.<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">b.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Ed is going to be writing a maintenance plan. He ma=
+y or may not do the actual maintenance, but any questions can be directed t=
+o him.
+<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"mso-list:Ignore">3)<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Velti Firewalls &#8211; Part TWO: BUILD /SHIP new b=
+eefier FWs<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">a.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>These firewalls will need 2 dual port nics<o:p></o:=
+p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">b.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>4g ram as per upgrade to old ones. <o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">c.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>They will need to be configured first with Luis dou=
+ble-checking them.
+<o:p></o:p></p>
+<p class=3D"MsoListParagraph" style=3D"text-indent:-.25in;mso-list:l0 level=
+1 lfo2"><![if !supportLists]><span style=3D"mso-list:Ignore">4)<span style=
+=3D"font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Velti Arrays and disk addition in Santa Clara<o:p><=
+/o:p></p>
+<p class=3D"MsoListParagraph" style=3D"margin-left:1.0in;text-indent:-.25in=
+;mso-list:l0 level2 lfo2">
+<![if !supportLists]><span style=3D"mso-list:Ignore">a.<span style=3D"font:=
+7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Still Waiting on Client Time. Freada will follow up=
+.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Ed/Freada, please let me know if I missed anything t=
+hat LOG needs to be involved with!<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks all!<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">joanna<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_DD2E7B2501687E4E8A877DCC94F70F3B3CEBF700lwmbx2uslogicwo_--
+

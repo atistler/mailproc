@@ -1,0 +1,190 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILYIeF005418
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:34:18 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILYIVX005417
+	for logicops; Thu, 18 Aug 2011 17:34:18 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILYHj4005412
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 17:34:17 -0400
+Resent-Date: Thu, 18 Aug 2011 17:34:17 -0400
+Resent-Message-Id: <201108182134.p7ILYHj4005412@logicops-mail1.logicworks.net>
+Resent-From: <lw-logistics@logicworks.net>
+Received: from psmtp.com (64.18.3.173) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 17:34:17 -0400
+Received: from relay02.fandango.com ([207.178.142.221]) by
+ exprod8mx194.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 14:34:17
+ MST
+X-IronPort-AV: E=Sophos;i="4.68,247,1312182000"; 
+   d="scan'208,217";a="2346098"
+Received: from exchbucorp01.fandango.com (HELO mail.fandango.com)
+ ([10.56.89.68])  by relay02.fandango.com with ESMTP; 18 Aug 2011 14:30:15
+ -0700
+Received: from EXCHBUCORP01.fandango.com ([::1]) by EXCHBUCORP01.fandango.com
+ ([::1]) with mapi id 14.01.0255.000; Thu, 18 Aug 2011 14:34:15 -0700
+From: Pratyush Rai <PRai@dailycandy.com>
+To: "noc@logicworks.net" <noc@logicworks.net>
+Subject: Missing account validation email
+Thread-Topic: Missing account validation email
+Thread-Index: Acxd7pIvUejSZo4YSa6OSMBRxARSVA==
+Date: Thu, 18 Aug 2011 21:34:15 +0000
+Message-ID: <F1D60DD17A2CE640A75641B15DDCF3778B5F6A@EXCHBUCORP01.fandango.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-cr-hashedpuzzle: 9nM= AX1a AzaZ B/Zb CO73 Dq+r EM+K FwpU GTLV GpiU IqOJ
+ JDVz JcKd JgSy Jok4
+ JsUX;1;bgBvAGMAQABsAG8AZwBpAGMAdwBvAHIAawBzAC4AbgBlAHQA;Sosha1_v1;7;{F8B6AFD3-D510-4FE0-AE00-7683EB531685};cAByAGEAaQBAAGQAYQBpAGwAeQBjAGEAbgBkAHkALgBjAG8AbQA=;Thu,
+ 18 Aug 2011 21:34:12
+ GMT;TQBpAHMAcwBpAG4AZwAgAGEAYwBjAG8AdQBuAHQAIAB2AGEAbABpAGQAYQB0AGkAbwBuACAAZQBtAGEAaQBsAA==
+x-cr-puzzleid: {F8B6AFD3-D510-4FE0-AE00-7683EB531685}
+x-originating-ip: [38.108.104.82]
+Content-Type: multipart/alternative;
+	boundary="_000_F1D60DD17A2CE640A75641B15DDCF3778B5F6AEXCHBUCORP01fanda_"
+MIME-Version: 1.0
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:50.24931/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+X-pstn-addresses: from <PRai@dailycandy.com> [99/4] 
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+
+--_000_F1D60DD17A2CE640A75641B15DDCF3778B5F6AEXCHBUCORP01fanda_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+I created an account at https://logicops.logicworks.net around 2:30PM today=
+. I have not yet received an email confirmation and I cannot sign in. Can y=
+ou help me with this?
+
+For your records, the username I used is: prai@dailycandy.com
+
+Thanks
+
+Pratyush Rai
+Senior Technology Manager
+DailyCandy, Inc.
+AIM: pratyush12
+C: 707 456 PRAI
+
+
+--_000_F1D60DD17A2CE640A75641B15DDCF3778B5F6AEXCHBUCORP01fanda_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:p=3D"urn:schemas-m=
+icrosoft-com:office:powerpoint" xmlns:a=3D"urn:schemas-microsoft-com:office=
+:access" xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:s=3D"=
+uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:rs=3D"urn:schemas-microsof=
+t-com:rowset" xmlns:z=3D"#RowsetSchema" xmlns:b=3D"urn:schemas-microsoft-co=
+m:office:publisher" xmlns:ss=3D"urn:schemas-microsoft-com:office:spreadshee=
+t" xmlns:c=3D"urn:schemas-microsoft-com:office:component:spreadsheet" xmlns=
+:odc=3D"urn:schemas-microsoft-com:office:odc" xmlns:oa=3D"urn:schemas-micro=
+soft-com:office:activation" xmlns:html=3D"http://www.w3.org/TR/REC-html40" =
+xmlns:q=3D"http://schemas.xmlsoap.org/soap/envelope/" xmlns:rtc=3D"http://m=
+icrosoft.com/officenet/conferencing" xmlns:D=3D"DAV:" xmlns:Repl=3D"http://=
+schemas.microsoft.com/repl/" xmlns:mt=3D"http://schemas.microsoft.com/share=
+point/soap/meetings/" xmlns:x2=3D"http://schemas.microsoft.com/office/excel=
+/2003/xml" xmlns:ppda=3D"http://www.passport.com/NameSpace.xsd" xmlns:ois=
+=3D"http://schemas.microsoft.com/sharepoint/soap/ois/" xmlns:dir=3D"http://=
+schemas.microsoft.com/sharepoint/soap/directory/" xmlns:ds=3D"http://www.w3=
+.org/2000/09/xmldsig#" xmlns:dsp=3D"http://schemas.microsoft.com/sharepoint=
+/dsp" xmlns:udc=3D"http://schemas.microsoft.com/data/udc" xmlns:xsd=3D"http=
+://www.w3.org/2001/XMLSchema" xmlns:sub=3D"http://schemas.microsoft.com/sha=
+repoint/soap/2002/1/alerts/" xmlns:ec=3D"http://www.w3.org/2001/04/xmlenc#"=
+ xmlns:sp=3D"http://schemas.microsoft.com/sharepoint/" xmlns:sps=3D"http://=
+schemas.microsoft.com/sharepoint/soap/" xmlns:xsi=3D"http://www.w3.org/2001=
+/XMLSchema-instance" xmlns:udcs=3D"http://schemas.microsoft.com/data/udc/so=
+ap" xmlns:udcxf=3D"http://schemas.microsoft.com/data/udc/xmlfile" xmlns:udc=
+p2p=3D"http://schemas.microsoft.com/data/udc/parttopart" xmlns:wf=3D"http:/=
+/schemas.microsoft.com/sharepoint/soap/workflow/" xmlns:dsss=3D"http://sche=
+mas.microsoft.com/office/2006/digsig-setup" xmlns:dssi=3D"http://schemas.mi=
+crosoft.com/office/2006/digsig" xmlns:mdssi=3D"http://schemas.openxmlformat=
+s.org/package/2006/digital-signature" xmlns:mver=3D"http://schemas.openxmlf=
+ormats.org/markup-compatibility/2006" xmlns:m=3D"http://schemas.microsoft.c=
+om/office/2004/12/omml" xmlns:mrels=3D"http://schemas.openxmlformats.org/pa=
+ckage/2006/relationships" xmlns:spwp=3D"http://microsoft.com/sharepoint/web=
+partpages" xmlns:ex12t=3D"http://schemas.microsoft.com/exchange/services/20=
+06/types" xmlns:ex12m=3D"http://schemas.microsoft.com/exchange/services/200=
+6/messages" xmlns:pptsl=3D"http://schemas.microsoft.com/sharepoint/soap/Sli=
+deLibrary/" xmlns:spsl=3D"http://microsoft.com/webservices/SharePointPortal=
+Server/PublishedLinksService" xmlns:Z=3D"urn:schemas-microsoft-com:" xmlns:=
+st=3D"&#1;" xmlns=3D"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello, <o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">I created an account at <a href=3D"https://logicops.=
+logicworks.net">
+https://logicops.logicworks.net</a> around 2:30PM today. I have not yet rec=
+eived an email confirmation and I cannot sign in. Can you help me with this=
+?<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">For your records, the username I used is: prai@daily=
+candy.com<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Thanks<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Pratyush Rai<o:p></o:p></p>
+<p class=3D"MsoNormal">Senior Technology Manager<o:p></o:p></p>
+<p class=3D"MsoNormal">DailyCandy, Inc.<o:p></o:p></p>
+<p class=3D"MsoNormal">AIM: pratyush12<o:p></o:p></p>
+<p class=3D"MsoNormal">C: 707 456 PRAI<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_F1D60DD17A2CE640A75641B15DDCF3778B5F6AEXCHBUCORP01fanda_--
+

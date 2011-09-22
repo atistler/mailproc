@@ -1,0 +1,55 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INOjcQ013757
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:24:45 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INOjlP013752
+	for logicops; Thu, 18 Aug 2011 19:24:45 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INOjlu013745
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:24:45 -0400
+Resent-Date: Thu, 18 Aug 2011 19:24:45 -0400
+Resent-Message-Id: <201108182324.p7INOjlu013745@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from nodal-lb1v (209.81.84.190) by LW-HUBCAS1V (206.252.153.175)
+ with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 19:24:44
+ -0400
+Received: from nodal-lb1v (localhost.localdomain [127.0.0.1])	by nodal-lb1v
+ (8.13.8/8.13.8) with SMTP id p7INOiIf027323	for
+ <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011 19:24:44 -0400
+Message-ID: <201108182324.p7INOiIf027323@nodal-lb1v>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@nodal-lb1v>
+Date: Thu, 18 Aug 2011 19:24:44 -0400
+Subject: Zeus: Node has failed, Monitor has detected a failure
+X-ZXTM-Notify: nodal-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from nodal-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'pool2' = Partial Fail: Some nodes have failed
+ + Node '209.81.84.169:443' = Failed
+ + Node '209.81.84.170:443' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 19:20:00: WARN  Monitor 'Simple HTTPS'
+                    Monitor has detected a failure in node
+                    '209.81.84.169:443': Timeout while waiting for valid
+                    server response
+
+#2 Aug 18 19:20:00: SERIOUS  Node '209.81.84.169:443', Pool 'pool2'
+                    Node 209.81.84.169 has failed - A monitor has detected
+                    a failure
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

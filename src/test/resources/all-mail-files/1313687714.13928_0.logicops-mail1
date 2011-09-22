@@ -1,0 +1,164 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHFEjP013926
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 13:15:14 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IHFE2a013925
+	for logicops; Thu, 18 Aug 2011 13:15:14 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IHFDDE013921
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 13:15:13 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 13:15:13 -0400
+From: Rolando Edwards <redwards@logicworks.net>
+To: "Deakins, Jim" <JimDeakins@annarbor.com>,
+        Nicholas Ennis
+	<nennis@logicworks.net>,
+        "Polikowski, J" <jpolikowski@hugeinc.com>,
+        "jonpolikowski@gmail.com" <jonpolikowski@gmail.com>,
+        "Hodges, Hassan"
+	<HassanHodges@annarbor.com>,
+        "Hodges(gmail), Hassan" <hassanhodges@gmail.com>
+CC: lw-support <lw-support@logicworks.net>
+Subject: RE: SR 3-967562 annarbor-db2 - mysql errors
+Thread-Topic: SR 3-967562 annarbor-db2 - mysql errors
+Thread-Index: AcxdS2/M010KOOTmR72Egx30N+fypwAcoB7KAALM0jA=
+Date: Thu, 18 Aug 2011 17:15:12 +0000
+Message-ID: <9257E370E01A364081C11DF08EE50BFF3D3DF0DE@lw-mbx2.us.logicworks.net>
+References: <B3959E42181EA149A27EB12CF6D8A8E73D1E76C5@lw-mbx2.us.logicworks.net>
+ <813D52DDBB66614CA1599150DE8123390949EA6F@SWNSSDE016.newspapersupport.com>
+In-Reply-To: <813D52DDBB66614CA1599150DE8123390949EA6F@SWNSSDE016.newspapersupport.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7IHFDDE013921
+
+This is not really the case because mysqld on both machines have not been down in a while.
+
+annarbor-db1:3306 (DB (none)) :: \s
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.47, for unknown-linux-gnu (x86_64) using readline 5.1
+
+Connection id:          10435
+Current database:
+Current user:           lwdba@127.0.0.1
+SSL:                    Not in use
+Current pager:          stdout
+Using outfile:          ''
+Using delimiter:        ;
+Server version:         5.1.47-community-log MySQL Community Server (GPL)
+Protocol version:       10
+Connection:             127.0.0.1 via TCP/IP
+Server characterset:    latin1
+Db     characterset:    latin1
+Client characterset:    latin1
+Conn.  characterset:    latin1
+TCP port:               3306
+Uptime:                 3 days 23 hours 47 min 32 sec
+
+Threads: 3  Questions: 2467062  Slow queries: 63  Opens: 425  Flush tables: 1  Open tables: 415  Queries per second avg: 7.153
+--------------
+
+annarbor-db2:3306 (DB (none)) :: \s
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.47, for unknown-linux-gnu (x86_64) using readline 5.1
+
+Connection id:          2275814
+Current database:
+Current user:           lwdba@127.0.0.1
+SSL:                    Not in use
+Current pager:          stdout
+Using outfile:          ''
+Using delimiter:        ;
+Server version:         5.1.47-community-log MySQL Community Server (GPL)
+Protocol version:       10
+Connection:             127.0.0.1 via TCP/IP
+Server characterset:    latin1
+Db     characterset:    latin1
+Client characterset:    latin1
+Conn.  characterset:    latin1
+TCP port:               3306
+Uptime:                 15 days 21 hours 18 min 29 sec
+
+Threads: 5  Questions: 246229210  Slow queries: 2441  Opens: 5496  Flush tables: 12  Open tables: 655  Queries per second avg: 179.374
+--------------
+
+annarbor-db1 has not been down in almost 4 days
+annarbor-db2 has not been down in almost 16 days
+
+The only way mysql could generate such messages if there were attempts to start mysql while mysql was already up and running. If mysql had crashed, mysqld_safe would have recovered itself, killed mysqld process and started it back up. This has not occurred.
+
+Further example: I ran
+
+ps -ef | grep mysql | grep -v grep
+
+on annarbor-db2 and I got this
+
+[root@db2.annarbor.com ~]# ps -ef | grep mysql | grep -v grep
+root      5121     1  0 Aug02 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --pid-file=/var/lib/mysql/db2.pid
+mysql     5375  5121  6 Aug02 ?        1-02:33:43 /usr/sbin/mysqld --basedir=/ --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --open-files-limit=32768 --pid-file=/var/lib/mysql/db2.pid --socket=/var/lib/mysql/mysql.sock
+
+Notice that mysqld_safe and mysqld have identical start dates. If mysqld crashed at the designated timestamp from the error log (110817 21:45:53), the date of mysqld would say Aug17 not Aug02
+
+-----Original Message-----
+From: Deakins, Jim [mailto:JimDeakins@annarbor.com] 
+Sent: Thursday, August 18, 2011 11:46 AM
+To: Nicholas Ennis; Polikowski, J; jonpolikowski@gmail.com; Hodges, Hassan; Hodges(gmail), Hassan
+Cc: lw-support; Rolando Edwards
+Subject: RE: SR 3-967562 annarbor-db2 - mysql errors
+
+this can happen if there is a bad innodb var in my.cnf
+
+-Jim Deakins
+AnnArbor.com Project Manager & Lead Web Developer
+
+
+
+-----Original Message-----
+From: Nicholas Ennis [mailto:nennis@logicworks.net]
+Sent: Wed 8/17/2011 10:10 PM
+To: Polikowski, J; jonpolikowski@gmail.com; Hodges, Hassan; Hodges(gmail), Hassan; Deakins, Jim
+Cc: lw-support; Rolando Edwards
+Subject: SR 3-967562 annarbor-db2 - mysql errors
+ 
+Greetings,
+
+ 
+
+We receiving alerts every hour saying mysql service was shut down. We checked and mysql has been up for 15 days. I had Rolando look into it and we found nothing. Can you confirm you aren't running puppetd  outside of the DB's, that may be causing this issue. Please see the error below:
+
+ 
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' init function returned error.
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+
+110817 21:45:53 [ERROR] Unknown/unsupported table type: innodb
+
+110817 21:45:53 [ERROR] Aborting
+
+110817 21:45:53 [Note] /usr/sbin/mysqld: Shutdown complete
+
+ 
+
+Nicholas Ennis
+
+Logicworks | NRT Engineer
+
+Phone: 212-625-5444
+
+support@logicworks.net <mailto:support@logicworks.net> 
+
+ 
+
+
+------------------------------------------------------------------------------------------------
+This e-mail, including attachments, is intended for the person(s) or company named and may contain confidential and/or legally privileged information. Unauthorized disclosure, copying or use of this information may be unlawful and is prohibited. If you are not the intended recipient, please delete this message and notify the sender.
+

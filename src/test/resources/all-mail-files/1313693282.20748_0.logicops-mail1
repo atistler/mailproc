@@ -1,0 +1,155 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIm23X020746
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:48:02 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIm2hj020745
+	for logicops; Thu, 18 Aug 2011 14:48:02 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIm1II020734
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:48:02 -0400
+Resent-Date: Thu, 18 Aug 2011 14:48:02 -0400
+Resent-Message-Id: <201108181848.p7IIm1II020734@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from db2.annarbor.com (209.81.87.71) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 14:48:01 -0400
+Received: by db2.annarbor.com (Postfix, from userid 0)	id 6F5181570111; Thu,
+ 18 Aug 2011 14:48:01 -0400 (EDT)
+To: <lw-linux@ext.logicworks.net>
+Subject: New MySQL errors on db2 
+Message-ID: <20110818184801.6F5181570111@db2.annarbor.com>
+Date: Thu, 18 Aug 2011 14:48:01 -0400
+From: root <root@annarbor.com>
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+New log error messages:
+
+InnoDB: Unable to lock ./ibdata1, error: 11
+InnoDB: Check that you do not already have another mysqld process
+InnoDB: using the same InnoDB data or log files.
+InnoDB: Unable to lock ./ibdata1, error: 11
+InnoDB: Check that you do not already have another mysqld process
+InnoDB: using the same InnoDB data or log files.
+InnoDB: Unable to lock ./ibdata1, error: 11
+InnoDB: Check that you do not already have another mysqld process
+InnoDB: using the same InnoDB data or log files.
+InnoDB: Unable to lock ./ibdata1, error: 11
+InnoDB: Check that you do not already have another mysqld process
+InnoDB: using the same InnoDB data or log files.
+110818 14:46:05  InnoDB: Unable to open the first data file
+InnoDB: Error in opening ./ibdata1
+110818 14:46:05  InnoDB: Operating system error number 11 in a file operation.
+InnoDB: Error number 11 means 'Resource temporarily unavailable'.
+InnoDB: Some operating system error numbers are described at
+InnoDB: http://dev.mysql.com/doc/refman/5.1/en/operating-system-error-codes.html
+InnoDB: Could not open or create data files.
+InnoDB: If you tried to add new data files, and it failed here,
+InnoDB: you should now edit innodb_data_file_path in my.cnf back
+InnoDB: to what it was, and remove the new ibdata files InnoDB created
+InnoDB: in this failed attempt. InnoDB only wrote those files full of
+InnoDB: zeros, but did not yet use them in any way. But be careful: do not
+InnoDB: remove old data files which contain your precious data!
+110818 14:46:05 [ERROR] Plugin 'InnoDB' init function returned error.
+110818 14:46:05 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+110818 14:46:05 [ERROR] Unknown/unsupported table type: innodb
+110818 14:46:05 [ERROR] Aborting
+
+110818 14:46:05 [Note] /usr/sbin/mysqld: Shutdown complete
+
+110818 14:46:05 mysqld_safe mysqld from pid file /var/lib/mysql/db2.pid ended
+
+ Full process list: 
+*************************** 1. row ***************************
+     Id: 15606
+   User: lwdbamonyog
+   Host: 10.240.130.31:59271
+     db: NULL
+Command: Sleep
+   Time: 31
+  State: 
+   Info: NULL
+*************************** 2. row ***************************
+     Id: 29454
+   User: system user
+   Host: 
+     db: NULL
+Command: Connect
+   Time: 398028
+  State: Waiting for master to send event
+   Info: NULL
+*************************** 3. row ***************************
+     Id: 29455
+   User: system user
+   Host: 
+     db: NULL
+Command: Connect
+   Time: 351381
+  State: Has read all relay log; waiting for the slave I/O thread to update it
+   Info: NULL
+*************************** 4. row ***************************
+     Id: 1849277
+   User: replicant
+   Host: 10.64.95.94:48501
+     db: NULL
+Command: Binlog Dump
+   Time: 73809
+  State: Has sent all binlog to slave; waiting for binlog to be updated
+   Info: NULL
+*************************** 5. row ***************************
+     Id: 1975488
+   User: replicant
+   Host: 10.64.95.70:51603
+     db: NULL
+Command: Binlog Dump
+   Time: 52839
+  State: Has sent all binlog to slave; waiting for binlog to be updated
+   Info: NULL
+*************************** 6. row ***************************
+     Id: 2323735
+   User: mt
+   Host: 10.64.95.73:40746
+     db: mt1
+Command: Query
+   Time: 0
+  State: Sending data
+   Info: SELECT `mt_entry`.`entry_id`, `mt_entry`.`entry_allow_comments`, `mt_entry`.`entry_allow_pings`, `mt
+*************************** 7. row ***************************
+     Id: 2323737
+   User: mt
+   Host: 10.64.95.81:50471
+     db: mt1
+Command: Sleep
+   Time: 0
+  State: 
+   Info: NULL
+*************************** 8. row ***************************
+     Id: 2323739
+   User: mt
+   Host: 10.64.95.79:37360
+     db: stgmt1
+Command: Sleep
+   Time: 0
+  State: 
+   Info: NULL
+*************************** 9. row ***************************
+     Id: 2323740
+   User: mt
+   Host: 10.64.95.73:40748
+     db: mt1
+Command: Sleep
+   Time: 0
+  State: 
+   Info: NULL
+*************************** 10. row ***************************
+     Id: 2323741
+   User: lwdba
+   Host: 127.0.0.1:60842
+     db: NULL
+Command: Query
+   Time: 0
+  State: NULL
+   Info: show processlist
+

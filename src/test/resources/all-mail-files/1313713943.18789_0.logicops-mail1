@@ -1,0 +1,44 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0WNkQ018785
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 20:32:23 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J0WNrf018784
+	for logicops; Thu, 18 Aug 2011 20:32:23 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J0WIZb018659;
+	Thu, 18 Aug 2011 20:32:19 -0400
+Received: from lw-mon-db3.localdomain (209.73.63.45) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 20:32:16 -0400
+Received: from localhost.localdomain (lw-mon-db3 [127.0.0.1])	by
+ lw-mon-db3.localdomain (Postfix) with ESMTP id 8F3D215807A	for
+ <lw-monitoring@ext.logicworks.net>; Fri, 19 Aug 2011 00:32:02 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Subject: Escalated NOTICE Event on s02.sccnj04.core.logicworks.net: Row
+	removed from configuration: Row ID: .1.255 element: Vlan State,
+	previous value: operational
+From: EM7 Event Notifier <EM7@ext.logicworks.net>
+To: "lw-monitoring@ext.logicworks.net" <lw-monitoring@ext.logicworks.net>
+CC: 
+X-Priority: 3
+Date: Fri, 19 Aug 2011 00:32:02 +0000
+Message-ID: <20110819003202.8F3D215807A@lw-mon-db3.localdomain>
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Severity: NOTICE
+First Occurred: 2011-08-19 00:01:44 None
+Last Occurred: 2011-08-19 00:01:44 None
+Occurrences: 1
+Source: Internal
+Organization: Logicworks
+Device: s02.sccnj04.core.logicworks.net
+
+Message: Row removed from configuration: Row ID: .1.255 element: Vlan State, previous value: operational
+
+Sent by Automation Action: Logicworks Escalation Email *DONT DELETE*
+
+View this event at: https://monitoring.logicworks.net/em7/index.em7?exec=events&q_type=aid&q_arg=222784&q_sev=1&q_sort=0&q_oper=0
+

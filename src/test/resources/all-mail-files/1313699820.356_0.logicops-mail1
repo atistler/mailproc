@@ -1,0 +1,44 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKb0EW000354
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:37:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKb0A7000353
+	for logicops; Thu, 18 Aug 2011 16:37:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKaqOT000303
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:36:52 -0400
+Resent-Date: Thu, 18 Aug 2011 16:36:52 -0400
+Resent-Message-Id: <201108182036.p7IKaqOT000303@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from allstars-lb1v.client.logicworks.net (209.81.84.158) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 16:36:51 -0400
+Received: from allstars-lb1v.client.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by allstars-lb1v.client.logicworks.net (8.13.8/8.13.8) with SMTP
+ id p7IKapNH026408	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 16:36:51 -0400
+Message-ID: <201108182036.p7IKapNH026408@allstars-lb1v.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@allstars-lb1v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 16:36:51 -0400
+Subject: Zeus: Summary of recent service protection events
+X-ZXTM-Notify: allstars-lb1v.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from allstars-lb1v.client.logicworks.net.
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 16:36:48: DOS  Service Protection Class 'Baseline Protection'
+                    Too many concurrent connections from 66.150.186.11,
+                    dropped  - 38 time(s)
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3l5ES032520
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:47:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J3l5OE032519
+	for logicops; Thu, 18 Aug 2011 23:47:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3l4PP032500;
+	Thu, 18 Aug 2011 23:47:04 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 23:47:03 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 23:47:01 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 23:47:01 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: bsdi-web2 Windows 2008 Server - Disk Utilization 2008 - E: 95% is DOWN at 11:39:45 PM.
+Message-ID: <LW-MON-EQi5bAO3TCE800007b3a@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 03:47:01.0971 (UTC) FILETIME=[A78B1230:01CC5E22]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+bsdi-web2 (10.64.101.243) Windows 2008 Server: 
+
+Disk Utilization 2008 - E: 95% on 10.64.101.243 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/874581/Page
+
+Notes:
+Added from Discovery on Fri Sep 17 16:35:08 2010
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:39:45 PM by Whatsup Gold in Equinix
+

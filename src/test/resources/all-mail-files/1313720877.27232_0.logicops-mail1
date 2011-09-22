@@ -1,0 +1,56 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2RvFo027230
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 22:27:57 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J2RvnC027229
+	for logicops; Thu, 18 Aug 2011 22:27:57 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J2RtTG027210;
+	Thu, 18 Aug 2011 22:27:56 -0400
+Received: from lw-mon-crg.ad.logicworks.net (206.252.128.52) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 22:27:55 -0400
+Received: from lw-mon-crg.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-crg.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 22:27:49 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 22:27:49 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: hypernst-web2v Windows 2008 Server is UP at 10:27:49 PM.
+Message-ID: <LW-MON-CRGgTi96LPmc00003d31@lw-mon-crg.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 02:27:49.0818 (UTC) FILETIME=[970A11A0:01CC5E17]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+hypernst-web2v Windows 2008 Server on 209.81.75.227 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+http://us.thehyperfactory.com/nesquik/ftp/lbcheck.aspx
+
+"ALLOK"
+
+
+
+Escalation procedure:
+1.	Send mail to lw-support@thehyperfacotry.com and call Pardha
+2.	If Pardha not answered give call to Phani
+3.	If Phani not  answered give call to Jagan.
+
+
+
+http://us.thehyperfactory.com/nesquik/ftp/servicemonitor.aspx
+"ALLOK"
+
+Status code 200. For any other status code pls send alert to 
+support.nesquick@thehyperfactory.com
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 10:27:49 PM by Whatsup Gold in CRG
+

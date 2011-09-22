@@ -1,0 +1,46 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1jesc024181
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:45:40 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1jepG024180
+	for logicops; Thu, 18 Aug 2011 21:45:40 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1jcF3024165;
+	Thu, 18 Aug 2011 21:45:38 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 21:45:37 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 21:45:38 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 21:45:38 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: GroupDCA-db5 RHEL 5 - Linux System Load - 5 minute average - 30+ is DOWN at 09:41:25 PM.
+Message-ID: <LW-MON-EQnqNI4lQ5tX00007b0b@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 01:45:38.0004 (UTC) FILETIME=[B1F5E940:01CC5E11]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+GroupDCA-db5 (10.64.63.198) RHEL 5: 
+
+Linux System Load - 5 minute average - 30+ on 10.64.63.198 has been unresponsive for at least 6 minutes.
+
+Details:
+Linux System Load - 5 minute average - 30+=[4.45]
+
+
+Contact:
+lw-noc@logicworks.net
+
+Logicops:
+https://logicops.logicworks.net/808453/Page
+
+Notes:
+Added from Discovery on Thu Feb 11 07:08:55 2010
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 09:41:24 PM by Whatsup Gold in Equinix
+

@@ -1,0 +1,233 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IICGUe017934
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:12:16 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IICG3E017933
+	for logicops; Thu, 18 Aug 2011 14:12:16 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IICF4J017928
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:12:15 -0400
+Resent-Date: Thu, 18 Aug 2011 14:12:15 -0400
+Resent-Message-Id: <201108181812.p7IICF4J017928@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.104) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 14:12:14 -0400
+Received: from cal3-mh482-a.smtproutes.com ([208.70.89.239]) by
+ exprod8mx204.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 18:12:14
+ GMT
+Received: from ex01.noveda.com ([66.198.105.170]) by
+   cal3-mh482.smtproutes.com [(208.70.89.156)] with ESMTP via TCP; 18 Aug
+   2011 11:11:54 -0700
+Received: from EX01.noveda.com ([::1]) by ex01.noveda.com ([::1]) with mapi;
+ Thu, 18 Aug 2011 14:11:54 -0400
+From: Joshua Dickerson <jdickerson@noveda.com>
+To: lw-support <lw-support@logicworks.net>
+CC: Andy Ehrich <aehrich@noveda.com>, Ken Biss <kbiss@noveda.com>,
+        "David L.
+ Russell" <drussell@noveda.com>,
+        Joe Jacob <jjacob@noveda.com>, Joseph Yanchis
+	<jyanchis@noveda.com>
+Subject: RE: NTPFEED1 Crons failed
+Thread-Topic: NTPFEED1 Crons failed
+Thread-Index: AcxdpuT09PyoBNRsTK6yy4Oc88s5OAAKzZwQ
+Date: Thu, 18 Aug 2011 18:11:52 +0000
+Message-ID: <0D25915CF2187740AE6E6A56C2B697B738F940DB@ex01.noveda.com>
+References: <0D25915CF2187740AE6E6A56C2B697B738F94044@ex01.noveda.com>
+In-Reply-To: <0D25915CF2187740AE6E6A56C2B697B738F94044@ex01.noveda.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-katharion-id: 1313691114.27407.cal3-mh482
+x-pstn-neptune: 0/0/0.00/0
+x-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390
+ R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+x-pstn-settings: 4 (1.5000:1.5000) s cv gt3 gt2 gt1 r p m c 
+x-pstn-addresses: from <jdickerson@noveda.com> [301/13] 
+Content-Type: multipart/alternative;
+	boundary="_000_0D25915CF2187740AE6E6A56C2B697B738F940DBex01novedacom_"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F940DBex01novedacom_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Here is some more information for you. Hopefully this will help us all figu=
+re out what is going on.
+
+At 4 AM, the servers run logrotate so that we don't have multiple gigabyte =
+files and we can still open and read the logs. Logrotate restarts Apache in=
+ order to do this. It doesn't restart anything else. This restart causes nt=
+pfeed1 to show as failing to the load balancer. The load balancer then redi=
+rects traffic to ntpfeed2 and calls ntpfeed2start.sh on the load balancer. =
+That calls failoverstop.sh on ntpfeed1 and failoverstart.sh on ntpfeed2. Fa=
+iloverstop.sh empties the crontab and failoverstart.sh loads crontab.txt in=
+ to crontab. When ntpfeed1 comes back online, the reverse happens - crontab=
+ is emptied on ntpfeed2 and filled on ntpfeed1. Everything should resume as=
+ normal at this point. This is what has been happening for a long time and =
+there weren't any changes that I am aware of yesterday. So, either somethin=
+g was changed that I am not aware of or this is a problem that finally deci=
+ded to show up today.
+
+Please get back to me as soon as possible. This ticket is urgent.
+
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Joshua Dickerson
+Sent: Thursday, August 18, 2011 9:02 AM
+To: lw-support@logicworks.net
+Cc: Andy Ehrich; Ken Biss
+Subject: NTPFEED1 Crons failed
+
+This morning when Apache stopped to rotate the logs all cron processes stop=
+ped with it. This caused downtime until around 7 am when Ken Biss could loo=
+k in to it. Any reason why logrotate would stop cron processes? It wasn't t=
+hat they were just stopped, the crontab was completely empty.
+
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F940DBex01novedacom_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Here is some more information for you. Hopefully thi=
+s will help us all figure out what is going on.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">At 4 AM, the servers run logrotate so that we don&#8=
+217;t have multiple gigabyte files and we can still open and read the logs.=
+ Logrotate restarts Apache in order to do this. It doesn&#8217;t restart an=
+ything else. This restart causes ntpfeed1 to show
+ as failing to the load balancer. The load balancer then redirects traffic =
+to ntpfeed2 and calls ntpfeed2start.sh on the load balancer. That calls fai=
+loverstop.sh on ntpfeed1 and failoverstart.sh on ntpfeed2. Failoverstop.sh =
+empties the crontab and failoverstart.sh
+ loads crontab.txt in to crontab. When ntpfeed1 comes back online, the reve=
+rse happens &#8211; crontab is emptied on ntpfeed2 and filled on ntpfeed1. =
+Everything should resume as normal at this point. This is what has been hap=
+pening for a long time and there weren&#8217;t
+ any changes that I am aware of yesterday. So, either something was changed=
+ that I am not aware of or this is a problem that finally decided to show u=
+p today.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Please get back to me as soon as possible. This tick=
+et is urgent.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Joshua Dickerson<o:p></o:p></p>
+<p class=3D"MsoNormal">Real-Time Web Application Architect<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.noveda.com/"><span style=3D"co=
+lor:blue">Noveda Technologies</span></a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:jdickerson@noveda.com"><span style=
+=3D"color:blue">jdickerson@noveda.com</span></a><o:p></o:p></p>
+<p class=3D"MsoNormal">908.268.6111<o:p></o:p></p>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Joshua D=
+ickerson
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 9:02 AM<br>
+<b>To:</b> lw-support@logicworks.net<br>
+<b>Cc:</b> Andy Ehrich; Ken Biss<br>
+<b>Subject:</b> NTPFEED1 Crons failed<o:p></o:p></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">This morning when Apache stopped to rotate the logs =
+all cron processes stopped with it. This caused downtime until around 7 am =
+when Ken Biss could look in to it. Any reason why logrotate would stop cron=
+ processes? It wasn&#8217;t that they were
+ just stopped, the crontab was completely empty.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Joshua Dickerson<o:p></o:p></p>
+<p class=3D"MsoNormal">Real-Time Web Application Architect<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"http://www.noveda.com/">Noveda Technologi=
+es</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:jdickerson@noveda.com">jdickerson@=
+noveda.com</a><o:p></o:p></p>
+<p class=3D"MsoNormal">908.268.6111<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F940DBex01novedacom_--
+

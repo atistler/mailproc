@@ -1,0 +1,396 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJm8YH027313
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:48:08 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJm8mq027312
+	for logicops; Thu, 18 Aug 2011 15:48:08 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJm7jH027307
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:48:07 -0400
+Resent-Date: Thu, 18 Aug 2011 15:48:07 -0400
+Resent-Message-Id: <201108181948.p7IJm7jH027307@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.45) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011 15:48:06 -0400
+Received: from tex1-mh319a.smtpout.com ([208.43.37.159]) by
+ exprod8mx254.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 12:48:05
+ PDT
+X-Katharion-ID: 1313696823.49086.tex1-mh319
+Received: from ex01.noveda.com ([66.198.105.170]) by
+   tex1-mh319.smtproutes.com [(208.43.37.108)] with ESMTP via TCP; 18 Aug
+   2011 14:47:03 -0500
+Received: from EX01.noveda.com ([::1]) by ex01.noveda.com ([::1]) with mapi;
+ Thu, 18 Aug 2011 15:47:02 -0400
+From: Joshua Dickerson <jdickerson@noveda.com>
+To: Anthony Williams <awilliams@logicworks.net>,
+        Joe Jacob
+	<jjacob@noveda.com>,
+        "David L. Russell" <drussell@noveda.com>
+CC: lw-support <lw-support@logicworks.net>, Andy Ehrich <aehrich@noveda.com>,
+        Joseph Yanchis <jyanchis@noveda.com>,
+        Richard Matthey <rmatthey@noveda.com>
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+Thread-Topic: SR 3-966284 NTPFEED_HTTP failing and extending logging
+Thread-Index: Acxc0kcOUc7A3Q6PSquqZiIiefTSDgA0xMCAAAtN/hAAAxEu4A==
+Date: Thu, 18 Aug 2011 19:46:59 +0000
+Message-ID: <0D25915CF2187740AE6E6A56C2B697B738F941FB@ex01.noveda.com>
+References: <C9953D031E2BD4499720BB227E69187A3D2827D4@lw-mbx2.us.logicworks.net>
+ <0D25915CF2187740AE6E6A56C2B697B738F94031@ex01.noveda.com>
+ <0D25915CF2187740AE6E6A56C2B697B738F940F9@ex01.noveda.com>
+In-Reply-To: <0D25915CF2187740AE6E6A56C2B697B738F940F9@ex01.noveda.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+Content-Type: multipart/related;
+	boundary="_004_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_
+Content-Type: multipart/alternative;
+	boundary="_000_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_"
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+All,
+
+The email was received by Microsoft Exchange this morning at 4:03 AM. Richa=
+rd Matthey is investigating what happened past that point. So, the load bal=
+ancer is sending the emails but it isn't getting to the intended mailboxes.=
+ We hope to have this figured out shortly.
+
+
+Thank You,
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Joshua Dickerson
+Sent: Thursday, August 18, 2011 2:18 PM
+To: 'Anthony Williams'
+Cc: 'lw-support'; Andy Ehrich; David L. Russell; Joe Jacob
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Anthony,
+
+On a similar note, regarding SR 3-967654, I never received any notification=
+s of this. I thought Andy asked to have an alert setup which would email lw=
+alerts@noveda.com<mailto:lwalerts@noveda.com> when any alerts happened. Now=
+ there is nothing contained in the logs at all. It says that I may have era=
+sed them (but I know that isn't the case, logrotate must have just run or s=
+omething). This is making it very difficult to track down anything regardin=
+g what happened this morning. Can I get access to or a copy of all of the l=
+ogs that are present on the load balancer?
+
+Please respond as soon as possible as this is urgent.
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Joshua Dickerson
+Sent: Thursday, August 18, 2011 8:52 AM
+To: 'Anthony Williams'
+Cc: lw-support
+Subject: RE: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Anthony,
+
+How can I access those logs?
+
+I agree that we should upgrade Zeus at some point. When that is, I am not e=
+ntirely sure. Is there a way that we can upgrade on-the-fly without downtim=
+e? Perhaps by adding another traffic manager and taking this one down?
+
+
+
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies<http://www.noveda.com/>
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+From: Anthony Williams [mailto:awilliams@logicworks.net]<mailto:[mailto:awi=
+lliams@logicworks.net]>
+Sent: Wednesday, August 17, 2011 7:49 AM
+To: Joshua Dickerson
+Cc: lw-support
+Subject: SR 3-966284 NTPFEED_HTTP failing and extending logging
+
+Dear Joshua,
+
+  I took a look and see what you mean it doesn't display event logs before =
+today or any audit logs.  I checked the physical host and I did see logs pr=
+esent for past 7 days for both events and audits.  Not sure why it's not be=
+ing displayed on the webgui.  One thing I noticed is you are running an old=
+er version of the zeus software so while it may not be responsible for this=
+ issue we should look to upgrade that regardless.  We'll need to put togeth=
+er a maintenance plan for that.
+
+Regards,
+
+Anthony Williams
+LogicWorks | NRT Engineer
+Phone: 212-625-5444 option 1
+support@logicworks.net<mailto:support@logicworks.net>
+[Description: LW Print Logo 1 inch]
+
+Subject: NTPFEED_HTTP failing and extending logging
+Recipients: lw-support , Andy Ehrich , Joseph Yanchis
+
+Hello,
+
+I just returned from being away for 3 weeks but I checked the load balancer=
+ for the past couple of days. Every day I have seen that NTPFEED_HTTP has b=
+een failing twice. I know at 4 AM it does a log rotation which causes it to=
+ go down. I have also seen that it goes down just before 1 AM.
+[cid:image001.png@01CC5C0B.E0B55E80]<mailto:[cid:image001.png@01CC5C0B.E0B5=
+5E80]>
+
+I would like to gather more information, but the alert log is only showing =
+for less than the past day. I would like that to be extended to 8 days befo=
+re that log rotates or purges.
+
+
+Thank You,
+Joshua Dickerson
+Real-Time Web Application Architect
+Noveda Technologies
+jdickerson@noveda.com<mailto:jdickerson@noveda.com>
+908.268.6111
+
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 14 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#def=
+ault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.untruncated
+	{mso-style-name:untruncated;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle23
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vli=
+nk=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal>All,<o:p></o:p><=
+/p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>The email=
+ was received by Microsoft Exchange this morning at 4:03 AM. Richard Matthe=
+y is investigating what happened past that point. So, the load balancer is =
+sending the emails but it isn&#8217;t getting to the intended mailboxes. We=
+ hope to have this figured out shortly.<o:p></o:p></p><p class=3DMsoNormal>=
+<o:p>&nbsp;</o:p></p><div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p clas=
+s=3DMsoNormal>Thank You,<o:p></o:p></p><p class=3DMsoNormal>Joshua Dickerso=
+n<o:p></o:p></p><p class=3DMsoNormal>Real-Time Web Application Architect<o:=
+p></o:p></p><p class=3DMsoNormal><a href=3D"http://www.noveda.com/"><span s=
+tyle=3D'color:blue'>Noveda Technologies</span></a><o:p></o:p></p><p class=
+=3DMsoNormal><a href=3D"mailto:jdickerson@noveda.com"><span style=3D'color:=
+blue'>jdickerson@noveda.com</span></a><o:p></o:p></p><p class=3DMsoNormal>9=
+08.268.6111<o:p></o:p></p></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><=
+div><div style=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt =
+0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-f=
+amily:"Tahoma","sans-serif"'>From:</span></b><span style=3D'font-size:10.0p=
+t;font-family:"Tahoma","sans-serif"'> Joshua Dickerson <br><b>Sent:</b> Thu=
+rsday, August 18, 2011 2:18 PM<br><b>To:</b> 'Anthony Williams'<br><b>Cc:</=
+b> 'lw-support'; Andy Ehrich; David L. Russell; Joe Jacob<br><b>Subject:</b=
+> RE: SR 3-966284 NTPFEED_HTTP failing and extending logging<o:p></o:p></sp=
+an></p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMso=
+Normal>Anthony,<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal>On a similar note, regarding SR 3-967654, I never receive=
+d any notifications of this. I thought Andy asked to have an alert setup wh=
+ich would email <a href=3D"mailto:lwalerts@noveda.com">lwalerts@noveda.com<=
+/a> when any alerts happened. Now there is nothing contained in the logs at=
+ all. It says that I may have erased them (but I know that isn&#8217;t the =
+case, logrotate must have just run or something). This is making it very di=
+fficult to track down anything regarding what happened this morning. Can I =
+get access to or a copy of all of the logs that are present on the load bal=
+ancer?<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DM=
+soNormal>Please respond as soon as possible as this is urgent.<o:p></o:p></=
+p><div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><o:p>=
+&nbsp;</o:p></p><p class=3DMsoNormal>Joshua Dickerson<o:p></o:p></p><p clas=
+s=3DMsoNormal>Real-Time Web Application Architect<o:p></o:p></p><p class=3D=
+MsoNormal><a href=3D"http://www.noveda.com/">Noveda Technologies</a><o:p></=
+o:p></p><p class=3DMsoNormal><a href=3D"mailto:jdickerson@noveda.com">jdick=
+erson@noveda.com</a><o:p></o:p></p><p class=3DMsoNormal>908.268.6111<o:p></=
+o:p></p></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div style=3D'=
+border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in'><p cl=
+ass=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-family:"Tahoma","sa=
+ns-serif"'>From:</span></b><span style=3D'font-size:10.0pt;font-family:"Tah=
+oma","sans-serif"'> Joshua Dickerson <br><b>Sent:</b> Thursday, August 18, =
+2011 8:52 AM<br><b>To:</b> 'Anthony Williams'<br><b>Cc:</b> lw-support<br><=
+b>Subject:</b> RE: SR 3-966284 NTPFEED_HTTP failing and extending logging<o=
+:p></o:p></span></p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><=
+p class=3DMsoNormal>Anthony,<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;=
+</o:p></p><p class=3DMsoNormal>How can I access those logs?<o:p></o:p></p><=
+p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>I agree that =
+we should upgrade Zeus at some point. When that is, I am not entirely sure.=
+ Is there a way that we can upgrade on-the-fly without downtime? Perhaps by=
+ adding another traffic manager and taking this one down?<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><p class=3DMsoNormal><o:p>&nbsp=
+;</o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>J=
+oshua Dickerson<o:p></o:p></p><p class=3DMsoNormal>Real-Time Web Applicatio=
+n Architect<o:p></o:p></p><p class=3DMsoNormal><a href=3D"http://www.noveda=
+.com/">Noveda Technologies</a><o:p></o:p></p><p class=3DMsoNormal><a href=
+=3D"mailto:jdickerson@noveda.com">jdickerson@noveda.com</a><o:p></o:p></p><=
+p class=3DMsoNormal>908.268.6111<o:p></o:p></p></div><p class=3DMsoNormal><=
+o:p>&nbsp;</o:p></p><div><div style=3D'border:none;border-top:solid #B5C4DF=
+ 1.0pt;padding:3.0pt 0in 0in 0in'><p class=3DMsoNormal><b><span style=3D'fo=
+nt-size:10.0pt;font-family:"Tahoma","sans-serif"'>From:</span></b><span sty=
+le=3D'font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Anthony Williams=
+ <a href=3D"mailto:[mailto:awilliams@logicworks.net]">[mailto:awilliams@log=
+icworks.net]</a> <br><b>Sent:</b> Wednesday, August 17, 2011 7:49 AM<br><b>=
+To:</b> Joshua Dickerson<br><b>Cc:</b> lw-support<br><b>Subject:</b> SR 3-9=
+66284 NTPFEED_HTTP failing and extending logging<o:p></o:p></span></p></div=
+></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal>Dear =
+Joshua,<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3D=
+MsoNormal>&nbsp; I took a look and see what you mean it doesn&#8217;t displ=
+ay event logs before today or any audit logs.&nbsp; I checked the physical =
+host and I did see logs present for past 7 days for both events and audits.=
+&nbsp; Not sure why it&#8217;s not being displayed on the webgui.&nbsp; One=
+ thing I noticed is you are running an older version of the zeus software s=
+o while it may not be responsible for this issue we should look to upgrade =
+that regardless.&nbsp; We&#8217;ll need to put together a maintenance plan =
+for that.&nbsp; <o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p=
+ class=3DMsoNormal>Regards,<o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;<=
+/o:p></p><p class=3DMsoNormal>Anthony Williams<o:p></o:p></p><p class=3DMso=
+Normal>LogicWorks | NRT Engineer<o:p></o:p></p><p class=3DMsoNormal>Phone: =
+212-625-5444 option 1<o:p></o:p></p><p class=3DMsoNormal><a href=3D"mailto:=
+support@logicworks.net">support@logicworks.net</a><o:p></o:p></p><p class=
+=3DMsoNormal><img border=3D0 width=3D96 height=3D31 id=3D"Picture_x0020_1" =
+src=3D"cid:image001.jpg@01CC5DBE.10E9F800" alt=3D"Description: LW Print Log=
+o 1 inch"><o:p></o:p></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=
+=3DMsoNormal style=3D'margin-bottom:12.0pt;line-height:13.2pt'><span style=
+=3D'font-size:12.0pt;font-family:"Times New Roman","serif"'>Subject: <b>NTP=
+FEED_HTTP failing and extending logging</b><br>Recipients: lw-support , And=
+y Ehrich , Joseph Yanchis <br><br>Hello,<br><br>I just returned from being =
+away for 3 weeks but I checked the load balancer for the past couple of day=
+s. Every day I have seen that NTPFEED_HTTP has been failing twice. I know a=
+t 4 AM it does a log rotation which causes it to go down. I have also seen =
+that it goes down just before 1 AM.<br><a href=3D"mailto:[cid:image001.png@=
+01CC5C0B.E0B55E80]">[cid:image001.png@01CC5C0B.E0B55E80]</a><br><br>I would=
+ like to gather more information, but the alert log is only showing for les=
+s than the past day. I would like that to be extended to 8 days before that=
+ log rotates or purges.<br><br><br>Thank You,<br>Joshua Dickerson<br>Real-T=
+ime Web Application Architect<br>Noveda Technologies<br><a href=3D"mailto:j=
+dickerson@noveda.com">jdickerson@noveda.com</a><br>908.268.6111<o:p></o:p><=
+/span></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>=
+
+--_000_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_--
+
+--_004_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 19:47:00 GMT";
+	modification-date="Thu, 18 Aug 2011 19:47:00 GMT"
+Content-ID: <image001.jpg@01CC5DBE.10E9F800>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_004_0D25915CF2187740AE6E6A56C2B697B738F941FBex01novedacom_--
+

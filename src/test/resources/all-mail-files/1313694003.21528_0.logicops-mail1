@@ -1,0 +1,85 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ03uR021526
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:00:03 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJ03fw021525
+	for logicops; Thu, 18 Aug 2011 15:00:03 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJ03Jx021521
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:00:03 -0400
+Resent-Date: Thu, 18 Aug 2011 15:00:03 -0400
+Resent-Message-Id: <201108181900.p7IJ03Jx021521@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from logicops3.noc.logicworks.net (206.252.128.189) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 15:00:02 -0400
+Received: from logicops3.noc.logicworks.net (logicops3.noc.logicworks.net
+ [127.0.0.1])	by logicops3.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id
+ p7IJ02uC024493;	Thu, 18 Aug 2011 15:00:02 -0400
+Received: (from root@localhost)	by logicops3.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IJ02EY024492;	Thu, 18 Aug 2011 15:00:02 -0400
+Date: Thu, 18 Aug 2011 15:00:02 -0400
+To: <stayengco@logicworks.net>, <lw-logicops@ext.logicworks.net>,
+        <atistler@logicworks.net>, <gpowell@logicworks.net>
+From: LogicOps <root@logicops3.noc.logicworks.net>
+Subject: LogicOps: Unassigned SRs Opened via My.logicworks.net
+Message-ID: <95f2f9799b64d3dd1c7650033e25aff7@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.72]
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_95f2f9799b64d3dd1c7650033e25aff7"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--b1_95f2f9799b64d3dd1c7650033e25aff7
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+Age:           SR:            Abstract:                                    Accounts:      
+0d 2h 2m       SR 3-967763    Disk space on smy7v                          AFSCME         
+
+
+--b1_95f2f9799b64d3dd1c7650033e25aff7
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<style type="text/css">
+table {
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right:auto;
+	width:100%;
+	border-collapse:collapse;
+}
+
+th {
+	text-align:left;
+	border: 1px solid black;
+}
+
+td {
+	text-align:left;
+	border: 1px solid #999999;
+}
+
+</style>
+<body>
+<table>
+ <col width="15%"/>
+ <col width="15%"/>
+ <col width="45%"/>
+ <col width="15%"/>
+ <tr>
+  <th>Age</th>
+  <th>SR</th>
+  <th>Abstract</th>
+  <th>Accounts</th>
+  <th>URL</th>
+ </tr><tr><td>0d 2h 2m</td><td>SR 3-967763</td><td>Disk space on smy7v</td><td>AFSCME</td><td><a href="https://logicops.logicworks.net/?node_id=967763">https://logicops.logicworks.net/?node_id=967763</a></td></tr></table></body></html>
+
+
+
+--b1_95f2f9799b64d3dd1c7650033e25aff7--
+

@@ -1,0 +1,560 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGp6WN012201
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:51:06 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGp63f012200
+	for logicops; Thu, 18 Aug 2011 12:51:06 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGp5to012196
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:51:05 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 12:51:05 -0400
+From: Alex Pinsker <apinsker@logicworks.net>
+To: Nicholas Ennis <nennis@logicworks.net>,
+        Alberto Amoros
+	<aamoros@wealthmsi.com>,
+        Buckie Fairweather <bfairweather@logicworks.net>
+CC: lw-support <lw-support@logicworks.net>, Rob Buck <rbuck@wealthmsi.com>,
+        Tom Galdos <tgaldos@wealthmsi.com>
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+Thread-Topic: SR 3-966633 Cannot log into Server 10.4.15.33
+Thread-Index: AcxdLkvvrEIOYLGgTjueHDjWwX2ijgABnznQAAFxKZAAACGnUAAA01HgAAj8ZAAAGSHQ4A==
+Date: Thu, 18 Aug 2011 16:51:03 +0000
+Message-ID: <05785D2C25DDF441925ED93D91C10E193D377D96@lw-mbx2.us.logicworks.net>
+References: <429012483EB4554C95041C34FEF6A86D3D418FAA@lw-mbx2.us.logicworks.net>
+ <F5F91562D51062489A3612E3FBFCF7CB01CE66AF43@MBX18.exg5.exghost.com>
+ <429012483EB4554C95041C34FEF6A86D3D4197E7@lw-mbx2.us.logicworks.net>
+ <F5F91562D51062489A3612E3FBFCF7CB01CE66AF4F@MBX18.exg5.exghost.com>
+ <B3959E42181EA149A27EB12CF6D8A8E73D1E6C46@lw-mbx2.us.logicworks.net>
+ <B3959E42181EA149A27EB12CF6D8A8E73D1E8694@lw-mbx2.us.logicworks.net>
+In-Reply-To: <B3959E42181EA149A27EB12CF6D8A8E73D1E8694@lw-mbx2.us.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: multipart/related;
+	boundary="_004_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--_004_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_
+Content-Type: multipart/alternative;
+	boundary="_000_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_"
+
+--_000_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Alberto,
+
+The problem has been fixed.
+
+You should now be able to connect to the server with domain credentials.
+We will be closing this ticket now, however feel free to contact us again w=
+ith any questions.
+
+
+
+Regards,
+
+Alex Pinsker
+LogicWorks | Sr. Windows Engineer
+Phone: 212-625-5444 (Option 1)
+Email: support@logicworks.net<mailto:support@logicworks.net>
+
+From: Nicholas Ennis
+Sent: Thursday, August 18, 2011 12:51 AM
+To: Alberto Amoros; Buckie Fairweather
+Cc: lw-support; Rob Buck; Tom Galdos
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Greetings,
+
+We are still looking into this and will have a Sr. Engineer look further in=
+to this issue in the morning. Should you have any questions please let me k=
+now.
+
+Nicholas Ennis
+Logicworks | NRT Engineer
+Phone: 212-625-5444
+support@logicworks.net<mailto:support@logicworks.net>
+
+From: Nicholas Ennis
+Sent: Wednesday, August 17, 2011 8:33 PM
+To: Alberto Amoros; Buckie Fairweather
+Cc: lw-support; Rob Buck; Tom Galdos
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Hi Alberto,
+
+I will look into this issue and get back to your shorlty.
+
+Nicholas Ennis
+Logicworks | NRT Engineer
+Phone: 212-625-5444
+support@logicworks.net<mailto:support@logicworks.net>
+
+From: Alberto Amoros [mailto:aamoros@wealthmsi.com]<mailto:[mailto:aamoros@=
+wealthmsi.com]>
+Sent: Wednesday, August 17, 2011 8:10 PM
+To: Buckie Fairweather
+Cc: lw-support; Rob Buck; Tom Galdos
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Hi Buckie,
+
+I'm still getting the "The security database on the server does not have a =
+computer account for this workstation trust relationship" error.
+
+Do I have to give it some time?
+
+Regards,
+Alberto
+
+From: Buckie Fairweather [mailto:bfairweather@logicworks.net]<mailto:[mailt=
+o:bfairweather@logicworks.net]>
+Sent: Wednesday, August 17, 2011 8:08 PM
+To: Alberto Amoros
+Cc: lw-support; Rob Buck; Tom Galdos
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Hi Alberto,
+
+Maintenance is complete; you should now be able to connect this sever remot=
+ely now. Should you have any questions please let us know. Thank you.
+
+
+From: Alberto Amoros [mailto:aamoros@wealthmsi.com]<mailto:[mailto:aamoros@=
+wealthmsi.com]>
+Sent: Wednesday, August 17, 2011 7:25 PM
+To: Buckie Fairweather
+Cc: lw-support; Rob Buck; Tom Galdos
+Subject: RE: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Anytime will work, this server can't be used if we can't RDP to configure i=
+t.
+
+Thanks!
+
+From: Buckie Fairweather [mailto:bfairweather@logicworks.net]<mailto:[mailt=
+o:bfairweather@logicworks.net]>
+Sent: Wednesday, August 17, 2011 6:38 PM
+To: Alberto Amoros
+Cc: lw-support
+Subject: SR 3-966633 Cannot log into Server 10.4.15.33
+
+Hi Alberto,
+
+My apologies about the delay; somehow this node was removed from the AD acc=
+ount, in order to fix this we will have to re-add it to the domain, which r=
+equires a reboot.  Please provide a time that is most convenient to re-add =
+and reboot. Thank you.
+
+Best Regards,
+
+Buckie Fairweather
+Logicworks | NRT Engineer
+Phone: 212-625-5444 Option 1 (24x7)
+lw-support@logicworks.net<mailto:support@logicworks.net>
+[Description: LW Print Logo 1 inch]
+
+
+--_000_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 14 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle22
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle23
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle24
+	{mso-style-type:personal;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+span.EmailStyle25
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Alberto,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">The problem has been f=
+ixed.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">You should now be able=
+ to connect to the server with domain credentials.
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">We will be closing thi=
+s ticket now, however feel free to contact us again with any questions.<o:p=
+></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D"><o:p>&nbsp;</o:p></span></=
+p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Regards,</span><span style=
+=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&qu=
+ot;;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:12.0pt;font-family:&quot;Ti=
+mes New Roman&quot;,&quot;serif&quot;;color:#1F497D">&nbsp;<o:p></o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Alex Pinsker<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">LogicWorks&nbsp;| Sr. Wind=
+ows Engineer</span><span style=3D"font-size:12.0pt;font-family:&quot;Times =
+New Roman&quot;,&quot;serif&quot;;color:#1F497D"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;Ta=
+homa&quot;,&quot;sans-serif&quot;;color:#1F497D">Phone:&nbsp;212-625-5444 (=
+Option 1)<br>
+Email:&nbsp;<a href=3D"mailto:support@logicworks.net"><span style=3D"color:=
+#1F497D">support@logicworks.net</span></a></span><span style=3D"font-size:1=
+2.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#1F49=
+7D"><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Nicholas=
+ Ennis
+<br>
+<b>Sent:</b> Thursday, August 18, 2011 12:51 AM<br>
+<b>To:</b> Alberto Amoros; Buckie Fairweather<br>
+<b>Cc:</b> lw-support; Rob Buck; Tom Galdos<br>
+<b>Subject:</b> RE: SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Greetings,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">We are still looking i=
+nto this and will have a Sr. Engineer look further into this issue in the m=
+orning. Should you have any questions please let me know.<o:p></o:p></span>=
+</p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Nicholas Ennis<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Phone: 212-625-5444<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net"><span style=3D"color:#1F497D">support@logicworks.net</s=
+pan></a><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Nicholas=
+ Ennis
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 8:33 PM<br>
+<b>To:</b> Alberto Amoros; Buckie Fairweather<br>
+<b>Cc:</b> lw-support; Rob Buck; Tom Galdos<br>
+<b>Subject:</b> RE: SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hi Alberto,<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I will look into this =
+issue and get back to your shorlty.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Nicholas Ennis<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Logicworks | NRT Engin=
+eer<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Phone: 212-625-5444<o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><a href=3D"mailto:supp=
+ort@logicworks.net"><span style=3D"color:#1F497D">support@logicworks.net</s=
+pan></a><o:p></o:p></span></p>
+</div>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Alberto =
+Amoros
+<a href=3D"mailto:[mailto:aamoros@wealthmsi.com]">[mailto:aamoros@wealthmsi=
+.com]</a>
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 8:10 PM<br>
+<b>To:</b> Buckie Fairweather<br>
+<b>Cc:</b> lw-support; Rob Buck; Tom Galdos<br>
+<b>Subject:</b> RE: SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hi Buckie,<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">I&#8217;m still gettin=
+g the &#8220;The security database on the server does not have a computer a=
+ccount for this workstation trust relationship&#8221; error.<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Do I have to give it s=
+ome time?<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Regards,<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Alberto<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Buckie F=
+airweather
+<a href=3D"mailto:[mailto:bfairweather@logicworks.net]">[mailto:bfairweathe=
+r@logicworks.net]</a>
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 8:08 PM<br>
+<b>To:</b> Alberto Amoros<br>
+<b>Cc:</b> lw-support; Rob Buck; Tom Galdos<br>
+<b>Subject:</b> RE: SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Hi Alberto,<o:p></o:p>=
+</span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Maintenance is complet=
+e; you should now be able to connect this sever remotely now. Should you ha=
+ve any questions please let us know. Thank you.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Alberto =
+Amoros
+<a href=3D"mailto:[mailto:aamoros@wealthmsi.com]">[mailto:aamoros@wealthmsi=
+.com]</a>
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 7:25 PM<br>
+<b>To:</b> Buckie Fairweather<br>
+<b>Cc:</b> lw-support; Rob Buck; Tom Galdos<br>
+<b>Subject:</b> RE: SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p=
+></span></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Anytime will work, thi=
+s server can&#8217;t be used if we can&#8217;t RDP to configure it.<o:p></o=
+:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D">Thanks!<o:p></o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"color:#1F497D"><o:p>&nbsp;</o:p></spa=
+n></p>
+<div>
+<div style=3D"border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in =
+0in 0in">
+<p class=3D"MsoNormal"><b><span style=3D"font-size:10.0pt;font-family:&quot=
+;Tahoma&quot;,&quot;sans-serif&quot;">From:</span></b><span style=3D"font-s=
+ize:10.0pt;font-family:&quot;Tahoma&quot;,&quot;sans-serif&quot;"> Buckie F=
+airweather
+<a href=3D"mailto:[mailto:bfairweather@logicworks.net]">[mailto:bfairweathe=
+r@logicworks.net]</a>
+<br>
+<b>Sent:</b> Wednesday, August 17, 2011 6:38 PM<br>
+<b>To:</b> Alberto Amoros<br>
+<b>Cc:</b> lw-support<br>
+<b>Subject:</b> SR 3-966633 Cannot log into Server 10.4.15.33<o:p></o:p></s=
+pan></p>
+</div>
+</div>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Hi Alberto,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">My apologies about the delay; somehow this node was =
+removed from the AD account, in order to fix this we will have to re-add it=
+ to the domain, which requires a reboot. &nbsp;Please provide a time that i=
+s most convenient to re-add and reboot.
+ Thank you.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Best Regards,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Buckie Fairweather<o:p></o:p></p>
+<p class=3D"MsoNormal">Logicworks | NRT Engineer<o:p></o:p></p>
+<p class=3D"MsoNormal">Phone: 212-625-5444 Option 1 (24x7)<o:p></o:p></p>
+<p class=3D"MsoNormal"><a href=3D"mailto:support@logicworks.net">lw-support=
+@logicworks.net</a><o:p></o:p></p>
+<p class=3D"MsoNormal"><img border=3D"0" width=3D"96" height=3D"31" id=3D"P=
+icture_x0020_1" src=3D"cid:image001.jpg@01CC5DA5.7CE0B530" alt=3D"Descripti=
+on: LW Print Logo 1 inch"><o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_--
+
+--_004_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=1449;
+	creation-date="Thu, 18 Aug 2011 16:51:03 GMT";
+	modification-date="Thu, 18 Aug 2011 16:51:03 GMT"
+Content-ID: <image001.jpg@01CC5DA5.7CE0B530>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIf
+IiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAfAGADASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2SivO
+9Y1+PQPiTf3948r21rpAYRKc5YyAAAdMk4rRt/iH5EssWvaNPpTi0a8hBkEnmxjqOOje1AHZ0V53
+eePLu+srqyvdGudMS60yS8t5orpTKYwOD0+Umruh+L7iVtJ0TT9NuNRmFnDLeXEs4HkK4HLEj5jg
+5oA7eiuIf4nWUAt0uLCSKaS/ezmi8wEw7SAXPHT5hTm+I3nSrbabos15dT3UsFrGsyqJVj+9ISRw
+P8DQB2tGRnGefSuFl+JmLO2MGh3Et/LePZyWXmANHKozjPQ5z/Osix8Vvo/jbWxPYyz6lqD2scFg
+soyGKZYbjwAM9aAPUazL3VJILpreOLYqKC9zIpZEz2wOfzwKyYPGck/i9vDo01I5IgvnSSXIQ8rk
+lFIy4HTIraS4ig1G+MjhSER8dyoU5IHeqiJkEl1Laqjx6nHdNIMiJkB3/wC7s5H61esbs3tqJmhe
+BtxVo3IJUg4PSsvTGmuZLmaxFtarLJvw6Zl6AYZRjb09e9WNOujDdSWFwE89neTdE25OTnB7g+x9
+K0lHTzJTKGq+CNL1rVbu/vXmc3dp9leMEBQAwYMOM5BAqrY/DzT4pJZNTv73Vne2NqhunH7qI9Qu
+B19662isSzzPS/h9fya9creC7g0tLKSyhe4u1mldW4G0AYUAdjXQn4f2UV1Z3VjqeoWNxbwR28kl
+vIF+0ImMBxj27V1dFAHK3nw80a91LVb+VphJqkPluoIxGeCWXjrlQaSb4faedN0y2s727srjSwwt
+7yFgJPm+9njBzXV0UAcrZ/D/AEyyNg6XN081ndteNK7AtPIRgl+P5U3U/h1pOq39/fzTXCXV5JHI
+syEBrdk6FDjv3zXWUUAcxdeDEvNZtNUv9XvLr7E6yxwsqAB1GOoXODjJGcZp9zcHVLTF64tHkTME
+HkeYWBHBDDlj/u4x3royMgg9DWS1rqNvNaxwJFcRQZCSO2wqNuAGGOceorSm0iZEMjx32ktNLB5N
+1bsIm2vh15A6jnBB6e9aGy2guba1t1RCjFzGnUDaRk/iRyahOiQyxP57t58jl3mhPlk5OcfTjvmr
+1vaw2qFYYwuTlj1LH1J6k05SVtASZ//Z
+
+--_004_05785D2C25DDF441925ED93D91C10E193D377D96lwmbx2uslogicwo_--
+

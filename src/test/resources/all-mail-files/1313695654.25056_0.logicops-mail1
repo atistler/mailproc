@@ -1,0 +1,58 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJRYdi025052
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:27:34 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJRYaq025051
+	for logicops; Thu, 18 Aug 2011 15:27:34 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJRXsD025040
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:27:33 -0400
+Resent-Date: Thu, 18 Aug 2011 15:27:33 -0400
+Resent-Message-Id: <201108181927.p7IJRXsD025040@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from velti-lb1v.sccnj04.client.logicworks.net (209.81.82.220) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 15:27:33 -0400
+Received: from velti-lb1v.client.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by velti-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with
+ SMTP id p7IJRXQn016267	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 15:27:33 -0400
+Message-ID: <201108181927.p7IJRXQn016267@velti-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@velti-lb1v.client.logicworks.net>
+Date: Thu, 18 Aug 2011 15:27:33 -0400
+Subject: Zeus: Pool has no back-end nodes responding, Node has failed, Monitor has detected a failure
+X-ZXTM-Notify: velti-lb1v.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from velti-lb1v.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'vip3-mgage' = Failed: All nodes have failed
+ + Node '10.64.102.215:8080' = Failed
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 15:27:05: WARN  Monitor 'Simple HTTP'
+                    Monitor has detected a failure in node
+                    '10.64.102.215:8080': Timeout while waiting for valid
+                    server response
+
+#2 Aug 18 15:27:06: SERIOUS  Node '10.64.102.215:8080', Pool 'vip3-mgage'
+                    Node 10.64.102.215 has failed - A monitor has detected
+                    a failure
+
+#3 Aug 18 15:27:06: SERIOUS  Pool 'vip3-mgage'
+                    Pool has no back-end nodes responding
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

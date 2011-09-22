@@ -1,0 +1,109 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJm5uc027304
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:48:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJm5gC027303
+	for logicops; Thu, 18 Aug 2011 15:48:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJm55J027299
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 15:48:05 -0400
+Resent-Date: Thu, 18 Aug 2011 15:48:05 -0400
+Resent-Message-Id: <201108181948.p7IJm55J027299@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.146) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 15:48:04 -0400
+Received: from exprod5og113.obsmtp.com ([64.18.0.26]) (using TLSv1) by
+ exprod8mx246.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 15:48:04
+ EDT
+Received: from Cinmlip06.e2k.ad.ge.com ([12.71.149.1]) (using TLSv1) by
+ exprod5ob113.postini.com ([64.18.4.12]) with SMTP	ID
+ DSNKTk1sc7gTwdWhlzK2uPI4PVWVPrq6i01T@postini.com; Thu, 18 Aug 2011 12:48:04
+ PDT
+Received: from unknown (HELO useclpexw213.nbcuni.ge.com) ([3.44.150.24])  by
+ Cinmlip06.e2k.ad.ge.com with ESMTP; 18 Aug 2011 15:48:02 -0400
+Received: from rkfmlef01.e2k.ad.ge.com ([3.159.183.51])	by
+ useclpexw213.nbcuni.ge.com (SonicWALL 7.1.1.1995)	with ESMTP; Thu, 18 Aug
+ 2011 15:48:01 -0400
+Received: from RKFMLVEM03.e2k.ad.ge.com ([3.159.183.40]) by
+ rkfmlef01.e2k.ad.ge.com with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18 Aug
+ 2011 15:44:18 -0400
+Received: from 3.3.197.4 ([3.3.197.4]) by RKFMLVEM03.e2k.ad.ge.com
+ ([3.159.183.43]) with Microsoft Exchange Server HTTP-DAV ; Thu, 18 Aug 2011
+ 19:44:17 +0000
+User-Agent: Microsoft-Entourage/12.30.0.110427
+Date: Thu, 18 Aug 2011 15:47:47 -0400
+Subject: Re: high load on bravotv-web servers (SR 3-967819)
+From: Samuel Magee <Samuel.Magee@nbcuni.com>
+To: "support@logicworks.net" <support@logicworks.net>,
+        Aris Cruz
+	<Aris.Cruz@nbcuni.com>,
+        "Keilson, Jonathan" <jonathan.keilson@nbcuni.com>,
+        Rahsaan Page <Rahsaan.Page@nbcuni.com>,
+        "dpsi@nbcuni.com" <dpsi@nbcuni.com>
+CC: lw-support <lw-support@logicworks.net>,
+        "Tai, Nelson (NBCUniversal)"
+	<Nelson.Tai@nbcuni.com>,
+        "Witherow, Matthew (NBCUniversal)"
+	<Matthew.Witherow@nbcuni.com>,
+        "McMillen, Stephen (NBCUniversal)"
+	<Stephen.McMillen@nbcuni.com>
+Message-ID: <CA72E4A3.A6BE%Samuel.Magee@nbcuni.com>
+Thread-Topic: high load on bravotv-web servers (SR 3-967819)
+Thread-Index: Acxd37Q+vWFDh40pS0W1ogG4OtyU9w==
+In-Reply-To: <994f53a49cb1684f824a3470eaac9047@logicops.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-OriginalArrivalTime: 18 Aug 2011 19:44:18.0489 (UTC) FILETIME=[37F67290:01CC5DDF]
+X-Mlf-Version: 7.1.1.1995
+X-Mlf-UniqueId: o201108181948010019143
+X-pstn-neptune: 0/0/0.00/0
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Since the MySQL database service checks look ok and the Hosting team has
+tried restarting Apache a few times with no change in status, I'm copying in
+the Bravotv developers to look into why there are so many requests taking 30
+to 90 seconds to complete.
+
+
+On 8/18/11 3:25 PM, "Logicworks NOC" <logicops@logicworks.net> wrote:
+
+> Greetings,
+> 
+> We have detected that your web servers (web1/web2/web3/web5) are experiencing
+> high load at the moment.  We spoke with Aris, who informed us that your team
+> has been looking into this.  If you need our assistance, please feel free to
+> let us know. Thank you.
+> 
+> Regards,
+> 
+> Logicworks NOC
+> 
+> ------------------------------------------------------------------------------
+> -------------------------------
+> 
+> 
+> 
+> 
+> 
+> At Logicworks, our customers' feedback is important to us. We want to hear
+> from you regarding your experiences with the services that we offer.
+> To leave feedback regarding this Service Request please visit:
+> https://logicops.logicworks.net/AddCustomerFeedback/967819/Page
+> 
+> 
+
+
+-- 
+Samuel Magee   |   NBCUDPS
+Senior Engineer, DPS Hosting Web
+Techlink for NBCUniversal
+Samuel.Magee@nbcuni.com
+o: (201) 735.3450   |   m: (201) 341.6909
+904 Sylvan Avenue, Englewood Cliffs, NJ 07632
+ 
+Visit our site at http://www.nbcudps.com/ for information, resources and
+news.
+

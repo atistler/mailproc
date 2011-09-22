@@ -1,0 +1,54 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKGZ29030433
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:16:35 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKGZcH030431
+	for logicops; Thu, 18 Aug 2011 16:16:35 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKGZTp030420
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:16:35 -0400
+Resent-Date: Thu, 18 Aug 2011 16:16:35 -0400
+Resent-Message-Id: <201108182016.p7IKGZTp030420@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from lw-bartleby.mail.logicworks.net (206.252.128.20) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 16:16:34 -0400
+Received: from fbgroup-lb1v (fbgroup-lb1v.sccnj04.client.logicworks.net
+ [209.81.85.62])	by lw-bartleby.mail.logicworks.net (8.13.8/8.13.8) with SMTP
+ id p7IKGYEt004064	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 16:16:34 -0400
+Message-ID: <201108182016.p7IKGYEt004064@lw-bartleby.mail.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@fbgroup-lb1v>
+Date: Thu, 18 Aug 2011 16:17:14 -0400
+Subject: Zeus: A virtual server request log file was deleted (Zeus Appliances only), A virtual server request log file was deleted (Zeus Appliances only)
+X-ZXTM-Notify: fbgroup-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from fbgroup-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Virtual Server 'VIP1-SSL' = OK
+ + Pool 'web https' = OK
+    + Node '209.81.85.59:81' = OK
+    + Node '209.81.85.60:81' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 16:17:02: INFO  Virtual Server 'VIP1-SSL'
+                    Deleted log file 'VIP1-SSL/VIP1-SSL.log.20110621.1.gz'
+
+#2 Aug 18 16:17:02: INFO  Virtual Server 'VIP1-SSL'
+                    Deleted log file 'VIP1-SSL/VIP1-SSL.log.20110622.1.gz'
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

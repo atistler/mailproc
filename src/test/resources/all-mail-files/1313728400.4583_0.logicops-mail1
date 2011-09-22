@@ -1,0 +1,31 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4XKPh004581
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:33:20 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4XKcq004580
+	for logicops; Fri, 19 Aug 2011 00:33:20 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4XHR9004492;
+	Fri, 19 Aug 2011 00:33:17 -0400
+Received: from lw-augur1.nycmny04.client.logicworks.net (206.252.128.42) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Fri, 19 Aug 2011 00:33:16 -0400
+Received: from lw-augur1 (localhost.localdomain [127.0.0.1])	by
+ lw-augur1.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7J4XG6T032508	for <lw-alert-server@ext.logicworks.net>; Fri, 19 Aug 2011
+ 00:33:16 -0400
+Message-ID: <1478614220.237511313728396530.JavaMail.root@lw-augur1>
+Date: Fri, 19 Aug 2011 00:33:16 -0400
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Subject: syslog: 10.17.20.103: MRMON267 Command timeout on PD: PD = Port 0 -
+ 3:1:23 - No addtional sense information, CDB = 0x12 0x01 0x80 0x00 0x04
+ 0x00 , Sense = 50:00:00:e1:16:d8:c4:02, Path = @ 12:33:16 AM EDT
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+syslog: 10.17.20.103: MRMON267 Command timeout on PD: PD = Port 0 - 3:1:23 - No addtional sense information, CDB = 0x12 0x01 0x80 0x00 0x04 0x00 , Sense = 50:00:00:e1:16:d8:c4:02, Path = @ 12:33:16 AM EDT
+

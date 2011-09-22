@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILK0Ye004424
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 17:20:00 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7ILK0Lj004423
+	for logicops; Thu, 18 Aug 2011 17:20:00 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7ILJxNo004408;
+	Thu, 18 Aug 2011 17:19:59 -0400
+Received: from converseon-db7.nycmny04.client.logicworks.net (209.81.73.97) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 17:19:59 -0400
+Received: from you (localhost.localdomain [127.0.0.1])	by
+ converseon-db7.nycmny04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7ILJwlv002157	for lw-monitoring@ext.logicworks.net; Thu, 18 Aug 2011
+ 17:19:58 -0400
+Date: Thu, 18 Aug 2011 17:19:58 -0400
+From: <lw-monitoring@ext.logicworks.net>
+Message-ID: <201108182119.p7ILJwlv002157@converseon-db7.nycmny04.client.logicworks.net>
+To: <lw-monitoring@ext.logicworks.net>
+Subject: WARNING  Event occurred on: converseon-db7
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Controller ID: 0 PD Reset: PD = :6, Error = 3, Path = 50:03:04:80:00:70:08:fd
+Generated on:Thu Aug 18 18:19:58 2011
+
+
+SYSTEM DETAILS---
+IP Address: 10.17.20.114
+OS Name: Linux
+OS Version: 2.6
+Driver Name: megaraid_sas
+Driver Version: 00.00.04.17-4.31.z-RH1
+
+
+IMAGE DETAILS---
+BIOS Version: 3.09.00
+Firmware Package Version: 12.0.1-0081
+Firmware Version: 2.0.03-0725
+

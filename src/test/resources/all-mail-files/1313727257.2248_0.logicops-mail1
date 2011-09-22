@@ -1,0 +1,37 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4EHW7002246
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:14:17 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J4EHtC002242
+	for logicops; Fri, 19 Aug 2011 00:14:17 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4EGvi002225
+	for <support@logicops-mail.logicworks.net>; Fri, 19 Aug 2011 00:14:16 -0400
+Resent-Date: Fri, 19 Aug 2011 00:14:16 -0400
+Resent-Message-Id: <201108190414.p7J4EGvi002225@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Fri, 19 Aug
+ 2011 00:14:16 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J4EGZA018345	for
+ <lw-devices@ext.logicworks.net>; Fri, 19 Aug 2011 00:14:16 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7J4EGuw018343;	Fri, 19 Aug 2011 00:14:16 -0400
+Date: Fri, 19 Aug 2011 00:14:16 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108190414.p7J4EGuw018343@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: config fetcher problems - routers
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+The following routers have not been successfully contacted for
+more than 4 hours.
+-rw-r-----  1 rancid rancid 0 Nov 11  2010 athletes-fw-pri.sccnj04.complex.logicworks.net
+-rw-r-----  1 rancid rancid 10791 Aug 12 15:01 a01.nycmny04.core.logicworks.net
+-rw-r-----  1 rancid rancid 5354 Jul 14 20:24 nodaldr-vpn.client.logicworks.net
+

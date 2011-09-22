@@ -1,0 +1,496 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFGlJc005618
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:16:47 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFGlU2005617
+	for logicops; Thu, 18 Aug 2011 11:16:47 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFGktV005612
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 11:16:46 -0400
+Resent-Date: Thu, 18 Aug 2011 11:16:46 -0400
+Resent-Message-Id: <201108181516.p7IFGktV005612@logicops-mail1.logicworks.net>
+Resent-From: <lw-support@logicworks.net>
+Received: from psmtp.com (64.18.3.112) by LW-HUBCAS1V (206.252.153.174) with
+ Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug 2011 11:16:45 -0400
+Received: from mail-gy0-f169.google.com ([209.85.160.169]) (using TLSv1) by
+ exprod8mx212.postini.com ([64.18.7.10]) with SMTP;	Thu, 18 Aug 2011 11:16:44
+ EDT
+Received: by gyg10 with SMTP id 10so1679875gyg.0        for <multiple
+ recipients>; Thu, 18 Aug 2011 08:16:43 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.52.173.172 with SMTP id bl12mr768640vdc.242.1313680603165;
+ Thu, 18 Aug 2011 08:16:43 -0700 (PDT)
+Received: by 10.220.194.129 with HTTP; Thu, 18 Aug 2011 08:16:43 -0700 (PDT)
+In-Reply-To: <01694838EF060F4998445AB0DF8564DD3D1C569C@lw-mbx2.us.logicworks.net>
+References: <01694838EF060F4998445AB0DF8564DD3D1BEDE2@lw-mbx2.us.logicworks.net>
+	<CACwRyiM=mUm7svWeSLDX_r7jUDdzxX-KKG2V4JGiEMZFxL2Rpg@mail.gmail.com>
+	<01694838EF060F4998445AB0DF8564DD3D1C569C@lw-mbx2.us.logicworks.net>
+Date: Thu, 18 Aug 2011 11:16:43 -0400
+Message-ID: <CACwRyiN4Z_ogvA7PTACYVHFe4yRQ-igoXnGWFt3g3UnN+fNxAQ@mail.gmail.com>
+Subject: Re: Contact Daulton - SR 3-958444
+From: "John D. Bickle" <jbickle@cellfishmedia.ca>
+To: Dalton Stickney <dstickney@logicworks.net>
+CC: Chris Case <ccase@4rnd.com>, lw-support <lw-support@logicworks.net>
+Content-Type: multipart/alternative; boundary="bcaec51b1659b3337e04aac919d4"
+X-pstn-levels: (S:99.90000/99.90000 CV:99.9000 FC:95.5390 LC:95.5390 R:95.9108 P:95.9108 M:97.0282 C:98.6951 )
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+--bcaec51b1659b3337e04aac919d4
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+that's fine, thanks.
+
+On Thu, Aug 18, 2011 at 11:16 AM, Dalton Stickney
+<dstickney@logicworks.net>wrote:
+
+>
+> Hi John,
+>
+> Sure, I'm available this afternoon. How's 2:30 EST?
+>
+> Regards.
+> Dalton
+> Senior Engineer
+> Logicworks
+> ________________________________________
+> From: John D. Bickle [jbickle@cellfishmedia.ca]
+> Sent: Thursday, August 18, 2011 10:02 AM
+> To: Dalton Stickney
+> Cc: Chris Case; lw-support
+> Subject: Re: Contact Daulton - SR 3-958444
+>
+> hi Dalton.
+>
+> can we chat over the phone?
+>
+> i don't think this is the problem.
+>
+> cheers,
+> john.
+>
+> On Wed, Aug 17, 2011 at 4:32 PM, Dalton Stickney <dstickney@logicworks.ne=
+t
+> <mailto:dstickney@logicworks.net>> wrote:
+>
+> Hi John,
+>
+> The issue appears to be some missing config on your ASA.
+>
+> By default, the ASA will nat the outbound traffic on an inside interface.=
+ I
+> believe you need a deny-nat access-list applied to the dmz interface (nat
+> 0), in order
+> to allow the traffic to pass through.
+>
+> Regards,
+> Dalton
+> Senior Engineer
+> Logicworks
+> ________________________________________
+> From: John D. Bickle [jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca>]
+> Sent: Monday, August 15, 2011 2:51 PM
+> To: Dalton Stickney
+> Cc: Chris Case
+> Subject: Re: Contact Daulton about Peer1 VPN
+>
+> Hi Dalton.
+>
+> I was away on vacation for a while, and lost track of where we were with
+> this project.
+>
+> Is it working?
+>
+> cheers,
+> john.
+>
+> On Mon, Jul 25, 2011 at 3:10 PM, Dalton Stickney <dstickney@logicworks.ne=
+t
+> <mailto:dstickney@logicworks.net><mailto:dstickney@logicworks.net<mailto:
+> dstickney@logicworks.net>>> wrote:
+>
+> Hi Chris and John,
+>
+> I looked over the config on the ASA and it looks like this is the issue. =
+By
+> default, the ASA will nat the outbound traffic on an inside interface. I
+> believe you need a deny-nat access-list applied to the dmz interface (nat
+> 0), in order
+> to allow the traffic to pass through.
+>
+> Regards
+> Dalton
+> Senior Engineer
+> Logicworks
+> ________________________________________
+> From: Chris Case [ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:
+> ccase@4rnd.com<mailto:ccase@4rnd.com>>]
+> Sent: Monday, July 25, 2011 12:08 PM
+> To: Dalton Stickney
+> Subject: Re: Contact Daulton about Peer1 VPN
+>
+> OK thanks Dalton, I appreciate it.
+>
+> On Mon, Jul 25, 2011 at 12:04 PM, Dalton Stickney <
+> dstickney@logicworks.net<mailto:dstickney@logicworks.net><mailto:
+> dstickney@logicworks.net<mailto:dstickney@logicworks.net>><mailto:
+> dstickney@logicworks.net<mailto:dstickney@logicworks.net><mailto:
+> dstickney@logicworks.net<mailto:dstickney@logicworks.net>>>> wrote:
+>
+> Hi Chris,
+>  I have access to the remote device and will be sorting through this toda=
+y.
+> I'll update you end of day.
+>
+> Regards,
+> Dalton
+> Senior Engineer
+> Logicworks
+> ________________________________________
+> From: Chris Case [ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:
+> ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:ccase@4rnd.com<mailto:
+> ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>>]
+> Sent: Monday, July 25, 2011 12:01 PM
+> To: Dalton Stickney
+> Subject: Re: Contact Daulton about Peer1 VPN
+>
+> Dalton,
+>
+> Hi, can you give me a status update on this?  Ideally we'd like to have
+> this done by Wednesday afternoon if possible.  Can you give me a rough ET=
+A
+> as to when you expect the setup to be completed?
+>
+> Thanks,
+> Chris
+>
+> On Thu, Jul 21, 2011 at 5:49 PM, John D. Bickle <jbickle@cellfishmedia.ca
+> <mailto:jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca>><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca>>><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca>><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca><mailto:jbickle@cellfishmedia.ca<mailto:
+> jbickle@cellfishmedia.ca>>>>> wrote:
+> done.
+>
+> cheers,
+> john.
+>
+> On Thu, Jul 21, 2011 at 5:48 PM, Chris Case <ccase@4rnd.com<mailto:
+> ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:
+> ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:
+> ccase@4rnd.com>>><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com><mailto:
+> ccase@4rnd.com<mailto:ccase@4rnd.com>><mailto:ccase@4rnd.com<mailto:
+> ccase@4rnd.com><mailto:ccase@4rnd.com<mailto:ccase@4rnd.com>>>>> wrote:
+> John,
+>
+> Before you leave today could you contact Daulton at LogicWorks?
+>
+> Thanks,
+> Chris
+>
+>
+>
+> --
+> John Bickle
+> CELLFISH
+> 468, rue Saint-Jean
+> Bureau 200
+> Montr=E9al, Qu=E9bec, H2Y 2S1
+> T=E9l. : +1.514.288.5858<tel:%2B1.514.288.5858><tel:%2B1.514.288.5858><te=
+l:%2B1.514.288.5858><tel:%2B1.514.288.5858>
+> poste 203
+> Fax : +1.514.288.4224
+> <tel:%2B1.514.288.4224><tel:%2B1.514.288.4224><tel:%2B1.514.288.4224><tel=
+:%2B1.514.288.4224>
+>
+>
+>
+>
+>
+> --
+> John Bickle
+> CELLFISH
+> 468, rue Saint-Jean
+> Bureau 200
+> Montr=E9al, Qu=E9bec, H2Y 2S1
+> T=E9l. : +1.514.288.5858<tel:%2B1.514.288.5858> poste 203
+> Fax : +1.514.288.4224<tel:%2B1.514.288.4224>
+>
+>
+>
+> --
+> John Bickle
+> CELLFISH
+> 468, rue Saint-Jean
+> Bureau 200
+> Montr=E9al, Qu=E9bec, H2Y 2S1
+> T=E9l. : +1.514.288.5858 poste 203
+> Fax : +1.514.288.4224
+>
+
+
+
+--=20
+John Bickle
+CELLFISH
+468, rue Saint-Jean
+Bureau 200
+Montr=E9al, Qu=E9bec, H2Y 2S1
+T=E9l. : +1.514.288.5858 poste 203
+Fax : +1.514.288.4224
+
+--bcaec51b1659b3337e04aac919d4
+Content-Type: text/html; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+that&#39;s fine, thanks.<br><br><div class=3D"gmail_quote">On Thu, Aug 18, =
+2011 at 11:16 AM, Dalton Stickney <span dir=3D"ltr">&lt;<a href=3D"mailto:d=
+stickney@logicworks.net">dstickney@logicworks.net</a>&gt;</span> wrote:<br>=
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex;">
+<br>
+Hi John,<br>
+<br>
+Sure, I&#39;m available this afternoon. How&#39;s 2:30 EST?<br>
+<div class=3D"im"><br>
+Regards.<br>
+Dalton<br>
+Senior Engineer<br>
+Logicworks<br>
+________________________________________<br>
+From: John D. Bickle [<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@c=
+ellfishmedia.ca</a>]<br>
+</div>Sent: Thursday, August 18, 2011 10:02 AM<br>
+To: Dalton Stickney<br>
+Cc: Chris Case; lw-support<br>
+Subject: Re: Contact Daulton - SR 3-958444<br>
+<div class=3D"im"><br>
+hi Dalton.<br>
+<br>
+can we chat over the phone?<br>
+<br>
+i don&#39;t think this is the problem.<br>
+<br>
+cheers,<br>
+john.<br>
+<br>
+</div><div class=3D"im">On Wed, Aug 17, 2011 at 4:32 PM, Dalton Stickney &l=
+t;<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.net</a>&=
+lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.=
+net</a>&gt;&gt; wrote:<br>
+
+<br>
+Hi John,<br>
+<br>
+The issue appears to be some missing config on your ASA.<br>
+<br>
+By default, the ASA will nat the outbound traffic on an inside interface. I=
+ believe you need a deny-nat access-list applied to the dmz interface (nat =
+0), in order<br>
+to allow the traffic to pass through.<br>
+<br>
+Regards,<br>
+Dalton<br>
+Senior Engineer<br>
+Logicworks<br>
+________________________________________<br>
+</div>From: John D. Bickle [<a href=3D"mailto:jbickle@cellfishmedia.ca">jbi=
+ckle@cellfishmedia.ca</a>&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia=
+.ca">jbickle@cellfishmedia.ca</a>&gt;]<br>
+<div class=3D"im">Sent: Monday, August 15, 2011 2:51 PM<br>
+To: Dalton Stickney<br>
+Cc: Chris Case<br>
+Subject: Re: Contact Daulton about Peer1 VPN<br>
+<br>
+Hi Dalton.<br>
+<br>
+I was away on vacation for a while, and lost track of where we were with th=
+is project.<br>
+<br>
+Is it working?<br>
+<br>
+cheers,<br>
+john.<br>
+<br>
+</div><div class=3D"im">On Mon, Jul 25, 2011 at 3:10 PM, Dalton Stickney &l=
+t;<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.net</a>&=
+lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.=
+net</a>&gt;&lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">dstickney=
+@logicworks.net</a>&lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">d=
+stickney@logicworks.net</a>&gt;&gt;&gt; wrote:<br>
+
+<br>
+Hi Chris and John,<br>
+<br>
+I looked over the config on the ASA and it looks like this is the issue. By=
+ default, the ASA will nat the outbound traffic on an inside interface. I b=
+elieve you need a deny-nat access-list applied to the dmz interface (nat 0)=
+, in order<br>
+
+to allow the traffic to pass through.<br>
+<br>
+Regards<br>
+Dalton<br>
+Senior Engineer<br>
+Logicworks<br>
+________________________________________<br>
+</div><div class=3D"im">From: Chris Case [<a href=3D"mailto:ccase@4rnd.com"=
+>ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.=
+com</a>&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&=
+lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&gt;]<br>
+
+</div><div class=3D"im">Sent: Monday, July 25, 2011 12:08 PM<br>
+To: Dalton Stickney<br>
+Subject: Re: Contact Daulton about Peer1 VPN<br>
+<br>
+OK thanks Dalton, I appreciate it.<br>
+<br>
+</div><div class=3D"im">On Mon, Jul 25, 2011 at 12:04 PM, Dalton Stickney &=
+lt;<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.net</a>=
+&lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks=
+.net</a>&gt;&lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">dstickne=
+y@logicworks.net</a>&lt;mailto:<a href=3D"mailto:dstickney@logicworks.net">=
+dstickney@logicworks.net</a>&gt;&gt;&lt;mailto:<a href=3D"mailto:dstickney@=
+logicworks.net">dstickney@logicworks.net</a>&lt;mailto:<a href=3D"mailto:ds=
+tickney@logicworks.net">dstickney@logicworks.net</a>&gt;&lt;mailto:<a href=
+=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.net</a>&lt;mailto=
+:<a href=3D"mailto:dstickney@logicworks.net">dstickney@logicworks.net</a>&g=
+t;&gt;&gt;&gt; wrote:<br>
+
+<br>
+Hi Chris,<br>
+=A0I have access to the remote device and will be sorting through this toda=
+y. I&#39;ll update you end of day.<br>
+<br>
+Regards,<br>
+Dalton<br>
+Senior Engineer<br>
+Logicworks<br>
+________________________________________<br>
+</div>From: Chris Case [<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a=
+>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&lt;mai=
+lto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=
+=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&gt;&lt;mailto:<a href=3D"=
+mailto:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase=
+@4rnd.com">ccase@4rnd.com</a>&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.co=
+m">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rn=
+d.com</a>&gt;&gt;&gt;]<br>
+
+<div class=3D"im">Sent: Monday, July 25, 2011 12:01 PM<br>
+To: Dalton Stickney<br>
+Subject: Re: Contact Daulton about Peer1 VPN<br>
+<br>
+Dalton,<br>
+<br>
+Hi, can you give me a status update on this? =A0Ideally we&#39;d like to ha=
+ve this done by Wednesday afternoon if possible. =A0Can you give me a rough=
+ ETA as to when you expect the setup to be completed?<br>
+<br>
+Thanks,<br>
+Chris<br>
+<br>
+</div><div class=3D"im">On Thu, Jul 21, 2011 at 5:49 PM, John D. Bickle &lt=
+;<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&l=
+t;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.=
+ca</a>&gt;&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@ce=
+llfishmedia.ca</a>&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jb=
+ickle@cellfishmedia.ca</a>&gt;&gt;&lt;mailto:<a href=3D"mailto:jbickle@cell=
+fishmedia.ca">jbickle@cellfishmedia.ca</a>&lt;mailto:<a href=3D"mailto:jbic=
+kle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&gt;&lt;mailto:<a href=3D=
+"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&lt;mailto:<a=
+ href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&gt;&=
+gt;&gt;&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellf=
+ishmedia.ca</a>&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbick=
+le@cellfishmedia.ca</a>&gt;&lt;mailto:<a href=3D"mailto:jbickle@cellfishmed=
+ia.ca">jbickle@cellfishmedia.ca</a>&lt;mailto:<a href=3D"mailto:jbickle@cel=
+lfishmedia.ca">jbickle@cellfishmedia.ca</a>&gt;&gt;&lt;mailto:<a href=3D"ma=
+ilto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&lt;mailto:<a hr=
+ef=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca</a>&gt;&lt;=
+mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfishmedia.ca=
+</a>&lt;mailto:<a href=3D"mailto:jbickle@cellfishmedia.ca">jbickle@cellfish=
+media.ca</a>&gt;&gt;&gt;&gt;&gt; wrote:<br>
+
+done.<br>
+<br>
+cheers,<br>
+john.<br>
+<br>
+</div><div class=3D"im">On Thu, Jul 21, 2011 at 5:48 PM, Chris Case &lt;<a =
+href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mail=
+to:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&lt;mailto:<a href=3D"mailto:ccase=
+@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">c=
+case@4rnd.com</a>&gt;&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase=
+@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a=
+>&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mai=
+lto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&gt;&gt;&lt;mai=
+lto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=
+=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&lt;mailto:<a href=3D"mail=
+to:ccase@4rnd.com">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rn=
+d.com">ccase@4rnd.com</a>&gt;&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.co=
+m">ccase@4rnd.com</a>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rn=
+d.com</a>&gt;&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a=
+>&lt;mailto:<a href=3D"mailto:ccase@4rnd.com">ccase@4rnd.com</a>&gt;&gt;&gt=
+;&gt;&gt; wrote:<br>
+
+John,<br>
+<br>
+Before you leave today could you contact Daulton at LogicWorks?<br>
+<br>
+Thanks,<br>
+Chris<br>
+<br>
+<br>
+<br>
+--<br>
+John Bickle<br>
+CELLFISH<br>
+468, rue Saint-Jean<br>
+Bureau 200<br>
+Montr=E9al, Qu=E9bec, H2Y 2S1<br>
+</div>T=E9l. : <a href=3D"tel:%2B1.514.288.5858" value=3D"+15142885858">+1.=
+514.288.5858</a>&lt;tel:%2B1.514.288.5858&gt;&lt;tel:%2B1.514.288.5858&gt;&=
+lt;tel:%2B1.514.288.5858&gt;&lt;tel:%2B1.514.288.5858&gt; poste 203<br>
+Fax : <a href=3D"tel:%2B1.514.288.4224" value=3D"+15142884224">+1.514.288.4=
+224</a>&lt;tel:%2B1.514.288.4224&gt;&lt;tel:%2B1.514.288.4224&gt;&lt;tel:%2=
+B1.514.288.4224&gt;&lt;tel:%2B1.514.288.4224&gt;<br>
+<div class=3D"im"><br>
+<br>
+<br>
+<br>
+<br>
+--<br>
+John Bickle<br>
+CELLFISH<br>
+468, rue Saint-Jean<br>
+Bureau 200<br>
+Montr=E9al, Qu=E9bec, H2Y 2S1<br>
+</div>T=E9l. : <a href=3D"tel:%2B1.514.288.5858" value=3D"+15142885858">+1.=
+514.288.5858</a>&lt;tel:%2B1.514.288.5858&gt; poste 203<br>
+<div class=3D"im">Fax : <a href=3D"tel:%2B1.514.288.4224" value=3D"+1514288=
+4224">+1.514.288.4224</a>&lt;tel:%2B1.514.288.4224&gt;<br>
+<br>
+<br>
+<br>
+</div><div><div></div><div class=3D"h5">--<br>
+John Bickle<br>
+CELLFISH<br>
+468, rue Saint-Jean<br>
+Bureau 200<br>
+Montr=E9al, Qu=E9bec, H2Y 2S1<br>
+T=E9l. : <a href=3D"tel:%2B1.514.288.5858" value=3D"+15142885858">+1.514.28=
+8.5858</a> poste 203<br>
+Fax : <a href=3D"tel:%2B1.514.288.4224" value=3D"+15142884224">+1.514.288.4=
+224</a><br>
+</div></div></blockquote></div><br><br clear=3D"all"><div><br></div>-- <br>=
+John Bickle<br>CELLFISH<br>468, rue Saint-Jean<br>Bureau 200<br>Montr=E9al,=
+ Qu=E9bec, H2Y 2S1<br>T=E9l. : +1.514.288.5858 poste 203<br>Fax : +1.514.28=
+8.4224<br>
+
+
+--bcaec51b1659b3337e04aac919d4--
+

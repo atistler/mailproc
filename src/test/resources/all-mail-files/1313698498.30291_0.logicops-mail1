@@ -1,0 +1,144 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKEwVN030289
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:14:58 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKEwQS030288
+	for logicops; Thu, 18 Aug 2011 16:14:58 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKEoD1030251
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:14:50 -0400
+Resent-Date: Thu, 18 Aug 2011 16:14:50 -0400
+Resent-Message-Id: <201108182014.p7IKEoD1030251@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 16:14:49 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKEoUc032581	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 16:14:50 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IKEo9Q032579;	Thu, 18 Aug 2011 16:14:50 -0400
+Date: Thu, 18 Aug 2011 16:14:50 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108182014.p7IKEo9Q032579@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: routers router config diffs
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Index: configs/r04.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.16
+diff -U4 -r1.16 r04.sccnj04.core.logicworks.net
+@@ -348,8 +348,9 @@
+   ip route-cache flow
+  ! ip ospf message-digest-key 100 md5 <removed>
+   ip ospf cost 2000
+   ip ospf database-filter all out
++  shutdown
+   speed 1000
+   duplex full
+  !
+  interface GigabitEthernet4/11
+Index: configs/s03.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.780
+diff -U4 -r1.780 s03.sccnj04.core.logicworks.net
+@@ -36,15 +36,15 @@
+  !Flash: Open device slot0 failed (No such device)
+  !Flash: (Try device DISK: for ATA media.)
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:   382  -rw-      276455                    <no date>  startup-config
++ !Flash: nvram:   382  -rw-      276481                    <no date>  startup-config
+  !Flash: nvram:   383  ----          24                    <no date>  private-config
+- !Flash: nvram:   384  -rw-      276455                    <no date>  underlying-config
++ !Flash: nvram:   384  -rw-      276481                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          47                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 391160 bytes total (111557 bytes free)
++ !Flash: nvram: 391160 bytes total (111531 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rw-     1784984  Jan 16 2003 09:36:30 -07:00  c6msfc2-boot-mz.121-13.E3.bin
+  !Flash: bootflash:     2  -rw-      649603   Jan 6 2006 14:55:37 -07:00  c6msfc2-rm2.srec.122-17r.S5
+@@ -117,9 +117,9 @@
+  !VTP: MD5 digest                      : 0x7C 0x53 0x33 0x86 0x43 0xC0 0xFE 0xF5 
+  !
+  !VLAN: VLAN Name                             Status    Ports
+  !VLAN: ---- -------------------------------- --------- -------------------------------
+- !VLAN: 1    default                          active    Gi3/6, Gi3/8, Gi3/15, Gi3/18, Gi3/22, Gi3/33, Gi3/37, Gi3/46, Gi4/4, Gi4/9, Gi4/25, Gi4/34
++ !VLAN: 1    default                          active    Gi3/6, Gi3/8, Gi3/15, Gi3/18, Gi3/22, Gi3/33, Gi3/37, Gi3/46, Gi4/9, Gi4/25, Gi4/34
+  !VLAN: 2    webmed                           active    
+  !VLAN: 6    shared209-priv                   active    
+  !VLAN: 10   vettro                           active    
+  !VLAN: 14   132-shared-net-priv              active    
+@@ -3332,9 +3332,8 @@
+   ip address 10.64.140.130 255.255.255.128
+   ip access-group innolyst in
+   no ip redirects
+   ip route-cache flow
+-  shutdown
+   standby 3 ip 10.64.140.129
+   standby 3 timers 5 15
+   standby 3 priority 115
+   standby 3 preempt
+@@ -6082,8 +6081,9 @@
+   permit ip any 172.16.70.0 0.0.0.255
+   permit ip any 172.17.0.0 0.0.255.255
+   permit ip any 172.18.0.0 0.0.255.255
+   permit ip any 172.19.0.0 0.0.255.255
++  permit ip 10.251.3.0 0.0.0.255 any
+  ip access-list extended insure
+   permit ip 10.17.16.0 0.0.0.255 host 224.0.0.2
+   permit ip 10.17.16.0 0.0.0.255 172.16.2.0 0.0.0.255
+   permit ip 10.17.16.0 0.0.0.255 host 206.252.135.254
+Index: configs/s04.sccnj04.core.logicworks.net
+===================================================================
+retrieving revision 1.621
+diff -U4 -r1.621 s04.sccnj04.core.logicworks.net
+@@ -36,15 +36,15 @@
+  !Flash: Open device slot0 failed (No such device)
+  !Flash: (Try device DISK: for ATA media.)
+  !
+  !Flash: nvram: Directory of nvram:/
+- !Flash: nvram:   382  -rw-      266267                    <no date>  startup-config
++ !Flash: nvram:   382  -rw-      266303                    <no date>  startup-config
+  !Flash: nvram:   383  ----          24                    <no date>  private-config
+- !Flash: nvram:   384  -rw-      266267                    <no date>  underlying-config
++ !Flash: nvram:   384  -rw-      266303                    <no date>  underlying-config
+  !Flash: nvram:     1  ----           4                    <no date>  rf_cold_starts
+  !Flash: nvram:     2  ----          49                    <no date>  persistent-data
+  !Flash: nvram:     3  -rw-           0                    <no date>  ifIndex-table
+- !Flash: nvram: 391160 bytes total (121745 bytes free)
++ !Flash: nvram: 391160 bytes total (121709 bytes free)
+  !
+  !Flash: bootflash: Directory of bootflash:/
+  !Flash: bootflash:     1  -rw-     1693300  Oct 20 2004 14:45:12 -07:00  c6msfc2-boot-mz.121-8b.EX3
+  !Flash: bootflash: 15204352 bytes total (13510924 bytes free)
+@@ -114,9 +114,9 @@
+  !VTP: MD5 digest                      : 0xFA 0x79 0x50 0x7F 0x66 0x50 0x8C 0xCE 
+  !
+  !VLAN: VLAN Name                             Status    Ports
+  !VLAN: ---- -------------------------------- --------- -------------------------------
+- !VLAN: 1    default                          active    Gi3/6, Gi3/8, Gi3/12, Gi3/15, Gi3/18, Gi3/22, Gi3/33, Gi3/37, Gi3/46, Gi4/4, Gi4/9, Gi4/12, Gi4/25, Gi4/34, Gi4/44
++ !VLAN: 1    default                          active    Gi3/6, Gi3/8, Gi3/12, Gi3/15, Gi3/18, Gi3/22, Gi3/33, Gi3/37, Gi3/46, Gi4/9, Gi4/12, Gi4/25, Gi4/34, Gi4/44
+  !VLAN: 2    webmed                           active    
+  !VLAN: 6    shared209-priv                   active    
+  !VLAN: 8    VLAN0008                         active    
+  !VLAN: 10   vettro                           active    
+@@ -5893,8 +5893,9 @@
+   permit ip any 172.16.70.0 0.0.0.255
+   permit ip any 172.17.0.0 0.0.255.255
+   permit ip any 172.18.0.0 0.0.255.255
+   permit ip any 172.19.0.0 0.0.255.255
++  permit ip 10.251.3.0 0.0.0.255 any
+  ip access-list extended insure
+   permit ip 10.17.16.0 0.0.0.255 host 224.0.0.2
+   permit ip 10.17.16.0 0.0.0.255 172.16.2.0 0.0.0.255
+   permit ip 10.17.16.0 0.0.0.255 host 206.252.135.254
+

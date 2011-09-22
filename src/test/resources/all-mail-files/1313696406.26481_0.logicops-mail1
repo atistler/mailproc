@@ -1,0 +1,47 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJe5YN026479
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:40:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJe5du026478
+	for logicops; Thu, 18 Aug 2011 15:40:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJe4s8026463;
+	Thu, 18 Aug 2011 15:40:04 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu, 18 Aug 2011
+ 15:40:04 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Thu, 18
+ Aug 2011 15:40:04 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:40:04 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: globaldt-web1 Windows 2003 Server is UP at 03:40:03 PM.
+Message-ID: <LW-MON-EQllgYBr4BvR00007a40@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:40:04.0043 (UTC) FILETIME=[A04D11B0:01CC5DDE]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+globaldt-web1 Windows 2003 Server on 209.81.87.165 is responsive again.
+
+Details:
+
+
+
+Notes:
+
+Contact procedure should follow this order of contact and escalation:
+
+1) Phelps, Geoff - work: 617-425-3595, cell: 1 857-991-7602 gPhelps@crai.com 
+                                                
+2) Lee, Kwijoo - work: 617 425 3662, cell: 1 857-204-4414 klee@crai.com
+ 
+3) Yang, Min - work: 617-425-3651, cell:  1 857-204-2780 myang@crai.com
+
+4) Kohli, Naveen K - work: 617-425-6541, cell: 1 603-769-7036  nkohli@crai.com
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 03:40:03 PM by Whatsup Gold in Equinix
+

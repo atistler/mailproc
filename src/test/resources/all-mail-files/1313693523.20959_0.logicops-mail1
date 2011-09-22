@@ -1,0 +1,94 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIq3ik020956
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:52:03 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIq3em020954
+	for logicops; Thu, 18 Aug 2011 14:52:03 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIq2Uu020943
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:52:02 -0400
+Resent-Date: Thu, 18 Aug 2011 14:52:02 -0400
+Resent-Message-Id: <201108181852.p7IIq2Uu020943@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from bravotv-lb1v.sccnj04.client.logicworks.net (209.81.89.30) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 14:52:02 -0400
+Received: from bravotv-lb1v (localhost.localdomain [127.0.0.1])	by
+ bravotv-lb1v.sccnj04.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7IIq1R0021948	for <lw-linux@ext.logicworks.net;>; Thu, 18 Aug 2011 14:52:02
+ -0400
+Message-ID: <201108181852.p7IIq1R0021948@bravotv-lb1v.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@bravotv-lb1v.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 14:52:01 -0400
+Subject: Zeus: 12 events: Node has failed, Monitor has detected a failure, Node is working again, Monitor is working...
+X-ZXTM-Notify: bravotv-lb1v
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from bravotv-lb1v.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Pool 'vip1 - port 80' = Partial Fail: Some nodes have failed
+ + Node '209.81.89.15:80' = OK
+ + Node '209.81.89.4:80' = Failed
+ + Node '209.81.89.5:80' = OK
+ + Node '209.81.89.6:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 14:47:27: WARN  Monitor 'Simple HTTP'
+                    Monitor has detected a failure in node
+                    '209.81.89.5:80': Timeout while waiting for valid
+                    server response
+
+#2 Aug 18 14:47:27: SERIOUS  Node '209.81.89.5:80', Pool 'vip1 - port 80'
+                    Node 209.81.89.5 has failed - A monitor has detected a
+                    failure
+
+#3 Aug 18 14:47:55: WARN  Monitor 'Simple HTTP'
+                    Monitor has detected a failure in node
+                    '209.81.89.15:80': Timeout while waiting for valid
+                    server response
+
+#4 Aug 18 14:47:55: SERIOUS  Node '209.81.89.15:80', Pool 'vip1 - port 80'
+                    Node 209.81.89.15 has failed - A monitor has detected a
+                    failure
+
+#5 Aug 18 14:47:57: INFO  Monitor 'Simple HTTP'
+                    Monitor is working for node '209.81.89.4:80'.
+
+#6 Aug 18 14:47:57: INFO  Node '209.81.89.4:80', Pool 'vip1 - port 80'
+                    Node 209.81.89.4 is working again
+
+#7 Aug 18 14:48:05: INFO  Monitor 'Simple HTTP'
+                    Monitor is working for node '209.81.89.5:80'.
+
+#8 Aug 18 14:48:05: INFO  Node '209.81.89.5:80', Pool 'vip1 - port 80'
+                    Node 209.81.89.5 is working again
+
+#9 Aug 18 14:49:08: INFO  Monitor 'Simple HTTP'
+                    Monitor is working for node '209.81.89.15:80'.
+
+#10 Aug 18 14:49:09: INFO  Node '209.81.89.15:80', Pool 'vip1 - port 80'
+                     Node 209.81.89.15 is working again
+
+#11 Aug 18 14:49:57: WARN  Monitor 'Simple HTTP'
+                     Monitor has detected a failure in node
+                     '209.81.89.4:80': Timeout while waiting for valid
+                     server response
+
+#12 Aug 18 14:49:57: SERIOUS  Node '209.81.89.4:80', Pool 'vip1 - port 80'
+                     Node 209.81.89.4 has failed - A monitor has detected a
+                     failure
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   Default Events -> E-Mail
+
+
+

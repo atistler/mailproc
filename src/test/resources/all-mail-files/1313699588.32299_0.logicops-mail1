@@ -1,0 +1,59 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKX8t4032297
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 16:33:08 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IKX8mv032296
+	for logicops; Thu, 18 Aug 2011 16:33:08 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKWdbL032200
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 16:32:40 -0400
+Resent-Date: Thu, 18 Aug 2011 16:32:40 -0400
+Resent-Message-Id: <201108182032.p7IKWdbL032200@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from rancid.noc.logicworks.net (206.252.134.15) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1; Thu, 18 Aug
+ 2011 16:32:39 -0400
+Received: from rancid.noc.logicworks.net (localhost.localdomain [127.0.0.1])
+	by rancid.noc.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IKWeIR000978	for
+ <lw-devices@ext.logicworks.net>; Thu, 18 Aug 2011 16:32:40 -0400
+Received: (from rancid@localhost)	by rancid.noc.logicworks.net
+ (8.13.1/8.13.1/Submit) id p7IKWejC000977;	Thu, 18 Aug 2011 16:32:40 -0400
+Date: Thu, 18 Aug 2011 16:32:40 -0400
+From: <rancid@rancid.noc.logicworks.net>
+Message-ID: <201108182032.p7IKWejC000977@rancid.noc.logicworks.net>
+To: <lw-devices@ext.logicworks.net>
+Subject: config fetcher problems - switches
+Precedence: bulk
+MIME-Version: 1.0
+Content-Type: text/plain
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+The following routers have not been successfully contacted for
+more than 4 hours.
+-rw-r-----  1 rancid rancid 0 Jan  7  2011 annarbor-sw3.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 0 Jan  7  2011 annarbor-sw4.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 0 Mar 23  2010 lab-sw1.noc.logicworks.net
+-rw-r-----  1 rancid rancid 0 May  2 20:23 converseon-sw3.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 0 May  2 20:23 converseon-sw4.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 10543 Oct 20  2010 snap-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 3664 Jun  1 06:33 docs-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 4371 Aug  9 08:35 gothamist-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 4703 Aug  9 08:35 gothamist-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 5366 Jul  8 16:50 wealth-sw3.snvaca01.complex.logicworks.net
+-rw-r-----  1 rancid rancid 5700 Aug  1 05:30 brkmedia-sw4.client.logicworks.net
+-rw-r-----  1 rancid rancid 5912 Aug  1 05:30 brkmedia-sw3.client.logicworks.net
+-rw-r-----  1 rancid rancid 6040 Jul  8 16:50 wealth-sw4.snvaca01.complex.logicworks.net
+-rw-r-----  1 rancid rancid 6137 Aug 14  2010 mortech-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 6146 Aug 14  2010 mortech-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 6679 Aug  3  2010 noveda-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 7164 Aug  3  2010 noveda-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 7953 Aug 23  2010 building-sw5.snvaca01.client.logicworks.net
+-rw-r-----  1 rancid rancid 8160 Jun  6 05:18 freerpt-sw2.nycmny04.client.logicworks.net
+-rw-r-----  1 rancid rancid 8645 Jun  6 05:18 freerpt-sw1.nycmny04.client.logicworks.net
+-rw-r-----  1 rancid rancid 8709 Jan 20  2011 nextemr-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 8829 Oct 15  2010 auxia-sw1.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 9268 Oct 15  2010 auxia-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 9680 Jan 21  2011 nextemr-sw2.sccnj04.client.logicworks.net
+-rw-r-----  1 rancid rancid 9917 Oct 20  2010 snap-sw1.sccnj04.client.logicworks.net
+

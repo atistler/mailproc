@@ -1,0 +1,43 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1kuUT024310
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 21:46:56 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J1kuYV024309
+	for logicops; Thu, 18 Aug 2011 21:46:56 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J1ktCC024294;
+	Thu, 18 Aug 2011 21:46:55 -0400
+Received: from auDR-storage3.snvaca01.client.logicworks.net (209.73.34.40) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 21:46:54 -0400
+Received: from you (localhost.localdomain [127.0.0.1])	by
+ auDR-storage3.snvaca01.client.logicworks.net (8.13.8/8.13.8) with SMTP id
+ p7J1krYm016480	for lw-monitoring@ext.logicworks.net; Thu, 18 Aug 2011
+ 21:46:53 -0400
+Date: Thu, 18 Aug 2011 21:46:53 -0400
+Message-ID: <201108190146.p7J1krYm016480@auDR-storage3.snvaca01.client.logicworks.net>
+To: <lw-monitoring@ext.logicworks.net>
+From: <lw-monitoring@ext.logicworks.net>
+Subject: FATAL  Event occurred on: audr-storage3
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Controller ID: 0  Battery needs to be replaced, SOH Bad
+Generated on:Thu Aug 18 22:46:53 2011
+
+
+SYSTEM DETAILS---
+IP Address: 209.73.34.40
+OS Name: Linux
+OS Version: 2.6
+Driver Name: megaraid_sas
+Driver Version: 00.00.04.28
+
+
+IMAGE DETAILS---
+BIOS Version: 3.18.00_4.09.05.00_0x0416A000
+Firmware Package Version: 12.9.0-0037
+Firmware Version: 2.90.03-0933
+

@@ -1,0 +1,75 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INj7bH015127
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 19:45:07 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7INj7qD015126
+	for logicops; Thu, 18 Aug 2011 19:45:07 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7INj6T9015122
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 19:45:06 -0400
+Received: from LW-MBX2.us.logicworks.net ([169.254.2.143]) by
+ LW-HUBCAS1V.us.logicworks.net ([2002:cefc:99ae::cefc:99ae]) with mapi id
+ 14.01.0270.001; Thu, 18 Aug 2011 19:45:06 -0400
+From: Xiao Fen Lin <xlin@logicworks.net>
+To: lw-support <lw-support@logicworks.net>,
+        "Askew, Mr. Alan Miller"
+	<askew@nodalexchange.com>,
+        "Jernigan, Jason" <jernigan@nodalexchange.com>
+Subject: RE: reboot and fsck nodal-prdweb01-vm1 (SR 3-965289)
+Thread-Topic: reboot and fsck nodal-prdweb01-vm1 (SR 3-965289)
+Thread-Index: AQHMXfzmrjDliQvmik26wtqDQc7TVpUjRP/Q
+Date: Thu, 18 Aug 2011 23:45:05 +0000
+Message-ID: <90945AF80A6C4E46B6E31B1CD5175BD43D1C396F@lw-mbx2.us.logicworks.net>
+References: <cf91040f3429d72ba0f72e33f18b81a7@logicops.logicworks.net>
+In-Reply-To: <cf91040f3429d72ba0f72e33f18b81a7@logicops.logicworks.net>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.48.23.173]
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by logicops-mail1.logicworks.net id p7INj6T9015122
+
+Greetings,
+
+The server is back online.  Please log in and verify.  
+
+Regards,
+
+Xiao Fen Lin
+Logicworks | NRT Engineer
+phone: 212-625-5444 (option 1)
+support@logicworks.net
+
+
+
+-----Original Message-----
+From: Logicops 
+Sent: Thursday, August 18, 2011 7:17 PM
+To: Askew, Mr. Alan Miller; Jernigan, Jason
+Cc: lw-support
+Subject: reboot and fsck nodal-prdweb01-vm1 (SR 3-965289)
+
+Greetings, 
+
+We will now proceed to reboot and fsck nodal-prdweb01-vm1v.  We will notify you again once it comes back online.  Thank you.
+
+Regards,
+
+Logicworks NOC
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/965289/Page
+
+
+

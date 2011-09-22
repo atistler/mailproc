@@ -1,0 +1,104 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J445ef001510
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:04:05 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J445lw001509
+	for logicops; Fri, 19 Aug 2011 00:04:05 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J444lq001494;
+	Fri, 19 Aug 2011 00:04:04 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:04:03 -0400
+Received: from lw-tempmon1 ([172.16.2.49]) by lw-mon-eq.ad.logicworks.net with
+ Microsoft SMTPSVC(6.0.3790.4675);	 Fri, 19 Aug 2011 00:04:04 -0400
+MIME-Version: 1.0
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Date: Fri, 19 Aug 2011 00:04:04 -0400
+Subject: Performance CPU Utilization Exceeds 90% (21 out of threshold / 22 total) - 
+ Escalation Step 1
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <LW-MON-EQS1wkjEUu1G00007b49@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 04:04:04.0076 (UTC) FILETIME=[08C3EAC0:01CC5E25]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+<style>body.Email {font-family: Verdana, Arial, Helvetica, sans-s=
+erif; font-size: 12px; width: 800px;}table.Email {border: 1px sol=
+id #BABBBC;padding: 0; margin:0; border-collapse:collapse; width:=
+ 800px;}td.Email {border:1px 0 1px 0 solid #BABBBC;padding: 3px; =
+font-size: 12px;}td.Email2 {width: 400px; border:1px 0 1px 0 soli=
+d #BABBBC;padding: 3px; font-size: 12px;}th.Email {width: 225px;b=
+order-bottom:1px solid #BABBBC;padding: 4px;background-color:#F1F=
+1F1;text-align: left;}th.Email2 {width: 575px;border-bottom:1px s=
+olid #BABBBC;padding: 4px;background-color:#F1F1F1;text-align: le=
+ft;}</style><body class=3D"Email"><h3 class=3D"body.Email">'Perfo=
+rmance CPU Utilization Exceeds 90%' threshold</h3><p style=3D"wid=
+th: 800px;border:1px solid #BABBBC;clear: both;background-color:#=
+F1F1F1;padding:3px;vertical-align: middle;"><b>Description: </b>A=
+verage CPU Utilization during the past 30 minutes exceeds 90%</p>=
+<b>New Items (21)</b><br /><br />Occurred at 8/19/2011 12:03:58 A=
+M<br /><br /><table class=3D"Email"><tr><th class=3D"Email"><b>Di=
+splay Name</b></th><th class=3D"Email"><b>Aspect Name</b></th><th=
+ class=3D"Email2"><b>Aspect Value</b></th></tr><tr><td class=3D"E=
+mail">veltimob-db1</td><td class=3D"Email">GenuineIntel: Intel(R)=
+ Xeon(R) CPU           E7520  @ 1.87GHz (1)</td><td class=3D"Emai=
+l2">90.7 %</td></tr><tr><td class=3D"Email">veltimob-db1</td><td =
+class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU           E752=
+0  @ 1.87GHz (2)</td><td class=3D"Email2">90.0 %</td></tr><tr><td=
+ class=3D"Email">veltimob-db1</td><td class=3D"Email">GenuineInte=
+l: Intel(R) Xeon(R) CPU           E7520  @ 1.87GHz (3)</td><td cl=
+ass=3D"Email2">90.7 %</td></tr><tr><td class=3D"Email">veltimob-d=
+b1</td><td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU    =
+       E7520  @ 1.87GHz (4)</td><td class=3D"Email2">90.7 %</td><=
+/tr><tr><td class=3D"Email">veltimob-db1</td><td class=3D"Email">=
+GenuineIntel: Intel(R) Xeon(R) CPU           E7520  @ 1.87GHz (5)=
+</td><td class=3D"Email2">90.7 %</td></tr><tr><td class=3D"Email"=
+>veltimob-db1</td><td class=3D"Email">GenuineIntel: Intel(R) Xeon=
+(R) CPU           E7520  @ 1.87GHz (7)</td><td class=3D"Email2">9=
+1.3 %</td></tr><tr><td class=3D"Email">veltimob-db1</td><td class=
+=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU           E7520  @ =
+1.87GHz (8)</td><td class=3D"Email2">91.3 %</td></tr><tr><td clas=
+s=3D"Email">veltimob-db1</td><td class=3D"Email">GenuineIntel: In=
+tel(R) Xeon(R) CPU           E7520  @ 1.87GHz (9)</td><td class=3D=
+"Email2">90.7 %</td></tr><tr><td class=3D"Email">veltimob-db1</td=
+><td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU          =
+ E7520  @ 1.87GHz (10)</td><td class=3D"Email2">90.3 %</td></tr><=
+tr><td class=3D"Email">veltimob-db1</td><td class=3D"Email">Genui=
+neIntel: Intel(R) Xeon(R) CPU           E7520  @ 1.87GHz (11)</td=
+><td class=3D"Email2">92.0 %</td></tr><tr><td class=3D"Email">vel=
+timob-db1</td><td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) =
+CPU           E7520  @ 1.87GHz (12)</td><td class=3D"Email2">91.0=
+ %</td></tr><tr><td class=3D"Email">veltimob-db1</td><td class=3D=
+"Email">GenuineIntel: Intel(R) Xeon(R) CPU           E7520  @ 1.8=
+7GHz (13)</td><td class=3D"Email2">90.0 %</td></tr><tr><td class=3D=
+"Email">veltimob-db1</td><td class=3D"Email">GenuineIntel: Intel(=
+R) Xeon(R) CPU           E7520  @ 1.87GHz (15)</td><td class=3D"E=
+mail2">91.0 %</td></tr><tr><td class=3D"Email">veltimob-db1</td><=
+td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU           E=
+7520  @ 1.87GHz (16)</td><td class=3D"Email2">91.3 %</td></tr><tr=
+><td class=3D"Email">veltimob-db1</td><td class=3D"Email">Genuine=
+Intel: Intel(R) Xeon(R) CPU           E7520  @ 1.87GHz (17)</td><=
+td class=3D"Email2">90.7 %</td></tr><tr><td class=3D"Email">velti=
+mob-db1</td><td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CP=
+U           E7520  @ 1.87GHz (18)</td><td class=3D"Email2">90.3 %=
+</td></tr><tr><td class=3D"Email">veltimob-db1</td><td class=3D"E=
+mail">GenuineIntel: Intel(R) Xeon(R) CPU           E7520  @ 1.87G=
+Hz (20)</td><td class=3D"Email2">90.3 %</td></tr><tr><td class=3D=
+"Email">veltimob-db1</td><td class=3D"Email">GenuineIntel: Intel(=
+R) Xeon(R) CPU           E7520  @ 1.87GHz (23)</td><td class=3D"E=
+mail2">92.7 %</td></tr><tr><td class=3D"Email">veltimob-db1</td><=
+td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CPU           E=
+7520  @ 1.87GHz (24)</td><td class=3D"Email2">92.0 %</td></tr><tr=
+><td class=3D"Email">veltimob-db1</td><td class=3D"Email">Genuine=
+Intel: Intel(R) Xeon(R) CPU           E7520  @ 1.87GHz (27)</td><=
+td class=3D"Email2">93.0 %</td></tr><tr><td class=3D"Email">velti=
+mob-db1</td><td class=3D"Email">GenuineIntel: Intel(R) Xeon(R) CP=
+U           E7520  @ 1.87GHz (28)</td><td class=3D"Email2">90.7 %=
+</td></tr></table><br /><br /><a href=3D"http://169.254.133.182:4=
+43/NmConsole/AlertCenter/AlertCenter.asp?bLoadPageFromEmail=3D1" =
+style=3D"font-size: 16px; color: blue; text-decoration: underline=
+">Open Alert Center &gt;</a></br></body>
+

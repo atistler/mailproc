@@ -1,0 +1,45 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J41oTH001314
+	for <logicops@logicops-mail1.logicworks.net>; Fri, 19 Aug 2011 00:01:50 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J41o89001313
+	for logicops; Fri, 19 Aug 2011 00:01:50 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J41nML001298;
+	Fri, 19 Aug 2011 00:01:49 -0400
+Received: from lw-mon-eq.ad.logicworks.net (206.252.128.51) by LW-HUBCAS1V
+ (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Fri, 19 Aug 2011
+ 00:01:48 -0400
+Received: from lw-mon-eq.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-eq.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);	 Fri, 19
+ Aug 2011 00:01:48 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Fri, 19 Aug 2011 00:01:48 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: afscmeent-smy7v RHEL 5 Virtual - Ping - Private,Linux System Load - 5 minute average - 9+,Ping - Public,SSH is DOWN at 11:57:30 PM.
+Message-ID: <LW-MON-EQ64cbI5YlrA00007b47@lw-mon-eq.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 04:01:48.0838 (UTC) FILETIME=[B8283C60:01CC5E24]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+afscmeent-smy7v (209.81.86.221) RHEL 5 Virtual: 
+
+Ping - Private,Linux System Load - 5 minute average - 9+,Ping - Public,SSH on 10.64.82.221 has been unresponsive for at least 6 minutes.
+
+Details:
+
+
+Contact:
+
+
+Logicops:
+The '%Device.Attribute.Logicops' attribute does not exist.
+
+Notes:
+Added from Discovery on Thu Nov 12 12:11:49 2009
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:57:30 PM by Whatsup Gold in Equinix
+

@@ -1,0 +1,32 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFUciu006581
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 11:30:38 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IFUcBx006580
+	for logicops; Thu, 18 Aug 2011 11:30:38 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IFUbkg006565;
+	Thu, 18 Aug 2011 11:30:37 -0400
+Received: from lw-augur1.nycmny04.client.logicworks.net (206.252.128.42) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server (TLS) id 14.1.270.1;
+ Thu, 18 Aug 2011 11:30:36 -0400
+Received: from lw-augur1 (localhost.localdomain [127.0.0.1])	by
+ lw-augur1.nycmny04.client.logicworks.net (8.13.8/8.13.8) with ESMTP id
+ p7IFUaiB030347	for <lw-alert-server@ext.logicworks.net>; Thu, 18 Aug 2011
+ 11:30:36 -0400
+Message-ID: <922312381.237441313681436541.JavaMail.root@lw-augur1>
+Date: Thu, 18 Aug 2011 11:30:36 -0400
+From: <lw-alert-server@ext.logicworks.net>
+To: <lw-alert-server@ext.logicworks.net>
+Subject: syslog: globalgrind-esx3: vmotion 0:19:46:26.265
+ cpu8:173082)WARNING: Migrate: 4328: 1313680632188625 D: Migration
+ considered a failure by the VMX. It is most likely a timeout, but check the
+ VMX log for the true error. @ 11:30:26 AM EDT
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+syslog: globalgrind-esx3: vmotion 0:19:46:26.265 cpu8:173082)WARNING: Migrate: 4328: 1313680632188625 D: Migration considered a failure by the VMX. It is most likely a timeout, but check the VMX log for the true error. @ 11:30:26 AM EDT
+

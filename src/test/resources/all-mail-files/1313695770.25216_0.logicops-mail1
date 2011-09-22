@@ -1,0 +1,40 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTUvn025214
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 15:29:30 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IJTUks025213
+	for logicops; Thu, 18 Aug 2011 15:29:30 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IJTT87025198;
+	Thu, 18 Aug 2011 15:29:29 -0400
+Received: from lw-mon-wug-cent.ad.logicworks.net (206.252.128.57) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu,
+ 18 Aug 2011 15:29:28 -0400
+Received: from lw-mon-wug-cent.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-wug-cent.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);
+	 Thu, 18 Aug 2011 15:29:29 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 15:29:29 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: converseon-sphx3 RHEL 5 has monitors DOWN at 03:29:29 PM.
+Message-ID: <LW-MON-WUG-CENTVsA6000008d4@lw-mon-wug-cent.ad.logicworks.net>
+X-OriginalArrivalTime: 18 Aug 2011 19:29:29.0071 (UTC) FILETIME=[25D407F0:01CC5DDD]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+RHEL 5: converseon-sphx3 (10.17.20.12) has has monitors unresponsive for at least 5 minutes.
+
+Details:
+Monitors that are down include: Linux System Load - 5 minute average - 9+
+
+Linux System Load - 5 minute average - 9+=[9.38]
+
+Notes/Response Procedure:
+Added from Discovery on Sun Feb 27 07:25:43 2011
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 03:29:29 PM
+Ipswitch WhatsUp Gold on lw-mon-wu-central
+

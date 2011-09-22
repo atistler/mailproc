@@ -1,0 +1,209 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIcpSH019968
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 14:38:51 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IIcpOj019966
+	for logicops; Thu, 18 Aug 2011 14:38:51 -0400
+Received: from LW-HUBCAS2V.us.logicworks.net (mail2.logicworks.net [209.81.86.13])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IIcodp019962
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 14:38:50 -0400
+Received: from logicops.logicworks.net (206.252.153.173) by
+ relay.ext.logicworks.net (209.81.86.16) with Microsoft SMTP Server id
+ 14.1.270.1; Thu, 18 Aug 2011 14:38:50 -0400
+Date: Thu, 18 Aug 2011 14:38:50 -0400
+To: "Deakins, Jim" <jimdeakins@annarbor.com>,
+        "Edwards, Rolando Angel"
+	<redwards@logicworks.net>,
+        "Hodges, Hassan" <hassanhodges@annarbor.com>
+From: Logicworks NOC <logicops@logicworks.net>
+CC: Logicworks Support <lw-support@logicworks.net>
+Reply-To: Logicworks NOC <support@logicworks.net>
+Subject: annarbor-db2 - mysql errors (SR 3-967562)
+Message-ID: <2eaec24fd427e4fc2b22143b36ea124e@logicops.logicworks.net>
+X-Priority: 3
+X-Mailer: PHPMailer 5.0.2 (phpmailer.codeworxtech.com)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+This is not really the case because mysqld on both machines have not been down in a while.
+
+annarbor-db1:3306 (DB (none)) :: \s
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.47, for unknown-linux-gnu (x86_64) using readline 5.1
+
+Connection id:          10435
+Current database:
+Current user:           lwdba@127.0.0.1
+SSL:                    Not in use
+Current pager:          stdout
+Using outfile:          ''
+Using delimiter:        ;
+Server version:         5.1.47-community-log MySQL Community Server (GPL)
+Protocol version:       10
+Connection:             127.0.0.1 via TCP/IP
+Server characterset:    latin1
+Db     characterset:    latin1
+Client characterset:    latin1
+Conn.  characterset:    latin1
+TCP port:               3306
+Uptime:                 3 days 23 hours 47 min 32 sec
+
+Threads: 3  Questions: 2467062  Slow queries: 63  Opens: 425  Flush tables: 1  Open tables: 415  Queries per second avg: 7.153
+--------------
+
+annarbor-db2:3306 (DB (none)) :: \s
+--------------
+/usr/bin/mysql  Ver 14.14 Distrib 5.1.47, for unknown-linux-gnu (x86_64) using readline 5.1
+
+Connection id:          2275814
+Current database:
+Current user:           lwdba@127.0.0.1
+SSL:                    Not in use
+Current pager:          stdout
+Using outfile:          ''
+Using delimiter:        ;
+Server version:         5.1.47-community-log MySQL Community Server (GPL)
+Protocol version:       10
+Connection:             127.0.0.1 via TCP/IP
+Server characterset:    latin1
+Db     characterset:    latin1
+Client characterset:    latin1
+Conn.  characterset:    latin1
+TCP port:               3306
+Uptime:                 15 days 21 hours 18 min 29 sec
+
+Threads: 5  Questions: 246229210  Slow queries: 2441  Opens: 5496  Flush tables: 12  Open tables: 655  Queries per second avg: 179.374
+--------------
+
+annarbor-db1 has not been down in almost 4 days
+annarbor-db2 has not been down in almost 16 days
+
+The only way mysql could generate such messages if there were attempts to start mysql while mysql was already up and running. If mysql had crashed, mysqld_safe would have recovered itself, killed mysqld process and started it back up. This has not occurred.
+
+Further example: I ran
+
+ps -ef | grep mysql | grep -v grep
+
+on annarbor-db2 and I got this
+
+[root@db2.annarbor.com ~]# ps -ef | grep mysql | grep -v grep
+root      5121     1  0 Aug02 ?        00:00:00 /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --pid-file=/var/lib/mysql/db2.pid
+mysql     5375  5121  6 Aug02 ?        1-02:33:43 /usr/sbin/mysqld --basedir=/ --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --open-files-limit=32768 --pid-file=/var/lib/mysql/db2.pid --socket=/var/lib/mysql/mysql.sock
+
+Notice that mysqld_safe and mysqld have identical start dates. If mysqld crashed at the designated timestamp from the error log (110817 21:45:53), the date of mysqld would say Aug17 not Aug02
+
+-----Original Message-----
+From: Deakins, Jim [mailto:JimDeakins@annarbor.com] 
+Sent: Thursday, August 18, 2011 11:46 AM
+To: Nicholas Ennis; Polikowski, J; jonpolikowski@gmail.com; Hodges, Hassan; Hodges(gmail), Hassan
+Cc: lw-support; Rolando Edwards
+Subject: RE: SR 3-967562 annarbor-db2 - mysql errors
+
+this can happen if there is a bad innodb var in my.cnf
+
+-Jim Deakins
+AnnArbor.com Project Manager & Lead Web Developer
+
+
+
+-----Original Message-----
+From: Nicholas Ennis [mailto:nennis@logicworks.net]
+Sent: Wed 8/17/2011 10:10 PM
+To: Polikowski, J; jonpolikowski@gmail.com; Hodges, Hassan; Hodges(gmail), Hassan; Deakins, Jim
+Cc: lw-support; Rolando Edwards
+Subject: SR 3-967562 annarbor-db2 - mysql errors
+ 
+Greetings,
+
+ 
+
+We receiving alerts every hour saying mysql service was shut down. We checked and mysql has been up for 15 days. I had Rolando look into it and we found nothing. Can you confirm you aren't running puppetd  outside of the DB's, that may be causing this issue. Please see the error below:
+
+ 
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' init function returned error.
+
+110817 21:45:53 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+
+110817 21:45:53 [ERROR] Unknown/unsupported table type: innodb
+
+110817 21:45:53 [ERROR] Aborting
+
+110817 21:45:53 [Note] /usr/sbin/mysqld: Shutdown complete
+
+
+Closing...
+
+-------------------------------------------------------------------------------------------------------------
+
+Modifications:
+-------------------------------------------------------------------------------------------------------------
+
+Changes made to: SR 3-967562
+    Updated status: Open -> Closed
+
+Basic Info:     SR 3-967562
+-------------------------------------------------------------------------------------------------------------
+
+Abstract: annarbor-db2 - mysql errors
+- Status: Open
++ Status: Closed
+Date Due: 2011-08-18 04:00
+Assigned To: Edwards, Rolando Angel (2011-08-18 10:57:48)
+Created By: Ennis, Nicholas (2011-08-17 20:37:30)
+Area: System Administration - Database
+Accounts: AnnArbor.com
+Contacts: 
+Services: annarbor-db2
+
+Notes
+-------------------------------------------------------------------------------------------------------------
+Note added by Ennis, Nicholas on 2011-08-17 20:37:30
+
+    InnoDB: using the same InnoDB data or log files.
+    110817 19:46:02  InnoDB: Unable to open the first data file
+    InnoDB: Error in opening ./ibdata1
+    110817 19:46:02  InnoDB: Operating system error number 11 in a file operation.
+    InnoDB: Error number 11 means 'Resource temporarily unavailable'.
+    InnoDB: Some operating system error numbers are described at
+    InnoDB: http://dev.mysql.com/doc/refman/5.1/en/operating-system-error-codes.html
+    InnoDB: Could not open or create data files.
+    InnoDB: If you tried to add new data files, and it failed here,
+    InnoDB: you should now edit innodb_data_file_path in my.cnf back
+    InnoDB: to what it was, and remove the new ibdata files InnoDB created
+    InnoDB: in this failed attempt. InnoDB only wrote those files full of
+    InnoDB: zeros, but did not yet use them in any way. But be careful: do not
+    InnoDB: remove old data files which contain your precious data!
+    110817 19:46:02 [ERROR] Plugin 'InnoDB' init function returned error.
+    110817 19:46:02 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+    110817 19:46:02 [ERROR] Unknown/unsupported table type: innodb
+    110817 19:46:02 [ERROR] Aborting
+    
+    110817 19:46:02 [Note] /usr/sbin/mysqld: Shutdown complete
+
+
+Activities
+-------------------------------------------------------------------------------------------------------------
+Activity 3-967703
+
+    Abstract: Email to client via support
+    Date Due: 2011-08-18 17:00:00
+    Status: Done
+    Assigned To: Lin, Xiao Fen  (2011-08-18 10:56:17)
+    Created By: Lin, Xiao Fen  (2011-08-18 10:56:17)
+    Area: Account Administration
+
+    
+
+    
+
+
+
+
+At Logicworks, our customers' feedback is important to us. We want to hear from you regarding your experiences with the services that we offer.
+To leave feedback regarding this Service Request please visit: https://logicops.logicworks.net/AddCustomerFeedback/967562/Page
+
+

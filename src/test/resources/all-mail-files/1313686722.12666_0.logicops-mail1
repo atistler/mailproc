@@ -1,0 +1,64 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGwgN0012663
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 12:58:42 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7IGwgQw012662
+	for logicops; Thu, 18 Aug 2011 12:58:42 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7IGwfRq012651
+	for <support@logicops-mail.logicworks.net>; Thu, 18 Aug 2011 12:58:41 -0400
+Resent-Date: Thu, 18 Aug 2011 12:58:41 -0400
+Resent-Message-Id: <201108181658.p7IGwfRq012651@logicops-mail1.logicworks.net>
+Resent-From: <lw-nrt@logicworks.net>
+Received: from hmx-lb1.sccnj04.client.logicworks.net (209.81.89.250) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu,
+ 18 Aug 2011 12:58:41 -0400
+Received: from hmx-lb1.client.logicworks.net (localhost.localdomain
+ [127.0.0.1])	by hmx-lb1.sccnj04.client.logicworks.net (8.13.8/8.13.8) with
+ SMTP id p7IHHBEm023905	for <lw-linux@ext.logicworks.net>; Thu, 18 Aug 2011
+ 13:17:11 -0400
+Message-ID: <201108181717.p7IHHBEm023905@hmx-lb1.sccnj04.client.logicworks.net>
+To: <lw-linux@ext.logicworks.net>
+From: <zxtm@hmx-lb1.sccnj04.client.logicworks.net>
+Date: Thu, 18 Aug 2011 13:17:11 -0400
+Subject: Zeus: 4 events: Virtual server reconfigured on port 9003, Configuration file modified, Virtual server reconfigured on port 443...
+X-ZXTM-Notify: hmx-lb1.client.logicworks.net
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Zeus Load Balancer Alert messages from hmx-lb1.client.logicworks.net.
+
+Current status of referenced Virtual Servers, Pools & Nodes:
+----------------------------------------------------------------------------
+Virtual Server 'vip01 Inside Dexter' = OK
+ + Pool 'vip01 port 9003 Priv Dexter' = OK
+    + Node '10.64.120.199:9003' = OK
+    + Node '10.64.120.231:9003' = OK
+Virtual Server 'vip03 port 443 Public MetaStore' = OK
+ + Pool 'vip03 port 443 Public MetaStore' = OK
+    + Node '10.64.120.234:80' = OK
+    + Node '10.64.120.235:80' = OK
+----------------------------------------------------------------------------
+
+All alert messages (oldest first):
+----------------------------------------------------------------------------
+#1 Aug 18 13:16:45: INFO  Virtual Server 'vip03 port 443 Public MetaStore'
+                    Configuration file modified
+
+#2 Aug 18 13:16:45: INFO  Virtual Server 'vip03 port 443 Public MetaStore'
+                    Virtual server reconfigured on port 443
+
+#3 Aug 18 13:17:09: INFO  Virtual Server 'vip01 Inside Dexter'
+                    Configuration file modified
+
+#4 Aug 18 13:17:10: INFO  Virtual Server 'vip01 Inside Dexter'
+                    Virtual server reconfigured on port 9003
+----------------------------------------------------------------------------
+
+This message was sent by the following Alert mapping:
+   All Events -> E-Mail
+
+
+

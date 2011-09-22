@@ -1,0 +1,71 @@
+Return-Path: <support@logicops-mail1.logicworks.net>
+Received: from logicops-mail1.logicworks.net (localhost.localdomain [127.0.0.1])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3fNKJ032072
+	for <logicops@logicops-mail1.logicworks.net>; Thu, 18 Aug 2011 23:41:23 -0400
+Received: (from support@localhost)
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1/Submit) id p7J3fNkj032071
+	for logicops; Thu, 18 Aug 2011 23:41:23 -0400
+Received: from LW-HUBCAS1V.us.logicworks.net (mail1.logicworks.net [206.252.153.174])
+	by logicops-mail1.logicworks.net (8.13.1/8.13.1) with ESMTP id p7J3fM4G032056;
+	Thu, 18 Aug 2011 23:41:22 -0400
+Received: from lw-mon-wug-cent.ad.logicworks.net (206.252.128.57) by
+ LW-HUBCAS1V (206.252.153.175) with Microsoft SMTP Server id 14.1.270.1; Thu,
+ 18 Aug 2011 23:41:21 -0400
+Received: from lw-mon-wug-cent.ad.logicworks.net ([127.0.0.1]) by
+ lw-mon-wug-cent.ad.logicworks.net with Microsoft SMTPSVC(6.0.3790.4675);
+	 Thu, 18 Aug 2011 23:41:21 -0400
+From: <lw-alert-server@ext.logicworks.net>
+Date: Thu, 18 Aug 2011 23:41:21 -0400
+To: <lw-alert-server@ext.logicworks.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Subject: mon-db2.ad.logicworks.net Windows 2003 Server has monitors DOWN at 11:41:21 PM.
+Message-ID: <LW-MON-WUG-CENT0aIm000008da@lw-mon-wug-cent.ad.logicworks.net>
+X-OriginalArrivalTime: 19 Aug 2011 03:41:21.0851 (UTC) FILETIME=[DCD0E0B0:01CC5E21]
+X-Auto-Response-Suppress: DR, RN, NRN, OOF, AutoReply
+
+Windows 2003 Server: mon-db2.ad.logicworks.net (172.16.2.56) has has monitors unresponsive for at least 5 minutes.
+
+Details:
+Monitors that are down include: MSSQL Server Monitor - lw-mon Database
+
+MonSql:Up=[ MonSql:CPU_MAX(OK) MonSql:MEMORY_MIN(OK) MonSql:DISK_READ_MAX(OK) MonSql:DISK_WRITE_MAX(OK) MonSql:DISK_FREE_SPACE_MIN(OK) MonSql:BUFFERS_WRITE_MAX(OK) MonSql:LOCKS_NUMWAIT_MAX(OK) MonSql:LOCKS_AVGWAIT_MAX(OK) MonSql:MSSQLSERVER(Running) MonSql:SQLServerAgent(Running)]
+MonSql:Down=[ MonSql:BUFFERS_READ_MAX(1152.35, limit [0.00,1000.00])]
+MonSql:UpSinceLast=[ MonSql:LOCKS_AVGWAIT_MAX(OK)]
+MonSql:DownSinceLast=[]
+MonSql:CPU_MAX=[OK]
+MonSql:MEMORY_MIN=[OK]
+MonSql:DISK_READ_MAX=[OK]
+MonSql:DISK_WRITE_MAX=[OK]
+MonSql:DISK_FREE_SPACE_MIN=[OK]
+MonSql:SYSTEM_MAX=[Not checked]
+MonSql:BUFFERS_READ_MAX=[1152.35, limit [0.00,1000.00]]
+MonSql:BUFFERS_WRITE_MAX=[OK]
+MonSql:CACHE_HITRATIO_MIN=[Not checked]
+MonSql:CACHE_USECOUNT_MIN=[Not checked]
+MonSql:LOCKS_NUMWAIT_MAX=[OK]
+MonSql:LOCKS_AVGWAIT_MAX=[OK]
+MonSql:TRANSACTIONS_ACTIVE_MAX=[Not checked]
+MonSql:TRANSACTIONS_PERSEC_MAX=[Not checked]
+MonSql:USERS_LOGINPERSEC_MAX=[Not checked]
+MonSql:USERS_CONNECTIONS_MAX=[Not checked]
+MonSql:MSSQLSERVER=[Running]
+MonSql:SQLServerAgent=[Running]
+MonSql:MSDTC=[Not checked]
+MonSql:MSSearch=[Not checked]
+MonSql:Alerts=[Not checked]
+MonSql:OLAP_ENABLED=[Not checked]
+MonSql:REPORTS_ENABLED=[Not checked]
+MonSql:INTEGRATION_ENABLED=[Not checked]
+MonSql:FULLTEXTSEARCH_ENABLED=[Not checked]
+MonSql:BROWSER_ENABLED=[Not checked]
+MonSql:ADHELPER_ENABLED=[Not checked]
+MonSql:SQLWRITER_ENABLED=[Not checked]
+
+Notes/Response Procedure:
+
+
+----------------------------------------
+This mail was sent on August 18, 2011 at 11:41:21 PM
+Ipswitch WhatsUp Gold on lw-mon-wu-central
+
