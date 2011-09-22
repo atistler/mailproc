@@ -67,7 +67,7 @@ trait allmail extends Scope {
     }
     if ( parts.contains("text/html") && !parts.contains("text/plain")) {
        val cleaned = EmailParser.getPlainTextContent(parts)
-       println("\n\n" + cleaned)
+       // println("\n\n" + cleaned)
     }
   }
   //println("Total: " + total_collected)

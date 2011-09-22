@@ -2,10 +2,10 @@ package mailproc {
 
 import akka.actor.Actor
 import akka.event.EventHandler
-import java.io.File
 import logicops.db._
+import java.io.{FileInputStream, File}
 
-class DirectoryWatcher(val directory: String) extends Actor {
+class DirectoryWatcher(var directory: String) extends Actor {
   EventHandler.info(this, "DirectoryWatcher constructor initialized")
 
   override def preStart() {
