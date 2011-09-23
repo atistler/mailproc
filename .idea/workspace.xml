@@ -4,12 +4,6 @@
     <list default="true" id="cc636249-7e4c-4c18-8502-5cfa9c3dbdd0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mailproc.properties" afterPath="$PROJECT_DIR$/src/main/resources/mailproc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/DirectoryWatcher.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/DirectoryWatcher.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/EmailParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/EmailParser.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/FileHandler.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/FileHandler.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/MailProc.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/MailProc.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/TicketHandler.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/TicketHandler.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/mailproc/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/mailproc/package.scala" />
     </list>
     <ignored path="mailproc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mailproc.properties" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mailproc.properties" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mailproc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="49" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+            <state line="4" column="14" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16901408">
               <folding />
             </state>
           </provider>
@@ -130,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailParser.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EmailParser.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/mailproc/EmailParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="97" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5221519">
+            <state line="11" column="97" selection-start="429" selection-end="429" vertical-scroll-proportion="-6.3461537">
               <folding />
             </state>
           </provider>
@@ -202,9 +196,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/mailproc/DirectoryWatcher.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/mailproc/FileHandler.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/mailproc/TicketHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/mailproc.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/mailproc/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/mailproc/EmailParser.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/mailproc.properties" />
       </list>
     </option>
   </component>
@@ -643,14 +637,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="720" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -793,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mailproc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="49" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/mailproc/FileHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0">
@@ -816,7 +803,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/mailproc/EmailParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="97" selection-start="429" selection-end="429" vertical-scroll-proportion="0.5221519">
+        <state line="11" column="97" selection-start="429" selection-end="429" vertical-scroll-proportion="-6.3461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mailproc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16901408">
           <folding />
         </state>
       </provider>
