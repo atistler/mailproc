@@ -1,7 +1,6 @@
 package mailproc {
 
 import akka.config.Supervision._
-import akka.actor.Actor._
 import akka.actor._
 import akka.event.EventHandler
 import java.util.concurrent.TimeUnit
@@ -9,7 +8,7 @@ import java.util.concurrent.TimeUnit
 
 object MailProc extends App {
 
-  private val supervisor = Supervisor(
+  private[mailproc] val supervisor = Supervisor(
     SupervisorConfig(
       OneForOneStrategy(List(classOf[Exception]), 3, 5000),
       List(
@@ -41,8 +40,5 @@ object MailProc extends App {
   sun.misc.Signal.handle(new Signal("TERM"), new ShutdownHandler)
   sun.misc.Signal.handle(new Signal("INT"), new ShutdownHandler)
   */
-
-
 }
-
 }

@@ -87,7 +87,6 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
   }
 
 
-
   def receive = {
     case EmailFile(file) => {
       val lines = Source.fromFile(file).mkString
@@ -97,12 +96,10 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
       val to = message.getRecipients(Message.RecipientType.TO)
 
       val content = EmailParser.getPlainTextContent(EmailParser.findMimeTypes(message, "text/plain", "text/html"))
-      if (to != null) {
-        to.find(
-          a => {
-            supportAddresses.contains(prettyAddress(a))
-          }
-        ) match {
+      if (to == null) {
+        fileHandler ! FileIgnored(file)
+      } else {
+        to.find(a => supportAddresses.contains(prettyAddress(a))) match {
           /* To: lw-support or support */
           case Some(a) => {
             val subject = message.getSubject
@@ -163,8 +160,12 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
                     subject, prettyAddress(from), prettyAddress(to)
                   )
                 )
+                fileHandler ! FileIgnored(file)
               }
-              case _ => EventHandler.error(this, "Unknown message sent to EmailParser actor")
+              case _ => {
+                EventHandler.error(this, "Unknown message sent to EmailParser actor")
+                fileHandler ! FileIgnored(file)
+              }
             }
 
           }

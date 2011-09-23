@@ -17,7 +17,7 @@ class MailParsingTest extends Specification {
       parts.head._2.getContent.toString.length must be_>(50)
     }
   }
-  "Parsing all mail in all-mail-files/" should {
+  "Parsing all mail in test-mail-files/" should {
     "Total collected must be 1000" in new allmail {
       total_collected must_== 1000
     }
@@ -31,12 +31,12 @@ class MailParsingTest extends Specification {
 }
 
 trait mail extends Scope {
-  private val input = getClass.getResourceAsStream("mail-files/multipart-email.sample")
+  private val input = getClass.getResourceAsStream("test-mail-files/multipart-email.sample")
   val msg = new MimeMessage(EmailParser.session, input)
 }
 
 trait allmail extends Scope {
-  private val url = getClass.getResource("all-mail-files/")
+  private val url = getClass.getResource("cur/")
   var count_html = 0
   var count_plain = 0
   var count_total = 0

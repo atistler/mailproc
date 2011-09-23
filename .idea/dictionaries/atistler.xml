@@ -21,10 +21,13 @@
       <w>maildir</w>
       <w>mailproc</w>
       <w>memoize</w>
+      <w>moveto</w>
       <w>nodeid</w>
       <w>ntype</w>
       <w>openended</w>
       <w>proc</w>
+      <w>replyto</w>
+      <w>smtp</w>
       <w>srqs</w>
       <w>testhaving</w>
       <w>tocollect</w>
