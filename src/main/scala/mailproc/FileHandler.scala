@@ -2,7 +2,7 @@ package mailproc
 
 import akka.actor.Actor
 import akka.event.EventHandler
-import java.io.{PrintWriter, File}
+import java.io.File
 
 
 class FileHandler(directory : String) extends Actor {
@@ -30,10 +30,7 @@ class FileHandler(directory : String) extends Actor {
 
   EventHandler.info(this, "FileHandler constructor initialized")
 
-  def printToFile(f: File)(op: PrintWriter => Unit) {
-    val p = new PrintWriter(f)
-    try { op(p) } finally { p.close() }
-  }
+
 
   def receive = {
     case FileSuccess(file : File) => {
@@ -43,7 +40,7 @@ class FileHandler(directory : String) extends Actor {
     }
     case FileIgnored(file : File) => {
       val moveto = "%s/%s".format(ignoredDir, file.getName)
-      EventHandler.debug(this, "Ignored email file: %s, moving to: %s".format(file.getName, moveto))
+      // EventHandler.debug(this, "Ignored email file: %s, moving to: %s".format(file.getName, moveto))
       file.renameTo(new File(moveto))
     }
     case FileFailed(file : File, e : Exception) => {

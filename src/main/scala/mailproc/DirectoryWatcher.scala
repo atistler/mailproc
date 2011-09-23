@@ -25,17 +25,19 @@ class DirectoryWatcher(var directory: String) extends Actor {
     case StartWatch() => {
       EventHandler.info(this, "Starting watching directory for new email: %s".format(cur_directory))
       while (true) {
-        for (file <- new File(cur_directory).listFiles().take(2000)) {
+        for (file <- new File(cur_directory).listFiles().take(500)) {
           // EventHandler.debug(this, "Parsing file: %s".format(file))
           if ( emailParser.isRunning ) {
             emailParser ! EmailFile(file)
           }
         }
         // EventHandler.debug(this, "Sleeping for 2 sec")
+        /*
         MailProc.supervisor.shutdown()
         EventHandler.debug(this, "Done shutting down all actors")
         sys.exit()
-        Thread.sleep(2000)
+        */
+        Thread.sleep(20000)
       }
     }
     case _ => EventHandler.error(this, "Unknown message sent to DirectoryWatcher actor")

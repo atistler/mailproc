@@ -8,7 +8,7 @@ import javax.mail._
 import internet.{MimeMessage, InternetAddress}
 import java.sql.Savepoint
 import java.lang.IllegalStateException
-import java.io.File
+import java.io.{ByteArrayOutputStream, FileOutputStream, File}
 
 class TicketHandler extends Actor {
 
@@ -56,7 +56,7 @@ class TicketHandler extends Actor {
       .setAttr("Email Path", "%d/email_%d.txt".format(emailNode.id.get % 100, emailNode.id.get))
   }
 
-  private def sendConfirmEmail(user : Node, serviceRequest : Node) {
+  private def sendConfirmEmail(user : Node, serviceRequest : Node, subject : String) {
     def getAddresses(addrs : Option[String]*) = {
       addrs.foldLeft(List.empty[Address]) {
         (l, a) => InternetAddress.parse(a.getOrElse("")).toList ::: l
@@ -69,12 +69,11 @@ class TicketHandler extends Actor {
       "%s?token=%s".format(PROPS.getProperty("confirm-url"), confirm_token)
     }
 
-    def buildMessage(session : Session, user : Node) = {
+    def buildMessage(session : Session, user : Node, confirmLink : String) = {
       val message = new MimeMessage(session)
       message.setFrom(new InternetAddress(PROPS.getProperty("confirm-email-from")))
       message.setReplyTo(InternetAddress.parse(PROPS.getProperty("confirm-email-replyto")).toArray)
       val to = getAddresses(user.valueOf("Email Address"), user.valueOf("Alternate Email Address"))
-      val confirm_link = getConfirmLink(serviceRequest)
       if (isProduction) {
         message.setRecipients(Message.RecipientType.TO, to.toArray)
       } else {
@@ -83,8 +82,17 @@ class TicketHandler extends Actor {
           InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
         )
       }
-      message.setSubject("Confirmation Email")
-      message.setText("Link: %s".format(confirm_link))
+      message.setSubject("Re: %s (SR 3-%d) [New SR]".format(subject, serviceRequest.id.get))
+      message.setText(
+        """
+        Dear %s,
+
+        Your email to support@logicworks.net has generated a new Service Request. In order for us to process your request it must first be confirmed.
+
+        Please use this URL to confirm:
+        %s
+        """.format(user.valueOf("Name"), confirmLink)
+      )
       message
     }
 
@@ -92,12 +100,23 @@ class TicketHandler extends Actor {
     props.put("mail.smtp.auth", "true")
     props.put("mail.smtp.starttls.enable", "true")
     val session = Session.getInstance(props)
-    session.getTransport("smtp").connect(
-      PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
-      PROPS.getProperty("smtp-pass")
-    );
-    val message = buildMessage(session, user)
-    Transport.send(message);
+    if (liveEmailEnabled) {
+      session.getTransport("smtp").connect(
+        PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
+        PROPS.getProperty("smtp-pass")
+      )
+    }
+    val confirm_link = getConfirmLink(serviceRequest)
+    val message = buildMessage(session, user, confirm_link)
+    if (liveEmailEnabled) {
+      EventHandler.info(this, "Sending New SR confirmation email to: %s, with confirmation token: %s")
+      Transport.send(message);
+    } else {
+      EventHandler.info(this, "Not in live email mode, logging email instead of sending it")
+      val bao = new ByteArrayOutputStream
+      message.writeTo(bao)
+      EventHandler.debug(this, bao.toString)
+    }
   }
 
   EventHandler.info(this, "TicketHandler constructor initialized")
@@ -108,7 +127,7 @@ class TicketHandler extends Actor {
     } catch {
       case e : Exception => {
         Database.getConnection.rollback(savepoint)
-        fileHandler ! FileFailed(file,e)
+        fileHandler ! FileFailed(file, e)
       }
     }
   }
@@ -227,10 +246,11 @@ class TicketHandler extends Actor {
           .connect("Created By", user)
           .connect("Child", sr_node)
 
-        sendConfirmEmail(user, sr_node)
+        sendConfirmEmail(user, sr_node, subject)
         fileHandler ! FileSuccess(file)
       }
     }
   }
 }
+
 }

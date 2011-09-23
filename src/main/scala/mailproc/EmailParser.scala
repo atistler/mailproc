@@ -97,6 +97,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
 
       val content = EmailParser.getPlainTextContent(EmailParser.findMimeTypes(message, "text/plain", "text/html"))
       if (to == null) {
+        EventHandler.error(this, "'To:' header does not exist in message: %s, ignoring this email".format(file) )
         fileHandler ! FileIgnored(file)
       } else {
         to.find(a => supportAddresses.contains(prettyAddress(a))) match {
@@ -167,10 +168,11 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
                 fileHandler ! FileIgnored(file)
               }
             }
-
           }
           /* Not sent to lw-support or support: ignore */
-          case None =>
+          case None => {
+            fileHandler ! FileIgnored(file)
+          }
         }
       }
     }

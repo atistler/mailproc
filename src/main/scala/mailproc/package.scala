@@ -1,4 +1,4 @@
-import java.io.FileInputStream
+import java.io.{PrintWriter, FileInputStream}
 import java.util.Properties
 
 package object mailproc {
@@ -89,6 +89,11 @@ package object mailproc {
     props
   }
 
+  private[mailproc] def printToFile(f: File)(op: PrintWriter => Unit) {
+    val p = new PrintWriter(f)
+    try { op(p) } finally { p.close() }
+  }
+
   val PROPS = findConfig()
 
   lazy val isProduction = sys.env.get("mode") match {
@@ -97,6 +102,12 @@ package object mailproc {
   }
   val isDevelopment = ! isProduction
 
+  lazy val liveEmailEnabled = sys.env.get("email") match {
+    case Some("live") => true
+    case _ => false
+  }
+
+
   private[mailproc] val maildir_directory = PROPS.getProperty("maildir-directory")
   private[mailproc] val support_addresses = PROPS.getProperty("support-addresses").split(",").map(_.trim()).toSet
   private[mailproc] val userCheck = actorOf(new UserCheck)
@@ -104,8 +115,5 @@ package object mailproc {
   private[mailproc] val fileHandler = actorOf(new FileHandler(maildir_directory))
   private[mailproc] val ticketHandler = actorOf(new TicketHandler)
   private[mailproc] val directoryWatcher = actorOf(new DirectoryWatcher(maildir_directory))
-
-
-
 }
 

@@ -15,6 +15,7 @@ object MailProc extends App {
         Supervise(userCheck, Permanent),
         Supervise(emailParser, Permanent),
         Supervise(ticketHandler, Permanent),
+        Supervise(fileHandler, Permanent),
         Supervise(directoryWatcher, Permanent)
       )
     )
