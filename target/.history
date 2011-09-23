@@ -13,3 +13,9 @@ show source-directories
 exit
 run
 exit
+test
+test-only ConnectionTest
+test-only AttributeTest
+test-only AttributeTest 
+test-only AttributeOptionTest
+test-only AttributeTest
