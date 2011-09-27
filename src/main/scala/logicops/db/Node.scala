@@ -17,7 +17,38 @@ private[db] trait LikeHaving {
   }
 }
 
-class Nodes(nodeMap : MuMap[Int, Node]) {
+private[db] trait ChildParent {
+  val connectors: LikeHaving
+  val connectees: LikeHaving
+
+  def children(nodeTypes: Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
+    connectors.having(List(ConnectionType.get("Child")), nodeTypes)
+  }
+  def children(nodeType: NodeType) : MuMap[Int, Node] = {
+    children(List(nodeType))
+  }
+  def parents(nodeTypes: Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
+    connectors.having(List(ConnectionType.get("Parent")), nodeTypes)
+  }
+  def parents(nodeType: NodeType) : MuMap[Int, Node] = {
+    parents(List(nodeType))
+  }
+  def child(nodeTypes: Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
+    children(nodeTypes).headOption
+  }
+  def child(nodeType: NodeType) : Option[(Int, Node)] = {
+    child(List(nodeType))
+  }
+  def parent(nodeTypes: Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
+    parents(nodeTypes).headOption
+  }
+  def parent(nodeType: NodeType) : Option[(Int, Node)] = {
+    parent(List(nodeType))
+  }
+
+}
+
+class Nodes(nodeMap : MuMap[Int, Node]) extends ChildParent {
   object connectors extends LikeHaving {
     def having(
       connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
@@ -35,7 +66,6 @@ class Nodes(nodeMap : MuMap[Int, Node]) {
         }
       }
     }
-
   }
 
   object connectees extends LikeHaving {
@@ -59,7 +89,7 @@ class Nodes(nodeMap : MuMap[Int, Node]) {
 
 }
 
-class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao[Node] {
+class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) extends Dao[Node] with ChildParent {
   private[db] val attributes = MuMap.empty[Attribute, NodeAttribute]
 
   private val self = this
@@ -117,7 +147,12 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
   def valueOf(a : Attribute) = {
     attr(a) match {
       case Some(na) => Some(na.value)
-      case None => None
+      case None => {
+        template.attr(a) match {
+          case Some(ta) => Some(ta.value)
+          case None => None
+        }
+      }
     }
   }
 
@@ -158,7 +193,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   def setAttr(a : Attribute, value : String) : Node = {
     attr(a) match {
-      case Some(na) => {
+      case Some(na : NodeAttribute) => {
         val newNa = na.copy(value = value).save().get
         attributes += newNa.attribute -> newNa
         this

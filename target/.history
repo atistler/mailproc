@@ -13,3 +13,7 @@ show source-directories
 exit
 run
 exit
+test
+compile
+exit
+compile

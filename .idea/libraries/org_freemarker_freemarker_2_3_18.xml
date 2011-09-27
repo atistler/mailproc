@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.freemarker_freemarker_2.3.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/jars/org.freemarker/freemarker/freemarker-2.3.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/srcs/org.freemarker/freemarker/freemarker-2.3.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
