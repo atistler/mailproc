@@ -4,7 +4,7 @@ import org.orbroker._
 
 class NodeAttribute (
   val id : Option[Int], val nodeId : Int, val attributeId : Int, val value : String
-  ) extends Dao[NodeAttribute] {
+  ) extends Dao[NodeAttribute] with HasValue {
 
   override def toString = "NodeAttribute[%s] (nodeId: %d, attribute: %s[%d], value: %s".format(
     id, nodeId, Attribute.get(attributeId).name, attributeId, value

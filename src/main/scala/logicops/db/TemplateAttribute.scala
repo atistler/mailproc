@@ -4,7 +4,7 @@ import org.orbroker._
 
 class TemplateAttribute(
   val id : Option[Int], val templateId : Int, val attributeId : Int, val optional : Boolean, val value : String
-  ) extends Dao[TemplateAttribute] {
+  ) extends Dao[TemplateAttribute] with HasValue{
 
   override def toString = "TemplateAttribute[%s] (template: %s[%d], attribute: %s[%d], value: %s)".format(
     id, template.name, templateId, attribute.name, attributeId, value

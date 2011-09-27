@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="se.scalablesolutions.akka_akka-actor_1.2-RC6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/jars/se.scalablesolutions.akka/akka-actor/akka-actor-1.2-RC6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/srcs/se.scalablesolutions.akka/akka-actor/akka-actor-1.2-RC6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

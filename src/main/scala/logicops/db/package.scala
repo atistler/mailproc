@@ -98,6 +98,9 @@ package object db {
   }
   */
 
+  private[db] trait HasValue {
+    val value : String
+  }
 
   class DaoException(msg : String) extends RuntimeException(msg)
 

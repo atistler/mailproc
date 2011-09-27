@@ -16,7 +16,7 @@ class NodeTest extends Specification {
     "have node_id of 527321" in new n1 {
       n1.id must_== Some(527321)
     }
-    "have name = 'Root User'" in new n1 {
+    "have name = 'SR 2-527321'" in new n1 {
       n1.attr("Name").get.value must_== "SR 2-527321"
     }
     "have Service Request Status = 'Closed'" in new n1 {
@@ -91,7 +91,12 @@ class NodeTest extends Specification {
     "Have name Service Request Queue" in {
       val n = Node.find("Account", "Name" -> "Logicworks").head
       val srqs = n.connectors.having("Child", "Service Request Queue")
+      println(srqs.headOption)
       srqs.head._2.valueOf("Name").get must_== "Service Request Queue"
+    }
+    "Have name Service Request Queue when using child()" in {
+      val n = Node.find("Account", "Name" -> "Logicworks").head
+      n.child("Service Request Queue").get._2.valueOf("Name").get must_== "Service Request Queue"
     }
   }
 

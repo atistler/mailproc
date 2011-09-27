@@ -11,15 +11,19 @@ mainClass := Some("mailproc.MailProc")
 
 scalacOptions ++= Seq("-deprecation","-unchecked")
 
+
+
 resolvers ++= Seq(
   "Java.net Repo" at "http://download.java.net/maven/2/",
   "snapshots" at "http://scala-tools.org/repo-snapshots",
   "releases" at "http://scala-tools.org/repo-releases",
   // "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "Akka Repo" at "http://akka.io/repository"
+  "Akka Repo" at "http://akka.io/repository",
+  "FuseSource Snapshot Repository" at "http://repo.fusesource.com/nexus/content/repositories/snapshots"
 )
 
 libraryDependencies ++= Seq(
+  "org.fusesource.scalate" % "scalate-core" % "1.5.1",
   "commons-lang" % "commons-lang" % "2.6",
   "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
