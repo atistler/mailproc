@@ -1,4 +1,5 @@
 target/
 lib/
 lib_managed/
-project/
+project/boot/
+project/target/
