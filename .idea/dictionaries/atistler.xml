@@ -12,6 +12,7 @@
       <w>connectees</w>
       <w>ctype</w>
       <w>dbhost</w>
+      <w>dbname</w>
       <w>elems</w>
       <w>fromdb</w>
       <w>iseq</w>
@@ -22,9 +23,11 @@
       <w>mailproc</w>
       <w>memoize</w>
       <w>moveto</w>
+      <w>multipart</w>
       <w>nodeid</w>
       <w>ntype</w>
       <w>openended</w>
+      <w>plaintext</w>
       <w>proc</w>
       <w>replyto</w>
       <w>smtp</w>

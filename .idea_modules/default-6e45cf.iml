@@ -48,10 +48,11 @@
     <orderEntry type="library" name="org.orbroker_orbroker_3.1.1" level="project" />
     <orderEntry type="library" name="javax.mail_mail_1.4.2" level="project" />
     <orderEntry type="library" name="javax.activation_activation_1.1" level="project" />
+    <orderEntry type="library" name="postgresql_postgresql_8.4-701.jdbc4" level="project" />
+    <orderEntry type="library" name="commons-io_commons-io_2.0.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="ch.qos.logback_logback-classic_0.9.28" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="ch.qos.logback_logback-core_0.9.28" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="org.slf4j_slf4j-api_1.6.1" level="project" />
-    <orderEntry type="library" name="postgresql_postgresql_8.4-701.jdbc4" level="project" />
   </component>
 </module>
 

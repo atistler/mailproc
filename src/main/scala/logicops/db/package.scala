@@ -1,5 +1,4 @@
 package logicops {
-
 package object db {
 
   import java.io.File
@@ -7,12 +6,14 @@ package object db {
   import javax.sql.DataSource
   import config.FileSystemRegistrant
   import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
+  import utils._
 
+  private val PROPS = findConfig("database.properties")
 
-  private val dbhost = sys.props.getOrElse("logicops.dbhost", "lw-logicops-dev1")
-
-  private val DB_URL = "jdbc:postgresql://" + dbhost + "/logicops2"
-  private val DB_USERNAME = "logicops2"
+  private val dbhost = sys.props.get("database-host").orElse(Some(PROPS.getProperty("database-host", "lw-logicops-dev1"))).get
+  private val dbname = sys.props.get("database-name").orElse(Some(PROPS.getProperty("database-name", "logicops2"))).get
+  private val DB_USERNAME = sys.props.get("database-host").orElse(Some(PROPS.getProperty("database-user", "logicops2"))).get
+  private val DB_URL = "jdbc:postgresql://%s/%s".format(dbhost, dbname)
   private val DB_DRIVER = "org.postgresql.Driver"
 
   private[db] val ds : DataSource = new SimpleDataSource(DB_URL, DB_DRIVER) {
@@ -30,7 +31,6 @@ package object db {
   val broker = builder.build()
 
   object Database {
-
     private object connection extends ThreadLocal[java.sql.Connection] {
       override def initialValue() = {
         val conn = ds.getConnection
@@ -146,11 +146,13 @@ package object db {
     case object FROMDB extends State {
       val name = "FROMDB"
     }
+
   }
 
   private[db] trait NamedDao[T] extends Dao[T] {
     override def hashCode = id.get
-    override def equals(that: Any) =
+
+    override def equals(that : Any) =
       that match {
         case nd : NamedDao[_] => {
           nd.getClass == getClass && nd.id.get == id.get
@@ -190,7 +192,6 @@ package object db {
     }
 
 
-
     class BasicTokens extends TokenSet(true) {
 
       val selectById = Token("SELECT * FROM " + tableName + " WHERE " + pK + " = :id", 'id, extractor)
@@ -216,10 +217,11 @@ package object db {
         )
       }
     }
+
   }
 
-  implicit def tuple2Na(s: (String,String)) : ( Attribute, String ) = {
-     Attribute.get(s._1) -> s._2
+  implicit def tuple2Na(s : (String, String)) : (Attribute, String) = {
+    Attribute.get(s._1) -> s._2
   }
 
   implicit def string2Ct(s : String) : ConnectionType = {
@@ -228,18 +230,21 @@ package object db {
       case None => throw new DaoException("Invalid interface_name for ConnectionType: %s".format(s))
     }
   }
+
   implicit def string2Nt(s : String) : NodeType = {
     NodeType.getOption(s) match {
       case Some(nt) => nt
       case None => throw new DaoException("Invalid interface_name for NodeType: %s".format(s))
     }
   }
+
   implicit def string2A(s : String) : Attribute = {
     Attribute.getOption(s) match {
       case Some(a) => a
       case None => throw new DaoException("Invalid interface_name for Attribute: %s".format(s))
     }
   }
+
   implicit def string2T(s : String) : Template = {
     Template.getOption(s) match {
       case Some(t) => t

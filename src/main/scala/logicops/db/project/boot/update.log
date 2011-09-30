@@ -1,5 +1,5 @@
 setting 'ivy.default.settings.dir' to 'jar:file:/Users/atistler/bin/sbt-launch.jar!/org/apache/ivy/core/settings'
-setting 'ivy.basedir' to '/Users/atistler/mailproc/src/main/scala/db/.'
+setting 'ivy.basedir' to '/Users/atistler/logicops.mailproc/src/main/scala/db/.'
 setting 'ivy.default.conf.dir' to 'jar:file:/Users/atistler/bin/sbt-launch.jar!/org/apache/ivy/core/settings'
 impossible to define new type: class not found: org.apache.ivy.plugins.version.PatternVersionMatcher in [] nor Ivy classloader
 impossible to define new type: class not found: org.apache.ivy.plugins.trigger.LogTrigger in [] nor Ivy classloader
@@ -30,7 +30,7 @@ setting 'sun.java.launcher' to 'SUN_STANDARD'
 setting 'user.country' to 'US'
 setting 'sun.os.patch.level' to 'unknown'
 setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
-setting 'user.dir' to '/Users/atistler/mailproc/src/main/scala/db'
+setting 'user.dir' to '/Users/atistler/logicops.mailproc/src/main/scala/db'
 setting 'java.runtime.version' to '1.6.0_26-b03-383-11A511'
 setting 'java.awt.graphicsenv' to 'apple.awt.CGraphicsEnvironment'
 setting 'java.endorsed.dirs' to '/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed'
@@ -79,8 +79,8 @@ setting 'ivy.home' to '/Users/atistler/.ivy2'
 setting 'ivy.cache.dir' to '/Users/atistler/.ivy2/cache'
 no default cache defined: set to /Users/atistler/.ivy2/cache
 setting 'ivy.checksums' to 'sha1,md5'
-setting 'ivy.basedir' to '/Users/atistler/mailproc/src/main/scala/db/project/boot'
-setting 'basedir' to '/Users/atistler/mailproc/src/main/scala/db/project/boot'
+setting 'ivy.basedir' to '/Users/atistler/logicops.mailproc/src/main/scala/db/project/boot'
+setting 'basedir' to '/Users/atistler/logicops.mailproc/src/main/scala/db/project/boot'
 setting 'scala' to ''
 :: resolving dependencies :: org.scala-tools.sbt#boot-app;1.0
 	confs: [default]

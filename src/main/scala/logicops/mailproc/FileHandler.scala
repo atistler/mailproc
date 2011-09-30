@@ -1,4 +1,4 @@
-package mailproc
+package logicops.mailproc
 
 import akka.actor.Actor
 import akka.event.EventHandler
@@ -29,8 +29,6 @@ class FileHandler(directory : String) extends Actor {
   }
 
   EventHandler.info(this, "FileHandler constructor initialized")
-
-
 
   def receive = {
     case FileSuccess(file : File) => {

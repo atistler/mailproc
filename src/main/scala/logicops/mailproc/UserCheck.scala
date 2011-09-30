@@ -1,4 +1,4 @@
-package mailproc {
+package logicops.mailproc
 
 import akka.actor.Actor
 import collection.mutable
@@ -86,6 +86,4 @@ class UserCheck extends Actor {
     }
     case _ => EventHandler.error(this, "Unknown message sent to UserCheck actor")
   }
-}
-
 }

@@ -91,7 +91,6 @@ class NodeTest extends Specification {
     "Have name Service Request Queue" in {
       val n = Node.find("Account", "Name" -> "Logicworks").head
       val srqs = n.connectors.having("Child", "Service Request Queue")
-      println(srqs.headOption)
       srqs.head._2.valueOf("Name").get must_== "Service Request Queue"
     }
     "Have name Service Request Queue when using child()" in {

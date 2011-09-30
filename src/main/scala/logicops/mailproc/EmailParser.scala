@@ -1,4 +1,4 @@
-package mailproc {
+package logicops.mailproc
 
 import akka.actor.Actor
 import io.Source
@@ -177,6 +177,4 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
       }
     }
   }
-}
-
 }

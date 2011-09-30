@@ -27,7 +27,7 @@
         <CLASSES>
           <root url="file://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1" />
           <root url="jar://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1/xsbti/interface-0.10.1.jar!/" />
-          <root url="file://$USER_HOME$/.sbt/plugins/target/scala-2.8.1.final/classes" />
+          <root url="file://$MODULE_DIR$/../project/plugins/target/scala-2.8.1.final/classes" />
           <root url="file://$MODULE_DIR$/../project/target/scala_2.8.1" />
           <root url="jar://$USER_HOME$/.ivy2/cache/commons-io/commons-io/jars/commons-io-2.0.1.jar!/" />
           <root url="jar://$MODULE_DIR$/../project/boot/scala-2.8.1/org.scala-tools.sbt/sbt/0.10.1/completion_2.8.1-0.10.1.jar!/" />
@@ -70,16 +70,7 @@
           <root url="jar://$USER_HOME$/.ivy2/cache/com.github.retronym/sbt-onejar_2.8.1/jars/sbt-onejar_2.8.1-0.3-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/org.scala-lang/scala-library/scala-library-2.9.0-1-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/org.scala-lang/scala-compiler/scala-compiler-2.9.0-1-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/org.scala-tools.sbinary/sbinary_2.8.1/sbinary_2.8.1-0.4.0-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/org.apache.ivy/ivy/ivy-2.2.0-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/com.jcraft/jsch/jsch-0.1.31-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/commons-httpclient/commons-httpclient/commons-httpclient-3.1-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/commons-logging/commons-logging/commons-logging-1.0.4-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/../lib_managed/srcs/jline/jline/jline-0.9.94-sources.jar!/" />
-        </SOURCES>
+        <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="library" name="scala-2.8.1" level="project" />

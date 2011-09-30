@@ -1,7 +1,7 @@
 import java.io.{FileInputStream, File}
 import javax.mail.internet.MimeMessage
 import org.specs2.mutable._
-import mailproc.EmailParser
+import logicops.mailproc._
 import logicops.db._
 import org.specs2.specification.Scope
 
@@ -36,7 +36,7 @@ trait mail extends Scope {
 }
 
 trait allmail extends Scope {
-  private val url = getClass.getResource("cur/")
+  private val url = getClass.getResource("new/")
   var count_html = 0
   var count_plain = 0
   var count_total = 0

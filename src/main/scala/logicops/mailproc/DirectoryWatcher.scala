@@ -1,8 +1,9 @@
-package mailproc {
+package logicops.mailproc
 
 import akka.actor.Actor
 import akka.event.EventHandler
 import java.io.File
+import org.apache.commons.io.monitor.{FileAlterationListener, FileAlterationObserver}
 
 class DirectoryWatcher(var directory: String) extends Actor {
   EventHandler.info(this, "DirectoryWatcher constructor initialized")
@@ -21,6 +22,8 @@ class DirectoryWatcher(var directory: String) extends Actor {
 
   lazy val cur_directory = "%s/%s".format(directory, "cur")
 
+  val directory_watch_interval = PROPS.getProperty("directory-watch-interval", "10000").toInt
+
   def receive = {
     case StartWatch() => {
       EventHandler.info(this, "Starting watching directory for new email: %s".format(cur_directory))
@@ -37,11 +40,9 @@ class DirectoryWatcher(var directory: String) extends Actor {
         EventHandler.debug(this, "Done shutting down all actors")
         sys.exit()
         */
-        Thread.sleep(20000)
+        Thread.sleep(directory_watch_interval)
       }
     }
     case _ => EventHandler.error(this, "Unknown message sent to DirectoryWatcher actor")
   }
-}
-
 }

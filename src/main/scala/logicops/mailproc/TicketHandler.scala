@@ -1,23 +1,24 @@
-package mailproc {
+package logicops.mailproc
 
 import akka.actor.Actor
 import akka.event.EventHandler
 import logicops.db._
 import java.util.{UUID, Properties}
 import javax.mail._
-import internet.{MimeMessage, InternetAddress}
+import internet._
 import java.sql.Savepoint
 import java.lang.IllegalStateException
-import java.io.{ByteArrayOutputStream, FileOutputStream, File}
+import java.io.{ByteArrayOutputStream, File}
+import org.apache.commons.io.FileUtils
 
 class TicketHandler extends Actor {
 
-  implicit def Node2HasSRQ(node : Node) = new HasSRQ(node)
-
-  class HasSRQ(node : Node) {
-    def serviceRequestQueue = node.connectors.having("Child", "Service Request Queue").headOption match {
-      case Some((nodeid : Int, node : Node)) => Some(node)
-      case None => None
+  implicit def Node2HasSRQ(node : Node) = {
+    new {
+      def serviceRequestQueue = node.connectors.having("Child", "Service Request Queue").headOption match {
+        case Some((nodeid : Int, node : Node)) => Some(node)
+        case None => None
+      }
     }
   }
 
@@ -49,11 +50,26 @@ class TicketHandler extends Actor {
   }
 
 
+  private def addToStorage(emailNode : Node, body : String, file : File) {
+    val base_path = "%s/%d/%d/".format(
+      PROPS.getProperty("attachments-directory"), emailNode.id.get % 100, emailNode.id.get
+    )
+    val base_path_dir = new File(base_path)
+    if (!base_path_dir.isDirectory)
+      base_path_dir.mkdir()
+    val body_file = new File(base_path_dir, "body.txt")
+    FileUtils.writeStringToFile(body_file, body)
+    val raw_file = new File(base_path_dir, "raw.txt")
+    FileUtils.copyFile(file, raw_file, true)
+    emailNode.setAttr("Email Path", body_file.getAbsolutePath)
+    emailNode.setAttr("Email Body Path", raw_file.getAbsolutePath)
+  }
+
   private def buildEmail(emailNode : Node, subject : String, to : String) : Node = {
     emailNode.setAttr("Name", subject)
       .setAttr("Computed Recipients", to)
       .setAttr("Email Subject", subject)
-      .setAttr("Email Path", "%d/email_%d.txt".format(emailNode.id.get % 100, emailNode.id.get))
+
   }
 
   private def sendConfirmEmail(user : Node, serviceRequest : Node, subject : String) {
@@ -63,36 +79,107 @@ class TicketHandler extends Actor {
       }
     }
 
-    def getConfirmLink(serviceRequest : Node) = {
+    def getConfirmUrl(serviceRequest : Node) = {
       val confirm_token = UUID.randomUUID().toString
       serviceRequest.setAttr("Confirmation Token", confirm_token)
       "%s?token=%s".format(PROPS.getProperty("confirm-url"), confirm_token)
     }
 
-    def buildMessage(session : Session, user : Node, confirmLink : String) = {
+    def getPlainText(user : Node, confirmUrl : String, f : Boolean => String) = {
+      """
+Dear %s,
+
+Your email to support@logicworks.net has generated a new Service Request.
+In order for us to process your request it must first be confirmed.
+
+Please click on this URL to confirm: %s
+
+Logicops NOC
+
+%s
+      """.format(user.valueOf("Name").get, confirmUrl, f(isDev || isTest))
+    }
+
+    def getHtmlContent(user : Node, confirmUrl : String, f : Boolean => xml.Node) : xml.Node = {
+      <html>
+        <body>
+          <p>Dear
+            {user.valueOf("Name")}
+            ,
+          </p>
+          <p>Your email to support@logicworks.net has generated a new Service Request.
+            In order for us to process your request it must first be confirmed.</p>
+          <p>Please click on this URL to confirm:
+            <a href={confirmUrl}>
+              {confirmUrl}
+            </a>
+          </p>
+          <p>Logicops NOC</p>{f(isDev || isTest)}
+        </body>
+      </html>
+    }
+
+    def buildMessage(session : Session, user : Node, confirmUrl : String) = {
       val message = new MimeMessage(session)
       message.setFrom(new InternetAddress(PROPS.getProperty("confirm-email-from")))
       message.setReplyTo(InternetAddress.parse(PROPS.getProperty("confirm-email-replyto")).toArray)
+
+      message.setSubject("Re: %s (SR 3-%d) [New SR]".format(subject, serviceRequest.id.get))
+
       val to = getAddresses(user.valueOf("Email Address"), user.valueOf("Alternate Email Address"))
-      if (isProduction) {
+      if (isProd) {
         message.setRecipients(Message.RecipientType.TO, to.toArray)
-      } else {
+        if (PROPS.getProperty("confirm-email-bcc", "") != "") {
+          message.setRecipients(
+            Message.RecipientType.BCC,
+            InternetAddress.parse(PROPS.getProperty("confirm-email-bcc")).map(_.asInstanceOf[Address]).toArray
+          )
+        }
+      } else if (isTest) {
+        message.setRecipients(
+          Message.RecipientType.TO,
+          InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
+        )
+      } else if (isDev) {
         message.setRecipients(
           Message.RecipientType.TO,
           InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
         )
       }
-      message.setSubject("Re: %s (SR 3-%d) [New SR]".format(subject, serviceRequest.id.get))
-      message.setText(
-        """
-        Dear %s,
 
-        Your email to support@logicworks.net has generated a new Service Request. In order for us to process your request it must first be confirmed.
-
-        Please use this URL to confirm:
-        %s
-        """.format(user.valueOf("Name"), confirmLink)
+      val plaintext_content = getPlainText(
+      user, confirmUrl, {
+        debug =>
+          if (debug) "\n\nRecipient List:\n\tTo: %s\n\tBcc: %s\n".format(
+            to.mkString(", "), PROPS.getProperty("confirm-email-bcc")
+          )
+          else ""
+      }
       )
+
+      val html_content = getHtmlContent(
+      user, confirmUrl, {
+        debug =>
+          if (debug) <p>Recipient List:
+              <br/>
+            To:
+            {to.mkString(", ")}<br/>
+            Bcc:
+            {PROPS.getProperty("confirm-email-bcc")}<br/>
+          </p>
+          else <p></p>
+      }
+      )
+
+      val multipart = new MimeMultipart("alternative")
+      val plaintext = new MimeBodyPart()
+      val html = new MimeBodyPart()
+
+      plaintext.setContent(plaintext_content, "text/plain")
+      html.setContent(html_content, "text/html")
+      multipart.addBodyPart(plaintext)
+      multipart.addBodyPart(html)
+      message.setContent(multipart)
       message
     }
 
@@ -100,24 +187,28 @@ class TicketHandler extends Actor {
     props.put("mail.smtp.auth", "true")
     props.put("mail.smtp.starttls.enable", "true")
     val session = Session.getInstance(props)
-    if (liveEmailEnabled) {
+
+    if (isProd) {
       session.getTransport("smtp").connect(
         PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
         PROPS.getProperty("smtp-pass")
       )
     }
-    val confirm_link = getConfirmLink(serviceRequest)
-    val message = buildMessage(session, user, confirm_link)
-    if (liveEmailEnabled) {
-      EventHandler.info(this, "Sending New SR confirmation email to: %s, with confirmation token: %s")
+    val message = buildMessage(session, user, getConfirmUrl(serviceRequest))
+    EventHandler.info(
+      this, "Sending New SR confirmation email to: %s, %s".format(user.valueOf("Name"), user.valueOf("Email Address"))
+    )
+    val bao = new ByteArrayOutputStream
+    message.writeTo(bao)
+    EventHandler.debug(this, bao.toString)
+    if (isProd) {
+      EventHandler.debug(this, "Production mode enable, sending confirmation sending email")
       Transport.send(message);
     } else {
-      EventHandler.info(this, "Not in live email mode, logging email instead of sending it")
-      val bao = new ByteArrayOutputStream
-      message.writeTo(bao)
-      EventHandler.debug(this, bao.toString)
+      EventHandler.debug(this, "Production mode disabled, not actually confirmation sending email")
     }
   }
+
 
   EventHandler.info(this, "TicketHandler constructor initialized")
 
@@ -139,7 +230,7 @@ class TicketHandler extends Actor {
       withRollback {
         Node.getOption(sr_node_id) match {
           case Some(sr_node) => {
-            buildEmail(Node.createFrom("Outgoing Email"), subject, to)
+            val email = buildEmail(Node.createFrom("Outgoing Email"), subject, to)
               .connect("Created By", user)
               .connect("Child", sr_node)
             EventHandler.info(
@@ -163,6 +254,7 @@ class TicketHandler extends Actor {
                   sr_node.connect("Assigned To", user)
                     .connect("Child", user.serviceRequestQueue.get)
                 }
+                addToStorage(email, body, file)
                 fileHandler ! FileSuccess(file)
               }
               case None => {
@@ -189,7 +281,7 @@ class TicketHandler extends Actor {
                 sr_node.valueOf("Name").get, user.valueOf("Name").get
               )
             )
-            buildEmail(Node.createFrom("Incoming Email"), subject, to)
+            val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
               .connect("Created By", user)
               .connect("Child", sr_node)
             sr_node.valueOf("Service Request Status") match {
@@ -208,6 +300,7 @@ class TicketHandler extends Actor {
                   sr_node.connect("Assigned To", user)
                     .connect("Child", user.serviceRequestQueue.get)
                 }
+                addToStorage(email, body, file)
                 fileHandler ! FileSuccess(file)
               }
               case None => {
@@ -242,15 +335,14 @@ class TicketHandler extends Actor {
             sr_node.valueOf("Name").get, user.valueOf("Name").get
           )
         )
-        buildEmail(Node.createFrom("Incoming Email"), subject, to)
+        val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
           .connect("Created By", user)
           .connect("Child", sr_node)
 
+        addToStorage(email, body, file)
         sendConfirmEmail(user, sr_node, subject)
         fileHandler ! FileSuccess(file)
       }
     }
   }
-}
-
 }

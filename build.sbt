@@ -7,11 +7,9 @@ organization := "net.logicworks"
 
 scalaVersion := "2.9.0-1"
 
-mainClass := Some("mailproc.MailProc")
+mainClass := Some("logicops.mailproc.MailProc")
 
 scalacOptions ++= Seq("-deprecation","-unchecked")
-
-
 
 resolvers ++= Seq(
   "Java.net Repo" at "http://download.java.net/maven/2/",
@@ -23,7 +21,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.fusesource.scalate" % "scalate-core" % "1.5.1",
+  // "org.fusesource.scalate" % "scalate-core" % "1.5.1",
   "commons-lang" % "commons-lang" % "2.6",
   "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
@@ -37,7 +35,8 @@ libraryDependencies ++= Seq(
   "org.orbroker" % "orbroker" % "3.1.1",
   "javax.mail" % "mail" % "1.4.2",
   "postgresql" % "postgresql" % "8.4-701.jdbc4",
-  "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime"
+  "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime",
+  "commons-io" % "commons-io" % "2.0.1"
 )
 
 retrieveManaged := true
