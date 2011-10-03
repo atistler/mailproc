@@ -21,7 +21,6 @@ package object utils {
       case None => {
         try {
           val resource = getClass.getResourceAsStream(fileName)
-          println("RESOURCE: " + resource)
           props.load(resource)
         } catch {
           case e : Exception => {

@@ -5,7 +5,6 @@ import collection.mutable
 import akka.event.EventHandler
 import logicops.db._
 
-
 class UserCheck extends Actor {
 
   val privileged_user_emails = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
