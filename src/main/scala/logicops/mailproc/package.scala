@@ -76,7 +76,7 @@ package object mailproc {
     }
   }
 
-  val PROPS = findConfig("mailproc.properties")
+  val PROPS = findConfig("/mailproc.properties")
 
   lazy val isProd = PROPS.getProperty("mode", "") == "prod"
   lazy val isTest = PROPS.getProperty("mode", "") == "test"

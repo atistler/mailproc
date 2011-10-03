@@ -8,7 +8,7 @@ package object db {
   import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
   import utils._
 
-  private val PROPS = findConfig("database.properties")
+  private val PROPS = findConfig("/database.properties")
 
   private val dbhost = sys.props.get("database-host").orElse(Some(PROPS.getProperty("database-host", "lw-logicops-dev1"))).get
   private val dbname = sys.props.get("database-name").orElse(Some(PROPS.getProperty("database-name", "logicops2"))).get
