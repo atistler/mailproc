@@ -11,65 +11,6 @@ import safety.{Whitelist, Cleaner}
 import javax.mail.internet.{InternetAddress, MimeMessage}
 import javax.mail.{MessagingException, Address, Multipart, Part, Message, Session => MailSession}
 
-object EmailParser {
-
-  def getPlainTextContent(parts : mutable.Map[String, Part]) : String = {
-    parts.get("text/plain") match {
-      case Some(part) => part.getContent.toString
-      case None => parts.get("text/html") match {
-        case Some(part) => {
-          val doc = Jsoup.parse(part.getContent.toString)
-          val cleaner = new Cleaner(Whitelist.simpleText().addTags("br"))
-          val clean_doc = cleaner.clean(doc)
-          clean_doc.body().html()
-        }
-        case None => throw new MessagingException("Could not find 'text/plain' or 'text/html' email part")
-      }
-    }
-  }
-
-  def findMimeTypes(part : Part, mimeTypes : String*) : mutable.Map[String, Part] = {
-    val contentTypes = mutable.Map.empty[String, Part]
-    def findMimeTypeHelper(part : Part, mimeTypes : String*) {
-      try {
-        if (part.isMimeType("multipart/*")) {
-          val mp = part.getContent.asInstanceOf[Multipart]
-          for (i <- 0 until mp.getCount) {
-            val p = mp.getBodyPart(i)
-            findMimeTypeHelper(p, mimeTypes : _*)
-          }
-        } else {
-          for (mt <- mimeTypes) {
-            if (part.isMimeType(mt)) {
-              contentTypes += mt -> part
-            }
-          }
-        }
-      } catch {
-        case e : UnsupportedEncodingException => EventHandler.error(
-          this, "UnsupportedEncodingException: " + e.getStackTraceString
-        )
-        case e : MessagingException => EventHandler.error(this, "MessagingException: " + e.getStackTraceString)
-        case e : IOException => EventHandler.error(this, "IOException: " + e.getStackTraceString)
-      }
-    }
-    findMimeTypeHelper(part, mimeTypes : _*)
-    contentTypes
-  }
-
-  def prettyAddress(addresses : Array[Address]) : String = {
-    addresses.map(a => new InternetAddress(a.toString).getAddress.toLowerCase).mkString(", ")
-  }
-
-  def prettyAddress(address : Address) : String = {
-    new InternetAddress(address.toString).getAddress.toLowerCase
-  }
-
-  val session = MailSession.getDefaultInstance(System.getProperties);
-  private val SrSubject = """.*SR \d-(\d{6,}).*""".r
-  private val emailFormat = "\tSubject:\t%s\n\tFrom:\t\t%s\n\tTo:\t\t%s"
-}
-
 class EmailParser(val supportAddresses : Set[String]) extends Actor {
 
   import EmailParser.prettyAddress
@@ -97,7 +38,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
 
       val content = EmailParser.getPlainTextContent(EmailParser.findMimeTypes(message, "text/plain", "text/html"))
       if (to == null) {
-        EventHandler.error(this, "'To:' header does not exist in message: %s, ignoring this email".format(file) )
+        EventHandler.error(this, "'To:' header does not exist in message: %s, ignoring this email".format(file))
         fileHandler ! FileIgnored(file)
       } else {
         to.find(a => supportAddresses.contains(prettyAddress(a))) match {
@@ -177,4 +118,63 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
       }
     }
   }
+}
+
+object EmailParser {
+
+  def getPlainTextContent(parts : mutable.Map[String, Part]) : String = {
+    parts.get("text/plain") match {
+      case Some(part) => part.getContent.toString
+      case None => parts.get("text/html") match {
+        case Some(part) => {
+          val doc = Jsoup.parse(part.getContent.toString)
+          val cleaner = new Cleaner(Whitelist.simpleText().addTags("br"))
+          val clean_doc = cleaner.clean(doc)
+          clean_doc.body().html()
+        }
+        case None => throw new MessagingException("Could not find 'text/plain' or 'text/html' email part")
+      }
+    }
+  }
+
+  def findMimeTypes(part : Part, mimeTypes : String*) : mutable.Map[String, Part] = {
+    val contentTypes = mutable.Map.empty[String, Part]
+    def findMimeTypeHelper(part : Part, mimeTypes : String*) {
+      try {
+        if (part.isMimeType("multipart/*")) {
+          val mp = part.getContent.asInstanceOf[Multipart]
+          for (i <- 0 until mp.getCount) {
+            val p = mp.getBodyPart(i)
+            findMimeTypeHelper(p, mimeTypes : _*)
+          }
+        } else {
+          for (mt <- mimeTypes) {
+            if (part.isMimeType(mt)) {
+              contentTypes += mt -> part
+            }
+          }
+        }
+      } catch {
+        case e : UnsupportedEncodingException => EventHandler.error(
+          this, "UnsupportedEncodingException: " + e.getStackTraceString
+        )
+        case e : MessagingException => EventHandler.error(this, "MessagingException: " + e.getStackTraceString)
+        case e : IOException => EventHandler.error(this, "IOException: " + e.getStackTraceString)
+      }
+    }
+    findMimeTypeHelper(part, mimeTypes : _*)
+    contentTypes
+  }
+
+  def prettyAddress(addresses : Array[Address]) : String = {
+    addresses.map(a => new InternetAddress(a.toString).getAddress.toLowerCase).mkString(", ")
+  }
+
+  def prettyAddress(address : Address) : String = {
+    new InternetAddress(address.toString).getAddress.toLowerCase
+  }
+
+  val session = MailSession.getDefaultInstance(System.getProperties);
+  private val SrSubject = """.*SR \d-(\d{6,}).*""".r
+  private val emailFormat = "\tSubject:\t%s\n\tFrom:\t\t%s\n\tTo:\t\t%s"
 }
