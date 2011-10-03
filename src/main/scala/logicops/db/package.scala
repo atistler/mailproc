@@ -1,18 +1,23 @@
 package logicops {
-package object db {
 
-  import java.io.File
-  import org.orbroker._
-  import javax.sql.DataSource
-  import config.FileSystemRegistrant
-  import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
-  import utils._
+import java.io.File
+import org.orbroker._
+import javax.sql.DataSource
+import config.FileSystemRegistrant
+import config.{TokenSet, dynamic, BrokerBuilder, SimpleDataSource}
+import logicops.utils._
+
+package object db {
 
   private val PROPS = findConfig("/database.properties")
 
-  private val dbhost = sys.props.get("database-host").orElse(Some(PROPS.getProperty("database-host", "lw-logicops-dev1"))).get
+  private val dbhost = sys.props.get("database-host").orElse(
+    Some(PROPS.getProperty("database-host", "lw-logicops-dev1"))
+  ).get
   private val dbname = sys.props.get("database-name").orElse(Some(PROPS.getProperty("database-name", "logicops2"))).get
-  private val DB_USERNAME = sys.props.get("database-host").orElse(Some(PROPS.getProperty("database-user", "logicops2"))).get
+  private val DB_USERNAME = sys.props.get("database-host").orElse(
+    Some(PROPS.getProperty("database-user", "logicops2"))
+  ).get
   private val DB_URL = "jdbc:postgresql://%s/%s".format(dbhost, dbname)
   private val DB_DRIVER = "org.postgresql.Driver"
 
@@ -31,6 +36,7 @@ package object db {
   val broker = builder.build()
 
   object Database {
+
     private object connection extends ThreadLocal[java.sql.Connection] {
       override def initialValue() = {
         val conn = ds.getConnection
@@ -53,37 +59,6 @@ package object db {
     iter.map(_.id.get).toArray
   }
 
-  private[db] class Memoize1[-T, +R](f : T => R) extends (T => R) {
-
-    import scala.collection.mutable
-
-    private[this] val vals = mutable.Map.empty[T, R]
-
-    def apply(x : T) : R = {
-      if (vals.contains(x)) {
-        vals(x)
-      } else {
-        val y = f(x)
-        vals += ((x, y))
-        y
-      }
-    }
-  }
-
-  private[db] object Memoize1 {
-    def apply[T, R](f : T => R) = new Memoize1(f)
-  }
-
-  private[db] class Def[C](implicit desired : Manifest[C]) {
-    def unapply[X](c : X)(implicit m : Manifest[X]) : Option[C] = {
-      def sameArgs =
-        desired.typeArguments.zip(m.typeArguments).forall {
-          case (desired, actual) => desired >:> actual
-        }
-      if (desired >:> m && sameArgs) Some(c.asInstanceOf[C])
-      else None
-    }
-  }
 
   implicit def NodeMap2Nodes(map : collection.mutable.Map[Int, Node]) = {
     new Nodes(map)

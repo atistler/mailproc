@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.fusesource.scalate_scalate-util_1.5.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/bundles/org.fusesource.scalate/scalate-util/scalate-util-1.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib_managed/docs/org.fusesource.scalate/scalate-util/scalate-util-1.5.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/srcs/org.fusesource.scalate/scalate-util/scalate-util-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

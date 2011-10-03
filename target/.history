@@ -9,19 +9,15 @@ update-sbt-classifiers
 tasks
 show project-id
 update
-show source-directories
 exit
-run
+clean
+update
+console
+console-quick
+console
 exit
+console
+compile
 test
-<<<<<<< HEAD:target/.history
-test-only ConnectionTest
-test-only AttributeTest
-test-only AttributeTest 
-test-only AttributeOptionTest
-test-only AttributeTest
-=======
 compile
-exit
-compile
->>>>>>> fae7d11ec05b93a19c5624d1b9967a98854b4515:target/.history
+test

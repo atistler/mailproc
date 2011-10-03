@@ -1,11 +1,10 @@
 package logicops {
 
-import java.io.PrintWriter
 import java.io.File
 import javax.mail.Address
 import logicops.db._
 import akka.actor.Actor._
-import utils._
+import logicops.utils._
 
 package object mailproc {
 
@@ -59,28 +58,11 @@ package object mailproc {
 
   case class FileIgnored(file : File) extends MpMessage
 
-
-  def timed(blockName : String)(f : => Any) = {
-    val start = System.currentTimeMillis
-    f
-    () => blockName + " took " + (System.currentTimeMillis - start) + "ms."
-  }
-
-
-  private[mailproc] def printToFile(f : File)(op : PrintWriter => Unit) {
-    val p = new PrintWriter(f)
-    try {
-      op(p)
-    } finally {
-      p.close()
-    }
-  }
-
   val PROPS = findConfig("/mailproc.properties")
 
-  lazy val isProd = PROPS.getProperty("mode", "") == "prod"
-  lazy val isTest = PROPS.getProperty("mode", "") == "test"
-  lazy val isDev = PROPS.getProperty("mode", "") == "dev" || !isProd || !isTest
+  lazy val isProd = PROPS.getProperty("mode") == "prod"
+  lazy val isTest = PROPS.getProperty("mode") == "test"
+  lazy val isDev = PROPS.getProperty("mode") == "dev" || !isProd || !isTest
 
   private[mailproc] val maildir_directory = PROPS.getProperty("maildir-directory")
   private[mailproc] val support_addresses = PROPS.getProperty("support-addresses").split(",").map(_.trim()).toSet

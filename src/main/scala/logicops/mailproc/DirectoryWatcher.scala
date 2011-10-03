@@ -3,7 +3,6 @@ package logicops.mailproc
 import akka.actor.Actor
 import akka.event.EventHandler
 import java.io.File
-import org.apache.commons.io.monitor.{FileAlterationListener, FileAlterationObserver}
 
 class DirectoryWatcher(var directory: String) extends Actor {
   EventHandler.info(this, "DirectoryWatcher constructor initialized")

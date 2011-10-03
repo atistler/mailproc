@@ -3,12 +3,12 @@ package logicops.mailproc
 import akka.actor.Actor
 import akka.event.EventHandler
 import java.io.File
-
+import logicops.utils._
 
 class FileHandler(directory : String) extends Actor {
-  private val successDir = "%s/%s".format(directory, "/success")
-  private val failedDir = "%s/%s".format(directory, "/failed")
-  private val ignoredDir = "%s/%s".format(directory, "/ignored")
+  private val successDir = "%s/%s".format(directory, "success")
+  private val failedDir = "%s/%s".format(directory, "failed")
+  private val ignoredDir = "%s/%s".format(directory, "ignored")
 
   override def preStart() {
     EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
