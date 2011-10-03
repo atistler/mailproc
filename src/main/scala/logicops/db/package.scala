@@ -27,7 +27,9 @@ package object db {
     }
   }
   // private[db] val configFolder = new File("/sql")
-  private[db] val configFolder  = new File(getClass.getResource("/sql").toURI)
+  val sql_uri = getClass.getResource("/sql")
+  println(sql_uri)
+  private[db] val configFolder  = new File(sql_uri.toURI)
   private[db] val builder = new BrokerBuilder(ds) with dynamic.FreeMarkerSupport
   FileSystemRegistrant(configFolder).register(builder)
   private[db] val tokens : List[TokenSet] = List(
