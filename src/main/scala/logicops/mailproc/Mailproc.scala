@@ -21,6 +21,17 @@ object MailProc extends App {
       )
     )
   )
+
+  sys.runtime.addShutdownHook(new Thread() {
+    def run() {
+      EventHandler.info(this, "shutting down supervisor")
+      supervisor.shutdown()
+
+      EventHandler.info(this, "shutting down all remaining actors via registry")
+      Actor.registry.shutdownAll()
+    }
+  })
+
   supervisor.start
 
   val numFiles = 100
@@ -34,16 +45,7 @@ object MailProc extends App {
 
   Thread.sleep(20000)
 
-  sys.runtime.addShutdownHook(new Thread() {
-    def run() {
-      print("in shutdown")
-      EventHandler.info(this, "shutting down supervisor")
-      supervisor.shutdown()
 
-      EventHandler.info(this, "shutting down all remaining actors via registry")
-      Actor.registry.shutdownAll()
-    }
-  })
 
 
 
