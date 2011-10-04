@@ -5,7 +5,7 @@ version := "1.0"
 
 organization := "net.logicworks"
 
-scalaVersion := "2.9.0-1"
+scalaVersion := "2.9.1"
 
 mainClass := Some("logicops.mailproc.MailProc")
 
@@ -23,12 +23,12 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   // "org.fusesource.scalate" % "scalate-core" % "1.5.1",
   "commons-lang" % "commons-lang" % "2.6",
-  "org.specs2" %% "specs2" % "1.5",
   // with Scala 2.8.1
-  "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test",
-  // with Scala 2.9.0
-  // "org.specs2" %% "specs2-scalaz-core" % "6.0.RC2" % "test"
-  "se.scalablesolutions.akka" % "akka-actor" % "1.2-RC6",
+  // "org.specs2" %% "specs2" % "1.5",
+  // "org.specs2" %% "specs2-scalaz-core" % "5.1-SNAPSHOT" % "test",
+  "org.specs2" %% "specs2" % "1.6.1",
+  "org.specs2" %% "specs2-scalaz-core" % "6.0.1" % "test",
+  "se.scalablesolutions.akka" % "akka-actor" % "1.2",
   "org.jsoup" % "jsoup" % "1.6.1",
   "org.freemarker" % "freemarker" % "2.3.18",
   "org.apache.velocity" % "velocity" % "1.6.2",

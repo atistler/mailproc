@@ -7,7 +7,7 @@ package object testutil {
   import logicops.db._
 
   val PROPS = new Properties
-  PROPS.load(getClass.getResourceAsStream("/mailproc.properties"))
+  PROPS.load(getClass.getResourceAsStream("/conf/mailproc.properties"))
 
   trait RollbackSpec {
     this : Specification =>

@@ -18,8 +18,8 @@
     <annotationProcessing enabled="false" useClasspath="true" />
   </component>
   <component name="SbtSettings">
-    <option name="sbtLauncherJarPath" value="$USER_HOME$/bin/sbt-0.10.1-launch.jar" />
-    <option name="sbtLauncherVmParameters" value="-Dakka.config=/Users/atistler/mailproc/src/main/config/akka.conf -Dlogicops.dbhost=lw-dev -Xmx512M -XX:MaxPermSize=256M -XX:PermSize=128M -XX:+CMSClassUnloadingEnabled" />
+    <option name="sbtLauncherJarPath" value="$USER_HOME$/bin/sbt-0.11-launch.jar" />
+    <option name="sbtLauncherVmParameters" value="-Dakka.config=/Users/atistler/mailproc/config/akka.conf -Dmailproc.config=/Users/atistler/mailproc/config/mailproc.properties -Ddatabase.config=/Users/atistler/mailproc/config/database.properties -Dorbroker.sql=/Users/atistler/mailproc/sql/ -Xmx512M -XX:MaxPermSize=256M -XX:PermSize=128M -XX:+CMSClassUnloadingEnabled" />
     <option name="useApplicationSettings" value="false" />
   </component>
 </project>

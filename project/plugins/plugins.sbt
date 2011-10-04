@@ -4,6 +4,6 @@ resolvers += "retronym-snapshots" at "http://retronym.github.com/repo/snapshots"
 
 resolvers += "sbt-idea-repo" at "http://mpeltonen.github.com/maven/"
 
-libraryDependencies += "com.github.retronym" %% "sbt-onejar" % "0.3-SNAPSHOT"
+addSbtPlugin("com.github.retronym" % "sbt-onejar" % "0.5")
 
-libraryDependencies += "com.github.mpeltonen" %% "sbt-idea" % "0.10.0"
+addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "0.11.0")

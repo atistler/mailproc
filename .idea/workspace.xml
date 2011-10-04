@@ -2,8 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc636249-7e4c-4c18-8502-5cfa9c3dbdd0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/mailproc.properties" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/config/akka.conf" afterPath="$PROJECT_DIR$/config/akka.conf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/database.properties" afterPath="$PROJECT_DIR$/config/database.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/database.properties.link" afterPath="$PROJECT_DIR$/config/database.properties.link" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/dev-database.properties" afterPath="$PROJECT_DIR$/config/dev-database.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/dev-mailproc.properties" afterPath="$PROJECT_DIR$/config/dev-mailproc.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/mailproc.properties" afterPath="$PROJECT_DIR$/config/mailproc.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/prod-database.properties" afterPath="$PROJECT_DIR$/config/prod-database.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/prod-mailproc.properties" afterPath="$PROJECT_DIR$/config/prod-mailproc.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteAttributeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteAttributeByName.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteConnectionTypeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteConnectionTypeByName.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteNodeTypeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteNodeTypeByName.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteTemplateByName.sql" afterPath="$PROJECT_DIR$/sql/deleteTemplateByName.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertConnection.sql" afterPath="$PROJECT_DIR$/sql/insertConnection.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertConnectionType.sql" afterPath="$PROJECT_DIR$/sql/insertConnectionType.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNode.sql" afterPath="$PROJECT_DIR$/sql/insertNode.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNodeAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertNodeAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNodeType.sql" afterPath="$PROJECT_DIR$/sql/insertNodeType.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertTemplate.sql" afterPath="$PROJECT_DIR$/sql/insertTemplate.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertTemplateAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertTemplateAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectAttributeOptionsByAttributeId.sql" afterPath="$PROJECT_DIR$/sql/selectAttributeOptionsByAttributeId.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectConnectionByAll.sql" afterPath="$PROJECT_DIR$/sql/selectConnectionByAll.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeById.sql" afterPath="$PROJECT_DIR$/sql/selectNodeById.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeByIds.sql" afterPath="$PROJECT_DIR$/sql/selectNodeByIds.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeByNodeTypeAttribute.sql" afterPath="$PROJECT_DIR$/sql/selectNodeByNodeTypeAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeTypesByPoolId.sql" afterPath="$PROJECT_DIR$/sql/selectNodeTypesByPoolId.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodesByConnectee.sql" afterPath="$PROJECT_DIR$/sql/selectNodesByConnectee.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodesByConnector.sql" afterPath="$PROJECT_DIR$/sql/selectNodesByConnector.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateById.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateById.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateByName.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateByName.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateByQuery.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateByQuery.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateConnection.sql" afterPath="$PROJECT_DIR$/sql/updateConnection.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateConnectionType.sql" afterPath="$PROJECT_DIR$/sql/updateConnectionType.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateNodeAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateNodeAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateNodeType.sql" afterPath="$PROJECT_DIR$/sql/updateNodeType.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateTemplate.sql" afterPath="$PROJECT_DIR$/sql/updateTemplate.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateTemplateAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateTemplateAttribute.sql" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmation-html-email.scaml" afterPath="$PROJECT_DIR$/templates/confirmation-html-email.scaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmation-plaintext-email.scaml" afterPath="$PROJECT_DIR$/templates/confirmation-plaintext-email.scaml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/test-mailproc.properties" afterPath="$PROJECT_DIR$/config/test-mailproc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IdeaProject.iml" afterPath="$PROJECT_DIR$/.idea/IdeaProject.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/default-6e45cf.iml" afterPath="$PROJECT_DIR$/.idea_modules/default-6e45cf.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/project.iml" afterPath="$PROJECT_DIR$/.idea_modules/project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/plugins.sbt" afterPath="$PROJECT_DIR$/project/plugins/plugins.sbt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/testutil.scala" afterPath="$PROJECT_DIR$/src/test/scala/testutil.scala" />
     </list>
     <ignored path="mailproc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +124,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -82,25 +137,52 @@
       <file leaf-file-name="package.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="75" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0">
+            <state line="71" column="42" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initd.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/initd.sh">
+      <file leaf-file-name="package.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/db/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="14" selection-start="96" selection-end="96" vertical-scroll-proportion="-0.27272728">
+            <state line="59" column="56" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryWatcher.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala">
+      <file leaf-file-name="testrun.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/testrun.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="6" column="69" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="51" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugins.sbt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/plugins/plugins.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,61 +191,25 @@
       <file leaf-file-name="package.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="130" selection-end="140" vertical-scroll-proportion="0.0">
+            <state line="15" column="7" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserCheck.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/UserCheck.scala">
+      <file leaf-file-name="Mailproc.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+            <state line="5" column="36" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/db/package.scala">
+      <file leaf-file-name="DirectoryWatcher.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23154363">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileHandler.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/FileHandler.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketHandler.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/TicketHandler.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailParsingTest.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/MailParsingTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-mailproc.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/test-mailproc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+            <state line="27" column="100" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,22 +229,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/test-mailproc.properties" />
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/TicketHandler.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/MailParsingTest.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/MailSendingTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/utils/util/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/utils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/FileHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/EmailParser.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" />
         <option value="$PROJECT_DIR$/bin/initd" />
         <option value="$PROJECT_DIR$/bin/initd.sh" />
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/UserCheck.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/project/plugins/plugins.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" />
+        <option value="$PROJECT_DIR$/bin/testrun.sh" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -233,7 +279,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -279,53 +325,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailproc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value=".idea_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,15 +341,15 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.lastSelected" value="net.orfjackal.sbt.plugin.settings.SbtConfigurable" />
     <property name="project.structure.side.proportion" value="0.2511574" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -378,6 +378,17 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
+    <configuration default="true" type="ScalaCompilationServerRunConfiguration" factoryName="Scala Compilation Server">
+      <module name="" />
+      <setting name="vmparams" value="-XX:PermSize=128m" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="INTERPRETER_PATH" value="/bin/bash" />
@@ -387,17 +398,6 @@
       <module name="default-6e45cf" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ScalaCompilationServerRunConfiguration" factoryName="Scala Compilation Server">
-      <module name="" />
-      <setting name="vmparams" value="-XX:PermSize=128m" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -419,6 +419,19 @@
         <option name="SBT.BeforeRunTask" enabled="true" action="run" runInCurrentModule="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
       <module name="" />
       <setting name="path" value="" />
@@ -430,19 +443,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
@@ -529,21 +529,6 @@
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
       </method>
     </configuration>
-    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="SBT.BeforeRunTask" enabled="true" action="run" runInCurrentModule="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <module name="" />
       <setting name="path" value="" />
@@ -558,6 +543,21 @@
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
         <option name="SBT.BeforeRunTask" enabled="false" runInCurrentModule="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="SBT.BeforeRunTask" enabled="true" action="run" runInCurrentModule="true" />
       </method>
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
@@ -645,29 +645,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="720" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3255814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28754267" sideWeight="0.6604414" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32575142" sideWeight="0.6744186" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32331437" sideWeight="0.6710963" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JsTestDriver Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6710963" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -726,41 +726,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/prod-mailproc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="66" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mailproc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="66" selection-start="345" selection-end="345" vertical-scroll-proportion="0.04658385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/testutil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="65" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib_managed/srcs/org.scala-lang/scala-library/scala-library-2.9.0-1-sources.jar!/scala/App.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="1061" selection-end="1061" vertical-scroll-proportion="-1.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/EmailParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="7454" selection-end="7454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/FileHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="44" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" />
@@ -768,17 +733,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/TicketHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
+        <state line="10" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.041208792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/scala/MailParsingTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" />
+        <state line="3" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0397878" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/test-mailproc.properties">
+    <entry file="file://$PROJECT_DIR$/config/test-mailproc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
+        <state line="10" column="46" selection-start="550" selection-end="550" vertical-scroll-proportion="0.041208792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/initd.sh">
@@ -788,28 +753,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="75" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/UserCheck.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="130" selection-end="140" vertical-scroll-proportion="0.0">
+        <state line="71" column="42" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/db/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23154363">
+        <state line="59" column="56" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="51" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="100" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea_modules/project.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.74561405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/testrun.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="69" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/plugins/plugins.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -867,7 +881,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>project</last-edited>
+          <last-edited>default-6e45cf</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

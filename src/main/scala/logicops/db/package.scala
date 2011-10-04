@@ -9,7 +9,25 @@ import logicops.utils._
 
 package object db {
 
-  private val PROPS = findConfig("/database.properties")
+  private val database_conf = sys.props.get("database.config") match {
+    case Some(path) => {
+      val file = new File(path)
+      if (file == null || !file.isFile) {
+        sys.error("System property database.config points to invalid path: '%s'".format(path))
+        sys.exit(1)
+      } else {
+        file
+      }
+    }
+    case None => {
+      sys.error(
+        "System property database.config must point to the mailproc.properties configuration file"
+      )
+      sys.exit(1)
+    }
+  }
+
+  private val PROPS = loadConfig(database_conf)
 
   private val dbhost = sys.props.get("database-host").orElse(
     Some(PROPS.getProperty("database-host", "lw-logicops-dev1"))
@@ -26,10 +44,25 @@ package object db {
       getConnection(DB_USERNAME, "")
     }
   }
-  // private[db] val configFolder = new File("/sql")
-  val sql_uri = getClass.getResource("sql/")
-  println(sql_uri)
-  private[db] val configFolder  = new File(sql_uri.toURI)
+
+  private[db] val configFolder = sys.props.get("orbroker.sql") match {
+    case Some(path) => {
+      val file = new File(path)
+      if (file == null || !file.isDirectory) {
+        sys.error("System property orbroker.sql points to invalid path: '%s'".format(path))
+        sys.exit(1)
+      } else {
+        file
+      }
+    }
+    case None => {
+      sys.error(
+        "System property orbroker.sql must point to the directory containing sql files"
+      )
+      sys.exit(1)
+    }
+  }
+
   private[db] val builder = new BrokerBuilder(ds) with dynamic.FreeMarkerSupport
   FileSystemRegistrant(configFolder).register(builder)
   private[db] val tokens : List[TokenSet] = List(

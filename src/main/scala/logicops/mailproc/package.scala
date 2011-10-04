@@ -22,7 +22,7 @@ package object mailproc {
 
   case class ReloadComplete() extends MpMessage
 
-  case class StartWatch() extends MpMessage
+  case class ProcessFiles(num : Int) extends MpMessage
 
   case class StopWatch() extends MpMessage
 
@@ -58,7 +58,23 @@ package object mailproc {
 
   case class FileIgnored(file : File) extends MpMessage
 
-  val PROPS = findConfig("/mailproc.properties")
+  private val mailproc_conf = sys.props.get("mailproc.config") match {
+    case Some(path) => {
+      val file = new File(path)
+      if ( file == null || ! file.isFile ) {
+        sys.error("System property mailproc.config points to invalid path: '%s'".format(path))
+        sys.exit(1)
+      } else {
+        file
+      }
+    }
+    case None => {
+      sys.error("System property mailproc.config must point to the mailproc.properties configuration file")
+      sys.exit(1)
+    }
+  }
+
+  val PROPS = loadConfig(mailproc_conf)
 
   lazy val isProd = PROPS.getProperty("mode") == "prod"
   lazy val isTest = PROPS.getProperty("mode") == "test"
