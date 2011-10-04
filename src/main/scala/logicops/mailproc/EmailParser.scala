@@ -34,7 +34,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
       val regex = "[^\\p{ASCII}]".r
       val src = Source.fromFile(file, "utf-8")
       EventHandler.debug(this, "Making lines")
-      val lines = src.mkString
+      val lines = src.getLines().map(s => s.replaceAll("[^\\p{ASCII}]", "")).mkString
       EventHandler.debug(this, "Done making lines")
       src.close()
       val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
