@@ -19,14 +19,12 @@ class DirectoryWatcher(var directory : String) extends Actor {
     EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
-  lazy val cur_directory = "%s/%s".format(directory, "cur")
-
-  val directory_watch_interval = PROPS.getProperty("directory-watch-interval", "10000").toInt
+  lazy val new_directory = "%s/%s".format(directory, "new")
 
   def receive = {
     case ProcessFiles(num) => {
-      EventHandler.info(this, "Starting watching directory for new email: %s".format(cur_directory))
-      for (file <- new File(cur_directory).listFiles().take(num)) {
+      EventHandler.info(this, "Starting watching directory for new email: %s".format(new_directory))
+      for (file <- new File(new_directory).listFiles().take(num)) {
         // EventHandler.debug(this, "Parsing file: %s".format(file))
         if (emailParser.isRunning) {
           emailParser ! EmailFile(file)
