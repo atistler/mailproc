@@ -4,5 +4,6 @@ lib_managed/
 project/boot/
 project/target/
 bin/
+.idea/
 *.jar
 *.class
