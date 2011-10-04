@@ -23,13 +23,15 @@ class DirectoryWatcher(var directory : String) extends Actor {
 
   def receive = {
     case ProcessFiles(num) => {
-      EventHandler.info(this, "Starting watching directory for new email: %s".format(new_directory))
+      EventHandler.info(this, "Processing first %d files in %s".format(num, new_directory))
       for (file <- new File(new_directory).listFiles().take(num)) {
         // EventHandler.debug(this, "Parsing file: %s".format(file))
         if (emailParser.isRunning) {
           emailParser ! EmailFile(file)
         }
       }
+      EventHandler.info(this, "Done processing %d files in %s, notifying sender".format(num, new_directory))
+      self.reply(DoneProcessingFiles())
     }
     case _ => EventHandler.error(this, "Unknown message sent to DirectoryWatcher actor")
   }

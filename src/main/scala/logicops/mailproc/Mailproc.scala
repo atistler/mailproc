@@ -1,11 +1,11 @@
-package logicops.mailproc {
+package logicops.mailproc
 
 import akka.config.Supervision._
 import akka.actor._
 import akka.event.EventHandler
 import java.util.concurrent.TimeUnit
 import java.lang.Thread
-
+import collection.script.Start
 
 object MailProc extends App {
 
@@ -17,7 +17,8 @@ object MailProc extends App {
         Supervise(emailParser, Permanent),
         Supervise(ticketHandler, Permanent),
         Supervise(fileHandler, Permanent),
-        Supervise(directoryWatcher, Permanent)
+        Supervise(directoryWatcher, Permanent),
+        Supervise(mailproc, Permanent)
       )
     )
   )
@@ -32,33 +33,33 @@ object MailProc extends App {
     }
   })
 
-  supervisor.start
+  Thread.sleep(500)
 
-  val numFiles = 100
-  val waitInterval = 2000
+  supervisor.start
 
   /* Reload user email cache every X minutes */
   Scheduler.schedule(userCheck, Reload(), 1, 1, TimeUnit.MINUTES)
 
-  EventHandler.info(this, "Sending StartWatch() message to directoryWatcher")
-  directoryWatcher ! ProcessFiles(numFiles)
+  EventHandler.info(this, "Sending StartWatch() message to MailProc actor")
 
-  Thread.sleep(20000)
-
+  mailproc ! StartWatch()
 
 
-
-
-  /*
-  class ShutdownHandler extends sun.misc.SignalHandler {
-    def handle(sig : sun.misc.Signal) {
-      println("Shutting down")
-      registry.shutdownAll()
-    }
-  }
-
-  sun.misc.Signal.handle(new Signal("TERM"), new ShutdownHandler)
-  sun.misc.Signal.handle(new Signal("INT"), new ShutdownHandler)
-  */
 }
+
+class MailProc extends Actor {
+  val numFiles = PROPS.getProperty("max-process-emails", "100").toInt
+  val waitInterval = PROPS.getProperty("process-sleep", "20000").toLong
+
+  def receive = {
+    case StartWatch() => {
+       directoryWatcher ! ProcessFiles(numFiles)
+    }
+    case DoneProcessingFiles() => {
+      EventHandler.info(this, "Sleeping for %dms".format(waitInterval))
+      Thread.sleep(waitInterval)
+      directoryWatcher ! ProcessFiles(numFiles)
+    }
+    case _ => EventHandler.error(this, "Unknown message sent to MailProc actor")
+  }
 }

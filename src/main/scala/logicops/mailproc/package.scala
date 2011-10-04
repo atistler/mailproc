@@ -24,7 +24,9 @@ package object mailproc {
 
   case class ProcessFiles(num : Int) extends MpMessage
 
-  case class StopWatch() extends MpMessage
+  case class DoneProcessingFiles() extends MpMessage
+
+  case class StartWatch() extends MpMessage
 
   case class EmailFile(file : File) extends MpMessage
 
@@ -87,6 +89,7 @@ package object mailproc {
   private[mailproc] val fileHandler = actorOf(new FileHandler(maildir_directory))
   private[mailproc] val ticketHandler = actorOf(new TicketHandler)
   private[mailproc] val directoryWatcher = actorOf(new DirectoryWatcher(maildir_directory))
+  private[mailproc] val mailproc = actorOf(new MailProc)
 }
 
 }
