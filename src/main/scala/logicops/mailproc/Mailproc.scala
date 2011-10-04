@@ -4,6 +4,7 @@ import akka.config.Supervision._
 import akka.actor._
 import akka.event.EventHandler
 import java.util.concurrent.TimeUnit
+import java.lang.Thread
 
 
 object MailProc extends App {
@@ -31,13 +32,19 @@ object MailProc extends App {
   EventHandler.info(this, "Sending StartWatch() message to directoryWatcher")
   directoryWatcher ! ProcessFiles(numFiles)
 
-  Thread.sleep(2000)
+  Thread.sleep(20000)
 
-  EventHandler.info(this, "shutting down supervisor")
-  supervisor.shutdown()
+  sys.runtime.addShutdownHook(new Thread() {
+    override def run() {
+      EventHandler.info(this, "shutting down supervisor")
+      supervisor.shutdown()
 
-  EventHandler.info(this, "shutting down all remaining actors via registry")
-  Actor.registry.shutdownAll()
+      EventHandler.info(this, "shutting down all remaining actors via registry")
+      Actor.registry.shutdownAll()
+    }
+  })
+
+
 
   /*
   class ShutdownHandler extends sun.misc.SignalHandler {
