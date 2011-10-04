@@ -13,11 +13,9 @@ exit
 clean
 update
 console
-console-quick
-console
+compile
+update
+compile
+test
+gen-idea
 exit
-console
-compile
-test
-compile
-test
