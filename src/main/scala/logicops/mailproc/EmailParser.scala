@@ -27,9 +27,9 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
     EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
-
   def receive = {
     case EmailFile(file) => {
+      EventHandler.debug(this, "EmailParser processing file: %s".format(file.getName))
       val lines = Source.fromFile(file).mkString
       val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
 
