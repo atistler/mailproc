@@ -1,7 +1,6 @@
 package logicops.mailproc
 
 import akka.actor.Actor
-import io.Source
 import akka.event.EventHandler
 import logicops.db._
 import collection.mutable
@@ -10,6 +9,7 @@ import org.jsoup._
 import safety.{Whitelist, Cleaner}
 import javax.mail.internet.{InternetAddress, MimeMessage}
 import javax.mail.{MessagingException, Address, Multipart, Part, Message, Session => MailSession}
+import io.{Codec, Source}
 
 class EmailParser(val supportAddresses : Set[String]) extends Actor {
 
@@ -30,7 +30,10 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
   def receive = {
     case EmailFile(file) => {
       EventHandler.debug(this, "EmailParser processing file: %s".format(file.getName))
-      val lines = Source.fromFile(file).mkString
+
+      val src = Source.fromFile(file, "utf-8")
+      val lines = src.mkString
+      src.close()
       val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
 
       val from = message.getFrom
