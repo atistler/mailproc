@@ -31,8 +31,11 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
     case EmailFile(file) => {
       EventHandler.debug(this, "EmailParser processing file: %s".format(file.getName))
 
+      val regex = "[^\\p{ASCII}]".r
       val src = Source.fromFile(file, "utf-8")
+      EventHandler.debug(this, "Making lines")
       val lines = src.mkString
+      EventHandler.debug(this, "Done making lines")
       src.close()
       val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
 
