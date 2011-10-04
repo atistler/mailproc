@@ -1,9 +1,9 @@
 // set the name of the project
 name := "mailproc"
 
-version := "1.0"
+version := "0.1"
 
-organization := "net.logicworks"
+organization := "logicops"
 
 scalaVersion := "2.9.1"
 
