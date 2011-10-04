@@ -33,8 +33,11 @@ object MailProc extends App {
 
   Thread.sleep(2000)
 
-  EventHandler.info(this, "shutting down")
+  EventHandler.info(this, "shutting down supervisor")
   supervisor.shutdown()
+
+  EventHandler.info(this, "shutting down all remaining actors via registry")
+  Actor.registry.shutdownAll()
 
   /*
   class ShutdownHandler extends sun.misc.SignalHandler {
