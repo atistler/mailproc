@@ -4,12 +4,11 @@ import akka.actor.Actor
 import akka.event.EventHandler
 import logicops.db._
 import collection.mutable
-import java.io.{IOException, UnsupportedEncodingException, ByteArrayInputStream}
 import org.jsoup._
 import safety.{Whitelist, Cleaner}
 import javax.mail.internet.{InternetAddress, MimeMessage}
 import javax.mail.{MessagingException, Address, Multipart, Part, Message, Session => MailSession}
-import io.{Codec, Source}
+import java.io.{FileInputStream, IOException, UnsupportedEncodingException}
 
 class EmailParser(val supportAddresses : Set[String]) extends Actor {
 
@@ -31,13 +30,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
     case EmailFile(file) => {
       EventHandler.debug(this, "EmailParser processing file: %s".format(file.getName))
 
-      val regex = "[^\\p{ASCII}]".r
-      val src = Source.fromFile(file, "utf-8")
-      EventHandler.debug(this, "Making lines")
-      val lines = src.getLines().map(s => s.replaceAll("[^\\p{ASCII}]", "")).mkString
-      EventHandler.debug(this, "Done making lines")
-      src.close()
-      val message = new MimeMessage(EmailParser.session, new ByteArrayInputStream(lines.getBytes))
+      val message = new MimeMessage(EmailParser.session, new FileInputStream(file))
 
       val from = message.getFrom
       val to = message.getRecipients(Message.RecipientType.TO)
