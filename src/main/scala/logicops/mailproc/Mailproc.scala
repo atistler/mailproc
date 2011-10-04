@@ -23,7 +23,7 @@ object MailProc extends App {
   )
 
   sys.runtime.addShutdownHook(new Thread() {
-    def run() {
+    override def run() {
       EventHandler.info(this, "shutting down supervisor")
       supervisor.shutdown()
 
