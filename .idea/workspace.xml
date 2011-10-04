@@ -2,63 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc636249-7e4c-4c18-8502-5cfa9c3dbdd0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/conf/mailproc.properties" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/config/akka.conf" afterPath="$PROJECT_DIR$/config/akka.conf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/database.properties" afterPath="$PROJECT_DIR$/config/database.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/database.properties.link" afterPath="$PROJECT_DIR$/config/database.properties.link" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/dev-database.properties" afterPath="$PROJECT_DIR$/config/dev-database.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/dev-mailproc.properties" afterPath="$PROJECT_DIR$/config/dev-mailproc.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/mailproc.properties" afterPath="$PROJECT_DIR$/config/mailproc.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/prod-database.properties" afterPath="$PROJECT_DIR$/config/prod-database.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/prod-mailproc.properties" afterPath="$PROJECT_DIR$/config/prod-mailproc.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteAttributeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteAttributeByName.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteConnectionTypeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteConnectionTypeByName.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteNodeTypeByName.sql" afterPath="$PROJECT_DIR$/sql/deleteNodeTypeByName.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/deleteTemplateByName.sql" afterPath="$PROJECT_DIR$/sql/deleteTemplateByName.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertConnection.sql" afterPath="$PROJECT_DIR$/sql/insertConnection.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertConnectionType.sql" afterPath="$PROJECT_DIR$/sql/insertConnectionType.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNode.sql" afterPath="$PROJECT_DIR$/sql/insertNode.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNodeAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertNodeAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertNodeType.sql" afterPath="$PROJECT_DIR$/sql/insertNodeType.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertTemplate.sql" afterPath="$PROJECT_DIR$/sql/insertTemplate.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/insertTemplateAttribute.sql" afterPath="$PROJECT_DIR$/sql/insertTemplateAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectAttributeOptionsByAttributeId.sql" afterPath="$PROJECT_DIR$/sql/selectAttributeOptionsByAttributeId.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectConnectionByAll.sql" afterPath="$PROJECT_DIR$/sql/selectConnectionByAll.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeById.sql" afterPath="$PROJECT_DIR$/sql/selectNodeById.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeByIds.sql" afterPath="$PROJECT_DIR$/sql/selectNodeByIds.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeByNodeTypeAttribute.sql" afterPath="$PROJECT_DIR$/sql/selectNodeByNodeTypeAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodeTypesByPoolId.sql" afterPath="$PROJECT_DIR$/sql/selectNodeTypesByPoolId.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodesByConnectee.sql" afterPath="$PROJECT_DIR$/sql/selectNodesByConnectee.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectNodesByConnector.sql" afterPath="$PROJECT_DIR$/sql/selectNodesByConnector.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateById.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateById.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateByName.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateByName.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/selectTemplateByQuery.sql" afterPath="$PROJECT_DIR$/sql/selectTemplateByQuery.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateConnection.sql" afterPath="$PROJECT_DIR$/sql/updateConnection.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateConnectionType.sql" afterPath="$PROJECT_DIR$/sql/updateConnectionType.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateNodeAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateNodeAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateNodeType.sql" afterPath="$PROJECT_DIR$/sql/updateNodeType.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateTemplate.sql" afterPath="$PROJECT_DIR$/sql/updateTemplate.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/sql/updateTemplateAttribute.sql" afterPath="$PROJECT_DIR$/sql/updateTemplateAttribute.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmation-html-email.scaml" afterPath="$PROJECT_DIR$/templates/confirmation-html-email.scaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmation-plaintext-email.scaml" afterPath="$PROJECT_DIR$/templates/confirmation-plaintext-email.scaml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/test-mailproc.properties" afterPath="$PROJECT_DIR$/config/test-mailproc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IdeaProject.iml" afterPath="$PROJECT_DIR$/.idea/IdeaProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sbt-launch.jar" afterPath="$PROJECT_DIR$/bin/sbt-launch.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/default-6e45cf.iml" afterPath="$PROJECT_DIR$/.idea_modules/default-6e45cf.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/project.iml" afterPath="$PROJECT_DIR$/.idea_modules/project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins/plugins.sbt" afterPath="$PROJECT_DIR$/project/plugins/plugins.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/DirectoryWatcher.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/Mailproc.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/mailproc/package.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" afterPath="$PROJECT_DIR$/src/main/scala/logicops/utils/package.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/testutil.scala" afterPath="$PROJECT_DIR$/src/test/scala/testutil.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/sbt" afterPath="$PROJECT_DIR$/bin/sbt" />
     </list>
     <ignored path="mailproc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -229,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/logicops/utils/util/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/utils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/FileHandler.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/logicops/mailproc/EmailParser.scala" />
@@ -245,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/logicops/db/package.scala" />
         <option value="$PROJECT_DIR$/bin/testrun.sh" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/bin/sbt" />
       </list>
     </option>
   </component>
@@ -312,6 +258,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mailproc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailproc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailproc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,17 +604,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="720" extended-state="0" />
-    <editor active="false" />
+    <frame x="-31" y="22" width="1280" height="720" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28754267" sideWeight="0.6604414" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -667,7 +628,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.6710963" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986711" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -697,7 +657,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="initd" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to scala 2.9.1" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -717,6 +677,7 @@
     <MESSAGE value="Dao remove type" />
     <MESSAGE value="mail multipart parsing and tests" />
     <MESSAGE value="initd" />
+    <MESSAGE value="update to scala 2.9.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -726,11 +687,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/FileHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/logicops/mailproc/TicketHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="44" selection-start="286" selection-end="286" vertical-scroll-proportion="0.041208792" />
@@ -817,6 +773,13 @@
     <entry file="file://$PROJECT_DIR$/project/plugins/plugins.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="51" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
