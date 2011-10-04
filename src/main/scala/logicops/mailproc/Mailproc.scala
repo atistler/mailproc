@@ -30,15 +30,14 @@ object MailProc extends App {
 
       EventHandler.info(this, "shutting down all remaining actors via registry")
       Actor.registry.shutdownAll()
+      sys.exit()
     }
   })
-
-  Thread.sleep(500)
 
   supervisor.start
 
   /* Reload user email cache every X minutes */
-  Scheduler.schedule(userCheck, Reload(), 1, 1, TimeUnit.MINUTES)
+  Scheduler.schedule(userCheck, Reload(), 5, 5, TimeUnit.MINUTES)
 
   EventHandler.info(this, "Sending StartWatch() message to MailProc actor")
 
