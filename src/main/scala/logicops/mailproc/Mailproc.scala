@@ -5,7 +5,6 @@ import akka.actor._
 import akka.event.EventHandler
 import java.util.concurrent.TimeUnit
 import java.lang.Thread
-import collection.script.Start
 
 object MailProc extends App {
 
@@ -38,6 +37,9 @@ object MailProc extends App {
       sys.runtime.halt(0)
     }
   })
+
+  val mode = if ( isDev ) "Development" else if ( isTest ) "Test" else "Production"
+  EventHandler.info(this, "Starting Mailproc in %s mode".format(mode))
 
   val starter = supervisor.start
 
