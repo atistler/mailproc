@@ -176,7 +176,7 @@ Logicops NOC
       val html = new MimeBodyPart()
 
       plaintext.setContent(plaintext_content, "text/plain")
-      html.setContent(html_content, "text/html")
+      html.setContent(html_content.toString(), "text/html")
       multipart.addBodyPart(plaintext)
       multipart.addBodyPart(html)
       message.setContent(multipart)
