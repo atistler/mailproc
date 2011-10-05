@@ -43,7 +43,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
         to.find(a => supportAddresses.contains(prettyAddress(a))) match {
           /* To: lw-support or support */
           case Some(addr) => {
-            EventHandler.debug(this, "Sent to support address")
+            EventHandler.debug(this, "Sent to support address, from: " + from(0))
             val subject = message.getSubject
             val user_type = userCheck ? GetUserType(from(0))
             user_type.get match {
@@ -63,8 +63,15 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
                     EventHandler.info(this, "Sending msg to TicketHandler: %s".format(msg))
                     ticketHandler ! msg
                   }
-                  /* PrivilegedUser && No SR node_id in subject line: ignore */
-                  case _ =>
+                  /*
+                  *  PrivilegedUser && No SR node_id in subject line: ignore
+                  *  Note: This case could be used for API-like functionality to
+                  *  create SRs directly from emails sent from staff
+                  */
+                  case _ => {
+                    EventHandler.debug(this, "Email from privileged user, no SR in subject line, ignoring")
+                    fileHandler ! FileIgnored(file)
+                  }
                 }
               }
               case LwClientUser(addr, user) => {
@@ -98,7 +105,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
               /* Unknown user: ignore */
               case LwUnknownUser(addr) => {
                 EventHandler.debug(
-                  this, "Email from unknown user .. skipping\n" + EmailParser.emailFormat.format(
+                  this, "Email from unknown user, ignoring\n" + EmailParser.emailFormat.format(
                     subject, prettyAddress(from), prettyAddress(to)
                   )
                 )
