@@ -36,7 +36,7 @@ class FileHandler(directory : String) extends Actor {
     }
     case FileIgnored(file : File) => {
       val moveto = "%s/%s".format(ignoredDir, file.getName)
-      // EventHandler.debug(this, "Ignored email file: %s, moving to: %s".format(file.getName, moveto))
+      EventHandler.debug(this, "Ignored email file: %s, moving to: %s".format(file.getName, moveto))
       file.renameTo(new File(moveto))
     }
     case FileFailed(file : File, e : Exception) => {

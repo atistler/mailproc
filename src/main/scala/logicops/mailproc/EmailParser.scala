@@ -111,7 +111,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
           }
           /* Not sent to lw-support or support: ignore */
           case None => {
-            EventHandler.error(this, "Message not sent to support address, ignoring")
+            EventHandler.debug(this, "Message not sent to support address, ignoring")
             fileHandler ! FileIgnored(file)
           }
         }
