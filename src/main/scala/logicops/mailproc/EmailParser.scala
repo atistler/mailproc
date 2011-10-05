@@ -42,7 +42,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
       } else {
         to.find(a => supportAddresses.contains(prettyAddress(a))) match {
           /* To: lw-support or support */
-          case Some(a) => {
+          case Some(addr) => {
             val subject = message.getSubject
             val user_type = userCheck ? GetUserType(from(0))
             user_type.get match {
@@ -111,11 +111,13 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
           }
           /* Not sent to lw-support or support: ignore */
           case None => {
+            EventHandler.error(this, "Message not sent to support address, ignoring")
             fileHandler ! FileIgnored(file)
           }
         }
       }
     }
+    case _ => EventHandler.error(this, "Unknown message sent to EmailParser actor")
   }
 }
 

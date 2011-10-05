@@ -52,6 +52,7 @@ class FileHandler(directory : String) extends Actor {
       }
 
     }
+    case _ => EventHandler.error(this, "Unknown message sent to FileHandler actor")
   }
 
 }
