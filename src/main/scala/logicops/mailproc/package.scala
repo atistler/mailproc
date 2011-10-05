@@ -34,7 +34,7 @@ package object mailproc {
     user : Node, srNodeId : Int, subject : String, to : String, from : String, body : String, file : File
     ) extends MpMessage {
     override def toString = "%s(\n\tUser: %s, SR: %d, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n\n)".format(
-      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.substring(0, 30), file
+      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.take(30), file
     )
   }
 
@@ -42,7 +42,7 @@ package object mailproc {
     user : Node, srNodeId : Int, subject : String, to : String, from : String, body : String, file : File
     ) extends MpMessage {
     override def toString = "%s(\n\tUser: %s, SR: %d, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n)".format(
-      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.substring(0, 30), file
+      getClass.getName, user.valueOf("Name").get, srNodeId, to, from, subject, body.take(30), file
     )
   }
 
@@ -50,7 +50,7 @@ package object mailproc {
     user : Node, subject : String, to : String, from : String, body : String, file : File
     ) extends MpMessage {
     override def toString = "%s(\n\tUser: %s, To: %s, From: %s,\n\tSubject: %s,\n\tBody: %s\n\tFile: %s\n)".format(
-      getClass.getName, user.valueOf("Name").get, to, from, subject, body.substring(0, 30), file
+      getClass.getName, user.valueOf("Name").get, to, from, subject, body.take(30), file
     )
   }
 
@@ -89,7 +89,6 @@ package object mailproc {
   private[mailproc] val fileHandler = actorOf(new FileHandler(maildir_directory))
   private[mailproc] val ticketHandler = actorOf(new TicketHandler)
   private[mailproc] val directoryWatcher = actorOf(new DirectoryWatcher(maildir_directory))
-  private[mailproc] val mailproc = actorOf(new MailProc)
 }
 
 }

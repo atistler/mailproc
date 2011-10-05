@@ -17,48 +17,33 @@ object MailProc extends App {
         Supervise(emailParser, Permanent),
         Supervise(ticketHandler, Permanent),
         Supervise(fileHandler, Permanent),
-        Supervise(directoryWatcher, Permanent),
-        Supervise(mailproc, Permanent)
+        Supervise(directoryWatcher, Permanent)
       )
     )
   )
 
   sys.runtime.addShutdownHook(new Thread() {
     override def run() {
+      EventHandler.info(this, "shutting down schedulers")
+      userCheckScheduler.cancel(true)
+      directoryWatcherScheduler.cancel(true)
       EventHandler.info(this, "shutting down supervisor")
       supervisor.shutdown()
 
       EventHandler.info(this, "shutting down all remaining actors via registry")
       Actor.registry.shutdownAll()
-      sys.exit()
+      Actor.registry.actors.foreach(a => println("Actor %s is shutdown: %s".format(a, a.isShutdown)))
+      sys.runtime.exit(0)
     }
   })
 
-  supervisor.start
+  val starter = supervisor.start
 
   /* Reload user email cache every X minutes */
-  Scheduler.schedule(userCheck, Reload(), 5, 5, TimeUnit.MINUTES)
+  val userCheckScheduler = Scheduler.schedule(userCheck, Reload(), 5, 5, TimeUnit.MINUTES)
 
-  EventHandler.info(this, "Sending StartWatch() message to MailProc actor")
+  private val numFiles = PROPS.getProperty("max-process-emails", "100").toInt
+  private val waitInterval = PROPS.getProperty("process-sleep", "20").toInt
 
-  mailproc ! StartWatch()
-
-
-}
-
-class MailProc extends Actor {
-  val numFiles = PROPS.getProperty("max-process-emails", "100").toInt
-  val waitInterval = PROPS.getProperty("process-sleep", "20000").toLong
-
-  def receive = {
-    case StartWatch() => {
-       directoryWatcher ! ProcessFiles(numFiles)
-    }
-    case DoneProcessingFiles() => {
-      EventHandler.info(this, "Sleeping for %dms".format(waitInterval))
-      Thread.sleep(waitInterval)
-      directoryWatcher ! ProcessFiles(numFiles)
-    }
-    case _ => EventHandler.error(this, "Unknown message sent to MailProc actor")
-  }
+  val directoryWatcherScheduler = Scheduler.schedule(directoryWatcher, ProcessFiles(numFiles), 0, waitInterval, TimeUnit.MINUTES)
 }
