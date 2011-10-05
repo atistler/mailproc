@@ -43,6 +43,7 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
         to.find(a => supportAddresses.contains(prettyAddress(a))) match {
           /* To: lw-support or support */
           case Some(addr) => {
+            EventHandler.debug(this, "Sent to support address")
             val subject = message.getSubject
             val user_type = userCheck ? GetUserType(from(0))
             user_type.get match {
