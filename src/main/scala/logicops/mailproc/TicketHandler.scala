@@ -23,16 +23,16 @@ class TicketHandler extends Actor {
   }
 
   override def preStart() {
-    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
     EventHandler.debug(this, "Unassigned SRQ: " + unassignedSrq)
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {
-    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   private lazy val unassignedSrq = Node.find("User", "Name" -> "Unassigned").headOption match {
@@ -208,9 +208,6 @@ Logicops NOC
       EventHandler.debug(this, "Production mode disabled, not actually confirmation sending email")
     }
   }
-
-
-  EventHandler.info(this, "TicketHandler constructor initialized")
 
   private def withRollback(f : => Unit)(implicit savepoint : Savepoint, file : File) {
     try {

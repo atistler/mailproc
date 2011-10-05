@@ -15,15 +15,15 @@ class EmailParser(val supportAddresses : Set[String]) extends Actor {
   import EmailParser.prettyAddress
 
   override def preStart() {
-    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {
-    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   def receive = {

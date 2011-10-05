@@ -9,6 +9,11 @@ import collection.script.Start
 
 object MailProc extends App {
 
+  private val emailBucketSize = PROPS.getProperty("email-bucket-size", "100").toInt
+  private val emailProcessDelay = PROPS.getProperty("email-process-delay", "20").toInt
+  private val userReloadInterval = PROPS.getProperty("user-reload-interval", "10").toInt
+
+
   private[mailproc] val supervisor = Supervisor(
     SupervisorConfig(
       OneForOneStrategy(List(classOf[Exception]), 3, 5000),
@@ -29,21 +34,15 @@ object MailProc extends App {
       directoryWatcherScheduler.cancel(true)
       EventHandler.info(this, "shutting down supervisor")
       supervisor.shutdown()
-
-      EventHandler.info(this, "shutting down all remaining actors via registry")
-      Actor.registry.shutdownAll()
-      Actor.registry.actors.foreach(a => println("Actor %s is shutdown: %s".format(a, a.isShutdown)))
-      sys.runtime.exit(0)
+      Thread.sleep(500)
+      sys.runtime.halt(0)
     }
   })
 
   val starter = supervisor.start
 
   /* Reload user email cache every X minutes */
-  val userCheckScheduler = Scheduler.schedule(userCheck, Reload(), 5, 5, TimeUnit.MINUTES)
+  val userCheckScheduler = Scheduler.schedule(userCheck, Reload(), userReloadInterval, userReloadInterval, TimeUnit.MINUTES)
 
-  private val numFiles = PROPS.getProperty("max-process-emails", "100").toInt
-  private val waitInterval = PROPS.getProperty("process-sleep", "20").toInt
-
-  val directoryWatcherScheduler = Scheduler.schedule(directoryWatcher, ProcessFiles(numFiles), 0, waitInterval, TimeUnit.MINUTES)
+  val directoryWatcherScheduler = Scheduler.schedule(directoryWatcher, ProcessFiles(emailBucketSize), 0, emailProcessDelay, TimeUnit.SECONDS)
 }

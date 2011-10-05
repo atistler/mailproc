@@ -11,7 +11,7 @@ class FileHandler(directory : String) extends Actor {
   private val ignoredDir = "%s/%s".format(directory, "ignored")
 
   override def preStart() {
-    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
     for (dir <- List(successDir, failedDir, ignoredDir)) {
       if (!new File(dir).isDirectory) {
         EventHandler.info(this, "Directory: %s does not exist, creating it now".format(dir))
@@ -21,14 +21,12 @@ class FileHandler(directory : String) extends Actor {
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {
-    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
-
-  EventHandler.info(this, "FileHandler constructor initialized")
 
   def receive = {
     case FileSuccess(file : File) => {

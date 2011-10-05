@@ -10,8 +10,6 @@ class UserCheck extends Actor {
   val privileged_user_emails = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
   val client_user_emails = new mutable.HashMap[String, Node] with mutable.SynchronizedMap[String, Node]
 
-  EventHandler.info(this, "Usercheck constuctor initialized")
-
   private def doLoad() {
     EventHandler.info(this, "Reloading privileged user email cache")
     val start = System.currentTimeMillis()
@@ -56,16 +54,16 @@ class UserCheck extends Actor {
   }
 
   override def preStart() {
-    EventHandler.info(this, "preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preStart() Actor %s %s".format(self.getClass.getName, self.uuid))
     doLoad()
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.info(this, "preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {
-    EventHandler.info(this, "postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.debug(this, "In postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
   def receive = {
