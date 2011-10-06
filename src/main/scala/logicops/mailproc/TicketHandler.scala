@@ -71,15 +71,29 @@ class TicketHandler extends Actor {
     emailNode.setAttr("Name", subject)
       .setAttr("Computed Recipients", to)
       .setAttr("Email Subject", subject)
+  }
 
+  private def getAddresses(addrs : Option[String]*) = {
+    addrs.foldLeft(List.empty[Address]) {
+      (l, a) => InternetAddress.parse(a.getOrElse("")).toList ::: l
+    }
+  }
+
+  private def getEmailSession = {
+    val props = new Properties()
+    props.put("mail.smtp.auth", "true")
+    props.put("mail.smtp.starttls.enable", "true")
+    val session = Session.getInstance(props)
+    if (isProd) {
+      session.getTransport("smtp").connect(
+        PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
+        PROPS.getProperty("smtp-pass")
+      )
+    }
+    session
   }
 
   private def sendConfirmEmail(user : Node, serviceRequest : Node, subject : String) {
-    def getAddresses(addrs : Option[String]*) = {
-      addrs.foldLeft(List.empty[Address]) {
-        (l, a) => InternetAddress.parse(a.getOrElse("")).toList ::: l
-      }
-    }
 
     def getConfirmUrl(serviceRequest : Node) = {
       val confirm_token = UUID.randomUUID().toString
@@ -185,17 +199,8 @@ Logicops NOC
       message
     }
 
-    val props = new Properties()
-    props.put("mail.smtp.auth", "true")
-    props.put("mail.smtp.starttls.enable", "true")
-    val session = Session.getInstance(props)
+    val session = getEmailSession
 
-    if (isProd) {
-      session.getTransport("smtp").connect(
-        PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
-        PROPS.getProperty("smtp-pass")
-      )
-    }
     val message = buildMessage(session, user, getConfirmUrl(serviceRequest))
     EventHandler.info(
       this, "Sending New SR confirmation email to: %s, %s".format(user.valueOf("Name"), user.valueOf("Email Address"))
@@ -208,6 +213,106 @@ Logicops NOC
       Transport.send(message);
     } else {
       EventHandler.debug(this, "Production mode disabled, not actually confirmation sending email")
+    }
+  }
+
+  private def sendReopenedEmail(user : Node, serviceRequest : Node, subject : String) {
+
+    def buildMessage(session : Session, user : Node, serviceRequest : Node, subject : String) = {
+      val message = new MimeMessage(session)
+      message.setFrom(new InternetAddress(PROPS.getProperty("confirm-email-from")))
+
+      message.setSubject("Re: %s (SR 3-%d) [Reopened Closed SR]".format(subject, serviceRequest.id.get))
+
+      val to = getAddresses(user.valueOf("Email Address"), user.valueOf("Alternate Email Address"))
+      if (isProd) {
+        message.setRecipients(Message.RecipientType.TO, to.toArray)
+        if (PROPS.getProperty("confirm-email-bcc", "") != "") {
+          message.setRecipients(
+            Message.RecipientType.BCC,
+            InternetAddress.parse(PROPS.getProperty("confirm-email-bcc")).map(_.asInstanceOf[Address]).toArray
+          )
+        }
+      } else if (isTest) {
+        message.setRecipients(
+          Message.RecipientType.TO,
+          InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
+        )
+      } else if (isDev) {
+        message.setRecipients(
+          Message.RecipientType.TO,
+          InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
+        )
+      }
+
+      def getPlainText(user : Node, serviceRequest : Node, f : Boolean => String) = {
+        "%s,\n\n%s has been reopened, and has been assigned to you\n\n%s".format(
+          user.valueOf("Name").get, serviceRequest.valueOf("Name").get, f(isDev || isTest)
+        )
+      }
+
+      def getHtmlContent(user : Node, serviceRequest : Node, f : Boolean => xml.Node) : xml.Node = {
+        <html>
+          <body>
+            <p>
+              {user.valueOf("Name").get}
+              ,</p>
+            <p>
+              {serviceRequest.valueOf("Name").get}
+              has been reopened, and has been assigned to you
+            </p>{f(isDev || isTest)}
+          </body>
+        </html>
+      }
+
+      val plaintext_content = getPlainText(
+      user, serviceRequest, {
+        debug =>
+          if (debug) "\n\nRecipient List:\n\tTo: %s\n".format(
+            to.mkString(", ")
+          )
+          else ""
+      }
+      )
+
+      val html_content = getHtmlContent(
+      user, serviceRequest, {
+        debug =>
+          if (debug) <p>Recipient List:
+              <br/>
+            To:
+            {to.mkString(", ")}<br/>
+          </p>
+          else <p></p>
+      }
+      )
+
+      val multipart = new MimeMultipart("alternative")
+      val plaintext = new MimeBodyPart()
+      val html = new MimeBodyPart()
+
+      plaintext.setContent(plaintext_content, "text/plain")
+      html.setContent(html_content.toString(), "text/html")
+      multipart.addBodyPart(plaintext)
+      multipart.addBodyPart(html)
+      message.setContent(multipart)
+      message
+    }
+    val session = getEmailSession
+    val message = buildMessage(session, user, serviceRequest, subject)
+
+    EventHandler.info(
+      this,
+      "Sending reopened SR notification email to: %s, %s".format(user.valueOf("Name"), user.valueOf("Email Address"))
+    )
+    val bao = new ByteArrayOutputStream
+    message.writeTo(bao)
+    EventHandler.debug(this, bao.toString)
+    if (isProd) {
+      EventHandler.debug(this, "Production mode enable, sending SR reopened email")
+      Transport.send(message);
+    } else {
+      EventHandler.debug(this, "Production mode disabled, NOT actually sending SR reopened email")
     }
   }
 
@@ -252,17 +357,22 @@ Logicops NOC
                   }
                   sr_node.connect("Assigned To", user)
                     .connect("Child", user.serviceRequestQueue.get)
+                  sendReopenedEmail(sr_node, user, subject)
                 }
                 addToStorage(email, body, file)
                 fileHandler ! FileSuccess(file)
               }
               case None => {
-                fileHandler ! FileFailed(file, new IllegalStateException("Could not get status for SR: %d".format(sr_node_id)))
+                fileHandler ! FileFailed(
+                  file, new IllegalStateException("Could not get status for SR: %d".format(sr_node_id))
+                )
               }
             }
           }
           case None => {
-            fileHandler ! FileFailed(file, new IllegalStateException("Could not fetch SR denoted in subject line: %d".format(sr_node_id)))
+            fileHandler ! FileFailed(
+              file, new IllegalStateException("Could not fetch SR denoted in subject line: %d".format(sr_node_id))
+            )
           }
         }
       }
@@ -289,28 +399,32 @@ Logicops NOC
               case Some(status) => {
                 if (SR_CLOSED_STATUSES.contains(status)) {
                   EventHandler.info(
-                    this, "Reopening closed SR: %s, assigning to: %s".format(
-                      sr_node.valueOf("Name").get, user.valueOf("Name").get
+                    this, "Reopening closed SR: %s".format(
+                      sr_node.valueOf("Name").get
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                    .connectors.having(List(ConnectionType.get("Assigned To")), List(NodeType.get("User")))
-                    .foreach {
-                    case (nid : Int, n : Node) => sr_node.break("Assigned To", n)
+                  sr_node.connectees.having("Assigned To", "User").headOption match {
+                    case Some((node_id, user_node)) => {
+                      sendReopenedEmail(user_node, sr_node, subject)
+                    }
+                    case None =>
                   }
-                  sr_node.connect("Assigned To", user)
-                    .connect("Child", user.serviceRequestQueue.get)
                 }
                 addToStorage(email, body, file)
                 fileHandler ! FileSuccess(file)
               }
               case None => {
-                fileHandler ! FileFailed(file, new IllegalStateException("Could not get sr status of sr node_id: %d".format(sr_node_id)))
+                fileHandler ! FileFailed(
+                  file, new IllegalStateException("Could not get sr status of sr node_id: %d".format(sr_node_id))
+                )
               }
             }
           }
           case None => {
-            fileHandler ! FileFailed(file, new IllegalStateException("Could not get sr node_id in subject line: %d".format(sr_node_id)))
+            fileHandler ! FileFailed(
+              file, new IllegalStateException("Could not get sr node_id in subject line: %d".format(sr_node_id))
+            )
           }
         }
       }
