@@ -59,7 +59,7 @@ class UserCheck extends Actor {
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.error(reason, this, "Actor %s %s, restarted".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {

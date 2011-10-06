@@ -4,14 +4,16 @@ import akka.actor.Actor
 import akka.event.EventHandler
 import logicops.db._
 import java.util.{UUID, Properties}
-import javax.mail._
-import internet._
 import java.sql.Savepoint
-import java.lang.IllegalStateException
 import java.io.{ByteArrayOutputStream, File}
 import org.apache.commons.io.FileUtils
+import javax.mail._
+import internet.{MimeBodyPart, MimeMultipart, MimeMessage, InternetAddress}
+import java.lang.IllegalStateException
 
 class TicketHandler extends Actor {
+
+  private val SR_CLOSED_STATUSES = Set("Closed", "Cancelled")
 
   implicit def Node2HasSRQ(node : Node) = {
     new {
@@ -28,7 +30,7 @@ class TicketHandler extends Actor {
   }
 
   override def preRestart(reason : Throwable) {
-    EventHandler.debug(this, "In preRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
+    EventHandler.error(reason, this, "Actor %s %s, restarted".format(self.getClass.getName, self.uuid))
   }
 
   override def postRestart(reason : Throwable) {
@@ -237,7 +239,7 @@ Logicops NOC
             )
             sr_node.valueOf("Service Request Status") match {
               case Some(status) => {
-                if (status == "Closed" || status == "Cancelled") {
+                if (SR_CLOSED_STATUSES.contains(status)) {
                   EventHandler.info(
                     this, "Reopening closed SR: %s, assigning to: %s".format(
                       sr_node.valueOf("Name").get, user.valueOf("Name").get
@@ -255,19 +257,17 @@ Logicops NOC
                 fileHandler ! FileSuccess(file)
               }
               case None => {
-                val msg = "Could not get status for SR: %d".format(sr_node_id)
-                throw new IllegalStateException(msg)
+                fileHandler ! FileFailed(file, new IllegalStateException("Could not get status for SR: %d".format(sr_node_id)))
               }
             }
           }
           case None => {
-            val msg = "Could not fetch SR denoted in subject line: %d".format(sr_node_id)
-            throw new IllegalStateException(msg)
+            fileHandler ! FileFailed(file, new IllegalStateException("Could not fetch SR denoted in subject line: %d".format(sr_node_id)))
           }
         }
       }
     }
-    case AddIncomingEmail(user, sr_node_id, subject, to, from, body, file) => {
+    case AddIncomingEmail(user, sr_node_id, subject, to, from, body, file, hidden) => {
       implicit val savepoint = Database.getConnection.setSavepoint()
       implicit val email_file = file
       withRollback {
@@ -281,9 +281,13 @@ Logicops NOC
             val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
               .connect("Created By", user)
               .connect("Child", sr_node)
+
+            if (hidden) {
+              email.setAttr("Visibility Level", "-128")
+            }
             sr_node.valueOf("Service Request Status") match {
               case Some(status) => {
-                if (status == "Closed" || status == "Cancelled") {
+                if (SR_CLOSED_STATUSES.contains(status)) {
                   EventHandler.info(
                     this, "Reopening closed SR: %s, assigning to: %s".format(
                       sr_node.valueOf("Name").get, user.valueOf("Name").get
@@ -301,14 +305,12 @@ Logicops NOC
                 fileHandler ! FileSuccess(file)
               }
               case None => {
-                val msg = "Could not get sr status of sr node_id: %d\".format(sr_node_id)"
-                throw new IllegalStateException(msg)
+                fileHandler ! FileFailed(file, new IllegalStateException("Could not get sr status of sr node_id: %d".format(sr_node_id)))
               }
             }
           }
           case None => {
-            val msg = "Could not get sr node_id in subject line: %d".format(sr_node_id)
-            throw new IllegalStateException(msg)
+            fileHandler ! FileFailed(file, new IllegalStateException("Could not get sr node_id in subject line: %d".format(sr_node_id)))
           }
         }
       }
