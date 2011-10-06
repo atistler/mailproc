@@ -401,6 +401,7 @@ Logicops NOC
                   EventHandler.info(
                     this, "Reopening closed SR: %s".format(
                       sr_node.valueOf("Name").get
+
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
