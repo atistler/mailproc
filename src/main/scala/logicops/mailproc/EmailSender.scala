@@ -95,7 +95,7 @@ Logicops NOC
       } else if (isDev) {
         message.setRecipients(
           Message.RecipientType.TO,
-          InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
+          InternetAddress.parse(PROPS.getProperty("dev-mode-recipient")).map(_.asInstanceOf[Address]).toArray
         )
       }
 
@@ -177,7 +177,7 @@ Logicops NOC
       } else if (isDev) {
         message.setRecipients(
           Message.RecipientType.TO,
-          InternetAddress.parse(PROPS.getProperty("test-mode-recipient")).map(_.asInstanceOf[Address]).toArray
+          InternetAddress.parse(PROPS.getProperty("dev-mode-recipient")).map(_.asInstanceOf[Address]).toArray
         )
       }
 
