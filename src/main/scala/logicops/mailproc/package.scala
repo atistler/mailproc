@@ -54,6 +54,10 @@ package object mailproc {
     )
   }
 
+  case class SendReopenedEmail(user : Node, serviceRequest : Node, subject : String)
+
+  case class SendConfirmEmail(user : Node, serviceRequest : Node, subject : String)
+
   case class FileSuccess(file : File) extends MpMessage
 
   case class FileFailed(file : File, e : Exception) extends MpMessage
@@ -89,6 +93,7 @@ package object mailproc {
   private[mailproc] val emailParser = actorOf(new EmailParser(support_addresses, internal_addresses))
   private[mailproc] val fileHandler = actorOf(new FileHandler(maildir_directory))
   private[mailproc] val ticketHandler = actorOf(new TicketHandler)
+  private[mailproc] val emailSender = actorOf(new EmailSender)
   private[mailproc] val directoryWatcher = actorOf(new DirectoryWatcher(maildir_directory))
 }
 
