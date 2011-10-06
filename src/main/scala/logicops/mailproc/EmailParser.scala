@@ -212,10 +212,10 @@ object EmailParser {
         }
       } catch {
         case e : UnsupportedEncodingException => EventHandler.error(
-          this, "UnsupportedEncodingException: " + e.getStackTraceString
+          e, this, "UnsupportedEncodingException parsing email"
         )
-        case e : MessagingException => EventHandler.error(this, "MessagingException: " + e.getStackTraceString)
-        case e : IOException => EventHandler.error(this, "IOException: " + e.getStackTraceString)
+        case e : MessagingException => EventHandler.error(e, this, "MessagingException parsing email")
+        case e : IOException => EventHandler.error(e, this, "IOException parsing email")
       }
     }
     findMimeTypeHelper(part, mimeTypes : _*)
