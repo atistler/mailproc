@@ -4,13 +4,20 @@
 # description: mailproc daemon script
 #
 #
- 
+
+#APP_HOME=/usr/local/mailproc
+#java \
+#-Dmailproc.config=$APP_HOME/config/test-mailproc.properties \
+#-Ddatabase.config=$APP_HOME/config/database.properties \
+#-Dakka.config=$APP_HOME/config/akka.conf \
+#-Dorbroker.sql=$APP_HOME/sql/ \
+#-jar $APP_HOME/target/scala-2.9.1/mailproc_2.9.1-0.1-one-jar.jar
 
 JAVA_HOME=/usr
 SERVICE="mailproc"                                  # service name with the first letter in lowercase
 SERVICE_NAME="MailProc"                                    # service name
-SERVICE_USER="appuser"                                      # OS user name for the service
-SERVICE_GROUP="appgroup"                                    # OS group name for the service
+SERVICE_USER="root"                                      # OS user name for the service
+SERVICE_GROUP="root"                                    # OS group name for the service
 APP_DIR="/usr/local/$SERVICE"                          # home directory of the service application
 SERVICE_HOME="/home/$SERVICE_USER"                       # home directory of the service user
 SERVICE_LOG_FILE="/var/log/$SERVICE.log"               # log file for StdOut/StdErr
@@ -18,7 +25,11 @@ MAX_SHUTDOWN_TIME=15                                         # maximum number of
 PID_FILE="/var/run/$SERVICE.pid"                      # name of PID file (PID = process ID number)
 JAVA_COMMAND="java"                                         # name of the Java launcher without the path
 JAVA_EXE="$JAVA_HOME/bin/$JAVA_COMMAND"                      # file name of the Java application launcher executable
-JAVA_ARGS="-jar $APP_DIR/mailproc.jar"                     # arguments for Java launcher
+JAVA_ARGS="-Dmailproc.config=$APP_DIR/config/test-mailproc.properties \
+           -Ddatabase.config=$APP_DIR/config/database.properties \
+           -Dakka.config=$APP_DIR/config/akka.conf \
+           -Dorbroker.sql=$APP_DIR/sql/ \
+           -jar $APP_DIR/bin/mailproc.jar"                     # arguments for Java launcher
 JAVA_COMMANDLINE="$JAVA_EXE $JAVA_ARGS"                       # command line to start the Java service application
 JAVA_COMMANDLINEKEYWORD="mailproc.jar"                     # a keyword that occurs on the commandline, used to detect an already running service process and to distinguish it from others
  
