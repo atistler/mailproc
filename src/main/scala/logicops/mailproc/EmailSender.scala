@@ -160,15 +160,15 @@ Logicops NOC
       val message = new MimeMessage(session)
       message.setFrom(new InternetAddress(PROPS.getProperty("confirm-email-from")))
 
-      message.setSubject("Re: %s (SR 3-%d) [Reopened Closed SR]".format(subject, serviceRequest.id.get))
+      message.setSubject("Re: %s (SR 3-%d) [Reopened]".format(subject, serviceRequest.id.get))
 
       val to = getAddresses(user.valueOf("Email Address"), user.valueOf("Alternate Email Address"))
       if (isProd) {
         message.setRecipients(Message.RecipientType.TO, to.toArray)
-        if (PROPS.getProperty("confirm-email-bcc", "") != "") {
+        if (PROPS.getProperty("notify-bcc", "") != "") {
           message.setRecipients(
             Message.RecipientType.BCC,
-            InternetAddress.parse(PROPS.getProperty("confirm-email-bcc")).map(_.asInstanceOf[Address]).toArray
+            InternetAddress.parse(PROPS.getProperty("notify-bcc")).map(_.asInstanceOf[Address]).toArray
           )
         }
       } else if (isTest) {
