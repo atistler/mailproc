@@ -55,7 +55,7 @@ class EmailParser(val supportAddresses : Set[String], val internalAddresses : Se
         }
       }
       case _ => {
-        EventHandler.debug(this, "Internal email sent from non-privileged or unknown user, ignoring")
+        EventHandler.debug(this, "Internal email sent from non-privileged or unknown user %s, ignoring".format(from(0)))
         fileHandler ! FileIgnored(file)
       }
     }
