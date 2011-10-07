@@ -116,7 +116,7 @@ class TicketHandler extends Actor {
                   }
                   sr_node.connect("Assigned To", user)
                     .connect("Child", user.serviceRequestQueue.get)
-                  emailSender ! SendReopenedEmail(sr_node, user, subject)
+                  emailSender ! SendReopenedEmail(user, sr_node, subject)
                 }
                 addToStorage(email, body, file)
                 fileHandler ! FileSuccess(file)
