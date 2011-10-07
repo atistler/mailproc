@@ -178,6 +178,10 @@ class EmailParser(val supportAddresses : Set[String], val internalAddresses : Se
 
 object EmailParser {
 
+  val session = MailSession.getDefaultInstance(System.getProperties);
+  private val SrSubject = """.*SR \d-(\d{6,}).*""".r
+  private val emailFormat = "\tSubject:\t%s\n\tFrom:\t\t%s\n\tTo:\t\t%s"
+
   def getPlainTextContent(parts : mutable.Map[String, Part]) : String = {
     parts.get("text/plain") match {
       case Some(part) => part.getContent.toString
@@ -230,7 +234,5 @@ object EmailParser {
     new InternetAddress(address.toString).getAddress.toLowerCase
   }
 
-  val session = MailSession.getDefaultInstance(System.getProperties);
-  private val SrSubject = """.*SR \d-(\d{6,}).*""".r
-  private val emailFormat = "\tSubject:\t%s\n\tFrom:\t\t%s\n\tTo:\t\t%s"
+
 }

@@ -69,6 +69,7 @@ class UserCheck extends Actor {
   def receive = {
     case GetUserType(addr) => {
       val raw_address = EmailParser.prettyAddress(addr)
+      EventHandler.debug(this, "Checking type of address: %s".format(raw_address))
       if (privileged_user_emails.contains(raw_address)) {
         self reply LwPrivilegedUser(raw_address, privileged_user_emails(raw_address))
       } else if (client_user_emails.contains(raw_address)) {
