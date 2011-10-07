@@ -19,3 +19,6 @@ compile
 test
 gen-idea
 exit
+one-jar
+exit
+run
