@@ -12,6 +12,7 @@ class NodeTest extends Specification {
     val n1 = Node.get(527321)
   }
 
+
   "The node with id 527321" should {
     "have node_id of 527321" in new n1 {
       n1.id must_== Some(527321)

@@ -19,6 +19,8 @@ class EmailSender extends Actor {
     val props = new Properties()
     props.put("mail.smtp.auth", "true")
     props.put("mail.smtp.starttls.enable", "true")
+    props.put("mail.smtp.connectiontimeout", "5000")  /* 	Socket connection timeout value in milliseconds. Default is infinite timeout. */
+    props.put("mail.smtp.timeout", "5000") /* Socket I/O timeout value in milliseconds. Default is infinite timeout. */
     val session = Session.getInstance(props)
     if (isProd) {
       session.getTransport("smtp").connect(
@@ -252,8 +254,12 @@ Logicops NOC
     }
   }
   def receive = {
-    case SendReopenedEmail(user, serviceRequest, subject) => sendReopenedEmail(user, serviceRequest, subject)
-    case SendConfirmEmail(user, serviceRequest, subject) => sendConfirmEmail(user, serviceRequest, subject)
+    case SendReopenedEmail(user, serviceRequest, subject) => {
+      sendReopenedEmail(user, serviceRequest, subject)
+    }
+    case SendConfirmEmail(user, serviceRequest, subject) => {
+      sendConfirmEmail(user, serviceRequest, subject)
+    }
     case x => EventHandler.error(this, "Unknown message sent to EmailSender: %s".format(x))
   }
 }
