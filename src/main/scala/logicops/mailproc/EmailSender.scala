@@ -22,6 +22,7 @@ class EmailSender extends Actor {
     props.put("mail.smtp.connectiontimeout", "5000")  /* 	Socket connection timeout value in milliseconds. Default is infinite timeout. */
     props.put("mail.smtp.timeout", "5000") /* Socket I/O timeout value in milliseconds. Default is infinite timeout. */
     val session = Session.getInstance(props)
+
     if (isProd || isTest) {
       session.getTransport("smtp").connect(
         PROPS.getProperty("smtp-host"), PROPS.getProperty("smtp-port").toInt, PROPS.getProperty("smtp-user"),
