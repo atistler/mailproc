@@ -29,11 +29,9 @@ object MailProc extends App {
 
   val PROPS = loadConfig(mailproc_conf)
 
-
-
   lazy val isProd = PROPS.getProperty("mode") == "prod"
   lazy val isTest = PROPS.getProperty("mode") == "test"
-  lazy val isDev = PROPS.getProperty("mode") == "dev" || !isProd || !isTest
+  lazy val isDev = PROPS.getProperty("mode") == "dev" || !(isProd && isTest)
 
   private[mailproc] val maildir_directory = PROPS.getProperty("maildir-directory")
   private[mailproc] val support_addresses = PROPS.getProperty("support-addresses").split(",").map(_.trim()).toSet
