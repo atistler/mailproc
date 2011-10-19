@@ -35,18 +35,19 @@ class TicketHandler extends Actor {
     EventHandler.debug(this, "In postRestart() Actor %s %s".format(self.getClass.getName, self.uuid))
   }
 
-  private lazy val unassignedSrq = Node.find("User", "Name" -> "Unassigned").headOption match {
-    case Some(node : Node) => {
-      node.serviceRequestQueue match {
-        case Some(srq : Node) => {
-          srq
-        }
-        case None => throw new NoSuchElementException(
-          "Could not find SRQ under user: %s".format(node.valueOf("Name").get)
-        )
-      }
+  private lazy val unassignedUser = Node.find("User", "Name" -> "Unassigned").headOption match {
+    case Some(user : Node) => {
+      user
     }
     case None => throw new NoSuchElementException("Could not find 'Unassigned' user")
+  }
+  private lazy val unassignedSrq = unassignedUser.serviceRequestQueue match {
+    case Some(srq : Node) => {
+      srq
+    }
+    case None => throw new NoSuchElementException(
+      "Could not find SRQ under user: %s".format(unassignedUser.valueOf("Name").get)
+    )
   }
 
 
@@ -72,11 +73,10 @@ class TicketHandler extends Actor {
   }
 
 
-
   private def withRollback(f : => Unit)(implicit savepoint : Savepoint, file : File) {
     try {
       f
-      if ( isTest || isProd ) {
+      if (isTest || isProd) {
         EventHandler.debug(this, "Committing transaction for file: %s".format(file))
         Database.getConnection.commit()
       }
@@ -204,7 +204,9 @@ class TicketHandler extends Actor {
           .connect("Assigned To", unassignedSrq)
           .connect("Child", user)
         EventHandler.info(
-          this, "Creating new SR: %s, assigning to: %s".format(sr_node.valueOf("Name").get, user.valueOf("Name").get)
+          this, "Creating new SR: %s, assigning to: %s".format(
+            sr_node.valueOf("Name").get, unassignedUser.valueOf("Name").get
+          )
         )
         EventHandler.info(
           this, "Creating new Incoming Email under: %s, created by: %s".format(
