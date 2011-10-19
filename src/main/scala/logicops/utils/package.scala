@@ -6,11 +6,11 @@ import akka.event.EventHandler
 
 package object utils {
   def loadConfig(file : File) = {
-    EventHandler.debug(this, "Loading configuration: %s".format(file))
+    EventHandler.info(this, "Loading configuration: %s".format(file))
     val props = new Properties()
     try {
       props.load(new FileInputStream(file))
-      EventHandler.debug(this, props)
+      EventHandler.info(this, props)
     } catch {
       case e : Exception => {
         sys.error("Could not load properties file from filepath: " + file)

@@ -33,6 +33,10 @@ object MailProc extends App {
   lazy val isTest = PROPS.getProperty("mode") == "test"
   lazy val isDev = PROPS.getProperty("mode") == "dev" || !(isProd && isTest)
 
+  EventHandler.info(this, "MailProc is configured to run in %s mode".format(
+    if ( isProd ) "PRODUCTION" else if (isTest) "TEST" else "DEVELOPMENT"
+  ))
+
   private[mailproc] val maildir_directory = PROPS.getProperty("maildir-directory")
   private[mailproc] val support_addresses = PROPS.getProperty("support-addresses").split(",").map(_.trim()).toSet
   private[mailproc] val internal_addresses = PROPS.getProperty("internal-addresses").split(",").map(_.trim()).toSet
