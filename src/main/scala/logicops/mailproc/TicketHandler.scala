@@ -76,7 +76,9 @@ class TicketHandler extends Actor {
   private def withRollback(f : => Unit)(implicit savepoint : Savepoint, file : File) {
     try {
       f
-      Database.getConnection.commit()
+      if ( isTest || isProd ) {
+        Database.getConnection.commit()
+      }
     } catch {
       case e : Exception => {
         Database.getConnection.rollback(savepoint)
