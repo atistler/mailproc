@@ -29,7 +29,7 @@ object MailProc extends App {
 
   val PROPS = loadConfig(mailproc_conf)
 
-  EventHandler.debug(this, PROPS)
+
 
   lazy val isProd = PROPS.getProperty("mode") == "prod"
   lazy val isTest = PROPS.getProperty("mode") == "test"
