@@ -3,13 +3,11 @@ package logicops.mailproc
 import akka.actor.Actor
 import akka.event.EventHandler
 import logicops.db._
-import java.util.{UUID, Properties}
 import java.sql.Savepoint
-import java.io.{ByteArrayOutputStream, File}
+import java.io.File
 import org.apache.commons.io.FileUtils
-import javax.mail._
-import internet.{MimeBodyPart, MimeMultipart, MimeMessage, InternetAddress}
 import java.lang.IllegalStateException
+import MailProc._
 
 class TicketHandler extends Actor {
 
@@ -78,6 +76,10 @@ class TicketHandler extends Actor {
   private def withRollback(f : => Unit)(implicit savepoint : Savepoint, file : File) {
     try {
       f
+      if ( isTest || isProd ) {
+        EventHandler.debug(this, "Committing transaction for file: %s".format(file))
+        Database.getConnection.commit()
+      }
     } catch {
       case e : Exception => {
         Database.getConnection.rollback(savepoint)
@@ -116,6 +118,7 @@ class TicketHandler extends Actor {
                   }
                   sr_node.connect("Assigned To", user)
                     .connect("Child", user.serviceRequestQueue.get)
+
                   emailSender ! SendReopenedEmail(user, sr_node, subject)
                 }
                 addToStorage(email, body, file)

@@ -7,6 +7,7 @@ import akka.event.EventHandler
 import java.io.ByteArrayOutputStream
 import javax.mail.{Transport, Message, Session, Address}
 import logicops.db._
+import MailProc._
 
 class EmailSender extends Actor {
   private def getAddresses(addrs : Option[String]*) = {

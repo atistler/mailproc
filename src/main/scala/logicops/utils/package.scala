@@ -2,16 +2,19 @@ package logicops {
 
 import java.util.Properties
 import java.io.{PrintWriter, File, FileInputStream}
+import akka.event.EventHandler
 
 package object utils {
   def loadConfig(file : File) = {
+    EventHandler.info(this, "Loading configuration: %s".format(file))
     val props = new Properties()
     try {
       props.load(new FileInputStream(file))
+      EventHandler.info(this, props)
     } catch {
       case e : Exception => {
-        sys.error(e.getStackTraceString)
         sys.error("Could not load properties file from filepath: " + file)
+        sys.error(e.getStackTraceString)
         sys.exit(1)
       }
     }
@@ -33,7 +36,7 @@ package object utils {
     }
   }
 
-  private[logicops] class Memoize1[-T, +R](f : T => R) extends (T => R) {
+  private[logicops] class Memoize1[-T, +R](f : T => R) extends Function1[T, R] {
 
     import scala.collection.mutable
 

@@ -4,6 +4,7 @@ import akka.actor.Actor
 import collection.mutable
 import akka.event.EventHandler
 import logicops.db._
+import MailProc._
 
 class UserCheck extends Actor {
 
