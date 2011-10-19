@@ -10,8 +10,8 @@ package object utils {
       props.load(new FileInputStream(file))
     } catch {
       case e : Exception => {
-        sys.error(e.getStackTraceString)
         sys.error("Could not load properties file from filepath: " + file)
+        sys.error(e.getStackTraceString)
         sys.exit(1)
       }
     }
@@ -33,7 +33,7 @@ package object utils {
     }
   }
 
-  private[logicops] class Memoize1[-T, +R](f : T => R) extends (T => R) {
+  private[logicops] class Memoize1[-T, +R](f : T => R) extends Function1[T, R] {
 
     import scala.collection.mutable
 
