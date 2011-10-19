@@ -6,8 +6,8 @@ import logicops.db._
 import java.sql.Savepoint
 import java.io.File
 import org.apache.commons.io.FileUtils
-import javax.mail._
 import java.lang.IllegalStateException
+import MailProc._
 
 class TicketHandler extends Actor {
 

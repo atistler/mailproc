@@ -9,6 +9,7 @@ import safety.{Whitelist, Cleaner}
 import javax.mail.internet.{InternetAddress, MimeMessage}
 import javax.mail.{MessagingException, Address, Multipart, Part, Message, Session => MailSession}
 import java.io.{File, FileInputStream, IOException, UnsupportedEncodingException}
+import MailProc._
 
 
 class EmailParser(val supportAddresses : Set[String], val internalAddresses : Set[String]) extends Actor {

@@ -3,6 +3,7 @@ package logicops.mailproc
 import akka.actor.Actor
 import akka.event.EventHandler
 import java.io.File
+import MailProc._
 
 class DirectoryWatcher(var directory : String) extends Actor {
 
