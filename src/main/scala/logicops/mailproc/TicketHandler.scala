@@ -201,7 +201,7 @@ class TicketHandler extends Actor {
           .setAttr("Name", "SR 3-%d".format(sr_node.id.get))
           .setAttr("Service Request Status", "Unconfirmed")
           .connect("Child", unassignedSrq)
-          .connect("Assigned To", unassignedSrq)
+          .connect("Assigned To", unassignedUser)
           .connect("Child", user)
         EventHandler.info(
           this, "Creating new SR: %s, assigning to: %s".format(
