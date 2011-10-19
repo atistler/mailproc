@@ -77,6 +77,7 @@ class TicketHandler extends Actor {
     try {
       f
       if ( isTest || isProd ) {
+        EventHandler.debug(this, "Committing transaction for file: %s".format(file))
         Database.getConnection.commit()
       }
     } catch {
