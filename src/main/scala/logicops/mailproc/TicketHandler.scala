@@ -96,8 +96,8 @@ class TicketHandler extends Actor {
         Node.getOption(sr_node_id) match {
           case Some(sr_node) => {
             val email = buildEmail(Node.createFrom("Outgoing Email"), subject, to)
-              .connect("Created By", user)
-              .connect("Child", sr_node)
+              .addParent(sr_node)
+            user >> ("Created By", email)
             EventHandler.info(
               this, "Creating new Outgoing Email under: %s, created by: %s".format(
                 sr_node.valueOf("Name").get, user.valueOf("Name").get
@@ -112,12 +112,13 @@ class TicketHandler extends Actor {
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                    .connectors.having(List(ConnectionType.get("Assigned To")), List(NodeType.get("User")))
+                    .connectors.having("Assigned To", "User")
                     .foreach {
-                    case (nid : Int, node : Node) => sr_node.break("Assigned To", node)
+                    case (nid : Int, user : Node) => user.break("Assigned To", sr_node)
                   }
-                  sr_node.connect("Assigned To", user)
-                    .connect("Child", user.serviceRequestQueue.get)
+
+                  sr_node.addParent(user.serviceRequestQueue.get)
+                  user >> ("Assigned To", sr_node)
 
                   emailSender ! SendReopenedEmail(user, sr_node, subject)
                 }
@@ -151,8 +152,8 @@ class TicketHandler extends Actor {
               )
             )
             val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
-              .connect("Created By", user)
-              .connect("Child", sr_node)
+              .addParent(sr_node)
+            user >> ("Created By", email)
 
             if (hidden) {
               email.setAttr("Visibility Level", "-128")
@@ -167,7 +168,7 @@ class TicketHandler extends Actor {
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                  sr_node.connectees.having("Assigned To", "User").headOption match {
+                  sr_node.connectors.having("Assigned To", "User").headOption match {
                     case Some((node_id, user_node)) => {
                       emailSender ! SendReopenedEmail(user_node, sr_node, subject)
                     }
@@ -200,9 +201,10 @@ class TicketHandler extends Actor {
         sr_node.setAttr("Abstract", subject)
           .setAttr("Name", "SR 3-%d".format(sr_node.id.get))
           .setAttr("Service Request Status", "Unconfirmed")
-          .connect("Child", unassignedSrq)
-          .connect("Assigned To", unassignedUser)
-          .connect("Child", user)
+          .addChild(unassignedSrq)
+          .addParent(user.serviceRequestQueue.get)
+        unassignedUser >> ("Assigned To", sr_node)
+
         EventHandler.info(
           this, "Creating new SR: %s, assigning to: %s".format(
             sr_node.valueOf("Name").get, unassignedUser.valueOf("Name").get
@@ -213,10 +215,8 @@ class TicketHandler extends Actor {
             sr_node.valueOf("Name").get, user.valueOf("Name").get
           )
         )
-        val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
-          .connect("Created By", user)
-          .connect("Child", sr_node)
-
+        val email = buildEmail(Node.createFrom("Incoming Email"), subject, to).addParent(sr_node)
+        user >> ("Created By", email)
         addToStorage(email, body, file)
         emailSender ! SendConfirmEmail(user, sr_node, subject)
         fileHandler ! FileSuccess(file)

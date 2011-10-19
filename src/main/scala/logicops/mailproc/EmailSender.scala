@@ -150,10 +150,10 @@ Logicops NOC
     message.writeTo(bao)
     EventHandler.debug(this, bao.toString)
     if (isProd || isTest) {
-      EventHandler.debug(this, "Production/Test mode enabled, sending confirmation sending email")
+      EventHandler.debug(this, "Production/Test mode enabled, sending confirmation email")
       Transport.send(message);
     } else {
-      EventHandler.debug(this, "Production/Test mode disabled, not actually confirmation sending email")
+      EventHandler.debug(this, "Production/Test mode disabled, not actually sending confirmation email")
     }
   }
 

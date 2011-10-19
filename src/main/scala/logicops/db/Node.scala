@@ -156,12 +156,34 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     }
   }
 
+  def >>(connectionType : ConnectionType, node: Node) : Node = {
+    connect(connectionType, node)
+  }
+
+  def <<:(connectionType : ConnectionType)(node : Node) : Node = {
+    node.connect(connectionType, this)
+  }
+
+  def addParent(node : Node) : Node = node.connect("Parent", this)
+
+  def addChild(node : Node) : Node = node.connect("Child", this)
+
   def connect(connectionType : ConnectionType, node : Node) : Node = {
     val connection = Connection(connectionType, this, node)
     connection.find() match {
       case Some(c) => this
       case None => {
         connection.save()
+        if ( connectionType.bidirectional ) {
+          val compliment = Connection(connectionType.complimentTypeId, node, this)
+          compliment.find() match {
+            case Some(c) => this
+            case None => {
+              connection.save()
+              this
+            }
+          }
+        }
         this
       }
     }
