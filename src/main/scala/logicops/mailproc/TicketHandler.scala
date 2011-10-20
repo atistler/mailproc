@@ -209,7 +209,7 @@ class TicketHandler extends Actor {
         sr_node.setAttr("Abstract", subject)
           .setAttr("Name", "SR 3-%d".format(sr_node.id.get))
           .setAttr("Service Request Status", "Unconfirmed")
-          .addChild(unassignedSrq)
+          .addParent(unassignedSrq)
           .addParent(user.serviceRequestQueue.get)
         unassignedUser.connect("Assigned To", sr_node)
 

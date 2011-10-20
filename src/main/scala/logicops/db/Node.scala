@@ -179,7 +179,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
             case Some(c) => this
             case None => {
               compliment.save()
-              println("Adding compliment %s".format(connection))
+              println("Adding compliment %s".format(compliment))
               this
             }
           }
