@@ -32,16 +32,6 @@ class EmailSender extends Actor {
       )
     }
     session.setDebug(true)
-    session.setDebugOut(new PrintStream(new OutputStream() {
-      val sb = new StringBuffer()
-      override def write(i : Int) {
-        sb.append(i.toChar)
-        if ( i.toChar == '\n' ) {
-          EventHandler.debug(this, sb)
-          sb.setLength(0)
-        }
-      }
-    }))
     session
   }
 
