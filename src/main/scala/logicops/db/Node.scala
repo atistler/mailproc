@@ -156,17 +156,15 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     }
   }
 
-  def >>(connectionType : ConnectionType, node: Node) : Node = {
-    connect(connectionType, node)
+  def addParent(node : Node) : Node = {
+    node.connect("Parent", this)
+    this
   }
 
-  def <<:(connectionType : ConnectionType)(node : Node) : Node = {
-    node.connect(connectionType, this)
+  def addChild(node : Node) : Node = {
+    node.connect("Child", this)
+    this
   }
-
-  def addParent(node : Node) : Node = node.connect("Parent", this)
-
-  def addChild(node : Node) : Node = node.connect("Child", this)
 
   def connect(connectionType : ConnectionType, node : Node) : Node = {
     val connection = Connection(connectionType, this, node)

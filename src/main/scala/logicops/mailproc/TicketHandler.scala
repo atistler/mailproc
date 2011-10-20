@@ -118,7 +118,7 @@ class TicketHandler extends Actor {
                   }
 
                   sr_node.addParent(user.serviceRequestQueue.get)
-                  user >>("Assigned To", sr_node)
+                  user.connect("Assigned To", sr_node)
 
                   emailSender ! SendReopenedEmail(user, sr_node, subject)
                 }
@@ -204,7 +204,7 @@ class TicketHandler extends Actor {
           .setAttr("Service Request Status", "Unconfirmed")
           .addChild(unassignedSrq)
           .addParent(user.serviceRequestQueue.get)
-        unassignedUser >>("Assigned To", sr_node)
+        unassignedUser.connect("Assigned To", sr_node)
 
         EventHandler.info(
           this, "Created new SR: %s, assigning to: %s".format(
