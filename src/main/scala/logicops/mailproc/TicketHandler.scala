@@ -112,7 +112,7 @@ class TicketHandler extends Actor {
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                    .connectors.having("Assigned To", "User")
+                    .connectees.having("Assigned To", "User")
                     .foreach {
                     case (nid : Int, user : Node) => user.break("Assigned To", sr_node)
                   }
@@ -168,7 +168,7 @@ class TicketHandler extends Actor {
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                  sr_node.connectors.having("Assigned To", "User").headOption match {
+                  sr_node.connectees.having("Assigned To", "User").headOption match {
                     case Some((node_id, user_node)) => {
                       emailSender ! SendReopenedEmail(user_node, sr_node, subject)
                     }
