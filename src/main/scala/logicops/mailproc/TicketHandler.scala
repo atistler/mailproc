@@ -97,10 +97,10 @@ class TicketHandler extends Actor {
           case Some(sr_node) => {
             val email = buildEmail(Node.createFrom("Outgoing Email"), subject, to)
               .addParent(sr_node)
-            user >> ("Created By", email)
+            user.connect("Created By", email)
             EventHandler.info(
-              this, "Creating new Outgoing Email under: %s, created by: %s".format(
-                sr_node.valueOf("Name").get, user.valueOf("Name").get
+              this, "Created new Outgoing Email [%d] under: %s, created by: %s".format(
+                email.id.get, sr_node.valueOf("Name").get, user.valueOf("Name").get
               )
             )
             sr_node.valueOf("Service Request Status") match {
@@ -118,7 +118,7 @@ class TicketHandler extends Actor {
                   }
 
                   sr_node.addParent(user.serviceRequestQueue.get)
-                  user >> ("Assigned To", sr_node)
+                  user >>("Assigned To", sr_node)
 
                   emailSender ! SendReopenedEmail(user, sr_node, subject)
                 }
@@ -146,14 +146,15 @@ class TicketHandler extends Actor {
       withRollback {
         Node.getOption(sr_node_id) match {
           case Some(sr_node) => {
-            EventHandler.info(
-              this, "Creating new Incoming Email under: %s, created by: %s".format(
-                sr_node.valueOf("Name").get, user.valueOf("Name").get
-              )
-            )
             val email = buildEmail(Node.createFrom("Incoming Email"), subject, to)
               .addParent(sr_node)
-            user >> ("Created By", email)
+            user.connect("Created By", email)
+
+            EventHandler.info(
+              this, "Created new Incoming Email [%d] under: %s, created by: %s".format(
+                email.id.get, sr_node.valueOf("Name").get, user.valueOf("Name").get
+              )
+            )
 
             if (hidden) {
               email.setAttr("Visibility Level", "-128")
@@ -203,20 +204,22 @@ class TicketHandler extends Actor {
           .setAttr("Service Request Status", "Unconfirmed")
           .addChild(unassignedSrq)
           .addParent(user.serviceRequestQueue.get)
-        unassignedUser >> ("Assigned To", sr_node)
+        unassignedUser >>("Assigned To", sr_node)
 
         EventHandler.info(
-          this, "Creating new SR: %s, assigning to: %s".format(
+          this, "Created new SR: %s, assigning to: %s".format(
             sr_node.valueOf("Name").get, unassignedUser.valueOf("Name").get
           )
         )
+
+        val email = buildEmail(Node.createFrom("Incoming Email"), subject, to).addParent(sr_node)
+        user.connect("Created By", email)
+
         EventHandler.info(
-          this, "Creating new Incoming Email under: %s, created by: %s".format(
-            sr_node.valueOf("Name").get, user.valueOf("Name").get
+          this, "Created new Incoming Email [%d] under: %s, created by: %s".format(
+            email.id.get, sr_node.valueOf("Name").get, user.valueOf("Name").get
           )
         )
-        val email = buildEmail(Node.createFrom("Incoming Email"), subject, to).addParent(sr_node)
-        user >> ("Created By", email)
         addToStorage(email, body, file)
         emailSender ! SendConfirmEmail(user, sr_node, subject)
         fileHandler ! FileSuccess(file)
