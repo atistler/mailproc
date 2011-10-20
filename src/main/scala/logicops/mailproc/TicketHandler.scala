@@ -114,7 +114,14 @@ class TicketHandler extends Actor {
                   sr_node.setAttr("Service Request Status", "Open")
                     .connectees.having("Assigned To", "User")
                     .foreach {
-                    case (nid : Int, user : Node) => user.break("Assigned To", sr_node)
+                    case (nid : Int, user : Node) => {
+                      EventHandler.debug(
+                        this, "Breaking assigned to connection between %s and %s".format(
+                          user.valueOf("Name").get, sr_node.valueOf("Name").get
+                        )
+                      )
+                      user.break("Assigned To", sr_node)
+                    }
                   }
 
                   sr_node.addParent(user.serviceRequestQueue.get)

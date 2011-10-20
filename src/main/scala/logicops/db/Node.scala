@@ -171,6 +171,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     connection.find() match {
       case Some(c) => this
       case None => {
+        println("Adding connection %s".format(connection))
         connection.save()
         if ( connectionType.bidirectional ) {
           val compliment = Connection(connectionType.complimentTypeId, node, this)
@@ -178,6 +179,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
             case Some(c) => this
             case None => {
               compliment.save()
+              println("Adding compliment %s".format(connection))
               this
             }
           }
@@ -195,6 +197,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
     val connection = Connection(connectionType, this, node)
     connection.find() match {
       case Some(c) => {
+        println("Breaking connection: %s".format(connection))
         connection.delete()
         this
       }
