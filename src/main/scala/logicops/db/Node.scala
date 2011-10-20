@@ -179,7 +179,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
           compliment.find() match {
             case Some(c) => this
             case None => {
-              connection.save()
+              compliment.save()
               this
             }
           }

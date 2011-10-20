@@ -6,7 +6,7 @@ class NodeTest extends Specification {
 
   trait n1 extends Scope with After {
     def after {
-      Database.getConnection.rollback()
+      // Database.getConnection.rollback()
     }
 
     val n1 = Node.get(527321)
@@ -16,6 +16,11 @@ class NodeTest extends Specification {
   "The node with id 527321" should {
     "have node_id of 527321" in new n1 {
       n1.id must_== Some(527321)
+    }
+    "create connection to 983637" in new n1 {
+      val n2 = Node.get(983637)
+      n1.addParent(n2)
+      Database.getConnection.commit()
     }
     "have name = 'SR 2-527321'" in new n1 {
       n1.attr("Name").get.value must_== "SR 2-527321"
