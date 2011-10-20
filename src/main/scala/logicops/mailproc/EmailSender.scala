@@ -4,10 +4,11 @@ import akka.actor.Actor
 import java.util.{UUID, Properties}
 import javax.mail.internet.{MimeBodyPart, MimeMultipart, MimeMessage, InternetAddress}
 import akka.event.EventHandler
-import java.io.ByteArrayOutputStream
 import javax.mail.{Transport, Message, Session, Address}
 import logicops.db._
 import MailProc._
+import java.lang.StringBuffer
+import java.io.{BufferedOutputStream, OutputStream, PrintStream, ByteArrayOutputStream}
 
 class EmailSender extends Actor {
   private def getAddresses(addrs : Option[String]*) = {
@@ -31,6 +32,11 @@ class EmailSender extends Actor {
       )
     }
     session.setDebug(true)
+    session.setDebugOut(new PrintStream(new OutputStream() {
+      override def write(i : Int) {
+        println(i.toChar)
+      }
+    }))
     session
   }
 
@@ -148,7 +154,7 @@ Logicops NOC
     )
     val bao = new ByteArrayOutputStream
     message.writeTo(bao)
-    EventHandler.debug(this, bao.toString)
+    // EventHandler.debug(this, bao.toString)
     if (isProd || isTest) {
       EventHandler.debug(this, "Production/Test mode enabled, sending confirmation email")
       Transport.send(message);
