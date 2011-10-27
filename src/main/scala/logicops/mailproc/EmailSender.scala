@@ -7,8 +7,8 @@ import akka.event.EventHandler
 import javax.mail.{Transport, Message, Session, Address}
 import logicops.db._
 import MailProc._
-import java.io.{BufferedOutputStream, OutputStream, PrintStream, ByteArrayOutputStream}
-import java.lang.StringBuffer
+import java.io._
+import org.apache.commons.lang.StringUtils
 
 class EmailSender extends Actor {
   private def getAddresses(addrs : Option[String]*) = {
@@ -21,7 +21,9 @@ class EmailSender extends Actor {
     val props = new Properties()
     // props.put("mail.smtp.auth", "true")
     // props.put("mail.smtp.starttls.enable", "true")
-    props.put("mail.smtp.connectiontimeout", "5000")  /* 	Socket connection timeout value in milliseconds. Default is infinite timeout. */
+    props.put(
+      "mail.smtp.connectiontimeout", "5000"
+    ) /* 	Socket connection timeout value in milliseconds. Default is infinite timeout. */
     props.put("mail.smtp.timeout", "5000") /* Socket I/O timeout value in milliseconds. Default is infinite timeout. */
     val session = Session.getInstance(props)
 
@@ -32,6 +34,19 @@ class EmailSender extends Actor {
       )
     }
     session.setDebug(true)
+    session.setDebugOut(
+      new PrintStream(
+        new ByteArrayOutputStream {
+          override def flush() {
+            val s = StringUtils.chomp(this.toString, "\n")
+            if (s.nonEmpty) {
+              EventHandler.info(this, s)
+            }
+            reset()
+          }
+        }, true
+      )
+    )
     session
   }
 
@@ -257,6 +272,7 @@ Logicops NOC
       EventHandler.debug(this, "Production/Test mode disabled, NOT actually sending SR reopened email")
     }
   }
+
   def receive = {
     case SendReopenedEmail(user, serviceRequest, subject) => {
       sendReopenedEmail(user, serviceRequest, subject)
