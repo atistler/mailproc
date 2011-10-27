@@ -1,14 +1,17 @@
+import java.util.Properties
+import javax.mail.internet.{MimeBodyPart, MimeMultipart, InternetAddress, MimeMessage}
+import javax.mail.{Transport, Message, Session}
+import akka.event._
+
 object TestMail extends App {
-  import java.util.Properties
-  import javax.mail.internet.{MimeBodyPart, MimeMultipart, InternetAddress, MimeMessage}
-  import javax.mail.{Transport, Message, Session}
+
   val smtphost = "relay.ext.logicworks.net"
   val smtpport = 25
   val smtpuser = "logicops@logicworks.net"
   val smtppassword = "Th15is4l0ng4ndc0mpl1cat3Dpassw0rd!"
 
   val props = new Properties()
-//  props.put("mail.smtp.auth", "true")
+  //  props.put("mail.smtp.auth", "true")
   // props.put("mail.smtp.starttls.enable", "true")
   props.put("mail.smtp.connectiontimeout", "5000")
   /* 	Socket connection timeout value in milliseconds. Default is infinite timeout. */
@@ -16,6 +19,7 @@ object TestMail extends App {
   /* Socket I/O timeout value in milliseconds. Default is infinite timeout. */
   val session = Session.getInstance(props)
 
+  EventHandler.debug(this, "EventHandler is logging")
   session.getTransport("smtp").connect(smtphost, smtpport, smtpuser, smtppassword)
   session.setDebug(true)
 

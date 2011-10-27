@@ -7,8 +7,7 @@ import akka.event.EventHandler
 import javax.mail.{Transport, Message, Session, Address}
 import logicops.db._
 import MailProc._
-import java.io.{BufferedOutputStream, OutputStream, PrintStream, ByteArrayOutputStream}
-import java.lang.StringBuffer
+import java.io._
 
 class EmailSender extends Actor {
   private def getAddresses(addrs : Option[String]*) = {
@@ -32,6 +31,11 @@ class EmailSender extends Actor {
       )
     }
     session.setDebug(true)
+    val redirect = System.err
+    val ps = new PrintStream(redirect)
+
+    // val ps = new PrintStream(pw, true);
+    session.setDebugOut(redirect)
     session
   }
 
