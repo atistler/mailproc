@@ -2,7 +2,6 @@ package logicops.db {
 
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
-import scalaj.collection.Imports._
 
 private[db] trait LikeHaving {
   def apply() = having(Nil, Nil)
