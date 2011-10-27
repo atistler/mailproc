@@ -1,7 +1,9 @@
+import java.io._
 import java.util.Properties
 import javax.mail.internet.{MimeBodyPart, MimeMultipart, InternetAddress, MimeMessage}
 import javax.mail.{Transport, Message, Session}
 import akka.event._
+import org.apache.commons.lang.StringUtils
 
 object TestMail extends App {
 
@@ -19,9 +21,23 @@ object TestMail extends App {
   /* Socket I/O timeout value in milliseconds. Default is infinite timeout. */
   val session = Session.getInstance(props)
 
-  EventHandler.debug(this, "EventHandler is logging")
+  EventHandler.info(this, "EventHandler is logging")
   session.getTransport("smtp").connect(smtphost, smtpport, smtpuser, smtppassword)
+
+
   session.setDebug(true)
+  session.setDebugOut(new PrintStream(new ByteArrayOutputStream {
+    override def flush() {
+      val s = StringUtils.chomp(this.toString, "\n")
+      if ( s.nonEmpty ) {
+        EventHandler.info(this, s)
+      }
+      reset()
+    }
+  }, true))
+
+
+
 
   val message = new MimeMessage(session)
   message.setFrom(new InternetAddress("logicops@logicworks.net"))
@@ -44,6 +60,6 @@ object TestMail extends App {
   multipart.addBodyPart(plaintext)
   multipart.addBodyPart(html)
   message.setContent(multipart)
-  Console.println("Sending message")
+
   Transport.send(message);
 }
