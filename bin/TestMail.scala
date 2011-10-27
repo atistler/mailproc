@@ -25,10 +25,10 @@ object TestMail extends App {
 
   message.setSubject("Test email")
 
-  message.setRecipients(Message.RecipientType.TO, "atistler@gmail.com")
   message.setRecipients(
-    Message.RecipientType.BCC, "atistler@logicworks.net"
+    Message.RecipientType.TO, "atistler@logicworks.net"
   )
+  message.setRecipients(Message.RecipientType.TO, "atistler@gmail.com")
   val multipart = new MimeMultipart("alternative")
   val plaintext = new MimeBodyPart()
   val html = new MimeBodyPart()
