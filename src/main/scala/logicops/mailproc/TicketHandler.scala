@@ -41,6 +41,7 @@ class TicketHandler extends Actor {
     }
     case None => throw new NoSuchElementException("Could not find 'Unassigned' user")
   }
+
   private lazy val unassignedSrq = unassignedUser.serviceRequestQueue match {
     case Some(srq : Node) => {
       srq
@@ -50,10 +51,9 @@ class TicketHandler extends Actor {
     )
   }
 
-
   private def addToStorage(emailNode : Node, body : String, file : File) {
     val base_path = "%s/%d/%d/".format(
-      PROPS.getProperty("attachments-directory"), emailNode.id.get % 100, emailNode.id.get
+      PROPS.getProperty("email-directory"), emailNode.id.get % 100, emailNode.id.get
     )
     val base_path_dir = new File(base_path)
     if (!base_path_dir.isDirectory)
@@ -62,8 +62,8 @@ class TicketHandler extends Actor {
     FileUtils.writeStringToFile(body_file, body)
     val raw_file = new File(base_path_dir, "raw.txt")
     FileUtils.copyFile(file, raw_file, true)
-    emailNode.setAttr("Email Path", body_file.getAbsolutePath)
-    emailNode.setAttr("Email Body Path", raw_file.getAbsolutePath)
+    emailNode.setAttr("Email Raw Path", raw_file.getAbsolutePath)
+    emailNode.setAttr("Email Body Path", body_file.getAbsolutePath)
   }
 
   private def buildEmail(emailNode : Node, subject : String, to : String) : Node = {
@@ -71,7 +71,6 @@ class TicketHandler extends Actor {
       .setAttr("Computed Recipients", to)
       .setAttr("Email Subject", subject)
   }
-
 
   private def withRollback(f : => Unit)(implicit savepoint : Savepoint, file : File) {
     try {
@@ -107,12 +106,12 @@ class TicketHandler extends Actor {
               case Some(status) => {
                 if (SR_CLOSED_STATUSES.contains(status)) {
                   EventHandler.info(
-                    this, "Reopening closed SR: %s, assigning to: %s".format(
-                      sr_node.valueOf("Name").get, user.valueOf("Name").get
+                    this, "Reopening closed SR: %s [%s], assigning to: %s".format(
+                      sr_node.valueOf("Name").get, status, user.valueOf("Name").get
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                    .connectees.having("Assigned To", "User")
+                    .connectors.having("Assigned To", "User")
                     .foreach {
                     case (nid : Int, user : Node) => {
                       EventHandler.debug(
@@ -170,13 +169,13 @@ class TicketHandler extends Actor {
               case Some(status) => {
                 if (SR_CLOSED_STATUSES.contains(status)) {
                   EventHandler.info(
-                    this, "Reopening closed SR: %s".format(
-                      sr_node.valueOf("Name").get
+                    this, "Reopening closed SR: %s [%s]".format(
+                      sr_node.valueOf("Name").get, status
 
                     )
                   )
                   sr_node.setAttr("Service Request Status", "Open")
-                  sr_node.connectees.having("Assigned To", "User").headOption match {
+                  sr_node.connectors.having("Assigned To", "User").headOption match {
                     case Some((node_id, user_node)) => {
                       emailSender ! SendReopenedEmail(user_node, sr_node, subject)
                     }

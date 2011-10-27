@@ -242,6 +242,10 @@ package object db {
     }
   }
 
+  implicit def iterable2Nt(iter : Iterable[String]) : Iterable[NodeType] = {
+    iter.map(i => NodeType.get(i))
+  }
+
   implicit def string2Nt(s : String) : NodeType = {
     NodeType.getOption(s) match {
       case Some(nt) => nt

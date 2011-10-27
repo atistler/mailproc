@@ -36,7 +36,8 @@ libraryDependencies ++= Seq(
   "javax.mail" % "mail" % "1.4.2",
   "postgresql" % "postgresql" % "8.4-701.jdbc4",
   "ch.qos.logback" % "logback-classic" % "0.9.28" % "runtime",
-  "commons-io" % "commons-io" % "2.0.1"
+  "commons-io" % "commons-io" % "2.0.1",
+  "org.scalaj" %% "scalaj-collection" % "1.2"
 )
 
 retrieveManaged := true

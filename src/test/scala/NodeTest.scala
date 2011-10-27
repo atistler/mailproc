@@ -28,34 +28,58 @@ class NodeTest extends Specification {
     "have Service Request Status = 'Closed'" in new n1 {
       n1.attr("Service Request Status").get.value must_== "Closed"
     }
-    "have 17 connectors" in new n1 {
-      n1.connectors().size must_== 17
+    "have 18 connectors" in new n1 {
+      n1.connectors().size must_== 18
     }
-    "have 15 connectees" in new n1 {
-      n1.connectees().size must_== 15
+    "have 16 connectees" in new n1 {
+      n1.connectees().size must_== 16
     }
     "have 10 child connectees" in new n1 {
       n1.connectees.having(connectionTypes = List(ConnectionType.get("Parent"))).size must_== 10
     }
-    "have 5 parent connectees" in new n1 {
-      n1.connectees.having(connectionTypes = List(ConnectionType.get("Child"))).size must_== 5
+    "have 6 parent connectees" in new n1 {
+      n1.connectees.having("Child").size must_== 6
     }
     "have 10 child connectors" in new n1 {
-      n1.connectors.having(connectionTypes = List(ConnectionType.get("Child"))).size must_== 10
+      n1.connectors.having("Child").size must_== 10
     }
-    "have 5 parent connectors" in new n1 {
-      n1.connectors.having(connectionTypes = List(ConnectionType.get("Parent"))).size must_== 5
+    "have 6 parent connectors" in new n1 {
+      n1.connectors.having("Parent").size must_== 6
     }
     "have 10 children of node type Activity" in new n1 {
       n1.connectors.having(
-        connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("Activity"))
+        "Child", "Activity"
       ).size must_== 10
     }
     "have 0 children of node type Asset" in new n1 {
       n1.connectors.having(
-        connectionTypes = List(ConnectionType.get("Child")), nodeTypes = List(NodeType.get("Asset"))
+        "Child", "Asset"
       ).size must_== 0
     }
+    "Account Acadient must have an SRQ" in new n3 {
+      val srq = n3.connectors.having("Child", "Name" -> "Service Request Queue")
+      srq.head._2.valueOf("Name").get must_== "Service Request Queue"
+    }
+    "Account Acadient must have an Steve, Picardi" in new n3 {
+      val u = n3.connectors.having("Child", "User", "First Name" -> "Steve", "Last Name" -> "Picardi")
+      u.head._2.valueOf("Name").get must_== "Picardi, Steve"
+    }
+    "Account Acadient has 9 user and containers" in new n3 {
+      val u1 = n3.connectors.having("Child", List(NodeType.get("User"), NodeType.get("Generic Container Node")))
+      u1.size must_== 9
+    }
+    "Account2 Acadient has 9 user and containers" in new n3 {
+      val u1 = n3.connectors.having("Child", List("User", "Generic Container Node"))
+      u1.size must_== 9
+    }
+  }
+
+  trait n3 extends Scope with After {
+    def after {
+      Database.getConnection.rollback()
+    }
+
+    val n3 = Node.find("Account", "Name" -> "Acadient").head
   }
 
   trait n2 extends Scope with After {

@@ -2,56 +2,96 @@ package logicops.db {
 
 import org.orbroker._
 import scala.collection.mutable.{Map => MuMap}
+import scalaj.collection.Imports._
 
 private[db] trait LikeHaving {
-  def apply() = having()
+  def apply() = having(Nil, Nil)
 
-  def having(connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil) : MuMap[Int, Node]
+  def having(
+    connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
+    ) : MuMap[Int, Node]
+
+  def having(
+    connectionType : ConnectionType, nodeType : NodeType, attributes : (Attribute, String)*
+    ) : MuMap[Int, Node] = {
+    having(List(connectionType), List(nodeType), attributes : _*);
+  }
+
+  def having(
+    connectionType : ConnectionType, nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
+    ) : MuMap[Int, Node] = {
+    having(List(connectionType), nodeTypes, attributes : _*);
+  }
+
+  def having(connectionType : ConnectionType, attributes : (Attribute, String)*) : MuMap[Int, Node] = {
+    having(List(connectionType), Nil, attributes : _*)
+  }
+
+  def having(connectionTypes : Iterable[ConnectionType], attributes : (Attribute, String)*) : MuMap[Int, Node] = {
+    having(connectionTypes, Nil, attributes : _*)
+  }
 
   def having(connectionType : ConnectionType, nodeType : NodeType) : MuMap[Int, Node] = {
     having(List(connectionType), List(nodeType))
   }
 
+  def having(connectionType : ConnectionType, nodeTypes : Iterable[NodeType]) : MuMap[Int, Node] = {
+    having(List(connectionType), nodeTypes)
+  }
+
+  def having(connectionTypes : Iterable[ConnectionType]) : MuMap[Int, Node] = {
+    having(connectionTypes, Nil)
+  }
+
   def having(connectionType : ConnectionType) : MuMap[Int, Node] = {
     having(List(connectionType), Nil)
   }
+
 }
 
 private[db] trait ChildParent {
-  val connectors: LikeHaving
-  val connectees: LikeHaving
+  val connectors : LikeHaving
+  val connectees : LikeHaving
 
-  def children(nodeTypes: Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
-    connectors.having(List(ConnectionType.get("Child")), nodeTypes)
+  def children(nodeTypes : Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
+    connectors.having("Child", nodeTypes)
   }
-  def children(nodeType: NodeType) : MuMap[Int, Node] = {
+
+  def children(nodeType : NodeType) : MuMap[Int, Node] = {
     children(List(nodeType))
   }
-  def parents(nodeTypes: Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
-    connectors.having(List(ConnectionType.get("Parent")), nodeTypes)
+
+  def parents(nodeTypes : Iterable[NodeType] = Nil) : MuMap[Int, Node] = {
+    connectors.having("Parent", nodeTypes)
   }
-  def parents(nodeType: NodeType) : MuMap[Int, Node] = {
+
+  def parents(nodeType : NodeType) : MuMap[Int, Node] = {
     parents(List(nodeType))
   }
-  def child(nodeTypes: Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
+
+  def child(nodeTypes : Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
     children(nodeTypes).headOption
   }
-  def child(nodeType: NodeType) : Option[(Int, Node)] = {
+
+  def child(nodeType : NodeType) : Option[(Int, Node)] = {
     child(List(nodeType))
   }
-  def parent(nodeTypes: Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
+
+  def parent(nodeTypes : Iterable[NodeType] = Nil) : Option[(Int, Node)] = {
     parents(nodeTypes).headOption
   }
-  def parent(nodeType: NodeType) : Option[(Int, Node)] = {
+
+  def parent(nodeType : NodeType) : Option[(Int, Node)] = {
     parent(List(nodeType))
   }
 
 }
 
 class Nodes(nodeMap : MuMap[Int, Node]) extends ChildParent {
+
   object connectors extends LikeHaving {
     def having(
-      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
       ) = {
       if (nodeMap.isEmpty) {
         nodeMap
@@ -59,7 +99,8 @@ class Nodes(nodeMap : MuMap[Int, Node]) extends ChildParent {
         broker.transactional(Database.getConnection) {
           _.selectAll(
             Node.Tokens.selectByConnectee, "nodes" -> nodeMap.keys.toArray,
-            "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes)
+            "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes),
+            "attributeIds" -> mapToIds(attributes.toMap.keys), "attributeValues" -> attributes.toMap.values.toArray
           )
         }.foldLeft(MuMap.empty[Int, Node]) {
           (m, n) => m(n.id.get) = n; m
@@ -70,7 +111,7 @@ class Nodes(nodeMap : MuMap[Int, Node]) extends ChildParent {
 
   object connectees extends LikeHaving {
     def having(
-      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
       ) = {
       if (nodeMap.isEmpty) {
         nodeMap
@@ -78,7 +119,8 @@ class Nodes(nodeMap : MuMap[Int, Node]) extends ChildParent {
         broker.transactional(Database.getConnection) {
           _.selectAll(
             Node.Tokens.selectByConnector, "nodes" -> nodeMap.keys.toArray,
-            "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes)
+            "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes),
+            "attributeIds" -> mapToIds(attributes.toMap.keys), "attributeValues" -> attributes.toMap.values.toArray
           )
         }.foldLeft(MuMap.empty[Int, Node]) {
           (m, n) => m(n.id.get) = n; m
@@ -107,12 +149,13 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   object connectors extends LikeHaving {
     def having(
-      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType] = Nil
+      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
       ) = {
       broker.transactional(Database.getConnection) {
         _.selectAll(
           Node.Tokens.selectByConnectee, "node" -> self,
-          "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes)
+          "connectionTypes" -> mapToIds(connectionTypes), "connectorTypes" -> mapToIds(nodeTypes),
+          "attributeIds" -> mapToIds(attributes.toMap.keys), "attributeValues" -> attributes.toMap.values.toArray
         )
       }.foldLeft(MuMap.empty[Int, Node]) {
         (m, n) => m(n.id.get) = n; m
@@ -122,12 +165,13 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
 
   object connectees extends LikeHaving {
     def having(
-      connectionTypes : Iterable[ConnectionType] = Nil, nodeTypes : Iterable[NodeType] = Nil
+      connectionTypes : Iterable[ConnectionType], nodeTypes : Iterable[NodeType], attributes : (Attribute, String)*
       ) = {
       broker.transactional(Database.getConnection) {
         _.selectAll(
           Node.Tokens.selectByConnector, "node" -> self,
-          "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes)
+          "connectionTypes" -> mapToIds(connectionTypes), "connecteeTypes" -> mapToIds(nodeTypes),
+          "attributeIds" -> mapToIds(attributes.toMap.keys), "attributeValues" -> attributes.toMap.values.toArray
         )
       }.foldLeft(MuMap.empty[Int, Node]) {
         (m, n) => m(n.id.get) = n; m
@@ -173,7 +217,7 @@ class Node(val id : Option[Int], val nodeTypeId : Int, val templateId : Int) ext
       case None => {
         println("Adding connection %s".format(connection))
         connection.save()
-        if ( connectionType.bidirectional ) {
+        if (connectionType.bidirectional) {
           val compliment = Connection(connectionType.complimentTypeId, node, this)
           compliment.find() match {
             case Some(c) => this
