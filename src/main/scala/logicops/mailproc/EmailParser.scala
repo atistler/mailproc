@@ -143,9 +143,11 @@ class EmailParser(val supportAddresses : Set[String], val internalAddresses : Se
     case EmailFile(file) => {
       EventHandler.debug(this, "EmailParser processing file: %s".format(file.getName))
 
-      val message = new MimeMessage(EmailParser.session, new FileInputStream(file))
+      val is = new FileInputStream(file)
+      val message = new MimeMessage(EmailParser.session, is)
       val from = message.getFrom
       val to = message.getRecipients(Message.RecipientType.TO)
+      is.close()
 
       if (to == null) {
         EventHandler.error(this, "'To:' header does not exist in message: %s, ignoring this email".format(file))
